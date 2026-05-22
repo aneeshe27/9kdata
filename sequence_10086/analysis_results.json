@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "bottle",
+    "shelf",
+    "shelf wire rack",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, shelf wire rack, box, shelf, bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.036130428314208984,
+        "relative_position": "closest",
+        "confidence": 0.45519113540649414
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.13381962478160858,
+        "relative_position": "middle",
+        "confidence": 0.5029715299606323
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.15121637284755707,
+        "relative_position": "middle",
+        "confidence": 0.4607430100440979
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "shelf wire rack",
+        "mean_depth": 0.31327101588249207,
+        "relative_position": "middle",
+        "confidence": 0.3937976360321045
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.3202827274799347,
+        "relative_position": "farthest",
+        "confidence": 0.679988443851471
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.3202827274799347,
+        "relative_position": "farthest",
+        "confidence": 0.679988443851471
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "shelf wire rack",
+        "mean_depth": 0.31327101588249207,
+        "relative_position": "middle",
+        "confidence": 0.3937976360321045
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.15121637284755707,
+        "relative_position": "middle",
+        "confidence": 0.4607430100440979
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.13381962478160858,
+        "relative_position": "middle",
+        "confidence": 0.5029715299606323
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.036130428314208984,
+        "relative_position": "closest",
+        "confidence": 0.45519113540649414
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.45519113540649414,
+      "bounding_box": [
+        25.855255126953125,
+        -0.007598876953125,
+        195.0010528564453,
+        81.29044342041016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.036130428314208984,
+        "median_depth": 0.014924345538020134,
+        "depth_std": 0.07120882719755173,
+        "depth_min": 0.0,
+        "depth_max": 0.48120781779289246,
+        "mask_area": 4750
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.5029715299606323,
+      "bounding_box": [
+        204.2983856201172,
+        21.486894607543945,
+        217.14671325683594,
+        57.60682678222656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13381962478160858,
+        "median_depth": 0.13204552233219147,
+        "depth_std": 0.008901049382984638,
+        "depth_min": 0.12316654622554779,
+        "depth_max": 0.16352479159832,
+        "mask_area": 349
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "shelf",
+      "confidence": 0.4607430100440979,
+      "bounding_box": [
+        141.45753479003906,
+        55.457340240478516,
+        260.30303955078125,
+        179.87734985351562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15121637284755707,
+        "median_depth": 0.1492677479982376,
+        "depth_std": 0.03403014317154884,
+        "depth_min": 0.0914863795042038,
+        "depth_max": 0.29586243629455566,
+        "mask_area": 4327
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "shelf wire rack",
+      "confidence": 0.3937976360321045,
+      "bounding_box": [
+        91.96621704101562,
+        89.52919006347656,
+        151.46078491210938,
+        179.8786163330078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.31327101588249207,
+        "median_depth": 0.29270827770233154,
+        "depth_std": 0.049462076276540756,
+        "depth_min": 0.23224005103111267,
+        "depth_max": 0.49268054962158203,
+        "mask_area": 3149
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "box",
+      "confidence": 0.679988443851471,
+      "bounding_box": [
+        68.58271026611328,
+        148.29638671875,
+        101.15637969970703,
+        179.97036743164062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3202827274799347,
+        "median_depth": 0.31741589307785034,
+        "depth_std": 0.021936461329460144,
+        "depth_min": 0.28924182057380676,
+        "depth_max": 0.415038526058197,
+        "mask_area": 809
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. shelf. wire rack. can. jar. bottle. box. bag. cup.",
+  "text_prompt": "robot arm. gripper. shelf. wire rack. can. jar. bottle. box. bag. cup.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

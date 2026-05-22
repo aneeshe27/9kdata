@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "clamp",
+    "clamp",
+    "cup",
+    "cardboard box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: clamp, cardboard box, cup, clamp, cloth",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cloth",
+        "mean_depth": 0.07332686334848404,
+        "relative_position": "closest",
+        "confidence": 0.43678686022758484
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "clamp",
+        "mean_depth": 0.16025811433792114,
+        "relative_position": "middle",
+        "confidence": 0.4065699279308319
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "clamp",
+        "mean_depth": 0.19551900029182434,
+        "relative_position": "middle",
+        "confidence": 0.36730021238327026
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.23318788409233093,
+        "relative_position": "middle",
+        "confidence": 0.5271593928337097
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.6044811010360718,
+        "relative_position": "farthest",
+        "confidence": 0.4490857422351837
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.6044811010360718,
+        "relative_position": "farthest",
+        "confidence": 0.4490857422351837
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.23318788409233093,
+        "relative_position": "middle",
+        "confidence": 0.5271593928337097
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "clamp",
+        "mean_depth": 0.19551900029182434,
+        "relative_position": "middle",
+        "confidence": 0.36730021238327026
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "clamp",
+        "mean_depth": 0.16025811433792114,
+        "relative_position": "middle",
+        "confidence": 0.4065699279308319
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cloth",
+        "mean_depth": 0.07332686334848404,
+        "relative_position": "closest",
+        "confidence": 0.43678686022758484
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "cloth",
+      "confidence": 0.43678686022758484,
+      "bounding_box": [
+        22.959835052490234,
+        114.62019348144531,
+        126.57386779785156,
+        166.91831970214844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07332686334848404,
+        "median_depth": 0.07068587839603424,
+        "depth_std": 0.027876505628228188,
+        "depth_min": 0.020417070016264915,
+        "depth_max": 0.16066688299179077,
+        "mask_area": 2268
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "clamp",
+      "confidence": 0.4065699279308319,
+      "bounding_box": [
+        175.57000732421875,
+        116.3663330078125,
+        194.9136962890625,
+        149.84292602539062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16025811433792114,
+        "median_depth": 0.1476014256477356,
+        "depth_std": 0.04108087345957756,
+        "depth_min": 0.13271430134773254,
+        "depth_max": 0.4096975326538086,
+        "mask_area": 242
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "clamp",
+      "confidence": 0.36730021238327026,
+      "bounding_box": [
+        109.23348236083984,
+        87.66826629638672,
+        134.45518493652344,
+        113.76569366455078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19551900029182434,
+        "median_depth": 0.17444008588790894,
+        "depth_std": 0.06677307188510895,
+        "depth_min": 0.151636004447937,
+        "depth_max": 0.5108264088630676,
+        "mask_area": 254
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.5271593928337097,
+      "bounding_box": [
+        181.28282165527344,
+        51.058895111083984,
+        189.6631622314453,
+        64.83338165283203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23318788409233093,
+        "median_depth": 0.23161286115646362,
+        "depth_std": 0.005349517799913883,
+        "depth_min": 0.22496509552001953,
+        "depth_max": 0.24727444350719452,
+        "mask_area": 87
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cardboard box",
+      "confidence": 0.4490857422351837,
+      "bounding_box": [
+        83.34608459472656,
+        37.737754821777344,
+        119.71818542480469,
+        66.1184310913086
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6044811010360718,
+        "median_depth": 0.5988502502441406,
+        "depth_std": 0.02133074961602688,
+        "depth_min": 0.5749343037605286,
+        "depth_max": 0.6720195412635803,
+        "mask_area": 688
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. workbench. robot arm. bowl. can. cup. glove. clamp. button. container. cardboard box. cloth. block.",
+  "text_prompt": "table. workbench. robot arm. bowl. can. cup. glove. clamp. button. container. cardboard box. cloth. block.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

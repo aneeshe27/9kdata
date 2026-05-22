@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "chair",
+    "headphones",
+    "microphone",
+    "laptop",
+    "table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, headphones, chair, microphone, laptop",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.023900596424937248,
+        "relative_position": "closest",
+        "confidence": 0.5237280130386353
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "headphones",
+        "mean_depth": 0.14406223595142365,
+        "relative_position": "middle",
+        "confidence": 0.6871044635772705
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "microphone",
+        "mean_depth": 0.17288410663604736,
+        "relative_position": "middle",
+        "confidence": 0.49562713503837585
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "laptop",
+        "mean_depth": 0.29071831703186035,
+        "relative_position": "middle",
+        "confidence": 0.5062487125396729
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.45626571774482727,
+        "relative_position": "farthest",
+        "confidence": 0.510942816734314
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.45626571774482727,
+        "relative_position": "farthest",
+        "confidence": 0.510942816734314
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "laptop",
+        "mean_depth": 0.29071831703186035,
+        "relative_position": "middle",
+        "confidence": 0.5062487125396729
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "microphone",
+        "mean_depth": 0.17288410663604736,
+        "relative_position": "middle",
+        "confidence": 0.49562713503837585
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "headphones",
+        "mean_depth": 0.14406223595142365,
+        "relative_position": "middle",
+        "confidence": 0.6871044635772705
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.023900596424937248,
+        "relative_position": "closest",
+        "confidence": 0.5237280130386353
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.5237280130386353,
+      "bounding_box": [
+        0.0299072265625,
+        -0.014251708984375,
+        151.34133911132812,
+        179.98301696777344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.023900596424937248,
+        "median_depth": 0.022503037005662918,
+        "depth_std": 0.02449146658182144,
+        "depth_min": 0.0001724832400213927,
+        "depth_max": 0.8629050850868225,
+        "mask_area": 14232
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "headphones",
+      "confidence": 0.6871044635772705,
+      "bounding_box": [
+        263.9842224121094,
+        66.89710998535156,
+        315.9919128417969,
+        112.51173400878906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14406223595142365,
+        "median_depth": 0.1329711228609085,
+        "depth_std": 0.037047188729047775,
+        "depth_min": 0.1142394170165062,
+        "depth_max": 0.37636616826057434,
+        "mask_area": 1527
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "microphone",
+      "confidence": 0.49562713503837585,
+      "bounding_box": [
+        151.16937255859375,
+        13.969965934753418,
+        175.62997436523438,
+        24.720680236816406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17288410663604736,
+        "median_depth": 0.1251639574766159,
+        "depth_std": 0.10661803930997849,
+        "depth_min": 0.10228230059146881,
+        "depth_max": 0.5633931159973145,
+        "mask_area": 126
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "laptop",
+      "confidence": 0.5062487125396729,
+      "bounding_box": [
+        265.7042236328125,
+        24.667722702026367,
+        315.97900390625,
+        74.00718688964844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29071831703186035,
+        "median_depth": 0.28704872727394104,
+        "depth_std": 0.038406964391469955,
+        "depth_min": 0.18479730188846588,
+        "depth_max": 0.5641894936561584,
+        "mask_area": 1667
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.510942816734314,
+      "bounding_box": [
+        107.69915771484375,
+        39.96947479248047,
+        272.7472229003906,
+        124.91158294677734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.45626571774482727,
+        "median_depth": 0.425650954246521,
+        "depth_std": 0.102448970079422,
+        "depth_min": 0.20449358224868774,
+        "depth_max": 0.9399656653404236,
+        "mask_area": 3019
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. table. laptop. microphone. tripod. cable. power strip. plug. chair. tablet. headphones.",
+  "text_prompt": "robot arm. table. laptop. microphone. tripod. cable. power strip. plug. chair. tablet. headphones.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

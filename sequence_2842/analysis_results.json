@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "power drill",
+    "clamp drill",
+    "chair",
+    "table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, clamp drill, cloth, table, power drill",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "cloth",
+        "mean_depth": 0.04878765344619751,
+        "relative_position": "closest",
+        "confidence": 0.5984596610069275
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "power drill",
+        "mean_depth": 0.06410828232765198,
+        "relative_position": "middle",
+        "confidence": 0.369083434343338
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "clamp drill",
+        "mean_depth": 0.08491066098213196,
+        "relative_position": "middle",
+        "confidence": 0.4201018214225769
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.4585855007171631,
+        "relative_position": "middle",
+        "confidence": 0.4539322853088379
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.5399863719940186,
+        "relative_position": "farthest",
+        "confidence": 0.409650593996048
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.5399863719940186,
+        "relative_position": "farthest",
+        "confidence": 0.409650593996048
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.4585855007171631,
+        "relative_position": "middle",
+        "confidence": 0.4539322853088379
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "clamp drill",
+        "mean_depth": 0.08491066098213196,
+        "relative_position": "middle",
+        "confidence": 0.4201018214225769
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "power drill",
+        "mean_depth": 0.06410828232765198,
+        "relative_position": "middle",
+        "confidence": 0.369083434343338
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "cloth",
+        "mean_depth": 0.04878765344619751,
+        "relative_position": "closest",
+        "confidence": 0.5984596610069275
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "cloth",
+      "confidence": 0.5984596610069275,
+      "bounding_box": [
+        182.32891845703125,
+        98.49772644042969,
+        243.48660278320312,
+        146.94639587402344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04878765344619751,
+        "median_depth": 0.0474080927670002,
+        "depth_std": 0.013089356012642384,
+        "depth_min": 0.027086492627859116,
+        "depth_max": 0.08311127871274948,
+        "mask_area": 1803
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "power drill",
+      "confidence": 0.369083434343338,
+      "bounding_box": [
+        56.50537872314453,
+        106.15238952636719,
+        116.84879302978516,
+        153.50962829589844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06410828232765198,
+        "median_depth": 0.061456602066755295,
+        "depth_std": 0.012142439372837543,
+        "depth_min": 0.04842320829629898,
+        "depth_max": 0.10206431895494461,
+        "mask_area": 1102
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "clamp drill",
+      "confidence": 0.4201018214225769,
+      "bounding_box": [
+        95.40888977050781,
+        134.3597869873047,
+        148.47610473632812,
+        171.95310974121094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08491066098213196,
+        "median_depth": 0.05435476452112198,
+        "depth_std": 0.05705051124095917,
+        "depth_min": 0.04023134708404541,
+        "depth_max": 0.23386985063552856,
+        "mask_area": 637
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.4539322853088379,
+      "bounding_box": [
+        224.11122131347656,
+        31.05716323852539,
+        287.98394775390625,
+        93.54010009765625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4585855007171631,
+        "median_depth": 0.4605175852775574,
+        "depth_std": 0.057134609669446945,
+        "depth_min": 0.14778666198253632,
+        "depth_max": 0.8539090752601624,
+        "mask_area": 1177
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "table",
+      "confidence": 0.409650593996048,
+      "bounding_box": [
+        270.6596374511719,
+        40.498931884765625,
+        315.9636535644531,
+        87.31194305419922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5399863719940186,
+        "median_depth": 0.44125211238861084,
+        "depth_std": 0.1658755987882614,
+        "depth_min": 0.36966344714164734,
+        "depth_max": 0.898210883140564,
+        "mask_area": 939
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "clamp. power drill. cable. table. chair. cloth. container.",
+  "text_prompt": "clamp. power drill. cable. table. chair. cloth. container.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

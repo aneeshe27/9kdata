@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "faucet",
+    "sink",
+    "container",
+    "bottle",
+    "paper towel"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: container, bottle, faucet, paper towel, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.0471557155251503,
+        "relative_position": "closest",
+        "confidence": 0.5021023750305176
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.10748332738876343,
+        "relative_position": "middle",
+        "confidence": 0.69060879945755
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "container",
+        "mean_depth": 0.14704200625419617,
+        "relative_position": "middle",
+        "confidence": 0.5227881669998169
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.2125071883201599,
+        "relative_position": "middle",
+        "confidence": 0.4943077862262726
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "paper towel",
+        "mean_depth": 0.3355272114276886,
+        "relative_position": "farthest",
+        "confidence": 0.38948485255241394
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "paper towel",
+        "mean_depth": 0.3355272114276886,
+        "relative_position": "farthest",
+        "confidence": 0.38948485255241394
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.2125071883201599,
+        "relative_position": "middle",
+        "confidence": 0.4943077862262726
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "container",
+        "mean_depth": 0.14704200625419617,
+        "relative_position": "middle",
+        "confidence": 0.5227881669998169
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.10748332738876343,
+        "relative_position": "middle",
+        "confidence": 0.69060879945755
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.0471557155251503,
+        "relative_position": "closest",
+        "confidence": 0.5021023750305176
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "faucet",
+      "confidence": 0.5021023750305176,
+      "bounding_box": [
+        28.87932014465332,
+        37.140316009521484,
+        80.64312744140625,
+        145.9833984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0471557155251503,
+        "median_depth": 0.03913120925426483,
+        "depth_std": 0.01620899885892868,
+        "depth_min": 0.02994867041707039,
+        "depth_max": 0.11352603137493134,
+        "mask_area": 1768
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.69060879945755,
+      "bounding_box": [
+        15.517654418945312,
+        116.7797622680664,
+        210.4671630859375,
+        179.99664306640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10748332738876343,
+        "median_depth": 0.10885553061962128,
+        "depth_std": 0.027632465586066246,
+        "depth_min": 0.0347258634865284,
+        "depth_max": 0.16079063713550568,
+        "mask_area": 4863
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "container",
+      "confidence": 0.5227881669998169,
+      "bounding_box": [
+        192.72364807128906,
+        100.05419921875,
+        228.0847625732422,
+        131.746337890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14704200625419617,
+        "median_depth": 0.1416740119457245,
+        "depth_std": 0.01861252821981907,
+        "depth_min": 0.12838874757289886,
+        "depth_max": 0.2683841586112976,
+        "mask_area": 860
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bottle",
+      "confidence": 0.4943077862262726,
+      "bounding_box": [
+        129.1212158203125,
+        70.03128051757812,
+        142.72293090820312,
+        109.73538208007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2125071883201599,
+        "median_depth": 0.21056139469146729,
+        "depth_std": 0.00744042219594121,
+        "depth_min": 0.19409754872322083,
+        "depth_max": 0.2470310628414154,
+        "mask_area": 412
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "paper towel",
+      "confidence": 0.38948485255241394,
+      "bounding_box": [
+        180.3039093017578,
+        47.798065185546875,
+        200.29344177246094,
+        90.62722778320312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3355272114276886,
+        "median_depth": 0.3363342583179474,
+        "depth_std": 0.02938184328377247,
+        "depth_min": 0.17560598254203796,
+        "depth_max": 0.434562623500824,
+        "mask_area": 425
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. sink. faucet. bottle. sponge. paper towel. container. robot arm. robot gripper. counter.",
+  "text_prompt": "cup. sink. faucet. bottle. sponge. paper towel. container. robot arm. robot gripper. counter.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

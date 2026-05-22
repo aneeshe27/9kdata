@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cup",
+    "hammer",
+    "foam block",
+    "robot gripper",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot gripper, cup, box, foam block, hammer",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.16028688848018646,
+        "relative_position": "closest",
+        "confidence": 0.6416736841201782
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "hammer",
+        "mean_depth": 0.19306640326976776,
+        "relative_position": "middle",
+        "confidence": 0.4898644983768463
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "foam block",
+        "mean_depth": 0.20698726177215576,
+        "relative_position": "middle",
+        "confidence": 0.6859932541847229
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "robot gripper",
+        "mean_depth": 0.385905921459198,
+        "relative_position": "middle",
+        "confidence": 0.5165624618530273
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.5050327181816101,
+        "relative_position": "farthest",
+        "confidence": 0.43273189663887024
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.5050327181816101,
+        "relative_position": "farthest",
+        "confidence": 0.43273189663887024
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "robot gripper",
+        "mean_depth": 0.385905921459198,
+        "relative_position": "middle",
+        "confidence": 0.5165624618530273
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "foam block",
+        "mean_depth": 0.20698726177215576,
+        "relative_position": "middle",
+        "confidence": 0.6859932541847229
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "hammer",
+        "mean_depth": 0.19306640326976776,
+        "relative_position": "middle",
+        "confidence": 0.4898644983768463
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.16028688848018646,
+        "relative_position": "closest",
+        "confidence": 0.6416736841201782
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.6416736841201782,
+      "bounding_box": [
+        177.36581420898438,
+        54.46586608886719,
+        192.78448486328125,
+        76.18496704101562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16028688848018646,
+        "median_depth": 0.15269528329372406,
+        "depth_std": 0.019619140774011612,
+        "depth_min": 0.14482882618904114,
+        "depth_max": 0.29087725281715393,
+        "mask_area": 264
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "hammer",
+      "confidence": 0.4898644983768463,
+      "bounding_box": [
+        78.78950500488281,
+        63.7636604309082,
+        104.24310302734375,
+        83.64092254638672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19306640326976776,
+        "median_depth": 0.20401543378829956,
+        "depth_std": 0.027734166011214256,
+        "depth_min": 0.141429603099823,
+        "depth_max": 0.23063504695892334,
+        "mask_area": 121
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "foam block",
+      "confidence": 0.6859932541847229,
+      "bounding_box": [
+        110.38107299804688,
+        51.76597595214844,
+        150.15774536132812,
+        77.78146362304688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20698726177215576,
+        "median_depth": 0.2005440890789032,
+        "depth_std": 0.036656975746154785,
+        "depth_min": 0.15638668835163116,
+        "depth_max": 0.3262302875518799,
+        "mask_area": 608
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot gripper",
+      "confidence": 0.5165624618530273,
+      "bounding_box": [
+        100.69611358642578,
+        33.26173400878906,
+        125.44200897216797,
+        57.606475830078125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.385905921459198,
+        "median_depth": 0.3975982367992401,
+        "depth_std": 0.04241486266255379,
+        "depth_min": 0.2960507869720459,
+        "depth_max": 0.4554257094860077,
+        "mask_area": 297
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "box",
+      "confidence": 0.43273189663887024,
+      "bounding_box": [
+        71.47998809814453,
+        10.09980583190918,
+        94.07030487060547,
+        27.169527053833008
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5050327181816101,
+        "median_depth": 0.5054804086685181,
+        "depth_std": 0.0066197458654642105,
+        "depth_min": 0.4910839796066284,
+        "depth_max": 0.5180580019950867,
+        "mask_area": 252
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. hammer. foam block. cup. robot arm. robot gripper. vise. chair. box.",
+  "text_prompt": "table. hammer. foam block. cup. robot arm. robot gripper. vise. chair. box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

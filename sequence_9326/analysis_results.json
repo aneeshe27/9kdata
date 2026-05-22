@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cabinet",
+    "dishwasher rack",
+    "countertop",
+    "faucet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: dishwasher rack, faucet, cabinet, robot arm, countertop",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.03354367986321449,
+        "relative_position": "closest",
+        "confidence": 0.5618839859962463
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.3978019058704376,
+        "relative_position": "middle",
+        "confidence": 0.5309800505638123
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "dishwasher rack",
+        "mean_depth": 0.40980595350265503,
+        "relative_position": "middle",
+        "confidence": 0.552778422832489
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "countertop",
+        "mean_depth": 0.5630897879600525,
+        "relative_position": "middle",
+        "confidence": 0.4574532210826874
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.9552041888237,
+        "relative_position": "farthest",
+        "confidence": 0.8332584500312805
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.9552041888237,
+        "relative_position": "farthest",
+        "confidence": 0.8332584500312805
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "countertop",
+        "mean_depth": 0.5630897879600525,
+        "relative_position": "middle",
+        "confidence": 0.4574532210826874
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "dishwasher rack",
+        "mean_depth": 0.40980595350265503,
+        "relative_position": "middle",
+        "confidence": 0.552778422832489
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.3978019058704376,
+        "relative_position": "middle",
+        "confidence": 0.5309800505638123
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.03354367986321449,
+        "relative_position": "closest",
+        "confidence": 0.5618839859962463
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.5618839859962463,
+      "bounding_box": [
+        75.86827087402344,
+        7.261528015136719,
+        179.0292510986328,
+        119.78347778320312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03354367986321449,
+        "median_depth": 0.018110187724232674,
+        "depth_std": 0.08799861371517181,
+        "depth_min": 0.01409106608480215,
+        "depth_max": 0.8648294806480408,
+        "mask_area": 3698
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.5309800505638123,
+      "bounding_box": [
+        0.1112823486328125,
+        114.46389770507812,
+        75.42333984375,
+        179.98077392578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3978019058704376,
+        "median_depth": 0.40069660544395447,
+        "depth_std": 0.018394723534584045,
+        "depth_min": 0.3496098816394806,
+        "depth_max": 0.45636221766471863,
+        "mask_area": 3805
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "dishwasher rack",
+      "confidence": 0.552778422832489,
+      "bounding_box": [
+        56.731689453125,
+        108.62985229492188,
+        201.90802001953125,
+        180.00741577148438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.40980595350265503,
+        "median_depth": 0.4193071722984314,
+        "depth_std": 0.1056809201836586,
+        "depth_min": 0.030447449535131454,
+        "depth_max": 0.595422089099884,
+        "mask_area": 5372
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "countertop",
+      "confidence": 0.4574532210826874,
+      "bounding_box": [
+        0.2091522216796875,
+        79.34538269042969,
+        267.04461669921875,
+        117.81336975097656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5630897879600525,
+        "median_depth": 0.5522248148918152,
+        "depth_std": 0.12371799349784851,
+        "depth_min": 0.3542040288448334,
+        "depth_max": 0.8722909092903137,
+        "mask_area": 2685
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.8332584500312805,
+      "bounding_box": [
+        188.1106414794922,
+        62.614410400390625,
+        202.33824157714844,
+        83.51852416992188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9552041888237,
+        "median_depth": 0.95574951171875,
+        "depth_std": 0.021747637540102005,
+        "depth_min": 0.8945591449737549,
+        "depth_max": 0.9982226490974426,
+        "mask_area": 132
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. plate. dishwasher. dishwasher rack. countertop. sink. faucet. cabinet.",
+  "text_prompt": "robot arm. gripper. plate. dishwasher. dishwasher rack. countertop. sink. faucet. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

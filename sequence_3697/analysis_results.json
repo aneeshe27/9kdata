@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "electrical outlet",
+    "electrical outlet",
+    "wall cabinet",
+    "dispenser"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: electrical outlet, robot arm, dispenser, electrical outlet, wall cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.053698450326919556,
+        "relative_position": "closest",
+        "confidence": 0.5178722739219666
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "electrical outlet",
+        "mean_depth": 0.13359899818897247,
+        "relative_position": "middle",
+        "confidence": 0.372518926858902
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "electrical outlet",
+        "mean_depth": 0.16914322972297668,
+        "relative_position": "middle",
+        "confidence": 0.36659401655197144
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "wall cabinet",
+        "mean_depth": 0.23054800927639008,
+        "relative_position": "middle",
+        "confidence": 0.550957202911377
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "dispenser",
+        "mean_depth": 0.23775316774845123,
+        "relative_position": "farthest",
+        "confidence": 0.3573512136936188
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "dispenser",
+        "mean_depth": 0.23775316774845123,
+        "relative_position": "farthest",
+        "confidence": 0.3573512136936188
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "wall cabinet",
+        "mean_depth": 0.23054800927639008,
+        "relative_position": "middle",
+        "confidence": 0.550957202911377
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "electrical outlet",
+        "mean_depth": 0.16914322972297668,
+        "relative_position": "middle",
+        "confidence": 0.36659401655197144
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "electrical outlet",
+        "mean_depth": 0.13359899818897247,
+        "relative_position": "middle",
+        "confidence": 0.372518926858902
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.053698450326919556,
+        "relative_position": "closest",
+        "confidence": 0.5178722739219666
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.5178722739219666,
+      "bounding_box": [
+        151.74417114257812,
+        54.95634460449219,
+        300.9755554199219,
+        177.20294189453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.053698450326919556,
+        "median_depth": 0.02407420054078102,
+        "depth_std": 0.09456804394721985,
+        "depth_min": 0.008798276074230671,
+        "depth_max": 0.9675043821334839,
+        "mask_area": 7444
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "electrical outlet",
+      "confidence": 0.372518926858902,
+      "bounding_box": [
+        47.7042350769043,
+        113.97303771972656,
+        76.20459747314453,
+        139.155029296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13359899818897247,
+        "median_depth": 0.1328134834766388,
+        "depth_std": 0.008554848842322826,
+        "depth_min": 0.11925198882818222,
+        "depth_max": 0.15130092203617096,
+        "mask_area": 414
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "electrical outlet",
+      "confidence": 0.36659401655197144,
+      "bounding_box": [
+        79.02384948730469,
+        104.0950927734375,
+        100.72969055175781,
+        126.03244018554688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16914322972297668,
+        "median_depth": 0.16840001940727234,
+        "depth_std": 0.008050099015235901,
+        "depth_min": 0.15476539731025696,
+        "depth_max": 0.18769659101963043,
+        "mask_area": 280
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "wall cabinet",
+      "confidence": 0.550957202911377,
+      "bounding_box": [
+        0.9580917358398438,
+        0.3130512237548828,
+        239.13421630859375,
+        35.670555114746094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23054800927639008,
+        "median_depth": 0.1793743222951889,
+        "depth_std": 0.1852205991744995,
+        "depth_min": 0.00899094995111227,
+        "depth_max": 0.8748446106910706,
+        "mask_area": 4944
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "dispenser",
+      "confidence": 0.3573512136936188,
+      "bounding_box": [
+        114.36658477783203,
+        25.8004150390625,
+        164.3133544921875,
+        108.86279296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23775316774845123,
+        "median_depth": 0.23076969385147095,
+        "depth_std": 0.027278274297714233,
+        "depth_min": 0.20220188796520233,
+        "depth_max": 0.3369006812572479,
+        "mask_area": 3078
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. countertop. wall cabinet. dispenser. control box. first aid kit. electrical outlet. cable.",
+  "text_prompt": "robot arm. countertop. wall cabinet. dispenser. control box. first aid kit. electrical outlet. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

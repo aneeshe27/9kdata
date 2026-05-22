@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "door",
+    "table",
+    "robot arm",
+    "shelf",
+    "potted plant"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, potted plant, robot arm, shelf, door",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "door",
+        "mean_depth": 0.04835459589958191,
+        "relative_position": "closest",
+        "confidence": 0.4875689446926117
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.08330537378787994,
+        "relative_position": "middle",
+        "confidence": 0.7960333824157715
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.13761936128139496,
+        "relative_position": "middle",
+        "confidence": 0.3541693687438965
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.2507777512073517,
+        "relative_position": "middle",
+        "confidence": 0.7010684013366699
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "potted plant",
+        "mean_depth": 0.26442909240722656,
+        "relative_position": "farthest",
+        "confidence": 0.8561850190162659
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "potted plant",
+        "mean_depth": 0.26442909240722656,
+        "relative_position": "farthest",
+        "confidence": 0.8561850190162659
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.2507777512073517,
+        "relative_position": "middle",
+        "confidence": 0.7010684013366699
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.13761936128139496,
+        "relative_position": "middle",
+        "confidence": 0.3541693687438965
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.08330537378787994,
+        "relative_position": "middle",
+        "confidence": 0.7960333824157715
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "door",
+        "mean_depth": 0.04835459589958191,
+        "relative_position": "closest",
+        "confidence": 0.4875689446926117
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "door",
+      "confidence": 0.4875689446926117,
+      "bounding_box": [
+        0.31739044189453125,
+        0.05240631103515625,
+        102.59515380859375,
+        180.05184936523438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04835459589958191,
+        "median_depth": 0.028675058856606483,
+        "depth_std": 0.051377538591623306,
+        "depth_min": 0.002238637302070856,
+        "depth_max": 0.25405147671699524,
+        "mask_area": 17439
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.7960333824157715,
+      "bounding_box": [
+        194.28475952148438,
+        115.2230453491211,
+        315.9114990234375,
+        179.92715454101562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08330537378787994,
+        "median_depth": 0.07162840664386749,
+        "depth_std": 0.04255354031920433,
+        "depth_min": 0.045986857265233994,
+        "depth_max": 0.5873889327049255,
+        "mask_area": 3403
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3541693687438965,
+      "bounding_box": [
+        235.28997802734375,
+        24.887039184570312,
+        315.97430419921875,
+        106.48066711425781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13761936128139496,
+        "median_depth": 0.1197717934846878,
+        "depth_std": 0.08321917802095413,
+        "depth_min": 0.07850507646799088,
+        "depth_max": 0.6672348976135254,
+        "mask_area": 2137
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "shelf",
+      "confidence": 0.7010684013366699,
+      "bounding_box": [
+        119.67051696777344,
+        25.366981506347656,
+        196.4982452392578,
+        179.84695434570312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2507777512073517,
+        "median_depth": 0.2484872192144394,
+        "depth_std": 0.029741348698735237,
+        "depth_min": 0.19496780633926392,
+        "depth_max": 0.8755664825439453,
+        "mask_area": 9556
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "potted plant",
+      "confidence": 0.8561850190162659,
+      "bounding_box": [
+        149.6375732421875,
+        0.031360626220703125,
+        179.9368896484375,
+        32.048641204833984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26442909240722656,
+        "median_depth": 0.2607629895210266,
+        "depth_std": 0.013212311081588268,
+        "depth_min": 0.24107369780540466,
+        "depth_max": 0.32901662588119507,
+        "mask_area": 618
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "shelf. cup. glass. book. potted plant. sign. robot arm. gripper. table. mug. bottle. cloth. door.",
+  "text_prompt": "shelf. cup. glass. book. potted plant. sign. robot arm. gripper. table. mug. bottle. cloth. door.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "blinds",
+    "cabinet shelf",
+    "faucet",
+    "sink",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: window, faucet, sink, cabinet shelf, blinds",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "blinds",
+        "mean_depth": 0.15823079645633698,
+        "relative_position": "closest",
+        "confidence": 0.5530756711959839
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cabinet shelf",
+        "mean_depth": 0.18955175578594208,
+        "relative_position": "middle",
+        "confidence": 0.4851907789707184
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.4141486585140228,
+        "relative_position": "middle",
+        "confidence": 0.36115795373916626
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.5065970420837402,
+        "relative_position": "middle",
+        "confidence": 0.6056122183799744
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.6495112776756287,
+        "relative_position": "farthest",
+        "confidence": 0.4094344675540924
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.6495112776756287,
+        "relative_position": "farthest",
+        "confidence": 0.4094344675540924
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.5065970420837402,
+        "relative_position": "middle",
+        "confidence": 0.6056122183799744
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.4141486585140228,
+        "relative_position": "middle",
+        "confidence": 0.36115795373916626
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cabinet shelf",
+        "mean_depth": 0.18955175578594208,
+        "relative_position": "middle",
+        "confidence": 0.4851907789707184
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "blinds",
+        "mean_depth": 0.15823079645633698,
+        "relative_position": "closest",
+        "confidence": 0.5530756711959839
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "blinds",
+      "confidence": 0.5530756711959839,
+      "bounding_box": [
+        0.014919281005859375,
+        0.04671478271484375,
+        111.53782653808594,
+        180.04608154296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15823079645633698,
+        "median_depth": 0.14733539521694183,
+        "depth_std": 0.07485926896333694,
+        "depth_min": 0.04096698760986328,
+        "depth_max": 0.3898850083351135,
+        "mask_area": 16854
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet shelf",
+      "confidence": 0.4851907789707184,
+      "bounding_box": [
+        106.59754943847656,
+        0.010999679565429688,
+        186.7865753173828,
+        46.80517578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18955175578594208,
+        "median_depth": 0.1801534742116928,
+        "depth_std": 0.05571804568171501,
+        "depth_min": 0.11481267958879471,
+        "depth_max": 0.5198190212249756,
+        "mask_area": 3119
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "faucet",
+      "confidence": 0.36115795373916626,
+      "bounding_box": [
+        182.8167266845703,
+        79.94529724121094,
+        192.1825408935547,
+        97.04293823242188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4141486585140228,
+        "median_depth": 0.4086570143699646,
+        "depth_std": 0.022993911057710648,
+        "depth_min": 0.38220304250717163,
+        "depth_max": 0.46682146191596985,
+        "mask_area": 94
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.6056122183799744,
+      "bounding_box": [
+        194.53184509277344,
+        83.89208221435547,
+        250.24815368652344,
+        105.40177154541016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5065970420837402,
+        "median_depth": 0.5035774111747742,
+        "depth_std": 0.05025222897529602,
+        "depth_min": 0.4231983423233032,
+        "depth_max": 0.6336676478385925,
+        "mask_area": 585
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "window",
+      "confidence": 0.4094344675540924,
+      "bounding_box": [
+        160.23043823242188,
+        0.033233642578125,
+        233.85321044921875,
+        79.0935287475586
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6495112776756287,
+        "median_depth": 0.633280336856842,
+        "depth_std": 0.1202954575419426,
+        "depth_min": 0.29407283663749695,
+        "depth_max": 0.9229139685630798,
+        "mask_area": 3651
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. sink. faucet. dish rack. plate. kettle. cabinet. shelf. door. window. blinds. cake stand.",
+  "text_prompt": "robot arm. gripper. countertop. sink. faucet. dish rack. plate. kettle. cabinet. shelf. door. window. blinds. cake stand.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "faucet",
+    "window blinds",
+    "sink",
+    "dish rack",
+    "container"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: dish rack, container, faucet, sink, window blinds",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.42362257838249207,
+        "relative_position": "closest",
+        "confidence": 0.393268883228302
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "window blinds",
+        "mean_depth": 0.4659181237220764,
+        "relative_position": "middle",
+        "confidence": 0.6804787516593933
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.4670218825340271,
+        "relative_position": "middle",
+        "confidence": 0.7115504741668701
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "dish rack",
+        "mean_depth": 0.5064377784729004,
+        "relative_position": "middle",
+        "confidence": 0.5197470188140869
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "container",
+        "mean_depth": 0.7889150381088257,
+        "relative_position": "farthest",
+        "confidence": 0.36331963539123535
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "container",
+        "mean_depth": 0.7889150381088257,
+        "relative_position": "farthest",
+        "confidence": 0.36331963539123535
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "dish rack",
+        "mean_depth": 0.5064377784729004,
+        "relative_position": "middle",
+        "confidence": 0.5197470188140869
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.4670218825340271,
+        "relative_position": "middle",
+        "confidence": 0.7115504741668701
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "window blinds",
+        "mean_depth": 0.4659181237220764,
+        "relative_position": "middle",
+        "confidence": 0.6804787516593933
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.42362257838249207,
+        "relative_position": "closest",
+        "confidence": 0.393268883228302
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "faucet",
+      "confidence": 0.393268883228302,
+      "bounding_box": [
+        171.36105346679688,
+        129.86050415039062,
+        205.74761962890625,
+        152.4832763671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.42362257838249207,
+        "median_depth": 0.41565921902656555,
+        "depth_std": 0.04953274503350258,
+        "depth_min": 0.2914246916770935,
+        "depth_max": 0.5230455994606018,
+        "mask_area": 352
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "window blinds",
+      "confidence": 0.6804787516593933,
+      "bounding_box": [
+        157.98788452148438,
+        1.1766090393066406,
+        220.25167846679688,
+        125.45884704589844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4659181237220764,
+        "median_depth": 0.4689645767211914,
+        "depth_std": 0.0871405377984047,
+        "depth_min": 0.2580333650112152,
+        "depth_max": 0.6194558143615723,
+        "mask_area": 5452
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.7115504741668701,
+      "bounding_box": [
+        150.89785766601562,
+        145.44821166992188,
+        271.3569641113281,
+        179.99273681640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4670218825340271,
+        "median_depth": 0.4828421175479889,
+        "depth_std": 0.06246984377503395,
+        "depth_min": 0.23121732473373413,
+        "depth_max": 0.5586552619934082,
+        "mask_area": 2208
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "dish rack",
+      "confidence": 0.5197470188140869,
+      "bounding_box": [
+        217.80914306640625,
+        124.32246398925781,
+        272.6759338378906,
+        161.3437042236328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5064377784729004,
+        "median_depth": 0.48711496591567993,
+        "depth_std": 0.12146253883838654,
+        "depth_min": 0.20415006577968597,
+        "depth_max": 0.905688464641571,
+        "mask_area": 1211
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "container",
+      "confidence": 0.36331963539123535,
+      "bounding_box": [
+        263.0685119628906,
+        124.4802017211914,
+        286.9985656738281,
+        145.36370849609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7889150381088257,
+        "median_depth": 0.7687220573425293,
+        "depth_std": 0.06309185177087784,
+        "depth_min": 0.628279983997345,
+        "depth_max": 0.945525050163269,
+        "mask_area": 277
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cabinet. window. blinds. robot arm. gripper. sink. faucet. countertop. dish rack. container.",
+  "text_prompt": "cabinet. window. blinds. robot arm. gripper. sink. faucet. countertop. dish rack. container.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot",
+    "pillow",
+    "camera mount",
+    "box",
+    "pillow"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: pillow, camera mount, pillow, robot, box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot",
+        "mean_depth": 0.01955043151974678,
+        "relative_position": "closest",
+        "confidence": 0.41263294219970703
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "pillow",
+        "mean_depth": 0.12611812353134155,
+        "relative_position": "middle",
+        "confidence": 0.6048609018325806
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "camera mount",
+        "mean_depth": 0.25579091906547546,
+        "relative_position": "middle",
+        "confidence": 0.559002697467804
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.2969326972961426,
+        "relative_position": "middle",
+        "confidence": 0.646121084690094
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "pillow",
+        "mean_depth": 0.5892369747161865,
+        "relative_position": "farthest",
+        "confidence": 0.4793808162212372
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "pillow",
+        "mean_depth": 0.5892369747161865,
+        "relative_position": "farthest",
+        "confidence": 0.4793808162212372
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.2969326972961426,
+        "relative_position": "middle",
+        "confidence": 0.646121084690094
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "camera mount",
+        "mean_depth": 0.25579091906547546,
+        "relative_position": "middle",
+        "confidence": 0.559002697467804
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "pillow",
+        "mean_depth": 0.12611812353134155,
+        "relative_position": "middle",
+        "confidence": 0.6048609018325806
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot",
+        "mean_depth": 0.01955043151974678,
+        "relative_position": "closest",
+        "confidence": 0.41263294219970703
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot",
+      "confidence": 0.41263294219970703,
+      "bounding_box": [
+        277.63543701171875,
+        88.39552307128906,
+        315.9801025390625,
+        179.9460906982422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01955043151974678,
+        "median_depth": 0.0,
+        "depth_std": 0.057742271572351456,
+        "depth_min": 0.0,
+        "depth_max": 0.36548104882240295,
+        "mask_area": 1842
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "pillow",
+      "confidence": 0.6048609018325806,
+      "bounding_box": [
+        -0.020847320556640625,
+        118.76460266113281,
+        71.82293701171875,
+        179.9994659423828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12611812353134155,
+        "median_depth": 0.12416059523820877,
+        "depth_std": 0.01458013616502285,
+        "depth_min": 0.1012127622961998,
+        "depth_max": 0.17577365040779114,
+        "mask_area": 3575
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "camera mount",
+      "confidence": 0.559002697467804,
+      "bounding_box": [
+        191.08245849609375,
+        0.03391265869140625,
+        245.09112548828125,
+        45.05369186401367
+      ],
+      "depth_stats": {
+        "mean_depth": 0.25579091906547546,
+        "median_depth": 0.19575566053390503,
+        "depth_std": 0.1318182796239853,
+        "depth_min": 0.12199794501066208,
+        "depth_max": 0.716729462146759,
+        "mask_area": 1178
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "box",
+      "confidence": 0.646121084690094,
+      "bounding_box": [
+        238.39454650878906,
+        132.31051635742188,
+        280.4383850097656,
+        176.287841796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2969326972961426,
+        "median_depth": 0.291201651096344,
+        "depth_std": 0.037376776337623596,
+        "depth_min": 0.22811491787433624,
+        "depth_max": 0.5192192196846008,
+        "mask_area": 1152
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "pillow",
+      "confidence": 0.4793808162212372,
+      "bounding_box": [
+        0.012302398681640625,
+        79.37543487548828,
+        33.84840393066406,
+        105.4127426147461
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5892369747161865,
+        "median_depth": 0.5792742967605591,
+        "depth_std": 0.046764302998781204,
+        "depth_min": 0.4524524509906769,
+        "depth_max": 0.7563788294792175,
+        "mask_area": 721
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sofa. pillow. bed. blanket. monitor. camera. camera mount. robot. door. box.",
+  "text_prompt": "sofa. pillow. bed. blanket. monitor. camera. camera mount. robot. door. box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

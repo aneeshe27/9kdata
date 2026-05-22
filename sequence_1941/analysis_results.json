@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_1207678/temp_image_5131.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_5131.jpg"
+  },
+  "correct_ordering": [
+    "sink",
+    "faucet",
+    "chair",
+    "cutting board",
+    "table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, cutting board, sink, chair, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.0555080845952034,
+        "relative_position": "closest",
+        "confidence": 0.4181827902793884
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.07178592681884766,
+        "relative_position": "middle",
+        "confidence": 0.5516641139984131
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.138418048620224,
+        "relative_position": "middle",
+        "confidence": 0.5705704092979431
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cutting board",
+        "mean_depth": 0.14864738285541534,
+        "relative_position": "middle",
+        "confidence": 0.5095773339271545
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.37482672929763794,
+        "relative_position": "farthest",
+        "confidence": 0.37628206610679626
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.37482672929763794,
+        "relative_position": "farthest",
+        "confidence": 0.37628206610679626
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cutting board",
+        "mean_depth": 0.14864738285541534,
+        "relative_position": "middle",
+        "confidence": 0.5095773339271545
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.138418048620224,
+        "relative_position": "middle",
+        "confidence": 0.5705704092979431
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.07178592681884766,
+        "relative_position": "middle",
+        "confidence": 0.5516641139984131
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.0555080845952034,
+        "relative_position": "closest",
+        "confidence": 0.4181827902793884
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "sink",
+      "confidence": 0.4181827902793884,
+      "bounding_box": [
+        195.0049591064453,
+        80.21046447753906,
+        300.80859375,
+        138.1143035888672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0555080845952034,
+        "median_depth": 0.05043431371450424,
+        "depth_std": 0.01952938735485077,
+        "depth_min": 0.027832766994833946,
+        "depth_max": 0.09940037876367569,
+        "mask_area": 1800
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.5516641139984131,
+      "bounding_box": [
+        213.05938720703125,
+        40.819297790527344,
+        262.7239990234375,
+        106.17829132080078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07178592681884766,
+        "median_depth": 0.057769935578107834,
+        "depth_std": 0.06256123632192612,
+        "depth_min": 0.045301858335733414,
+        "depth_max": 0.6511238217353821,
+        "mask_area": 1061
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.5705704092979431,
+      "bounding_box": [
+        64.24484252929688,
+        1.5957489013671875,
+        136.3857879638672,
+        93.01913452148438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.138418048620224,
+        "median_depth": 0.1271909922361374,
+        "depth_std": 0.03764178231358528,
+        "depth_min": 0.11158690601587296,
+        "depth_max": 0.4735775887966156,
+        "mask_area": 3549
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cutting board",
+      "confidence": 0.5095773339271545,
+      "bounding_box": [
+        129.5863037109375,
+        63.39497756958008,
+        199.6805419921875,
+        109.883056640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14864738285541534,
+        "median_depth": 0.13550499081611633,
+        "depth_std": 0.0791156217455864,
+        "depth_min": 0.09255477786064148,
+        "depth_max": 0.6165531873703003,
+        "mask_area": 1126
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.37628206610679626,
+      "bounding_box": [
+        266.7879943847656,
+        14.092342376708984,
+        315.9327087402344,
+        51.85868453979492
+      ],
+      "depth_stats": {
+        "mean_depth": 0.37482672929763794,
+        "median_depth": 0.3615836203098297,
+        "depth_std": 0.0675981342792511,
+        "depth_min": 0.2975524365901947,
+        "depth_max": 0.8697955012321472,
+        "mask_area": 1158
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. chair. clamp. cable. table. sink. faucet. countertop. cutting board. drawer. cabinet. tray. blocks.",
+  "text_prompt": "robot arm. gripper. chair. clamp. cable. table. sink. faucet. countertop. cutting board. drawer. cabinet. tray. blocks.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

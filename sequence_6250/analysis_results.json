@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "countertop table",
+    "sink",
+    "faucet",
+    "chair",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: door, faucet, countertop table, chair, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "countertop table",
+        "mean_depth": 0.024836182594299316,
+        "relative_position": "closest",
+        "confidence": 0.5345821976661682
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.10460338741540909,
+        "relative_position": "middle",
+        "confidence": 0.6965100169181824
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.16998803615570068,
+        "relative_position": "middle",
+        "confidence": 0.7552714347839355
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.22809113562107086,
+        "relative_position": "middle",
+        "confidence": 0.43439188599586487
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.32291296124458313,
+        "relative_position": "farthest",
+        "confidence": 0.38496264815330505
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.32291296124458313,
+        "relative_position": "farthest",
+        "confidence": 0.38496264815330505
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.22809113562107086,
+        "relative_position": "middle",
+        "confidence": 0.43439188599586487
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.16998803615570068,
+        "relative_position": "middle",
+        "confidence": 0.7552714347839355
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.10460338741540909,
+        "relative_position": "middle",
+        "confidence": 0.6965100169181824
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "countertop table",
+        "mean_depth": 0.024836182594299316,
+        "relative_position": "closest",
+        "confidence": 0.5345821976661682
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "countertop table",
+      "confidence": 0.5345821976661682,
+      "bounding_box": [
+        0.12392425537109375,
+        128.61227416992188,
+        216.05593872070312,
+        179.94479370117188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.024836182594299316,
+        "median_depth": 0.020673586055636406,
+        "depth_std": 0.015108715742826462,
+        "depth_min": 0.004664190113544464,
+        "depth_max": 0.13040560483932495,
+        "mask_area": 8111
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.6965100169181824,
+      "bounding_box": [
+        130.47866821289062,
+        115.22706604003906,
+        199.54177856445312,
+        138.7555694580078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10460338741540909,
+        "median_depth": 0.10628994554281235,
+        "depth_std": 0.01175727229565382,
+        "depth_min": 0.07355815917253494,
+        "depth_max": 0.13578355312347412,
+        "mask_area": 1147
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.7552714347839355,
+      "bounding_box": [
+        163.1114501953125,
+        104.14436340332031,
+        175.30545043945312,
+        117.16592407226562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16998803615570068,
+        "median_depth": 0.15902379155158997,
+        "depth_std": 0.03153708949685097,
+        "depth_min": 0.1345319002866745,
+        "depth_max": 0.25736087560653687,
+        "mask_area": 76
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.43439188599586487,
+      "bounding_box": [
+        198.39761352539062,
+        103.26498413085938,
+        238.8433837890625,
+        170.27297973632812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22809113562107086,
+        "median_depth": 0.20843981206417084,
+        "depth_std": 0.06946591287851334,
+        "depth_min": 0.1159338429570198,
+        "depth_max": 0.6174228191375732,
+        "mask_area": 901
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "door",
+      "confidence": 0.38496264815330505,
+      "bounding_box": [
+        87.37975311279297,
+        1.9861259460449219,
+        120.78182220458984,
+        101.41624450683594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.32291296124458313,
+        "median_depth": 0.3253820538520813,
+        "depth_std": 0.05224313959479332,
+        "depth_min": 0.20065219700336456,
+        "depth_max": 0.4103936553001404,
+        "mask_area": 1923
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. countertop. table. dish rack. sponge. chair. door.",
+  "text_prompt": "robot arm. gripper. sink. faucet. countertop. table. dish rack. sponge. chair. door.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "robot arm",
+    "camera",
+    "block",
+    "tripod"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: tripod, camera, robot arm, cloth, block",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cloth",
+        "mean_depth": 0.01515831146389246,
+        "relative_position": "closest",
+        "confidence": 0.5612308979034424
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.05499756708741188,
+        "relative_position": "middle",
+        "confidence": 0.3906934857368469
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "camera",
+        "mean_depth": 0.06831181794404984,
+        "relative_position": "middle",
+        "confidence": 0.692148745059967
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "block",
+        "mean_depth": 0.09407155215740204,
+        "relative_position": "middle",
+        "confidence": 0.36936673521995544
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "tripod",
+        "mean_depth": 0.23994027078151703,
+        "relative_position": "farthest",
+        "confidence": 0.6668421626091003
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "tripod",
+        "mean_depth": 0.23994027078151703,
+        "relative_position": "farthest",
+        "confidence": 0.6668421626091003
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "block",
+        "mean_depth": 0.09407155215740204,
+        "relative_position": "middle",
+        "confidence": 0.36936673521995544
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "camera",
+        "mean_depth": 0.06831181794404984,
+        "relative_position": "middle",
+        "confidence": 0.692148745059967
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.05499756708741188,
+        "relative_position": "middle",
+        "confidence": 0.3906934857368469
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cloth",
+        "mean_depth": 0.01515831146389246,
+        "relative_position": "closest",
+        "confidence": 0.5612308979034424
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "cloth",
+      "confidence": 0.5612308979034424,
+      "bounding_box": [
+        192.51036071777344,
+        123.5689468383789,
+        238.24571228027344,
+        164.29209899902344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01515831146389246,
+        "median_depth": 0.01256437785923481,
+        "depth_std": 0.009228735230863094,
+        "depth_min": 0.004643948283046484,
+        "depth_max": 0.040835846215486526,
+        "mask_area": 1006
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3906934857368469,
+      "bounding_box": [
+        221.20175170898438,
+        7.391693115234375,
+        315.8337097167969,
+        86.73312377929688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05499756708741188,
+        "median_depth": 0.018219472840428352,
+        "depth_std": 0.09302252531051636,
+        "depth_min": 0.007993023842573166,
+        "depth_max": 0.6393502354621887,
+        "mask_area": 2107
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "camera",
+      "confidence": 0.692148745059967,
+      "bounding_box": [
+        213.29656982421875,
+        86.42749786376953,
+        234.32940673828125,
+        113.84761810302734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06831181794404984,
+        "median_depth": 0.06264430284500122,
+        "depth_std": 0.024068184196949005,
+        "depth_min": 0.04709773138165474,
+        "depth_max": 0.2351793348789215,
+        "mask_area": 309
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "block",
+      "confidence": 0.36936673521995544,
+      "bounding_box": [
+        131.10134887695312,
+        83.03697967529297,
+        159.3536376953125,
+        100.82494354248047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09407155215740204,
+        "median_depth": 0.09112470597028732,
+        "depth_std": 0.022905612364411354,
+        "depth_min": 0.06707435846328735,
+        "depth_max": 0.3166077435016632,
+        "mask_area": 329
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "tripod",
+      "confidence": 0.6668421626091003,
+      "bounding_box": [
+        48.56755828857422,
+        41.89264678955078,
+        106.08904266357422,
+        141.04409790039062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23994027078151703,
+        "median_depth": 0.2253638505935669,
+        "depth_std": 0.08446228504180908,
+        "depth_min": 0.13674205541610718,
+        "depth_max": 0.661294162273407,
+        "mask_area": 613
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. tripod. camera. container. block. cylinder. mat. cloth. workbench.",
+  "text_prompt": "table. robot arm. gripper. tripod. camera. container. block. cylinder. mat. cloth. workbench.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

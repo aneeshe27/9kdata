@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "bottle",
+    "glass",
+    "chair",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, glass, bottle, window, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.01726614683866501,
+        "relative_position": "closest",
+        "confidence": 0.5506168603897095
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "bottle",
+        "mean_depth": 0.15478940308094025,
+        "relative_position": "middle",
+        "confidence": 0.6811336874961853
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "glass",
+        "mean_depth": 0.2997815012931824,
+        "relative_position": "middle",
+        "confidence": 0.6103686690330505
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.5695620775222778,
+        "relative_position": "middle",
+        "confidence": 0.45875346660614014
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "window",
+        "mean_depth": 0.6852328181266785,
+        "relative_position": "farthest",
+        "confidence": 0.4113307297229767
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "window",
+        "mean_depth": 0.6852328181266785,
+        "relative_position": "farthest",
+        "confidence": 0.4113307297229767
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.5695620775222778,
+        "relative_position": "middle",
+        "confidence": 0.45875346660614014
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "glass",
+        "mean_depth": 0.2997815012931824,
+        "relative_position": "middle",
+        "confidence": 0.6103686690330505
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "bottle",
+        "mean_depth": 0.15478940308094025,
+        "relative_position": "middle",
+        "confidence": 0.6811336874961853
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.01726614683866501,
+        "relative_position": "closest",
+        "confidence": 0.5506168603897095
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.5506168603897095,
+      "bounding_box": [
+        0.1418914794921875,
+        0.01183319091796875,
+        156.36033630371094,
+        171.06698608398438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01726614683866501,
+        "median_depth": 0.006109208799898624,
+        "depth_std": 0.04969654604792595,
+        "depth_min": 0.0,
+        "depth_max": 0.6301147937774658,
+        "mask_area": 9126
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "bottle",
+      "confidence": 0.6811336874961853,
+      "bounding_box": [
+        177.03956604003906,
+        106.18016052246094,
+        189.05760192871094,
+        137.7527313232422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15478940308094025,
+        "median_depth": 0.17671003937721252,
+        "depth_std": 0.05624210089445114,
+        "depth_min": 0.06431176513433456,
+        "depth_max": 0.26988258957862854,
+        "mask_area": 260
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "glass",
+      "confidence": 0.6103686690330505,
+      "bounding_box": [
+        218.0359344482422,
+        109.76665496826172,
+        235.47779846191406,
+        133.52456665039062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2997815012931824,
+        "median_depth": 0.29470282793045044,
+        "depth_std": 0.018743207678198814,
+        "depth_min": 0.28546199202537537,
+        "depth_max": 0.46940383315086365,
+        "mask_area": 269
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.45875346660614014,
+      "bounding_box": [
+        240.9498748779297,
+        84.12127685546875,
+        309.04815673828125,
+        167.57736206054688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5695620775222778,
+        "median_depth": 0.5314125418663025,
+        "depth_std": 0.14025914669036865,
+        "depth_min": 0.3628654479980469,
+        "depth_max": 0.883395791053772,
+        "mask_area": 1579
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "window",
+      "confidence": 0.4113307297229767,
+      "bounding_box": [
+        138.40359497070312,
+        0.001148223876953125,
+        279.8609619140625,
+        79.85664367675781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6852328181266785,
+        "median_depth": 0.6885820031166077,
+        "depth_std": 0.08026452362537384,
+        "depth_min": 0.055342841893434525,
+        "depth_max": 0.8374307155609131,
+        "mask_area": 7545
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. towel. bottle. glass. chair. basket. window. countertop. exercise bike. camera.",
+  "text_prompt": "robot arm. gripper. table. towel. bottle. glass. chair. basket. window. countertop. exercise bike. camera.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

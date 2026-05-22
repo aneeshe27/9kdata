@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "keyboard",
+    "linear rail",
+    "robot arm",
+    "table",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: keyboard, table, robot arm, linear rail, window",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "keyboard",
+        "mean_depth": 0.04619675502181053,
+        "relative_position": "closest",
+        "confidence": 0.7135218381881714
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "linear rail",
+        "mean_depth": 0.06602031737565994,
+        "relative_position": "middle",
+        "confidence": 0.39740946888923645
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.06859569996595383,
+        "relative_position": "middle",
+        "confidence": 0.36742573976516724
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.0981648713350296,
+        "relative_position": "middle",
+        "confidence": 0.541853666305542
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.880405604839325,
+        "relative_position": "farthest",
+        "confidence": 0.4188807010650635
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.880405604839325,
+        "relative_position": "farthest",
+        "confidence": 0.4188807010650635
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.0981648713350296,
+        "relative_position": "middle",
+        "confidence": 0.541853666305542
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.06859569996595383,
+        "relative_position": "middle",
+        "confidence": 0.36742573976516724
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "linear rail",
+        "mean_depth": 0.06602031737565994,
+        "relative_position": "middle",
+        "confidence": 0.39740946888923645
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "keyboard",
+        "mean_depth": 0.04619675502181053,
+        "relative_position": "closest",
+        "confidence": 0.7135218381881714
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "keyboard",
+      "confidence": 0.7135218381881714,
+      "bounding_box": [
+        0.04132080078125,
+        71.36256408691406,
+        82.42332458496094,
+        173.248779296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04619675502181053,
+        "median_depth": 0.036475200206041336,
+        "depth_std": 0.03347916901111603,
+        "depth_min": 0.009665168821811676,
+        "depth_max": 0.16751272976398468,
+        "mask_area": 5461
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "linear rail",
+      "confidence": 0.39740946888923645,
+      "bounding_box": [
+        214.57916259765625,
+        82.24613952636719,
+        315.95684814453125,
+        179.78077697753906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06602031737565994,
+        "median_depth": 0.05745803937315941,
+        "depth_std": 0.021241217851638794,
+        "depth_min": 0.04889272153377533,
+        "depth_max": 0.15588977932929993,
+        "mask_area": 5101
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.36742573976516724,
+      "bounding_box": [
+        194.1431427001953,
+        0.091552734375,
+        315.8282470703125,
+        119.72145080566406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06859569996595383,
+        "median_depth": 0.06751425564289093,
+        "depth_std": 0.02881554886698723,
+        "depth_min": 0.02703091688454151,
+        "depth_max": 0.3803967535495758,
+        "mask_area": 8149
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.541853666305542,
+      "bounding_box": [
+        75.5617446899414,
+        88.02401733398438,
+        225.745361328125,
+        179.90817260742188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0981648713350296,
+        "median_depth": 0.09099092334508896,
+        "depth_std": 0.03266840800642967,
+        "depth_min": 0.04778030142188072,
+        "depth_max": 0.2027573436498642,
+        "mask_area": 8579
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "window",
+      "confidence": 0.4188807010650635,
+      "bounding_box": [
+        150.86158752441406,
+        7.103084564208984,
+        219.3313751220703,
+        46.504634857177734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.880405604839325,
+        "median_depth": 0.885443389415741,
+        "depth_std": 0.045640893280506134,
+        "depth_min": 0.38755741715431213,
+        "depth_max": 0.9388107061386108,
+        "mask_area": 1662
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. linear rail. keyboard. cup. container. ruler. table. cable. camera. window.",
+  "text_prompt": "robot arm. gripper. linear rail. keyboard. cup. container. ruler. table. cable. camera. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

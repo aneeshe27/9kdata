@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "pitcher",
+    "table shelving unit",
+    "camera",
+    "tripod"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table shelving unit, tripod, pitcher, camera, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.05653157830238342,
+        "relative_position": "closest",
+        "confidence": 0.63823002576828
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "pitcher",
+        "mean_depth": 0.08875562995672226,
+        "relative_position": "middle",
+        "confidence": 0.725269079208374
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "table shelving unit",
+        "mean_depth": 0.26629799604415894,
+        "relative_position": "middle",
+        "confidence": 0.47198817133903503
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.33206719160079956,
+        "relative_position": "middle",
+        "confidence": 0.4263197183609009
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "tripod",
+        "mean_depth": 0.6154691576957703,
+        "relative_position": "farthest",
+        "confidence": 0.3845821022987366
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "tripod",
+        "mean_depth": 0.6154691576957703,
+        "relative_position": "farthest",
+        "confidence": 0.3845821022987366
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.33206719160079956,
+        "relative_position": "middle",
+        "confidence": 0.4263197183609009
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "table shelving unit",
+        "mean_depth": 0.26629799604415894,
+        "relative_position": "middle",
+        "confidence": 0.47198817133903503
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "pitcher",
+        "mean_depth": 0.08875562995672226,
+        "relative_position": "middle",
+        "confidence": 0.725269079208374
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.05653157830238342,
+        "relative_position": "closest",
+        "confidence": 0.63823002576828
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.63823002576828,
+      "bounding_box": [
+        24.832427978515625,
+        127.66188049316406,
+        240.00552368164062,
+        179.86399841308594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05653157830238342,
+        "median_depth": 0.03383714705705643,
+        "depth_std": 0.09664064645767212,
+        "depth_min": 0.0,
+        "depth_max": 0.824008047580719,
+        "mask_area": 5266
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "pitcher",
+      "confidence": 0.725269079208374,
+      "bounding_box": [
+        259.432861328125,
+        143.43792724609375,
+        315.23602294921875,
+        179.87600708007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08875562995672226,
+        "median_depth": 0.02724592015147209,
+        "depth_std": 0.15340307354927063,
+        "depth_min": 0.013395527377724648,
+        "depth_max": 0.7335836291313171,
+        "mask_area": 1509
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table shelving unit",
+      "confidence": 0.47198817133903503,
+      "bounding_box": [
+        0.07088088989257812,
+        60.13832473754883,
+        100.54087829589844,
+        150.66558837890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26629799604415894,
+        "median_depth": 0.27240389585494995,
+        "depth_std": 0.04990265890955925,
+        "depth_min": 0.16548483073711395,
+        "depth_max": 0.4545486271381378,
+        "mask_area": 1320
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "camera",
+      "confidence": 0.4263197183609009,
+      "bounding_box": [
+        98.22415161132812,
+        40.26752853393555,
+        108.56283569335938,
+        49.76614761352539
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33206719160079956,
+        "median_depth": 0.31244879961013794,
+        "depth_std": 0.04408422112464905,
+        "depth_min": 0.2865966260433197,
+        "depth_max": 0.46807917952537537,
+        "mask_area": 56
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "tripod",
+      "confidence": 0.3845821022987366,
+      "bounding_box": [
+        155.5167236328125,
+        99.67212677001953,
+        175.20138549804688,
+        136.4542999267578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6154691576957703,
+        "median_depth": 0.7824621200561523,
+        "depth_std": 0.3362728953361511,
+        "depth_min": 0.054524194449186325,
+        "depth_max": 0.9504370093345642,
+        "mask_area": 264
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. tripod. robot arm. computer monitor. box. chair. pitcher. shelving unit. camera. boom arm.",
+  "text_prompt": "table. tripod. robot arm. computer monitor. box. chair. pitcher. shelving unit. camera. boom arm.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

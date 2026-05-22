@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "chair",
+    "keyboard",
+    "lamp",
+    "tissue box",
+    "tissue box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: keyboard, tissue box, tissue box, lamp, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.09514930844306946,
+        "relative_position": "closest",
+        "confidence": 0.648612916469574
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "keyboard",
+        "mean_depth": 0.3639075458049774,
+        "relative_position": "middle",
+        "confidence": 0.9129696488380432
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "lamp",
+        "mean_depth": 0.5225312113761902,
+        "relative_position": "middle",
+        "confidence": 0.790255069732666
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "tissue box",
+        "mean_depth": 0.6186421513557434,
+        "relative_position": "middle",
+        "confidence": 0.597513735294342
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "tissue box",
+        "mean_depth": 0.714389979839325,
+        "relative_position": "farthest",
+        "confidence": 0.4214378297328949
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "tissue box",
+        "mean_depth": 0.714389979839325,
+        "relative_position": "farthest",
+        "confidence": 0.4214378297328949
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "tissue box",
+        "mean_depth": 0.6186421513557434,
+        "relative_position": "middle",
+        "confidence": 0.597513735294342
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "lamp",
+        "mean_depth": 0.5225312113761902,
+        "relative_position": "middle",
+        "confidence": 0.790255069732666
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "keyboard",
+        "mean_depth": 0.3639075458049774,
+        "relative_position": "middle",
+        "confidence": 0.9129696488380432
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.09514930844306946,
+        "relative_position": "closest",
+        "confidence": 0.648612916469574
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.648612916469574,
+      "bounding_box": [
+        3.2434921264648438,
+        82.9014892578125,
+        193.16702270507812,
+        180.00265502929688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09514930844306946,
+        "median_depth": 0.05324935168027878,
+        "depth_std": 0.11451325565576553,
+        "depth_min": 0.0,
+        "depth_max": 0.5762250423431396,
+        "mask_area": 6156
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "keyboard",
+      "confidence": 0.9129696488380432,
+      "bounding_box": [
+        172.97552490234375,
+        87.3543701171875,
+        221.09613037109375,
+        132.7932586669922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3639075458049774,
+        "median_depth": 0.3517523407936096,
+        "depth_std": 0.07461415976285934,
+        "depth_min": 0.24744103848934174,
+        "depth_max": 0.5918200016021729,
+        "mask_area": 1121
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "lamp",
+      "confidence": 0.790255069732666,
+      "bounding_box": [
+        65.35859680175781,
+        36.819541931152344,
+        103.05668640136719,
+        97.4749984741211
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5225312113761902,
+        "median_depth": 0.48738572001457214,
+        "depth_std": 0.07444833219051361,
+        "depth_min": 0.46901634335517883,
+        "depth_max": 0.8902265429496765,
+        "mask_area": 1239
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "tissue box",
+      "confidence": 0.597513735294342,
+      "bounding_box": [
+        229.7685089111328,
+        58.60443878173828,
+        251.60914611816406,
+        86.7939682006836
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6186421513557434,
+        "median_depth": 0.6088712215423584,
+        "depth_std": 0.03059687279164791,
+        "depth_min": 0.5871478319168091,
+        "depth_max": 0.7399114966392517,
+        "mask_area": 419
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "tissue box",
+      "confidence": 0.4214378297328949,
+      "bounding_box": [
+        178.37741088867188,
+        53.1346321105957,
+        193.73471069335938,
+        80.40447998046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.714389979839325,
+        "median_depth": 0.7048762440681458,
+        "depth_std": 0.026273569092154503,
+        "depth_min": 0.6907594203948975,
+        "depth_max": 0.8056983351707458,
+        "mask_area": 298
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. keyboard. lamp. chair. tissue box. camera. mounting arm. trash can. window blinds.",
+  "text_prompt": "table. keyboard. lamp. chair. tissue box. camera. mounting arm. trash can. window blinds.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

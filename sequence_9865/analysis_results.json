@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "faucet",
+    "sink",
+    "plastic bag",
+    "plate bowl",
+    "plate"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: plate bowl, sink, plastic bag, plate, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.5060232281684875,
+        "relative_position": "closest",
+        "confidence": 0.8869916200637817
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.5080111622810364,
+        "relative_position": "middle",
+        "confidence": 0.6478772163391113
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "plastic bag",
+        "mean_depth": 0.6436577439308167,
+        "relative_position": "middle",
+        "confidence": 0.6337454319000244
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "plate bowl",
+        "mean_depth": 0.7947957515716553,
+        "relative_position": "middle",
+        "confidence": 0.4056532084941864
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "plate",
+        "mean_depth": 0.9583667516708374,
+        "relative_position": "farthest",
+        "confidence": 0.5974336862564087
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "plate",
+        "mean_depth": 0.9583667516708374,
+        "relative_position": "farthest",
+        "confidence": 0.5974336862564087
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "plate bowl",
+        "mean_depth": 0.7947957515716553,
+        "relative_position": "middle",
+        "confidence": 0.4056532084941864
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "plastic bag",
+        "mean_depth": 0.6436577439308167,
+        "relative_position": "middle",
+        "confidence": 0.6337454319000244
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.5080111622810364,
+        "relative_position": "middle",
+        "confidence": 0.6478772163391113
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.5060232281684875,
+        "relative_position": "closest",
+        "confidence": 0.8869916200637817
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.8869916200637817,
+      "bounding_box": [
+        225.26722717285156,
+        76.37374114990234,
+        257.61578369140625,
+        136.05459594726562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5060232281684875,
+        "median_depth": 0.5076045393943787,
+        "depth_std": 0.021761193871498108,
+        "depth_min": 0.46545857191085815,
+        "depth_max": 0.5549992322921753,
+        "mask_area": 938
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.6478772163391113,
+      "bounding_box": [
+        151.71160888671875,
+        113.3493881225586,
+        285.5766906738281,
+        180.02166748046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5080111622810364,
+        "median_depth": 0.5066558718681335,
+        "depth_std": 0.06593156605958939,
+        "depth_min": 0.34127160906791687,
+        "depth_max": 0.6508001685142517,
+        "mask_area": 5107
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plastic bag",
+      "confidence": 0.6337454319000244,
+      "bounding_box": [
+        108.66973114013672,
+        96.0141372680664,
+        165.8241729736328,
+        131.65972900390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6436577439308167,
+        "median_depth": 0.6365990042686462,
+        "depth_std": 0.05246131867170334,
+        "depth_min": 0.5428674221038818,
+        "depth_max": 0.7780340313911438,
+        "mask_area": 1257
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "plate bowl",
+      "confidence": 0.4056532084941864,
+      "bounding_box": [
+        107.51139831542969,
+        88.2413101196289,
+        135.374755859375,
+        104.41204071044922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7947957515716553,
+        "median_depth": 0.7894348502159119,
+        "depth_std": 0.033628202974796295,
+        "depth_min": 0.7397239208221436,
+        "depth_max": 0.8850537538528442,
+        "mask_area": 347
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "plate",
+      "confidence": 0.5974336862564087,
+      "bounding_box": [
+        134.3560333251953,
+        30.184690475463867,
+        161.7020721435547,
+        61.95466613769531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9583667516708374,
+        "median_depth": 0.9608566761016846,
+        "depth_std": 0.01567983254790306,
+        "depth_min": 0.881414532661438,
+        "depth_max": 0.9819200038909912,
+        "mask_area": 535
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. cabinet. countertop. sink. faucet. dish rack. shelf. plate. bowl. mug. glass. bottle. sponge. plastic bag. utensil.",
+  "text_prompt": "robot arm. cabinet. countertop. sink. faucet. dish rack. shelf. plate. bowl. mug. glass. bottle. sponge. plastic bag. utensil.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

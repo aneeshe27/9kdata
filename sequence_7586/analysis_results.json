@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cabinet",
+    "apple",
+    "lemon",
+    "fire extinguisher"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, robot arm, lemon, apple, fire extinguisher",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.08785629272460938,
+        "relative_position": "closest",
+        "confidence": 0.3889279365539551
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.29401513934135437,
+        "relative_position": "middle",
+        "confidence": 0.3544676899909973
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "apple",
+        "mean_depth": 0.2945757508277893,
+        "relative_position": "middle",
+        "confidence": 0.4902832508087158
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "lemon",
+        "mean_depth": 0.45739004015922546,
+        "relative_position": "middle",
+        "confidence": 0.38835224509239197
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "fire extinguisher",
+        "mean_depth": 0.6048803329467773,
+        "relative_position": "farthest",
+        "confidence": 0.9300958514213562
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "fire extinguisher",
+        "mean_depth": 0.6048803329467773,
+        "relative_position": "farthest",
+        "confidence": 0.9300958514213562
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "lemon",
+        "mean_depth": 0.45739004015922546,
+        "relative_position": "middle",
+        "confidence": 0.38835224509239197
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "apple",
+        "mean_depth": 0.2945757508277893,
+        "relative_position": "middle",
+        "confidence": 0.4902832508087158
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.29401513934135437,
+        "relative_position": "middle",
+        "confidence": 0.3544676899909973
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.08785629272460938,
+        "relative_position": "closest",
+        "confidence": 0.3889279365539551
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.3889279365539551,
+      "bounding_box": [
+        200.7836151123047,
+        27.711517333984375,
+        270.5762634277344,
+        145.5364990234375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08785629272460938,
+        "median_depth": 0.057321928441524506,
+        "depth_std": 0.07895823568105698,
+        "depth_min": 0.03965936601161957,
+        "depth_max": 0.9799922108650208,
+        "mask_area": 4137
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3544676899909973,
+      "bounding_box": [
+        3.8818588256835938,
+        0.02884674072265625,
+        140.34326171875,
+        115.02488708496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29401513934135437,
+        "median_depth": 0.2822314202785492,
+        "depth_std": 0.09233790636062622,
+        "depth_min": 0.046330325305461884,
+        "depth_max": 0.6550106406211853,
+        "mask_area": 6202
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "apple",
+      "confidence": 0.4902832508087158,
+      "bounding_box": [
+        252.47381591796875,
+        145.65289306640625,
+        272.49749755859375,
+        168.7528076171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2945757508277893,
+        "median_depth": 0.27811068296432495,
+        "depth_std": 0.037433408200740814,
+        "depth_min": 0.25958091020584106,
+        "depth_max": 0.40204277634620667,
+        "mask_area": 360
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "lemon",
+      "confidence": 0.38835224509239197,
+      "bounding_box": [
+        115.11017608642578,
+        162.04525756835938,
+        126.76761627197266,
+        172.89266967773438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.45739004015922546,
+        "median_depth": 0.4678927958011627,
+        "depth_std": 0.029703903943300247,
+        "depth_min": 0.4053862392902374,
+        "depth_max": 0.4924484193325043,
+        "mask_area": 94
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "fire extinguisher",
+      "confidence": 0.9300958514213562,
+      "bounding_box": [
+        115.48136138916016,
+        102.46696472167969,
+        148.05978393554688,
+        150.58779907226562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6048803329467773,
+        "median_depth": 0.6036598682403564,
+        "depth_std": 0.015735352411866188,
+        "depth_min": 0.5678727626800537,
+        "depth_max": 0.6598036289215088,
+        "mask_area": 628
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. fire extinguisher. cabinet. countertop. sink. faucet. plate. oven mitt. apple. lemon. drawer. tray.",
+  "text_prompt": "robot arm. gripper. fire extinguisher. cabinet. countertop. sink. faucet. plate. oven mitt. apple. lemon. drawer. tray.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

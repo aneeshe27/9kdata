@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "refrigerator",
+    "spatula",
+    "stove",
+    "range hood",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: spatula, range hood, stove, refrigerator, cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.06465673446655273,
+        "relative_position": "closest",
+        "confidence": 0.767972469329834
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "spatula",
+        "mean_depth": 0.35027289390563965,
+        "relative_position": "middle",
+        "confidence": 0.4513999819755554
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "stove",
+        "mean_depth": 0.5389715433120728,
+        "relative_position": "middle",
+        "confidence": 0.37179556488990784
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "range hood",
+        "mean_depth": 0.6978290677070618,
+        "relative_position": "middle",
+        "confidence": 0.6109169125556946
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.7055434584617615,
+        "relative_position": "farthest",
+        "confidence": 0.6113186478614807
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.7055434584617615,
+        "relative_position": "farthest",
+        "confidence": 0.6113186478614807
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "range hood",
+        "mean_depth": 0.6978290677070618,
+        "relative_position": "middle",
+        "confidence": 0.6109169125556946
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "stove",
+        "mean_depth": 0.5389715433120728,
+        "relative_position": "middle",
+        "confidence": 0.37179556488990784
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "spatula",
+        "mean_depth": 0.35027289390563965,
+        "relative_position": "middle",
+        "confidence": 0.4513999819755554
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.06465673446655273,
+        "relative_position": "closest",
+        "confidence": 0.767972469329834
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "refrigerator",
+      "confidence": 0.767972469329834,
+      "bounding_box": [
+        0.09404754638671875,
+        0.0318756103515625,
+        149.65625,
+        180.0316619873047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06465673446655273,
+        "median_depth": 0.043240174651145935,
+        "depth_std": 0.05296817049384117,
+        "depth_min": 0.0016519876662641764,
+        "depth_max": 0.17745262384414673,
+        "mask_area": 26380
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "spatula",
+      "confidence": 0.4513999819755554,
+      "bounding_box": [
+        178.56967163085938,
+        126.79095458984375,
+        204.66995239257812,
+        145.55264282226562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.35027289390563965,
+        "median_depth": 0.35912030935287476,
+        "depth_std": 0.026400618255138397,
+        "depth_min": 0.2988574504852295,
+        "depth_max": 0.4506005346775055,
+        "mask_area": 214
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "stove",
+      "confidence": 0.37179556488990784,
+      "bounding_box": [
+        200.33193969726562,
+        106.95149230957031,
+        316.0963439941406,
+        149.84437561035156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5389715433120728,
+        "median_depth": 0.5289938449859619,
+        "depth_std": 0.11782949417829514,
+        "depth_min": 0.2939697802066803,
+        "depth_max": 0.9570012092590332,
+        "mask_area": 2408
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "range hood",
+      "confidence": 0.6109169125556946,
+      "bounding_box": [
+        215.90261840820312,
+        0.07916450500488281,
+        306.9724426269531,
+        50.55708312988281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6978290677070618,
+        "median_depth": 0.6912404298782349,
+        "depth_std": 0.04828561469912529,
+        "depth_min": 0.6107938885688782,
+        "depth_max": 0.8815304636955261,
+        "mask_area": 2895
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet",
+      "confidence": 0.6113186478614807,
+      "bounding_box": [
+        149.13377380371094,
+        0.01317596435546875,
+        218.48976135253906,
+        69.6291275024414
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7055434584617615,
+        "median_depth": 0.7089570164680481,
+        "depth_std": 0.029903795570135117,
+        "depth_min": 0.4576883912086487,
+        "depth_max": 0.750204861164093,
+        "mask_area": 4295
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "refrigerator. cabinet. drawer. utensil organizer. spatula. spoon. stove. range hood. countertop. robot arm. gripper.",
+  "text_prompt": "refrigerator. cabinet. drawer. utensil organizer. spatula. spoon. stove. range hood. countertop. robot arm. gripper.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

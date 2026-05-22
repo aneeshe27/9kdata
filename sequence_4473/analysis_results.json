@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cabinet",
+    "utensil tray",
+    "knife",
+    "sink",
+    "kettle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, kettle, utensil tray, cabinet, knife",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.4003952741622925,
+        "relative_position": "closest",
+        "confidence": 0.3886670470237732
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "utensil tray",
+        "mean_depth": 0.4738854765892029,
+        "relative_position": "middle",
+        "confidence": 0.4643152058124542
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "knife",
+        "mean_depth": 0.515807032585144,
+        "relative_position": "middle",
+        "confidence": 0.3631422817707062
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.6199248433113098,
+        "relative_position": "middle",
+        "confidence": 0.7993093729019165
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "kettle",
+        "mean_depth": 0.8190315365791321,
+        "relative_position": "farthest",
+        "confidence": 0.4152744710445404
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "kettle",
+        "mean_depth": 0.8190315365791321,
+        "relative_position": "farthest",
+        "confidence": 0.4152744710445404
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.6199248433113098,
+        "relative_position": "middle",
+        "confidence": 0.7993093729019165
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "knife",
+        "mean_depth": 0.515807032585144,
+        "relative_position": "middle",
+        "confidence": 0.3631422817707062
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "utensil tray",
+        "mean_depth": 0.4738854765892029,
+        "relative_position": "middle",
+        "confidence": 0.4643152058124542
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.4003952741622925,
+        "relative_position": "closest",
+        "confidence": 0.3886670470237732
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.3886670470237732,
+      "bounding_box": [
+        213.6873779296875,
+        102.59593963623047,
+        315.45196533203125,
+        180.038818359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4003952741622925,
+        "median_depth": 0.4033889174461365,
+        "depth_std": 0.04658128693699837,
+        "depth_min": 0.25130996108055115,
+        "depth_max": 0.7475916147232056,
+        "mask_area": 4459
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "utensil tray",
+      "confidence": 0.4643152058124542,
+      "bounding_box": [
+        102.50147247314453,
+        104.04415893554688,
+        153.4270477294922,
+        136.16783142089844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4738854765892029,
+        "median_depth": 0.47688594460487366,
+        "depth_std": 0.04387528449296951,
+        "depth_min": 0.22358234226703644,
+        "depth_max": 0.5743057727813721,
+        "mask_area": 933
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "knife",
+      "confidence": 0.3631422817707062,
+      "bounding_box": [
+        88.69823455810547,
+        95.15090942382812,
+        128.0850830078125,
+        122.06723022460938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.515807032585144,
+        "median_depth": 0.5153545141220093,
+        "depth_std": 0.052394695580005646,
+        "depth_min": 0.4396006464958191,
+        "depth_max": 0.6475285887718201,
+        "mask_area": 222
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.7993093729019165,
+      "bounding_box": [
+        233.5254669189453,
+        76.94112396240234,
+        315.94110107421875,
+        105.16155242919922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6199248433113098,
+        "median_depth": 0.6136273145675659,
+        "depth_std": 0.05428606644272804,
+        "depth_min": 0.10279664397239685,
+        "depth_max": 0.8178169131278992,
+        "mask_area": 1454
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "kettle",
+      "confidence": 0.4152744710445404,
+      "bounding_box": [
+        136.96456909179688,
+        48.494483947753906,
+        157.033447265625,
+        72.20813751220703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8190315365791321,
+        "median_depth": 0.8087694644927979,
+        "depth_std": 0.03396579995751381,
+        "depth_min": 0.7838807106018066,
+        "depth_max": 0.9624454379081726,
+        "mask_area": 326
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. drawer. utensil tray. spoon. fork. knife. kettle. countertop. cabinet. sink. faucet.",
+  "text_prompt": "robot arm. gripper. drawer. utensil tray. spoon. fork. knife. kettle. countertop. cabinet. sink. faucet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

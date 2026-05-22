@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "stove",
+    "bottle",
+    "couch",
+    "monitor",
+    "table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bottle, table, stove, monitor, couch",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "stove",
+        "mean_depth": 0.24511271715164185,
+        "relative_position": "closest",
+        "confidence": 0.3993608355522156
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "bottle",
+        "mean_depth": 0.3354266881942749,
+        "relative_position": "middle",
+        "confidence": 0.38143667578697205
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "couch",
+        "mean_depth": 0.36997517943382263,
+        "relative_position": "middle",
+        "confidence": 0.39204466342926025
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.5794235467910767,
+        "relative_position": "middle",
+        "confidence": 0.6772089600563049
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.5893245935440063,
+        "relative_position": "farthest",
+        "confidence": 0.46488144993782043
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.5893245935440063,
+        "relative_position": "farthest",
+        "confidence": 0.46488144993782043
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.5794235467910767,
+        "relative_position": "middle",
+        "confidence": 0.6772089600563049
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "couch",
+        "mean_depth": 0.36997517943382263,
+        "relative_position": "middle",
+        "confidence": 0.39204466342926025
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "bottle",
+        "mean_depth": 0.3354266881942749,
+        "relative_position": "middle",
+        "confidence": 0.38143667578697205
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "stove",
+        "mean_depth": 0.24511271715164185,
+        "relative_position": "closest",
+        "confidence": 0.3993608355522156
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "stove",
+      "confidence": 0.3993608355522156,
+      "bounding_box": [
+        220.68453979492188,
+        104.1900863647461,
+        272.4794921875,
+        128.89901733398438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24511271715164185,
+        "median_depth": 0.2363809049129486,
+        "depth_std": 0.028316980227828026,
+        "depth_min": 0.1480228453874588,
+        "depth_max": 0.4210638999938965,
+        "mask_area": 936
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "bottle",
+      "confidence": 0.38143667578697205,
+      "bounding_box": [
+        220.8137664794922,
+        90.80341339111328,
+        230.59681701660156,
+        112.3354721069336
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3354266881942749,
+        "median_depth": 0.3698281943798065,
+        "depth_std": 0.10440950840711594,
+        "depth_min": 0.05145654082298279,
+        "depth_max": 0.4833869934082031,
+        "mask_area": 87
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "couch",
+      "confidence": 0.39204466342926025,
+      "bounding_box": [
+        260.3523254394531,
+        111.79191589355469,
+        315.9841613769531,
+        179.93663024902344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.36997517943382263,
+        "median_depth": 0.36657118797302246,
+        "depth_std": 0.05051987245678902,
+        "depth_min": 0.055272337049245834,
+        "depth_max": 0.47951680421829224,
+        "mask_area": 2411
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "monitor",
+      "confidence": 0.6772089600563049,
+      "bounding_box": [
+        114.1463394165039,
+        89.87626647949219,
+        135.9837646484375,
+        107.07308959960938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5794235467910767,
+        "median_depth": 0.5765073895454407,
+        "depth_std": 0.008293978869915009,
+        "depth_min": 0.5698863863945007,
+        "depth_max": 0.6067925095558167,
+        "mask_area": 325
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.46488144993782043,
+      "bounding_box": [
+        0.0457916259765625,
+        131.40704345703125,
+        49.86911392211914,
+        179.89971923828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5893245935440063,
+        "median_depth": 0.5370591878890991,
+        "depth_std": 0.14568734169006348,
+        "depth_min": 0.36644741892814636,
+        "depth_max": 0.9886282682418823,
+        "mask_area": 1114
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. shelf. stove. oven. sink. faucet. cup. bottle. cart. monitor. cable. table. couch. window.",
+  "text_prompt": "robot arm. gripper. cabinet. shelf. stove. oven. sink. faucet. cup. bottle. cart. monitor. cable. table. couch. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

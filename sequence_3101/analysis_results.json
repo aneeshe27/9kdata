@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "sign first aid box",
+    "dispenser",
+    "microwave",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: dispenser, sign first aid box, chair, microwave, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.09922096133232117,
+        "relative_position": "closest",
+        "confidence": 0.4062003195285797
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "sign first aid box",
+        "mean_depth": 0.13168911635875702,
+        "relative_position": "middle",
+        "confidence": 0.5931488871574402
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "dispenser",
+        "mean_depth": 0.3081739544868469,
+        "relative_position": "middle",
+        "confidence": 0.5382782816886902
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.44488656520843506,
+        "relative_position": "middle",
+        "confidence": 0.8708121180534363
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.7180057168006897,
+        "relative_position": "farthest",
+        "confidence": 0.7885837554931641
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.7180057168006897,
+        "relative_position": "farthest",
+        "confidence": 0.7885837554931641
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.44488656520843506,
+        "relative_position": "middle",
+        "confidence": 0.8708121180534363
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "dispenser",
+        "mean_depth": 0.3081739544868469,
+        "relative_position": "middle",
+        "confidence": 0.5382782816886902
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "sign first aid box",
+        "mean_depth": 0.13168911635875702,
+        "relative_position": "middle",
+        "confidence": 0.5931488871574402
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.09922096133232117,
+        "relative_position": "closest",
+        "confidence": 0.4062003195285797
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.4062003195285797,
+      "bounding_box": [
+        211.49917602539062,
+        40.44917297363281,
+        315.9469299316406,
+        108.01034545898438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09922096133232117,
+        "median_depth": 0.036366239190101624,
+        "depth_std": 0.18346616625785828,
+        "depth_min": 7.734176324447617e-05,
+        "depth_max": 0.9858353734016418,
+        "mask_area": 3131
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "sign first aid box",
+      "confidence": 0.5931488871574402,
+      "bounding_box": [
+        -0.0037021636962890625,
+        69.35968017578125,
+        32.176788330078125,
+        133.55743408203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13168911635875702,
+        "median_depth": 0.1307441145181656,
+        "depth_std": 0.014224879443645477,
+        "depth_min": 0.09842295199632645,
+        "depth_max": 0.16772764921188354,
+        "mask_area": 1301
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "dispenser",
+      "confidence": 0.5382782816886902,
+      "bounding_box": [
+        107.33526611328125,
+        28.19681167602539,
+        151.62307739257812,
+        96.51023864746094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3081739544868469,
+        "median_depth": 0.30284929275512695,
+        "depth_std": 0.03225620463490486,
+        "depth_min": 0.2623142600059509,
+        "depth_max": 0.42596933245658875,
+        "mask_area": 2323
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "microwave",
+      "confidence": 0.8708121180534363,
+      "bounding_box": [
+        155.74014282226562,
+        74.86559295654297,
+        213.25057983398438,
+        123.04633331298828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.44488656520843506,
+        "median_depth": 0.4249943792819977,
+        "depth_std": 0.062430351972579956,
+        "depth_min": 0.3835020959377289,
+        "depth_max": 0.7869587540626526,
+        "mask_area": 1583
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.7885837554931641,
+      "bounding_box": [
+        276.24310302734375,
+        103.65436553955078,
+        315.96337890625,
+        179.9129638671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7180057168006897,
+        "median_depth": 0.7238427996635437,
+        "depth_std": 0.07210960239171982,
+        "depth_min": 0.31195056438446045,
+        "depth_max": 0.9582332372665405,
+        "mask_area": 1603
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "microwave. robot arm. gripper. countertop. cabinet. chair. dispenser. electrical outlet. sign. first aid box.",
+  "text_prompt": "microwave. robot arm. gripper. countertop. cabinet. chair. dispenser. electrical outlet. sign. first aid box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

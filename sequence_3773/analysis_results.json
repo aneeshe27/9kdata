@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cup",
+    "faucet",
+    "faucet",
+    "bottle",
+    "plant"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, bottle, faucet, plant, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.17787083983421326,
+        "relative_position": "closest",
+        "confidence": 0.7345945239067078
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.18216143548488617,
+        "relative_position": "middle",
+        "confidence": 0.37278640270233154
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.18914341926574707,
+        "relative_position": "middle",
+        "confidence": 0.4766906797885895
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.345587819814682,
+        "relative_position": "middle",
+        "confidence": 0.5465200543403625
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "plant",
+        "mean_depth": 0.8821722865104675,
+        "relative_position": "farthest",
+        "confidence": 0.4054146409034729
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "plant",
+        "mean_depth": 0.8821722865104675,
+        "relative_position": "farthest",
+        "confidence": 0.4054146409034729
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.345587819814682,
+        "relative_position": "middle",
+        "confidence": 0.5465200543403625
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.18914341926574707,
+        "relative_position": "middle",
+        "confidence": 0.4766906797885895
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.18216143548488617,
+        "relative_position": "middle",
+        "confidence": 0.37278640270233154
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.17787083983421326,
+        "relative_position": "closest",
+        "confidence": 0.7345945239067078
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.7345945239067078,
+      "bounding_box": [
+        49.17207336425781,
+        138.40481567382812,
+        76.13463592529297,
+        169.21127319335938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17787083983421326,
+        "median_depth": 0.17553266882896423,
+        "depth_std": 0.03013133443892002,
+        "depth_min": 0.1283283531665802,
+        "depth_max": 0.2692188322544098,
+        "mask_area": 562
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "faucet",
+      "confidence": 0.37278640270233154,
+      "bounding_box": [
+        8.787188529968262,
+        93.2706527709961,
+        40.182743072509766,
+        132.4897003173828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18216143548488617,
+        "median_depth": 0.17843766510486603,
+        "depth_std": 0.024701815098524094,
+        "depth_min": 0.13575272262096405,
+        "depth_max": 0.2529090940952301,
+        "mask_area": 637
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "faucet",
+      "confidence": 0.4766906797885895,
+      "bounding_box": [
+        67.03855895996094,
+        46.27995300292969,
+        104.08255004882812,
+        120.10606384277344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18914341926574707,
+        "median_depth": 0.16837099194526672,
+        "depth_std": 0.06816943734884262,
+        "depth_min": 0.10583996772766113,
+        "depth_max": 0.3626367449760437,
+        "mask_area": 958
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.5465200543403625,
+      "bounding_box": [
+        105.24742889404297,
+        72.0746078491211,
+        123.46343231201172,
+        109.9605484008789
+      ],
+      "depth_stats": {
+        "mean_depth": 0.345587819814682,
+        "median_depth": 0.3428150415420532,
+        "depth_std": 0.01935756951570511,
+        "depth_min": 0.3087650239467621,
+        "depth_max": 0.40388941764831543,
+        "mask_area": 516
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "plant",
+      "confidence": 0.4054146409034729,
+      "bounding_box": [
+        261.7769775390625,
+        50.20541000366211,
+        290.51739501953125,
+        96.64752197265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8821722865104675,
+        "median_depth": 0.9910162687301636,
+        "depth_std": 0.17415378987789154,
+        "depth_min": 0.5665421485900879,
+        "depth_max": 1.0,
+        "mask_area": 435
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. faucet. cup. bottle. lamp. tray. plant. pot. countertop. window. blinds.",
+  "text_prompt": "sink. faucet. cup. bottle. lamp. tray. plant. pot. countertop. window. blinds.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

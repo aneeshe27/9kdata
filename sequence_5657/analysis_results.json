@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "power outlet",
+    "mirror",
+    "sink",
+    "toothbrush"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: power outlet, mirror, sink, toothbrush, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.15127477049827576,
+        "relative_position": "closest",
+        "confidence": 0.5716490745544434
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "power outlet",
+        "mean_depth": 0.2655084431171417,
+        "relative_position": "middle",
+        "confidence": 0.4277465343475342
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "mirror",
+        "mean_depth": 0.5861834287643433,
+        "relative_position": "middle",
+        "confidence": 0.6138416528701782
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.7449020743370056,
+        "relative_position": "middle",
+        "confidence": 0.8016961216926575
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "toothbrush",
+        "mean_depth": 0.7783640027046204,
+        "relative_position": "farthest",
+        "confidence": 0.5468263626098633
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "toothbrush",
+        "mean_depth": 0.7783640027046204,
+        "relative_position": "farthest",
+        "confidence": 0.5468263626098633
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.7449020743370056,
+        "relative_position": "middle",
+        "confidence": 0.8016961216926575
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "mirror",
+        "mean_depth": 0.5861834287643433,
+        "relative_position": "middle",
+        "confidence": 0.6138416528701782
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "power outlet",
+        "mean_depth": 0.2655084431171417,
+        "relative_position": "middle",
+        "confidence": 0.4277465343475342
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.15127477049827576,
+        "relative_position": "closest",
+        "confidence": 0.5716490745544434
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.5716490745544434,
+      "bounding_box": [
+        0.025310516357421875,
+        0.18813323974609375,
+        96.11405944824219,
+        147.90609741210938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15127477049827576,
+        "median_depth": 0.10814081132411957,
+        "depth_std": 0.08630426973104477,
+        "depth_min": 0.078289695084095,
+        "depth_max": 0.7301936149597168,
+        "mask_area": 6402
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "power outlet",
+      "confidence": 0.4277465343475342,
+      "bounding_box": [
+        279.85986328125,
+        76.59123992919922,
+        315.993408203125,
+        103.4709701538086
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2655084431171417,
+        "median_depth": 0.2618963122367859,
+        "depth_std": 0.035135846585035324,
+        "depth_min": 0.21134620904922485,
+        "depth_max": 0.3418373465538025,
+        "mask_area": 301
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "mirror",
+      "confidence": 0.6138416528701782,
+      "bounding_box": [
+        170.08163452148438,
+        0.21873855590820312,
+        291.8453369140625,
+        85.17764282226562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5861834287643433,
+        "median_depth": 0.5836090445518494,
+        "depth_std": 0.08753498643636703,
+        "depth_min": 0.28858038783073425,
+        "depth_max": 0.7485145330429077,
+        "mask_area": 1527
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.8016961216926575,
+      "bounding_box": [
+        135.28013610839844,
+        61.5781364440918,
+        190.29612731933594,
+        100.70050048828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7449020743370056,
+        "median_depth": 0.748542070388794,
+        "depth_std": 0.03738940507173538,
+        "depth_min": 0.6642575263977051,
+        "depth_max": 0.8343873023986816,
+        "mask_area": 1507
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "toothbrush",
+      "confidence": 0.5468263626098633,
+      "bounding_box": [
+        144.64588928222656,
+        53.27166748046875,
+        150.0454559326172,
+        66.16891479492188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7783640027046204,
+        "median_depth": 0.7742007970809937,
+        "depth_std": 0.04369903728365898,
+        "depth_min": 0.7162969708442688,
+        "depth_max": 0.8626949191093445,
+        "mask_area": 46
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. clamp. camera. table. countertop. sink. faucet. mirror. soap dispenser. bottle. toothbrush. toothpaste. box. tube. container. power outlet. plug. cable.",
+  "text_prompt": "robot arm. gripper. clamp. camera. table. countertop. sink. faucet. mirror. soap dispenser. bottle. toothbrush. toothpaste. box. tube. container. power outlet. plug. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

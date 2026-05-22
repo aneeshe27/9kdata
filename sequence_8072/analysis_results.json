@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "towel",
+    "cup",
+    "whiteboard corkboard",
+    "whiteboard"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: towel, whiteboard corkboard, robot arm, whiteboard, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.0554141029715538,
+        "relative_position": "closest",
+        "confidence": 0.5882123708724976
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "towel",
+        "mean_depth": 0.11612600088119507,
+        "relative_position": "middle",
+        "confidence": 0.7219445109367371
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.12534447014331818,
+        "relative_position": "middle",
+        "confidence": 0.7213194966316223
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "whiteboard corkboard",
+        "mean_depth": 0.13154621422290802,
+        "relative_position": "middle",
+        "confidence": 0.5073205828666687
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "whiteboard",
+        "mean_depth": 0.7694006562232971,
+        "relative_position": "farthest",
+        "confidence": 0.3566342294216156
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "whiteboard",
+        "mean_depth": 0.7694006562232971,
+        "relative_position": "farthest",
+        "confidence": 0.3566342294216156
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "whiteboard corkboard",
+        "mean_depth": 0.13154621422290802,
+        "relative_position": "middle",
+        "confidence": 0.5073205828666687
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.12534447014331818,
+        "relative_position": "middle",
+        "confidence": 0.7213194966316223
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "towel",
+        "mean_depth": 0.11612600088119507,
+        "relative_position": "middle",
+        "confidence": 0.7219445109367371
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.0554141029715538,
+        "relative_position": "closest",
+        "confidence": 0.5882123708724976
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.5882123708724976,
+      "bounding_box": [
+        0.10186767578125,
+        0.18454742431640625,
+        81.07090759277344,
+        132.466796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0554141029715538,
+        "median_depth": 0.03776048123836517,
+        "depth_std": 0.06078644096851349,
+        "depth_min": 0.005938197020441294,
+        "depth_max": 0.735698401927948,
+        "mask_area": 5543
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "towel",
+      "confidence": 0.7219445109367371,
+      "bounding_box": [
+        191.6604461669922,
+        62.253536224365234,
+        263.4432373046875,
+        154.7211456298828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11612600088119507,
+        "median_depth": 0.10940006375312805,
+        "depth_std": 0.02677600271999836,
+        "depth_min": 0.058215681463479996,
+        "depth_max": 0.21256399154663086,
+        "mask_area": 3597
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.7213194966316223,
+      "bounding_box": [
+        143.364013671875,
+        90.32221221923828,
+        166.31228637695312,
+        112.3077621459961
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12534447014331818,
+        "median_depth": 0.12423813343048096,
+        "depth_std": 0.004787863232195377,
+        "depth_min": 0.11688040941953659,
+        "depth_max": 0.14542071521282196,
+        "mask_area": 334
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "whiteboard corkboard",
+      "confidence": 0.5073205828666687,
+      "bounding_box": [
+        221.63784790039062,
+        0.13737106323242188,
+        315.7399597167969,
+        104.64634704589844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13154621422290802,
+        "median_depth": 0.12458452582359314,
+        "depth_std": 0.03264336287975311,
+        "depth_min": 0.07926933467388153,
+        "depth_max": 0.22166810929775238,
+        "mask_area": 6429
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "whiteboard",
+      "confidence": 0.3566342294216156,
+      "bounding_box": [
+        159.8863525390625,
+        0.04851341247558594,
+        204.20965576171875,
+        27.70425796508789
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7694006562232971,
+        "median_depth": 0.811837911605835,
+        "depth_std": 0.18330977857112885,
+        "depth_min": 0.2301630973815918,
+        "depth_max": 0.9743610620498657,
+        "mask_area": 859
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. clamp. cup. container. blender. bowl. towel. cable. whiteboard. corkboard.",
+  "text_prompt": "robot arm. gripper. table. clamp. cup. container. blender. bowl. towel. cable. whiteboard. corkboard.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

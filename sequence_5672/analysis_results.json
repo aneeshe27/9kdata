@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "wire cutter",
+    "workbench",
+    "drawer cabinet",
+    "office chair",
+    "3d printer"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: 3d printer, office chair, wire cutter, workbench, drawer cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "wire cutter",
+        "mean_depth": 0.03755063936114311,
+        "relative_position": "closest",
+        "confidence": 0.3931944966316223
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "workbench",
+        "mean_depth": 0.050450827926397324,
+        "relative_position": "middle",
+        "confidence": 0.5319876670837402
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "drawer cabinet",
+        "mean_depth": 0.3340297043323517,
+        "relative_position": "middle",
+        "confidence": 0.4321043789386749
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "office chair",
+        "mean_depth": 0.33444923162460327,
+        "relative_position": "middle",
+        "confidence": 0.7301366329193115
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "3d printer",
+        "mean_depth": 0.44875141978263855,
+        "relative_position": "farthest",
+        "confidence": 0.7010528445243835
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "3d printer",
+        "mean_depth": 0.44875141978263855,
+        "relative_position": "farthest",
+        "confidence": 0.7010528445243835
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "office chair",
+        "mean_depth": 0.33444923162460327,
+        "relative_position": "middle",
+        "confidence": 0.7301366329193115
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "drawer cabinet",
+        "mean_depth": 0.3340297043323517,
+        "relative_position": "middle",
+        "confidence": 0.4321043789386749
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "workbench",
+        "mean_depth": 0.050450827926397324,
+        "relative_position": "middle",
+        "confidence": 0.5319876670837402
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "wire cutter",
+        "mean_depth": 0.03755063936114311,
+        "relative_position": "closest",
+        "confidence": 0.3931944966316223
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "wire cutter",
+      "confidence": 0.3931944966316223,
+      "bounding_box": [
+        0.01122283935546875,
+        0.16360855102539062,
+        39.3341064453125,
+        44.742164611816406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03755063936114311,
+        "median_depth": 0.037161946296691895,
+        "depth_std": 0.0024885355960577726,
+        "depth_min": 0.033189866691827774,
+        "depth_max": 0.04258197173476219,
+        "mask_area": 816
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "workbench",
+      "confidence": 0.5319876670837402,
+      "bounding_box": [
+        0.4515380859375,
+        59.380496978759766,
+        189.8079833984375,
+        179.8475341796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.050450827926397324,
+        "median_depth": 0.04136355593800545,
+        "depth_std": 0.05066486448049545,
+        "depth_min": 0.0,
+        "depth_max": 0.785433292388916,
+        "mask_area": 14003
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "drawer cabinet",
+      "confidence": 0.4321043789386749,
+      "bounding_box": [
+        282.1321105957031,
+        34.93544387817383,
+        315.9988098144531,
+        90.19096374511719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3340297043323517,
+        "median_depth": 0.329907089471817,
+        "depth_std": 0.023217590525746346,
+        "depth_min": 0.29104769229888916,
+        "depth_max": 0.4269065260887146,
+        "mask_area": 1705
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "office chair",
+      "confidence": 0.7301366329193115,
+      "bounding_box": [
+        222.8941650390625,
+        19.74799346923828,
+        281.2587890625,
+        98.64421844482422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33444923162460327,
+        "median_depth": 0.3236725628376007,
+        "depth_std": 0.041370682418346405,
+        "depth_min": 0.28413712978363037,
+        "depth_max": 0.43719813227653503,
+        "mask_area": 2485
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "3d printer",
+      "confidence": 0.7010528445243835,
+      "bounding_box": [
+        266.1890563964844,
+        0.049831390380859375,
+        316.0158386230469,
+        33.531681060791016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.44875141978263855,
+        "median_depth": 0.4496789276599884,
+        "depth_std": 0.03344077244400978,
+        "depth_min": 0.3355741500854492,
+        "depth_max": 0.5171055197715759,
+        "mask_area": 1238
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "workbench. drawer cabinet. dustpan. hand brush. screwdriver. pliers. wire cutter. cloth. office chair. shelving unit. pegboard. storage bin. 3d printer.",
+  "text_prompt": "workbench. drawer cabinet. dustpan. hand brush. screwdriver. pliers. wire cutter. cloth. office chair. shelving unit. pegboard. storage bin. 3d printer.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

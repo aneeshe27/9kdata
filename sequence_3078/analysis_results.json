@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "table",
+    "chair",
+    "cup takeout cup",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: window, chair, robot arm gripper, cup takeout cup, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.0496121346950531,
+        "relative_position": "closest",
+        "confidence": 0.3569590747356415
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.26799458265304565,
+        "relative_position": "middle",
+        "confidence": 0.7184826731681824
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.3823946416378021,
+        "relative_position": "middle",
+        "confidence": 0.4835800528526306
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cup takeout cup",
+        "mean_depth": 0.4117961823940277,
+        "relative_position": "middle",
+        "confidence": 0.4933306872844696
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.4802996814250946,
+        "relative_position": "farthest",
+        "confidence": 0.503792405128479
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.4802996814250946,
+        "relative_position": "farthest",
+        "confidence": 0.503792405128479
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cup takeout cup",
+        "mean_depth": 0.4117961823940277,
+        "relative_position": "middle",
+        "confidence": 0.4933306872844696
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.3823946416378021,
+        "relative_position": "middle",
+        "confidence": 0.4835800528526306
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.26799458265304565,
+        "relative_position": "middle",
+        "confidence": 0.7184826731681824
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.0496121346950531,
+        "relative_position": "closest",
+        "confidence": 0.3569590747356415
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.3569590747356415,
+      "bounding_box": [
+        223.27090454101562,
+        -0.016735076904296875,
+        316.0110778808594,
+        70.39912414550781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0496121346950531,
+        "median_depth": 0.004977442789822817,
+        "depth_std": 0.09705538302659988,
+        "depth_min": 0.0,
+        "depth_max": 0.7288437485694885,
+        "mask_area": 2421
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7184826731681824,
+      "bounding_box": [
+        121.95112609863281,
+        82.20982360839844,
+        259.195068359375,
+        179.88401794433594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26799458265304565,
+        "median_depth": 0.24550452828407288,
+        "depth_std": 0.08531131595373154,
+        "depth_min": 0.15866729617118835,
+        "depth_max": 0.6689123511314392,
+        "mask_area": 5079
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.4835800528526306,
+      "bounding_box": [
+        13.289379119873047,
+        152.62823486328125,
+        123.17678833007812,
+        179.9700927734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3823946416378021,
+        "median_depth": 0.37295734882354736,
+        "depth_std": 0.05483550578355789,
+        "depth_min": 0.298382043838501,
+        "depth_max": 0.5716712474822998,
+        "mask_area": 1533
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cup takeout cup",
+      "confidence": 0.4933306872844696,
+      "bounding_box": [
+        220.59486389160156,
+        63.373348236083984,
+        238.3909149169922,
+        97.54095458984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4117961823940277,
+        "median_depth": 0.3929027318954468,
+        "depth_std": 0.07925969362258911,
+        "depth_min": 0.2214694321155548,
+        "depth_max": 0.8030544519424438,
+        "mask_area": 400
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "window",
+      "confidence": 0.503792405128479,
+      "bounding_box": [
+        0.14200592041015625,
+        0.061004638671875,
+        200.28506469726562,
+        149.8365936279297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4802996814250946,
+        "median_depth": 0.44845500588417053,
+        "depth_std": 0.14284028112888336,
+        "depth_min": 0.2725561857223511,
+        "depth_max": 0.8655049204826355,
+        "mask_area": 14983
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. bowl. cup. takeout cup. ladle. strainer. napkin. box. chair. window. blinds.",
+  "text_prompt": "table. robot arm. gripper. bowl. cup. takeout cup. ladle. strainer. napkin. box. chair. window. blinds.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

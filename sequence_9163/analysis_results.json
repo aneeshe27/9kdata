@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cup",
+    "robot gripper",
+    "fire extinguisher",
+    "tray",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: fire extinguisher, cup, tray, cabinet, robot gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.33133524656295776,
+        "relative_position": "closest",
+        "confidence": 0.8437399864196777
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot gripper",
+        "mean_depth": 0.4062235951423645,
+        "relative_position": "middle",
+        "confidence": 0.3918379247188568
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "fire extinguisher",
+        "mean_depth": 0.47106799483299255,
+        "relative_position": "middle",
+        "confidence": 0.6068643927574158
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "tray",
+        "mean_depth": 0.4985288977622986,
+        "relative_position": "middle",
+        "confidence": 0.382270485162735
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.567910373210907,
+        "relative_position": "farthest",
+        "confidence": 0.42983803153038025
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.567910373210907,
+        "relative_position": "farthest",
+        "confidence": 0.42983803153038025
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "tray",
+        "mean_depth": 0.4985288977622986,
+        "relative_position": "middle",
+        "confidence": 0.382270485162735
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "fire extinguisher",
+        "mean_depth": 0.47106799483299255,
+        "relative_position": "middle",
+        "confidence": 0.6068643927574158
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot gripper",
+        "mean_depth": 0.4062235951423645,
+        "relative_position": "middle",
+        "confidence": 0.3918379247188568
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.33133524656295776,
+        "relative_position": "closest",
+        "confidence": 0.8437399864196777
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.8437399864196777,
+      "bounding_box": [
+        109.53047180175781,
+        36.17408752441406,
+        141.13961791992188,
+        73.73714447021484
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33133524656295776,
+        "median_depth": 0.32866865396499634,
+        "depth_std": 0.017605621367692947,
+        "depth_min": 0.30133870244026184,
+        "depth_max": 0.4237784743309021,
+        "mask_area": 883
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot gripper",
+      "confidence": 0.3918379247188568,
+      "bounding_box": [
+        150.25885009765625,
+        0.0349578857421875,
+        185.44149780273438,
+        58.39765930175781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4062235951423645,
+        "median_depth": 0.3784340023994446,
+        "depth_std": 0.06440522521734238,
+        "depth_min": 0.3339497745037079,
+        "depth_max": 0.6360531449317932,
+        "mask_area": 772
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "fire extinguisher",
+      "confidence": 0.6068643927574158,
+      "bounding_box": [
+        176.83460998535156,
+        0.03868579864501953,
+        197.3616180419922,
+        31.12496566772461
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47106799483299255,
+        "median_depth": 0.4712512195110321,
+        "depth_std": 0.032969240099191666,
+        "depth_min": 0.34722137451171875,
+        "depth_max": 0.6316043138504028,
+        "mask_area": 411
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "tray",
+      "confidence": 0.382270485162735,
+      "bounding_box": [
+        98.48760986328125,
+        21.334383010864258,
+        154.07949829101562,
+        52.179054260253906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4985288977622986,
+        "median_depth": 0.4945993423461914,
+        "depth_std": 0.05297595262527466,
+        "depth_min": 0.38888195157051086,
+        "depth_max": 0.6038458943367004,
+        "mask_area": 902
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.42983803153038025,
+      "bounding_box": [
+        72.4760513305664,
+        90.86253356933594,
+        201.64547729492188,
+        171.92796325683594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.567910373210907,
+        "median_depth": 0.5293528437614441,
+        "depth_std": 0.17812581360340118,
+        "depth_min": 0.307670533657074,
+        "depth_max": 0.9963961839675903,
+        "mask_area": 6969
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. tray. fire extinguisher. robot arm. robot gripper. cabinet. countertop.",
+  "text_prompt": "cup. tray. fire extinguisher. robot arm. robot gripper. cabinet. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

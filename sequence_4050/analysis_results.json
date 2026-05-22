@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot gripper",
+    "cup",
+    "marker",
+    "chair",
+    "trash can"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: marker, trash can, cup, chair, robot gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot gripper",
+        "mean_depth": 0.030405327677726746,
+        "relative_position": "closest",
+        "confidence": 0.5026679635047913
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.10482140630483627,
+        "relative_position": "middle",
+        "confidence": 0.8388190865516663
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "marker",
+        "mean_depth": 0.20210716128349304,
+        "relative_position": "middle",
+        "confidence": 0.6302688717842102
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.5846551656723022,
+        "relative_position": "middle",
+        "confidence": 0.5459381341934204
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "trash can",
+        "mean_depth": 0.9579046368598938,
+        "relative_position": "farthest",
+        "confidence": 0.7866249680519104
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "trash can",
+        "mean_depth": 0.9579046368598938,
+        "relative_position": "farthest",
+        "confidence": 0.7866249680519104
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.5846551656723022,
+        "relative_position": "middle",
+        "confidence": 0.5459381341934204
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "marker",
+        "mean_depth": 0.20210716128349304,
+        "relative_position": "middle",
+        "confidence": 0.6302688717842102
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.10482140630483627,
+        "relative_position": "middle",
+        "confidence": 0.8388190865516663
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot gripper",
+        "mean_depth": 0.030405327677726746,
+        "relative_position": "closest",
+        "confidence": 0.5026679635047913
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot gripper",
+      "confidence": 0.5026679635047913,
+      "bounding_box": [
+        0.058109283447265625,
+        0.061695098876953125,
+        80.12942504882812,
+        119.49980163574219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.030405327677726746,
+        "median_depth": 0.029576390981674194,
+        "depth_std": 0.03660278022289276,
+        "depth_min": 0.0006511894753202796,
+        "depth_max": 0.7605571150779724,
+        "mask_area": 5488
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.8388190865516663,
+      "bounding_box": [
+        219.33282470703125,
+        88.36697387695312,
+        269.8729248046875,
+        125.51773071289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10482140630483627,
+        "median_depth": 0.10138051211833954,
+        "depth_std": 0.020588772371411324,
+        "depth_min": 0.07804778218269348,
+        "depth_max": 0.20049940049648285,
+        "mask_area": 1127
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "marker",
+      "confidence": 0.6302688717842102,
+      "bounding_box": [
+        199.08348083496094,
+        84.7744369506836,
+        229.34605407714844,
+        90.93453216552734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20210716128349304,
+        "median_depth": 0.19881674647331238,
+        "depth_std": 0.010186275467276573,
+        "depth_min": 0.18990390002727509,
+        "depth_max": 0.22031275928020477,
+        "mask_area": 163
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.5459381341934204,
+      "bounding_box": [
+        234.1015167236328,
+        22.96939468383789,
+        280.21075439453125,
+        51.77614974975586
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5846551656723022,
+        "median_depth": 0.5668684244155884,
+        "depth_std": 0.05919094756245613,
+        "depth_min": 0.54703289270401,
+        "depth_max": 0.9381847977638245,
+        "mask_area": 691
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "trash can",
+      "confidence": 0.7866249680519104,
+      "bounding_box": [
+        146.40386962890625,
+        0.0156707763671875,
+        193.23025512695312,
+        26.8105525970459
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9579046368598938,
+        "median_depth": 0.9621436595916748,
+        "depth_std": 0.029394634068012238,
+        "depth_min": 0.8886469602584839,
+        "depth_max": 0.9972850680351257,
+        "mask_area": 1074
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. marker. robot arm. robot gripper. clamp. table. cloth. cabinet. trash can. chair.",
+  "text_prompt": "cup. marker. robot arm. robot gripper. clamp. table. cloth. cabinet. trash can. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

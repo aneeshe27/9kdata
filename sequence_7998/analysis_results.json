@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "tape roll cylinder",
+    "chair",
+    "robot arm",
+    "robot gripper",
+    "monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, tape roll cylinder, monitor, robot gripper, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "tape roll cylinder",
+        "mean_depth": 0.030656661838293076,
+        "relative_position": "closest",
+        "confidence": 0.47066935896873474
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.27271854877471924,
+        "relative_position": "middle",
+        "confidence": 0.4071025550365448
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.35254472494125366,
+        "relative_position": "middle",
+        "confidence": 0.3645936846733093
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "robot gripper",
+        "mean_depth": 0.7167157530784607,
+        "relative_position": "middle",
+        "confidence": 0.44777578115463257
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.7494988441467285,
+        "relative_position": "farthest",
+        "confidence": 0.6708865761756897
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.7494988441467285,
+        "relative_position": "farthest",
+        "confidence": 0.6708865761756897
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "robot gripper",
+        "mean_depth": 0.7167157530784607,
+        "relative_position": "middle",
+        "confidence": 0.44777578115463257
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.35254472494125366,
+        "relative_position": "middle",
+        "confidence": 0.3645936846733093
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.27271854877471924,
+        "relative_position": "middle",
+        "confidence": 0.4071025550365448
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "tape roll cylinder",
+        "mean_depth": 0.030656661838293076,
+        "relative_position": "closest",
+        "confidence": 0.47066935896873474
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "tape roll cylinder",
+      "confidence": 0.47066935896873474,
+      "bounding_box": [
+        200.72669982910156,
+        19.41425895690918,
+        230.9977264404297,
+        53.38179016113281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.030656661838293076,
+        "median_depth": 0.02860429510474205,
+        "depth_std": 0.006478136871010065,
+        "depth_min": 0.02237638272345066,
+        "depth_max": 0.06312213093042374,
+        "mask_area": 796
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.4071025550365448,
+      "bounding_box": [
+        160.58499145507812,
+        126.83779907226562,
+        263.900634765625,
+        179.91644287109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27271854877471924,
+        "median_depth": 0.2655046880245209,
+        "depth_std": 0.05046853795647621,
+        "depth_min": 0.20412519574165344,
+        "depth_max": 0.6510405540466309,
+        "mask_area": 3956
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3645936846733093,
+      "bounding_box": [
+        144.86306762695312,
+        57.2989387512207,
+        192.91549682617188,
+        122.639892578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.35254472494125366,
+        "median_depth": 0.38876873254776,
+        "depth_std": 0.08086411654949188,
+        "depth_min": 0.14723524451255798,
+        "depth_max": 0.832219660282135,
+        "mask_area": 1431
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot gripper",
+      "confidence": 0.44777578115463257,
+      "bounding_box": [
+        140.30661010742188,
+        117.69898986816406,
+        165.46697998046875,
+        179.8738250732422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7167157530784607,
+        "median_depth": 0.744579553604126,
+        "depth_std": 0.08299871534109116,
+        "depth_min": 0.4073980152606964,
+        "depth_max": 0.9159883260726929,
+        "mask_area": 392
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "monitor",
+      "confidence": 0.6708865761756897,
+      "bounding_box": [
+        33.54221725463867,
+        100.68872833251953,
+        86.48771667480469,
+        134.77842712402344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7494988441467285,
+        "median_depth": 0.7445070147514343,
+        "depth_std": 0.01744067296385765,
+        "depth_min": 0.6335955858230591,
+        "depth_max": 0.8579272627830505,
+        "mask_area": 1397
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. robot gripper. tape roll. can. cylinder. ball. box. monitor. keyboard. chair.",
+  "text_prompt": "table. robot arm. robot gripper. tape roll. can. cylinder. ball. box. monitor. keyboard. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

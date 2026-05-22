@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper",
+    "table",
+    "window blinds",
+    "cabinet",
+    "countertop"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: window blinds, gripper, cabinet, countertop, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.3659364879131317,
+        "relative_position": "closest",
+        "confidence": 0.4361608326435089
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.48180967569351196,
+        "relative_position": "middle",
+        "confidence": 0.4132486879825592
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "window blinds",
+        "mean_depth": 0.8099162578582764,
+        "relative_position": "middle",
+        "confidence": 0.5306909680366516
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.8229948282241821,
+        "relative_position": "middle",
+        "confidence": 0.4713152348995209
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.896779477596283,
+        "relative_position": "farthest",
+        "confidence": 0.4347248375415802
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.896779477596283,
+        "relative_position": "farthest",
+        "confidence": 0.4347248375415802
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.8229948282241821,
+        "relative_position": "middle",
+        "confidence": 0.4713152348995209
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "window blinds",
+        "mean_depth": 0.8099162578582764,
+        "relative_position": "middle",
+        "confidence": 0.5306909680366516
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.48180967569351196,
+        "relative_position": "middle",
+        "confidence": 0.4132486879825592
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.3659364879131317,
+        "relative_position": "closest",
+        "confidence": 0.4361608326435089
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "gripper",
+      "confidence": 0.4361608326435089,
+      "bounding_box": [
+        106.19612121582031,
+        128.78416442871094,
+        135.66441345214844,
+        161.9731903076172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3659364879131317,
+        "median_depth": 0.31599509716033936,
+        "depth_std": 0.17285306751728058,
+        "depth_min": 0.12818580865859985,
+        "depth_max": 0.7834615111351013,
+        "mask_area": 448
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.4132486879825592,
+      "bounding_box": [
+        134.18869018554688,
+        88.08683776855469,
+        316.0514831542969,
+        179.87046813964844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.48180967569351196,
+        "median_depth": 0.4271440804004669,
+        "depth_std": 0.15920045971870422,
+        "depth_min": 0.28477367758750916,
+        "depth_max": 0.9686453938484192,
+        "mask_area": 10104
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "window blinds",
+      "confidence": 0.5306909680366516,
+      "bounding_box": [
+        168.8671875,
+        0.23375701904296875,
+        236.53292846679688,
+        76.1427001953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8099162578582764,
+        "median_depth": 0.8076454401016235,
+        "depth_std": 0.04668295010924339,
+        "depth_min": 0.7036167979240417,
+        "depth_max": 0.93600994348526,
+        "mask_area": 4366
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet",
+      "confidence": 0.4713152348995209,
+      "bounding_box": [
+        251.98268127441406,
+        0.06418800354003906,
+        315.9786376953125,
+        37.866050720214844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8229948282241821,
+        "median_depth": 0.8191319704055786,
+        "depth_std": 0.039660826325416565,
+        "depth_min": 0.7490752339363098,
+        "depth_max": 0.9375936985015869,
+        "mask_area": 2031
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "countertop",
+      "confidence": 0.4347248375415802,
+      "bounding_box": [
+        241.70892333984375,
+        58.387935638427734,
+        315.97357177734375,
+        86.24745178222656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.896779477596283,
+        "median_depth": 0.9112277626991272,
+        "depth_std": 0.07832501828670502,
+        "depth_min": 0.7003718614578247,
+        "depth_max": 0.9986834526062012,
+        "mask_area": 1174
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. pitcher. banana pieces. window blinds. countertop. sink. cabinet.",
+  "text_prompt": "robot arm. gripper. table. pitcher. banana pieces. window blinds. countertop. sink. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

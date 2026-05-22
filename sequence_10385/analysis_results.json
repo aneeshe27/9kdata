@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "bottle",
+    "cup",
+    "remote control",
+    "spoon"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: spoon, robot arm, remote control, bottle, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.044300276786088943,
+        "relative_position": "closest",
+        "confidence": 0.567410945892334
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "bottle",
+        "mean_depth": 0.20925068855285645,
+        "relative_position": "middle",
+        "confidence": 0.6195462942123413
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.27511662244796753,
+        "relative_position": "middle",
+        "confidence": 0.4352625608444214
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "remote control",
+        "mean_depth": 0.36262384057044983,
+        "relative_position": "middle",
+        "confidence": 0.6797154545783997
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "spoon",
+        "mean_depth": 0.38841909170150757,
+        "relative_position": "farthest",
+        "confidence": 0.7184137105941772
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "spoon",
+        "mean_depth": 0.38841909170150757,
+        "relative_position": "farthest",
+        "confidence": 0.7184137105941772
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "remote control",
+        "mean_depth": 0.36262384057044983,
+        "relative_position": "middle",
+        "confidence": 0.6797154545783997
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.27511662244796753,
+        "relative_position": "middle",
+        "confidence": 0.4352625608444214
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "bottle",
+        "mean_depth": 0.20925068855285645,
+        "relative_position": "middle",
+        "confidence": 0.6195462942123413
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.044300276786088943,
+        "relative_position": "closest",
+        "confidence": 0.567410945892334
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.567410945892334,
+      "bounding_box": [
+        212.5702362060547,
+        2.8835296630859375,
+        258.1695861816406,
+        96.77257537841797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.044300276786088943,
+        "median_depth": 0.04080767184495926,
+        "depth_std": 0.021434227004647255,
+        "depth_min": 0.02349659986793995,
+        "depth_max": 0.3220001757144928,
+        "mask_area": 1861
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "bottle",
+      "confidence": 0.6195462942123413,
+      "bounding_box": [
+        52.40733337402344,
+        139.53164672851562,
+        79.75949096679688,
+        177.87908935546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20925068855285645,
+        "median_depth": 0.2014998346567154,
+        "depth_std": 0.0297711044549942,
+        "depth_min": 0.17342910170555115,
+        "depth_max": 0.3748096525669098,
+        "mask_area": 805
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.4352625608444214,
+      "bounding_box": [
+        119.8687744140625,
+        149.552490234375,
+        155.04833984375,
+        179.96878051757812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27511662244796753,
+        "median_depth": 0.28809675574302673,
+        "depth_std": 0.03885754942893982,
+        "depth_min": 0.19650381803512573,
+        "depth_max": 0.36520442366600037,
+        "mask_area": 691
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "remote control",
+      "confidence": 0.6797154545783997,
+      "bounding_box": [
+        144.75332641601562,
+        135.4837188720703,
+        178.63189697265625,
+        163.2480926513672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.36262384057044983,
+        "median_depth": 0.3626266121864319,
+        "depth_std": 0.023266784846782684,
+        "depth_min": 0.3088732659816742,
+        "depth_max": 0.41032475233078003,
+        "mask_area": 397
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "spoon",
+      "confidence": 0.7184137105941772,
+      "bounding_box": [
+        178.75567626953125,
+        128.19546508789062,
+        194.23715209960938,
+        159.73138427734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.38841909170150757,
+        "median_depth": 0.4036657214164734,
+        "depth_std": 0.038903407752513885,
+        "depth_min": 0.318367063999176,
+        "depth_max": 0.4434463679790497,
+        "mask_area": 196
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. cup. spoon. game board. game piece. bottle. remote control. table.",
+  "text_prompt": "robot arm. robot gripper. cup. spoon. game board. game piece. bottle. remote control. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

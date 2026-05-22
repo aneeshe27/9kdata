@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "cloth",
+    "cloth",
+    "spray bottle",
+    "shoes"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cloth, table, spray bottle, shoes, cloth",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.1647523194551468,
+        "relative_position": "closest",
+        "confidence": 0.5084730386734009
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cloth",
+        "mean_depth": 0.302397221326828,
+        "relative_position": "middle",
+        "confidence": 0.3585340976715088
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.3510359227657318,
+        "relative_position": "middle",
+        "confidence": 0.4048171937465668
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "spray bottle",
+        "mean_depth": 0.3938888609409332,
+        "relative_position": "middle",
+        "confidence": 0.7782301902770996
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "shoes",
+        "mean_depth": 0.5096763372421265,
+        "relative_position": "farthest",
+        "confidence": 0.4179496467113495
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "shoes",
+        "mean_depth": 0.5096763372421265,
+        "relative_position": "farthest",
+        "confidence": 0.4179496467113495
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "spray bottle",
+        "mean_depth": 0.3938888609409332,
+        "relative_position": "middle",
+        "confidence": 0.7782301902770996
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.3510359227657318,
+        "relative_position": "middle",
+        "confidence": 0.4048171937465668
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cloth",
+        "mean_depth": 0.302397221326828,
+        "relative_position": "middle",
+        "confidence": 0.3585340976715088
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.1647523194551468,
+        "relative_position": "closest",
+        "confidence": 0.5084730386734009
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.5084730386734009,
+      "bounding_box": [
+        222.78399658203125,
+        126.3226089477539,
+        315.981201171875,
+        179.97488403320312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1647523194551468,
+        "median_depth": 0.12196154147386551,
+        "depth_std": 0.10352008044719696,
+        "depth_min": 0.06796569377183914,
+        "depth_max": 0.9271801114082336,
+        "mask_area": 2917
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cloth",
+      "confidence": 0.3585340976715088,
+      "bounding_box": [
+        103.95831298828125,
+        144.1675262451172,
+        134.02845764160156,
+        179.97349548339844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.302397221326828,
+        "median_depth": 0.28572797775268555,
+        "depth_std": 0.05285533145070076,
+        "depth_min": 0.22158581018447876,
+        "depth_max": 0.47202035784721375,
+        "mask_area": 789
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cloth",
+      "confidence": 0.4048171937465668,
+      "bounding_box": [
+        58.25688171386719,
+        97.00440216064453,
+        120.21932983398438,
+        125.55609893798828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3510359227657318,
+        "median_depth": 0.32817959785461426,
+        "depth_std": 0.07617592066526413,
+        "depth_min": 0.04454364627599716,
+        "depth_max": 0.6557130217552185,
+        "mask_area": 886
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "spray bottle",
+      "confidence": 0.7782301902770996,
+      "bounding_box": [
+        126.515869140625,
+        116.41057586669922,
+        153.29586791992188,
+        179.89529418945312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3938888609409332,
+        "median_depth": 0.3784434497356415,
+        "depth_std": 0.05836676061153412,
+        "depth_min": 0.28713294863700867,
+        "depth_max": 0.7415672540664673,
+        "mask_area": 981
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "shoes",
+      "confidence": 0.4179496467113495,
+      "bounding_box": [
+        84.17057800292969,
+        72.42540740966797,
+        133.96942138671875,
+        101.94988250732422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5096763372421265,
+        "median_depth": 0.49568119645118713,
+        "depth_std": 0.06765083968639374,
+        "depth_min": 0.43511736392974854,
+        "depth_max": 0.8986213207244873,
+        "mask_area": 880
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. suction cup. shoe rack. shoes. spray bottle. bottle. cloth. table.",
+  "text_prompt": "robot arm. gripper. suction cup. shoe rack. shoes. spray bottle. bottle. cloth. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "container",
+    "stove",
+    "cabinet",
+    "bowl",
+    "microwave"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, container, stove, microwave, bowl",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "container",
+        "mean_depth": 0.06402143090963364,
+        "relative_position": "closest",
+        "confidence": 0.45448383688926697
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "stove",
+        "mean_depth": 0.5424351692199707,
+        "relative_position": "middle",
+        "confidence": 0.4873991906642914
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.5575460195541382,
+        "relative_position": "middle",
+        "confidence": 0.5372891426086426
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.5710270404815674,
+        "relative_position": "middle",
+        "confidence": 0.7887687087059021
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.6265987157821655,
+        "relative_position": "farthest",
+        "confidence": 0.890152633190155
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.6265987157821655,
+        "relative_position": "farthest",
+        "confidence": 0.890152633190155
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.5710270404815674,
+        "relative_position": "middle",
+        "confidence": 0.7887687087059021
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.5575460195541382,
+        "relative_position": "middle",
+        "confidence": 0.5372891426086426
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "stove",
+        "mean_depth": 0.5424351692199707,
+        "relative_position": "middle",
+        "confidence": 0.4873991906642914
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "container",
+        "mean_depth": 0.06402143090963364,
+        "relative_position": "closest",
+        "confidence": 0.45448383688926697
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "container",
+      "confidence": 0.45448383688926697,
+      "bounding_box": [
+        181.58021545410156,
+        133.7702178955078,
+        221.1479949951172,
+        179.9208526611328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06402143090963364,
+        "median_depth": 0.041079726070165634,
+        "depth_std": 0.08469817042350769,
+        "depth_min": 0.02704375796020031,
+        "depth_max": 0.6117967367172241,
+        "mask_area": 1248
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "stove",
+      "confidence": 0.4873991906642914,
+      "bounding_box": [
+        237.37232971191406,
+        106.56188201904297,
+        316.0179748535156,
+        179.74307250976562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5424351692199707,
+        "median_depth": 0.5227037668228149,
+        "depth_std": 0.10096321254968643,
+        "depth_min": 0.14118601381778717,
+        "depth_max": 0.843745768070221,
+        "mask_area": 3282
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.5372891426086426,
+      "bounding_box": [
+        89.50455474853516,
+        0.15517044067382812,
+        256.2778625488281,
+        57.08108139038086
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5575460195541382,
+        "median_depth": 0.5502365231513977,
+        "depth_std": 0.04048343002796173,
+        "depth_min": 0.48755133152008057,
+        "depth_max": 0.6632887125015259,
+        "mask_area": 8135
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bowl",
+      "confidence": 0.7887687087059021,
+      "bounding_box": [
+        106.9646987915039,
+        78.92349243164062,
+        161.52841186523438,
+        109.37556457519531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5710270404815674,
+        "median_depth": 0.5436540246009827,
+        "depth_std": 0.062085412442684174,
+        "depth_min": 0.5141061544418335,
+        "depth_max": 0.8580423593521118,
+        "mask_area": 1135
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "microwave",
+      "confidence": 0.890152633190155,
+      "bounding_box": [
+        101.42565155029297,
+        102.61222839355469,
+        195.14163208007812,
+        163.73695373535156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6265987157821655,
+        "median_depth": 0.6366695761680603,
+        "depth_std": 0.042727913707494736,
+        "depth_min": 0.510772705078125,
+        "depth_max": 0.683892548084259,
+        "mask_area": 4079
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. cup. microwave. robot arm. gripper. cabinet. countertop. stove. pan. container.",
+  "text_prompt": "bowl. cup. microwave. robot arm. gripper. cabinet. countertop. stove. pan. container.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

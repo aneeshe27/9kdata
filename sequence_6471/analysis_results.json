@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "curtain",
+    "chair",
+    "computer monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: curtain, computer monitor, table, robot arm, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.02169255167245865,
+        "relative_position": "closest",
+        "confidence": 0.3895297348499298
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.07209814339876175,
+        "relative_position": "middle",
+        "confidence": 0.6643052101135254
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "curtain",
+        "mean_depth": 0.10233502089977264,
+        "relative_position": "middle",
+        "confidence": 0.5327775478363037
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.4682636260986328,
+        "relative_position": "middle",
+        "confidence": 0.42946505546569824
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "computer monitor",
+        "mean_depth": 0.972112774848938,
+        "relative_position": "farthest",
+        "confidence": 0.3862481415271759
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "computer monitor",
+        "mean_depth": 0.972112774848938,
+        "relative_position": "farthest",
+        "confidence": 0.3862481415271759
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.4682636260986328,
+        "relative_position": "middle",
+        "confidence": 0.42946505546569824
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "curtain",
+        "mean_depth": 0.10233502089977264,
+        "relative_position": "middle",
+        "confidence": 0.5327775478363037
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.07209814339876175,
+        "relative_position": "middle",
+        "confidence": 0.6643052101135254
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.02169255167245865,
+        "relative_position": "closest",
+        "confidence": 0.3895297348499298
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3895297348499298,
+      "bounding_box": [
+        114.63636779785156,
+        0.0042552947998046875,
+        237.21852111816406,
+        38.886962890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02169255167245865,
+        "median_depth": 0.008865905925631523,
+        "depth_std": 0.06988231837749481,
+        "depth_min": 0.0037888314109295607,
+        "depth_max": 0.7098709344863892,
+        "mask_area": 1866
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.6643052101135254,
+      "bounding_box": [
+        3.9506683349609375,
+        75.81027221679688,
+        245.97549438476562,
+        179.9857940673828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07209814339876175,
+        "median_depth": 0.06704267114400864,
+        "depth_std": 0.02749653533101082,
+        "depth_min": 0.034831225872039795,
+        "depth_max": 0.3419021666049957,
+        "mask_area": 15013
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "curtain",
+      "confidence": 0.5327775478363037,
+      "bounding_box": [
+        196.67202758789062,
+        0.17238616943359375,
+        315.9988098144531,
+        174.13424682617188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10233502089977264,
+        "median_depth": 0.09874279052019119,
+        "depth_std": 0.017105957493185997,
+        "depth_min": 0.016166256740689278,
+        "depth_max": 0.15042060613632202,
+        "mask_area": 13133
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.42946505546569824,
+      "bounding_box": [
+        -0.023590087890625,
+        26.888042449951172,
+        36.99579620361328,
+        93.87129211425781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4682636260986328,
+        "median_depth": 0.4644445478916168,
+        "depth_std": 0.03731905668973923,
+        "depth_min": 0.40011486411094666,
+        "depth_max": 0.6141931414604187,
+        "mask_area": 1214
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "computer monitor",
+      "confidence": 0.3862481415271759,
+      "bounding_box": [
+        44.21385192871094,
+        12.563263893127441,
+        77.0652847290039,
+        29.263019561767578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.972112774848938,
+        "median_depth": 0.9861754179000854,
+        "depth_std": 0.029860438778996468,
+        "depth_min": 0.8541958332061768,
+        "depth_max": 0.9931438565254211,
+        "mask_area": 338
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. bag. chair. computer monitor. shelf. cabinet. toolbox. curtain.",
+  "text_prompt": "table. robot arm. gripper. bag. chair. computer monitor. shelf. cabinet. toolbox. curtain.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

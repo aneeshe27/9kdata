@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "ceiling fan",
+    "robot arm",
+    "ceiling light",
+    "window blinds",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: door, window blinds, ceiling light, ceiling fan, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "ceiling fan",
+        "mean_depth": 0.05554799735546112,
+        "relative_position": "closest",
+        "confidence": 0.7425171136856079
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.09751097112894058,
+        "relative_position": "middle",
+        "confidence": 0.5750340819358826
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "ceiling light",
+        "mean_depth": 0.5017234683036804,
+        "relative_position": "middle",
+        "confidence": 0.4988132417201996
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "window blinds",
+        "mean_depth": 0.6205182671546936,
+        "relative_position": "middle",
+        "confidence": 0.8562533855438232
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.782444417476654,
+        "relative_position": "farthest",
+        "confidence": 0.8742503523826599
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.782444417476654,
+        "relative_position": "farthest",
+        "confidence": 0.8742503523826599
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "window blinds",
+        "mean_depth": 0.6205182671546936,
+        "relative_position": "middle",
+        "confidence": 0.8562533855438232
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "ceiling light",
+        "mean_depth": 0.5017234683036804,
+        "relative_position": "middle",
+        "confidence": 0.4988132417201996
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.09751097112894058,
+        "relative_position": "middle",
+        "confidence": 0.5750340819358826
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "ceiling fan",
+        "mean_depth": 0.05554799735546112,
+        "relative_position": "closest",
+        "confidence": 0.7425171136856079
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "ceiling fan",
+      "confidence": 0.7425171136856079,
+      "bounding_box": [
+        134.55194091796875,
+        0.2300872802734375,
+        303.6082458496094,
+        67.59696197509766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05554799735546112,
+        "median_depth": 0.018981948494911194,
+        "depth_std": 0.06305189430713654,
+        "depth_min": 0.008595793507993221,
+        "depth_max": 0.29288026690483093,
+        "mask_area": 4406
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.5750340819358826,
+      "bounding_box": [
+        31.128921508789062,
+        90.64970397949219,
+        213.20428466796875,
+        179.7337188720703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09751097112894058,
+        "median_depth": 0.01214246079325676,
+        "depth_std": 0.17148062586784363,
+        "depth_min": 0.0,
+        "depth_max": 0.9939427971839905,
+        "mask_area": 7057
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "ceiling light",
+      "confidence": 0.4988132417201996,
+      "bounding_box": [
+        16.772586822509766,
+        30.688499450683594,
+        127.36405944824219,
+        80.44386291503906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5017234683036804,
+        "median_depth": 0.49289363622665405,
+        "depth_std": 0.07992534339427948,
+        "depth_min": 0.3594508469104767,
+        "depth_max": 0.6865976452827454,
+        "mask_area": 3322
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "window blinds",
+      "confidence": 0.8562533855438232,
+      "bounding_box": [
+        201.4845428466797,
+        83.5835189819336,
+        315.449951171875,
+        179.89697265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6205182671546936,
+        "median_depth": 0.6053701639175415,
+        "depth_std": 0.11884015053510666,
+        "depth_min": 0.16588331758975983,
+        "depth_max": 0.8412789106369019,
+        "mask_area": 9846
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "door",
+      "confidence": 0.8742503523826599,
+      "bounding_box": [
+        0.060260772705078125,
+        83.5693130493164,
+        36.667720794677734,
+        162.14053344726562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.782444417476654,
+        "median_depth": 0.7784878611564636,
+        "depth_std": 0.011947796680033207,
+        "depth_min": 0.6750662922859192,
+        "depth_max": 0.8203665614128113,
+        "mask_area": 1839
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. ceiling fan. ceiling light. window blinds. door. sofa.",
+  "text_prompt": "robot arm. ceiling fan. ceiling light. window blinds. door. sofa.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

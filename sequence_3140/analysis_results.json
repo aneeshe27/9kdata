@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "desk lamp",
+    "chair",
+    "table",
+    "window blinds"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, table, robot arm, desk lamp, window blinds",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.03562658652663231,
+        "relative_position": "closest",
+        "confidence": 0.3770243227481842
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "desk lamp",
+        "mean_depth": 0.05096469447016716,
+        "relative_position": "middle",
+        "confidence": 0.5415130257606506
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.38751810789108276,
+        "relative_position": "middle",
+        "confidence": 0.401542067527771
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.4588487446308136,
+        "relative_position": "middle",
+        "confidence": 0.66534423828125
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "window blinds",
+        "mean_depth": 0.5156063437461853,
+        "relative_position": "farthest",
+        "confidence": 0.703227162361145
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "window blinds",
+        "mean_depth": 0.5156063437461853,
+        "relative_position": "farthest",
+        "confidence": 0.703227162361145
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.4588487446308136,
+        "relative_position": "middle",
+        "confidence": 0.66534423828125
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.38751810789108276,
+        "relative_position": "middle",
+        "confidence": 0.401542067527771
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "desk lamp",
+        "mean_depth": 0.05096469447016716,
+        "relative_position": "middle",
+        "confidence": 0.5415130257606506
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.03562658652663231,
+        "relative_position": "closest",
+        "confidence": 0.3770243227481842
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3770243227481842,
+      "bounding_box": [
+        213.68548583984375,
+        -0.00395965576171875,
+        315.81103515625,
+        114.5428695678711
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03562658652663231,
+        "median_depth": 0.023583903908729553,
+        "depth_std": 0.0452447347342968,
+        "depth_min": 0.0,
+        "depth_max": 0.693029522895813,
+        "mask_area": 3940
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "desk lamp",
+      "confidence": 0.5415130257606506,
+      "bounding_box": [
+        0.08868789672851562,
+        4.68470573425293,
+        88.50440979003906,
+        58.600799560546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05096469447016716,
+        "median_depth": 0.03276704624295235,
+        "depth_std": 0.048986587673425674,
+        "depth_min": 0.013912518508732319,
+        "depth_max": 0.3316696286201477,
+        "mask_area": 1712
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.401542067527771,
+      "bounding_box": [
+        0.019725799560546875,
+        50.39985656738281,
+        120.994873046875,
+        180.01043701171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.38751810789108276,
+        "median_depth": 0.36669084429740906,
+        "depth_std": 0.11019290238618851,
+        "depth_min": 0.20568594336509705,
+        "depth_max": 0.7060116529464722,
+        "mask_area": 11539
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.66534423828125,
+      "bounding_box": [
+        93.20777893066406,
+        87.47612762451172,
+        279.205078125,
+        179.88101196289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4588487446308136,
+        "median_depth": 0.44225627183914185,
+        "depth_std": 0.09594009816646576,
+        "depth_min": 0.19336380064487457,
+        "depth_max": 0.848594069480896,
+        "mask_area": 8198
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "window blinds",
+      "confidence": 0.703227162361145,
+      "bounding_box": [
+        64.43669128417969,
+        -0.030426025390625,
+        180.2938232421875,
+        100.78215026855469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5156063437461853,
+        "median_depth": 0.5162614583969116,
+        "depth_std": 0.09279792010784149,
+        "depth_min": 0.11780795454978943,
+        "depth_max": 0.7389969229698181,
+        "mask_area": 8357
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. desk lamp. book. package. ball. chair. pillow. window blinds.",
+  "text_prompt": "robot arm. gripper. table. desk lamp. book. package. ball. chair. pillow. window blinds.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

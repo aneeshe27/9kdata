@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "stool",
+    "stool",
+    "container box",
+    "bowl"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bowl, stool, robot arm, container box, stool",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.026172291487455368,
+        "relative_position": "closest",
+        "confidence": 0.43839383125305176
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "stool",
+        "mean_depth": 0.05226782336831093,
+        "relative_position": "middle",
+        "confidence": 0.42678844928741455
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "stool",
+        "mean_depth": 0.09281599521636963,
+        "relative_position": "middle",
+        "confidence": 0.6197558045387268
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "container box",
+        "mean_depth": 0.09639132022857666,
+        "relative_position": "middle",
+        "confidence": 0.5608400702476501
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.16569119691848755,
+        "relative_position": "farthest",
+        "confidence": 0.7577347159385681
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.16569119691848755,
+        "relative_position": "farthest",
+        "confidence": 0.7577347159385681
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "container box",
+        "mean_depth": 0.09639132022857666,
+        "relative_position": "middle",
+        "confidence": 0.5608400702476501
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "stool",
+        "mean_depth": 0.09281599521636963,
+        "relative_position": "middle",
+        "confidence": 0.6197558045387268
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "stool",
+        "mean_depth": 0.05226782336831093,
+        "relative_position": "middle",
+        "confidence": 0.42678844928741455
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.026172291487455368,
+        "relative_position": "closest",
+        "confidence": 0.43839383125305176
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.43839383125305176,
+      "bounding_box": [
+        46.32939910888672,
+        -0.0582122802734375,
+        140.47164916992188,
+        179.85142517089844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.026172291487455368,
+        "median_depth": 0.018476344645023346,
+        "depth_std": 0.020460618659853935,
+        "depth_min": 0.010885534808039665,
+        "depth_max": 0.3069275915622711,
+        "mask_area": 7387
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "stool",
+      "confidence": 0.42678844928741455,
+      "bounding_box": [
+        156.30880737304688,
+        156.3394775390625,
+        218.46170043945312,
+        179.95803833007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05226782336831093,
+        "median_depth": 0.04426608234643936,
+        "depth_std": 0.022178728133440018,
+        "depth_min": 0.03444591537117958,
+        "depth_max": 0.1427026242017746,
+        "mask_area": 1103
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "stool",
+      "confidence": 0.6197558045387268,
+      "bounding_box": [
+        10.092975616455078,
+        120.67723846435547,
+        57.16533279418945,
+        156.05406188964844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09281599521636963,
+        "median_depth": 0.09100103378295898,
+        "depth_std": 0.01322496309876442,
+        "depth_min": 0.07253080606460571,
+        "depth_max": 0.14820636808872223,
+        "mask_area": 1161
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "container box",
+      "confidence": 0.5608400702476501,
+      "bounding_box": [
+        268.6290283203125,
+        50.848594665527344,
+        315.999755859375,
+        113.60367584228516
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09639132022857666,
+        "median_depth": 0.09096521139144897,
+        "depth_std": 0.03310605138540268,
+        "depth_min": 0.07608519494533539,
+        "depth_max": 0.4936414957046509,
+        "mask_area": 2492
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.7577347159385681,
+      "bounding_box": [
+        135.68844604492188,
+        87.97154998779297,
+        157.5869140625,
+        99.7309799194336
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16569119691848755,
+        "median_depth": 0.10787936300039291,
+        "depth_std": 0.110244020819664,
+        "depth_min": 0.10142884403467178,
+        "depth_max": 0.4696793854236603,
+        "mask_area": 197
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. bowl. container. box. stool. cutting board. tablet. sponge. bottle. cabinet. shelf.",
+  "text_prompt": "robot arm. gripper. table. bowl. container. box. stool. cutting board. tablet. sponge. bottle. cabinet. shelf.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

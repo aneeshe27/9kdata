@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "faucet",
+    "robot arm",
+    "cloth",
+    "wall outlet",
+    "calculator"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, calculator, cloth, wall outlet, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.05121346190571785,
+        "relative_position": "closest",
+        "confidence": 0.6362078785896301
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.09305991232395172,
+        "relative_position": "middle",
+        "confidence": 0.4595749080181122
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.14925163984298706,
+        "relative_position": "middle",
+        "confidence": 0.45145392417907715
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "wall outlet",
+        "mean_depth": 0.1881028264760971,
+        "relative_position": "middle",
+        "confidence": 0.4004441499710083
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "calculator",
+        "mean_depth": 0.2156236469745636,
+        "relative_position": "farthest",
+        "confidence": 0.5471791625022888
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "calculator",
+        "mean_depth": 0.2156236469745636,
+        "relative_position": "farthest",
+        "confidence": 0.5471791625022888
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "wall outlet",
+        "mean_depth": 0.1881028264760971,
+        "relative_position": "middle",
+        "confidence": 0.4004441499710083
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.14925163984298706,
+        "relative_position": "middle",
+        "confidence": 0.45145392417907715
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.09305991232395172,
+        "relative_position": "middle",
+        "confidence": 0.4595749080181122
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.05121346190571785,
+        "relative_position": "closest",
+        "confidence": 0.6362078785896301
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.6362078785896301,
+      "bounding_box": [
+        92.27474975585938,
+        95.84559631347656,
+        165.25668334960938,
+        140.11996459960938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05121346190571785,
+        "median_depth": 0.048150837421417236,
+        "depth_std": 0.008373544551432133,
+        "depth_min": 0.03805448114871979,
+        "depth_max": 0.07536305487155914,
+        "mask_area": 916
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4595749080181122,
+      "bounding_box": [
+        216.8158721923828,
+        1.3693351745605469,
+        290.908447265625,
+        110.67045593261719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09305991232395172,
+        "median_depth": 0.08870387077331543,
+        "depth_std": 0.03894347324967384,
+        "depth_min": 0.012823370285332203,
+        "depth_max": 0.6936949491500854,
+        "mask_area": 3470
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cloth",
+      "confidence": 0.45145392417907715,
+      "bounding_box": [
+        168.8332061767578,
+        68.29964447021484,
+        223.09373474121094,
+        86.23438262939453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14925163984298706,
+        "median_depth": 0.14471781253814697,
+        "depth_std": 0.01769023761153221,
+        "depth_min": 0.1254478096961975,
+        "depth_max": 0.19516904652118683,
+        "mask_area": 599
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "wall outlet",
+      "confidence": 0.4004441499710083,
+      "bounding_box": [
+        178.14431762695312,
+        27.902297973632812,
+        187.58303833007812,
+        43.25050354003906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1881028264760971,
+        "median_depth": 0.18783819675445557,
+        "depth_std": 0.007353231310844421,
+        "depth_min": 0.17580179870128632,
+        "depth_max": 0.20280376076698303,
+        "mask_area": 93
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "calculator",
+      "confidence": 0.5471791625022888,
+      "bounding_box": [
+        201.55303955078125,
+        56.35295867919922,
+        229.51614379882812,
+        73.0203628540039
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2156236469745636,
+        "median_depth": 0.210148885846138,
+        "depth_std": 0.023228224366903305,
+        "depth_min": 0.18424426019191742,
+        "depth_max": 0.2700728476047516,
+        "mask_area": 278
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. faucet. countertop. robot arm. gripper. cloth. calculator. marker. wall outlet.",
+  "text_prompt": "sink. faucet. countertop. robot arm. gripper. cloth. calculator. marker. wall outlet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

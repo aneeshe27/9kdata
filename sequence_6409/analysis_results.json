@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "tray",
+    "cabinet",
+    "sink",
+    "faucet",
+    "soap dispenser"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: faucet, sink, cabinet, tray, soap dispenser",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "tray",
+        "mean_depth": 0.3678021728992462,
+        "relative_position": "closest",
+        "confidence": 0.5045245885848999
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.4346393644809723,
+        "relative_position": "middle",
+        "confidence": 0.36745598912239075
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.5043280124664307,
+        "relative_position": "middle",
+        "confidence": 0.46702948212623596
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.5866395831108093,
+        "relative_position": "middle",
+        "confidence": 0.7910403609275818
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "soap dispenser",
+        "mean_depth": 0.7007280588150024,
+        "relative_position": "farthest",
+        "confidence": 0.7169257402420044
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "soap dispenser",
+        "mean_depth": 0.7007280588150024,
+        "relative_position": "farthest",
+        "confidence": 0.7169257402420044
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.5866395831108093,
+        "relative_position": "middle",
+        "confidence": 0.7910403609275818
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.5043280124664307,
+        "relative_position": "middle",
+        "confidence": 0.46702948212623596
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.4346393644809723,
+        "relative_position": "middle",
+        "confidence": 0.36745598912239075
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "tray",
+        "mean_depth": 0.3678021728992462,
+        "relative_position": "closest",
+        "confidence": 0.5045245885848999
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "tray",
+      "confidence": 0.5045245885848999,
+      "bounding_box": [
+        82.5496826171875,
+        119.14166259765625,
+        152.13841247558594,
+        174.72830200195312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3678021728992462,
+        "median_depth": 0.3553442060947418,
+        "depth_std": 0.10478013753890991,
+        "depth_min": 0.1837744116783142,
+        "depth_max": 0.7605265974998474,
+        "mask_area": 1946
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.36745598912239075,
+      "bounding_box": [
+        68.06521606445312,
+        0.09824371337890625,
+        315.792236328125,
+        45.80788040161133
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4346393644809723,
+        "median_depth": 0.4401613473892212,
+        "depth_std": 0.08204301446676254,
+        "depth_min": 0.256742388010025,
+        "depth_max": 0.6486059427261353,
+        "mask_area": 7618
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "sink",
+      "confidence": 0.46702948212623596,
+      "bounding_box": [
+        185.94808959960938,
+        122.84646606445312,
+        300.04595947265625,
+        179.994384765625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5043280124664307,
+        "median_depth": 0.5384119153022766,
+        "depth_std": 0.16845540702342987,
+        "depth_min": 0.06908643990755081,
+        "depth_max": 0.7293606400489807,
+        "mask_area": 4639
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.7910403609275818,
+      "bounding_box": [
+        246.02072143554688,
+        76.0986099243164,
+        296.2563171386719,
+        125.98136138916016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5866395831108093,
+        "median_depth": 0.5946536660194397,
+        "depth_std": 0.048746153712272644,
+        "depth_min": 0.491743803024292,
+        "depth_max": 0.713324785232544,
+        "mask_area": 569
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "soap dispenser",
+      "confidence": 0.7169257402420044,
+      "bounding_box": [
+        188.68055725097656,
+        60.33885192871094,
+        210.40171813964844,
+        98.94160461425781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7007280588150024,
+        "median_depth": 0.696216881275177,
+        "depth_std": 0.022833094000816345,
+        "depth_min": 0.6678887605667114,
+        "depth_max": 0.7630571722984314,
+        "mask_area": 681
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. tray. can. mug. coffee maker. countertop. sink. faucet. soap dispenser. cabinet.",
+  "text_prompt": "robot arm. robot gripper. tray. can. mug. coffee maker. countertop. sink. faucet. soap dispenser. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

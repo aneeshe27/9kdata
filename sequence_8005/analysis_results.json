@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "armchair table",
+    "robot gripper",
+    "robot arm robot gripper",
+    "table",
+    "helmet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm robot gripper, table, robot gripper, helmet, armchair table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "armchair table",
+        "mean_depth": 0.03126027435064316,
+        "relative_position": "closest",
+        "confidence": 0.3902531862258911
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot gripper",
+        "mean_depth": 0.3099188208580017,
+        "relative_position": "middle",
+        "confidence": 0.3733231723308563
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.3263210952281952,
+        "relative_position": "middle",
+        "confidence": 0.39536434412002563
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.5022619366645813,
+        "relative_position": "middle",
+        "confidence": 0.3749479353427887
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "helmet",
+        "mean_depth": 0.5266863107681274,
+        "relative_position": "farthest",
+        "confidence": 0.7121530771255493
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "helmet",
+        "mean_depth": 0.5266863107681274,
+        "relative_position": "farthest",
+        "confidence": 0.7121530771255493
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.5022619366645813,
+        "relative_position": "middle",
+        "confidence": 0.3749479353427887
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.3263210952281952,
+        "relative_position": "middle",
+        "confidence": 0.39536434412002563
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot gripper",
+        "mean_depth": 0.3099188208580017,
+        "relative_position": "middle",
+        "confidence": 0.3733231723308563
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "armchair table",
+        "mean_depth": 0.03126027435064316,
+        "relative_position": "closest",
+        "confidence": 0.3902531862258911
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "armchair table",
+      "confidence": 0.3902531862258911,
+      "bounding_box": [
+        36.415191650390625,
+        92.48255920410156,
+        182.1955108642578,
+        179.94151306152344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03126027435064316,
+        "median_depth": 0.022230520844459534,
+        "depth_std": 0.04370243474841118,
+        "depth_min": 0.002664693398401141,
+        "depth_max": 0.5407088398933411,
+        "mask_area": 8688
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot gripper",
+      "confidence": 0.3733231723308563,
+      "bounding_box": [
+        108.89424133300781,
+        3.752817153930664,
+        155.47679138183594,
+        63.96113586425781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3099188208580017,
+        "median_depth": 0.3069356083869934,
+        "depth_std": 0.02801010012626648,
+        "depth_min": 0.26429134607315063,
+        "depth_max": 0.4383765757083893,
+        "mask_area": 1211
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "robot arm robot gripper",
+      "confidence": 0.39536434412002563,
+      "bounding_box": [
+        204.24725341796875,
+        0.02977752685546875,
+        279.180419921875,
+        81.43045806884766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3263210952281952,
+        "median_depth": 0.25213953852653503,
+        "depth_std": 0.12137053906917572,
+        "depth_min": 0.1270163357257843,
+        "depth_max": 0.8180562853813171,
+        "mask_area": 2609
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "table",
+      "confidence": 0.3749479353427887,
+      "bounding_box": [
+        260.9274597167969,
+        107.09956359863281,
+        315.9806213378906,
+        179.8920440673828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5022619366645813,
+        "median_depth": 0.4827941656112671,
+        "depth_std": 0.09656506031751633,
+        "depth_min": 0.3283180296421051,
+        "depth_max": 0.9992963075637817,
+        "mask_area": 2842
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "helmet",
+      "confidence": 0.7121530771255493,
+      "bounding_box": [
+        180.9539794921875,
+        87.63066101074219,
+        211.98196411132812,
+        112.55886840820312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5266863107681274,
+        "median_depth": 0.5215184688568115,
+        "depth_std": 0.019571304321289062,
+        "depth_min": 0.5053789615631104,
+        "depth_max": 0.6385624408721924,
+        "mask_area": 557
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "armchair. helmet. golf bag. golf club. robot arm. robot gripper. robot body. table. screwdriver. pliers.",
+  "text_prompt": "armchair. helmet. golf bag. golf club. robot arm. robot gripper. robot body. table. screwdriver. pliers.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "camera",
+    "light switch",
+    "metal rod",
+    "wire shelf",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: door, metal rod, light switch, camera, wire shelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.3704015612602234,
+        "relative_position": "closest",
+        "confidence": 0.42626434564590454
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "light switch",
+        "mean_depth": 0.3754785656929016,
+        "relative_position": "middle",
+        "confidence": 0.5811356902122498
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "metal rod",
+        "mean_depth": 0.4360232353210449,
+        "relative_position": "middle",
+        "confidence": 0.38658401370048523
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "wire shelf",
+        "mean_depth": 0.6762496829032898,
+        "relative_position": "middle",
+        "confidence": 0.4490487575531006
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.873021125793457,
+        "relative_position": "farthest",
+        "confidence": 0.6799660921096802
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.873021125793457,
+        "relative_position": "farthest",
+        "confidence": 0.6799660921096802
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "wire shelf",
+        "mean_depth": 0.6762496829032898,
+        "relative_position": "middle",
+        "confidence": 0.4490487575531006
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "metal rod",
+        "mean_depth": 0.4360232353210449,
+        "relative_position": "middle",
+        "confidence": 0.38658401370048523
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "light switch",
+        "mean_depth": 0.3754785656929016,
+        "relative_position": "middle",
+        "confidence": 0.5811356902122498
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.3704015612602234,
+        "relative_position": "closest",
+        "confidence": 0.42626434564590454
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "camera",
+      "confidence": 0.42626434564590454,
+      "bounding_box": [
+        163.0142822265625,
+        4.743888854980469,
+        199.1607666015625,
+        38.439537048339844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3704015612602234,
+        "median_depth": 0.3651597499847412,
+        "depth_std": 0.02657327987253666,
+        "depth_min": 0.3209860622882843,
+        "depth_max": 0.4647711515426636,
+        "mask_area": 628
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "light switch",
+      "confidence": 0.5811356902122498,
+      "bounding_box": [
+        185.99777221679688,
+        28.8217716217041,
+        198.31942749023438,
+        53.319053649902344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3754785656929016,
+        "median_depth": 0.3731895089149475,
+        "depth_std": 0.012777934782207012,
+        "depth_min": 0.3550480604171753,
+        "depth_max": 0.4037347137928009,
+        "mask_area": 160
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "metal rod",
+      "confidence": 0.38658401370048523,
+      "bounding_box": [
+        192.08355712890625,
+        102.25193786621094,
+        202.787109375,
+        179.82786560058594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4360232353210449,
+        "median_depth": 0.4363991320133209,
+        "depth_std": 0.02612318843603134,
+        "depth_min": 0.3873254358768463,
+        "depth_max": 0.49636515974998474,
+        "mask_area": 266
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "wire shelf",
+      "confidence": 0.4490487575531006,
+      "bounding_box": [
+        141.54803466796875,
+        149.0250701904297,
+        182.3275146484375,
+        179.93052673339844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6762496829032898,
+        "median_depth": 0.6790326237678528,
+        "depth_std": 0.044537030160427094,
+        "depth_min": 0.5397141575813293,
+        "depth_max": 0.7727359533309937,
+        "mask_area": 787
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "door",
+      "confidence": 0.6799660921096802,
+      "bounding_box": [
+        68.38867950439453,
+        0.355560302734375,
+        141.60043334960938,
+        130.17758178710938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.873021125793457,
+        "median_depth": 0.8729979395866394,
+        "depth_std": 0.0825418159365654,
+        "depth_min": 0.4772254228591919,
+        "depth_max": 1.0,
+        "mask_area": 6349
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. cable. door. door handle. light switch. wire shelf. metal rod. table. camera.",
+  "text_prompt": "robot arm. cable. door. door handle. light switch. wire shelf. metal rod. table. camera.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

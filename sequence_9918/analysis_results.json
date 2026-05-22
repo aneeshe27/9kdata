@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "trash can",
+    "cabinet",
+    "robot arm",
+    "book",
+    "microwave"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: microwave, book, cabinet, robot arm, trash can",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "trash can",
+        "mean_depth": 0.04217205196619034,
+        "relative_position": "closest",
+        "confidence": 0.8054823875427246
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.11983811855316162,
+        "relative_position": "middle",
+        "confidence": 0.3674508035182953
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.1356949806213379,
+        "relative_position": "middle",
+        "confidence": 0.5821235179901123
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "book",
+        "mean_depth": 0.135764017701149,
+        "relative_position": "middle",
+        "confidence": 0.4891003966331482
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "microwave",
+        "mean_depth": 0.28071707487106323,
+        "relative_position": "farthest",
+        "confidence": 0.5120033621788025
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "microwave",
+        "mean_depth": 0.28071707487106323,
+        "relative_position": "farthest",
+        "confidence": 0.5120033621788025
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "book",
+        "mean_depth": 0.135764017701149,
+        "relative_position": "middle",
+        "confidence": 0.4891003966331482
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.1356949806213379,
+        "relative_position": "middle",
+        "confidence": 0.5821235179901123
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.11983811855316162,
+        "relative_position": "middle",
+        "confidence": 0.3674508035182953
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "trash can",
+        "mean_depth": 0.04217205196619034,
+        "relative_position": "closest",
+        "confidence": 0.8054823875427246
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "trash can",
+      "confidence": 0.8054823875427246,
+      "bounding_box": [
+        222.148193359375,
+        44.29277038574219,
+        310.65167236328125,
+        179.81080627441406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04217205196619034,
+        "median_depth": 0.04088766872882843,
+        "depth_std": 0.017540855333209038,
+        "depth_min": 0.006879531312733889,
+        "depth_max": 0.07662153244018555,
+        "mask_area": 7109
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3674508035182953,
+      "bounding_box": [
+        110.03756713867188,
+        0.02068328857421875,
+        186.22695922851562,
+        49.99486541748047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11983811855316162,
+        "median_depth": 0.11453977227210999,
+        "depth_std": 0.042297590523958206,
+        "depth_min": 0.04519791901111603,
+        "depth_max": 0.21419961750507355,
+        "mask_area": 2007
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.5821235179901123,
+      "bounding_box": [
+        14.796977996826172,
+        72.85227966308594,
+        117.82577514648438,
+        179.94766235351562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1356949806213379,
+        "median_depth": 0.111066535115242,
+        "depth_std": 0.08144640177488327,
+        "depth_min": 0.07762610912322998,
+        "depth_max": 0.9434229135513306,
+        "mask_area": 4914
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "book",
+      "confidence": 0.4891003966331482,
+      "bounding_box": [
+        177.69131469726562,
+        55.33340835571289,
+        205.31982421875,
+        76.41692352294922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.135764017701149,
+        "median_depth": 0.1346464455127716,
+        "depth_std": 0.011093581095337868,
+        "depth_min": 0.11799035221338272,
+        "depth_max": 0.16310052573680878,
+        "mask_area": 245
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "microwave",
+      "confidence": 0.5120033621788025,
+      "bounding_box": [
+        93.1526107788086,
+        57.26034164428711,
+        147.15731811523438,
+        100.31971740722656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28071707487106323,
+        "median_depth": 0.2791140675544739,
+        "depth_std": 0.01678551733493805,
+        "depth_min": 0.2491934448480606,
+        "depth_max": 0.33502864837646484,
+        "mask_area": 1193
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. cabinet. microwave. book. cup. spoon. plate. trash can.",
+  "text_prompt": "robot arm. gripper. countertop. cabinet. microwave. book. cup. spoon. plate. trash can.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "chair",
+    "countertop",
+    "chair",
+    "refrigerator",
+    "oven"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: oven, chair, refrigerator, countertop, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.20331846177577972,
+        "relative_position": "closest",
+        "confidence": 0.5854722857475281
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "countertop",
+        "mean_depth": 0.2669236361980438,
+        "relative_position": "middle",
+        "confidence": 0.38781458139419556
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.44718146324157715,
+        "relative_position": "middle",
+        "confidence": 0.6526126265525818
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.4905499517917633,
+        "relative_position": "middle",
+        "confidence": 0.7372065782546997
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "oven",
+        "mean_depth": 0.9462864398956299,
+        "relative_position": "farthest",
+        "confidence": 0.558224618434906
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "oven",
+        "mean_depth": 0.9462864398956299,
+        "relative_position": "farthest",
+        "confidence": 0.558224618434906
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.4905499517917633,
+        "relative_position": "middle",
+        "confidence": 0.7372065782546997
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.44718146324157715,
+        "relative_position": "middle",
+        "confidence": 0.6526126265525818
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "countertop",
+        "mean_depth": 0.2669236361980438,
+        "relative_position": "middle",
+        "confidence": 0.38781458139419556
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.20331846177577972,
+        "relative_position": "closest",
+        "confidence": 0.5854722857475281
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.5854722857475281,
+      "bounding_box": [
+        126.41584014892578,
+        52.317928314208984,
+        227.85040283203125,
+        179.9290313720703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20331846177577972,
+        "median_depth": 0.19091856479644775,
+        "depth_std": 0.06307056546211243,
+        "depth_min": 0.12859533727169037,
+        "depth_max": 0.827874481678009,
+        "mask_area": 4906
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "countertop",
+      "confidence": 0.38781458139419556,
+      "bounding_box": [
+        268.43157958984375,
+        16.665481567382812,
+        315.9810791015625,
+        100.24241638183594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2669236361980438,
+        "median_depth": 0.26233869791030884,
+        "depth_std": 0.11084035038948059,
+        "depth_min": 0.06658933311700821,
+        "depth_max": 0.7594901919364929,
+        "mask_area": 1971
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.6526126265525818,
+      "bounding_box": [
+        215.58164978027344,
+        23.05561065673828,
+        281.53472900390625,
+        110.02823638916016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.44718146324157715,
+        "median_depth": 0.44568049907684326,
+        "depth_std": 0.074306920170784,
+        "depth_min": 0.3451731204986572,
+        "depth_max": 0.967860758304596,
+        "mask_area": 2445
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "refrigerator",
+      "confidence": 0.7372065782546997,
+      "bounding_box": [
+        125.87541198730469,
+        0.052398681640625,
+        162.78102111816406,
+        86.10746002197266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4905499517917633,
+        "median_depth": 0.48516252636909485,
+        "depth_std": 0.08933589607477188,
+        "depth_min": 0.2988368570804596,
+        "depth_max": 0.7328336238861084,
+        "mask_area": 2087
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "oven",
+      "confidence": 0.558224618434906,
+      "bounding_box": [
+        196.90805053710938,
+        8.318229675292969,
+        248.23541259765625,
+        43.10553741455078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9462864398956299,
+        "median_depth": 0.9491963386535645,
+        "depth_std": 0.04261248558759689,
+        "depth_min": 0.8593859672546387,
+        "depth_max": 1.0,
+        "mask_area": 1024
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. cup. kettle. plate. chair. stool. countertop. refrigerator. oven. cabinet. rug.",
+  "text_prompt": "robot arm. robot gripper. cup. kettle. plate. chair. stool. countertop. refrigerator. oven. cabinet. rug.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/home/ulal/visual_reasoning/tmp/depth_extended_temp_1373754/temp_image_1293.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_1293.jpg"
+  },
+  "correct_ordering": [
+    "cable",
+    "clamp",
+    "bowl",
+    "faucet",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: faucet, cable, clamp, bowl, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cable",
+        "mean_depth": 0.01987938955426216,
+        "relative_position": "closest",
+        "confidence": 0.49565911293029785
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "clamp",
+        "mean_depth": 0.02601238340139389,
+        "relative_position": "middle",
+        "confidence": 0.4543003737926483
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.06638236343860626,
+        "relative_position": "middle",
+        "confidence": 0.7513908743858337
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.08534590899944305,
+        "relative_position": "middle",
+        "confidence": 0.37480977177619934
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.23803986608982086,
+        "relative_position": "farthest",
+        "confidence": 0.38970422744750977
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.23803986608982086,
+        "relative_position": "farthest",
+        "confidence": 0.38970422744750977
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.08534590899944305,
+        "relative_position": "middle",
+        "confidence": 0.37480977177619934
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.06638236343860626,
+        "relative_position": "middle",
+        "confidence": 0.7513908743858337
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "clamp",
+        "mean_depth": 0.02601238340139389,
+        "relative_position": "middle",
+        "confidence": 0.4543003737926483
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cable",
+        "mean_depth": 0.01987938955426216,
+        "relative_position": "closest",
+        "confidence": 0.49565911293029785
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "cable",
+      "confidence": 0.49565911293029785,
+      "bounding_box": [
+        0.14414024353027344,
+        123.08378601074219,
+        52.9888916015625,
+        179.90821838378906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01987938955426216,
+        "median_depth": 0.01845918782055378,
+        "depth_std": 0.009833462536334991,
+        "depth_min": 0.0033133167307823896,
+        "depth_max": 0.042903024703264236,
+        "mask_area": 1799
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "clamp",
+      "confidence": 0.4543003737926483,
+      "bounding_box": [
+        84.4709701538086,
+        106.2719497680664,
+        131.62327575683594,
+        153.57064819335938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02601238340139389,
+        "median_depth": 0.025941336527466774,
+        "depth_std": 0.0050098588690161705,
+        "depth_min": 0.018678130581974983,
+        "depth_max": 0.05181265249848366,
+        "mask_area": 653
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.7513908743858337,
+      "bounding_box": [
+        127.95915222167969,
+        19.078208923339844,
+        175.2091827392578,
+        41.12079620361328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06638236343860626,
+        "median_depth": 0.05892490968108177,
+        "depth_std": 0.04101269692182541,
+        "depth_min": 0.04913702607154846,
+        "depth_max": 0.5151104927062988,
+        "mask_area": 529
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "faucet",
+      "confidence": 0.37480977177619934,
+      "bounding_box": [
+        197.7244110107422,
+        111.91339111328125,
+        226.07041931152344,
+        139.01681518554688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08534590899944305,
+        "median_depth": 0.07807255536317825,
+        "depth_std": 0.0303450096398592,
+        "depth_min": 0.06281331926584244,
+        "depth_max": 0.32578977942466736,
+        "mask_area": 361
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.38970422744750977,
+      "bounding_box": [
+        0.15364837646484375,
+        0.114776611328125,
+        74.73249816894531,
+        80.79650115966797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23803986608982086,
+        "median_depth": 0.2353539764881134,
+        "depth_std": 0.023494243621826172,
+        "depth_min": 0.1689831018447876,
+        "depth_max": 0.378996878862381,
+        "mask_area": 3314
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. fruit. bottle. clamp. cable. table. chair. cabinet. grater. faucet. sink. strainer. laptop. container.",
+  "text_prompt": "bowl. fruit. bottle. clamp. cable. table. chair. cabinet. grater. faucet. sink. strainer. laptop. container.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

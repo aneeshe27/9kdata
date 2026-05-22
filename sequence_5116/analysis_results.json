@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper kettle dispenser",
+    "coffee machine dispenser",
+    "cabinet",
+    "power outlet",
+    "camera"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: power outlet, gripper kettle dispenser, coffee machine dispenser, camera, cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "gripper kettle dispenser",
+        "mean_depth": 0.16525931656360626,
+        "relative_position": "closest",
+        "confidence": 0.37800461053848267
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "coffee machine dispenser",
+        "mean_depth": 0.17433103919029236,
+        "relative_position": "middle",
+        "confidence": 0.425862193107605
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.22798432409763336,
+        "relative_position": "middle",
+        "confidence": 0.3831051290035248
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.3275318741798401,
+        "relative_position": "middle",
+        "confidence": 0.5674437880516052
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "camera",
+        "mean_depth": 0.3412724435329437,
+        "relative_position": "farthest",
+        "confidence": 0.4087322950363159
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "camera",
+        "mean_depth": 0.3412724435329437,
+        "relative_position": "farthest",
+        "confidence": 0.4087322950363159
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.3275318741798401,
+        "relative_position": "middle",
+        "confidence": 0.5674437880516052
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.22798432409763336,
+        "relative_position": "middle",
+        "confidence": 0.3831051290035248
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "coffee machine dispenser",
+        "mean_depth": 0.17433103919029236,
+        "relative_position": "middle",
+        "confidence": 0.425862193107605
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "gripper kettle dispenser",
+        "mean_depth": 0.16525931656360626,
+        "relative_position": "closest",
+        "confidence": 0.37800461053848267
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "gripper kettle dispenser",
+      "confidence": 0.37800461053848267,
+      "bounding_box": [
+        257.931396484375,
+        109.34762573242188,
+        292.03271484375,
+        151.51690673828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16525931656360626,
+        "median_depth": 0.16624489426612854,
+        "depth_std": 0.012067189440131187,
+        "depth_min": 0.14409516751766205,
+        "depth_max": 0.19430555403232574,
+        "mask_area": 828
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "coffee machine dispenser",
+      "confidence": 0.425862193107605,
+      "bounding_box": [
+        219.7777862548828,
+        104.78363037109375,
+        259.4349060058594,
+        152.03628540039062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17433103919029236,
+        "median_depth": 0.17335525155067444,
+        "depth_std": 0.014021956361830235,
+        "depth_min": 0.13312633335590363,
+        "depth_max": 0.23242594301700592,
+        "mask_area": 1317
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.3831051290035248,
+      "bounding_box": [
+        145.76986694335938,
+        0.14740371704101562,
+        315.9548645019531,
+        69.77250671386719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22798432409763336,
+        "median_depth": 0.22353054583072662,
+        "depth_std": 0.07336977869272232,
+        "depth_min": 0.09585732221603394,
+        "depth_max": 0.41402408480644226,
+        "mask_area": 8665
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "power outlet",
+      "confidence": 0.5674437880516052,
+      "bounding_box": [
+        161.6145782470703,
+        112.5158920288086,
+        175.3982391357422,
+        122.25554656982422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3275318741798401,
+        "median_depth": 0.326499342918396,
+        "depth_std": 0.006304618902504444,
+        "depth_min": 0.31886041164398193,
+        "depth_max": 0.34178242087364197,
+        "mask_area": 108
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "camera",
+      "confidence": 0.4087322950363159,
+      "bounding_box": [
+        140.24447631835938,
+        91.2856216430664,
+        159.3402099609375,
+        120.7031478881836
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3412724435329437,
+        "median_depth": 0.3432146906852722,
+        "depth_std": 0.01808529533445835,
+        "depth_min": 0.3168644607067108,
+        "depth_max": 0.39771902561187744,
+        "mask_area": 344
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cables. camera. cabinet. countertop. wall. power outlet. power cord. coffee machine. kettle. dispenser.",
+  "text_prompt": "robot arm. gripper. cables. camera. cabinet. countertop. wall. power outlet. power cord. coffee machine. kettle. dispenser.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

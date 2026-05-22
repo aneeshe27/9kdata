@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "robot arm",
+    "gripper",
+    "box",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: box, gripper, box, robot arm, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.11401723325252533,
+        "relative_position": "closest",
+        "confidence": 0.5766874551773071
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.2521783113479614,
+        "relative_position": "middle",
+        "confidence": 0.527137041091919
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.5627602338790894,
+        "relative_position": "middle",
+        "confidence": 0.4569299519062042
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.6990899443626404,
+        "relative_position": "middle",
+        "confidence": 0.36604151129722595
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.7760739326477051,
+        "relative_position": "farthest",
+        "confidence": 0.42929762601852417
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.7760739326477051,
+        "relative_position": "farthest",
+        "confidence": 0.42929762601852417
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.6990899443626404,
+        "relative_position": "middle",
+        "confidence": 0.36604151129722595
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.5627602338790894,
+        "relative_position": "middle",
+        "confidence": 0.4569299519062042
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.2521783113479614,
+        "relative_position": "middle",
+        "confidence": 0.527137041091919
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.11401723325252533,
+        "relative_position": "closest",
+        "confidence": 0.5766874551773071
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.5766874551773071,
+      "bounding_box": [
+        92.68789672851562,
+        84.133544921875,
+        266.1764831542969,
+        179.84112548828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11401723325252533,
+        "median_depth": 0.08685038983821869,
+        "depth_std": 0.1147107183933258,
+        "depth_min": 0.0,
+        "depth_max": 0.9816426038742065,
+        "mask_area": 10836
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.527137041091919,
+      "bounding_box": [
+        128.75506591796875,
+        0.06038665771484375,
+        198.45382690429688,
+        129.30075073242188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2521783113479614,
+        "median_depth": 0.1725255846977234,
+        "depth_std": 0.20414526760578156,
+        "depth_min": 0.020937984809279442,
+        "depth_max": 0.9352929592132568,
+        "mask_area": 4137
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "gripper",
+      "confidence": 0.4569299519062042,
+      "bounding_box": [
+        47.949798583984375,
+        119.78109741210938,
+        92.46946716308594,
+        148.26031494140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5627602338790894,
+        "median_depth": 0.5417590737342834,
+        "depth_std": 0.14871549606323242,
+        "depth_min": 0.38500887155532837,
+        "depth_max": 0.9513865113258362,
+        "mask_area": 519
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "box",
+      "confidence": 0.36604151129722595,
+      "bounding_box": [
+        33.52977752685547,
+        58.630645751953125,
+        93.35517883300781,
+        87.93409729003906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6990899443626404,
+        "median_depth": 0.7350344657897949,
+        "depth_std": 0.11681335419416428,
+        "depth_min": 0.5275522470474243,
+        "depth_max": 0.9019315242767334,
+        "mask_area": 1212
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "box",
+      "confidence": 0.42929762601852417,
+      "bounding_box": [
+        252.84463500976562,
+        13.380657196044922,
+        315.9734802246094,
+        108.81195068359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7760739326477051,
+        "median_depth": 0.7601791024208069,
+        "depth_std": 0.09434959292411804,
+        "depth_min": 0.6330002546310425,
+        "depth_max": 0.99154132604599,
+        "mask_area": 4479
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sponge. table. box. screwdriver.",
+  "text_prompt": "robot arm. gripper. sponge. table. box. screwdriver.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

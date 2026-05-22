@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cabinet",
+    "sink",
+    "robot arm gripper",
+    "faucet",
+    "coffee machine"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: coffee machine, sink, faucet, cabinet, robot arm gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.17318665981292725,
+        "relative_position": "closest",
+        "confidence": 0.3968563377857208
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.3498895466327667,
+        "relative_position": "middle",
+        "confidence": 0.6897351145744324
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot arm gripper",
+        "mean_depth": 0.37940219044685364,
+        "relative_position": "middle",
+        "confidence": 0.4511163532733917
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.41638168692588806,
+        "relative_position": "middle",
+        "confidence": 0.7358669638633728
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "coffee machine",
+        "mean_depth": 0.853351354598999,
+        "relative_position": "farthest",
+        "confidence": 0.42007091641426086
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "coffee machine",
+        "mean_depth": 0.853351354598999,
+        "relative_position": "farthest",
+        "confidence": 0.42007091641426086
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.41638168692588806,
+        "relative_position": "middle",
+        "confidence": 0.7358669638633728
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot arm gripper",
+        "mean_depth": 0.37940219044685364,
+        "relative_position": "middle",
+        "confidence": 0.4511163532733917
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.3498895466327667,
+        "relative_position": "middle",
+        "confidence": 0.6897351145744324
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.17318665981292725,
+        "relative_position": "closest",
+        "confidence": 0.3968563377857208
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3968563377857208,
+      "bounding_box": [
+        129.5133056640625,
+        103.9781494140625,
+        315.9943542480469,
+        180.00643920898438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17318665981292725,
+        "median_depth": 0.1501150131225586,
+        "depth_std": 0.11145245283842087,
+        "depth_min": 0.0008878152584657073,
+        "depth_max": 0.4481002390384674,
+        "mask_area": 1269
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.6897351145744324,
+      "bounding_box": [
+        -0.002651214599609375,
+        111.08528900146484,
+        75.80563354492188,
+        179.97393798828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3498895466327667,
+        "median_depth": 0.3231185972690582,
+        "depth_std": 0.07918946444988251,
+        "depth_min": 0.20888227224349976,
+        "depth_max": 0.5597293972969055,
+        "mask_area": 2653
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot arm gripper",
+      "confidence": 0.4511163532733917,
+      "bounding_box": [
+        196.07382202148438,
+        0.035137176513671875,
+        254.7078857421875,
+        108.51939392089844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.37940219044685364,
+        "median_depth": 0.36378246545791626,
+        "depth_std": 0.13086864352226257,
+        "depth_min": 0.1724930852651596,
+        "depth_max": 0.9164197444915771,
+        "mask_area": 3270
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.7358669638633728,
+      "bounding_box": [
+        0.005397796630859375,
+        73.95819854736328,
+        49.95680618286133,
+        127.7367172241211
+      ],
+      "depth_stats": {
+        "mean_depth": 0.41638168692588806,
+        "median_depth": 0.3906409442424774,
+        "depth_std": 0.06441836059093475,
+        "depth_min": 0.35821059346199036,
+        "depth_max": 0.6509807705879211,
+        "mask_area": 954
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "coffee machine",
+      "confidence": 0.42007091641426086,
+      "bounding_box": [
+        263.23565673828125,
+        20.45053482055664,
+        315.9815673828125,
+        83.69349670410156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.853351354598999,
+        "median_depth": 0.8372243642807007,
+        "depth_std": 0.07631887495517731,
+        "depth_min": 0.7410385012626648,
+        "depth_max": 0.9892045259475708,
+        "mask_area": 2595
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. faucet. countertop. robot arm. gripper. sponge. coffee machine. cabinet.",
+  "text_prompt": "sink. faucet. countertop. robot arm. gripper. sponge. coffee machine. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

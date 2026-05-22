@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "paper bag",
+    "frying pan",
+    "spice jar canister",
+    "bottle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: frying pan, spice jar canister, paper bag, robot arm, bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.020325474441051483,
+        "relative_position": "closest",
+        "confidence": 0.50063556432724
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "paper bag",
+        "mean_depth": 0.07366231083869934,
+        "relative_position": "middle",
+        "confidence": 0.5998409986495972
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "frying pan",
+        "mean_depth": 0.15236510336399078,
+        "relative_position": "middle",
+        "confidence": 0.3570766746997833
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "spice jar canister",
+        "mean_depth": 0.23297128081321716,
+        "relative_position": "middle",
+        "confidence": 0.4512990117073059
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.25375896692276,
+        "relative_position": "farthest",
+        "confidence": 0.4119829833507538
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.25375896692276,
+        "relative_position": "farthest",
+        "confidence": 0.4119829833507538
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "spice jar canister",
+        "mean_depth": 0.23297128081321716,
+        "relative_position": "middle",
+        "confidence": 0.4512990117073059
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "frying pan",
+        "mean_depth": 0.15236510336399078,
+        "relative_position": "middle",
+        "confidence": 0.3570766746997833
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "paper bag",
+        "mean_depth": 0.07366231083869934,
+        "relative_position": "middle",
+        "confidence": 0.5998409986495972
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.020325474441051483,
+        "relative_position": "closest",
+        "confidence": 0.50063556432724
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.50063556432724,
+      "bounding_box": [
+        135.7750244140625,
+        0.0287628173828125,
+        315.94000244140625,
+        101.1860122680664
+      ],
+      "depth_stats": {
+        "mean_depth": 0.020325474441051483,
+        "median_depth": 0.008856664411723614,
+        "depth_std": 0.07372691482305527,
+        "depth_min": 1.7023827240336686e-05,
+        "depth_max": 0.980204164981842,
+        "mask_area": 6656
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "paper bag",
+      "confidence": 0.5998409986495972,
+      "bounding_box": [
+        30.107749938964844,
+        0.21747589111328125,
+        145.815185546875,
+        136.7864990234375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07366231083869934,
+        "median_depth": 0.07173363119363785,
+        "depth_std": 0.015830600634217262,
+        "depth_min": 0.05409807339310646,
+        "depth_max": 0.4252748489379883,
+        "mask_area": 10859
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "frying pan",
+      "confidence": 0.3570766746997833,
+      "bounding_box": [
+        148.65538024902344,
+        117.06169891357422,
+        191.9644317626953,
+        146.1890106201172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15236510336399078,
+        "median_depth": 0.15269716084003448,
+        "depth_std": 0.017085164785385132,
+        "depth_min": 0.06894099712371826,
+        "depth_max": 0.18611595034599304,
+        "mask_area": 783
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "spice jar canister",
+      "confidence": 0.4512990117073059,
+      "bounding_box": [
+        237.97467041015625,
+        104.30054473876953,
+        251.47705078125,
+        128.0019073486328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23297128081321716,
+        "median_depth": 0.22891679406166077,
+        "depth_std": 0.01805686578154564,
+        "depth_min": 0.20564882457256317,
+        "depth_max": 0.28850194811820984,
+        "mask_area": 198
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bottle",
+      "confidence": 0.4119829833507538,
+      "bounding_box": [
+        214.58035278320312,
+        93.12934112548828,
+        225.1785888671875,
+        119.55672454833984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.25375896692276,
+        "median_depth": 0.24844752252101898,
+        "depth_std": 0.03027401864528656,
+        "depth_min": 0.21304951608181,
+        "depth_max": 0.3500616252422333,
+        "mask_area": 170
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. frying pan. stove. burner. spice jar. bottle. canister. paper bag. camera. tripod. countertop.",
+  "text_prompt": "robot arm. gripper. frying pan. stove. burner. spice jar. bottle. canister. paper bag. camera. tripod. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

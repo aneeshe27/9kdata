@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "book",
+    "table",
+    "curtain",
+    "monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, book, robot arm, monitor, curtain",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.13309630751609802,
+        "relative_position": "closest",
+        "confidence": 0.40805259346961975
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "book",
+        "mean_depth": 0.1689177304506302,
+        "relative_position": "middle",
+        "confidence": 0.4569441080093384
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.18804019689559937,
+        "relative_position": "middle",
+        "confidence": 0.5588914752006531
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "curtain",
+        "mean_depth": 0.21703873574733734,
+        "relative_position": "middle",
+        "confidence": 0.5421786308288574
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "monitor",
+        "mean_depth": 0.3636508882045746,
+        "relative_position": "farthest",
+        "confidence": 0.5348941087722778
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "monitor",
+        "mean_depth": 0.3636508882045746,
+        "relative_position": "farthest",
+        "confidence": 0.5348941087722778
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "curtain",
+        "mean_depth": 0.21703873574733734,
+        "relative_position": "middle",
+        "confidence": 0.5421786308288574
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.18804019689559937,
+        "relative_position": "middle",
+        "confidence": 0.5588914752006531
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "book",
+        "mean_depth": 0.1689177304506302,
+        "relative_position": "middle",
+        "confidence": 0.4569441080093384
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.13309630751609802,
+        "relative_position": "closest",
+        "confidence": 0.40805259346961975
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.40805259346961975,
+      "bounding_box": [
+        213.72850036621094,
+        0.09476661682128906,
+        268.04351806640625,
+        59.17754364013672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13309630751609802,
+        "median_depth": 0.02436312660574913,
+        "depth_std": 0.1852090209722519,
+        "depth_min": 0.0,
+        "depth_max": 0.6690336465835571,
+        "mask_area": 1684
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "book",
+      "confidence": 0.4569441080093384,
+      "bounding_box": [
+        0.91314697265625,
+        103.0866470336914,
+        78.21711730957031,
+        150.0614013671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1689177304506302,
+        "median_depth": 0.16980662941932678,
+        "depth_std": 0.020375855267047882,
+        "depth_min": 0.12350661307573318,
+        "depth_max": 0.22358475625514984,
+        "mask_area": 1965
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.5588914752006531,
+      "bounding_box": [
+        121.29448699951172,
+        50.04529571533203,
+        296.8011169433594,
+        179.79550170898438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18804019689559937,
+        "median_depth": 0.16590410470962524,
+        "depth_std": 0.08328878879547119,
+        "depth_min": 0.08111654967069626,
+        "depth_max": 0.4758484959602356,
+        "mask_area": 5784
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "curtain",
+      "confidence": 0.5421786308288574,
+      "bounding_box": [
+        0.1588897705078125,
+        0.097686767578125,
+        148.33616638183594,
+        116.0544204711914
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21703873574733734,
+        "median_depth": 0.2105332911014557,
+        "depth_std": 0.03880777582526207,
+        "depth_min": 0.14475750923156738,
+        "depth_max": 0.33219844102859497,
+        "mask_area": 13666
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "monitor",
+      "confidence": 0.5348941087722778,
+      "bounding_box": [
+        141.5825653076172,
+        3.9644412994384766,
+        164.4786834716797,
+        66.79786682128906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3636508882045746,
+        "median_depth": 0.362992525100708,
+        "depth_std": 0.031024115160107613,
+        "depth_min": 0.30791014432907104,
+        "depth_max": 0.4771188199520111,
+        "mask_area": 475
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. monitor. bowl. cup. container. plate. book. power strip. cable. cart. paper. curtain.",
+  "text_prompt": "robot arm. gripper. table. monitor. bowl. cup. container. plate. book. power strip. cable. cart. paper. curtain.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

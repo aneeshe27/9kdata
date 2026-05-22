@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "towel",
+    "sink",
+    "faucet",
+    "cabinet",
+    "bottle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: towel, cabinet, bottle, faucet, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "towel",
+        "mean_depth": 0.11246826499700546,
+        "relative_position": "closest",
+        "confidence": 0.6903504729270935
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.30032655596733093,
+        "relative_position": "middle",
+        "confidence": 0.7546111941337585
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.33088022470474243,
+        "relative_position": "middle",
+        "confidence": 0.35802844166755676
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.363269567489624,
+        "relative_position": "middle",
+        "confidence": 0.37818071246147156
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "bottle",
+        "mean_depth": 0.36432313919067383,
+        "relative_position": "farthest",
+        "confidence": 0.6081612706184387
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "bottle",
+        "mean_depth": 0.36432313919067383,
+        "relative_position": "farthest",
+        "confidence": 0.6081612706184387
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.363269567489624,
+        "relative_position": "middle",
+        "confidence": 0.37818071246147156
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.33088022470474243,
+        "relative_position": "middle",
+        "confidence": 0.35802844166755676
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.30032655596733093,
+        "relative_position": "middle",
+        "confidence": 0.7546111941337585
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "towel",
+        "mean_depth": 0.11246826499700546,
+        "relative_position": "closest",
+        "confidence": 0.6903504729270935
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "towel",
+      "confidence": 0.6903504729270935,
+      "bounding_box": [
+        103.40728759765625,
+        9.093852996826172,
+        121.73446655273438,
+        87.22434997558594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11246826499700546,
+        "median_depth": 0.10817233473062515,
+        "depth_std": 0.022446373477578163,
+        "depth_min": 0.08556991815567017,
+        "depth_max": 0.33896851539611816,
+        "mask_area": 834
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.7546111941337585,
+      "bounding_box": [
+        120.28111267089844,
+        111.22860717773438,
+        226.8683319091797,
+        179.79190063476562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30032655596733093,
+        "median_depth": 0.32004934549331665,
+        "depth_std": 0.056215640157461166,
+        "depth_min": 0.15173083543777466,
+        "depth_max": 0.3738219738006592,
+        "mask_area": 2709
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "faucet",
+      "confidence": 0.35802844166755676,
+      "bounding_box": [
+        159.545654296875,
+        98.34284973144531,
+        176.837158203125,
+        113.44285583496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33088022470474243,
+        "median_depth": 0.3288283348083496,
+        "depth_std": 0.01148304995149374,
+        "depth_min": 0.3148224651813507,
+        "depth_max": 0.36240604519844055,
+        "mask_area": 145
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.37818071246147156,
+      "bounding_box": [
+        188.07579040527344,
+        28.15421485900879,
+        244.37925720214844,
+        81.5383071899414
+      ],
+      "depth_stats": {
+        "mean_depth": 0.363269567489624,
+        "median_depth": 0.35481852293014526,
+        "depth_std": 0.05903145670890808,
+        "depth_min": 0.06277570128440857,
+        "depth_max": 0.5313684940338135,
+        "mask_area": 2001
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bottle",
+      "confidence": 0.6081612706184387,
+      "bounding_box": [
+        144.06471252441406,
+        70.31600952148438,
+        152.47914123535156,
+        92.51310729980469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.36432313919067383,
+        "median_depth": 0.30762648582458496,
+        "depth_std": 0.1507013738155365,
+        "depth_min": 0.2247333973646164,
+        "depth_max": 0.9022486805915833,
+        "mask_area": 114
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. cabinet. window. countertop. towel. bottle. kettle. cup. bowl. plate. sponge. glove. dish rack.",
+  "text_prompt": "robot arm. gripper. sink. faucet. cabinet. window. countertop. towel. bottle. kettle. cup. bowl. plate. sponge. glove. dish rack.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "brush",
+    "washing machine",
+    "washing machine",
+    "detergent bottle bottle",
+    "faucet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: faucet, brush, washing machine, detergent bottle bottle, washing machine",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "brush",
+        "mean_depth": 0.06689591705799103,
+        "relative_position": "closest",
+        "confidence": 0.3709792196750641
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "washing machine",
+        "mean_depth": 0.08028095960617065,
+        "relative_position": "middle",
+        "confidence": 0.4361594617366791
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "washing machine",
+        "mean_depth": 0.19369155168533325,
+        "relative_position": "middle",
+        "confidence": 0.40536341071128845
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "detergent bottle bottle",
+        "mean_depth": 0.31146690249443054,
+        "relative_position": "middle",
+        "confidence": 0.41208481788635254
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.33884963393211365,
+        "relative_position": "farthest",
+        "confidence": 0.49976545572280884
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.33884963393211365,
+        "relative_position": "farthest",
+        "confidence": 0.49976545572280884
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "detergent bottle bottle",
+        "mean_depth": 0.31146690249443054,
+        "relative_position": "middle",
+        "confidence": 0.41208481788635254
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "washing machine",
+        "mean_depth": 0.19369155168533325,
+        "relative_position": "middle",
+        "confidence": 0.40536341071128845
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "washing machine",
+        "mean_depth": 0.08028095960617065,
+        "relative_position": "middle",
+        "confidence": 0.4361594617366791
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "brush",
+        "mean_depth": 0.06689591705799103,
+        "relative_position": "closest",
+        "confidence": 0.3709792196750641
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "brush",
+      "confidence": 0.3709792196750641,
+      "bounding_box": [
+        100.21073913574219,
+        151.6031494140625,
+        199.5856475830078,
+        179.98379516601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06689591705799103,
+        "median_depth": 0.06206980720162392,
+        "depth_std": 0.019700871780514717,
+        "depth_min": 0.035292621701955795,
+        "depth_max": 0.12824662029743195,
+        "mask_area": 1675
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "washing machine",
+      "confidence": 0.4361594617366791,
+      "bounding_box": [
+        0.0302734375,
+        109.15664672851562,
+        90.62287902832031,
+        180.02554321289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08028095960617065,
+        "median_depth": 0.07648395746946335,
+        "depth_std": 0.03707578033208847,
+        "depth_min": 0.017335684970021248,
+        "depth_max": 0.2972849905490875,
+        "mask_area": 4321
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "washing machine",
+      "confidence": 0.40536341071128845,
+      "bounding_box": [
+        40.676979064941406,
+        63.80875015258789,
+        203.91067504882812,
+        149.33013916015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19369155168533325,
+        "median_depth": 0.17525461316108704,
+        "depth_std": 0.057619452476501465,
+        "depth_min": 0.14940689504146576,
+        "depth_max": 0.5733737945556641,
+        "mask_area": 6939
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "detergent bottle bottle",
+      "confidence": 0.41208481788635254,
+      "bounding_box": [
+        132.5127410888672,
+        38.798736572265625,
+        148.0467987060547,
+        83.77899169921875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.31146690249443054,
+        "median_depth": 0.3160596489906311,
+        "depth_std": 0.052613310515880585,
+        "depth_min": 0.21938498318195343,
+        "depth_max": 0.4403492510318756,
+        "mask_area": 372
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.49976545572280884,
+      "bounding_box": [
+        34.16884231567383,
+        54.03044891357422,
+        51.208316802978516,
+        70.70401763916016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33884963393211365,
+        "median_depth": 0.33773523569107056,
+        "depth_std": 0.008004727773368359,
+        "depth_min": 0.3172171413898468,
+        "depth_max": 0.3619565963745117,
+        "mask_area": 136
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "washing machine. detergent bottle. jug. bottle. iron. power cord. brush. robot arm. gripper. table. faucet. shelf.",
+  "text_prompt": "washing machine. detergent bottle. jug. bottle. iron. power cord. brush. robot arm. gripper. table. faucet. shelf.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

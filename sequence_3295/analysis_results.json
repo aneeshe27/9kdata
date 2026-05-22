@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "sponge",
+    "countertop",
+    "cabinet",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sponge, cabinet, window, countertop, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.08146436512470245,
+        "relative_position": "closest",
+        "confidence": 0.6147416830062866
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "sponge",
+        "mean_depth": 0.5302678942680359,
+        "relative_position": "middle",
+        "confidence": 0.4248570203781128
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.6736960411071777,
+        "relative_position": "middle",
+        "confidence": 0.5736922025680542
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.7012916207313538,
+        "relative_position": "middle",
+        "confidence": 0.3576110899448395
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "window",
+        "mean_depth": 0.8667033910751343,
+        "relative_position": "farthest",
+        "confidence": 0.7340826988220215
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "window",
+        "mean_depth": 0.8667033910751343,
+        "relative_position": "farthest",
+        "confidence": 0.7340826988220215
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.7012916207313538,
+        "relative_position": "middle",
+        "confidence": 0.3576110899448395
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.6736960411071777,
+        "relative_position": "middle",
+        "confidence": 0.5736922025680542
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "sponge",
+        "mean_depth": 0.5302678942680359,
+        "relative_position": "middle",
+        "confidence": 0.4248570203781128
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.08146436512470245,
+        "relative_position": "closest",
+        "confidence": 0.6147416830062866
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.6147416830062866,
+      "bounding_box": [
+        119.20802307128906,
+        47.102821350097656,
+        229.28233337402344,
+        179.78134155273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08146436512470245,
+        "median_depth": 0.03305289149284363,
+        "depth_std": 0.1260703057050705,
+        "depth_min": 0.013482194393873215,
+        "depth_max": 0.956181526184082,
+        "mask_area": 5277
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "sponge",
+      "confidence": 0.4248570203781128,
+      "bounding_box": [
+        30.81960678100586,
+        149.48348999023438,
+        54.265865325927734,
+        165.36654663085938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5302678942680359,
+        "median_depth": 0.5282975435256958,
+        "depth_std": 0.024225136265158653,
+        "depth_min": 0.46164974570274353,
+        "depth_max": 0.5745337009429932,
+        "mask_area": 221
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "countertop",
+      "confidence": 0.5736922025680542,
+      "bounding_box": [
+        0.00799560546875,
+        85.20915985107422,
+        316.0079650878906,
+        141.29119873046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6736960411071777,
+        "median_depth": 0.6104994416236877,
+        "depth_std": 0.1363300085067749,
+        "depth_min": 0.4298006296157837,
+        "depth_max": 0.9938600659370422,
+        "mask_area": 4780
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3576110899448395,
+      "bounding_box": [
+        236.3166046142578,
+        0.0538482666015625,
+        315.98175048828125,
+        75.5715103149414
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7012916207313538,
+        "median_depth": 0.6768531799316406,
+        "depth_std": 0.07413499057292938,
+        "depth_min": 0.6079341173171997,
+        "depth_max": 0.9331203699111938,
+        "mask_area": 5069
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "window",
+      "confidence": 0.7340826988220215,
+      "bounding_box": [
+        74.30968475341797,
+        0.06423187255859375,
+        246.99871826171875,
+        74.01235961914062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8667033910751343,
+        "median_depth": 0.8608971834182739,
+        "depth_std": 0.023740287870168686,
+        "depth_min": 0.8361451625823975,
+        "depth_max": 0.9831144213676453,
+        "mask_area": 2941
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. dish rack. sponge. cutting board. kettle. can. utensil. drawer. cabinet. countertop. window.",
+  "text_prompt": "robot arm. gripper. sink. faucet. dish rack. sponge. cutting board. kettle. can. utensil. drawer. cabinet. countertop. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

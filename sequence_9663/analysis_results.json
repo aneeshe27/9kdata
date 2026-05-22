@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "mat",
+    "wooden boards",
+    "computer monitor",
+    "partition wall"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: wooden boards, mat, partition wall, cloth, computer monitor",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.0860489159822464,
+        "relative_position": "closest",
+        "confidence": 0.621493935585022
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "mat",
+        "mean_depth": 0.20674215257167816,
+        "relative_position": "middle",
+        "confidence": 0.6403622031211853
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "wooden boards",
+        "mean_depth": 0.2937036454677582,
+        "relative_position": "middle",
+        "confidence": 0.6641191244125366
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "computer monitor",
+        "mean_depth": 0.8071789741516113,
+        "relative_position": "middle",
+        "confidence": 0.7856341600418091
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "partition wall",
+        "mean_depth": 0.8077101111412048,
+        "relative_position": "farthest",
+        "confidence": 0.5203379392623901
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "partition wall",
+        "mean_depth": 0.8077101111412048,
+        "relative_position": "farthest",
+        "confidence": 0.5203379392623901
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "computer monitor",
+        "mean_depth": 0.8071789741516113,
+        "relative_position": "middle",
+        "confidence": 0.7856341600418091
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "wooden boards",
+        "mean_depth": 0.2937036454677582,
+        "relative_position": "middle",
+        "confidence": 0.6641191244125366
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "mat",
+        "mean_depth": 0.20674215257167816,
+        "relative_position": "middle",
+        "confidence": 0.6403622031211853
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.0860489159822464,
+        "relative_position": "closest",
+        "confidence": 0.621493935585022
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cloth",
+      "confidence": 0.621493935585022,
+      "bounding_box": [
+        113.45600128173828,
+        133.27017211914062,
+        205.03439331054688,
+        179.93951416015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0860489159822464,
+        "median_depth": 0.07982317358255386,
+        "depth_std": 0.03385978192090988,
+        "depth_min": 0.05043492838740349,
+        "depth_max": 0.2941356897354126,
+        "mask_area": 2974
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "mat",
+      "confidence": 0.6403622031211853,
+      "bounding_box": [
+        156.9763946533203,
+        122.41725158691406,
+        256.34771728515625,
+        173.1967010498047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20674215257167816,
+        "median_depth": 0.1960282176733017,
+        "depth_std": 0.058028582483530045,
+        "depth_min": 0.0351630263030529,
+        "depth_max": 0.366984486579895,
+        "mask_area": 1690
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "wooden boards",
+      "confidence": 0.6641191244125366,
+      "bounding_box": [
+        260.63043212890625,
+        117.77973175048828,
+        315.9849853515625,
+        156.2310333251953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2937036454677582,
+        "median_depth": 0.2755596935749054,
+        "depth_std": 0.07624209672212601,
+        "depth_min": 0.19697201251983643,
+        "depth_max": 0.7045542597770691,
+        "mask_area": 941
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "computer monitor",
+      "confidence": 0.7856341600418091,
+      "bounding_box": [
+        295.833984375,
+        59.61445617675781,
+        315.9730224609375,
+        110.52023315429688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8071789741516113,
+        "median_depth": 0.8052178025245667,
+        "depth_std": 0.009707770310342312,
+        "depth_min": 0.7880491018295288,
+        "depth_max": 0.8446760773658752,
+        "mask_area": 673
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "partition wall",
+      "confidence": 0.5203379392623901,
+      "bounding_box": [
+        -0.229461669921875,
+        42.417327880859375,
+        296.86761474609375,
+        122.02305603027344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8077101111412048,
+        "median_depth": 0.796938419342041,
+        "depth_std": 0.0926101952791214,
+        "depth_min": 0.3252386748790741,
+        "depth_max": 0.9987218976020813,
+        "mask_area": 12430
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cloth. mat. power strip. cables. computer monitor. wooden boards. tool. partition wall.",
+  "text_prompt": "robot arm. gripper. table. cloth. mat. power strip. cables. computer monitor. wooden boards. tool. partition wall.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cabinet",
+    "box",
+    "trash can",
+    "cup"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: box, trash can, robot arm, cup, cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.026195090264081955,
+        "relative_position": "closest",
+        "confidence": 0.6281957030296326
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.08302976936101913,
+        "relative_position": "middle",
+        "confidence": 0.4397406578063965
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "box",
+        "mean_depth": 0.10223245620727539,
+        "relative_position": "middle",
+        "confidence": 0.6236603856086731
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "trash can",
+        "mean_depth": 0.16288243234157562,
+        "relative_position": "middle",
+        "confidence": 0.8840429186820984
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.27241334319114685,
+        "relative_position": "farthest",
+        "confidence": 0.4363885819911957
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.27241334319114685,
+        "relative_position": "farthest",
+        "confidence": 0.4363885819911957
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "trash can",
+        "mean_depth": 0.16288243234157562,
+        "relative_position": "middle",
+        "confidence": 0.8840429186820984
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "box",
+        "mean_depth": 0.10223245620727539,
+        "relative_position": "middle",
+        "confidence": 0.6236603856086731
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.08302976936101913,
+        "relative_position": "middle",
+        "confidence": 0.4397406578063965
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.026195090264081955,
+        "relative_position": "closest",
+        "confidence": 0.6281957030296326
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.6281957030296326,
+      "bounding_box": [
+        152.4740447998047,
+        25.266128540039062,
+        296.87188720703125,
+        179.75332641601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.026195090264081955,
+        "median_depth": 0.012036473490297794,
+        "depth_std": 0.052429378032684326,
+        "depth_min": 0.004992691334336996,
+        "depth_max": 0.779434084892273,
+        "mask_area": 7092
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.4397406578063965,
+      "bounding_box": [
+        0.04345703125,
+        0.044208526611328125,
+        78.55858612060547,
+        72.05169677734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08302976936101913,
+        "median_depth": 0.08167508989572525,
+        "depth_std": 0.009049705229699612,
+        "depth_min": 0.06574172526597977,
+        "depth_max": 0.12146332859992981,
+        "mask_area": 5127
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "box",
+      "confidence": 0.6236603856086731,
+      "bounding_box": [
+        -0.011199951171875,
+        97.71888732910156,
+        42.20740509033203,
+        135.78610229492188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10223245620727539,
+        "median_depth": 0.1002386212348938,
+        "depth_std": 0.011270130053162575,
+        "depth_min": 0.08208580315113068,
+        "depth_max": 0.13934364914894104,
+        "mask_area": 1298
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "trash can",
+      "confidence": 0.8840429186820984,
+      "bounding_box": [
+        76.62305450439453,
+        137.8855438232422,
+        128.69525146484375,
+        179.8910675048828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16288243234157562,
+        "median_depth": 0.15954701602458954,
+        "depth_std": 0.01607634872198105,
+        "depth_min": 0.13438469171524048,
+        "depth_max": 0.2050580382347107,
+        "mask_area": 1611
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.4363885819911957,
+      "bounding_box": [
+        131.34185791015625,
+        80.37540435791016,
+        140.02484130859375,
+        93.41223907470703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27241334319114685,
+        "median_depth": 0.2703201174736023,
+        "depth_std": 0.008907102979719639,
+        "depth_min": 0.26145732402801514,
+        "depth_max": 0.3020145297050476,
+        "mask_area": 94
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. drawer. utensil tray. fork. spoon. knife. plastic wrap roll. box. trash can. cabinet. countertop. table. cup.",
+  "text_prompt": "robot arm. gripper. drawer. utensil tray. fork. spoon. knife. plastic wrap roll. box. trash can. cabinet. countertop. table. cup.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

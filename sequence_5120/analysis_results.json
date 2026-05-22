@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "scissors",
+    "monitor",
+    "curtain",
+    "cardboard box",
+    "drawer cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: monitor, drawer cabinet, scissors, curtain, cardboard box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "scissors",
+        "mean_depth": 0.13164159655570984,
+        "relative_position": "closest",
+        "confidence": 0.6821562051773071
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.19871139526367188,
+        "relative_position": "middle",
+        "confidence": 0.6116657853126526
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "curtain",
+        "mean_depth": 0.4558926820755005,
+        "relative_position": "middle",
+        "confidence": 0.5901439189910889
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cardboard box",
+        "mean_depth": 0.49106699228286743,
+        "relative_position": "middle",
+        "confidence": 0.38350847363471985
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "drawer cabinet",
+        "mean_depth": 0.5293390154838562,
+        "relative_position": "farthest",
+        "confidence": 0.5243552923202515
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "drawer cabinet",
+        "mean_depth": 0.5293390154838562,
+        "relative_position": "farthest",
+        "confidence": 0.5243552923202515
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cardboard box",
+        "mean_depth": 0.49106699228286743,
+        "relative_position": "middle",
+        "confidence": 0.38350847363471985
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "curtain",
+        "mean_depth": 0.4558926820755005,
+        "relative_position": "middle",
+        "confidence": 0.5901439189910889
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.19871139526367188,
+        "relative_position": "middle",
+        "confidence": 0.6116657853126526
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "scissors",
+        "mean_depth": 0.13164159655570984,
+        "relative_position": "closest",
+        "confidence": 0.6821562051773071
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "scissors",
+      "confidence": 0.6821562051773071,
+      "bounding_box": [
+        29.823911666870117,
+        105.72843170166016,
+        83.06593322753906,
+        147.1243896484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13164159655570984,
+        "median_depth": 0.11981644481420517,
+        "depth_std": 0.03906472027301788,
+        "depth_min": 0.09831227362155914,
+        "depth_max": 0.34377461671829224,
+        "mask_area": 714
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "monitor",
+      "confidence": 0.6116657853126526,
+      "bounding_box": [
+        0.036426544189453125,
+        0.02230072021484375,
+        123.0953369140625,
+        23.829490661621094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19871139526367188,
+        "median_depth": 0.19140201807022095,
+        "depth_std": 0.04536231979727745,
+        "depth_min": 0.126952663064003,
+        "depth_max": 0.3490988314151764,
+        "mask_area": 2440
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "curtain",
+      "confidence": 0.5901439189910889,
+      "bounding_box": [
+        244.81491088867188,
+        -0.11004638671875,
+        315.9902038574219,
+        179.8577117919922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4558926820755005,
+        "median_depth": 0.45012158155441284,
+        "depth_std": 0.07590749114751816,
+        "depth_min": 0.3005836308002472,
+        "depth_max": 0.729597806930542,
+        "mask_area": 10176
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cardboard box",
+      "confidence": 0.38350847363471985,
+      "bounding_box": [
+        202.9512176513672,
+        39.218727111816406,
+        232.14817810058594,
+        82.07096862792969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.49106699228286743,
+        "median_depth": 0.5238864421844482,
+        "depth_std": 0.09579331427812576,
+        "depth_min": 0.042300574481487274,
+        "depth_max": 0.5593127608299255,
+        "mask_area": 452
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "drawer cabinet",
+      "confidence": 0.5243552923202515,
+      "bounding_box": [
+        185.06527709960938,
+        85.97793579101562,
+        233.60858154296875,
+        179.81954956054688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5293390154838562,
+        "median_depth": 0.5223833322525024,
+        "depth_std": 0.08606071025133133,
+        "depth_min": 0.16161970794200897,
+        "depth_max": 0.7795806527137756,
+        "mask_area": 2597
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. table. scissors. plastic container. drawer cabinet. monitor. cables. curtain. cardboard box. ruler.",
+  "text_prompt": "robot arm. table. scissors. plastic container. drawer cabinet. monitor. cables. curtain. cardboard box. ruler.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

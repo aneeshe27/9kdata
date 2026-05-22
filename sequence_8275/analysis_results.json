@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "mirror door",
+    "robot arm",
+    "door handle",
+    "rug",
+    "shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: mirror door, rug, robot arm, door handle, shelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "mirror door",
+        "mean_depth": 0.08074269443750381,
+        "relative_position": "closest",
+        "confidence": 0.468961238861084
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.13235965371131897,
+        "relative_position": "middle",
+        "confidence": 0.4286823570728302
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "door handle",
+        "mean_depth": 0.13729819655418396,
+        "relative_position": "middle",
+        "confidence": 0.3653421103954315
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "rug",
+        "mean_depth": 0.39034563302993774,
+        "relative_position": "middle",
+        "confidence": 0.8108053803443909
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.9440663456916809,
+        "relative_position": "farthest",
+        "confidence": 0.6884926557540894
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.9440663456916809,
+        "relative_position": "farthest",
+        "confidence": 0.6884926557540894
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "rug",
+        "mean_depth": 0.39034563302993774,
+        "relative_position": "middle",
+        "confidence": 0.8108053803443909
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "door handle",
+        "mean_depth": 0.13729819655418396,
+        "relative_position": "middle",
+        "confidence": 0.3653421103954315
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.13235965371131897,
+        "relative_position": "middle",
+        "confidence": 0.4286823570728302
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "mirror door",
+        "mean_depth": 0.08074269443750381,
+        "relative_position": "closest",
+        "confidence": 0.468961238861084
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "mirror door",
+      "confidence": 0.468961238861084,
+      "bounding_box": [
+        102.85624694824219,
+        0.33705902099609375,
+        162.64430236816406,
+        83.68614959716797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08074269443750381,
+        "median_depth": 0.07978378236293793,
+        "depth_std": 0.015718625858426094,
+        "depth_min": 0.05156553536653519,
+        "depth_max": 0.12565170228481293,
+        "mask_area": 3642
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.4286823570728302,
+      "bounding_box": [
+        159.79034423828125,
+        0.15191078186035156,
+        247.40811157226562,
+        63.02104187011719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13235965371131897,
+        "median_depth": 0.11749815195798874,
+        "depth_std": 0.049669042229652405,
+        "depth_min": 0.084852434694767,
+        "depth_max": 0.3092111647129059,
+        "mask_area": 2053
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "door handle",
+      "confidence": 0.3653421103954315,
+      "bounding_box": [
+        147.78866577148438,
+        87.36175537109375,
+        176.24102783203125,
+        103.93508911132812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13729819655418396,
+        "median_depth": 0.13748390972614288,
+        "depth_std": 0.008898359723389149,
+        "depth_min": 0.11794537305831909,
+        "depth_max": 0.17156578600406647,
+        "mask_area": 179
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "rug",
+      "confidence": 0.8108053803443909,
+      "bounding_box": [
+        242.40133666992188,
+        106.15595245361328,
+        315.7195129394531,
+        179.95550537109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39034563302993774,
+        "median_depth": 0.3520065248012543,
+        "depth_std": 0.13041748106479645,
+        "depth_min": 0.22613239288330078,
+        "depth_max": 0.9100965261459351,
+        "mask_area": 3952
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "shelf",
+      "confidence": 0.6884926557540894,
+      "bounding_box": [
+        256.0077819824219,
+        66.90448760986328,
+        315.6144714355469,
+        114.39325714111328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9440663456916809,
+        "median_depth": 0.9468086957931519,
+        "depth_std": 0.029737841337919235,
+        "depth_min": 0.8576860427856445,
+        "depth_max": 0.9929844737052917,
+        "mask_area": 2045
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "door. door handle. robot arm. gripper. ring light. camera. tripod. shelf. books. table. mirror door. floor. rug. wall.",
+  "text_prompt": "door. door handle. robot arm. gripper. ring light. camera. tripod. shelf. books. table. mirror door. floor. rug. wall.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

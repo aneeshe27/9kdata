@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "green screen",
+    "cardboard",
+    "tripod",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cardboard, cloth, box, tripod, green screen",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.1378307342529297,
+        "relative_position": "closest",
+        "confidence": 0.5481273531913757
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "green screen",
+        "mean_depth": 0.17504480481147766,
+        "relative_position": "middle",
+        "confidence": 0.7142147421836853
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cardboard",
+        "mean_depth": 0.193111851811409,
+        "relative_position": "middle",
+        "confidence": 0.6711108684539795
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "tripod",
+        "mean_depth": 0.5994030833244324,
+        "relative_position": "middle",
+        "confidence": 0.5864824652671814
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.8742783069610596,
+        "relative_position": "farthest",
+        "confidence": 0.4553043842315674
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.8742783069610596,
+        "relative_position": "farthest",
+        "confidence": 0.4553043842315674
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "tripod",
+        "mean_depth": 0.5994030833244324,
+        "relative_position": "middle",
+        "confidence": 0.5864824652671814
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cardboard",
+        "mean_depth": 0.193111851811409,
+        "relative_position": "middle",
+        "confidence": 0.6711108684539795
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "green screen",
+        "mean_depth": 0.17504480481147766,
+        "relative_position": "middle",
+        "confidence": 0.7142147421836853
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.1378307342529297,
+        "relative_position": "closest",
+        "confidence": 0.5481273531913757
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cloth",
+      "confidence": 0.5481273531913757,
+      "bounding_box": [
+        117.85108947753906,
+        44.09901428222656,
+        167.1927947998047,
+        113.34588623046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1378307342529297,
+        "median_depth": 0.13849174976348877,
+        "depth_std": 0.018575001507997513,
+        "depth_min": 0.10532791912555695,
+        "depth_max": 0.22473494708538055,
+        "mask_area": 2047
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "green screen",
+      "confidence": 0.7142147421836853,
+      "bounding_box": [
+        0.15008544921875,
+        0.17465591430664062,
+        218.27139282226562,
+        72.55914306640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17504480481147766,
+        "median_depth": 0.16375364363193512,
+        "depth_std": 0.05612420663237572,
+        "depth_min": 0.09000125527381897,
+        "depth_max": 0.34438249468803406,
+        "mask_area": 11565
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cardboard",
+      "confidence": 0.6711108684539795,
+      "bounding_box": [
+        177.65049743652344,
+        69.65132141113281,
+        292.908203125,
+        128.3450927734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.193111851811409,
+        "median_depth": 0.18791718780994415,
+        "depth_std": 0.0482332706451416,
+        "depth_min": 0.10352393239736557,
+        "depth_max": 0.37298426032066345,
+        "mask_area": 2554
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "tripod",
+      "confidence": 0.5864824652671814,
+      "bounding_box": [
+        253.51341247558594,
+        46.08527755737305,
+        293.98150634765625,
+        88.5152587890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5994030833244324,
+        "median_depth": 0.5926662087440491,
+        "depth_std": 0.1406959593296051,
+        "depth_min": 0.3592451214790344,
+        "depth_max": 0.9831430912017822,
+        "mask_area": 622
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "box",
+      "confidence": 0.4553043842315674,
+      "bounding_box": [
+        247.7850799560547,
+        31.602205276489258,
+        286.0095520019531,
+        56.159515380859375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8742783069610596,
+        "median_depth": 0.8666691184043884,
+        "depth_std": 0.04699904844164848,
+        "depth_min": 0.7283375859260559,
+        "depth_max": 0.9906966090202332,
+        "mask_area": 626
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. cloth. coffee machine. container. cardboard. tripod. box. green screen.",
+  "text_prompt": "table. robot arm. cloth. coffee machine. container. cardboard. tripod. box. green screen.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

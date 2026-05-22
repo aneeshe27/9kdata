@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/home/ulal/visual_reasoning/tmp/depth_extended_temp_3757924/temp_image_256.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_256.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cabinet",
+    "faucet",
+    "sofa",
+    "toilet paper roll toilet paper"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: toilet paper roll toilet paper, faucet, cabinet, sofa, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.08419216424226761,
+        "relative_position": "closest",
+        "confidence": 0.4399704337120056
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.13081233203411102,
+        "relative_position": "middle",
+        "confidence": 0.3531513214111328
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.7108707427978516,
+        "relative_position": "middle",
+        "confidence": 0.41694656014442444
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.7284984588623047,
+        "relative_position": "middle",
+        "confidence": 0.7934927940368652
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "toilet paper roll toilet paper",
+        "mean_depth": 0.8891518115997314,
+        "relative_position": "farthest",
+        "confidence": 0.43874821066856384
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "toilet paper roll toilet paper",
+        "mean_depth": 0.8891518115997314,
+        "relative_position": "farthest",
+        "confidence": 0.43874821066856384
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.7284984588623047,
+        "relative_position": "middle",
+        "confidence": 0.7934927940368652
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.7108707427978516,
+        "relative_position": "middle",
+        "confidence": 0.41694656014442444
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.13081233203411102,
+        "relative_position": "middle",
+        "confidence": 0.3531513214111328
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.08419216424226761,
+        "relative_position": "closest",
+        "confidence": 0.4399704337120056
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.4399704337120056,
+      "bounding_box": [
+        142.39883422851562,
+        62.106971740722656,
+        315.90228271484375,
+        132.83670043945312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08419216424226761,
+        "median_depth": 0.028439637273550034,
+        "depth_std": 0.13903409242630005,
+        "depth_min": 0.008680013939738274,
+        "depth_max": 0.8810202479362488,
+        "mask_area": 5247
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3531513214111328,
+      "bounding_box": [
+        289.0513000488281,
+        131.78707885742188,
+        315.9803161621094,
+        179.948486328125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13081233203411102,
+        "median_depth": 0.13230815529823303,
+        "depth_std": 0.00731624523177743,
+        "depth_min": 0.11341913789510727,
+        "depth_max": 0.1428910344839096,
+        "mask_area": 1058
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "faucet",
+      "confidence": 0.41694656014442444,
+      "bounding_box": [
+        254.4912109375,
+        50.08402633666992,
+        262.8104248046875,
+        66.09477233886719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7108707427978516,
+        "median_depth": 0.7242281436920166,
+        "depth_std": 0.07353322207927704,
+        "depth_min": 0.2859019935131073,
+        "depth_max": 0.7565789818763733,
+        "mask_area": 78
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sofa",
+      "confidence": 0.7934927940368652,
+      "bounding_box": [
+        136.27166748046875,
+        110.02297973632812,
+        262.9224853515625,
+        179.9544677734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7284984588623047,
+        "median_depth": 0.7342886328697205,
+        "depth_std": 0.1131754145026207,
+        "depth_min": 0.174220010638237,
+        "depth_max": 0.9921975135803223,
+        "mask_area": 5768
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "toilet paper roll toilet paper",
+      "confidence": 0.43874821066856384,
+      "bounding_box": [
+        92.88823699951172,
+        150.67190551757812,
+        110.36389923095703,
+        169.714599609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8891518115997314,
+        "median_depth": 0.8886961340904236,
+        "depth_std": 0.008800528012216091,
+        "depth_min": 0.8747830390930176,
+        "depth_max": 0.9122494459152222,
+        "mask_area": 249
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cloth. sofa. grab bar. toilet paper roll. toilet paper holder. faucet. cabinet. drawer. wall.",
+  "text_prompt": "robot arm. gripper. cloth. sofa. grab bar. toilet paper roll. toilet paper holder. faucet. cabinet. drawer. wall.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

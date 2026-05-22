@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "office chair",
+    "table",
+    "computer monitor",
+    "table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, table, computer monitor, table, office chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.1323505938053131,
+        "relative_position": "closest",
+        "confidence": 0.415749728679657
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "office chair",
+        "mean_depth": 0.14576883614063263,
+        "relative_position": "middle",
+        "confidence": 0.6929696202278137
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.15440697968006134,
+        "relative_position": "middle",
+        "confidence": 0.36960268020629883
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "computer monitor",
+        "mean_depth": 0.664387047290802,
+        "relative_position": "middle",
+        "confidence": 0.44370755553245544
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.7497204542160034,
+        "relative_position": "farthest",
+        "confidence": 0.37214210629463196
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.7497204542160034,
+        "relative_position": "farthest",
+        "confidence": 0.37214210629463196
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "computer monitor",
+        "mean_depth": 0.664387047290802,
+        "relative_position": "middle",
+        "confidence": 0.44370755553245544
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.15440697968006134,
+        "relative_position": "middle",
+        "confidence": 0.36960268020629883
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "office chair",
+        "mean_depth": 0.14576883614063263,
+        "relative_position": "middle",
+        "confidence": 0.6929696202278137
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.1323505938053131,
+        "relative_position": "closest",
+        "confidence": 0.415749728679657
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.415749728679657,
+      "bounding_box": [
+        159.19757080078125,
+        0.20200729370117188,
+        226.6368408203125,
+        68.67192077636719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1323505938053131,
+        "median_depth": 0.12351590394973755,
+        "depth_std": 0.0496370866894722,
+        "depth_min": 0.08077146857976913,
+        "depth_max": 0.6674397587776184,
+        "mask_area": 2315
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "office chair",
+      "confidence": 0.6929696202278137,
+      "bounding_box": [
+        0.03515625,
+        12.917999267578125,
+        95.49674224853516,
+        179.48764038085938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14576883614063263,
+        "median_depth": 0.13861380517482758,
+        "depth_std": 0.05964124947786331,
+        "depth_min": 1.4575853128917515e-06,
+        "depth_max": 0.6045907139778137,
+        "mask_area": 10322
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.36960268020629883,
+      "bounding_box": [
+        83.66954040527344,
+        37.46717071533203,
+        240.45521545410156,
+        179.96371459960938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15440697968006134,
+        "median_depth": 0.1456625610589981,
+        "depth_std": 0.07587942481040955,
+        "depth_min": 0.023541472852230072,
+        "depth_max": 0.7163078784942627,
+        "mask_area": 9703
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "computer monitor",
+      "confidence": 0.44370755553245544,
+      "bounding_box": [
+        46.296112060546875,
+        0.049645423889160156,
+        105.864990234375,
+        21.430892944335938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.664387047290802,
+        "median_depth": 0.6682718396186829,
+        "depth_std": 0.044502004981040955,
+        "depth_min": 0.22565791010856628,
+        "depth_max": 0.7778907418251038,
+        "mask_area": 947
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "table",
+      "confidence": 0.37214210629463196,
+      "bounding_box": [
+        63.383602142333984,
+        22.87000274658203,
+        138.55667114257812,
+        43.12468719482422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7497204542160034,
+        "median_depth": 0.7395573854446411,
+        "depth_std": 0.06958793848752975,
+        "depth_min": 0.5217022895812988,
+        "depth_max": 0.945103645324707,
+        "mask_area": 828
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. drawer. cabinet. office chair. computer monitor. screwdriver. pliers. wrench. hex keys. cable.",
+  "text_prompt": "robot arm. gripper. table. drawer. cabinet. office chair. computer monitor. screwdriver. pliers. wrench. hex keys. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

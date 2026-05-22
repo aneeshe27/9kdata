@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot gripper",
+    "block hexagonal block",
+    "cable",
+    "cylindrical block",
+    "rectangular block"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: block hexagonal block, robot gripper, cable, cylindrical block, rectangular block",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "robot gripper",
+        "mean_depth": 0.024881713092327118,
+        "relative_position": "closest",
+        "confidence": 0.6903209686279297
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "block hexagonal block",
+        "mean_depth": 0.10999924689531326,
+        "relative_position": "middle",
+        "confidence": 0.4137248992919922
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cable",
+        "mean_depth": 0.21230188012123108,
+        "relative_position": "middle",
+        "confidence": 0.5330629944801331
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cylindrical block",
+        "mean_depth": 0.2439204454421997,
+        "relative_position": "middle",
+        "confidence": 0.4070530831813812
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "rectangular block",
+        "mean_depth": 0.3784084618091583,
+        "relative_position": "farthest",
+        "confidence": 0.35274767875671387
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "rectangular block",
+        "mean_depth": 0.3784084618091583,
+        "relative_position": "farthest",
+        "confidence": 0.35274767875671387
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cylindrical block",
+        "mean_depth": 0.2439204454421997,
+        "relative_position": "middle",
+        "confidence": 0.4070530831813812
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cable",
+        "mean_depth": 0.21230188012123108,
+        "relative_position": "middle",
+        "confidence": 0.5330629944801331
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "block hexagonal block",
+        "mean_depth": 0.10999924689531326,
+        "relative_position": "middle",
+        "confidence": 0.4137248992919922
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "robot gripper",
+        "mean_depth": 0.024881713092327118,
+        "relative_position": "closest",
+        "confidence": 0.6903209686279297
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "robot gripper",
+      "confidence": 0.6903209686279297,
+      "bounding_box": [
+        209.61117553710938,
+        0.2526283264160156,
+        307.5154113769531,
+        90.18836975097656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.024881713092327118,
+        "median_depth": 0.015950307250022888,
+        "depth_std": 0.021235205233097076,
+        "depth_min": 0.005410002078860998,
+        "depth_max": 0.45673835277557373,
+        "mask_area": 4042
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "block hexagonal block",
+      "confidence": 0.4137248992919922,
+      "bounding_box": [
+        180.8604736328125,
+        68.46309661865234,
+        201.023193359375,
+        93.3413314819336
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10999924689531326,
+        "median_depth": 0.10671921819448471,
+        "depth_std": 0.012760513462126255,
+        "depth_min": 0.09658852964639664,
+        "depth_max": 0.1667444407939911,
+        "mask_area": 370
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cable",
+      "confidence": 0.5330629944801331,
+      "bounding_box": [
+        2.53167724609375,
+        95.013916015625,
+        85.10395812988281,
+        170.8857421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21230188012123108,
+        "median_depth": 0.20305263996124268,
+        "depth_std": 0.04201642423868179,
+        "depth_min": 0.1627056896686554,
+        "depth_max": 0.4837304353713989,
+        "mask_area": 4345
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cylindrical block",
+      "confidence": 0.4070530831813812,
+      "bounding_box": [
+        124.24179077148438,
+        29.715932846069336,
+        138.01873779296875,
+        51.875732421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2439204454421997,
+        "median_depth": 0.22931541502475739,
+        "depth_std": 0.05866779759526253,
+        "depth_min": 0.2077462375164032,
+        "depth_max": 0.6251232028007507,
+        "mask_area": 193
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "rectangular block",
+      "confidence": 0.35274767875671387,
+      "bounding_box": [
+        167.65798950195312,
+        14.002080917358398,
+        192.97537231445312,
+        29.277212142944336
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3784084618091583,
+        "median_depth": 0.3725919723510742,
+        "depth_std": 0.026032060384750366,
+        "depth_min": 0.36040210723876953,
+        "depth_max": 0.5685034394264221,
+        "mask_area": 228
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot gripper. cylindrical block. rectangular block. hexagonal block. cable. clamp. workbench. chair.",
+  "text_prompt": "table. robot gripper. cylindrical block. rectangular block. hexagonal block. cable. clamp. workbench. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

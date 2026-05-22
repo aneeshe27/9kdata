@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "mirror",
+    "drawer cabinet",
+    "box",
+    "monitor",
+    "books"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: monitor, box, drawer cabinet, books, mirror",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "mirror",
+        "mean_depth": 0.048787813633680344,
+        "relative_position": "closest",
+        "confidence": 0.5196027159690857
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "drawer cabinet",
+        "mean_depth": 0.16278615593910217,
+        "relative_position": "middle",
+        "confidence": 0.4260881543159485
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.2944701611995697,
+        "relative_position": "middle",
+        "confidence": 0.6571572422981262
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "monitor",
+        "mean_depth": 0.408592164516449,
+        "relative_position": "middle",
+        "confidence": 0.40485599637031555
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "books",
+        "mean_depth": 0.42287009954452515,
+        "relative_position": "farthest",
+        "confidence": 0.41485315561294556
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "books",
+        "mean_depth": 0.42287009954452515,
+        "relative_position": "farthest",
+        "confidence": 0.41485315561294556
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "monitor",
+        "mean_depth": 0.408592164516449,
+        "relative_position": "middle",
+        "confidence": 0.40485599637031555
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.2944701611995697,
+        "relative_position": "middle",
+        "confidence": 0.6571572422981262
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "drawer cabinet",
+        "mean_depth": 0.16278615593910217,
+        "relative_position": "middle",
+        "confidence": 0.4260881543159485
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "mirror",
+        "mean_depth": 0.048787813633680344,
+        "relative_position": "closest",
+        "confidence": 0.5196027159690857
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "mirror",
+      "confidence": 0.5196027159690857,
+      "bounding_box": [
+        -0.2987098693847656,
+        42.17012023925781,
+        73.88795471191406,
+        179.8340301513672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.048787813633680344,
+        "median_depth": 0.03860310837626457,
+        "depth_std": 0.034824687987565994,
+        "depth_min": 0.027853425592184067,
+        "depth_max": 0.7336032390594482,
+        "mask_area": 8403
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "drawer cabinet",
+      "confidence": 0.4260881543159485,
+      "bounding_box": [
+        73.11090087890625,
+        142.913330078125,
+        152.22177124023438,
+        179.88360595703125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16278615593910217,
+        "median_depth": 0.163064107298851,
+        "depth_std": 0.007266492582857609,
+        "depth_min": 0.14595429599285126,
+        "depth_max": 0.17669157683849335,
+        "mask_area": 2211
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "box",
+      "confidence": 0.6571572422981262,
+      "bounding_box": [
+        253.44203186035156,
+        48.50648498535156,
+        315.9911804199219,
+        101.18840026855469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2944701611995697,
+        "median_depth": 0.27848705649375916,
+        "depth_std": 0.04406684637069702,
+        "depth_min": 0.048355914652347565,
+        "depth_max": 0.44969382882118225,
+        "mask_area": 2310
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "monitor",
+      "confidence": 0.40485599637031555,
+      "bounding_box": [
+        53.69591522216797,
+        0.0687103271484375,
+        203.2005615234375,
+        53.263946533203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.408592164516449,
+        "median_depth": 0.4089861810207367,
+        "depth_std": 0.024064121767878532,
+        "depth_min": 0.3502146899700165,
+        "depth_max": 0.6028322577476501,
+        "mask_area": 4772
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "books",
+      "confidence": 0.41485315561294556,
+      "bounding_box": [
+        170.77328491210938,
+        70.44835662841797,
+        209.23641967773438,
+        105.0191879272461
+      ],
+      "depth_stats": {
+        "mean_depth": 0.42287009954452515,
+        "median_depth": 0.3723825514316559,
+        "depth_std": 0.1392458975315094,
+        "depth_min": 0.31718000769615173,
+        "depth_max": 0.9429266452789307,
+        "mask_area": 889
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. monitor. mirror. books. box. tape roll. vise. drawer cabinet. container. papers.",
+  "text_prompt": "robot arm. gripper. table. monitor. mirror. books. box. tape roll. vise. drawer cabinet. container. papers.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

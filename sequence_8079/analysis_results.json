@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "bowl",
+    "table",
+    "cabinet",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, table, bowl, robot arm, box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.08260251581668854,
+        "relative_position": "closest",
+        "confidence": 0.3670465052127838
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.19783742725849152,
+        "relative_position": "middle",
+        "confidence": 0.7602551579475403
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.22672827541828156,
+        "relative_position": "middle",
+        "confidence": 0.4118146300315857
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.5059650540351868,
+        "relative_position": "middle",
+        "confidence": 0.45518985390663147
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.6227083802223206,
+        "relative_position": "farthest",
+        "confidence": 0.3918640911579132
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.6227083802223206,
+        "relative_position": "farthest",
+        "confidence": 0.3918640911579132
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.5059650540351868,
+        "relative_position": "middle",
+        "confidence": 0.45518985390663147
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.22672827541828156,
+        "relative_position": "middle",
+        "confidence": 0.4118146300315857
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.19783742725849152,
+        "relative_position": "middle",
+        "confidence": 0.7602551579475403
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.08260251581668854,
+        "relative_position": "closest",
+        "confidence": 0.3670465052127838
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3670465052127838,
+      "bounding_box": [
+        172.0848388671875,
+        0.046306610107421875,
+        316.0234680175781,
+        69.51593017578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08260251581668854,
+        "median_depth": 0.051813989877700806,
+        "depth_std": 0.10427358746528625,
+        "depth_min": 0.0,
+        "depth_max": 0.51285719871521,
+        "mask_area": 1733
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.7602551579475403,
+      "bounding_box": [
+        149.91400146484375,
+        90.37236022949219,
+        181.85885620117188,
+        112.2525634765625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19783742725849152,
+        "median_depth": 0.2012660652399063,
+        "depth_std": 0.02276163175702095,
+        "depth_min": 0.16543473303318024,
+        "depth_max": 0.26646244525909424,
+        "mask_area": 541
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.4118146300315857,
+      "bounding_box": [
+        237.83050537109375,
+        105.5604476928711,
+        315.94451904296875,
+        180.00979614257812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22672827541828156,
+        "median_depth": 0.2050938904285431,
+        "depth_std": 0.09828047454357147,
+        "depth_min": 0.09315863996744156,
+        "depth_max": 0.514924943447113,
+        "mask_area": 4376
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet",
+      "confidence": 0.45518985390663147,
+      "bounding_box": [
+        2.6328125,
+        45.94548034667969,
+        132.55792236328125,
+        122.1270751953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5059650540351868,
+        "median_depth": 0.49505358934402466,
+        "depth_std": 0.061576008796691895,
+        "depth_min": 0.41461241245269775,
+        "depth_max": 0.9706995487213135,
+        "mask_area": 5830
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "box",
+      "confidence": 0.3918640911579132,
+      "bounding_box": [
+        72.94635772705078,
+        21.092403411865234,
+        108.6440200805664,
+        42.77363967895508
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6227083802223206,
+        "median_depth": 0.6244808435440063,
+        "depth_std": 0.03663033992052078,
+        "depth_min": 0.5698713064193726,
+        "depth_max": 0.7758583426475525,
+        "mask_area": 509
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. robot arm. gripper. table. clamp. cabinet. box.",
+  "text_prompt": "bowl. robot arm. gripper. table. clamp. cabinet. box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

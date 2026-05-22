@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "table",
+    "pillow",
+    "window blinds",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: door, table, window blinds, robot arm gripper, pillow",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.17239998281002045,
+        "relative_position": "closest",
+        "confidence": 0.38902005553245544
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.18824608623981476,
+        "relative_position": "middle",
+        "confidence": 0.7642399668693542
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "pillow",
+        "mean_depth": 0.27352258563041687,
+        "relative_position": "middle",
+        "confidence": 0.5646922588348389
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "window blinds",
+        "mean_depth": 0.39870524406433105,
+        "relative_position": "middle",
+        "confidence": 0.4521923363208771
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.8751654624938965,
+        "relative_position": "farthest",
+        "confidence": 0.6349266767501831
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.8751654624938965,
+        "relative_position": "farthest",
+        "confidence": 0.6349266767501831
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "window blinds",
+        "mean_depth": 0.39870524406433105,
+        "relative_position": "middle",
+        "confidence": 0.4521923363208771
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "pillow",
+        "mean_depth": 0.27352258563041687,
+        "relative_position": "middle",
+        "confidence": 0.5646922588348389
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.18824608623981476,
+        "relative_position": "middle",
+        "confidence": 0.7642399668693542
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.17239998281002045,
+        "relative_position": "closest",
+        "confidence": 0.38902005553245544
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.38902005553245544,
+      "bounding_box": [
+        224.43284606933594,
+        1.475067138671875,
+        315.9598388671875,
+        121.05491638183594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17239998281002045,
+        "median_depth": 0.057844340801239014,
+        "depth_std": 0.2369362711906433,
+        "depth_min": 0.002528147306293249,
+        "depth_max": 0.9987688660621643,
+        "mask_area": 6952
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7642399668693542,
+      "bounding_box": [
+        143.67587280273438,
+        85.8958740234375,
+        315.44537353515625,
+        179.88388061523438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18824608623981476,
+        "median_depth": 0.15546604990959167,
+        "depth_std": 0.12018699198961258,
+        "depth_min": 0.06646813452243805,
+        "depth_max": 0.9041832089424133,
+        "mask_area": 9476
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "pillow",
+      "confidence": 0.5646922588348389,
+      "bounding_box": [
+        23.29670524597168,
+        151.18846130371094,
+        59.427398681640625,
+        179.96885681152344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27352258563041687,
+        "median_depth": 0.26795241236686707,
+        "depth_std": 0.04153864458203316,
+        "depth_min": 0.2083551287651062,
+        "depth_max": 0.36645981669425964,
+        "mask_area": 607
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "window blinds",
+      "confidence": 0.4521923363208771,
+      "bounding_box": [
+        0.127655029296875,
+        -0.028339385986328125,
+        169.9982452392578,
+        123.12773132324219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39870524406433105,
+        "median_depth": 0.37786808609962463,
+        "depth_std": 0.09909183531999588,
+        "depth_min": 0.2328086793422699,
+        "depth_max": 0.6493415832519531,
+        "mask_area": 14844
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "door",
+      "confidence": 0.6349266767501831,
+      "bounding_box": [
+        192.91661071777344,
+        0.11682891845703125,
+        235.07273864746094,
+        93.73029327392578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8751654624938965,
+        "median_depth": 0.8837598562240601,
+        "depth_std": 0.08642802387475967,
+        "depth_min": 0.669008195400238,
+        "depth_max": 0.9997169971466064,
+        "mask_area": 2436
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. container. toy car. sofa. pillow. window blinds. door. sticker. plush toy.",
+  "text_prompt": "robot arm. gripper. table. container. toy car. sofa. pillow. window blinds. door. sticker. plush toy.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

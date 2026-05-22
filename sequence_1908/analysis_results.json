@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_1207678/temp_image_4054.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_4054.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "faucet",
+    "plastic bag",
+    "sink",
+    "bottle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: faucet, sink, bottle, plastic bag, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.11156979203224182,
+        "relative_position": "closest",
+        "confidence": 0.3922632038593292
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.4659779965877533,
+        "relative_position": "middle",
+        "confidence": 0.8975535035133362
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "plastic bag",
+        "mean_depth": 0.5505603551864624,
+        "relative_position": "middle",
+        "confidence": 0.5174669623374939
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.550804615020752,
+        "relative_position": "middle",
+        "confidence": 0.48979663848876953
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.8341893553733826,
+        "relative_position": "farthest",
+        "confidence": 0.7006522417068481
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.8341893553733826,
+        "relative_position": "farthest",
+        "confidence": 0.7006522417068481
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.550804615020752,
+        "relative_position": "middle",
+        "confidence": 0.48979663848876953
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "plastic bag",
+        "mean_depth": 0.5505603551864624,
+        "relative_position": "middle",
+        "confidence": 0.5174669623374939
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.4659779965877533,
+        "relative_position": "middle",
+        "confidence": 0.8975535035133362
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.11156979203224182,
+        "relative_position": "closest",
+        "confidence": 0.3922632038593292
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3922632038593292,
+      "bounding_box": [
+        238.12030029296875,
+        15.557487487792969,
+        316.0374755859375,
+        98.2737808227539
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11156979203224182,
+        "median_depth": 0.05234394967556,
+        "depth_std": 0.17509032785892487,
+        "depth_min": 0.005325666628777981,
+        "depth_max": 0.9557737708091736,
+        "mask_area": 2780
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.8975535035133362,
+      "bounding_box": [
+        137.275146484375,
+        34.863380432128906,
+        168.06552124023438,
+        114.8938217163086
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4659779965877533,
+        "median_depth": 0.5226303339004517,
+        "depth_std": 0.1932407021522522,
+        "depth_min": 0.1907668262720108,
+        "depth_max": 0.7462299466133118,
+        "mask_area": 1285
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plastic bag",
+      "confidence": 0.5174669623374939,
+      "bounding_box": [
+        54.45576477050781,
+        87.48390197753906,
+        80.40899658203125,
+        129.7466583251953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5505603551864624,
+        "median_depth": 0.5428709387779236,
+        "depth_std": 0.023442909121513367,
+        "depth_min": 0.5230938196182251,
+        "depth_max": 0.6578410863876343,
+        "mask_area": 617
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "sink",
+      "confidence": 0.48979663848876953,
+      "bounding_box": [
+        79.51889038085938,
+        107.54879760742188,
+        268.185791015625,
+        179.99395751953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.550804615020752,
+        "median_depth": 0.5636314749717712,
+        "depth_std": 0.11540893465280533,
+        "depth_min": 0.22192372381687164,
+        "depth_max": 0.7777714133262634,
+        "mask_area": 9395
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.7006522417068481,
+      "bounding_box": [
+        189.19918823242188,
+        63.77696990966797,
+        204.15557861328125,
+        101.8177261352539
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8341893553733826,
+        "median_depth": 0.8200722932815552,
+        "depth_std": 0.030335359275341034,
+        "depth_min": 0.8042191863059998,
+        "depth_max": 0.9257311224937439,
+        "mask_area": 357
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. faucet. cup. bottle. sponge. plastic bag. cable. robot arm. countertop.",
+  "text_prompt": "sink. faucet. cup. bottle. sponge. plastic bag. cable. robot arm. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

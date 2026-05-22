@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cardboard box",
+    "computer monitor",
+    "cup",
+    "plastic bin crate"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cardboard box, robot arm, plastic bin crate, cup, computer monitor",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.03163379430770874,
+        "relative_position": "closest",
+        "confidence": 0.39869681000709534
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cardboard box",
+        "mean_depth": 0.11533062905073166,
+        "relative_position": "middle",
+        "confidence": 0.46546322107315063
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "computer monitor",
+        "mean_depth": 0.12325277179479599,
+        "relative_position": "middle",
+        "confidence": 0.6795422434806824
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.1247827336192131,
+        "relative_position": "middle",
+        "confidence": 0.7121654748916626
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "plastic bin crate",
+        "mean_depth": 0.24419604241847992,
+        "relative_position": "farthest",
+        "confidence": 0.49518638849258423
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "plastic bin crate",
+        "mean_depth": 0.24419604241847992,
+        "relative_position": "farthest",
+        "confidence": 0.49518638849258423
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.1247827336192131,
+        "relative_position": "middle",
+        "confidence": 0.7121654748916626
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "computer monitor",
+        "mean_depth": 0.12325277179479599,
+        "relative_position": "middle",
+        "confidence": 0.6795422434806824
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cardboard box",
+        "mean_depth": 0.11533062905073166,
+        "relative_position": "middle",
+        "confidence": 0.46546322107315063
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.03163379430770874,
+        "relative_position": "closest",
+        "confidence": 0.39869681000709534
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.39869681000709534,
+      "bounding_box": [
+        0.0402069091796875,
+        0.110443115234375,
+        177.05288696289062,
+        65.64761352539062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03163379430770874,
+        "median_depth": 0.018302511423826218,
+        "depth_std": 0.04674142971634865,
+        "depth_min": 0.00846333708614111,
+        "depth_max": 0.5373448729515076,
+        "mask_area": 3501
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cardboard box",
+      "confidence": 0.46546322107315063,
+      "bounding_box": [
+        246.5938262939453,
+        76.61532592773438,
+        308.0213317871094,
+        120.30673217773438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11533062905073166,
+        "median_depth": 0.11471348255872726,
+        "depth_std": 0.011959018185734749,
+        "depth_min": 0.09079331904649734,
+        "depth_max": 0.14774635434150696,
+        "mask_area": 1528
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "computer monitor",
+      "confidence": 0.6795422434806824,
+      "bounding_box": [
+        241.48944091796875,
+        12.722763061523438,
+        265.03924560546875,
+        32.03227233886719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12325277179479599,
+        "median_depth": 0.12347057461738586,
+        "depth_std": 0.006616662256419659,
+        "depth_min": 0.11081288754940033,
+        "depth_max": 0.13740582764148712,
+        "mask_area": 318
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.7121654748916626,
+      "bounding_box": [
+        185.01124572753906,
+        69.61994171142578,
+        203.4489288330078,
+        100.2750473022461
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1247827336192131,
+        "median_depth": 0.11599501967430115,
+        "depth_std": 0.02409362606704235,
+        "depth_min": 0.11022147536277771,
+        "depth_max": 0.2610631585121155,
+        "mask_area": 421
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plastic bin crate",
+      "confidence": 0.49518638849258423,
+      "bounding_box": [
+        127.76414489746094,
+        67.9310302734375,
+        168.62010192871094,
+        114.07145690917969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24419604241847992,
+        "median_depth": 0.23465658724308014,
+        "depth_std": 0.029668685048818588,
+        "depth_min": 0.14479048550128937,
+        "depth_max": 0.398519903421402,
+        "mask_area": 1161
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cup. plastic bin. table. cardboard box. crate. computer monitor.",
+  "text_prompt": "robot arm. gripper. cup. plastic bin. table. cardboard box. crate. computer monitor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

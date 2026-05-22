@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "clamp",
+    "cables",
+    "table workbench",
+    "monitor",
+    "trash"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: trash, clamp, cables, table workbench, monitor",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "clamp",
+        "mean_depth": 0.33378252387046814,
+        "relative_position": "closest",
+        "confidence": 0.41015470027923584
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cables",
+        "mean_depth": 0.6247904300689697,
+        "relative_position": "middle",
+        "confidence": 0.35488978028297424
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "table workbench",
+        "mean_depth": 0.8104600310325623,
+        "relative_position": "middle",
+        "confidence": 0.3903580904006958
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.8127485513687134,
+        "relative_position": "middle",
+        "confidence": 0.5471261143684387
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "trash",
+        "mean_depth": 0.8176069855690002,
+        "relative_position": "farthest",
+        "confidence": 0.8627601265907288
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "trash",
+        "mean_depth": 0.8176069855690002,
+        "relative_position": "farthest",
+        "confidence": 0.8627601265907288
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.8127485513687134,
+        "relative_position": "middle",
+        "confidence": 0.5471261143684387
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "table workbench",
+        "mean_depth": 0.8104600310325623,
+        "relative_position": "middle",
+        "confidence": 0.3903580904006958
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cables",
+        "mean_depth": 0.6247904300689697,
+        "relative_position": "middle",
+        "confidence": 0.35488978028297424
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "clamp",
+        "mean_depth": 0.33378252387046814,
+        "relative_position": "closest",
+        "confidence": 0.41015470027923584
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "clamp",
+      "confidence": 0.41015470027923584,
+      "bounding_box": [
+        267.88311767578125,
+        101.13311767578125,
+        311.55572509765625,
+        126.19071960449219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33378252387046814,
+        "median_depth": 0.33482474088668823,
+        "depth_std": 0.036235541105270386,
+        "depth_min": 0.2707689702510834,
+        "depth_max": 0.41292962431907654,
+        "mask_area": 436
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cables",
+      "confidence": 0.35488978028297424,
+      "bounding_box": [
+        271.4716796875,
+        -0.011760711669921875,
+        316.03436279296875,
+        77.567626953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6247904300689697,
+        "median_depth": 0.6133309602737427,
+        "depth_std": 0.06652557104825974,
+        "depth_min": 0.4969521164894104,
+        "depth_max": 0.7508485317230225,
+        "mask_area": 379
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "table workbench",
+      "confidence": 0.3903580904006958,
+      "bounding_box": [
+        96.26737976074219,
+        50.682884216308594,
+        168.09461975097656,
+        136.43917846679688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8104600310325623,
+        "median_depth": 0.8105323314666748,
+        "depth_std": 0.028699085116386414,
+        "depth_min": 0.3614422082901001,
+        "depth_max": 0.8684530854225159,
+        "mask_area": 1788
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "monitor",
+      "confidence": 0.5471261143684387,
+      "bounding_box": [
+        99.86317443847656,
+        13.65907096862793,
+        136.5373077392578,
+        46.61541748046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8127485513687134,
+        "median_depth": 0.8128902912139893,
+        "depth_std": 0.022002488374710083,
+        "depth_min": 0.7704987525939941,
+        "depth_max": 0.8581402897834778,
+        "mask_area": 721
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "trash",
+      "confidence": 0.8627601265907288,
+      "bounding_box": [
+        222.24160766601562,
+        91.27616119384766,
+        250.18472290039062,
+        145.04013061523438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8176069855690002,
+        "median_depth": 0.8164297938346863,
+        "depth_std": 0.040382444858551025,
+        "depth_min": 0.5330001711845398,
+        "depth_max": 0.9566163420677185,
+        "mask_area": 1003
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. workbench. shelf. cabinet. monitor. clamp. trash can. cables. box.",
+  "text_prompt": "table. workbench. shelf. cabinet. monitor. clamp. trash can. cables. box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

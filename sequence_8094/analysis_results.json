@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "container",
+    "sofa",
+    "cup cup",
+    "window blinds",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup cup, door, container, window blinds, sofa",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "container",
+        "mean_depth": 0.38995543122291565,
+        "relative_position": "closest",
+        "confidence": 0.6906597018241882
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "sofa",
+        "mean_depth": 0.46432915329933167,
+        "relative_position": "middle",
+        "confidence": 0.5612791776657104
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cup cup",
+        "mean_depth": 0.4644324481487274,
+        "relative_position": "middle",
+        "confidence": 0.4705790579319
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "window blinds",
+        "mean_depth": 0.5368531942367554,
+        "relative_position": "middle",
+        "confidence": 0.4221828579902649
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.8674759864807129,
+        "relative_position": "farthest",
+        "confidence": 0.7217709422111511
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.8674759864807129,
+        "relative_position": "farthest",
+        "confidence": 0.7217709422111511
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "window blinds",
+        "mean_depth": 0.5368531942367554,
+        "relative_position": "middle",
+        "confidence": 0.4221828579902649
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cup cup",
+        "mean_depth": 0.4644324481487274,
+        "relative_position": "middle",
+        "confidence": 0.4705790579319
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "sofa",
+        "mean_depth": 0.46432915329933167,
+        "relative_position": "middle",
+        "confidence": 0.5612791776657104
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "container",
+        "mean_depth": 0.38995543122291565,
+        "relative_position": "closest",
+        "confidence": 0.6906597018241882
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "container",
+      "confidence": 0.6906597018241882,
+      "bounding_box": [
+        191.0697784423828,
+        73.2291030883789,
+        223.3973846435547,
+        98.84015655517578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.38995543122291565,
+        "median_depth": 0.3734164237976074,
+        "depth_std": 0.07493583858013153,
+        "depth_min": 0.3533412516117096,
+        "depth_max": 0.9786534905433655,
+        "mask_area": 555
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "sofa",
+      "confidence": 0.5612791776657104,
+      "bounding_box": [
+        0.0573883056640625,
+        57.39983367919922,
+        156.8500518798828,
+        179.7860107421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.46432915329933167,
+        "median_depth": 0.43333303928375244,
+        "depth_std": 0.08766123652458191,
+        "depth_min": 0.3219046890735626,
+        "depth_max": 0.7302180528640747,
+        "mask_area": 4284
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cup cup",
+      "confidence": 0.4705790579319,
+      "bounding_box": [
+        160.32130432128906,
+        55.73140335083008,
+        177.2720184326172,
+        78.79716491699219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4644324481487274,
+        "median_depth": 0.4321860074996948,
+        "depth_std": 0.08198536932468414,
+        "depth_min": 0.36373263597488403,
+        "depth_max": 0.8030120730400085,
+        "mask_area": 289
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "window blinds",
+      "confidence": 0.4221828579902649,
+      "bounding_box": [
+        0.0680999755859375,
+        -0.013858795166015625,
+        152.93113708496094,
+        93.36767578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5368531942367554,
+        "median_depth": 0.5154142379760742,
+        "depth_std": 0.09773343056440353,
+        "depth_min": 0.3715621829032898,
+        "depth_max": 0.782332718372345,
+        "mask_area": 10391
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "door",
+      "confidence": 0.7217709422111511,
+      "bounding_box": [
+        173.5397186279297,
+        0.15905380249023438,
+        217.75279235839844,
+        77.81745910644531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8674759864807129,
+        "median_depth": 0.8816746473312378,
+        "depth_std": 0.10584484040737152,
+        "depth_min": 0.45420464873313904,
+        "depth_max": 0.9977900385856628,
+        "mask_area": 2242
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. sofa. pillow. window blinds. door. robot arm. gripper. cup. measuring cup. pan. container. pump.",
+  "text_prompt": "table. sofa. pillow. window blinds. door. robot arm. gripper. cup. measuring cup. pan. container. pump.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

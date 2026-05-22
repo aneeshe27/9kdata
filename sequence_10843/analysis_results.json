@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "countertop",
+    "camera",
+    "cabinet",
+    "robot arm",
+    "wall outlet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: wall outlet, cabinet, robot arm, camera, countertop",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "countertop",
+        "mean_depth": 0.041463859379291534,
+        "relative_position": "closest",
+        "confidence": 0.47470101714134216
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "camera",
+        "mean_depth": 0.29791057109832764,
+        "relative_position": "middle",
+        "confidence": 0.4013862907886505
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.32190367579460144,
+        "relative_position": "middle",
+        "confidence": 0.4542059004306793
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.4062024652957916,
+        "relative_position": "middle",
+        "confidence": 0.4019538164138794
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "wall outlet",
+        "mean_depth": 0.5000471472740173,
+        "relative_position": "farthest",
+        "confidence": 0.49445587396621704
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "wall outlet",
+        "mean_depth": 0.5000471472740173,
+        "relative_position": "farthest",
+        "confidence": 0.49445587396621704
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.4062024652957916,
+        "relative_position": "middle",
+        "confidence": 0.4019538164138794
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.32190367579460144,
+        "relative_position": "middle",
+        "confidence": 0.4542059004306793
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "camera",
+        "mean_depth": 0.29791057109832764,
+        "relative_position": "middle",
+        "confidence": 0.4013862907886505
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "countertop",
+        "mean_depth": 0.041463859379291534,
+        "relative_position": "closest",
+        "confidence": 0.47470101714134216
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "countertop",
+      "confidence": 0.47470101714134216,
+      "bounding_box": [
+        250.4756317138672,
+        107.98175048828125,
+        316.0140075683594,
+        179.90472412109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.041463859379291534,
+        "median_depth": 0.03352711349725723,
+        "depth_std": 0.036042261868715286,
+        "depth_min": 0.0,
+        "depth_max": 0.2940860688686371,
+        "mask_area": 2835
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "camera",
+      "confidence": 0.4013862907886505,
+      "bounding_box": [
+        72.15657043457031,
+        58.12214660644531,
+        96.52430725097656,
+        67.29747772216797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29791057109832764,
+        "median_depth": 0.3002598285675049,
+        "depth_std": 0.017160261049866676,
+        "depth_min": 0.26482003927230835,
+        "depth_max": 0.33253198862075806,
+        "mask_area": 138
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.4542059004306793,
+      "bounding_box": [
+        228.26553344726562,
+        73.6694564819336,
+        301.8269348144531,
+        134.28028869628906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.32190367579460144,
+        "median_depth": 0.3201862871646881,
+        "depth_std": 0.04317405819892883,
+        "depth_min": 0.1401744782924652,
+        "depth_max": 0.5608808994293213,
+        "mask_area": 2259
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.4019538164138794,
+      "bounding_box": [
+        194.1361083984375,
+        50.3394775390625,
+        239.61572265625,
+        74.45501708984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4062024652957916,
+        "median_depth": 0.3633492588996887,
+        "depth_std": 0.1714225560426712,
+        "depth_min": 0.25583985447883606,
+        "depth_max": 0.9347465634346008,
+        "mask_area": 310
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "wall outlet",
+      "confidence": 0.49445587396621704,
+      "bounding_box": [
+        125.90599822998047,
+        59.35558319091797,
+        136.17037963867188,
+        72.2168960571289
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5000471472740173,
+        "median_depth": 0.49928808212280273,
+        "depth_std": 0.023011747747659683,
+        "depth_min": 0.41611945629119873,
+        "depth_max": 0.5387632846832275,
+        "mask_area": 120
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "container. countertop. cabinet. wall outlet. door. robot arm. camera.",
+  "text_prompt": "container. countertop. cabinet. wall outlet. door. robot arm. camera.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "cup",
+    "electrical outlet",
+    "coffee maker",
+    "curtain"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: curtain, electrical outlet, robot arm gripper, coffee maker, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm gripper",
+        "mean_depth": 0.18425878882408142,
+        "relative_position": "closest",
+        "confidence": 0.44692137837409973
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.42924433946609497,
+        "relative_position": "middle",
+        "confidence": 0.4324820041656494
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "electrical outlet",
+        "mean_depth": 0.46808937191963196,
+        "relative_position": "middle",
+        "confidence": 0.5107292532920837
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "coffee maker",
+        "mean_depth": 0.5353856086730957,
+        "relative_position": "middle",
+        "confidence": 0.39790084958076477
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "curtain",
+        "mean_depth": 0.7730308175086975,
+        "relative_position": "farthest",
+        "confidence": 0.7701825499534607
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "curtain",
+        "mean_depth": 0.7730308175086975,
+        "relative_position": "farthest",
+        "confidence": 0.7701825499534607
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "coffee maker",
+        "mean_depth": 0.5353856086730957,
+        "relative_position": "middle",
+        "confidence": 0.39790084958076477
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "electrical outlet",
+        "mean_depth": 0.46808937191963196,
+        "relative_position": "middle",
+        "confidence": 0.5107292532920837
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.42924433946609497,
+        "relative_position": "middle",
+        "confidence": 0.4324820041656494
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm gripper",
+        "mean_depth": 0.18425878882408142,
+        "relative_position": "closest",
+        "confidence": 0.44692137837409973
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm gripper",
+      "confidence": 0.44692137837409973,
+      "bounding_box": [
+        236.93397521972656,
+        20.679189682006836,
+        315.9969787597656,
+        83.31034088134766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18425878882408142,
+        "median_depth": 0.023465389385819435,
+        "depth_std": 0.291555255651474,
+        "depth_min": 0.0,
+        "depth_max": 0.9818012714385986,
+        "mask_area": 1761
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cup",
+      "confidence": 0.4324820041656494,
+      "bounding_box": [
+        125.31379699707031,
+        165.33258056640625,
+        143.4724578857422,
+        179.98403930664062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.42924433946609497,
+        "median_depth": 0.41583117842674255,
+        "depth_std": 0.03968443349003792,
+        "depth_min": 0.39185401797294617,
+        "depth_max": 0.5627215504646301,
+        "mask_area": 214
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "electrical outlet",
+      "confidence": 0.5107292532920837,
+      "bounding_box": [
+        17.723495483398438,
+        112.83394622802734,
+        35.32101058959961,
+        134.31756591796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.46808937191963196,
+        "median_depth": 0.4673081040382385,
+        "depth_std": 0.006831297650933266,
+        "depth_min": 0.4571337401866913,
+        "depth_max": 0.4874925911426544,
+        "mask_area": 308
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "coffee maker",
+      "confidence": 0.39790084958076477,
+      "bounding_box": [
+        97.81082916259766,
+        96.73454284667969,
+        139.13357543945312,
+        171.4278106689453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5353856086730957,
+        "median_depth": 0.5439333915710449,
+        "depth_std": 0.03368845954537392,
+        "depth_min": 0.47903797030448914,
+        "depth_max": 0.6101067662239075,
+        "mask_area": 2308
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "curtain",
+      "confidence": 0.7701825499534607,
+      "bounding_box": [
+        156.79100036621094,
+        4.027809143066406,
+        251.15782165527344,
+        163.29998779296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7730308175086975,
+        "median_depth": 0.7816038131713867,
+        "depth_std": 0.05741319805383682,
+        "depth_min": 0.5961450934410095,
+        "depth_max": 0.853438138961792,
+        "mask_area": 10554
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. curtain. window. countertop. cabinet. coffee maker. cup. electrical outlet. wall.",
+  "text_prompt": "robot arm. gripper. curtain. window. countertop. cabinet. coffee maker. cup. electrical outlet. wall.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

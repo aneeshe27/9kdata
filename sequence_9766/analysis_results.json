@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "espresso machine",
+    "cloth",
+    "can jar",
+    "sink",
+    "faucet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, cloth, espresso machine, faucet, can jar",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "espresso machine",
+        "mean_depth": 0.2658557593822479,
+        "relative_position": "closest",
+        "confidence": 0.8526551127433777
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.3353477418422699,
+        "relative_position": "middle",
+        "confidence": 0.598851203918457
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "can jar",
+        "mean_depth": 0.5495651960372925,
+        "relative_position": "middle",
+        "confidence": 0.48406150937080383
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.6226476430892944,
+        "relative_position": "middle",
+        "confidence": 0.7223802804946899
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.7230507135391235,
+        "relative_position": "farthest",
+        "confidence": 0.8193678855895996
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.7230507135391235,
+        "relative_position": "farthest",
+        "confidence": 0.8193678855895996
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.6226476430892944,
+        "relative_position": "middle",
+        "confidence": 0.7223802804946899
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "can jar",
+        "mean_depth": 0.5495651960372925,
+        "relative_position": "middle",
+        "confidence": 0.48406150937080383
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.3353477418422699,
+        "relative_position": "middle",
+        "confidence": 0.598851203918457
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "espresso machine",
+        "mean_depth": 0.2658557593822479,
+        "relative_position": "closest",
+        "confidence": 0.8526551127433777
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "espresso machine",
+      "confidence": 0.8526551127433777,
+      "bounding_box": [
+        224.57720947265625,
+        54.30353546142578,
+        311.74432373046875,
+        160.28533935546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2658557593822479,
+        "median_depth": 0.262661874294281,
+        "depth_std": 0.05008087679743767,
+        "depth_min": 0.18533311784267426,
+        "depth_max": 0.5284909605979919,
+        "mask_area": 7831
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cloth",
+      "confidence": 0.598851203918457,
+      "bounding_box": [
+        120.33855438232422,
+        104.64686584472656,
+        174.47601318359375,
+        161.4887237548828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3353477418422699,
+        "median_depth": 0.32749688625335693,
+        "depth_std": 0.0802859365940094,
+        "depth_min": 0.2040949910879135,
+        "depth_max": 0.6244681477546692,
+        "mask_area": 1472
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "can jar",
+      "confidence": 0.48406150937080383,
+      "bounding_box": [
+        153.1976776123047,
+        93.28292846679688,
+        164.87232971191406,
+        112.18217468261719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5495651960372925,
+        "median_depth": 0.5361679792404175,
+        "depth_std": 0.030961357057094574,
+        "depth_min": 0.5168882608413696,
+        "depth_max": 0.6484320163726807,
+        "mask_area": 165
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "sink",
+      "confidence": 0.7223802804946899,
+      "bounding_box": [
+        -0.002872467041015625,
+        98.61196899414062,
+        105.18006896972656,
+        139.36572265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6226476430892944,
+        "median_depth": 0.6206804513931274,
+        "depth_std": 0.10464153438806534,
+        "depth_min": 0.3563624918460846,
+        "depth_max": 0.9473521113395691,
+        "mask_area": 2221
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.8193678855895996,
+      "bounding_box": [
+        26.583152770996094,
+        64.44166564941406,
+        71.32228088378906,
+        102.50733947753906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7230507135391235,
+        "median_depth": 0.7157796025276184,
+        "depth_std": 0.09477490931749344,
+        "depth_min": 0.5534236431121826,
+        "depth_max": 0.9599499106407166,
+        "mask_area": 268
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. can. jar. cloth. espresso machine. sink. faucet. countertop.",
+  "text_prompt": "robot arm. gripper. can. jar. cloth. espresso machine. sink. faucet. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

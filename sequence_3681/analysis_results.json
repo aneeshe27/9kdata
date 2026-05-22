@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "robot arm",
+    "canister",
+    "window blinds",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, robot arm, canister, table, window blinds",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.07599513977766037,
+        "relative_position": "closest",
+        "confidence": 0.7266623973846436
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.07696352899074554,
+        "relative_position": "middle",
+        "confidence": 0.43020033836364746
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "canister",
+        "mean_depth": 0.22470441460609436,
+        "relative_position": "middle",
+        "confidence": 0.500784158706665
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "window blinds",
+        "mean_depth": 0.3014092445373535,
+        "relative_position": "middle",
+        "confidence": 0.6979647278785706
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.44608861207962036,
+        "relative_position": "farthest",
+        "confidence": 0.5731824040412903
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.44608861207962036,
+        "relative_position": "farthest",
+        "confidence": 0.5731824040412903
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "window blinds",
+        "mean_depth": 0.3014092445373535,
+        "relative_position": "middle",
+        "confidence": 0.6979647278785706
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "canister",
+        "mean_depth": 0.22470441460609436,
+        "relative_position": "middle",
+        "confidence": 0.500784158706665
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.07696352899074554,
+        "relative_position": "middle",
+        "confidence": 0.43020033836364746
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.07599513977766037,
+        "relative_position": "closest",
+        "confidence": 0.7266623973846436
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7266623973846436,
+      "bounding_box": [
+        78.8625717163086,
+        53.711761474609375,
+        260.9652099609375,
+        179.62005615234375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07599513977766037,
+        "median_depth": 0.06154637038707733,
+        "depth_std": 0.0616682805120945,
+        "depth_min": 0.007797939702868462,
+        "depth_max": 0.6617839336395264,
+        "mask_area": 9890
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.43020033836364746,
+      "bounding_box": [
+        0.4435005187988281,
+        122.70793914794922,
+        68.73284912109375,
+        179.7567138671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07696352899074554,
+        "median_depth": 0.08677810430526733,
+        "depth_std": 0.032208241522312164,
+        "depth_min": 0.010870900936424732,
+        "depth_max": 0.18557317554950714,
+        "mask_area": 1956
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "canister",
+      "confidence": 0.500784158706665,
+      "bounding_box": [
+        191.02146911621094,
+        38.718658447265625,
+        208.8031768798828,
+        63.488136291503906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22470441460609436,
+        "median_depth": 0.20633693039417267,
+        "depth_std": 0.06464559584856033,
+        "depth_min": 0.17478859424591064,
+        "depth_max": 0.526833176612854,
+        "mask_area": 289
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "window blinds",
+      "confidence": 0.6979647278785706,
+      "bounding_box": [
+        63.35417938232422,
+        0.15258216857910156,
+        168.16351318359375,
+        52.53882598876953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3014092445373535,
+        "median_depth": 0.3027583062648773,
+        "depth_std": 0.049096785485744476,
+        "depth_min": 0.11248666048049927,
+        "depth_max": 0.42207321524620056,
+        "mask_area": 3613
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.5731824040412903,
+      "bounding_box": [
+        209.96849060058594,
+        35.00465393066406,
+        256.1999206542969,
+        70.54545593261719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.44608861207962036,
+        "median_depth": 0.4339708089828491,
+        "depth_std": 0.09751362353563309,
+        "depth_min": 0.1429966539144516,
+        "depth_max": 0.6906003952026367,
+        "mask_area": 519
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. container. canister. packet. robot arm. gripper. chair. countertop. window blinds. bottle.",
+  "text_prompt": "table. container. canister. packet. robot arm. gripper. chair. countertop. window blinds. bottle.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

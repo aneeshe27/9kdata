@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "container tape",
+    "cabinet shelf",
+    "countertop"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: container tape, robot arm, cabinet shelf, countertop, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.08321774005889893,
+        "relative_position": "closest",
+        "confidence": 0.37413468956947327
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.5085277557373047,
+        "relative_position": "middle",
+        "confidence": 0.4151057004928589
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "container tape",
+        "mean_depth": 0.61629319190979,
+        "relative_position": "middle",
+        "confidence": 0.4685922861099243
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet shelf",
+        "mean_depth": 0.8024417161941528,
+        "relative_position": "middle",
+        "confidence": 0.3712559640407562
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "countertop",
+        "mean_depth": 0.8640244007110596,
+        "relative_position": "farthest",
+        "confidence": 0.4348432421684265
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "countertop",
+        "mean_depth": 0.8640244007110596,
+        "relative_position": "farthest",
+        "confidence": 0.4348432421684265
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet shelf",
+        "mean_depth": 0.8024417161941528,
+        "relative_position": "middle",
+        "confidence": 0.3712559640407562
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "container tape",
+        "mean_depth": 0.61629319190979,
+        "relative_position": "middle",
+        "confidence": 0.4685922861099243
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.5085277557373047,
+        "relative_position": "middle",
+        "confidence": 0.4151057004928589
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.08321774005889893,
+        "relative_position": "closest",
+        "confidence": 0.37413468956947327
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.37413468956947327,
+      "bounding_box": [
+        99.7300033569336,
+        0.0557403564453125,
+        180.43734741210938,
+        110.73908996582031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08321774005889893,
+        "median_depth": 0.01724860444664955,
+        "depth_std": 0.17291253805160522,
+        "depth_min": 0.0,
+        "depth_max": 0.6811749935150146,
+        "mask_area": 4041
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.4151057004928589,
+      "bounding_box": [
+        212.42718505859375,
+        121.71807098388672,
+        271.58892822265625,
+        179.921142578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5085277557373047,
+        "median_depth": 0.49291548132896423,
+        "depth_std": 0.11320716887712479,
+        "depth_min": 0.34293046593666077,
+        "depth_max": 0.9891873598098755,
+        "mask_area": 2277
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "container tape",
+      "confidence": 0.4685922861099243,
+      "bounding_box": [
+        131.77540588378906,
+        108.43746948242188,
+        154.49134826660156,
+        131.606201171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.61629319190979,
+        "median_depth": 0.6143210530281067,
+        "depth_std": 0.02628599852323532,
+        "depth_min": 0.5618831515312195,
+        "depth_max": 0.6628336310386658,
+        "mask_area": 411
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet shelf",
+      "confidence": 0.3712559640407562,
+      "bounding_box": [
+        184.77346801757812,
+        0.0893096923828125,
+        269.7492980957031,
+        37.32649612426758
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8024417161941528,
+        "median_depth": 0.8016417622566223,
+        "depth_std": 0.0591384619474411,
+        "depth_min": 0.6979478597640991,
+        "depth_max": 0.9159637689590454,
+        "mask_area": 2681
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "countertop",
+      "confidence": 0.4348432421684265,
+      "bounding_box": [
+        174.16049194335938,
+        56.82373809814453,
+        301.3384094238281,
+        93.29767608642578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8640244007110596,
+        "median_depth": 0.869114875793457,
+        "depth_std": 0.08797238022089005,
+        "depth_min": 0.6760046482086182,
+        "depth_max": 1.0,
+        "mask_area": 2435
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. drawer. countertop. shelf. storage bin. printer. box. container. lid. tape. smartphone. screwdriver. table.",
+  "text_prompt": "robot arm. gripper. cabinet. drawer. countertop. shelf. storage bin. printer. box. container. lid. tape. smartphone. screwdriver. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

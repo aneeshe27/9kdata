@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "shelf",
+    "box",
+    "door handle",
+    "robot arm",
+    "table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: box, robot arm, door handle, table, shelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.29313644766807556,
+        "relative_position": "closest",
+        "confidence": 0.4345496892929077
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.3487034738063812,
+        "relative_position": "middle",
+        "confidence": 0.5560129284858704
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "door handle",
+        "mean_depth": 0.3989276885986328,
+        "relative_position": "middle",
+        "confidence": 0.4388960003852844
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.41284140944480896,
+        "relative_position": "middle",
+        "confidence": 0.42441245913505554
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.8199440836906433,
+        "relative_position": "farthest",
+        "confidence": 0.3858323395252228
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.8199440836906433,
+        "relative_position": "farthest",
+        "confidence": 0.3858323395252228
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.41284140944480896,
+        "relative_position": "middle",
+        "confidence": 0.42441245913505554
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "door handle",
+        "mean_depth": 0.3989276885986328,
+        "relative_position": "middle",
+        "confidence": 0.4388960003852844
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.3487034738063812,
+        "relative_position": "middle",
+        "confidence": 0.5560129284858704
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.29313644766807556,
+        "relative_position": "closest",
+        "confidence": 0.4345496892929077
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "shelf",
+      "confidence": 0.4345496892929077,
+      "bounding_box": [
+        130.19000244140625,
+        38.091163635253906,
+        205.17041015625,
+        179.76577758789062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29313644766807556,
+        "median_depth": 0.29908496141433716,
+        "depth_std": 0.044247500598430634,
+        "depth_min": 0.054285723716020584,
+        "depth_max": 0.3620761036872864,
+        "mask_area": 8164
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "box",
+      "confidence": 0.5560129284858704,
+      "bounding_box": [
+        152.09536743164062,
+        27.87421417236328,
+        187.92315673828125,
+        48.09465026855469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3487034738063812,
+        "median_depth": 0.3486178517341614,
+        "depth_std": 0.00865259487181902,
+        "depth_min": 0.33068597316741943,
+        "depth_max": 0.37117552757263184,
+        "mask_area": 583
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "door handle",
+      "confidence": 0.4388960003852844,
+      "bounding_box": [
+        83.06007385253906,
+        112.4800796508789,
+        101.34025573730469,
+        123.72850799560547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3989276885986328,
+        "median_depth": 0.39496469497680664,
+        "depth_std": 0.010957319289445877,
+        "depth_min": 0.38617444038391113,
+        "depth_max": 0.43890565633773804,
+        "mask_area": 108
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.42441245913505554,
+      "bounding_box": [
+        48.82688903808594,
+        166.7278289794922,
+        81.16122436523438,
+        180.00709533691406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.41284140944480896,
+        "median_depth": 0.4045857787132263,
+        "depth_std": 0.04317069798707962,
+        "depth_min": 0.34615713357925415,
+        "depth_max": 0.5480300784111023,
+        "mask_area": 201
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.3858323395252228,
+      "bounding_box": [
+        0.05820274353027344,
+        149.56887817382812,
+        38.000755310058594,
+        179.95986938476562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8199440836906433,
+        "median_depth": 0.843170166015625,
+        "depth_std": 0.11047790944576263,
+        "depth_min": 0.632850170135498,
+        "depth_max": 0.9902215600013733,
+        "mask_area": 614
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. camera. table. whiteboard. shelf. door. door handle. box. paper towels. apple.",
+  "text_prompt": "robot arm. gripper. camera. table. whiteboard. shelf. door. door handle. box. paper towels. apple.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

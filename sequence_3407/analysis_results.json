@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "refrigerator",
+    "robot arm",
+    "countertop",
+    "cabinet shelf",
+    "appliance"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet shelf, robot arm, refrigerator, countertop, appliance",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.03876451775431633,
+        "relative_position": "closest",
+        "confidence": 0.8948575854301453
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.2101067155599594,
+        "relative_position": "middle",
+        "confidence": 0.3885732591152191
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "countertop",
+        "mean_depth": 0.47274503111839294,
+        "relative_position": "middle",
+        "confidence": 0.5646965503692627
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.49942147731781006,
+        "relative_position": "middle",
+        "confidence": 0.40246814489364624
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "appliance",
+        "mean_depth": 0.6467548608779907,
+        "relative_position": "farthest",
+        "confidence": 0.5064828395843506
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "appliance",
+        "mean_depth": 0.6467548608779907,
+        "relative_position": "farthest",
+        "confidence": 0.5064828395843506
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.49942147731781006,
+        "relative_position": "middle",
+        "confidence": 0.40246814489364624
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "countertop",
+        "mean_depth": 0.47274503111839294,
+        "relative_position": "middle",
+        "confidence": 0.5646965503692627
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.2101067155599594,
+        "relative_position": "middle",
+        "confidence": 0.3885732591152191
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.03876451775431633,
+        "relative_position": "closest",
+        "confidence": 0.8948575854301453
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "refrigerator",
+      "confidence": 0.8948575854301453,
+      "bounding_box": [
+        0.0047454833984375,
+        0.14989471435546875,
+        147.84814453125,
+        179.92111206054688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03876451775431633,
+        "median_depth": 0.03627839684486389,
+        "depth_std": 0.025117799639701843,
+        "depth_min": 3.809183181147091e-05,
+        "depth_max": 0.17512568831443787,
+        "mask_area": 25532
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3885732591152191,
+      "bounding_box": [
+        197.0940704345703,
+        13.191524505615234,
+        315.8089599609375,
+        85.21932983398438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2101067155599594,
+        "median_depth": 0.1914261281490326,
+        "depth_std": 0.09878691285848618,
+        "depth_min": 0.06553097069263458,
+        "depth_max": 0.9898619055747986,
+        "mask_area": 3419
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "countertop",
+      "confidence": 0.5646965503692627,
+      "bounding_box": [
+        147.01577758789062,
+        109.15367126464844,
+        267.61260986328125,
+        170.0455780029297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47274503111839294,
+        "median_depth": 0.46631020307540894,
+        "depth_std": 0.07104727625846863,
+        "depth_min": 0.2375008761882782,
+        "depth_max": 0.7089172005653381,
+        "mask_area": 3550
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet shelf",
+      "confidence": 0.40246814489364624,
+      "bounding_box": [
+        143.81520080566406,
+        0.10816574096679688,
+        238.9488983154297,
+        50.72047424316406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.49942147731781006,
+        "median_depth": 0.48643335700035095,
+        "depth_std": 0.06106185540556908,
+        "depth_min": 0.05968880653381348,
+        "depth_max": 0.7178892493247986,
+        "mask_area": 2773
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "appliance",
+      "confidence": 0.5064828395843506,
+      "bounding_box": [
+        161.00218200683594,
+        78.66474914550781,
+        196.8483123779297,
+        125.05630493164062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6467548608779907,
+        "median_depth": 0.6436396241188049,
+        "depth_std": 0.02544575184583664,
+        "depth_min": 0.5834447741508484,
+        "depth_max": 0.7581369876861572,
+        "mask_area": 1328
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "refrigerator. cabinet. shelf. countertop. robot arm. gripper. bag. appliance.",
+  "text_prompt": "refrigerator. cabinet. shelf. countertop. robot arm. gripper. bag. appliance.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

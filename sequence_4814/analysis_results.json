@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "stove",
+    "faucet",
+    "sink",
+    "plate",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: plate, faucet, stove, sink, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "stove",
+        "mean_depth": 0.022041019052267075,
+        "relative_position": "closest",
+        "confidence": 0.7248837351799011
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.08629205077886581,
+        "relative_position": "middle",
+        "confidence": 0.7993499040603638
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "sink",
+        "mean_depth": 0.11111419647932053,
+        "relative_position": "middle",
+        "confidence": 0.4392673671245575
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "plate",
+        "mean_depth": 0.1651964634656906,
+        "relative_position": "middle",
+        "confidence": 0.539374828338623
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.3055008053779602,
+        "relative_position": "farthest",
+        "confidence": 0.661291778087616
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.3055008053779602,
+        "relative_position": "farthest",
+        "confidence": 0.661291778087616
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "plate",
+        "mean_depth": 0.1651964634656906,
+        "relative_position": "middle",
+        "confidence": 0.539374828338623
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "sink",
+        "mean_depth": 0.11111419647932053,
+        "relative_position": "middle",
+        "confidence": 0.4392673671245575
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.08629205077886581,
+        "relative_position": "middle",
+        "confidence": 0.7993499040603638
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "stove",
+        "mean_depth": 0.022041019052267075,
+        "relative_position": "closest",
+        "confidence": 0.7248837351799011
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "stove",
+      "confidence": 0.7248837351799011,
+      "bounding_box": [
+        253.05642700195312,
+        101.20326232910156,
+        315.9678649902344,
+        179.9519500732422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022041019052267075,
+        "median_depth": 0.020742427557706833,
+        "depth_std": 0.013516172766685486,
+        "depth_min": 0.0020049158483743668,
+        "depth_max": 0.06842248886823654,
+        "mask_area": 3340
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.7993499040603638,
+      "bounding_box": [
+        176.0538330078125,
+        45.49418640136719,
+        223.65481567382812,
+        100.54119873046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08629205077886581,
+        "median_depth": 0.09045609831809998,
+        "depth_std": 0.07325407862663269,
+        "depth_min": 0.021019360050559044,
+        "depth_max": 0.5887923836708069,
+        "mask_area": 833
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "sink",
+      "confidence": 0.4392673671245575,
+      "bounding_box": [
+        167.2196502685547,
+        82.08181762695312,
+        253.55335998535156,
+        134.6999969482422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11111419647932053,
+        "median_depth": 0.10751034319400787,
+        "depth_std": 0.020056825131177902,
+        "depth_min": 0.07330909371376038,
+        "depth_max": 0.15500058233737946,
+        "mask_area": 2473
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "plate",
+      "confidence": 0.539374828338623,
+      "bounding_box": [
+        101.77578735351562,
+        86.46492004394531,
+        140.6070098876953,
+        112.43182373046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1651964634656906,
+        "median_depth": 0.1663401871919632,
+        "depth_std": 0.01301517616957426,
+        "depth_min": 0.13663232326507568,
+        "depth_max": 0.19472238421440125,
+        "mask_area": 730
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.661291778087616,
+      "bounding_box": [
+        17.383201599121094,
+        12.469715118408203,
+        99.73683166503906,
+        107.33566284179688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3055008053779602,
+        "median_depth": 0.28846508264541626,
+        "depth_std": 0.044721558690071106,
+        "depth_min": 0.2332535833120346,
+        "depth_max": 0.6301037669181824,
+        "mask_area": 4123
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "chair. workbench. clamp. countertop. sink. faucet. plate. sponge. stove. cabinet. drawer. bin.",
+  "text_prompt": "chair. workbench. clamp. countertop. sink. faucet. plate. sponge. stove. cabinet. drawer. bin.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

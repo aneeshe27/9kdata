@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "chair",
+    "cabinet",
+    "door",
+    "door cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: door cabinet, cabinet, door, chair, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.09475389122962952,
+        "relative_position": "closest",
+        "confidence": 0.7667980194091797
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.10527630895376205,
+        "relative_position": "middle",
+        "confidence": 0.480441689491272
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.5078521966934204,
+        "relative_position": "middle",
+        "confidence": 0.3580050468444824
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.8117249608039856,
+        "relative_position": "middle",
+        "confidence": 0.5246603488922119
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "door cabinet",
+        "mean_depth": 0.8659429550170898,
+        "relative_position": "farthest",
+        "confidence": 0.3787529468536377
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "door cabinet",
+        "mean_depth": 0.8659429550170898,
+        "relative_position": "farthest",
+        "confidence": 0.3787529468536377
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.8117249608039856,
+        "relative_position": "middle",
+        "confidence": 0.5246603488922119
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.5078521966934204,
+        "relative_position": "middle",
+        "confidence": 0.3580050468444824
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.10527630895376205,
+        "relative_position": "middle",
+        "confidence": 0.480441689491272
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.09475389122962952,
+        "relative_position": "closest",
+        "confidence": 0.7667980194091797
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7667980194091797,
+      "bounding_box": [
+        42.36082458496094,
+        57.97487258911133,
+        292.5797119140625,
+        179.95028686523438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09475389122962952,
+        "median_depth": 0.07191900908946991,
+        "depth_std": 0.08513925224542618,
+        "depth_min": 0.0,
+        "depth_max": 0.7938917279243469,
+        "mask_area": 20443
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.480441689491272,
+      "bounding_box": [
+        0.029781341552734375,
+        99.91938018798828,
+        52.11565017700195,
+        179.96102905273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10527630895376205,
+        "median_depth": 0.09047440439462662,
+        "depth_std": 0.0732366293668747,
+        "depth_min": 0.0354008749127388,
+        "depth_max": 0.6463578343391418,
+        "mask_area": 2954
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3580050468444824,
+      "bounding_box": [
+        0.0134735107421875,
+        0.032527923583984375,
+        75.72050476074219,
+        113.15902709960938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5078521966934204,
+        "median_depth": 0.5031380653381348,
+        "depth_std": 0.04090682789683342,
+        "depth_min": 0.4421069025993347,
+        "depth_max": 0.7848626971244812,
+        "mask_area": 6232
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "door",
+      "confidence": 0.5246603488922119,
+      "bounding_box": [
+        83.9225082397461,
+        0.047573089599609375,
+        141.70993041992188,
+        74.94181823730469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8117249608039856,
+        "median_depth": 0.8150634765625,
+        "depth_std": 0.02520841732621193,
+        "depth_min": 0.6757787466049194,
+        "depth_max": 0.8719514012336731,
+        "mask_area": 2646
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "door cabinet",
+      "confidence": 0.3787529468536377,
+      "bounding_box": [
+        164.14193725585938,
+        0.12738609313964844,
+        205.46530151367188,
+        61.96393585205078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8659429550170898,
+        "median_depth": 0.8640875816345215,
+        "depth_std": 0.05837971717119217,
+        "depth_min": 0.382748544216156,
+        "depth_max": 0.9831610918045044,
+        "mask_area": 1852
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. chair. robot arm. camera. cable. tablet. paper. clamp. door. cabinet.",
+  "text_prompt": "table. chair. robot arm. camera. cable. tablet. paper. clamp. door. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

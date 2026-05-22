@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "chair",
+    "chair",
+    "whiteboard",
+    "plant"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, chair, table, whiteboard, plant",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.14142060279846191,
+        "relative_position": "closest",
+        "confidence": 0.6928929090499878
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.31422823667526245,
+        "relative_position": "middle",
+        "confidence": 0.4683758616447449
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.3588002920150757,
+        "relative_position": "middle",
+        "confidence": 0.46501466631889343
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "whiteboard",
+        "mean_depth": 0.5935450792312622,
+        "relative_position": "middle",
+        "confidence": 0.6063126921653748
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "plant",
+        "mean_depth": 0.8191371560096741,
+        "relative_position": "farthest",
+        "confidence": 0.5018242597579956
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "plant",
+        "mean_depth": 0.8191371560096741,
+        "relative_position": "farthest",
+        "confidence": 0.5018242597579956
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "whiteboard",
+        "mean_depth": 0.5935450792312622,
+        "relative_position": "middle",
+        "confidence": 0.6063126921653748
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.3588002920150757,
+        "relative_position": "middle",
+        "confidence": 0.46501466631889343
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.31422823667526245,
+        "relative_position": "middle",
+        "confidence": 0.4683758616447449
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.14142060279846191,
+        "relative_position": "closest",
+        "confidence": 0.6928929090499878
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.6928929090499878,
+      "bounding_box": [
+        129.38194274902344,
+        46.71471405029297,
+        315.7301025390625,
+        179.59768676757812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14142060279846191,
+        "median_depth": 0.1322435885667801,
+        "depth_std": 0.04426463320851326,
+        "depth_min": 0.06936448067426682,
+        "depth_max": 0.4694152772426605,
+        "mask_area": 16058
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.4683758616447449,
+      "bounding_box": [
+        48.154502868652344,
+        74.68651580810547,
+        128.8397216796875,
+        158.6212158203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.31422823667526245,
+        "median_depth": 0.30639195442199707,
+        "depth_std": 0.05675048381090164,
+        "depth_min": 0.0909821018576622,
+        "depth_max": 0.8933413028717041,
+        "mask_area": 3544
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.46501466631889343,
+      "bounding_box": [
+        206.32528686523438,
+        23.365089416503906,
+        244.43075561523438,
+        65.31193542480469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3588002920150757,
+        "median_depth": 0.35411208868026733,
+        "depth_std": 0.028962472453713417,
+        "depth_min": 0.31720492243766785,
+        "depth_max": 0.6465890407562256,
+        "mask_area": 942
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "whiteboard",
+      "confidence": 0.6063126921653748,
+      "bounding_box": [
+        194.06182861328125,
+        0.03743553161621094,
+        315.779541015625,
+        32.086875915527344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5935450792312622,
+        "median_depth": 0.5824941396713257,
+        "depth_std": 0.10526712983846664,
+        "depth_min": 0.4186287522315979,
+        "depth_max": 0.8136366009712219,
+        "mask_area": 2889
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plant",
+      "confidence": 0.5018242597579956,
+      "bounding_box": [
+        156.11590576171875,
+        0.12009620666503906,
+        195.29525756835938,
+        44.707054138183594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8191371560096741,
+        "median_depth": 0.8109441995620728,
+        "depth_std": 0.05738550052046776,
+        "depth_min": 0.6452261209487915,
+        "depth_max": 0.9791656732559204,
+        "mask_area": 1144
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cup. plastic cup. table. cloth. chair. whiteboard. plant.",
+  "text_prompt": "robot arm. gripper. cup. plastic cup. table. cloth. chair. whiteboard. plant.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

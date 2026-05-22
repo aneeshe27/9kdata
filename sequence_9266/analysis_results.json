@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "countertop",
+    "faucet",
+    "sink",
+    "microwave",
+    "wire"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: wire, faucet, sink, countertop, microwave",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "countertop",
+        "mean_depth": 0.08159904927015305,
+        "relative_position": "closest",
+        "confidence": 0.40625470876693726
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.101504385471344,
+        "relative_position": "middle",
+        "confidence": 0.4209515452384949
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.10170401632785797,
+        "relative_position": "middle",
+        "confidence": 0.6675460338592529
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "microwave",
+        "mean_depth": 0.1350279599428177,
+        "relative_position": "middle",
+        "confidence": 0.4828912317752838
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "wire",
+        "mean_depth": 0.3965034484863281,
+        "relative_position": "farthest",
+        "confidence": 0.5522594451904297
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "wire",
+        "mean_depth": 0.3965034484863281,
+        "relative_position": "farthest",
+        "confidence": 0.5522594451904297
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "microwave",
+        "mean_depth": 0.1350279599428177,
+        "relative_position": "middle",
+        "confidence": 0.4828912317752838
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.10170401632785797,
+        "relative_position": "middle",
+        "confidence": 0.6675460338592529
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.101504385471344,
+        "relative_position": "middle",
+        "confidence": 0.4209515452384949
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "countertop",
+        "mean_depth": 0.08159904927015305,
+        "relative_position": "closest",
+        "confidence": 0.40625470876693726
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "countertop",
+      "confidence": 0.40625470876693726,
+      "bounding_box": [
+        120.95268249511719,
+        23.355140686035156,
+        301.77301025390625,
+        53.40412139892578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08159904927015305,
+        "median_depth": 0.07221710681915283,
+        "depth_std": 0.05505935475230217,
+        "depth_min": 0.004928944632411003,
+        "depth_max": 0.23512957990169525,
+        "mask_area": 3729
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "faucet",
+      "confidence": 0.4209515452384949,
+      "bounding_box": [
+        214.11187744140625,
+        96.57049560546875,
+        245.31411743164062,
+        125.616943359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.101504385471344,
+        "median_depth": 0.10481245070695877,
+        "depth_std": 0.016202405095100403,
+        "depth_min": 0.07129126787185669,
+        "depth_max": 0.13333028554916382,
+        "mask_area": 268
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.6675460338592529,
+      "bounding_box": [
+        174.2134552001953,
+        122.29620361328125,
+        243.90614318847656,
+        179.89358520507812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10170401632785797,
+        "median_depth": 0.1017688661813736,
+        "depth_std": 0.016585756093263626,
+        "depth_min": 0.0705898180603981,
+        "depth_max": 0.13667523860931396,
+        "mask_area": 2443
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "microwave",
+      "confidence": 0.4828912317752838,
+      "bounding_box": [
+        123.00222778320312,
+        42.22765350341797,
+        185.46295166015625,
+        82.37799072265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1350279599428177,
+        "median_depth": 0.13637900352478027,
+        "depth_std": 0.02299604006111622,
+        "depth_min": 0.08864139020442963,
+        "depth_max": 0.18549542129039764,
+        "mask_area": 1392
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "wire",
+      "confidence": 0.5522594451904297,
+      "bounding_box": [
+        57.72944641113281,
+        147.21128845214844,
+        119.46296691894531,
+        179.9325408935547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3965034484863281,
+        "median_depth": 0.34507694840431213,
+        "depth_std": 0.10081885755062103,
+        "depth_min": 0.2945999205112457,
+        "depth_max": 0.6734228134155273,
+        "mask_area": 1243
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "microwave. stove. frying pan. fruit. sink. faucet. knob. shelf. countertop. cabinet. cup. table. wire.",
+  "text_prompt": "microwave. stove. frying pan. fruit. sink. faucet. knob. shelf. countertop. cabinet. cup. table. wire.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

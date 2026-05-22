@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "marker",
+    "cup",
+    "book",
+    "bottle",
+    "backpack"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, backpack, bottle, book, marker",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "marker",
+        "mean_depth": 0.0938957929611206,
+        "relative_position": "closest",
+        "confidence": 0.6133716106414795
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.10505659133195877,
+        "relative_position": "middle",
+        "confidence": 0.845562219619751
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "book",
+        "mean_depth": 0.21177993714809418,
+        "relative_position": "middle",
+        "confidence": 0.3897421061992645
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "bottle",
+        "mean_depth": 0.6158613562583923,
+        "relative_position": "middle",
+        "confidence": 0.5764872431755066
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "backpack",
+        "mean_depth": 0.9485533833503723,
+        "relative_position": "farthest",
+        "confidence": 0.3535570502281189
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "backpack",
+        "mean_depth": 0.9485533833503723,
+        "relative_position": "farthest",
+        "confidence": 0.3535570502281189
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "bottle",
+        "mean_depth": 0.6158613562583923,
+        "relative_position": "middle",
+        "confidence": 0.5764872431755066
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "book",
+        "mean_depth": 0.21177993714809418,
+        "relative_position": "middle",
+        "confidence": 0.3897421061992645
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.10505659133195877,
+        "relative_position": "middle",
+        "confidence": 0.845562219619751
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "marker",
+        "mean_depth": 0.0938957929611206,
+        "relative_position": "closest",
+        "confidence": 0.6133716106414795
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "marker",
+      "confidence": 0.6133716106414795,
+      "bounding_box": [
+        302.872314453125,
+        87.12391662597656,
+        315.99658203125,
+        94.35592651367188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0938957929611206,
+        "median_depth": 0.09361816197633743,
+        "depth_std": 0.005318806041032076,
+        "depth_min": 0.08452621102333069,
+        "depth_max": 0.10540644079446793,
+        "mask_area": 67
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.845562219619751,
+      "bounding_box": [
+        252.69509887695312,
+        72.01902770996094,
+        297.3458557128906,
+        105.03990173339844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10505659133195877,
+        "median_depth": 0.1050005778670311,
+        "depth_std": 0.021696006879210472,
+        "depth_min": 0.07293011993169785,
+        "depth_max": 0.1668388396501541,
+        "mask_area": 1078
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "book",
+      "confidence": 0.3897421061992645,
+      "bounding_box": [
+        128.750732421875,
+        71.79036712646484,
+        175.3243408203125,
+        104.5945053100586
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21177993714809418,
+        "median_depth": 0.19481082260608673,
+        "depth_std": 0.08577475696802139,
+        "depth_min": 0.13685131072998047,
+        "depth_max": 0.7168033719062805,
+        "mask_area": 1028
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bottle",
+      "confidence": 0.5764872431755066,
+      "bounding_box": [
+        182.38214111328125,
+        48.72571563720703,
+        198.078369140625,
+        77.36746215820312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6158613562583923,
+        "median_depth": 0.6172139644622803,
+        "depth_std": 0.022133903577923775,
+        "depth_min": 0.5746191143989563,
+        "depth_max": 0.6618465185165405,
+        "mask_area": 237
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "backpack",
+      "confidence": 0.3535570502281189,
+      "bounding_box": [
+        0.03144073486328125,
+        126.49052429199219,
+        49.46152877807617,
+        179.8981475830078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9485533833503723,
+        "median_depth": 0.9559387564659119,
+        "depth_std": 0.02938327193260193,
+        "depth_min": 0.8524125814437866,
+        "depth_max": 0.9846087694168091,
+        "mask_area": 1404
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. cup. book. marker. bottle. backpack.",
+  "text_prompt": "table. cup. book. marker. bottle. backpack.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

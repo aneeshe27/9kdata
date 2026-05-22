@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "knife block",
+    "microwave",
+    "picture frame",
+    "picture frame"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: knife block, microwave, picture frame, picture frame, robot arm gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.0873262956738472,
+        "relative_position": "closest",
+        "confidence": 0.37619492411613464
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "knife block",
+        "mean_depth": 0.17510394752025604,
+        "relative_position": "middle",
+        "confidence": 0.42476794123649597
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.22171878814697266,
+        "relative_position": "middle",
+        "confidence": 0.8522127866744995
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "picture frame",
+        "mean_depth": 0.28416886925697327,
+        "relative_position": "middle",
+        "confidence": 0.627298891544342
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "picture frame",
+        "mean_depth": 0.9670776128768921,
+        "relative_position": "farthest",
+        "confidence": 0.6591550707817078
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "picture frame",
+        "mean_depth": 0.9670776128768921,
+        "relative_position": "farthest",
+        "confidence": 0.6591550707817078
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "picture frame",
+        "mean_depth": 0.28416886925697327,
+        "relative_position": "middle",
+        "confidence": 0.627298891544342
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.22171878814697266,
+        "relative_position": "middle",
+        "confidence": 0.8522127866744995
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "knife block",
+        "mean_depth": 0.17510394752025604,
+        "relative_position": "middle",
+        "confidence": 0.42476794123649597
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.0873262956738472,
+        "relative_position": "closest",
+        "confidence": 0.37619492411613464
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.37619492411613464,
+      "bounding_box": [
+        186.20346069335938,
+        15.886802673339844,
+        315.8533020019531,
+        179.68698120117188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0873262956738472,
+        "median_depth": 0.05158038064837456,
+        "depth_std": 0.12929876148700714,
+        "depth_min": 0.005085792392492294,
+        "depth_max": 0.9611572027206421,
+        "mask_area": 11451
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "knife block",
+      "confidence": 0.42476794123649597,
+      "bounding_box": [
+        0.10484695434570312,
+        45.40803146362305,
+        31.519189834594727,
+        102.87007141113281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17510394752025604,
+        "median_depth": 0.17677590250968933,
+        "depth_std": 0.02182708866894245,
+        "depth_min": 0.14259469509124756,
+        "depth_max": 0.24063625931739807,
+        "mask_area": 1258
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "microwave",
+      "confidence": 0.8522127866744995,
+      "bounding_box": [
+        120.43684387207031,
+        46.33258819580078,
+        194.55433654785156,
+        93.59087371826172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22171878814697266,
+        "median_depth": 0.20900969207286835,
+        "depth_std": 0.05637601017951965,
+        "depth_min": 0.17374961078166962,
+        "depth_max": 0.7223356366157532,
+        "mask_area": 2981
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "picture frame",
+      "confidence": 0.627298891544342,
+      "bounding_box": [
+        0.068389892578125,
+        -0.00031375885009765625,
+        36.34996032714844,
+        27.210315704345703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28416886925697327,
+        "median_depth": 0.285211980342865,
+        "depth_std": 0.03394356369972229,
+        "depth_min": 0.21602749824523926,
+        "depth_max": 0.3446896970272064,
+        "mask_area": 820
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "picture frame",
+      "confidence": 0.6591550707817078,
+      "bounding_box": [
+        177.42086791992188,
+        8.438481330871582,
+        201.40771484375,
+        38.363094329833984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9670776128768921,
+        "median_depth": 0.9678348302841187,
+        "depth_std": 0.009213552810251713,
+        "depth_min": 0.9497473239898682,
+        "depth_max": 0.9849627017974854,
+        "mask_area": 605
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "microwave. robot arm. gripper. countertop. knife block. knives. laptop. cable. sofa. pillow. picture frame.",
+  "text_prompt": "microwave. robot arm. gripper. countertop. knife block. knives. laptop. cable. sofa. pillow. picture frame.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

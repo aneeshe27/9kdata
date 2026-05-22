@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "countertop",
+    "towel",
+    "sink",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: countertop, towel, robot arm gripper, cabinet, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm gripper",
+        "mean_depth": 0.031808800995349884,
+        "relative_position": "closest",
+        "confidence": 0.430768221616745
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.07857350260019302,
+        "relative_position": "middle",
+        "confidence": 0.3816218376159668
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "towel",
+        "mean_depth": 0.14236870408058167,
+        "relative_position": "middle",
+        "confidence": 0.4552733302116394
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.5326005816459656,
+        "relative_position": "middle",
+        "confidence": 0.5667405724525452
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.7741313576698303,
+        "relative_position": "farthest",
+        "confidence": 0.35743263363838196
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.7741313576698303,
+        "relative_position": "farthest",
+        "confidence": 0.35743263363838196
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.5326005816459656,
+        "relative_position": "middle",
+        "confidence": 0.5667405724525452
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "towel",
+        "mean_depth": 0.14236870408058167,
+        "relative_position": "middle",
+        "confidence": 0.4552733302116394
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.07857350260019302,
+        "relative_position": "middle",
+        "confidence": 0.3816218376159668
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm gripper",
+        "mean_depth": 0.031808800995349884,
+        "relative_position": "closest",
+        "confidence": 0.430768221616745
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm gripper",
+      "confidence": 0.430768221616745,
+      "bounding_box": [
+        189.50811767578125,
+        -0.0025482177734375,
+        264.44024658203125,
+        83.4578857421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.031808800995349884,
+        "median_depth": 0.008732078596949577,
+        "depth_std": 0.09786157310009003,
+        "depth_min": 0.003559520933777094,
+        "depth_max": 0.9812296032905579,
+        "mask_area": 2502
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "countertop",
+      "confidence": 0.3816218376159668,
+      "bounding_box": [
+        261.89111328125,
+        109.29071044921875,
+        315.9923095703125,
+        179.8531494140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07857350260019302,
+        "median_depth": 0.07029325515031815,
+        "depth_std": 0.056433744728565216,
+        "depth_min": 0.02769441157579422,
+        "depth_max": 0.7743522524833679,
+        "mask_area": 2139
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "towel",
+      "confidence": 0.4552733302116394,
+      "bounding_box": [
+        180.33103942871094,
+        110.01390075683594,
+        224.3127899169922,
+        142.9752655029297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14236870408058167,
+        "median_depth": 0.1402875781059265,
+        "depth_std": 0.023502811789512634,
+        "depth_min": 0.09547185897827148,
+        "depth_max": 0.20228123664855957,
+        "mask_area": 850
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.5667405724525452,
+      "bounding_box": [
+        175.81556701660156,
+        77.79478454589844,
+        214.3822784423828,
+        88.7314453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5326005816459656,
+        "median_depth": 0.5415678024291992,
+        "depth_std": 0.07067761570215225,
+        "depth_min": 0.17730851471424103,
+        "depth_max": 0.6653918027877808,
+        "mask_area": 302
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.35743263363838196,
+      "bounding_box": [
+        221.4810791015625,
+        80.84652709960938,
+        276.34442138671875,
+        147.0928955078125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7741313576698303,
+        "median_depth": 0.7966667413711548,
+        "depth_std": 0.09319902956485748,
+        "depth_min": 0.18986794352531433,
+        "depth_max": 0.8904874920845032,
+        "mask_area": 1259
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. container. towel. sink. countertop. cabinet. window.",
+  "text_prompt": "robot arm. gripper. container. towel. sink. countertop. cabinet. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "whiteboard",
+    "drawer",
+    "cabinet door",
+    "ceiling light"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: drawer, whiteboard, robot arm, ceiling light, cabinet door",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.03647778183221817,
+        "relative_position": "closest",
+        "confidence": 0.6978861093521118
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "whiteboard",
+        "mean_depth": 0.2265964150428772,
+        "relative_position": "middle",
+        "confidence": 0.6937164664268494
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "drawer",
+        "mean_depth": 0.298583984375,
+        "relative_position": "middle",
+        "confidence": 0.37610360980033875
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cabinet door",
+        "mean_depth": 0.31252098083496094,
+        "relative_position": "middle",
+        "confidence": 0.41861268877983093
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "ceiling light",
+        "mean_depth": 0.4834439158439636,
+        "relative_position": "farthest",
+        "confidence": 0.39099931716918945
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "ceiling light",
+        "mean_depth": 0.4834439158439636,
+        "relative_position": "farthest",
+        "confidence": 0.39099931716918945
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cabinet door",
+        "mean_depth": 0.31252098083496094,
+        "relative_position": "middle",
+        "confidence": 0.41861268877983093
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "drawer",
+        "mean_depth": 0.298583984375,
+        "relative_position": "middle",
+        "confidence": 0.37610360980033875
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "whiteboard",
+        "mean_depth": 0.2265964150428772,
+        "relative_position": "middle",
+        "confidence": 0.6937164664268494
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.03647778183221817,
+        "relative_position": "closest",
+        "confidence": 0.6978861093521118
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.6978861093521118,
+      "bounding_box": [
+        163.3663330078125,
+        58.9591064453125,
+        315.9708557128906,
+        138.44259643554688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03647778183221817,
+        "median_depth": 0.015808027237653732,
+        "depth_std": 0.0818386822938919,
+        "depth_min": 0.0,
+        "depth_max": 0.9804902076721191,
+        "mask_area": 5329
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "whiteboard",
+      "confidence": 0.6937164664268494,
+      "bounding_box": [
+        0.02315521240234375,
+        30.042686462402344,
+        44.217674255371094,
+        179.9925537109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2265964150428772,
+        "median_depth": 0.22617647051811218,
+        "depth_std": 0.00789703894406557,
+        "depth_min": 0.20483249425888062,
+        "depth_max": 0.2437172532081604,
+        "mask_area": 1672
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "drawer",
+      "confidence": 0.37610360980033875,
+      "bounding_box": [
+        200.2320556640625,
+        131.4339599609375,
+        250.82318115234375,
+        179.94451904296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.298583984375,
+        "median_depth": 0.29560309648513794,
+        "depth_std": 0.015159396454691887,
+        "depth_min": 0.1427082121372223,
+        "depth_max": 0.46974489092826843,
+        "mask_area": 2172
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet door",
+      "confidence": 0.41861268877983093,
+      "bounding_box": [
+        105.78655242919922,
+        44.335350036621094,
+        152.63421630859375,
+        104.87305450439453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.31252098083496094,
+        "median_depth": 0.30987757444381714,
+        "depth_std": 0.017163826152682304,
+        "depth_min": 0.2731427550315857,
+        "depth_max": 0.360109806060791,
+        "mask_area": 2396
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "ceiling light",
+      "confidence": 0.39099931716918945,
+      "bounding_box": [
+        268.7021179199219,
+        1.0729846954345703,
+        315.9656677246094,
+        35.834083557128906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4834439158439636,
+        "median_depth": 0.48277461528778076,
+        "depth_std": 0.0350390262901783,
+        "depth_min": 0.4153172969818115,
+        "depth_max": 0.5733891129493713,
+        "mask_area": 640
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. cabinet door. file cabinet. drawer. shelf. desk. whiteboard. ceiling light.",
+  "text_prompt": "robot arm. gripper. cabinet. cabinet door. file cabinet. drawer. shelf. desk. whiteboard. ceiling light.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

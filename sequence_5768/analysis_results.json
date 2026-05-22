@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bowl",
+    "cloth",
+    "robot arm",
+    "monitor",
+    "laptop"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bowl, monitor, robot arm, cloth, laptop",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.12847298383712769,
+        "relative_position": "closest",
+        "confidence": 0.6347890496253967
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.18672795593738556,
+        "relative_position": "middle",
+        "confidence": 0.5413941144943237
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.19479580223560333,
+        "relative_position": "middle",
+        "confidence": 0.40095025300979614
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "monitor",
+        "mean_depth": 0.8797750473022461,
+        "relative_position": "middle",
+        "confidence": 0.3590320646762848
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "laptop",
+        "mean_depth": 0.9107733368873596,
+        "relative_position": "farthest",
+        "confidence": 0.36293721199035645
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "laptop",
+        "mean_depth": 0.9107733368873596,
+        "relative_position": "farthest",
+        "confidence": 0.36293721199035645
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "monitor",
+        "mean_depth": 0.8797750473022461,
+        "relative_position": "middle",
+        "confidence": 0.3590320646762848
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.19479580223560333,
+        "relative_position": "middle",
+        "confidence": 0.40095025300979614
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.18672795593738556,
+        "relative_position": "middle",
+        "confidence": 0.5413941144943237
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.12847298383712769,
+        "relative_position": "closest",
+        "confidence": 0.6347890496253967
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.6347890496253967,
+      "bounding_box": [
+        175.8037109375,
+        103.69831085205078,
+        213.03988647460938,
+        132.02658081054688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12847298383712769,
+        "median_depth": 0.12625917792320251,
+        "depth_std": 0.011616035364568233,
+        "depth_min": 0.1105082780122757,
+        "depth_max": 0.16919568181037903,
+        "mask_area": 720
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.5413941144943237,
+      "bounding_box": [
+        115.42930603027344,
+        76.19561004638672,
+        188.7489471435547,
+        106.38883209228516
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18672795593738556,
+        "median_depth": 0.18707185983657837,
+        "depth_std": 0.02012746036052704,
+        "depth_min": 0.14817486703395844,
+        "depth_max": 0.24766989052295685,
+        "mask_area": 1262
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.40095025300979614,
+      "bounding_box": [
+        149.8309326171875,
+        0.21593856811523438,
+        252.73831176757812,
+        98.54806518554688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19479580223560333,
+        "median_depth": 0.21047189831733704,
+        "depth_std": 0.09309474378824234,
+        "depth_min": 0.010039620101451874,
+        "depth_max": 0.7125704884529114,
+        "mask_area": 1290
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "monitor",
+      "confidence": 0.3590320646762848,
+      "bounding_box": [
+        240.20846557617188,
+        0.04716205596923828,
+        285.6467590332031,
+        23.174156188964844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8797750473022461,
+        "median_depth": 0.8802903294563293,
+        "depth_std": 0.02586253732442856,
+        "depth_min": 0.8218361735343933,
+        "depth_max": 0.9495676755905151,
+        "mask_area": 495
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "laptop",
+      "confidence": 0.36293721199035645,
+      "bounding_box": [
+        283.4683837890625,
+        15.807960510253906,
+        315.98089599609375,
+        56.62749481201172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9107733368873596,
+        "median_depth": 0.9298514127731323,
+        "depth_std": 0.08499263226985931,
+        "depth_min": 0.5814955830574036,
+        "depth_max": 0.9854763746261597,
+        "mask_area": 699
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. bowl. box. cloth. apple. container. clamp. laptop. backpack. monitor. cable.",
+  "text_prompt": "robot arm. gripper. table. bowl. box. cloth. apple. container. clamp. laptop. backpack. monitor. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

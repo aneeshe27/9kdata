@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cable",
+    "button",
+    "plate",
+    "chair",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cable, chair, chair, plate, button",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.13934564590454102,
+        "relative_position": "closest",
+        "confidence": 0.39550063014030457
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "button",
+        "mean_depth": 0.16680797934532166,
+        "relative_position": "middle",
+        "confidence": 0.3533828556537628
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "plate",
+        "mean_depth": 0.18839041888713837,
+        "relative_position": "middle",
+        "confidence": 0.5474098324775696
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.47057151794433594,
+        "relative_position": "middle",
+        "confidence": 0.6182954907417297
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.686289370059967,
+        "relative_position": "farthest",
+        "confidence": 0.4449739158153534
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.686289370059967,
+        "relative_position": "farthest",
+        "confidence": 0.4449739158153534
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.47057151794433594,
+        "relative_position": "middle",
+        "confidence": 0.6182954907417297
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "plate",
+        "mean_depth": 0.18839041888713837,
+        "relative_position": "middle",
+        "confidence": 0.5474098324775696
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "button",
+        "mean_depth": 0.16680797934532166,
+        "relative_position": "middle",
+        "confidence": 0.3533828556537628
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.13934564590454102,
+        "relative_position": "closest",
+        "confidence": 0.39550063014030457
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cable",
+      "confidence": 0.39550063014030457,
+      "bounding_box": [
+        87.82642364501953,
+        136.09976196289062,
+        147.61203002929688,
+        179.59417724609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13934564590454102,
+        "median_depth": 0.1352599859237671,
+        "depth_std": 0.015808988362550735,
+        "depth_min": 0.1088293194770813,
+        "depth_max": 0.1989136040210724,
+        "mask_area": 1678
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "button",
+      "confidence": 0.3533828556537628,
+      "bounding_box": [
+        150.66844177246094,
+        71.13729858398438,
+        165.37135314941406,
+        84.03083801269531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16680797934532166,
+        "median_depth": 0.16611802577972412,
+        "depth_std": 0.004324422683566809,
+        "depth_min": 0.16109004616737366,
+        "depth_max": 0.18259145319461823,
+        "mask_area": 144
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "plate",
+      "confidence": 0.5474098324775696,
+      "bounding_box": [
+        142.07276916503906,
+        47.18643569946289,
+        178.87586975097656,
+        69.77933502197266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18839041888713837,
+        "median_depth": 0.18659581243991852,
+        "depth_std": 0.013136162422597408,
+        "depth_min": 0.1709183007478714,
+        "depth_max": 0.2367364764213562,
+        "mask_area": 635
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.6182954907417297,
+      "bounding_box": [
+        250.3457794189453,
+        33.344486236572266,
+        315.9200439453125,
+        105.7149658203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47057151794433594,
+        "median_depth": 0.46905872225761414,
+        "depth_std": 0.02928301878273487,
+        "depth_min": 0.3496616780757904,
+        "depth_max": 0.5796945095062256,
+        "mask_area": 1828
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.4449739158153534,
+      "bounding_box": [
+        105.31729125976562,
+        0.22733306884765625,
+        147.02272033691406,
+        44.933570861816406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.686289370059967,
+        "median_depth": 0.6609162092208862,
+        "depth_std": 0.05805182084441185,
+        "depth_min": 0.5836663842201233,
+        "depth_max": 0.995025098323822,
+        "mask_area": 1033
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. plate. bowl. pizza slice. robot gripper. camera. clamp. cable. button. workbench. tripod. chair.",
+  "text_prompt": "table. plate. bowl. pizza slice. robot gripper. camera. clamp. cable. button. workbench. tripod. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

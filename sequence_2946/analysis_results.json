@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot gripper air purifier",
+    "shelf",
+    "office chair",
+    "equipment case",
+    "picture frame"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: equipment case, shelf, picture frame, office chair, robot gripper air purifier",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot gripper air purifier",
+        "mean_depth": 0.06945505738258362,
+        "relative_position": "closest",
+        "confidence": 0.38218045234680176
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.38569435477256775,
+        "relative_position": "middle",
+        "confidence": 0.5771312117576599
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "office chair",
+        "mean_depth": 0.5480790138244629,
+        "relative_position": "middle",
+        "confidence": 0.5498339533805847
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "equipment case",
+        "mean_depth": 0.6102161407470703,
+        "relative_position": "middle",
+        "confidence": 0.5328416228294373
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "picture frame",
+        "mean_depth": 0.7697262763977051,
+        "relative_position": "farthest",
+        "confidence": 0.8152416348457336
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "picture frame",
+        "mean_depth": 0.7697262763977051,
+        "relative_position": "farthest",
+        "confidence": 0.8152416348457336
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "equipment case",
+        "mean_depth": 0.6102161407470703,
+        "relative_position": "middle",
+        "confidence": 0.5328416228294373
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "office chair",
+        "mean_depth": 0.5480790138244629,
+        "relative_position": "middle",
+        "confidence": 0.5498339533805847
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.38569435477256775,
+        "relative_position": "middle",
+        "confidence": 0.5771312117576599
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot gripper air purifier",
+        "mean_depth": 0.06945505738258362,
+        "relative_position": "closest",
+        "confidence": 0.38218045234680176
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot gripper air purifier",
+      "confidence": 0.38218045234680176,
+      "bounding_box": [
+        204.69627380371094,
+        0.8326034545898438,
+        268.12847900390625,
+        71.64905548095703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06945505738258362,
+        "median_depth": 0.0014563794247806072,
+        "depth_std": 0.10938867926597595,
+        "depth_min": 0.0,
+        "depth_max": 0.42733535170555115,
+        "mask_area": 1708
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "shelf",
+      "confidence": 0.5771312117576599,
+      "bounding_box": [
+        159.62461853027344,
+        26.711669921875,
+        226.4578094482422,
+        161.23223876953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.38569435477256775,
+        "median_depth": 0.38338208198547363,
+        "depth_std": 0.04561677575111389,
+        "depth_min": 0.09501789510250092,
+        "depth_max": 0.6790213584899902,
+        "mask_area": 5818
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "office chair",
+      "confidence": 0.5498339533805847,
+      "bounding_box": [
+        251.20358276367188,
+        62.30289840698242,
+        315.8973083496094,
+        137.25064086914062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5480790138244629,
+        "median_depth": 0.5484897494316101,
+        "depth_std": 0.01486429013311863,
+        "depth_min": 0.5073757171630859,
+        "depth_max": 0.6058541536331177,
+        "mask_area": 1521
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "equipment case",
+      "confidence": 0.5328416228294373,
+      "bounding_box": [
+        48.0269775390625,
+        100.19187927246094,
+        111.73167419433594,
+        150.40341186523438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6102161407470703,
+        "median_depth": 0.6089005470275879,
+        "depth_std": 0.021934276446700096,
+        "depth_min": 0.5361768007278442,
+        "depth_max": 0.6833444237709045,
+        "mask_area": 1792
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "picture frame",
+      "confidence": 0.8152416348457336,
+      "bounding_box": [
+        89.646240234375,
+        44.607364654541016,
+        119.96389770507812,
+        77.13714599609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7697262763977051,
+        "median_depth": 0.7694838047027588,
+        "depth_std": 0.008931317366659641,
+        "depth_min": 0.7538723349571228,
+        "depth_max": 0.7865666747093201,
+        "mask_area": 758
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. whiteboard. shelf. storage bin. box. picture frame. office chair. table. equipment case. air purifier. cables.",
+  "text_prompt": "robot arm. robot gripper. whiteboard. shelf. storage bin. box. picture frame. office chair. table. equipment case. air purifier. cables.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "microwave",
+    "cup",
+    "cup",
+    "sink",
+    "faucet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: microwave, cup, faucet, cup, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.4654216170310974,
+        "relative_position": "closest",
+        "confidence": 0.8937875032424927
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.759939432144165,
+        "relative_position": "middle",
+        "confidence": 0.4457058608531952
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.7625992298126221,
+        "relative_position": "middle",
+        "confidence": 0.41621118783950806
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.8597359657287598,
+        "relative_position": "middle",
+        "confidence": 0.7333698272705078
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.9586334824562073,
+        "relative_position": "farthest",
+        "confidence": 0.41745656728744507
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.9586334824562073,
+        "relative_position": "farthest",
+        "confidence": 0.41745656728744507
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.8597359657287598,
+        "relative_position": "middle",
+        "confidence": 0.7333698272705078
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.7625992298126221,
+        "relative_position": "middle",
+        "confidence": 0.41621118783950806
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.759939432144165,
+        "relative_position": "middle",
+        "confidence": 0.4457058608531952
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.4654216170310974,
+        "relative_position": "closest",
+        "confidence": 0.8937875032424927
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "microwave",
+      "confidence": 0.8937875032424927,
+      "bounding_box": [
+        58.111629486083984,
+        131.86219787597656,
+        149.57681274414062,
+        179.9682159423828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4654216170310974,
+        "median_depth": 0.4523591995239258,
+        "depth_std": 0.041914213448762894,
+        "depth_min": 0.4189094007015228,
+        "depth_max": 0.632676362991333,
+        "mask_area": 3806
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "cup",
+      "confidence": 0.4457058608531952,
+      "bounding_box": [
+        170.0922393798828,
+        102.39193725585938,
+        181.94273376464844,
+        116.29376220703125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.759939432144165,
+        "median_depth": 0.7570263743400574,
+        "depth_std": 0.013543885201215744,
+        "depth_min": 0.7411184310913086,
+        "depth_max": 0.7928435206413269,
+        "mask_area": 131
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.41621118783950806,
+      "bounding_box": [
+        161.29568481445312,
+        57.7469367980957,
+        177.2105712890625,
+        70.7881851196289
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7625992298126221,
+        "median_depth": 0.7590949535369873,
+        "depth_std": 0.010334509424865246,
+        "depth_min": 0.7492530941963196,
+        "depth_max": 0.7917900085449219,
+        "mask_area": 138
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.7333698272705078,
+      "bounding_box": [
+        203.9999542236328,
+        140.87655639648438,
+        315.06201171875,
+        179.96383666992188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8597359657287598,
+        "median_depth": 0.8705123066902161,
+        "depth_std": 0.07510525733232498,
+        "depth_min": 0.6200374364852905,
+        "depth_max": 0.9858991503715515,
+        "mask_area": 2685
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "faucet",
+      "confidence": 0.41745656728744507,
+      "bounding_box": [
+        235.12596130371094,
+        125.90758514404297,
+        253.2305450439453,
+        136.3170928955078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9586334824562073,
+        "median_depth": 0.9598228931427002,
+        "depth_std": 0.013318737968802452,
+        "depth_min": 0.9360527396202087,
+        "depth_max": 0.9836846590042114,
+        "mask_area": 124
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cabinet. shelf. cup. bottle. box. container. microwave. sink. faucet. countertop. robot arm. gripper.",
+  "text_prompt": "cabinet. shelf. cup. bottle. box. container. microwave. sink. faucet. countertop. robot arm. gripper.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

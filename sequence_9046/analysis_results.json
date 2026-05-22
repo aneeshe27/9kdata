@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "bottle",
+    "robot robot gripper",
+    "shoe",
+    "shoe"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: shoe, shoe, cloth, robot robot gripper, bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.06331159174442291,
+        "relative_position": "closest",
+        "confidence": 0.6036728620529175
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "bottle",
+        "mean_depth": 0.09935177862644196,
+        "relative_position": "middle",
+        "confidence": 0.677915632724762
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot robot gripper",
+        "mean_depth": 0.14939123392105103,
+        "relative_position": "middle",
+        "confidence": 0.5743195414543152
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "shoe",
+        "mean_depth": 0.3729126751422882,
+        "relative_position": "middle",
+        "confidence": 0.39835187792778015
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "shoe",
+        "mean_depth": 0.5097694993019104,
+        "relative_position": "farthest",
+        "confidence": 0.5109923481941223
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "shoe",
+        "mean_depth": 0.5097694993019104,
+        "relative_position": "farthest",
+        "confidence": 0.5109923481941223
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "shoe",
+        "mean_depth": 0.3729126751422882,
+        "relative_position": "middle",
+        "confidence": 0.39835187792778015
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot robot gripper",
+        "mean_depth": 0.14939123392105103,
+        "relative_position": "middle",
+        "confidence": 0.5743195414543152
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "bottle",
+        "mean_depth": 0.09935177862644196,
+        "relative_position": "middle",
+        "confidence": 0.677915632724762
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.06331159174442291,
+        "relative_position": "closest",
+        "confidence": 0.6036728620529175
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.6036728620529175,
+      "bounding_box": [
+        8.342155456542969,
+        52.06370544433594,
+        74.52483367919922,
+        96.41703796386719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06331159174442291,
+        "median_depth": 0.01583588495850563,
+        "depth_std": 0.15237128734588623,
+        "depth_min": 0.007310784887522459,
+        "depth_max": 0.9290958046913147,
+        "mask_area": 1901
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "bottle",
+      "confidence": 0.677915632724762,
+      "bounding_box": [
+        68.7540283203125,
+        6.410369873046875,
+        100.65510559082031,
+        81.84330749511719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09935177862644196,
+        "median_depth": 0.05870479345321655,
+        "depth_std": 0.12084562331438065,
+        "depth_min": 0.009328777901828289,
+        "depth_max": 0.755610466003418,
+        "mask_area": 1213
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot robot gripper",
+      "confidence": 0.5743195414543152,
+      "bounding_box": [
+        172.81988525390625,
+        0.00403594970703125,
+        315.94964599609375,
+        179.93392944335938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14939123392105103,
+        "median_depth": 0.11880037188529968,
+        "depth_std": 0.1104564443230629,
+        "depth_min": 0.0005464354180730879,
+        "depth_max": 0.6802781224250793,
+        "mask_area": 9056
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "shoe",
+      "confidence": 0.39835187792778015,
+      "bounding_box": [
+        97.29159545898438,
+        86.60887145996094,
+        141.99496459960938,
+        112.80555725097656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3729126751422882,
+        "median_depth": 0.3522886335849762,
+        "depth_std": 0.08396278321743011,
+        "depth_min": 0.31244006752967834,
+        "depth_max": 0.785058856010437,
+        "mask_area": 513
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "shoe",
+      "confidence": 0.5109923481941223,
+      "bounding_box": [
+        99.53697204589844,
+        53.713016510009766,
+        143.41757202148438,
+        74.88150024414062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5097694993019104,
+        "median_depth": 0.5007947683334351,
+        "depth_std": 0.07508039474487305,
+        "depth_min": 0.38507208228111267,
+        "depth_max": 0.7455845475196838,
+        "mask_area": 655
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bottle. cloth. shoe. shelf. cabinet. table. robot arm. robot gripper. camera.",
+  "text_prompt": "bottle. cloth. shoe. shelf. cabinet. table. robot arm. robot gripper. camera.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

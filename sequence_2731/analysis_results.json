@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "bucket container",
+    "robot arm",
+    "bucket",
+    "sofa"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bucket container, sofa, cloth, robot arm, bucket",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cloth",
+        "mean_depth": 0.0478082075715065,
+        "relative_position": "closest",
+        "confidence": 0.46280694007873535
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "bucket container",
+        "mean_depth": 0.06549485772848129,
+        "relative_position": "middle",
+        "confidence": 0.5268373489379883
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.09278154373168945,
+        "relative_position": "middle",
+        "confidence": 0.5615805387496948
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "bucket",
+        "mean_depth": 0.11185987293720245,
+        "relative_position": "middle",
+        "confidence": 0.5372061133384705
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.3253660202026367,
+        "relative_position": "farthest",
+        "confidence": 0.5736618041992188
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.3253660202026367,
+        "relative_position": "farthest",
+        "confidence": 0.5736618041992188
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "bucket",
+        "mean_depth": 0.11185987293720245,
+        "relative_position": "middle",
+        "confidence": 0.5372061133384705
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.09278154373168945,
+        "relative_position": "middle",
+        "confidence": 0.5615805387496948
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "bucket container",
+        "mean_depth": 0.06549485772848129,
+        "relative_position": "middle",
+        "confidence": 0.5268373489379883
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cloth",
+        "mean_depth": 0.0478082075715065,
+        "relative_position": "closest",
+        "confidence": 0.46280694007873535
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "cloth",
+      "confidence": 0.46280694007873535,
+      "bounding_box": [
+        143.96116638183594,
+        113.37847900390625,
+        210.52598571777344,
+        179.86972045898438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0478082075715065,
+        "median_depth": 0.045222558081150055,
+        "depth_std": 0.010703880339860916,
+        "depth_min": 0.02895166538655758,
+        "depth_max": 0.11881042271852493,
+        "mask_area": 3309
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "bucket container",
+      "confidence": 0.5268373489379883,
+      "bounding_box": [
+        125.97821044921875,
+        63.507728576660156,
+        171.55465698242188,
+        117.57125091552734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06549485772848129,
+        "median_depth": 0.06377135217189789,
+        "depth_std": 0.00572846969589591,
+        "depth_min": 0.060222212225198746,
+        "depth_max": 0.14285635948181152,
+        "mask_area": 1535
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.5615805387496948,
+      "bounding_box": [
+        149.04678344726562,
+        0.0241851806640625,
+        211.56704711914062,
+        74.4809799194336
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09278154373168945,
+        "median_depth": 0.04774076119065285,
+        "depth_std": 0.13458772003650665,
+        "depth_min": 0.03955221176147461,
+        "depth_max": 0.9260738492012024,
+        "mask_area": 1639
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bucket",
+      "confidence": 0.5372061133384705,
+      "bounding_box": [
+        106.5659408569336,
+        47.93254089355469,
+        134.0036163330078,
+        89.96968078613281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11185987293720245,
+        "median_depth": 0.09583892673254013,
+        "depth_std": 0.08289369940757751,
+        "depth_min": 0.06670651584863663,
+        "depth_max": 0.864374041557312,
+        "mask_area": 790
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sofa",
+      "confidence": 0.5736618041992188,
+      "bounding_box": [
+        166.71292114257812,
+        49.2426643371582,
+        232.7811279296875,
+        108.11637878417969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3253660202026367,
+        "median_depth": 0.3124743700027466,
+        "depth_std": 0.05833255499601364,
+        "depth_min": 0.06754245609045029,
+        "depth_max": 0.8242934942245483,
+        "mask_area": 1870
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. bucket. cloth. scissors. trowel. bag. container. chair. sofa. pillow. box. tripod.",
+  "text_prompt": "robot arm. gripper. table. bucket. cloth. scissors. trowel. bag. container. chair. sofa. pillow. box. tripod.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

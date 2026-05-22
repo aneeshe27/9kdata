@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "monitor",
+    "countertop",
+    "monitor",
+    "bag",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: countertop, monitor, cabinet, monitor, bag",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.1517416387796402,
+        "relative_position": "closest",
+        "confidence": 0.6146988868713379
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.15615986287593842,
+        "relative_position": "middle",
+        "confidence": 0.5542503595352173
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.16775107383728027,
+        "relative_position": "middle",
+        "confidence": 0.6544053554534912
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "bag",
+        "mean_depth": 0.23646821081638336,
+        "relative_position": "middle",
+        "confidence": 0.42359659075737
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.9738041758537292,
+        "relative_position": "farthest",
+        "confidence": 0.4301764667034149
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.9738041758537292,
+        "relative_position": "farthest",
+        "confidence": 0.4301764667034149
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "bag",
+        "mean_depth": 0.23646821081638336,
+        "relative_position": "middle",
+        "confidence": 0.42359659075737
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.16775107383728027,
+        "relative_position": "middle",
+        "confidence": 0.6544053554534912
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.15615986287593842,
+        "relative_position": "middle",
+        "confidence": 0.5542503595352173
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.1517416387796402,
+        "relative_position": "closest",
+        "confidence": 0.6146988868713379
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "monitor",
+      "confidence": 0.6146988868713379,
+      "bounding_box": [
+        166.32574462890625,
+        116.40851593017578,
+        213.35751342773438,
+        145.88526916503906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1517416387796402,
+        "median_depth": 0.14906394481658936,
+        "depth_std": 0.008358001708984375,
+        "depth_min": 0.14152425527572632,
+        "depth_max": 0.17238587141036987,
+        "mask_area": 832
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "countertop",
+      "confidence": 0.5542503595352173,
+      "bounding_box": [
+        0.1118621826171875,
+        36.94860076904297,
+        311.31182861328125,
+        124.6725845336914
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15615986287593842,
+        "median_depth": 0.14500078558921814,
+        "depth_std": 0.04933919757604599,
+        "depth_min": 0.09611323475837708,
+        "depth_max": 0.9508509635925293,
+        "mask_area": 7409
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "monitor",
+      "confidence": 0.6544053554534912,
+      "bounding_box": [
+        223.99038696289062,
+        127.7272720336914,
+        276.68035888671875,
+        156.88217163085938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16775107383728027,
+        "median_depth": 0.16607776284217834,
+        "depth_std": 0.013303805142641068,
+        "depth_min": 0.1481991708278656,
+        "depth_max": 0.20362447202205658,
+        "mask_area": 836
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "bag",
+      "confidence": 0.42359659075737,
+      "bounding_box": [
+        56.99899673461914,
+        140.08230590820312,
+        121.38400268554688,
+        179.95645141601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23646821081638336,
+        "median_depth": 0.23634490370750427,
+        "depth_std": 0.006988005246967077,
+        "depth_min": 0.21643316745758057,
+        "depth_max": 0.25243502855300903,
+        "mask_area": 2002
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.4301764667034149,
+      "bounding_box": [
+        0.040035247802734375,
+        10.395727157592773,
+        46.99249267578125,
+        53.455955505371094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9738041758537292,
+        "median_depth": 0.9877465963363647,
+        "depth_std": 0.06055019795894623,
+        "depth_min": 0.1986035257577896,
+        "depth_max": 0.994594156742096,
+        "mask_area": 1251
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. cabinet. drawer. bottle. paper. monitor. bag.",
+  "text_prompt": "robot arm. gripper. countertop. cabinet. drawer. bottle. paper. monitor. bag.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

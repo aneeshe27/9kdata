@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "chair",
+    "clothing",
+    "laundry basket",
+    "bin"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: clothing, bin, laundry basket, robot arm, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.02601625770330429,
+        "relative_position": "closest",
+        "confidence": 0.423674613237381
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.34570202231407166,
+        "relative_position": "middle",
+        "confidence": 0.42076700925827026
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "clothing",
+        "mean_depth": 0.3609059751033783,
+        "relative_position": "middle",
+        "confidence": 0.49346500635147095
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "laundry basket",
+        "mean_depth": 0.4246838390827179,
+        "relative_position": "middle",
+        "confidence": 0.760112464427948
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "bin",
+        "mean_depth": 0.5393787622451782,
+        "relative_position": "farthest",
+        "confidence": 0.39979106187820435
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "bin",
+        "mean_depth": 0.5393787622451782,
+        "relative_position": "farthest",
+        "confidence": 0.39979106187820435
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "laundry basket",
+        "mean_depth": 0.4246838390827179,
+        "relative_position": "middle",
+        "confidence": 0.760112464427948
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "clothing",
+        "mean_depth": 0.3609059751033783,
+        "relative_position": "middle",
+        "confidence": 0.49346500635147095
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.34570202231407166,
+        "relative_position": "middle",
+        "confidence": 0.42076700925827026
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.02601625770330429,
+        "relative_position": "closest",
+        "confidence": 0.423674613237381
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.423674613237381,
+      "bounding_box": [
+        0.0200958251953125,
+        0.129302978515625,
+        97.81448364257812,
+        179.3997344970703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02601625770330429,
+        "median_depth": 0.01792672835290432,
+        "depth_std": 0.025345005095005035,
+        "depth_min": 0.0,
+        "depth_max": 0.4041713774204254,
+        "mask_area": 7595
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.42076700925827026,
+      "bounding_box": [
+        270.72686767578125,
+        89.3326416015625,
+        316.000244140625,
+        180.006591796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.34570202231407166,
+        "median_depth": 0.3033892810344696,
+        "depth_std": 0.157167449593544,
+        "depth_min": 0.18305131793022156,
+        "depth_max": 0.941749632358551,
+        "mask_area": 3111
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "clothing",
+      "confidence": 0.49346500635147095,
+      "bounding_box": [
+        137.5248565673828,
+        29.636627197265625,
+        171.6630096435547,
+        80.94339752197266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3609059751033783,
+        "median_depth": 0.35147997736930847,
+        "depth_std": 0.058436669409275055,
+        "depth_min": 0.2777521312236786,
+        "depth_max": 0.8203458189964294,
+        "mask_area": 1177
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "laundry basket",
+      "confidence": 0.760112464427948,
+      "bounding_box": [
+        216.42498779296875,
+        145.72164916992188,
+        266.6816101074219,
+        179.94012451171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4246838390827179,
+        "median_depth": 0.4297006130218506,
+        "depth_std": 0.0634368285536766,
+        "depth_min": 0.30088067054748535,
+        "depth_max": 0.6311469078063965,
+        "mask_area": 1210
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "bin",
+      "confidence": 0.39979106187820435,
+      "bounding_box": [
+        132.24148559570312,
+        94.73688507080078,
+        175.60284423828125,
+        160.83645629882812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5393787622451782,
+        "median_depth": 0.5360350608825684,
+        "depth_std": 0.017571590840816498,
+        "depth_min": 0.5108941793441772,
+        "depth_max": 0.6723578572273254,
+        "mask_area": 2296
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. hanger. clothing. chair. glass table. bin. laundry basket. door. camera. desk. cables.",
+  "text_prompt": "robot arm. gripper. hanger. clothing. chair. glass table. bin. laundry basket. door. camera. desk. cables.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

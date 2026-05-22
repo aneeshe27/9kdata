@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "book",
+    "chair",
+    "sofa",
+    "table",
+    "table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: book, table, chair, table, sofa",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "book",
+        "mean_depth": 0.29334405064582825,
+        "relative_position": "closest",
+        "confidence": 0.5869338512420654
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.38001060485839844,
+        "relative_position": "middle",
+        "confidence": 0.4332299828529358
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "sofa",
+        "mean_depth": 0.6284387707710266,
+        "relative_position": "middle",
+        "confidence": 0.4754442870616913
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.8254326581954956,
+        "relative_position": "middle",
+        "confidence": 0.5725931525230408
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.8268206715583801,
+        "relative_position": "farthest",
+        "confidence": 0.3718423843383789
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.8268206715583801,
+        "relative_position": "farthest",
+        "confidence": 0.3718423843383789
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.8254326581954956,
+        "relative_position": "middle",
+        "confidence": 0.5725931525230408
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "sofa",
+        "mean_depth": 0.6284387707710266,
+        "relative_position": "middle",
+        "confidence": 0.4754442870616913
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.38001060485839844,
+        "relative_position": "middle",
+        "confidence": 0.4332299828529358
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "book",
+        "mean_depth": 0.29334405064582825,
+        "relative_position": "closest",
+        "confidence": 0.5869338512420654
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "book",
+      "confidence": 0.5869338512420654,
+      "bounding_box": [
+        172.80621337890625,
+        103.44954681396484,
+        208.90557861328125,
+        135.93630981445312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29334405064582825,
+        "median_depth": 0.2919764518737793,
+        "depth_std": 0.01568783074617386,
+        "depth_min": 0.19825032353401184,
+        "depth_max": 0.3256066143512726,
+        "mask_area": 693
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.4332299828529358,
+      "bounding_box": [
+        47.38859176635742,
+        89.46286010742188,
+        96.93887329101562,
+        146.5193328857422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.38001060485839844,
+        "median_depth": 0.3724505603313446,
+        "depth_std": 0.026309315115213394,
+        "depth_min": 0.34921619296073914,
+        "depth_max": 0.504898726940155,
+        "mask_area": 1433
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "sofa",
+      "confidence": 0.4754442870616913,
+      "bounding_box": [
+        49.09931182861328,
+        19.400184631347656,
+        138.64456176757812,
+        90.44510650634766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6284387707710266,
+        "median_depth": 0.5960147380828857,
+        "depth_std": 0.10843110829591751,
+        "depth_min": 0.4358501434326172,
+        "depth_max": 0.902633011341095,
+        "mask_area": 3972
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.5725931525230408,
+      "bounding_box": [
+        153.32351684570312,
+        7.074188232421875,
+        185.0308837890625,
+        34.49497985839844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8254326581954956,
+        "median_depth": 0.8207400441169739,
+        "depth_std": 0.035393357276916504,
+        "depth_min": 0.7783286571502686,
+        "depth_max": 0.956182062625885,
+        "mask_area": 446
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.3718423843383789,
+      "bounding_box": [
+        141.6687469482422,
+        29.911407470703125,
+        197.45130920410156,
+        54.05274200439453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8268206715583801,
+        "median_depth": 0.811548113822937,
+        "depth_std": 0.04130290076136589,
+        "depth_min": 0.7786469459533691,
+        "depth_max": 0.9845095872879028,
+        "mask_area": 788
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. box. book. cup. jar. can. sofa. chair.",
+  "text_prompt": "table. robot arm. gripper. box. book. cup. jar. can. sofa. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

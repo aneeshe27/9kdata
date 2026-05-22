@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/home/ulal/visual_reasoning/tmp/depth_extended_temp_1373754/temp_image_4235.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_4235.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "door",
+    "refrigerator",
+    "power outlet",
+    "floor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: floor, robot arm, power outlet, door, refrigerator",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.021776514127850533,
+        "relative_position": "closest",
+        "confidence": 0.513068675994873
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.16021651029586792,
+        "relative_position": "middle",
+        "confidence": 0.6642320156097412
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "refrigerator",
+        "mean_depth": 0.25248995423316956,
+        "relative_position": "middle",
+        "confidence": 0.39089301228523254
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.30098554491996765,
+        "relative_position": "middle",
+        "confidence": 0.8435861468315125
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "floor",
+        "mean_depth": 0.7102937698364258,
+        "relative_position": "farthest",
+        "confidence": 0.506170392036438
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "floor",
+        "mean_depth": 0.7102937698364258,
+        "relative_position": "farthest",
+        "confidence": 0.506170392036438
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.30098554491996765,
+        "relative_position": "middle",
+        "confidence": 0.8435861468315125
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "refrigerator",
+        "mean_depth": 0.25248995423316956,
+        "relative_position": "middle",
+        "confidence": 0.39089301228523254
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.16021651029586792,
+        "relative_position": "middle",
+        "confidence": 0.6642320156097412
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.021776514127850533,
+        "relative_position": "closest",
+        "confidence": 0.513068675994873
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.513068675994873,
+      "bounding_box": [
+        0.04653167724609375,
+        0.41961669921875,
+        113.71257781982422,
+        178.7027587890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.021776514127850533,
+        "median_depth": 0.0173969604074955,
+        "depth_std": 0.03354687616229057,
+        "depth_min": 0.002977663418278098,
+        "depth_max": 0.8031596541404724,
+        "mask_area": 6612
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "door",
+      "confidence": 0.6642320156097412,
+      "bounding_box": [
+        228.96511840820312,
+        0.24399566650390625,
+        315.8510437011719,
+        179.70709228515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16021651029586792,
+        "median_depth": 0.15467864274978638,
+        "depth_std": 0.03482317924499512,
+        "depth_min": 0.10319102555513382,
+        "depth_max": 0.2607768774032593,
+        "mask_area": 13313
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "refrigerator",
+      "confidence": 0.39089301228523254,
+      "bounding_box": [
+        141.1949462890625,
+        68.65677642822266,
+        240.74554443359375,
+        179.743408203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.25248995423316956,
+        "median_depth": 0.24377092719078064,
+        "depth_std": 0.03335784748196602,
+        "depth_min": 0.21901951730251312,
+        "depth_max": 0.6583313941955566,
+        "mask_area": 7489
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "power outlet",
+      "confidence": 0.8435861468315125,
+      "bounding_box": [
+        215.20570373535156,
+        46.284793853759766,
+        223.6791229248047,
+        62.94601058959961
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30098554491996765,
+        "median_depth": 0.2989063262939453,
+        "depth_std": 0.009350907988846302,
+        "depth_min": 0.2848120629787445,
+        "depth_max": 0.32170021533966064,
+        "mask_area": 101
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "floor",
+      "confidence": 0.506170392036438,
+      "bounding_box": [
+        98.70244598388672,
+        94.81547546386719,
+        153.82391357421875,
+        172.6742401123047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7102937698364258,
+        "median_depth": 0.7124415636062622,
+        "depth_std": 0.14846831560134888,
+        "depth_min": 0.17202915251255035,
+        "depth_max": 0.9959791898727417,
+        "mask_area": 1729
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. cabinet. microwave. stove. oven. pot. pan. toaster. refrigerator. door. table. floor. power outlet.",
+  "text_prompt": "robot arm. gripper. countertop. cabinet. microwave. stove. oven. pot. pan. toaster. refrigerator. door. table. floor. power outlet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

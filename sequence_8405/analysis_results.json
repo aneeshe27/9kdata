@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper clamp",
+    "sink",
+    "faucet",
+    "drawer",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, sink, gripper clamp, drawer, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "gripper clamp",
+        "mean_depth": 0.05278491601347923,
+        "relative_position": "closest",
+        "confidence": 0.36491987109184265
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.05630648508667946,
+        "relative_position": "middle",
+        "confidence": 0.42418810725212097
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.059023138135671616,
+        "relative_position": "middle",
+        "confidence": 0.5066773891448975
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "drawer",
+        "mean_depth": 0.08041781187057495,
+        "relative_position": "middle",
+        "confidence": 0.4059905707836151
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.20735317468643188,
+        "relative_position": "farthest",
+        "confidence": 0.5180849432945251
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.20735317468643188,
+        "relative_position": "farthest",
+        "confidence": 0.5180849432945251
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "drawer",
+        "mean_depth": 0.08041781187057495,
+        "relative_position": "middle",
+        "confidence": 0.4059905707836151
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.059023138135671616,
+        "relative_position": "middle",
+        "confidence": 0.5066773891448975
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.05630648508667946,
+        "relative_position": "middle",
+        "confidence": 0.42418810725212097
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "gripper clamp",
+        "mean_depth": 0.05278491601347923,
+        "relative_position": "closest",
+        "confidence": 0.36491987109184265
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "gripper clamp",
+      "confidence": 0.36491987109184265,
+      "bounding_box": [
+        59.98677062988281,
+        72.57903289794922,
+        92.67398071289062,
+        140.8974609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05278491601347923,
+        "median_depth": 0.04586257040500641,
+        "depth_std": 0.02278912626206875,
+        "depth_min": 0.038175489753484726,
+        "depth_max": 0.3860337734222412,
+        "mask_area": 1369
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "sink",
+      "confidence": 0.42418810725212097,
+      "bounding_box": [
+        195.22019958496094,
+        80.19721221923828,
+        300.35711669921875,
+        137.8251190185547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05630648508667946,
+        "median_depth": 0.05191640555858612,
+        "depth_std": 0.01643650233745575,
+        "depth_min": 0.03309958055615425,
+        "depth_max": 0.09120769798755646,
+        "mask_area": 1777
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.5066773891448975,
+      "bounding_box": [
+        212.95962524414062,
+        40.89521026611328,
+        262.5732727050781,
+        106.3054428100586
+      ],
+      "depth_stats": {
+        "mean_depth": 0.059023138135671616,
+        "median_depth": 0.05767379701137543,
+        "depth_std": 0.007929393090307713,
+        "depth_min": 0.0466032549738884,
+        "depth_max": 0.13162420690059662,
+        "mask_area": 1056
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "drawer",
+      "confidence": 0.4059905707836151,
+      "bounding_box": [
+        177.40013122558594,
+        143.38929748535156,
+        219.83238220214844,
+        179.82774353027344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08041781187057495,
+        "median_depth": 0.08064118027687073,
+        "depth_std": 0.009359674528241158,
+        "depth_min": 0.05551167577505112,
+        "depth_max": 0.09913107007741928,
+        "mask_area": 720
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.5180849432945251,
+      "bounding_box": [
+        64.18928527832031,
+        1.6363792419433594,
+        136.23953247070312,
+        90.48068237304688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20735317468643188,
+        "median_depth": 0.20852617919445038,
+        "depth_std": 0.04142723232507706,
+        "depth_min": 0.10649724304676056,
+        "depth_max": 0.5599104166030884,
+        "mask_area": 3567
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. chair. table. sink. faucet. countertop. drawer. tray. blocks. cable. clamp. dish rack.",
+  "text_prompt": "robot arm. gripper. chair. table. sink. faucet. countertop. drawer. tray. blocks. cable. clamp. dish rack.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

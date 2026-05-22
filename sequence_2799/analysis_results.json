@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "refrigerator",
+    "robot arm gripper",
+    "cooktop",
+    "range hood",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: window, cooktop, robot arm gripper, refrigerator, range hood",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "refrigerator",
+        "mean_depth": 0.02269301936030388,
+        "relative_position": "closest",
+        "confidence": 0.4050731360912323
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.23000700771808624,
+        "relative_position": "middle",
+        "confidence": 0.3688659071922302
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cooktop",
+        "mean_depth": 0.5010123252868652,
+        "relative_position": "middle",
+        "confidence": 0.3883357346057892
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "range hood",
+        "mean_depth": 0.6135479211807251,
+        "relative_position": "middle",
+        "confidence": 0.6617807149887085
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.9271456003189087,
+        "relative_position": "farthest",
+        "confidence": 0.5104944109916687
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.9271456003189087,
+        "relative_position": "farthest",
+        "confidence": 0.5104944109916687
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "range hood",
+        "mean_depth": 0.6135479211807251,
+        "relative_position": "middle",
+        "confidence": 0.6617807149887085
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cooktop",
+        "mean_depth": 0.5010123252868652,
+        "relative_position": "middle",
+        "confidence": 0.3883357346057892
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.23000700771808624,
+        "relative_position": "middle",
+        "confidence": 0.3688659071922302
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "refrigerator",
+        "mean_depth": 0.02269301936030388,
+        "relative_position": "closest",
+        "confidence": 0.4050731360912323
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "refrigerator",
+      "confidence": 0.4050731360912323,
+      "bounding_box": [
+        0.105712890625,
+        0.0134429931640625,
+        184.8461456298828,
+        180.0124969482422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02269301936030388,
+        "median_depth": 0.022425640374422073,
+        "depth_std": 0.010320901870727539,
+        "depth_min": 0.00397983193397522,
+        "depth_max": 0.20384351909160614,
+        "mask_area": 32333
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.3688659071922302,
+      "bounding_box": [
+        183.8573455810547,
+        70.33915710449219,
+        235.0498504638672,
+        114.79144287109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23000700771808624,
+        "median_depth": 0.17264577746391296,
+        "depth_std": 0.11108192056417465,
+        "depth_min": 0.14976148307323456,
+        "depth_max": 0.7900577783584595,
+        "mask_area": 939
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cooktop",
+      "confidence": 0.3883357346057892,
+      "bounding_box": [
+        188.47959899902344,
+        100.1480712890625,
+        284.7071228027344,
+        135.0597686767578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5010123252868652,
+        "median_depth": 0.4731118083000183,
+        "depth_std": 0.13132353127002716,
+        "depth_min": 0.1892654150724411,
+        "depth_max": 0.9806780815124512,
+        "mask_area": 1516
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "range hood",
+      "confidence": 0.6617807149887085,
+      "bounding_box": [
+        195.7361297607422,
+        6.082542419433594,
+        254.9391632080078,
+        55.27711868286133
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6135479211807251,
+        "median_depth": 0.6027787923812866,
+        "depth_std": 0.06247037649154663,
+        "depth_min": 0.5161134004592896,
+        "depth_max": 0.8647586107254028,
+        "mask_area": 1494
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "window",
+      "confidence": 0.5104944109916687,
+      "bounding_box": [
+        286.8102722167969,
+        16.290443420410156,
+        316.0042419433594,
+        179.61660766601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9271456003189087,
+        "median_depth": 0.936154842376709,
+        "depth_std": 0.08291970193386078,
+        "depth_min": 0.07140450924634933,
+        "depth_max": 0.9958643317222595,
+        "mask_area": 2942
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "refrigerator. robot arm. gripper. cooktop. range hood. cabinet. countertop. drawer. utensil organizer. spatula. whisk. tongs. window.",
+  "text_prompt": "refrigerator. robot arm. gripper. cooktop. range hood. cabinet. countertop. drawer. utensil organizer. spatula. whisk. tongs. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

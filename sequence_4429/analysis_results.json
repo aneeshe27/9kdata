@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "green screen",
+    "plastic bag",
+    "metal bottle",
+    "computer monitor",
+    "table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: green screen, table, computer monitor, plastic bag, metal bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "green screen",
+        "mean_depth": 0.033842407166957855,
+        "relative_position": "closest",
+        "confidence": 0.5823490023612976
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "plastic bag",
+        "mean_depth": 0.05044005438685417,
+        "relative_position": "middle",
+        "confidence": 0.7510798573493958
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "metal bottle",
+        "mean_depth": 0.09010764956474304,
+        "relative_position": "middle",
+        "confidence": 0.85621178150177
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "computer monitor",
+        "mean_depth": 0.14930368959903717,
+        "relative_position": "middle",
+        "confidence": 0.6357361078262329
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.3787437975406647,
+        "relative_position": "farthest",
+        "confidence": 0.3502517640590668
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.3787437975406647,
+        "relative_position": "farthest",
+        "confidence": 0.3502517640590668
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "computer monitor",
+        "mean_depth": 0.14930368959903717,
+        "relative_position": "middle",
+        "confidence": 0.6357361078262329
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "metal bottle",
+        "mean_depth": 0.09010764956474304,
+        "relative_position": "middle",
+        "confidence": 0.85621178150177
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "plastic bag",
+        "mean_depth": 0.05044005438685417,
+        "relative_position": "middle",
+        "confidence": 0.7510798573493958
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "green screen",
+        "mean_depth": 0.033842407166957855,
+        "relative_position": "closest",
+        "confidence": 0.5823490023612976
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "green screen",
+      "confidence": 0.5823490023612976,
+      "bounding_box": [
+        0.13855743408203125,
+        0.025054931640625,
+        144.27151489257812,
+        180.02426147460938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.033842407166957855,
+        "median_depth": 0.03046983852982521,
+        "depth_std": 0.012165311723947525,
+        "depth_min": 0.012866044417023659,
+        "depth_max": 0.1556643843650818,
+        "mask_area": 16237
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "plastic bag",
+      "confidence": 0.7510798573493958,
+      "bounding_box": [
+        295.1719665527344,
+        27.598371505737305,
+        315.9952087402344,
+        68.74247741699219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05044005438685417,
+        "median_depth": 0.04558125510811806,
+        "depth_std": 0.023340167477726936,
+        "depth_min": 0.038562122732400894,
+        "depth_max": 0.2951173484325409,
+        "mask_area": 671
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "metal bottle",
+      "confidence": 0.85621178150177,
+      "bounding_box": [
+        204.73585510253906,
+        11.198871612548828,
+        240.29246520996094,
+        88.70860290527344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09010764956474304,
+        "median_depth": 0.048815470188856125,
+        "depth_std": 0.08175180107355118,
+        "depth_min": 0.04154849797487259,
+        "depth_max": 0.4311905801296234,
+        "mask_area": 1917
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "computer monitor",
+      "confidence": 0.6357361078262329,
+      "bounding_box": [
+        248.42645263671875,
+        -0.005039215087890625,
+        315.907958984375,
+        25.347578048706055
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14930368959903717,
+        "median_depth": 0.1504218727350235,
+        "depth_std": 0.0071484106592834,
+        "depth_min": 0.13147985935211182,
+        "depth_max": 0.21360482275485992,
+        "mask_area": 1129
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.3502517640590668,
+      "bounding_box": [
+        136.02027893066406,
+        37.91511535644531,
+        209.4573516845703,
+        75.68641662597656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3787437975406647,
+        "median_depth": 0.34748929738998413,
+        "depth_std": 0.09546487033367157,
+        "depth_min": 0.19466063380241394,
+        "depth_max": 0.7984181642532349,
+        "mask_area": 673
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. metal bottle. metal bracket. bolts. green screen. computer monitor. plastic bag.",
+  "text_prompt": "table. metal bottle. metal bracket. bolts. green screen. computer monitor. plastic bag.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

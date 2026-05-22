@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cabinet filing cabinet",
+    "drawer",
+    "cabinet cabinet",
+    "ceiling light"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: ceiling light, drawer, cabinet filing cabinet, cabinet cabinet, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.043847694993019104,
+        "relative_position": "closest",
+        "confidence": 0.4778696596622467
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet filing cabinet",
+        "mean_depth": 0.07899501919746399,
+        "relative_position": "middle",
+        "confidence": 0.36101654171943665
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "drawer",
+        "mean_depth": 0.18845398724079132,
+        "relative_position": "middle",
+        "confidence": 0.4021242558956146
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cabinet cabinet",
+        "mean_depth": 0.35064059495925903,
+        "relative_position": "middle",
+        "confidence": 0.41407111287117004
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "ceiling light",
+        "mean_depth": 0.5366619229316711,
+        "relative_position": "farthest",
+        "confidence": 0.48523539304733276
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "ceiling light",
+        "mean_depth": 0.5366619229316711,
+        "relative_position": "farthest",
+        "confidence": 0.48523539304733276
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cabinet cabinet",
+        "mean_depth": 0.35064059495925903,
+        "relative_position": "middle",
+        "confidence": 0.41407111287117004
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "drawer",
+        "mean_depth": 0.18845398724079132,
+        "relative_position": "middle",
+        "confidence": 0.4021242558956146
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet filing cabinet",
+        "mean_depth": 0.07899501919746399,
+        "relative_position": "middle",
+        "confidence": 0.36101654171943665
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.043847694993019104,
+        "relative_position": "closest",
+        "confidence": 0.4778696596622467
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.4778696596622467,
+      "bounding_box": [
+        185.0290069580078,
+        78.69763946533203,
+        254.6658477783203,
+        113.9889144897461
+      ],
+      "depth_stats": {
+        "mean_depth": 0.043847694993019104,
+        "median_depth": 0.04863860085606575,
+        "depth_std": 0.022284958511590958,
+        "depth_min": 0.012039820663630962,
+        "depth_max": 0.5358416438102722,
+        "mask_area": 1348
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet filing cabinet",
+      "confidence": 0.36101654171943665,
+      "bounding_box": [
+        48.44812774658203,
+        87.96340942382812,
+        183.65673828125,
+        179.91494750976562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07899501919746399,
+        "median_depth": 0.07098366320133209,
+        "depth_std": 0.026961131021380424,
+        "depth_min": 0.046410102397203445,
+        "depth_max": 0.33456626534461975,
+        "mask_area": 10905
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "drawer",
+      "confidence": 0.4021242558956146,
+      "bounding_box": [
+        201.59710693359375,
+        121.0877685546875,
+        250.1864013671875,
+        172.740478515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18845398724079132,
+        "median_depth": 0.190439373254776,
+        "depth_std": 0.022785725072026253,
+        "depth_min": 0.04521488398313522,
+        "depth_max": 0.28216102719306946,
+        "mask_area": 1776
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet cabinet",
+      "confidence": 0.41407111287117004,
+      "bounding_box": [
+        105.85444641113281,
+        37.587276458740234,
+        187.31678771972656,
+        93.87814331054688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.35064059495925903,
+        "median_depth": 0.3386475443840027,
+        "depth_std": 0.04522910714149475,
+        "depth_min": 0.2752173840999603,
+        "depth_max": 0.5316619873046875,
+        "mask_area": 3372
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "ceiling light",
+      "confidence": 0.48523539304733276,
+      "bounding_box": [
+        268.3899841308594,
+        1.446080207824707,
+        315.9682312011719,
+        32.75569152832031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5366619229316711,
+        "median_depth": 0.5371098518371582,
+        "depth_std": 0.02993924356997013,
+        "depth_min": 0.4747981131076813,
+        "depth_max": 0.6051958203315735,
+        "mask_area": 646
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. microwave. cabinet. filing cabinet. drawer. cart. door. ceiling light.",
+  "text_prompt": "robot arm. robot gripper. microwave. cabinet. filing cabinet. drawer. cart. door. ceiling light.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "range hood",
+    "cabinet",
+    "wall outlet",
+    "pressure cooker",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: wall outlet, range hood, pressure cooker, chair, cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "range hood",
+        "mean_depth": 0.11262204498052597,
+        "relative_position": "closest",
+        "confidence": 0.4826158285140991
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.16127343475818634,
+        "relative_position": "middle",
+        "confidence": 0.3715716004371643
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "wall outlet",
+        "mean_depth": 0.26293182373046875,
+        "relative_position": "middle",
+        "confidence": 0.40556588768959045
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "pressure cooker",
+        "mean_depth": 0.27642908692359924,
+        "relative_position": "middle",
+        "confidence": 0.562070906162262
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.799536406993866,
+        "relative_position": "farthest",
+        "confidence": 0.7000391483306885
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.799536406993866,
+        "relative_position": "farthest",
+        "confidence": 0.7000391483306885
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "pressure cooker",
+        "mean_depth": 0.27642908692359924,
+        "relative_position": "middle",
+        "confidence": 0.562070906162262
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "wall outlet",
+        "mean_depth": 0.26293182373046875,
+        "relative_position": "middle",
+        "confidence": 0.40556588768959045
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.16127343475818634,
+        "relative_position": "middle",
+        "confidence": 0.3715716004371643
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "range hood",
+        "mean_depth": 0.11262204498052597,
+        "relative_position": "closest",
+        "confidence": 0.4826158285140991
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "range hood",
+      "confidence": 0.4826158285140991,
+      "bounding_box": [
+        0.13226318359375,
+        52.30541229248047,
+        117.3304214477539,
+        100.09868621826172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11262204498052597,
+        "median_depth": 0.10920047014951706,
+        "depth_std": 0.027145134285092354,
+        "depth_min": 0.0673123374581337,
+        "depth_max": 0.20808005332946777,
+        "mask_area": 3844
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3715716004371643,
+      "bounding_box": [
+        0.011264801025390625,
+        0.11042404174804688,
+        117.37385559082031,
+        70.0318603515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16127343475818634,
+        "median_depth": 0.16128063201904297,
+        "depth_std": 0.034185316413640976,
+        "depth_min": 0.10346164554357529,
+        "depth_max": 0.22793902456760406,
+        "mask_area": 6796
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "wall outlet",
+      "confidence": 0.40556588768959045,
+      "bounding_box": [
+        128.85768127441406,
+        166.3506317138672,
+        139.94761657714844,
+        179.9860076904297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26293182373046875,
+        "median_depth": 0.2614816129207611,
+        "depth_std": 0.007632868830114603,
+        "depth_min": 0.2522759735584259,
+        "depth_max": 0.2799171805381775,
+        "mask_area": 106
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "pressure cooker",
+      "confidence": 0.562070906162262,
+      "bounding_box": [
+        215.5657196044922,
+        147.99758911132812,
+        251.7428741455078,
+        179.98468017578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27642908692359924,
+        "median_depth": 0.24555832147598267,
+        "depth_std": 0.08823353052139282,
+        "depth_min": 0.21123605966567993,
+        "depth_max": 0.7084577679634094,
+        "mask_area": 839
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.7000391483306885,
+      "bounding_box": [
+        247.4730682373047,
+        128.01071166992188,
+        283.9815979003906,
+        146.08584594726562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.799536406993866,
+        "median_depth": 0.812130868434906,
+        "depth_std": 0.07562492042779922,
+        "depth_min": 0.5857919454574585,
+        "depth_max": 0.9673948884010315,
+        "mask_area": 493
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cable. cabinet. range hood. countertop. backsplash. pressure cooker. table. chair. wall outlet.",
+  "text_prompt": "robot arm. gripper. cable. cabinet. range hood. countertop. backsplash. pressure cooker. table. chair. wall outlet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

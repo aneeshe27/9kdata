@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "scissors",
+    "plate",
+    "pen",
+    "pen",
+    "pipe"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: pen, pipe, pen, scissors, plate",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "scissors",
+        "mean_depth": 0.05819368362426758,
+        "relative_position": "closest",
+        "confidence": 0.3992316722869873
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "plate",
+        "mean_depth": 0.0933338925242424,
+        "relative_position": "middle",
+        "confidence": 0.666366457939148
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "pen",
+        "mean_depth": 0.09781958162784576,
+        "relative_position": "middle",
+        "confidence": 0.43043985962867737
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "pen",
+        "mean_depth": 0.10504995286464691,
+        "relative_position": "middle",
+        "confidence": 0.36645686626434326
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "pipe",
+        "mean_depth": 0.508213996887207,
+        "relative_position": "farthest",
+        "confidence": 0.36546215415000916
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "pipe",
+        "mean_depth": 0.508213996887207,
+        "relative_position": "farthest",
+        "confidence": 0.36546215415000916
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "pen",
+        "mean_depth": 0.10504995286464691,
+        "relative_position": "middle",
+        "confidence": 0.36645686626434326
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "pen",
+        "mean_depth": 0.09781958162784576,
+        "relative_position": "middle",
+        "confidence": 0.43043985962867737
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "plate",
+        "mean_depth": 0.0933338925242424,
+        "relative_position": "middle",
+        "confidence": 0.666366457939148
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "scissors",
+        "mean_depth": 0.05819368362426758,
+        "relative_position": "closest",
+        "confidence": 0.3992316722869873
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "scissors",
+      "confidence": 0.3992316722869873,
+      "bounding_box": [
+        57.17840576171875,
+        132.7906036376953,
+        95.18484497070312,
+        173.51466369628906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05819368362426758,
+        "median_depth": 0.060317520052194595,
+        "depth_std": 0.02451585978269577,
+        "depth_min": 0.01664743572473526,
+        "depth_max": 0.11378570646047592,
+        "mask_area": 530
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "plate",
+      "confidence": 0.666366457939148,
+      "bounding_box": [
+        94.78424835205078,
+        73.26309967041016,
+        156.65672302246094,
+        116.74698638916016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0933338925242424,
+        "median_depth": 0.09121592342853546,
+        "depth_std": 0.009070046246051788,
+        "depth_min": 0.07200529426336288,
+        "depth_max": 0.12311528623104095,
+        "mask_area": 1212
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "pen",
+      "confidence": 0.43043985962867737,
+      "bounding_box": [
+        72.3546142578125,
+        90.77438354492188,
+        89.2188720703125,
+        98.81246948242188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09781958162784576,
+        "median_depth": 0.09806878119707108,
+        "depth_std": 0.001810768386349082,
+        "depth_min": 0.09282683581113815,
+        "depth_max": 0.10062667727470398,
+        "mask_area": 33
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "pen",
+      "confidence": 0.36645686626434326,
+      "bounding_box": [
+        89.7215576171875,
+        87.22409057617188,
+        96.94847106933594,
+        98.57452392578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10504995286464691,
+        "median_depth": 0.10597894340753555,
+        "depth_std": 0.005270565394312143,
+        "depth_min": 0.08486772328615189,
+        "depth_max": 0.11126843839883804,
+        "mask_area": 60
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "pipe",
+      "confidence": 0.36546215415000916,
+      "bounding_box": [
+        98.92601013183594,
+        13.037487030029297,
+        316.11151123046875,
+        24.844223022460938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.508213996887207,
+        "median_depth": 0.49653998017311096,
+        "depth_std": 0.05758393555879593,
+        "depth_min": 0.304962158203125,
+        "depth_max": 0.6788026690483093,
+        "mask_area": 1601
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. camera. plate. tape roll. box. scissors. case. clamp. cable. pipe. table. pen.",
+  "text_prompt": "robot arm. robot gripper. camera. plate. tape roll. box. scissors. case. clamp. cable. pipe. table. pen.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

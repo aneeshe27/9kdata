@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_1207678/temp_image_2400.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_2400.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "robot arm",
+    "blocks",
+    "chair",
+    "robot arm gripper"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: blocks, table, chair, robot arm, robot arm gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.04090461879968643,
+        "relative_position": "closest",
+        "confidence": 0.6197707056999207
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.06837227195501328,
+        "relative_position": "middle",
+        "confidence": 0.4415176808834076
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "blocks",
+        "mean_depth": 0.19392476975917816,
+        "relative_position": "middle",
+        "confidence": 0.39788520336151123
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.22100268304347992,
+        "relative_position": "middle",
+        "confidence": 0.38385194540023804
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.2923087775707245,
+        "relative_position": "farthest",
+        "confidence": 0.3620759844779968
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.2923087775707245,
+        "relative_position": "farthest",
+        "confidence": 0.3620759844779968
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.22100268304347992,
+        "relative_position": "middle",
+        "confidence": 0.38385194540023804
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "blocks",
+        "mean_depth": 0.19392476975917816,
+        "relative_position": "middle",
+        "confidence": 0.39788520336151123
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.06837227195501328,
+        "relative_position": "middle",
+        "confidence": 0.4415176808834076
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.04090461879968643,
+        "relative_position": "closest",
+        "confidence": 0.6197707056999207
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.6197707056999207,
+      "bounding_box": [
+        18.966201782226562,
+        84.89170837402344,
+        292.35809326171875,
+        179.8223114013672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04090461879968643,
+        "median_depth": 0.028674045577645302,
+        "depth_std": 0.0466463677585125,
+        "depth_min": 0.0,
+        "depth_max": 0.41399648785591125,
+        "mask_area": 13697
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.4415176808834076,
+      "bounding_box": [
+        125.83139038085938,
+        0.03818321228027344,
+        194.56515502929688,
+        54.92475891113281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06837227195501328,
+        "median_depth": 0.05514572188258171,
+        "depth_std": 0.03971128165721893,
+        "depth_min": 0.04195896536111832,
+        "depth_max": 0.5156500339508057,
+        "mask_area": 2639
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "blocks",
+      "confidence": 0.39788520336151123,
+      "bounding_box": [
+        280.9152526855469,
+        100.40998077392578,
+        315.9810485839844,
+        161.400146484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19392476975917816,
+        "median_depth": 0.19405028223991394,
+        "depth_std": 0.009538006037473679,
+        "depth_min": 0.15131084620952606,
+        "depth_max": 0.22481316328048706,
+        "mask_area": 1332
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.38385194540023804,
+      "bounding_box": [
+        0.06660175323486328,
+        156.49270629882812,
+        24.531192779541016,
+        179.87481689453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22100268304347992,
+        "median_depth": 0.2226560115814209,
+        "depth_std": 0.015285369008779526,
+        "depth_min": 0.18847650289535522,
+        "depth_max": 0.25348037481307983,
+        "mask_area": 257
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.3620759844779968,
+      "bounding_box": [
+        6.380321502685547,
+        18.52259063720703,
+        40.807926177978516,
+        96.10041046142578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2923087775707245,
+        "median_depth": 0.25751760601997375,
+        "depth_std": 0.10435309261083603,
+        "depth_min": 0.21857072412967682,
+        "depth_max": 0.8547232747077942,
+        "mask_area": 1295
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. camera. table. mat. blocks. cup. power strip. cable. chair.",
+  "text_prompt": "robot arm. gripper. camera. table. mat. blocks. cup. power strip. cable. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

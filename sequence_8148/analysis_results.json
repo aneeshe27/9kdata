@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "chair",
+    "measuring cup",
+    "towel",
+    "pot"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: towel, chair, robot arm, measuring cup, pot",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.056678690016269684,
+        "relative_position": "closest",
+        "confidence": 0.4202630817890167
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.11901048570871353,
+        "relative_position": "middle",
+        "confidence": 0.5140305757522583
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "measuring cup",
+        "mean_depth": 0.20459063351154327,
+        "relative_position": "middle",
+        "confidence": 0.3944307565689087
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "towel",
+        "mean_depth": 0.26430100202560425,
+        "relative_position": "middle",
+        "confidence": 0.49610477685928345
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "pot",
+        "mean_depth": 0.2675882875919342,
+        "relative_position": "farthest",
+        "confidence": 0.7907013893127441
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "pot",
+        "mean_depth": 0.2675882875919342,
+        "relative_position": "farthest",
+        "confidence": 0.7907013893127441
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "towel",
+        "mean_depth": 0.26430100202560425,
+        "relative_position": "middle",
+        "confidence": 0.49610477685928345
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "measuring cup",
+        "mean_depth": 0.20459063351154327,
+        "relative_position": "middle",
+        "confidence": 0.3944307565689087
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.11901048570871353,
+        "relative_position": "middle",
+        "confidence": 0.5140305757522583
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.056678690016269684,
+        "relative_position": "closest",
+        "confidence": 0.4202630817890167
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.4202630817890167,
+      "bounding_box": [
+        82.63339233398438,
+        0.03826332092285156,
+        125.27366638183594,
+        48.40459442138672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.056678690016269684,
+        "median_depth": 0.041756898164749146,
+        "depth_std": 0.06749343872070312,
+        "depth_min": 0.03089178167283535,
+        "depth_max": 0.8221263885498047,
+        "mask_area": 1471
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.5140305757522583,
+      "bounding_box": [
+        0.01944732666015625,
+        98.19710540771484,
+        116.4068603515625,
+        179.892822265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11901048570871353,
+        "median_depth": 0.07804934680461884,
+        "depth_std": 0.15209606289863586,
+        "depth_min": 0.0013144873082637787,
+        "depth_max": 0.7345830798149109,
+        "mask_area": 3487
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "measuring cup",
+      "confidence": 0.3944307565689087,
+      "bounding_box": [
+        138.14926147460938,
+        89.4621353149414,
+        173.09017944335938,
+        111.15778350830078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20459063351154327,
+        "median_depth": 0.21048277616500854,
+        "depth_std": 0.028432566672563553,
+        "depth_min": 0.16230642795562744,
+        "depth_max": 0.2791318893432617,
+        "mask_area": 539
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "towel",
+      "confidence": 0.49610477685928345,
+      "bounding_box": [
+        206.48626708984375,
+        92.3614730834961,
+        242.95806884765625,
+        121.05374908447266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26430100202560425,
+        "median_depth": 0.21453183889389038,
+        "depth_std": 0.1577238142490387,
+        "depth_min": 0.16023103892803192,
+        "depth_max": 0.9859465956687927,
+        "mask_area": 606
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "pot",
+      "confidence": 0.7907013893127441,
+      "bounding_box": [
+        65.21884155273438,
+        63.34143829345703,
+        145.28453063964844,
+        100.82833099365234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2675882875919342,
+        "median_depth": 0.20978084206581116,
+        "depth_std": 0.16566886007785797,
+        "depth_min": 0.17984263598918915,
+        "depth_max": 0.9716425538063049,
+        "mask_area": 1597
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. camera. microphone. pot. lid. measuring cup. spoon. tray. towel. box. bag. chair. table.",
+  "text_prompt": "robot arm. gripper. camera. microphone. pot. lid. measuring cup. spoon. tray. towel. box. bag. chair. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "storage container",
+    "table",
+    "shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: shelf, storage container, robot arm, table, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.0356033518910408,
+        "relative_position": "closest",
+        "confidence": 0.5793541073799133
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.11303973197937012,
+        "relative_position": "middle",
+        "confidence": 0.6972522139549255
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "storage container",
+        "mean_depth": 0.2769656479358673,
+        "relative_position": "middle",
+        "confidence": 0.48897120356559753
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.6475722789764404,
+        "relative_position": "middle",
+        "confidence": 0.49496760964393616
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "shelf",
+        "mean_depth": 0.672319233417511,
+        "relative_position": "farthest",
+        "confidence": 0.4085279703140259
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "shelf",
+        "mean_depth": 0.672319233417511,
+        "relative_position": "farthest",
+        "confidence": 0.4085279703140259
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.6475722789764404,
+        "relative_position": "middle",
+        "confidence": 0.49496760964393616
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "storage container",
+        "mean_depth": 0.2769656479358673,
+        "relative_position": "middle",
+        "confidence": 0.48897120356559753
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.11303973197937012,
+        "relative_position": "middle",
+        "confidence": 0.6972522139549255
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.0356033518910408,
+        "relative_position": "closest",
+        "confidence": 0.5793541073799133
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.5793541073799133,
+      "bounding_box": [
+        -0.02339935302734375,
+        28.595481872558594,
+        162.1826171875,
+        179.85821533203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0356033518910408,
+        "median_depth": 0.014796439558267593,
+        "depth_std": 0.05182307958602905,
+        "depth_min": 0.0019736720714718103,
+        "depth_max": 0.5112002491950989,
+        "mask_area": 10740
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.6972522139549255,
+      "bounding_box": [
+        103.3276138305664,
+        104.29330444335938,
+        291.53741455078125,
+        179.9500732421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11303973197937012,
+        "median_depth": 0.10069140046834946,
+        "depth_std": 0.042233239859342575,
+        "depth_min": 0.06702125072479248,
+        "depth_max": 0.5516005158424377,
+        "mask_area": 6624
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "storage container",
+      "confidence": 0.48897120356559753,
+      "bounding_box": [
+        158.818359375,
+        91.8674087524414,
+        176.8431396484375,
+        109.9074478149414
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2769656479358673,
+        "median_depth": 0.27850526571273804,
+        "depth_std": 0.008410998620092869,
+        "depth_min": 0.2066795825958252,
+        "depth_max": 0.28504517674446106,
+        "mask_area": 233
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.49496760964393616,
+      "bounding_box": [
+        205.51034545898438,
+        85.69957733154297,
+        242.0064697265625,
+        117.40352630615234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6475722789764404,
+        "median_depth": 0.6508378982543945,
+        "depth_std": 0.020091941580176353,
+        "depth_min": 0.5281756520271301,
+        "depth_max": 0.6868550181388855,
+        "mask_area": 684
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "shelf",
+      "confidence": 0.4085279703140259,
+      "bounding_box": [
+        177.6422119140625,
+        27.263378143310547,
+        228.574462890625,
+        108.00910949707031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.672319233417511,
+        "median_depth": 0.6694901585578918,
+        "depth_std": 0.02955211140215397,
+        "depth_min": 0.3033747375011444,
+        "depth_max": 0.8238690495491028,
+        "mask_area": 2755
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. bowl. mug. screwdriver. pliers. pen. notebook. paper. trash bin. stool. shelf. storage container. computer.",
+  "text_prompt": "robot arm. gripper. table. bowl. mug. screwdriver. pliers. pen. notebook. paper. trash bin. stool. shelf. storage container. computer.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

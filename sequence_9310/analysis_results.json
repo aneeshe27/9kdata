@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper",
+    "cables",
+    "cup bottle",
+    "toy blocks",
+    "wall"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: toy blocks, cables, gripper, wall, cup bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.3150971233844757,
+        "relative_position": "closest",
+        "confidence": 0.432084858417511
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cables",
+        "mean_depth": 0.3529690206050873,
+        "relative_position": "middle",
+        "confidence": 0.4812934398651123
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cup bottle",
+        "mean_depth": 0.4332565367221832,
+        "relative_position": "middle",
+        "confidence": 0.42958053946495056
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "toy blocks",
+        "mean_depth": 0.7121313810348511,
+        "relative_position": "middle",
+        "confidence": 0.6083208918571472
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "wall",
+        "mean_depth": 0.7410835027694702,
+        "relative_position": "farthest",
+        "confidence": 0.41419240832328796
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "wall",
+        "mean_depth": 0.7410835027694702,
+        "relative_position": "farthest",
+        "confidence": 0.41419240832328796
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "toy blocks",
+        "mean_depth": 0.7121313810348511,
+        "relative_position": "middle",
+        "confidence": 0.6083208918571472
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cup bottle",
+        "mean_depth": 0.4332565367221832,
+        "relative_position": "middle",
+        "confidence": 0.42958053946495056
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cables",
+        "mean_depth": 0.3529690206050873,
+        "relative_position": "middle",
+        "confidence": 0.4812934398651123
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.3150971233844757,
+        "relative_position": "closest",
+        "confidence": 0.432084858417511
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "gripper",
+      "confidence": 0.432084858417511,
+      "bounding_box": [
+        224.32313537597656,
+        112.85775756835938,
+        281.9122314453125,
+        159.0145263671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3150971233844757,
+        "median_depth": 0.29626157879829407,
+        "depth_std": 0.06552062928676605,
+        "depth_min": 0.27070263028144836,
+        "depth_max": 0.640886664390564,
+        "mask_area": 1166
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "cables",
+      "confidence": 0.4812934398651123,
+      "bounding_box": [
+        20.74151611328125,
+        21.856109619140625,
+        135.94065856933594,
+        110.21192932128906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3529690206050873,
+        "median_depth": 0.28931725025177,
+        "depth_std": 0.1729336827993393,
+        "depth_min": 0.07422082871198654,
+        "depth_max": 0.7834821343421936,
+        "mask_area": 836
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cup bottle",
+      "confidence": 0.42958053946495056,
+      "bounding_box": [
+        159.95480346679688,
+        65.92140197753906,
+        186.68170166015625,
+        102.28408813476562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4332565367221832,
+        "median_depth": 0.3938066363334656,
+        "depth_std": 0.1352890282869339,
+        "depth_min": 0.19004033505916595,
+        "depth_max": 0.9038622379302979,
+        "mask_area": 518
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "toy blocks",
+      "confidence": 0.6083208918571472,
+      "bounding_box": [
+        191.2803497314453,
+        80.80130767822266,
+        223.0993194580078,
+        112.32624053955078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7121313810348511,
+        "median_depth": 0.7037487030029297,
+        "depth_std": 0.03530842065811157,
+        "depth_min": 0.6595289707183838,
+        "depth_max": 0.8042554259300232,
+        "mask_area": 611
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "wall",
+      "confidence": 0.41419240832328796,
+      "bounding_box": [
+        170.88955688476562,
+        0.1450042724609375,
+        315.9085693359375,
+        90.72701263427734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7410835027694702,
+        "median_depth": 0.7325854897499084,
+        "depth_std": 0.12563353776931763,
+        "depth_min": 0.47588855028152466,
+        "depth_max": 1.0,
+        "mask_area": 9363
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cup. bottle. toy blocks. cables. wall. tripod. remote control.",
+  "text_prompt": "robot arm. gripper. table. cup. bottle. toy blocks. cables. wall. tripod. remote control.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

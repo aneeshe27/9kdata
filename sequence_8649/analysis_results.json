@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "paper towel roll",
+    "monitor",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, paper towel roll, table, monitor, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.034156519919633865,
+        "relative_position": "closest",
+        "confidence": 0.45081865787506104
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.17912183701992035,
+        "relative_position": "middle",
+        "confidence": 0.6360543966293335
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "paper towel roll",
+        "mean_depth": 0.2941405773162842,
+        "relative_position": "middle",
+        "confidence": 0.36586490273475647
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.5979288220405579,
+        "relative_position": "middle",
+        "confidence": 0.7781904935836792
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.771639347076416,
+        "relative_position": "farthest",
+        "confidence": 0.6564954519271851
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.771639347076416,
+        "relative_position": "farthest",
+        "confidence": 0.6564954519271851
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.5979288220405579,
+        "relative_position": "middle",
+        "confidence": 0.7781904935836792
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "paper towel roll",
+        "mean_depth": 0.2941405773162842,
+        "relative_position": "middle",
+        "confidence": 0.36586490273475647
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.17912183701992035,
+        "relative_position": "middle",
+        "confidence": 0.6360543966293335
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.034156519919633865,
+        "relative_position": "closest",
+        "confidence": 0.45081865787506104
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.45081865787506104,
+      "bounding_box": [
+        0.0139007568359375,
+        50.032684326171875,
+        90.02064514160156,
+        179.60728454589844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.034156519919633865,
+        "median_depth": 0.028063952922821045,
+        "depth_std": 0.042089130729436874,
+        "depth_min": 0.002459941664710641,
+        "depth_max": 0.497172087430954,
+        "mask_area": 5443
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.6360543966293335,
+      "bounding_box": [
+        115.0600814819336,
+        61.354652404785156,
+        315.8346862792969,
+        179.51150512695312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17912183701992035,
+        "median_depth": 0.1459633708000183,
+        "depth_std": 0.08621250838041306,
+        "depth_min": 0.0866527259349823,
+        "depth_max": 0.8863030076026917,
+        "mask_area": 11998
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "paper towel roll",
+      "confidence": 0.36586490273475647,
+      "bounding_box": [
+        121.09484100341797,
+        8.929513931274414,
+        155.66659545898438,
+        37.88822937011719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2941405773162842,
+        "median_depth": 0.29428207874298096,
+        "depth_std": 0.10465753823518753,
+        "depth_min": 0.06570159643888474,
+        "depth_max": 0.5223454833030701,
+        "mask_area": 448
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "monitor",
+      "confidence": 0.7781904935836792,
+      "bounding_box": [
+        245.69583129882812,
+        0.07491111755371094,
+        315.9993591308594,
+        56.68622589111328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5979288220405579,
+        "median_depth": 0.5941840410232544,
+        "depth_std": 0.052461765706539154,
+        "depth_min": 0.5054810047149658,
+        "depth_max": 0.7304413318634033,
+        "mask_area": 2149
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.6564954519271851,
+      "bounding_box": [
+        196.8239288330078,
+        43.350311279296875,
+        238.4678192138672,
+        73.75212097167969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.771639347076416,
+        "median_depth": 0.7600233554840088,
+        "depth_std": 0.048114895820617676,
+        "depth_min": 0.48279374837875366,
+        "depth_max": 0.9723802208900452,
+        "mask_area": 563
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. clamp. bowl. cup. bottle. paintbrush. tray. wooden block. cardboard box. paper towel roll. phone. monitor. chair. trash can.",
+  "text_prompt": "robot arm. gripper. table. clamp. bowl. cup. bottle. paintbrush. tray. wooden block. cardboard box. paper towel roll. phone. monitor. chair. trash can.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

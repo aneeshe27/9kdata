@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "shelf",
+    "coffee maker",
+    "mug",
+    "stove"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: mug, shelf, stove, robot arm, coffee maker",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.046409863978624344,
+        "relative_position": "closest",
+        "confidence": 0.4093143045902252
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.05596618354320526,
+        "relative_position": "middle",
+        "confidence": 0.5781258344650269
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "coffee maker",
+        "mean_depth": 0.08644697815179825,
+        "relative_position": "middle",
+        "confidence": 0.8306592106819153
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "mug",
+        "mean_depth": 0.30389508605003357,
+        "relative_position": "middle",
+        "confidence": 0.5039467215538025
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "stove",
+        "mean_depth": 0.33618980646133423,
+        "relative_position": "farthest",
+        "confidence": 0.5300033688545227
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "stove",
+        "mean_depth": 0.33618980646133423,
+        "relative_position": "farthest",
+        "confidence": 0.5300033688545227
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "mug",
+        "mean_depth": 0.30389508605003357,
+        "relative_position": "middle",
+        "confidence": 0.5039467215538025
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "coffee maker",
+        "mean_depth": 0.08644697815179825,
+        "relative_position": "middle",
+        "confidence": 0.8306592106819153
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.05596618354320526,
+        "relative_position": "middle",
+        "confidence": 0.5781258344650269
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.046409863978624344,
+        "relative_position": "closest",
+        "confidence": 0.4093143045902252
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.4093143045902252,
+      "bounding_box": [
+        224.14422607421875,
+        0.4185066223144531,
+        315.9222412109375,
+        86.497802734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.046409863978624344,
+        "median_depth": 0.02753550373017788,
+        "depth_std": 0.062187667936086655,
+        "depth_min": 0.0,
+        "depth_max": 0.9295992851257324,
+        "mask_area": 3992
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "shelf",
+      "confidence": 0.5781258344650269,
+      "bounding_box": [
+        0.06664276123046875,
+        0.02495861053466797,
+        108.88471984863281,
+        28.288997650146484
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05596618354320526,
+        "median_depth": 0.05106106400489807,
+        "depth_std": 0.03320934623479843,
+        "depth_min": 0.0110349515452981,
+        "depth_max": 0.18784378468990326,
+        "mask_area": 2559
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "coffee maker",
+      "confidence": 0.8306592106819153,
+      "bounding_box": [
+        15.970142364501953,
+        69.11871337890625,
+        124.56069946289062,
+        179.87530517578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08644697815179825,
+        "median_depth": 0.08344293385744095,
+        "depth_std": 0.028413200750947,
+        "depth_min": 0.039885591715574265,
+        "depth_max": 0.23406563699245453,
+        "mask_area": 7236
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "mug",
+      "confidence": 0.5039467215538025,
+      "bounding_box": [
+        175.5050048828125,
+        48.048583984375,
+        196.83370971679688,
+        64.92289733886719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30389508605003357,
+        "median_depth": 0.265568345785141,
+        "depth_std": 0.07598461210727692,
+        "depth_min": 0.2530827820301056,
+        "depth_max": 0.5207668542861938,
+        "mask_area": 290
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "stove",
+      "confidence": 0.5300033688545227,
+      "bounding_box": [
+        108.355712890625,
+        57.51910400390625,
+        289.48065185546875,
+        179.9298858642578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33618980646133423,
+        "median_depth": 0.32458657026290894,
+        "depth_std": 0.08295686542987823,
+        "depth_min": 0.19184641540050507,
+        "depth_max": 0.9146847128868103,
+        "mask_area": 12808
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "coffee maker. stove. pot. bowl. mug. robot arm. gripper. countertop. shelf.",
+  "text_prompt": "coffee maker. stove. pot. bowl. mug. robot arm. gripper. countertop. shelf.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bowl",
+    "fruit",
+    "cloth",
+    "box",
+    "keyboard"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: box, cloth, fruit, bowl, keyboard",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.10584940761327744,
+        "relative_position": "closest",
+        "confidence": 0.6114098429679871
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "fruit",
+        "mean_depth": 0.12865351140499115,
+        "relative_position": "middle",
+        "confidence": 0.3766307532787323
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.15684281289577484,
+        "relative_position": "middle",
+        "confidence": 0.5312071442604065
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.19549839198589325,
+        "relative_position": "middle",
+        "confidence": 0.43281733989715576
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "keyboard",
+        "mean_depth": 0.42784085869789124,
+        "relative_position": "farthest",
+        "confidence": 0.5097172260284424
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "keyboard",
+        "mean_depth": 0.42784085869789124,
+        "relative_position": "farthest",
+        "confidence": 0.5097172260284424
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.19549839198589325,
+        "relative_position": "middle",
+        "confidence": 0.43281733989715576
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.15684281289577484,
+        "relative_position": "middle",
+        "confidence": 0.5312071442604065
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "fruit",
+        "mean_depth": 0.12865351140499115,
+        "relative_position": "middle",
+        "confidence": 0.3766307532787323
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.10584940761327744,
+        "relative_position": "closest",
+        "confidence": 0.6114098429679871
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.6114098429679871,
+      "bounding_box": [
+        160.75491333007812,
+        106.15977478027344,
+        193.29153442382812,
+        127.94941711425781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10584940761327744,
+        "median_depth": 0.1070367693901062,
+        "depth_std": 0.007644732017070055,
+        "depth_min": 0.08985204249620438,
+        "depth_max": 0.12097027897834778,
+        "mask_area": 498
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "fruit",
+      "confidence": 0.3766307532787323,
+      "bounding_box": [
+        190.65455627441406,
+        91.16661834716797,
+        202.8972625732422,
+        104.73174285888672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12865351140499115,
+        "median_depth": 0.12701615691184998,
+        "depth_std": 0.004505337681621313,
+        "depth_min": 0.12475307285785675,
+        "depth_max": 0.14845506846904755,
+        "mask_area": 134
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.5312071442604065,
+      "bounding_box": [
+        133.76683044433594,
+        75.50003814697266,
+        191.18019104003906,
+        96.95194244384766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15684281289577484,
+        "median_depth": 0.15522581338882446,
+        "depth_std": 0.014985712245106697,
+        "depth_min": 0.12071996182203293,
+        "depth_max": 0.19189852476119995,
+        "mask_area": 678
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "box",
+      "confidence": 0.43281733989715576,
+      "bounding_box": [
+        122.04081726074219,
+        52.369144439697266,
+        151.46034240722656,
+        81.76316833496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19549839198589325,
+        "median_depth": 0.18342453241348267,
+        "depth_std": 0.034445032477378845,
+        "depth_min": 0.17002151906490326,
+        "depth_max": 0.40387439727783203,
+        "mask_area": 730
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "keyboard",
+      "confidence": 0.5097172260284424,
+      "bounding_box": [
+        278.76263427734375,
+        61.054622650146484,
+        307.9796142578125,
+        71.06061553955078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.42784085869789124,
+        "median_depth": 0.4272478520870209,
+        "depth_std": 0.018054546788334846,
+        "depth_min": 0.39234986901283264,
+        "depth_max": 0.4671148955821991,
+        "mask_area": 169
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. camera. table. cloth. bowl. box. fruit. chair. monitor. keyboard. mouse. tripod. stand.",
+  "text_prompt": "robot arm. gripper. camera. table. cloth. bowl. box. fruit. chair. monitor. keyboard. mouse. tripod. stand.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

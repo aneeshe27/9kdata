@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "plastic container",
+    "paper towel",
+    "sponge",
+    "cabinet",
+    "clock"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sponge, cabinet, plastic container, paper towel, clock",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "plastic container",
+        "mean_depth": 0.06364984810352325,
+        "relative_position": "closest",
+        "confidence": 0.5669991970062256
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "paper towel",
+        "mean_depth": 0.21909867227077484,
+        "relative_position": "middle",
+        "confidence": 0.4401213526725769
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "sponge",
+        "mean_depth": 0.45306017994880676,
+        "relative_position": "middle",
+        "confidence": 0.37783390283584595
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.829950213432312,
+        "relative_position": "middle",
+        "confidence": 0.4980677366256714
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "clock",
+        "mean_depth": 0.873956024646759,
+        "relative_position": "farthest",
+        "confidence": 0.7754969596862793
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "clock",
+        "mean_depth": 0.873956024646759,
+        "relative_position": "farthest",
+        "confidence": 0.7754969596862793
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.829950213432312,
+        "relative_position": "middle",
+        "confidence": 0.4980677366256714
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "sponge",
+        "mean_depth": 0.45306017994880676,
+        "relative_position": "middle",
+        "confidence": 0.37783390283584595
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "paper towel",
+        "mean_depth": 0.21909867227077484,
+        "relative_position": "middle",
+        "confidence": 0.4401213526725769
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "plastic container",
+        "mean_depth": 0.06364984810352325,
+        "relative_position": "closest",
+        "confidence": 0.5669991970062256
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "plastic container",
+      "confidence": 0.5669991970062256,
+      "bounding_box": [
+        0.11742401123046875,
+        78.60485076904297,
+        146.53817749023438,
+        179.75799560546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06364984810352325,
+        "median_depth": 0.056550245732069016,
+        "depth_std": 0.03517639636993408,
+        "depth_min": 0.02446800097823143,
+        "depth_max": 0.8265736699104309,
+        "mask_area": 12657
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "paper towel",
+      "confidence": 0.4401213526725769,
+      "bounding_box": [
+        147.63497924804688,
+        108.49947357177734,
+        196.65811157226562,
+        151.06448364257812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21909867227077484,
+        "median_depth": 0.21431708335876465,
+        "depth_std": 0.027046049013733864,
+        "depth_min": 0.16710063815116882,
+        "depth_max": 0.3048538863658905,
+        "mask_area": 1316
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "sponge",
+      "confidence": 0.37783390283584595,
+      "bounding_box": [
+        210.98138427734375,
+        94.10220336914062,
+        228.570556640625,
+        106.14300537109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.45306017994880676,
+        "median_depth": 0.43656566739082336,
+        "depth_std": 0.03743612766265869,
+        "depth_min": 0.417199969291687,
+        "depth_max": 0.5503286123275757,
+        "mask_area": 173
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.4980677366256714,
+      "bounding_box": [
+        230.28697204589844,
+        84.8504638671875,
+        315.2007751464844,
+        163.55108642578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.829950213432312,
+        "median_depth": 0.8612761497497559,
+        "depth_std": 0.09845386445522308,
+        "depth_min": 0.11724204570055008,
+        "depth_max": 0.9963030219078064,
+        "mask_area": 3276
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "clock",
+      "confidence": 0.7754969596862793,
+      "bounding_box": [
+        279.6544189453125,
+        60.562416076660156,
+        300.13116455078125,
+        75.50594329833984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.873956024646759,
+        "median_depth": 0.8718398809432983,
+        "depth_std": 0.008218186907470226,
+        "depth_min": 0.8608089685440063,
+        "depth_max": 0.8949664235115051,
+        "mask_area": 245
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. cabinet. microwave. plastic container. lid. paper towel. sponge. packet. clock. drawer.",
+  "text_prompt": "robot arm. gripper. countertop. cabinet. microwave. plastic container. lid. paper towel. sponge. packet. clock. drawer.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cup container",
+    "trash",
+    "sink",
+    "toilet",
+    "toilet paper roll"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, trash, cup container, toilet paper roll, toilet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cup container",
+        "mean_depth": 0.1475786417722702,
+        "relative_position": "closest",
+        "confidence": 0.40910571813583374
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "trash",
+        "mean_depth": 0.2847394049167633,
+        "relative_position": "middle",
+        "confidence": 0.6309772729873657
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.3740352690219879,
+        "relative_position": "middle",
+        "confidence": 0.4587332010269165
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "toilet",
+        "mean_depth": 0.8966220617294312,
+        "relative_position": "middle",
+        "confidence": 0.7704439759254456
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "toilet paper roll",
+        "mean_depth": 0.9117287993431091,
+        "relative_position": "farthest",
+        "confidence": 0.7482914924621582
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "toilet paper roll",
+        "mean_depth": 0.9117287993431091,
+        "relative_position": "farthest",
+        "confidence": 0.7482914924621582
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "toilet",
+        "mean_depth": 0.8966220617294312,
+        "relative_position": "middle",
+        "confidence": 0.7704439759254456
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.3740352690219879,
+        "relative_position": "middle",
+        "confidence": 0.4587332010269165
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "trash",
+        "mean_depth": 0.2847394049167633,
+        "relative_position": "middle",
+        "confidence": 0.6309772729873657
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cup container",
+        "mean_depth": 0.1475786417722702,
+        "relative_position": "closest",
+        "confidence": 0.40910571813583374
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "cup container",
+      "confidence": 0.40910571813583374,
+      "bounding_box": [
+        2.9764671325683594,
+        48.15510559082031,
+        50.63380813598633,
+        86.38664245605469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1475786417722702,
+        "median_depth": 0.14195561408996582,
+        "depth_std": 0.02368256077170372,
+        "depth_min": 0.10656984150409698,
+        "depth_max": 0.22790083289146423,
+        "mask_area": 1166
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "trash",
+      "confidence": 0.6309772729873657,
+      "bounding_box": [
+        187.40814208984375,
+        71.42742156982422,
+        244.86099243164062,
+        137.54605102539062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2847394049167633,
+        "median_depth": 0.23765505850315094,
+        "depth_std": 0.15336838364601135,
+        "depth_min": 0.1336805522441864,
+        "depth_max": 0.9422745108604431,
+        "mask_area": 1991
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "sink",
+      "confidence": 0.4587332010269165,
+      "bounding_box": [
+        67.60018920898438,
+        35.467559814453125,
+        148.44203186035156,
+        78.77054595947266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3740352690219879,
+        "median_depth": 0.3911719024181366,
+        "depth_std": 0.05983613431453705,
+        "depth_min": 0.08424469828605652,
+        "depth_max": 0.40832531452178955,
+        "mask_area": 1827
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "toilet",
+      "confidence": 0.7704439759254456,
+      "bounding_box": [
+        169.8398895263672,
+        0.294281005859375,
+        226.03773498535156,
+        71.45272064208984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8966220617294312,
+        "median_depth": 0.9083123803138733,
+        "depth_std": 0.059156354516744614,
+        "depth_min": 0.5140524506568909,
+        "depth_max": 0.9914401769638062,
+        "mask_area": 1311
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "toilet paper roll",
+      "confidence": 0.7482914924621582,
+      "bounding_box": [
+        241.8805389404297,
+        27.541149139404297,
+        254.25929260253906,
+        41.08302688598633
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9117287993431091,
+        "median_depth": 0.9156849384307861,
+        "depth_std": 0.022029640153050423,
+        "depth_min": 0.8284358978271484,
+        "depth_max": 0.9457718133926392,
+        "mask_area": 122
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. faucet. countertop. cabinet. toilet. toilet paper roll. trash can. bottle. cup. container. robot arm. gripper. clamp. cart.",
+  "text_prompt": "sink. faucet. countertop. cabinet. toilet. toilet paper roll. trash can. bottle. cup. container. robot arm. gripper. clamp. cart.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

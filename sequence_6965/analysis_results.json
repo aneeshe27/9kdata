@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "soda",
+    "sink",
+    "faucet",
+    "soap dispenser",
+    "coffee maker"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: faucet, soap dispenser, soda, coffee maker, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "soda",
+        "mean_depth": 0.3517609238624573,
+        "relative_position": "closest",
+        "confidence": 0.684593141078949
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "sink",
+        "mean_depth": 0.6090943813323975,
+        "relative_position": "middle",
+        "confidence": 0.5887638926506042
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.6437414884567261,
+        "relative_position": "middle",
+        "confidence": 0.657947301864624
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "soap dispenser",
+        "mean_depth": 0.7568164467811584,
+        "relative_position": "middle",
+        "confidence": 0.6506181359291077
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "coffee maker",
+        "mean_depth": 0.7721507549285889,
+        "relative_position": "farthest",
+        "confidence": 0.647926390171051
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "coffee maker",
+        "mean_depth": 0.7721507549285889,
+        "relative_position": "farthest",
+        "confidence": 0.647926390171051
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "soap dispenser",
+        "mean_depth": 0.7568164467811584,
+        "relative_position": "middle",
+        "confidence": 0.6506181359291077
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.6437414884567261,
+        "relative_position": "middle",
+        "confidence": 0.657947301864624
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "sink",
+        "mean_depth": 0.6090943813323975,
+        "relative_position": "middle",
+        "confidence": 0.5887638926506042
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "soda",
+        "mean_depth": 0.3517609238624573,
+        "relative_position": "closest",
+        "confidence": 0.684593141078949
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "soda",
+      "confidence": 0.684593141078949,
+      "bounding_box": [
+        154.3075408935547,
+        147.62130737304688,
+        171.8691864013672,
+        179.93313598632812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3517609238624573,
+        "median_depth": 0.34226328134536743,
+        "depth_std": 0.03180496767163277,
+        "depth_min": 0.33005157113075256,
+        "depth_max": 0.5314341187477112,
+        "mask_area": 434
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "sink",
+      "confidence": 0.5887638926506042,
+      "bounding_box": [
+        185.83883666992188,
+        122.21529388427734,
+        303.4089050292969,
+        179.95254516601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6090943813323975,
+        "median_depth": 0.6255189180374146,
+        "depth_std": 0.1071476936340332,
+        "depth_min": 0.3267792761325836,
+        "depth_max": 0.7799983024597168,
+        "mask_area": 4627
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.657947301864624,
+      "bounding_box": [
+        245.89869689941406,
+        75.8575668334961,
+        296.1566162109375,
+        126.05233001708984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6437414884567261,
+        "median_depth": 0.6498508453369141,
+        "depth_std": 0.05465460568666458,
+        "depth_min": 0.5444908142089844,
+        "depth_max": 0.7466079592704773,
+        "mask_area": 556
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "soap dispenser",
+      "confidence": 0.6506181359291077,
+      "bounding_box": [
+        188.54608154296875,
+        59.900543212890625,
+        210.48135375976562,
+        99.10891723632812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7568164467811584,
+        "median_depth": 0.7536994814872742,
+        "depth_std": 0.020575661212205887,
+        "depth_min": 0.7240001559257507,
+        "depth_max": 0.7914148569107056,
+        "mask_area": 696
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "coffee maker",
+      "confidence": 0.647926390171051,
+      "bounding_box": [
+        38.58689498901367,
+        76.93401336669922,
+        88.16911315917969,
+        132.49356079101562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7721507549285889,
+        "median_depth": 0.7450641989707947,
+        "depth_std": 0.07596521079540253,
+        "depth_min": 0.6834472417831421,
+        "depth_max": 0.9840782284736633,
+        "mask_area": 2089
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. tray. soda can. countertop. sink. faucet. soap dispenser. coffee maker. cabinet.",
+  "text_prompt": "robot arm. gripper. tray. soda can. countertop. sink. faucet. soap dispenser. coffee maker. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "table",
+    "cardboard box",
+    "light",
+    "tripod"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: tripod, table, table, cardboard box, light",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.044622644782066345,
+        "relative_position": "closest",
+        "confidence": 0.5802088975906372
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.28669536113739014,
+        "relative_position": "middle",
+        "confidence": 0.583174467086792
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cardboard box",
+        "mean_depth": 0.38612446188926697,
+        "relative_position": "middle",
+        "confidence": 0.5128775835037231
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "light",
+        "mean_depth": 0.6102979183197021,
+        "relative_position": "middle",
+        "confidence": 0.47228142619132996
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "tripod",
+        "mean_depth": 0.7911378145217896,
+        "relative_position": "farthest",
+        "confidence": 0.5416613221168518
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "tripod",
+        "mean_depth": 0.7911378145217896,
+        "relative_position": "farthest",
+        "confidence": 0.5416613221168518
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "light",
+        "mean_depth": 0.6102979183197021,
+        "relative_position": "middle",
+        "confidence": 0.47228142619132996
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cardboard box",
+        "mean_depth": 0.38612446188926697,
+        "relative_position": "middle",
+        "confidence": 0.5128775835037231
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.28669536113739014,
+        "relative_position": "middle",
+        "confidence": 0.583174467086792
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.044622644782066345,
+        "relative_position": "closest",
+        "confidence": 0.5802088975906372
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.5802088975906372,
+      "bounding_box": [
+        46.5142822265625,
+        69.73750305175781,
+        304.6641540527344,
+        179.7199249267578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.044622644782066345,
+        "median_depth": 0.03658472001552582,
+        "depth_std": 0.03881756588816643,
+        "depth_min": 0.0,
+        "depth_max": 0.4017634987831116,
+        "mask_area": 12962
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.583174467086792,
+      "bounding_box": [
+        0.11698532104492188,
+        0.04438018798828125,
+        90.46780395507812,
+        79.52005004882812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28669536113739014,
+        "median_depth": 0.2813272178173065,
+        "depth_std": 0.06684800982475281,
+        "depth_min": 0.17573946714401245,
+        "depth_max": 0.7222355604171753,
+        "mask_area": 1724
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cardboard box",
+      "confidence": 0.5128775835037231,
+      "bounding_box": [
+        126.5567855834961,
+        50.89884948730469,
+        166.94285583496094,
+        79.97091674804688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.38612446188926697,
+        "median_depth": 0.38642990589141846,
+        "depth_std": 0.05716432258486748,
+        "depth_min": 0.1899857372045517,
+        "depth_max": 0.7174950242042542,
+        "mask_area": 590
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "light",
+      "confidence": 0.47228142619132996,
+      "bounding_box": [
+        282.9170227050781,
+        0.05322742462158203,
+        315.8197326660156,
+        26.826595306396484
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6102979183197021,
+        "median_depth": 0.6170427799224854,
+        "depth_std": 0.021069958806037903,
+        "depth_min": 0.5506236553192139,
+        "depth_max": 0.6397719383239746,
+        "mask_area": 368
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "tripod",
+      "confidence": 0.5416613221168518,
+      "bounding_box": [
+        83.2594223022461,
+        0.26912689208984375,
+        103.2295150756836,
+        54.38994598388672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7911378145217896,
+        "median_depth": 0.7729153037071228,
+        "depth_std": 0.07269933074712753,
+        "depth_min": 0.6009078025817871,
+        "depth_max": 0.9757695198059082,
+        "mask_area": 431
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. cup. bottle. container. robot arm. cardboard box. shelf. tripod. light. scale. sponge.",
+  "text_prompt": "table. cup. bottle. container. robot arm. cardboard box. shelf. tripod. light. scale. sponge.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

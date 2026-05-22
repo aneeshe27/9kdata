@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cup",
+    "bowl",
+    "bowl",
+    "detergent box",
+    "robot arm gripper"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, detergent box, bowl, bowl, robot arm gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.011984175071120262,
+        "relative_position": "closest",
+        "confidence": 0.5127295255661011
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.021208506077528,
+        "relative_position": "middle",
+        "confidence": 0.6864746809005737
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.13541436195373535,
+        "relative_position": "middle",
+        "confidence": 0.5561550259590149
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "detergent box",
+        "mean_depth": 0.15546542406082153,
+        "relative_position": "middle",
+        "confidence": 0.9061855673789978
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.24342839419841766,
+        "relative_position": "farthest",
+        "confidence": 0.36385318636894226
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.24342839419841766,
+        "relative_position": "farthest",
+        "confidence": 0.36385318636894226
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "detergent box",
+        "mean_depth": 0.15546542406082153,
+        "relative_position": "middle",
+        "confidence": 0.9061855673789978
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.13541436195373535,
+        "relative_position": "middle",
+        "confidence": 0.5561550259590149
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.021208506077528,
+        "relative_position": "middle",
+        "confidence": 0.6864746809005737
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.011984175071120262,
+        "relative_position": "closest",
+        "confidence": 0.5127295255661011
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cup",
+      "confidence": 0.5127295255661011,
+      "bounding_box": [
+        99.81200408935547,
+        105.36030578613281,
+        144.9118194580078,
+        179.2709503173828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.011984175071120262,
+        "median_depth": 0.008673318661749363,
+        "depth_std": 0.01250119972974062,
+        "depth_min": 0.0048506371676921844,
+        "depth_max": 0.10414840281009674,
+        "mask_area": 2282
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "bowl",
+      "confidence": 0.6864746809005737,
+      "bounding_box": [
+        142.517822265625,
+        129.82217407226562,
+        190.42080688476562,
+        170.87237548828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.021208506077528,
+        "median_depth": 0.018048670142889023,
+        "depth_std": 0.013553900644183159,
+        "depth_min": 0.007111234124749899,
+        "depth_max": 0.07844921201467514,
+        "mask_area": 1338
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bowl",
+      "confidence": 0.5561550259590149,
+      "bounding_box": [
+        244.7642364501953,
+        97.01362609863281,
+        274.63238525390625,
+        115.58831787109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13541436195373535,
+        "median_depth": 0.1232842206954956,
+        "depth_std": 0.043537188321352005,
+        "depth_min": 0.10759939253330231,
+        "depth_max": 0.3399873375892639,
+        "mask_area": 429
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "detergent box",
+      "confidence": 0.9061855673789978,
+      "bounding_box": [
+        192.94021606445312,
+        60.93455505371094,
+        238.83547973632812,
+        113.91360473632812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15546542406082153,
+        "median_depth": 0.1385672241449356,
+        "depth_std": 0.09728620946407318,
+        "depth_min": 0.1235845535993576,
+        "depth_max": 0.9925127029418945,
+        "mask_area": 1916
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.36385318636894226,
+      "bounding_box": [
+        261.52325439453125,
+        0.0049591064453125,
+        315.9732666015625,
+        53.00834274291992
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24342839419841766,
+        "median_depth": 0.22643326222896576,
+        "depth_std": 0.06605416536331177,
+        "depth_min": 0.20273041725158691,
+        "depth_max": 0.8025491833686829,
+        "mask_area": 2089
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. bowl. spoon. detergent box. washing machine. robot arm. gripper. window.",
+  "text_prompt": "cup. bowl. spoon. detergent box. washing machine. robot arm. gripper. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

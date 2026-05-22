@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "electric kettle",
+    "water bottle",
+    "cabinet",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: water bottle, window, electric kettle, cabinet, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.0279567688703537,
+        "relative_position": "closest",
+        "confidence": 0.5877066850662231
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "electric kettle",
+        "mean_depth": 0.07367346435785294,
+        "relative_position": "middle",
+        "confidence": 0.3824191689491272
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "water bottle",
+        "mean_depth": 0.11962305009365082,
+        "relative_position": "middle",
+        "confidence": 0.3683054745197296
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cabinet",
+        "mean_depth": 0.1501585692167282,
+        "relative_position": "middle",
+        "confidence": 0.6549307107925415
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.9357377290725708,
+        "relative_position": "farthest",
+        "confidence": 0.43923959136009216
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.9357377290725708,
+        "relative_position": "farthest",
+        "confidence": 0.43923959136009216
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cabinet",
+        "mean_depth": 0.1501585692167282,
+        "relative_position": "middle",
+        "confidence": 0.6549307107925415
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "water bottle",
+        "mean_depth": 0.11962305009365082,
+        "relative_position": "middle",
+        "confidence": 0.3683054745197296
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "electric kettle",
+        "mean_depth": 0.07367346435785294,
+        "relative_position": "middle",
+        "confidence": 0.3824191689491272
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.0279567688703537,
+        "relative_position": "closest",
+        "confidence": 0.5877066850662231
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.5877066850662231,
+      "bounding_box": [
+        158.39877319335938,
+        14.577766418457031,
+        315.95367431640625,
+        179.710205078125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0279567688703537,
+        "median_depth": 0.020760754123330116,
+        "depth_std": 0.0429513044655323,
+        "depth_min": 0.00969640538096428,
+        "depth_max": 0.9782665967941284,
+        "mask_area": 10994
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "electric kettle",
+      "confidence": 0.3824191689491272,
+      "bounding_box": [
+        111.5011215209961,
+        113.33585357666016,
+        171.89773559570312,
+        165.239501953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07367346435785294,
+        "median_depth": 0.058113858103752136,
+        "depth_std": 0.049660824239254,
+        "depth_min": 0.030115647241473198,
+        "depth_max": 0.642242431640625,
+        "mask_area": 1915
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "water bottle",
+      "confidence": 0.3683054745197296,
+      "bounding_box": [
+        92.9428482055664,
+        123.71674346923828,
+        105.2961196899414,
+        153.6061553955078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11962305009365082,
+        "median_depth": 0.11432643234729767,
+        "depth_std": 0.0220683291554451,
+        "depth_min": 0.09133560955524445,
+        "depth_max": 0.20208457112312317,
+        "mask_area": 261
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cabinet",
+      "confidence": 0.6549307107925415,
+      "bounding_box": [
+        -0.00731658935546875,
+        -0.020236968994140625,
+        62.07933807373047,
+        67.59091186523438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1501585692167282,
+        "median_depth": 0.14820778369903564,
+        "depth_std": 0.038109708577394485,
+        "depth_min": 0.08283393085002899,
+        "depth_max": 0.2825337052345276,
+        "mask_area": 3859
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "window",
+      "confidence": 0.43923959136009216,
+      "bounding_box": [
+        114.24738311767578,
+        58.22831726074219,
+        150.79522705078125,
+        105.96026611328125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9357377290725708,
+        "median_depth": 0.9365646243095398,
+        "depth_std": 0.012321488931775093,
+        "depth_min": 0.9061410427093506,
+        "depth_max": 0.9561836123466492,
+        "mask_area": 1534
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. cabinet. water bottle. electric kettle. couch. bed. nightstand. window. ceiling light.",
+  "text_prompt": "robot arm. gripper. countertop. cabinet. water bottle. electric kettle. couch. bed. nightstand. window. ceiling light.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

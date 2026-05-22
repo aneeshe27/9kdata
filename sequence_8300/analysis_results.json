@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bowl",
+    "mouse",
+    "camera",
+    "keyboard",
+    "whiteboard"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bowl, mouse, camera, whiteboard, keyboard",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.19155365228652954,
+        "relative_position": "closest",
+        "confidence": 0.6296581029891968
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "mouse",
+        "mean_depth": 0.194426491856575,
+        "relative_position": "middle",
+        "confidence": 0.90007084608078
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "camera",
+        "mean_depth": 0.28853529691696167,
+        "relative_position": "middle",
+        "confidence": 0.48262447118759155
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "keyboard",
+        "mean_depth": 0.3158535957336426,
+        "relative_position": "middle",
+        "confidence": 0.5917319059371948
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "whiteboard",
+        "mean_depth": 0.9308598041534424,
+        "relative_position": "farthest",
+        "confidence": 0.7589954733848572
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "whiteboard",
+        "mean_depth": 0.9308598041534424,
+        "relative_position": "farthest",
+        "confidence": 0.7589954733848572
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "keyboard",
+        "mean_depth": 0.3158535957336426,
+        "relative_position": "middle",
+        "confidence": 0.5917319059371948
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "camera",
+        "mean_depth": 0.28853529691696167,
+        "relative_position": "middle",
+        "confidence": 0.48262447118759155
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "mouse",
+        "mean_depth": 0.194426491856575,
+        "relative_position": "middle",
+        "confidence": 0.90007084608078
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.19155365228652954,
+        "relative_position": "closest",
+        "confidence": 0.6296581029891968
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "bowl",
+      "confidence": 0.6296581029891968,
+      "bounding_box": [
+        163.88446044921875,
+        89.89449310302734,
+        209.53872680664062,
+        115.82328033447266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19155365228652954,
+        "median_depth": 0.1991967260837555,
+        "depth_std": 0.0273420587182045,
+        "depth_min": 0.14925627410411835,
+        "depth_max": 0.2581959366798401,
+        "mask_area": 582
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "mouse",
+      "confidence": 0.90007084608078,
+      "bounding_box": [
+        231.81039428710938,
+        99.04454040527344,
+        248.06442260742188,
+        112.10054016113281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.194426491856575,
+        "median_depth": 0.1925124078989029,
+        "depth_std": 0.012016885913908482,
+        "depth_min": 0.17547838389873505,
+        "depth_max": 0.23001934587955475,
+        "mask_area": 167
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "camera",
+      "confidence": 0.48262447118759155,
+      "bounding_box": [
+        139.36541748046875,
+        64.94552612304688,
+        159.9439697265625,
+        92.7122802734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28853529691696167,
+        "median_depth": 0.28548717498779297,
+        "depth_std": 0.026750726625323296,
+        "depth_min": 0.24708673357963562,
+        "depth_max": 0.48924359679222107,
+        "mask_area": 358
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "keyboard",
+      "confidence": 0.5917319059371948,
+      "bounding_box": [
+        168.51751708984375,
+        70.18940734863281,
+        197.938232421875,
+        90.07182312011719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3158535957336426,
+        "median_depth": 0.30113309621810913,
+        "depth_std": 0.06484393030405045,
+        "depth_min": 0.2627258598804474,
+        "depth_max": 0.918505847454071,
+        "mask_area": 463
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "whiteboard",
+      "confidence": 0.7589954733848572,
+      "bounding_box": [
+        114.93488311767578,
+        -0.06294059753417969,
+        315.95654296875,
+        58.153770446777344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9308598041534424,
+        "median_depth": 0.9338496327400208,
+        "depth_std": 0.05431089922785759,
+        "depth_min": 0.2696436643600464,
+        "depth_max": 0.9977056980133057,
+        "mask_area": 7594
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. bowl. mouse. robot arm. gripper. ring light. camera. keyboard. whiteboard. shelf. plant pot. chair.",
+  "text_prompt": "table. bowl. mouse. robot arm. gripper. ring light. camera. keyboard. whiteboard. shelf. plant pot. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "window",
+    "countertop",
+    "coffee pot",
+    "cloth"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: window, robot arm, countertop, cloth, coffee pot",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.02947711944580078,
+        "relative_position": "closest",
+        "confidence": 0.5289633274078369
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.1996658444404602,
+        "relative_position": "middle",
+        "confidence": 0.43298831582069397
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.28819456696510315,
+        "relative_position": "middle",
+        "confidence": 0.45028743147850037
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "coffee pot",
+        "mean_depth": 0.3419964611530304,
+        "relative_position": "middle",
+        "confidence": 0.6980438828468323
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cloth",
+        "mean_depth": 0.46747511625289917,
+        "relative_position": "farthest",
+        "confidence": 0.4014713764190674
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cloth",
+        "mean_depth": 0.46747511625289917,
+        "relative_position": "farthest",
+        "confidence": 0.4014713764190674
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "coffee pot",
+        "mean_depth": 0.3419964611530304,
+        "relative_position": "middle",
+        "confidence": 0.6980438828468323
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.28819456696510315,
+        "relative_position": "middle",
+        "confidence": 0.45028743147850037
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.1996658444404602,
+        "relative_position": "middle",
+        "confidence": 0.43298831582069397
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.02947711944580078,
+        "relative_position": "closest",
+        "confidence": 0.5289633274078369
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.5289633274078369,
+      "bounding_box": [
+        29.36300277709961,
+        0.10903549194335938,
+        154.62176513671875,
+        75.70344543457031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02947711944580078,
+        "median_depth": 0.014927629381418228,
+        "depth_std": 0.0608939528465271,
+        "depth_min": 0.004440321121364832,
+        "depth_max": 0.557293176651001,
+        "mask_area": 5040
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "window",
+      "confidence": 0.43298831582069397,
+      "bounding_box": [
+        163.27493286132812,
+        0.01332855224609375,
+        315.8908386230469,
+        179.96563720703125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1996658444404602,
+        "median_depth": 0.18945813179016113,
+        "depth_std": 0.05585511773824692,
+        "depth_min": 0.10294953733682632,
+        "depth_max": 0.3213261365890503,
+        "mask_area": 21810
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "countertop",
+      "confidence": 0.45028743147850037,
+      "bounding_box": [
+        27.981597900390625,
+        125.08465576171875,
+        171.6006622314453,
+        179.97393798828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28819456696510315,
+        "median_depth": 0.2959062457084656,
+        "depth_std": 0.09413029998540878,
+        "depth_min": 0.05850072205066681,
+        "depth_max": 0.8717348575592041,
+        "mask_area": 4443
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "coffee pot",
+      "confidence": 0.6980438828468323,
+      "bounding_box": [
+        110.08273315429688,
+        80.20121765136719,
+        180.49728393554688,
+        169.00521850585938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3419964611530304,
+        "median_depth": 0.3379543423652649,
+        "depth_std": 0.023592445999383926,
+        "depth_min": 0.19361764192581177,
+        "depth_max": 0.42613229155540466,
+        "mask_area": 3907
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cloth",
+      "confidence": 0.4014713764190674,
+      "bounding_box": [
+        73.30963134765625,
+        112.96611022949219,
+        106.43093872070312,
+        133.99160766601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.46747511625289917,
+        "median_depth": 0.4370519518852234,
+        "depth_std": 0.0971667543053627,
+        "depth_min": 0.41948142647743225,
+        "depth_max": 0.9346774220466614,
+        "mask_area": 426
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. coffee maker. coffee pot. countertop. can. cloth. cabinet. window. radiator.",
+  "text_prompt": "robot arm. gripper. coffee maker. coffee pot. countertop. can. cloth. cabinet. window. radiator.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

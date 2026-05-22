@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cup",
+    "bowl",
+    "cup",
+    "cabinet",
+    "cutting board"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cutting board, cabinet, bowl, cup, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.29420432448387146,
+        "relative_position": "closest",
+        "confidence": 0.3537411689758301
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.4081689119338989,
+        "relative_position": "middle",
+        "confidence": 0.36765506863594055
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.4344446659088135,
+        "relative_position": "middle",
+        "confidence": 0.4791239798069
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.5636323094367981,
+        "relative_position": "middle",
+        "confidence": 0.3531431555747986
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "cutting board",
+        "mean_depth": 0.6521040797233582,
+        "relative_position": "farthest",
+        "confidence": 0.556374728679657
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "cutting board",
+        "mean_depth": 0.6521040797233582,
+        "relative_position": "farthest",
+        "confidence": 0.556374728679657
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.5636323094367981,
+        "relative_position": "middle",
+        "confidence": 0.3531431555747986
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.4344446659088135,
+        "relative_position": "middle",
+        "confidence": 0.4791239798069
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.4081689119338989,
+        "relative_position": "middle",
+        "confidence": 0.36765506863594055
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.29420432448387146,
+        "relative_position": "closest",
+        "confidence": 0.3537411689758301
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cup",
+      "confidence": 0.3537411689758301,
+      "bounding_box": [
+        67.3983154296875,
+        91.00792694091797,
+        94.87359619140625,
+        119.90711212158203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29420432448387146,
+        "median_depth": 0.28983643651008606,
+        "depth_std": 0.018661964684724808,
+        "depth_min": 0.2696266770362854,
+        "depth_max": 0.35639721155166626,
+        "mask_area": 407
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "bowl",
+      "confidence": 0.36765506863594055,
+      "bounding_box": [
+        103.43179321289062,
+        76.35487365722656,
+        124.86097717285156,
+        89.66709899902344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4081689119338989,
+        "median_depth": 0.3824554681777954,
+        "depth_std": 0.09217675030231476,
+        "depth_min": 0.3639860451221466,
+        "depth_max": 0.9853674173355103,
+        "mask_area": 218
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.4791239798069,
+      "bounding_box": [
+        201.97584533691406,
+        42.5456428527832,
+        228.42164611816406,
+        71.78270721435547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4344446659088135,
+        "median_depth": 0.432475209236145,
+        "depth_std": 0.0245384369045496,
+        "depth_min": 0.3427954912185669,
+        "depth_max": 0.49915555119514465,
+        "mask_area": 554
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3531431555747986,
+      "bounding_box": [
+        217.85646057128906,
+        75.2300796508789,
+        264.5587158203125,
+        133.638916015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5636323094367981,
+        "median_depth": 0.566509485244751,
+        "depth_std": 0.06684622913599014,
+        "depth_min": 0.3625856637954712,
+        "depth_max": 0.6838546395301819,
+        "mask_area": 1532
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cutting board",
+      "confidence": 0.556374728679657,
+      "bounding_box": [
+        201.57293701171875,
+        123.09085083007812,
+        237.35247802734375,
+        180.00619506835938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6521040797233582,
+        "median_depth": 0.6550241112709045,
+        "depth_std": 0.026651663705706596,
+        "depth_min": 0.5704686641693115,
+        "depth_max": 0.6938239336013794,
+        "mask_area": 957
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. cabinet. drawer. microwave. bowl. container. cup. cutting board. camera.",
+  "text_prompt": "robot arm. gripper. countertop. cabinet. drawer. microwave. bowl. container. cup. cutting board. camera.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

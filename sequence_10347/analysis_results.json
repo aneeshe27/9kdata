@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "first aid kit",
+    "electric kettle",
+    "wall outlet",
+    "light"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: light, first aid kit, robot arm, electric kettle, wall outlet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.02630588412284851,
+        "relative_position": "closest",
+        "confidence": 0.38990944623947144
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "first aid kit",
+        "mean_depth": 0.10825508087873459,
+        "relative_position": "middle",
+        "confidence": 0.363422691822052
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "electric kettle",
+        "mean_depth": 0.14159399271011353,
+        "relative_position": "middle",
+        "confidence": 0.6020980477333069
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "wall outlet",
+        "mean_depth": 0.28617000579833984,
+        "relative_position": "middle",
+        "confidence": 0.6314294934272766
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "light",
+        "mean_depth": 0.6499335169792175,
+        "relative_position": "farthest",
+        "confidence": 0.46199795603752136
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "light",
+        "mean_depth": 0.6499335169792175,
+        "relative_position": "farthest",
+        "confidence": 0.46199795603752136
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "wall outlet",
+        "mean_depth": 0.28617000579833984,
+        "relative_position": "middle",
+        "confidence": 0.6314294934272766
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "electric kettle",
+        "mean_depth": 0.14159399271011353,
+        "relative_position": "middle",
+        "confidence": 0.6020980477333069
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "first aid kit",
+        "mean_depth": 0.10825508087873459,
+        "relative_position": "middle",
+        "confidence": 0.363422691822052
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.02630588412284851,
+        "relative_position": "closest",
+        "confidence": 0.38990944623947144
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.38990944623947144,
+      "bounding_box": [
+        51.177757263183594,
+        99.54271697998047,
+        121.4234390258789,
+        179.99237060546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02630588412284851,
+        "median_depth": 0.013961049728095531,
+        "depth_std": 0.04376649484038353,
+        "depth_min": 0.0,
+        "depth_max": 0.3427026569843292,
+        "mask_area": 2467
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "first aid kit",
+      "confidence": 0.363422691822052,
+      "bounding_box": [
+        293.6772766113281,
+        37.70051193237305,
+        315.9661560058594,
+        103.69509887695312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10825508087873459,
+        "median_depth": 0.1071029081940651,
+        "depth_std": 0.009786590933799744,
+        "depth_min": 0.07835963368415833,
+        "depth_max": 0.1300181746482849,
+        "mask_area": 1050
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "electric kettle",
+      "confidence": 0.6020980477333069,
+      "bounding_box": [
+        257.9122009277344,
+        108.07984161376953,
+        293.2440490722656,
+        151.39459228515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14159399271011353,
+        "median_depth": 0.14133252203464508,
+        "depth_std": 0.00711390795186162,
+        "depth_min": 0.12464272230863571,
+        "depth_max": 0.159878209233284,
+        "mask_area": 803
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "wall outlet",
+      "confidence": 0.6314294934272766,
+      "bounding_box": [
+        161.32061767578125,
+        111.82252502441406,
+        175.85708618164062,
+        124.049560546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28617000579833984,
+        "median_depth": 0.2857537269592285,
+        "depth_std": 0.004829298239201307,
+        "depth_min": 0.2766512930393219,
+        "depth_max": 0.2959948480129242,
+        "mask_area": 108
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "light",
+      "confidence": 0.46199795603752136,
+      "bounding_box": [
+        0.04703330993652344,
+        29.86997413635254,
+        37.07630920410156,
+        60.384910583496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6499335169792175,
+        "median_depth": 0.6568356156349182,
+        "depth_std": 0.06518516689538956,
+        "depth_min": 0.4986264705657959,
+        "depth_max": 0.7575516700744629,
+        "mask_area": 457
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cable. cabinet. countertop. wall outlet. coffee machine. electric kettle. poster. light. first aid kit.",
+  "text_prompt": "robot arm. gripper. cable. cabinet. countertop. wall outlet. coffee machine. electric kettle. poster. light. first aid kit.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

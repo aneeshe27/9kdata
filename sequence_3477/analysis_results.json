@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cable",
+    "book",
+    "book",
+    "cardboard box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: book, cardboard box, cable, book, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.05573781207203865,
+        "relative_position": "closest",
+        "confidence": 0.4870814383029938
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.2907504141330719,
+        "relative_position": "middle",
+        "confidence": 0.37787339091300964
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "book",
+        "mean_depth": 0.47870442271232605,
+        "relative_position": "middle",
+        "confidence": 0.46973493695259094
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "book",
+        "mean_depth": 0.5262637138366699,
+        "relative_position": "middle",
+        "confidence": 0.5046642422676086
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.560638427734375,
+        "relative_position": "farthest",
+        "confidence": 0.912971019744873
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.560638427734375,
+        "relative_position": "farthest",
+        "confidence": 0.912971019744873
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "book",
+        "mean_depth": 0.5262637138366699,
+        "relative_position": "middle",
+        "confidence": 0.5046642422676086
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "book",
+        "mean_depth": 0.47870442271232605,
+        "relative_position": "middle",
+        "confidence": 0.46973493695259094
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.2907504141330719,
+        "relative_position": "middle",
+        "confidence": 0.37787339091300964
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.05573781207203865,
+        "relative_position": "closest",
+        "confidence": 0.4870814383029938
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4870814383029938,
+      "bounding_box": [
+        157.1553955078125,
+        0.0409698486328125,
+        315.9724426269531,
+        116.58439636230469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05573781207203865,
+        "median_depth": 0.06020886451005936,
+        "depth_std": 0.06554879248142242,
+        "depth_min": 0.0,
+        "depth_max": 0.6048848628997803,
+        "mask_area": 5837
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cable",
+      "confidence": 0.37787339091300964,
+      "bounding_box": [
+        181.9717254638672,
+        97.94892883300781,
+        222.48512268066406,
+        145.45010375976562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2907504141330719,
+        "median_depth": 0.24804626405239105,
+        "depth_std": 0.12518057227134705,
+        "depth_min": 0.09496783465147018,
+        "depth_max": 0.5862861275672913,
+        "mask_area": 323
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "book",
+      "confidence": 0.46973493695259094,
+      "bounding_box": [
+        64.01751708984375,
+        142.2012176513672,
+        108.86004638671875,
+        179.9641876220703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47870442271232605,
+        "median_depth": 0.47563737630844116,
+        "depth_std": 0.039091017097234726,
+        "depth_min": 0.41053733229637146,
+        "depth_max": 0.586315929889679,
+        "mask_area": 1126
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "book",
+      "confidence": 0.5046642422676086,
+      "bounding_box": [
+        121.25636291503906,
+        118.67081451416016,
+        164.0239715576172,
+        165.35269165039062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5262637138366699,
+        "median_depth": 0.522404670715332,
+        "depth_std": 0.05610198900103569,
+        "depth_min": 0.4391838312149048,
+        "depth_max": 0.6359003186225891,
+        "mask_area": 1288
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cardboard box",
+      "confidence": 0.912971019744873,
+      "bounding_box": [
+        43.7350959777832,
+        95.75667572021484,
+        104.67359924316406,
+        149.23602294921875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.560638427734375,
+        "median_depth": 0.5557836294174194,
+        "depth_std": 0.03542821854352951,
+        "depth_min": 0.497223436832428,
+        "depth_max": 0.702459990978241,
+        "mask_area": 2167
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cardboard box. book. paper. envelope. glue stick. cable.",
+  "text_prompt": "robot arm. gripper. table. cardboard box. book. paper. envelope. glue stick. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

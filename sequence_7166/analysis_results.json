@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cloth",
+    "cable",
+    "power strip",
+    "monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: monitor, robot arm, power strip, cloth, cable",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.07497000694274902,
+        "relative_position": "closest",
+        "confidence": 0.48212558031082153
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cloth",
+        "mean_depth": 0.2437857985496521,
+        "relative_position": "middle",
+        "confidence": 0.5834736227989197
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.30843618512153625,
+        "relative_position": "middle",
+        "confidence": 0.39983633160591125
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "power strip",
+        "mean_depth": 0.4834098815917969,
+        "relative_position": "middle",
+        "confidence": 0.5769887566566467
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "monitor",
+        "mean_depth": 0.5019400119781494,
+        "relative_position": "farthest",
+        "confidence": 0.48200473189353943
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "monitor",
+        "mean_depth": 0.5019400119781494,
+        "relative_position": "farthest",
+        "confidence": 0.48200473189353943
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "power strip",
+        "mean_depth": 0.4834098815917969,
+        "relative_position": "middle",
+        "confidence": 0.5769887566566467
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.30843618512153625,
+        "relative_position": "middle",
+        "confidence": 0.39983633160591125
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cloth",
+        "mean_depth": 0.2437857985496521,
+        "relative_position": "middle",
+        "confidence": 0.5834736227989197
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.07497000694274902,
+        "relative_position": "closest",
+        "confidence": 0.48212558031082153
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.48212558031082153,
+      "bounding_box": [
+        235.46240234375,
+        0.0578765869140625,
+        315.96868896484375,
+        180.01174926757812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07497000694274902,
+        "median_depth": 0.06969298422336578,
+        "depth_std": 0.06864158809185028,
+        "depth_min": 0.0061124409548938274,
+        "depth_max": 0.8170979619026184,
+        "mask_area": 8733
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cloth",
+      "confidence": 0.5834736227989197,
+      "bounding_box": [
+        156.42726135253906,
+        78.80973815917969,
+        237.39048767089844,
+        118.17295837402344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2437857985496521,
+        "median_depth": 0.22533568739891052,
+        "depth_std": 0.08247918635606766,
+        "depth_min": 0.17894425988197327,
+        "depth_max": 0.9797178506851196,
+        "mask_area": 2046
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cable",
+      "confidence": 0.39983633160591125,
+      "bounding_box": [
+        87.8448257446289,
+        96.22679138183594,
+        127.4046859741211,
+        118.76455688476562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30843618512153625,
+        "median_depth": 0.3014257252216339,
+        "depth_std": 0.05335170775651932,
+        "depth_min": 0.2186400294303894,
+        "depth_max": 0.461470365524292,
+        "mask_area": 197
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "power strip",
+      "confidence": 0.5769887566566467,
+      "bounding_box": [
+        76.44529724121094,
+        90.7892074584961,
+        111.91127014160156,
+        104.77530670166016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4834098815917969,
+        "median_depth": 0.4798763692378998,
+        "depth_std": 0.018940985202789307,
+        "depth_min": 0.45258352160453796,
+        "depth_max": 0.5562237501144409,
+        "mask_area": 312
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "monitor",
+      "confidence": 0.48200473189353943,
+      "bounding_box": [
+        65.9771728515625,
+        10.862449645996094,
+        136.36117553710938,
+        83.45760345458984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5019400119781494,
+        "median_depth": 0.5001540184020996,
+        "depth_std": 0.03611354902386665,
+        "depth_min": 0.4370843172073364,
+        "depth_max": 0.6002660393714905,
+        "mask_area": 3445
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. monitor. table. eyeglasses. cloth. power strip. cable.",
+  "text_prompt": "robot arm. gripper. monitor. table. eyeglasses. cloth. power strip. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

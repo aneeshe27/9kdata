@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "sofa",
+    "spray bottle",
+    "bag",
+    "side table",
+    "game controller"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: side table, bag, spray bottle, game controller, sofa",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.16409607231616974,
+        "relative_position": "closest",
+        "confidence": 0.7965108156204224
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "spray bottle",
+        "mean_depth": 0.37869882583618164,
+        "relative_position": "middle",
+        "confidence": 0.546741783618927
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "bag",
+        "mean_depth": 0.44372695684432983,
+        "relative_position": "middle",
+        "confidence": 0.3778018355369568
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "side table",
+        "mean_depth": 0.4813646674156189,
+        "relative_position": "middle",
+        "confidence": 0.3818938136100769
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "game controller",
+        "mean_depth": 0.688381552696228,
+        "relative_position": "farthest",
+        "confidence": 0.4491105079650879
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "game controller",
+        "mean_depth": 0.688381552696228,
+        "relative_position": "farthest",
+        "confidence": 0.4491105079650879
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "side table",
+        "mean_depth": 0.4813646674156189,
+        "relative_position": "middle",
+        "confidence": 0.3818938136100769
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "bag",
+        "mean_depth": 0.44372695684432983,
+        "relative_position": "middle",
+        "confidence": 0.3778018355369568
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "spray bottle",
+        "mean_depth": 0.37869882583618164,
+        "relative_position": "middle",
+        "confidence": 0.546741783618927
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.16409607231616974,
+        "relative_position": "closest",
+        "confidence": 0.7965108156204224
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "sofa",
+      "confidence": 0.7965108156204224,
+      "bounding_box": [
+        -0.0436248779296875,
+        57.432857513427734,
+        168.79945373535156,
+        180.02342224121094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16409607231616974,
+        "median_depth": 0.17172753810882568,
+        "depth_std": 0.09454360604286194,
+        "depth_min": 0.0,
+        "depth_max": 0.980462372303009,
+        "mask_area": 15682
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "spray bottle",
+      "confidence": 0.546741783618927,
+      "bounding_box": [
+        232.1442108154297,
+        -0.04030799865722656,
+        280.77789306640625,
+        52.76862335205078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.37869882583618164,
+        "median_depth": 0.4086689054965973,
+        "depth_std": 0.065161794424057,
+        "depth_min": 0.2317030280828476,
+        "depth_max": 0.4942981004714966,
+        "mask_area": 758
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "bag",
+      "confidence": 0.3778018355369568,
+      "bounding_box": [
+        217.184814453125,
+        109.6474380493164,
+        315.997314453125,
+        180.02886962890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.44372695684432983,
+        "median_depth": 0.4193061888217926,
+        "depth_std": 0.1324969381093979,
+        "depth_min": 0.24986933171749115,
+        "depth_max": 0.9982157945632935,
+        "mask_area": 5518
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "side table",
+      "confidence": 0.3818938136100769,
+      "bounding_box": [
+        145.90380859375,
+        56.38759231567383,
+        211.1719970703125,
+        111.13742065429688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4813646674156189,
+        "median_depth": 0.4665325880050659,
+        "depth_std": 0.0756106898188591,
+        "depth_min": 0.3642919659614563,
+        "depth_max": 0.8525719046592712,
+        "mask_area": 2124
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "game controller",
+      "confidence": 0.4491105079650879,
+      "bounding_box": [
+        212.59695434570312,
+        72.10297393798828,
+        244.13299560546875,
+        88.1175765991211
+      ],
+      "depth_stats": {
+        "mean_depth": 0.688381552696228,
+        "median_depth": 0.6892877817153931,
+        "depth_std": 0.009588384069502354,
+        "depth_min": 0.6699527502059937,
+        "depth_max": 0.7153927683830261,
+        "mask_area": 307
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "plate. bowl. remote control. game controller. spray bottle. lemon. sofa. side table. drawer. radiator. screwdriver. bag. window.",
+  "text_prompt": "plate. bowl. remote control. game controller. spray bottle. lemon. sofa. side table. drawer. radiator. screwdriver. bag. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "notebook",
+    "cabinet",
+    "oven",
+    "cabinet",
+    "refrigerator"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, oven, refrigerator, cabinet, notebook",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "notebook",
+        "mean_depth": 0.010583372786641121,
+        "relative_position": "closest",
+        "confidence": 0.6743047833442688
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.2522473633289337,
+        "relative_position": "middle",
+        "confidence": 0.5036662817001343
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "oven",
+        "mean_depth": 0.4041990637779236,
+        "relative_position": "middle",
+        "confidence": 0.6101379990577698
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.5110711455345154,
+        "relative_position": "middle",
+        "confidence": 0.41277286410331726
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "refrigerator",
+        "mean_depth": 0.5913130044937134,
+        "relative_position": "farthest",
+        "confidence": 0.5291935801506042
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "refrigerator",
+        "mean_depth": 0.5913130044937134,
+        "relative_position": "farthest",
+        "confidence": 0.5291935801506042
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.5110711455345154,
+        "relative_position": "middle",
+        "confidence": 0.41277286410331726
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "oven",
+        "mean_depth": 0.4041990637779236,
+        "relative_position": "middle",
+        "confidence": 0.6101379990577698
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.2522473633289337,
+        "relative_position": "middle",
+        "confidence": 0.5036662817001343
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "notebook",
+        "mean_depth": 0.010583372786641121,
+        "relative_position": "closest",
+        "confidence": 0.6743047833442688
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "notebook",
+      "confidence": 0.6743047833442688,
+      "bounding_box": [
+        0.013248443603515625,
+        23.365596771240234,
+        65.19351196289062,
+        53.576114654541016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.010583372786641121,
+        "median_depth": 0.010814715176820755,
+        "depth_std": 0.001751252100802958,
+        "depth_min": 0.007089427672326565,
+        "depth_max": 0.013904682360589504,
+        "mask_area": 1530
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.5036662817001343,
+      "bounding_box": [
+        63.42991638183594,
+        52.12858200073242,
+        163.3479766845703,
+        153.7667694091797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2522473633289337,
+        "median_depth": 0.24834108352661133,
+        "depth_std": 0.0625009834766388,
+        "depth_min": 0.08328831940889359,
+        "depth_max": 0.40958234667778015,
+        "mask_area": 5654
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "oven",
+      "confidence": 0.6101379990577698,
+      "bounding_box": [
+        163.10174560546875,
+        28.652271270751953,
+        204.18020629882812,
+        109.01168823242188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4041990637779236,
+        "median_depth": 0.4023478031158447,
+        "depth_std": 0.05720248818397522,
+        "depth_min": 0.28338566422462463,
+        "depth_max": 0.5513008236885071,
+        "mask_area": 1822
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.41277286410331726,
+      "bounding_box": [
+        194.03298950195312,
+        7.431514739990234,
+        227.41140747070312,
+        80.61862182617188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5110711455345154,
+        "median_depth": 0.5104014873504639,
+        "depth_std": 0.05177973955869675,
+        "depth_min": 0.3870268762111664,
+        "depth_max": 0.6458138823509216,
+        "mask_area": 1038
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "refrigerator",
+      "confidence": 0.5291935801506042,
+      "bounding_box": [
+        210.298095703125,
+        0.02739715576171875,
+        265.6213073730469,
+        71.42977142333984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5913130044937134,
+        "median_depth": 0.5884453058242798,
+        "depth_std": 0.06189291551709175,
+        "depth_min": 0.4788157343864441,
+        "depth_max": 0.7940483689308167,
+        "mask_area": 1892
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. cabinet. dishwasher. oven. refrigerator. floor. tape. notebook. cable. clamp.",
+  "text_prompt": "robot arm. gripper. countertop. cabinet. dishwasher. oven. refrigerator. floor. tape. notebook. cable. clamp.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

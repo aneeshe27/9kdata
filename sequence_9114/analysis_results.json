@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "clamp",
+    "chair",
+    "cardboard box",
+    "floor drain",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, cardboard box, floor drain, chair, clamp",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "clamp",
+        "mean_depth": 0.08725102990865707,
+        "relative_position": "closest",
+        "confidence": 0.4157853424549103
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.09298646450042725,
+        "relative_position": "middle",
+        "confidence": 0.35373586416244507
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.16265535354614258,
+        "relative_position": "middle",
+        "confidence": 0.5728586316108704
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "floor drain",
+        "mean_depth": 0.3586329221725464,
+        "relative_position": "middle",
+        "confidence": 0.42261892557144165
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.5684893131256104,
+        "relative_position": "farthest",
+        "confidence": 0.4460407793521881
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.5684893131256104,
+        "relative_position": "farthest",
+        "confidence": 0.4460407793521881
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "floor drain",
+        "mean_depth": 0.3586329221725464,
+        "relative_position": "middle",
+        "confidence": 0.42261892557144165
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.16265535354614258,
+        "relative_position": "middle",
+        "confidence": 0.5728586316108704
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.09298646450042725,
+        "relative_position": "middle",
+        "confidence": 0.35373586416244507
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "clamp",
+        "mean_depth": 0.08725102990865707,
+        "relative_position": "closest",
+        "confidence": 0.4157853424549103
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "clamp",
+      "confidence": 0.4157853424549103,
+      "bounding_box": [
+        120.51838684082031,
+        135.73194885253906,
+        148.06092834472656,
+        167.1798858642578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08725102990865707,
+        "median_depth": 0.07710357010364532,
+        "depth_std": 0.026102788746356964,
+        "depth_min": 0.06460628658533096,
+        "depth_max": 0.16407397389411926,
+        "mask_area": 291
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.35373586416244507,
+      "bounding_box": [
+        268.75115966796875,
+        110.73019409179688,
+        315.953369140625,
+        179.95611572265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09298646450042725,
+        "median_depth": 0.08449520915746689,
+        "depth_std": 0.04395041987299919,
+        "depth_min": 0.0484800860285759,
+        "depth_max": 0.41407617926597595,
+        "mask_area": 2698
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cardboard box",
+      "confidence": 0.5728586316108704,
+      "bounding_box": [
+        125.03262329101562,
+        34.487545013427734,
+        223.805908203125,
+        106.27287292480469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16265535354614258,
+        "median_depth": 0.15209390223026276,
+        "depth_std": 0.06587467342615128,
+        "depth_min": 0.12427278608083725,
+        "depth_max": 0.8545598387718201,
+        "mask_area": 2548
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "floor drain",
+      "confidence": 0.42261892557144165,
+      "bounding_box": [
+        197.54910278320312,
+        111.11886596679688,
+        222.42019653320312,
+        131.46929931640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3586329221725464,
+        "median_depth": 0.35896915197372437,
+        "depth_std": 0.014533819630742073,
+        "depth_min": 0.32692834734916687,
+        "depth_max": 0.3847467005252838,
+        "mask_area": 348
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.4460407793521881,
+      "bounding_box": [
+        127.27669525146484,
+        0.19486618041992188,
+        163.0871124267578,
+        41.973968505859375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5684893131256104,
+        "median_depth": 0.49213746190071106,
+        "depth_std": 0.1437257081270218,
+        "depth_min": 0.4286688268184662,
+        "depth_max": 0.9945892691612244,
+        "mask_area": 960
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. chair. cardboard box. building block. clamp. workbench. cabinet. drawer. caster wheel. floor drain.",
+  "text_prompt": "table. chair. cardboard box. building block. clamp. workbench. cabinet. drawer. caster wheel. floor drain.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

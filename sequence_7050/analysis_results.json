@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "sink",
+    "faucet",
+    "countertop",
+    "container",
+    "computer monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: countertop, container, sink, computer monitor, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.03881118446588516,
+        "relative_position": "closest",
+        "confidence": 0.4245532155036926
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.04049082472920418,
+        "relative_position": "middle",
+        "confidence": 0.5962051153182983
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.20874544978141785,
+        "relative_position": "middle",
+        "confidence": 0.4086994230747223
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.3130605220794678,
+        "relative_position": "middle",
+        "confidence": 0.41570615768432617
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "computer monitor",
+        "mean_depth": 0.4929114282131195,
+        "relative_position": "farthest",
+        "confidence": 0.3994006812572479
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "computer monitor",
+        "mean_depth": 0.4929114282131195,
+        "relative_position": "farthest",
+        "confidence": 0.3994006812572479
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.3130605220794678,
+        "relative_position": "middle",
+        "confidence": 0.41570615768432617
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.20874544978141785,
+        "relative_position": "middle",
+        "confidence": 0.4086994230747223
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.04049082472920418,
+        "relative_position": "middle",
+        "confidence": 0.5962051153182983
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.03881118446588516,
+        "relative_position": "closest",
+        "confidence": 0.4245532155036926
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.4245532155036926,
+      "bounding_box": [
+        193.0195770263672,
+        90.38895416259766,
+        285.58642578125,
+        132.5289764404297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03881118446588516,
+        "median_depth": 0.03136778250336647,
+        "depth_std": 0.034774769097566605,
+        "depth_min": 0.013128719292581081,
+        "depth_max": 0.3434130847454071,
+        "mask_area": 1105
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.5962051153182983,
+      "bounding_box": [
+        173.6025848388672,
+        86.9422607421875,
+        215.53346252441406,
+        144.5628662109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04049082472920418,
+        "median_depth": 0.028805451467633247,
+        "depth_std": 0.048613857477903366,
+        "depth_min": 0.023148931562900543,
+        "depth_max": 0.4928371012210846,
+        "mask_area": 785
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "countertop",
+      "confidence": 0.4086994230747223,
+      "bounding_box": [
+        201.32736206054688,
+        54.52005386352539,
+        315.8416442871094,
+        96.9613037109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20874544978141785,
+        "median_depth": 0.19873164594173431,
+        "depth_std": 0.05302542448043823,
+        "depth_min": 0.1351659893989563,
+        "depth_max": 0.7165957689285278,
+        "mask_area": 959
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "container",
+      "confidence": 0.41570615768432617,
+      "bounding_box": [
+        53.784873962402344,
+        54.232696533203125,
+        81.67931365966797,
+        77.92658996582031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3130605220794678,
+        "median_depth": 0.31400108337402344,
+        "depth_std": 0.005280557554215193,
+        "depth_min": 0.2980744540691376,
+        "depth_max": 0.3233625888824463,
+        "mask_area": 426
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "computer monitor",
+      "confidence": 0.3994006812572479,
+      "bounding_box": [
+        217.72201538085938,
+        27.98651695251465,
+        242.7762451171875,
+        44.49986267089844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4929114282131195,
+        "median_depth": 0.4924694895744324,
+        "depth_std": 0.022988995537161827,
+        "depth_min": 0.4332886338233948,
+        "depth_max": 0.5725961923599243,
+        "mask_area": 332
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. faucet. countertop. scrubber. container. drying rack. clamp. workbench. cabinet. chair. computer monitor. window.",
+  "text_prompt": "sink. faucet. countertop. scrubber. container. drying rack. clamp. workbench. cabinet. chair. computer monitor. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

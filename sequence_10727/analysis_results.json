@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "container",
+    "sink",
+    "faucet",
+    "window",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, sink, faucet, container, window",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "container",
+        "mean_depth": 0.11671793460845947,
+        "relative_position": "closest",
+        "confidence": 0.3587927222251892
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.12312007695436478,
+        "relative_position": "middle",
+        "confidence": 0.6492112874984741
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.15243801474571228,
+        "relative_position": "middle",
+        "confidence": 0.42025110125541687
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "window",
+        "mean_depth": 0.15273775160312653,
+        "relative_position": "middle",
+        "confidence": 0.6853074431419373
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.22290393710136414,
+        "relative_position": "farthest",
+        "confidence": 0.3736112117767334
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.22290393710136414,
+        "relative_position": "farthest",
+        "confidence": 0.3736112117767334
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "window",
+        "mean_depth": 0.15273775160312653,
+        "relative_position": "middle",
+        "confidence": 0.6853074431419373
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.15243801474571228,
+        "relative_position": "middle",
+        "confidence": 0.42025110125541687
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.12312007695436478,
+        "relative_position": "middle",
+        "confidence": 0.6492112874984741
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "container",
+        "mean_depth": 0.11671793460845947,
+        "relative_position": "closest",
+        "confidence": 0.3587927222251892
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "container",
+      "confidence": 0.3587927222251892,
+      "bounding_box": [
+        281.5876770019531,
+        157.72882080078125,
+        310.7827453613281,
+        179.97024536132812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11671793460845947,
+        "median_depth": 0.12102628499269485,
+        "depth_std": 0.028620613738894463,
+        "depth_min": 0.03434842452406883,
+        "depth_max": 0.16909748315811157,
+        "mask_area": 467
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.6492112874984741,
+      "bounding_box": [
+        124.93843078613281,
+        110.51641082763672,
+        223.4917755126953,
+        179.87741088867188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12312007695436478,
+        "median_depth": 0.12226420640945435,
+        "depth_std": 0.023614933714270592,
+        "depth_min": 0.06789816170930862,
+        "depth_max": 0.18689005076885223,
+        "mask_area": 3260
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "faucet",
+      "confidence": 0.42025110125541687,
+      "bounding_box": [
+        153.42543029785156,
+        97.62696075439453,
+        175.53602600097656,
+        116.81989288330078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15243801474571228,
+        "median_depth": 0.15277501940727234,
+        "depth_std": 0.026419101282954216,
+        "depth_min": 0.07830154895782471,
+        "depth_max": 0.19511964917182922,
+        "mask_area": 166
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "window",
+      "confidence": 0.6853074431419373,
+      "bounding_box": [
+        107.353515625,
+        0.07632064819335938,
+        184.51815795898438,
+        105.15310668945312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15273775160312653,
+        "median_depth": 0.14905209839344025,
+        "depth_std": 0.03315787762403488,
+        "depth_min": 0.0576748289167881,
+        "depth_max": 0.24049268662929535,
+        "mask_area": 5415
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.3736112117767334,
+      "bounding_box": [
+        199.56565856933594,
+        98.29229736328125,
+        251.72682189941406,
+        180.08401489257812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22290393710136414,
+        "median_depth": 0.2194783091545105,
+        "depth_std": 0.08907275646924973,
+        "depth_min": 0.01932632550597191,
+        "depth_max": 0.39248010516166687,
+        "mask_area": 1824
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. kettle. sponge. container. countertop. cabinet. window. blinds.",
+  "text_prompt": "robot arm. gripper. sink. faucet. kettle. sponge. container. countertop. cabinet. window. blinds.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

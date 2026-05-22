@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "curtain",
+    "workbench",
+    "shelf",
+    "trash can",
+    "wooden board"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: wooden board, trash can, shelf, workbench, curtain",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "curtain",
+        "mean_depth": 0.06288182735443115,
+        "relative_position": "closest",
+        "confidence": 0.8011139631271362
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "workbench",
+        "mean_depth": 0.23254211246967316,
+        "relative_position": "middle",
+        "confidence": 0.4164017140865326
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.7665150165557861,
+        "relative_position": "middle",
+        "confidence": 0.4407789409160614
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "trash can",
+        "mean_depth": 0.7720774412155151,
+        "relative_position": "middle",
+        "confidence": 0.8735045194625854
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "wooden board",
+        "mean_depth": 0.8004055619239807,
+        "relative_position": "farthest",
+        "confidence": 0.37011370062828064
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "wooden board",
+        "mean_depth": 0.8004055619239807,
+        "relative_position": "farthest",
+        "confidence": 0.37011370062828064
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "trash can",
+        "mean_depth": 0.7720774412155151,
+        "relative_position": "middle",
+        "confidence": 0.8735045194625854
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.7665150165557861,
+        "relative_position": "middle",
+        "confidence": 0.4407789409160614
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "workbench",
+        "mean_depth": 0.23254211246967316,
+        "relative_position": "middle",
+        "confidence": 0.4164017140865326
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "curtain",
+        "mean_depth": 0.06288182735443115,
+        "relative_position": "closest",
+        "confidence": 0.8011139631271362
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "curtain",
+      "confidence": 0.8011139631271362,
+      "bounding_box": [
+        0.010223388671875,
+        0.03189849853515625,
+        133.93841552734375,
+        180.02093505859375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06288182735443115,
+        "median_depth": 0.05548769235610962,
+        "depth_std": 0.049220554530620575,
+        "depth_min": 0.0,
+        "depth_max": 0.6761394143104553,
+        "mask_area": 21642
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "workbench",
+      "confidence": 0.4164017140865326,
+      "bounding_box": [
+        250.26522827148438,
+        69.13287353515625,
+        316.0134582519531,
+        179.65225219726562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23254211246967316,
+        "median_depth": 0.214126318693161,
+        "depth_std": 0.0900932177901268,
+        "depth_min": 0.1290147453546524,
+        "depth_max": 0.8304182887077332,
+        "mask_area": 3318
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "shelf",
+      "confidence": 0.4407789409160614,
+      "bounding_box": [
+        111.07154846191406,
+        0.3864593505859375,
+        176.7023162841797,
+        169.5675811767578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7665150165557861,
+        "median_depth": 0.7562718987464905,
+        "depth_std": 0.058174192905426025,
+        "depth_min": 0.6349213123321533,
+        "depth_max": 0.9618978500366211,
+        "mask_area": 7633
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "trash can",
+      "confidence": 0.8735045194625854,
+      "bounding_box": [
+        222.02560424804688,
+        90.93110656738281,
+        253.79891967773438,
+        144.8234405517578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7720774412155151,
+        "median_depth": 0.7721132040023804,
+        "depth_std": 0.062928706407547,
+        "depth_min": 0.4103655219078064,
+        "depth_max": 0.9203461408615112,
+        "mask_area": 1081
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "wooden board",
+      "confidence": 0.37011370062828064,
+      "bounding_box": [
+        185.06094360351562,
+        0.10519027709960938,
+        315.7855529785156,
+        70.07804870605469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8004055619239807,
+        "median_depth": 0.7994778156280518,
+        "depth_std": 0.06740617007017136,
+        "depth_min": 0.6540366411209106,
+        "depth_max": 0.9539901614189148,
+        "mask_area": 6376
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. workbench. shelf. curtain. cable. trash can. clamp. wooden board.",
+  "text_prompt": "table. workbench. shelf. curtain. cable. trash can. clamp. wooden board.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

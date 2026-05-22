@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "stovetop burner",
+    "sink",
+    "faucet",
+    "cutting board",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: faucet, cutting board, stovetop burner, chair, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "stovetop burner",
+        "mean_depth": 0.02284926176071167,
+        "relative_position": "closest",
+        "confidence": 0.544690728187561
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.09183114767074585,
+        "relative_position": "middle",
+        "confidence": 0.6026312112808228
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.10602733492851257,
+        "relative_position": "middle",
+        "confidence": 0.5356162786483765
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cutting board",
+        "mean_depth": 0.12304681539535522,
+        "relative_position": "middle",
+        "confidence": 0.6152305603027344
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.3842995762825012,
+        "relative_position": "farthest",
+        "confidence": 0.3621542453765869
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.3842995762825012,
+        "relative_position": "farthest",
+        "confidence": 0.3621542453765869
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cutting board",
+        "mean_depth": 0.12304681539535522,
+        "relative_position": "middle",
+        "confidence": 0.6152305603027344
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.10602733492851257,
+        "relative_position": "middle",
+        "confidence": 0.5356162786483765
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.09183114767074585,
+        "relative_position": "middle",
+        "confidence": 0.6026312112808228
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "stovetop burner",
+        "mean_depth": 0.02284926176071167,
+        "relative_position": "closest",
+        "confidence": 0.544690728187561
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "stovetop burner",
+      "confidence": 0.544690728187561,
+      "bounding_box": [
+        253.11557006835938,
+        100.50826263427734,
+        315.9413757324219,
+        179.88470458984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02284926176071167,
+        "median_depth": 0.022076930850744247,
+        "depth_std": 0.013740455731749535,
+        "depth_min": 0.0013130756560713053,
+        "depth_max": 0.06011369079351425,
+        "mask_area": 3360
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.6026312112808228,
+      "bounding_box": [
+        167.27561950683594,
+        82.01824188232422,
+        253.46107482910156,
+        134.55152893066406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09183114767074585,
+        "median_depth": 0.0896427184343338,
+        "depth_std": 0.01702132076025009,
+        "depth_min": 0.05623079836368561,
+        "depth_max": 0.12594367563724518,
+        "mask_area": 2471
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "faucet",
+      "confidence": 0.5356162786483765,
+      "bounding_box": [
+        186.85523986816406,
+        48.80668640136719,
+        223.9991912841797,
+        100.63319396972656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10602733492851257,
+        "median_depth": 0.10347208380699158,
+        "depth_std": 0.012707924470305443,
+        "depth_min": 0.09057750552892685,
+        "depth_max": 0.17226850986480713,
+        "mask_area": 945
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cutting board",
+      "confidence": 0.6152305603027344,
+      "bounding_box": [
+        93.98314666748047,
+        76.0461654663086,
+        169.97793579101562,
+        120.6011734008789
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12304681539535522,
+        "median_depth": 0.11549831181764603,
+        "depth_std": 0.03319467976689339,
+        "depth_min": 0.08693802356719971,
+        "depth_max": 0.3406384289264679,
+        "mask_area": 1491
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.3621542453765869,
+      "bounding_box": [
+        22.96481704711914,
+        11.555366516113281,
+        102.95809936523438,
+        102.2987060546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3842995762825012,
+        "median_depth": 0.36814892292022705,
+        "depth_std": 0.05604414641857147,
+        "depth_min": 0.2864883840084076,
+        "depth_max": 0.7943266034126282,
+        "mask_area": 3872
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "plate. sponge. bottle. faucet. sink. countertop. stovetop. burner. knob. chair. cutting board. cabinet. drawer. container. shelf. tool cart. machine tool.",
+  "text_prompt": "plate. sponge. bottle. faucet. sink. countertop. stovetop. burner. knob. chair. cutting board. cabinet. drawer. container. shelf. tool cart. machine tool.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

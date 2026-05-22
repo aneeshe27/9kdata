@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cabinet door",
+    "cup",
+    "cup",
+    "microwave",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, cabinet, cup, microwave, cabinet door",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cabinet door",
+        "mean_depth": 0.4841410517692566,
+        "relative_position": "closest",
+        "confidence": 0.7315452098846436
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.6090888381004333,
+        "relative_position": "middle",
+        "confidence": 0.436893105506897
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.6100672483444214,
+        "relative_position": "middle",
+        "confidence": 0.35684528946876526
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.6219062805175781,
+        "relative_position": "middle",
+        "confidence": 0.8419866561889648
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.772317111492157,
+        "relative_position": "farthest",
+        "confidence": 0.5044613480567932
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.772317111492157,
+        "relative_position": "farthest",
+        "confidence": 0.5044613480567932
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.6219062805175781,
+        "relative_position": "middle",
+        "confidence": 0.8419866561889648
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.6100672483444214,
+        "relative_position": "middle",
+        "confidence": 0.35684528946876526
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.6090888381004333,
+        "relative_position": "middle",
+        "confidence": 0.436893105506897
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cabinet door",
+        "mean_depth": 0.4841410517692566,
+        "relative_position": "closest",
+        "confidence": 0.7315452098846436
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "cabinet door",
+      "confidence": 0.7315452098846436,
+      "bounding_box": [
+        101.63059997558594,
+        0.14288711547851562,
+        172.6485137939453,
+        126.49183654785156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4841410517692566,
+        "median_depth": 0.48342838883399963,
+        "depth_std": 0.07674780488014221,
+        "depth_min": 0.3290964663028717,
+        "depth_max": 0.7463148236274719,
+        "mask_area": 7467
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cup",
+      "confidence": 0.436893105506897,
+      "bounding_box": [
+        191.6859130859375,
+        137.68760681152344,
+        206.40762329101562,
+        157.3006134033203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6090888381004333,
+        "median_depth": 0.6134857535362244,
+        "depth_std": 0.013181564398109913,
+        "depth_min": 0.5743295550346375,
+        "depth_max": 0.6384752988815308,
+        "mask_area": 190
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.35684528946876526,
+      "bounding_box": [
+        208.6840057373047,
+        145.08334350585938,
+        222.43251037597656,
+        159.88699340820312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6100672483444214,
+        "median_depth": 0.6106016039848328,
+        "depth_std": 0.013989402912557125,
+        "depth_min": 0.583279013633728,
+        "depth_max": 0.6381643414497375,
+        "mask_area": 147
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "microwave",
+      "confidence": 0.8419866561889648,
+      "bounding_box": [
+        108.54368591308594,
+        114.66827392578125,
+        169.0928192138672,
+        155.43075561523438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6219062805175781,
+        "median_depth": 0.6272026300430298,
+        "depth_std": 0.027736445888876915,
+        "depth_min": 0.42386865615844727,
+        "depth_max": 0.6688306331634521,
+        "mask_area": 1624
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.5044613480567932,
+      "bounding_box": [
+        168.95237731933594,
+        0.2286224365234375,
+        240.94871520996094,
+        106.61679077148438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.772317111492157,
+        "median_depth": 0.7876509428024292,
+        "depth_std": 0.04762449488043785,
+        "depth_min": 0.15153588354587555,
+        "depth_max": 0.8922366499900818,
+        "mask_area": 5555
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. cabinet door. microwave. cup. bowl. plate. sink. countertop. towel. sponge. glove.",
+  "text_prompt": "robot arm. gripper. cabinet. cabinet door. microwave. cup. bowl. plate. sink. countertop. towel. sponge. glove.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

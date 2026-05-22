@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cardboard box",
+    "robot arm",
+    "sink",
+    "faucet",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, window, cardboard box, robot arm, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.10872875154018402,
+        "relative_position": "closest",
+        "confidence": 0.8945120573043823
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.626086413860321,
+        "relative_position": "middle",
+        "confidence": 0.48793116211891174
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.6278948187828064,
+        "relative_position": "middle",
+        "confidence": 0.7817956805229187
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.6499579548835754,
+        "relative_position": "middle",
+        "confidence": 0.892683744430542
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.7595422267913818,
+        "relative_position": "farthest",
+        "confidence": 0.627056360244751
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.7595422267913818,
+        "relative_position": "farthest",
+        "confidence": 0.627056360244751
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.6499579548835754,
+        "relative_position": "middle",
+        "confidence": 0.892683744430542
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.6278948187828064,
+        "relative_position": "middle",
+        "confidence": 0.7817956805229187
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.626086413860321,
+        "relative_position": "middle",
+        "confidence": 0.48793116211891174
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.10872875154018402,
+        "relative_position": "closest",
+        "confidence": 0.8945120573043823
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "cardboard box",
+      "confidence": 0.8945120573043823,
+      "bounding_box": [
+        0.0363006591796875,
+        -0.044147491455078125,
+        130.1658477783203,
+        123.13810729980469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10872875154018402,
+        "median_depth": 0.07907602190971375,
+        "depth_std": 0.10033952444791794,
+        "depth_min": 0.00016805456834845245,
+        "depth_max": 0.7180498242378235,
+        "mask_area": 12106
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.48793116211891174,
+      "bounding_box": [
+        230.7939453125,
+        14.53860855102539,
+        316.0325927734375,
+        63.350589752197266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.626086413860321,
+        "median_depth": 0.6041330695152283,
+        "depth_std": 0.07228390127420425,
+        "depth_min": 0.557725727558136,
+        "depth_max": 0.967919647693634,
+        "mask_area": 1589
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "sink",
+      "confidence": 0.7817956805229187,
+      "bounding_box": [
+        130.88348388671875,
+        79.52425384521484,
+        267.3926086425781,
+        109.09198760986328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6278948187828064,
+        "median_depth": 0.6299307346343994,
+        "depth_std": 0.0490327924489975,
+        "depth_min": 0.44285848736763,
+        "depth_max": 0.73639976978302,
+        "mask_area": 2596
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.892683744430542,
+      "bounding_box": [
+        175.2846221923828,
+        23.098796844482422,
+        201.96446228027344,
+        80.31224060058594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6499579548835754,
+        "median_depth": 0.6684738397598267,
+        "depth_std": 0.09753014892339706,
+        "depth_min": 0.49004822969436646,
+        "depth_max": 0.8633278012275696,
+        "mask_area": 550
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "window",
+      "confidence": 0.627056360244751,
+      "bounding_box": [
+        79.0912094116211,
+        0.03148841857910156,
+        288.9371032714844,
+        42.98419189453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7595422267913818,
+        "median_depth": 0.756340742111206,
+        "depth_std": 0.06212131306529045,
+        "depth_min": 0.6473854184150696,
+        "depth_max": 0.9881753325462341,
+        "mask_area": 1670
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cardboard box. sink. faucet. countertop. robot arm. gripper. plastic container. soap dispenser. plant. window. cabinet. drawer.",
+  "text_prompt": "cardboard box. sink. faucet. countertop. robot arm. gripper. plastic container. soap dispenser. plant. window. cabinet. drawer.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

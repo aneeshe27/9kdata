@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot gripper",
+    "bin",
+    "plastic container cup",
+    "plastic container tissue box",
+    "monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: plastic container cup, robot gripper, plastic container tissue box, bin, monitor",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot gripper",
+        "mean_depth": 0.029496541246771812,
+        "relative_position": "closest",
+        "confidence": 0.4151748716831207
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "bin",
+        "mean_depth": 0.030887817963957787,
+        "relative_position": "middle",
+        "confidence": 0.4122677445411682
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "plastic container cup",
+        "mean_depth": 0.04120892658829689,
+        "relative_position": "middle",
+        "confidence": 0.3593007028102875
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "plastic container tissue box",
+        "mean_depth": 0.13727019727230072,
+        "relative_position": "middle",
+        "confidence": 0.39085185527801514
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.3038949966430664,
+        "relative_position": "farthest",
+        "confidence": 0.7407807111740112
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.3038949966430664,
+        "relative_position": "farthest",
+        "confidence": 0.7407807111740112
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "plastic container tissue box",
+        "mean_depth": 0.13727019727230072,
+        "relative_position": "middle",
+        "confidence": 0.39085185527801514
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "plastic container cup",
+        "mean_depth": 0.04120892658829689,
+        "relative_position": "middle",
+        "confidence": 0.3593007028102875
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "bin",
+        "mean_depth": 0.030887817963957787,
+        "relative_position": "middle",
+        "confidence": 0.4122677445411682
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot gripper",
+        "mean_depth": 0.029496541246771812,
+        "relative_position": "closest",
+        "confidence": 0.4151748716831207
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot gripper",
+      "confidence": 0.4151748716831207,
+      "bounding_box": [
+        202.99867248535156,
+        -0.019014358520507812,
+        256.2212829589844,
+        35.611976623535156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.029496541246771812,
+        "median_depth": 0.026729509234428406,
+        "depth_std": 0.009553717449307442,
+        "depth_min": 0.018472395837306976,
+        "depth_max": 0.1052245944738388,
+        "mask_area": 947
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "bin",
+      "confidence": 0.4122677445411682,
+      "bounding_box": [
+        289.2252502441406,
+        94.40025329589844,
+        315.9636535644531,
+        137.9337615966797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.030887817963957787,
+        "median_depth": 0.029330607503652573,
+        "depth_std": 0.010337736457586288,
+        "depth_min": 0.01517192367464304,
+        "depth_max": 0.09774758666753769,
+        "mask_area": 724
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "plastic container cup",
+      "confidence": 0.3593007028102875,
+      "bounding_box": [
+        158.01698303222656,
+        68.24776458740234,
+        198.59214782714844,
+        89.7221450805664
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04120892658829689,
+        "median_depth": 0.039040837436914444,
+        "depth_std": 0.007740348111838102,
+        "depth_min": 0.036349255591630936,
+        "depth_max": 0.12567797303199768,
+        "mask_area": 615
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "plastic container tissue box",
+      "confidence": 0.39085185527801514,
+      "bounding_box": [
+        65.42870330810547,
+        108.0689697265625,
+        100.91374969482422,
+        130.0580596923828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13727019727230072,
+        "median_depth": 0.1279299259185791,
+        "depth_std": 0.01991691067814827,
+        "depth_min": 0.1084294468164444,
+        "depth_max": 0.18468621373176575,
+        "mask_area": 471
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "monitor",
+      "confidence": 0.7407807111740112,
+      "bounding_box": [
+        32.315914154052734,
+        81.64485931396484,
+        73.133544921875,
+        111.2553482055664
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3038949966430664,
+        "median_depth": 0.298222154378891,
+        "depth_std": 0.040552664548158646,
+        "depth_min": 0.2574048638343811,
+        "depth_max": 0.860079824924469,
+        "mask_area": 845
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "plastic container. storage bin. tissue box. robot gripper. shelf. cart. monitor. desk. chair. cup. person. window. light.",
+  "text_prompt": "plastic container. storage bin. tissue box. robot gripper. shelf. cart. monitor. desk. chair. cup. person. window. light.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

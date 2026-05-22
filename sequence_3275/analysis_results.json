@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "stove",
+    "robot arm",
+    "container",
+    "faucet",
+    "rubber gloves"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: faucet, rubber gloves, stove, robot arm, container",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "stove",
+        "mean_depth": 0.3499777615070343,
+        "relative_position": "closest",
+        "confidence": 0.7910043001174927
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.3662603795528412,
+        "relative_position": "middle",
+        "confidence": 0.4687095880508423
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.4622337818145752,
+        "relative_position": "middle",
+        "confidence": 0.545630693435669
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.5529451966285706,
+        "relative_position": "middle",
+        "confidence": 0.4521995782852173
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "rubber gloves",
+        "mean_depth": 0.563969612121582,
+        "relative_position": "farthest",
+        "confidence": 0.699016273021698
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "rubber gloves",
+        "mean_depth": 0.563969612121582,
+        "relative_position": "farthest",
+        "confidence": 0.699016273021698
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.5529451966285706,
+        "relative_position": "middle",
+        "confidence": 0.4521995782852173
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.4622337818145752,
+        "relative_position": "middle",
+        "confidence": 0.545630693435669
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.3662603795528412,
+        "relative_position": "middle",
+        "confidence": 0.4687095880508423
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "stove",
+        "mean_depth": 0.3499777615070343,
+        "relative_position": "closest",
+        "confidence": 0.7910043001174927
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "stove",
+      "confidence": 0.7910043001174927,
+      "bounding_box": [
+        225.38455200195312,
+        120.68917846679688,
+        315.9764099121094,
+        179.95468139648438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3499777615070343,
+        "median_depth": 0.3455345928668976,
+        "depth_std": 0.06569480895996094,
+        "depth_min": 0.2380344122648239,
+        "depth_max": 0.4957074820995331,
+        "mask_area": 4575
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.4687095880508423,
+      "bounding_box": [
+        31.490245819091797,
+        125.62657928466797,
+        86.9117431640625,
+        177.32382202148438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3662603795528412,
+        "median_depth": 0.3506583571434021,
+        "depth_std": 0.06614185869693756,
+        "depth_min": 0.27195972204208374,
+        "depth_max": 0.5208507776260376,
+        "mask_area": 913
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "container",
+      "confidence": 0.545630693435669,
+      "bounding_box": [
+        228.01022338867188,
+        80.36932373046875,
+        315.8977355957031,
+        123.54763793945312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4622337818145752,
+        "median_depth": 0.4622862935066223,
+        "depth_std": 0.02174420654773712,
+        "depth_min": 0.42174437642097473,
+        "depth_max": 0.5091956257820129,
+        "mask_area": 2542
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "faucet",
+      "confidence": 0.4521995782852173,
+      "bounding_box": [
+        157.50157165527344,
+        74.87425994873047,
+        187.05638122558594,
+        124.93177032470703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5529451966285706,
+        "median_depth": 0.5525740385055542,
+        "depth_std": 0.008699247613549232,
+        "depth_min": 0.5329713225364685,
+        "depth_max": 0.5662878155708313,
+        "mask_area": 442
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "rubber gloves",
+      "confidence": 0.699016273021698,
+      "bounding_box": [
+        64.30704498291016,
+        102.05589294433594,
+        114.22528839111328,
+        129.5279998779297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.563969612121582,
+        "median_depth": 0.5632701516151428,
+        "depth_std": 0.02133665792644024,
+        "depth_min": 0.5073445439338684,
+        "depth_max": 0.6021239757537842,
+        "mask_area": 663
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. sink. faucet. cutting board. rubber gloves. stove. clamp. container. chair. table. countertop.",
+  "text_prompt": "robot arm. sink. faucet. cutting board. rubber gloves. stove. clamp. container. chair. table. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

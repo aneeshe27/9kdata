@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "chair",
+    "robot arm gripper",
+    "bottle",
+    "dresser",
+    "picture frame"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: picture frame, chair, dresser, bottle, robot arm gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.08370405435562134,
+        "relative_position": "closest",
+        "confidence": 0.6044336557388306
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.12054011970758438,
+        "relative_position": "middle",
+        "confidence": 0.400410920381546
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.16325703263282776,
+        "relative_position": "middle",
+        "confidence": 0.6934259533882141
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "dresser",
+        "mean_depth": 0.30681586265563965,
+        "relative_position": "middle",
+        "confidence": 0.4886285066604614
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "picture frame",
+        "mean_depth": 0.6989844441413879,
+        "relative_position": "farthest",
+        "confidence": 0.8927696347236633
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "picture frame",
+        "mean_depth": 0.6989844441413879,
+        "relative_position": "farthest",
+        "confidence": 0.8927696347236633
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "dresser",
+        "mean_depth": 0.30681586265563965,
+        "relative_position": "middle",
+        "confidence": 0.4886285066604614
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.16325703263282776,
+        "relative_position": "middle",
+        "confidence": 0.6934259533882141
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.12054011970758438,
+        "relative_position": "middle",
+        "confidence": 0.400410920381546
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.08370405435562134,
+        "relative_position": "closest",
+        "confidence": 0.6044336557388306
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.6044336557388306,
+      "bounding_box": [
+        58.972206115722656,
+        79.121337890625,
+        118.36408233642578,
+        179.76824951171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08370405435562134,
+        "median_depth": 0.05781882628798485,
+        "depth_std": 0.06901968270540237,
+        "depth_min": 0.02950248308479786,
+        "depth_max": 0.590136706829071,
+        "mask_area": 2894
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.400410920381546,
+      "bounding_box": [
+        168.9807586669922,
+        0.059490203857421875,
+        315.7694091796875,
+        103.74406433105469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12054011970758438,
+        "median_depth": 0.059485167264938354,
+        "depth_std": 0.14001448452472687,
+        "depth_min": 0.031557533890008926,
+        "depth_max": 0.9369508624076843,
+        "mask_area": 6199
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.6934259533882141,
+      "bounding_box": [
+        166.1881866455078,
+        112.76799774169922,
+        188.75413513183594,
+        169.10694885253906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16325703263282776,
+        "median_depth": 0.15029072761535645,
+        "depth_std": 0.054031189531087875,
+        "depth_min": 0.12873199582099915,
+        "depth_max": 0.42763039469718933,
+        "mask_area": 933
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "dresser",
+      "confidence": 0.4886285066604614,
+      "bounding_box": [
+        186.49005126953125,
+        114.45474243164062,
+        301.814697265625,
+        179.50936889648438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30681586265563965,
+        "median_depth": 0.3029877245426178,
+        "depth_std": 0.03819893300533295,
+        "depth_min": 0.1627349853515625,
+        "depth_max": 0.6034451127052307,
+        "mask_area": 3632
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "picture frame",
+      "confidence": 0.8927696347236633,
+      "bounding_box": [
+        150.5476837158203,
+        25.647523880004883,
+        178.4856414794922,
+        72.27909088134766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6989844441413879,
+        "median_depth": 0.697628915309906,
+        "depth_std": 0.016890183091163635,
+        "depth_min": 0.6576849818229675,
+        "depth_max": 0.7344675064086914,
+        "mask_area": 1019
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. bottle. chair. table. bed. pillow. blanket. dresser. camera. picture frame. towel.",
+  "text_prompt": "robot arm. gripper. bottle. chair. table. bed. pillow. blanket. dresser. camera. picture frame. towel.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

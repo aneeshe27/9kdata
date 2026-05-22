@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "plastic pouch",
+    "monitor",
+    "block",
+    "shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: block, plastic pouch, robot arm, shelf, monitor",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.04780776426196098,
+        "relative_position": "closest",
+        "confidence": 0.4011712968349457
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "plastic pouch",
+        "mean_depth": 0.2773606479167938,
+        "relative_position": "middle",
+        "confidence": 0.596120297908783
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "monitor",
+        "mean_depth": 0.3795604407787323,
+        "relative_position": "middle",
+        "confidence": 0.38803115487098694
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "block",
+        "mean_depth": 0.42345547676086426,
+        "relative_position": "middle",
+        "confidence": 0.48489880561828613
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "shelf",
+        "mean_depth": 0.9420368671417236,
+        "relative_position": "farthest",
+        "confidence": 0.36152026057243347
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "shelf",
+        "mean_depth": 0.9420368671417236,
+        "relative_position": "farthest",
+        "confidence": 0.36152026057243347
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "block",
+        "mean_depth": 0.42345547676086426,
+        "relative_position": "middle",
+        "confidence": 0.48489880561828613
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "monitor",
+        "mean_depth": 0.3795604407787323,
+        "relative_position": "middle",
+        "confidence": 0.38803115487098694
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "plastic pouch",
+        "mean_depth": 0.2773606479167938,
+        "relative_position": "middle",
+        "confidence": 0.596120297908783
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.04780776426196098,
+        "relative_position": "closest",
+        "confidence": 0.4011712968349457
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4011712968349457,
+      "bounding_box": [
+        206.41905212402344,
+        3.1599082946777344,
+        315.9842224121094,
+        117.83697509765625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04780776426196098,
+        "median_depth": 0.029547935351729393,
+        "depth_std": 0.06595306098461151,
+        "depth_min": 0.0,
+        "depth_max": 0.40542522072792053,
+        "mask_area": 5634
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "plastic pouch",
+      "confidence": 0.596120297908783,
+      "bounding_box": [
+        46.567893981933594,
+        144.36175537109375,
+        120.86783599853516,
+        179.95413208007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2773606479167938,
+        "median_depth": 0.2720859944820404,
+        "depth_std": 0.039205458015203476,
+        "depth_min": 0.2137712836265564,
+        "depth_max": 0.40481361746788025,
+        "mask_area": 1761
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "monitor",
+      "confidence": 0.38803115487098694,
+      "bounding_box": [
+        0.08466339111328125,
+        0.1371002197265625,
+        116.45997619628906,
+        142.42214965820312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3795604407787323,
+        "median_depth": 0.37041306495666504,
+        "depth_std": 0.05351416394114494,
+        "depth_min": 0.2959030270576477,
+        "depth_max": 0.5224921107292175,
+        "mask_area": 11730
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "block",
+      "confidence": 0.48489880561828613,
+      "bounding_box": [
+        158.05032348632812,
+        130.94894409179688,
+        194.9200439453125,
+        165.4765625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.42345547676086426,
+        "median_depth": 0.4242350161075592,
+        "depth_std": 0.027490414679050446,
+        "depth_min": 0.36045634746551514,
+        "depth_max": 0.47187814116477966,
+        "mask_area": 561
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "shelf",
+      "confidence": 0.36152026057243347,
+      "bounding_box": [
+        110.97550201416016,
+        0.042209625244140625,
+        155.80636596679688,
+        96.24061584472656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9420368671417236,
+        "median_depth": 0.9620571136474609,
+        "depth_std": 0.06056541949510574,
+        "depth_min": 0.6546224355697632,
+        "depth_max": 1.0,
+        "mask_area": 2957
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. monitor. table. shelf. power outlet. hat. cloth. plastic pouch. tray. block. cable.",
+  "text_prompt": "robot arm. gripper. monitor. table. shelf. power outlet. hat. cloth. plastic pouch. tray. block. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

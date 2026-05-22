@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "chair",
+    "power cord",
+    "towel",
+    "bottle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: towel, power cord, bottle, robot arm, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.05321309342980385,
+        "relative_position": "closest",
+        "confidence": 0.3686102628707886
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.1322127729654312,
+        "relative_position": "middle",
+        "confidence": 0.5415189266204834
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "power cord",
+        "mean_depth": 0.13821978867053986,
+        "relative_position": "middle",
+        "confidence": 0.45885464549064636
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "towel",
+        "mean_depth": 0.17171384394168854,
+        "relative_position": "middle",
+        "confidence": 0.6421321630477905
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "bottle",
+        "mean_depth": 0.2600984275341034,
+        "relative_position": "farthest",
+        "confidence": 0.6500791311264038
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "bottle",
+        "mean_depth": 0.2600984275341034,
+        "relative_position": "farthest",
+        "confidence": 0.6500791311264038
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "towel",
+        "mean_depth": 0.17171384394168854,
+        "relative_position": "middle",
+        "confidence": 0.6421321630477905
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "power cord",
+        "mean_depth": 0.13821978867053986,
+        "relative_position": "middle",
+        "confidence": 0.45885464549064636
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.1322127729654312,
+        "relative_position": "middle",
+        "confidence": 0.5415189266204834
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.05321309342980385,
+        "relative_position": "closest",
+        "confidence": 0.3686102628707886
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3686102628707886,
+      "bounding_box": [
+        0.029636383056640625,
+        0.334686279296875,
+        119.57768249511719,
+        174.59669494628906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05321309342980385,
+        "median_depth": 0.024481775239109993,
+        "depth_std": 0.09351416677236557,
+        "depth_min": 0.0036179523449391127,
+        "depth_max": 0.8788102269172668,
+        "mask_area": 6663
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.5415189266204834,
+      "bounding_box": [
+        181.39468383789062,
+        138.91749572753906,
+        315.9656066894531,
+        179.9077606201172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1322127729654312,
+        "median_depth": 0.13146314024925232,
+        "depth_std": 0.015191148966550827,
+        "depth_min": 0.07819722592830658,
+        "depth_max": 0.17224040627479553,
+        "mask_area": 2982
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "power cord",
+      "confidence": 0.45885464549064636,
+      "bounding_box": [
+        218.6910400390625,
+        55.75421905517578,
+        303.4224853515625,
+        157.14447021484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13821978867053986,
+        "median_depth": 0.1329401731491089,
+        "depth_std": 0.023061400279402733,
+        "depth_min": 0.10793965309858322,
+        "depth_max": 0.21227402985095978,
+        "mask_area": 667
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "towel",
+      "confidence": 0.6421321630477905,
+      "bounding_box": [
+        236.96270751953125,
+        19.620317459106445,
+        306.71319580078125,
+        59.299720764160156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17171384394168854,
+        "median_depth": 0.16843479871749878,
+        "depth_std": 0.024049825966358185,
+        "depth_min": 0.13598331809043884,
+        "depth_max": 0.25660672783851624,
+        "mask_area": 1906
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bottle",
+      "confidence": 0.6500791311264038,
+      "bounding_box": [
+        201.94825744628906,
+        23.95958709716797,
+        219.8362274169922,
+        63.980934143066406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2600984275341034,
+        "median_depth": 0.2520264685153961,
+        "depth_std": 0.04426772892475128,
+        "depth_min": 0.1904531866312027,
+        "depth_max": 0.48793983459472656,
+        "mask_area": 376
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. toaster. bottle. towel. cup. table. chair. power cord. cart.",
+  "text_prompt": "robot arm. gripper. toaster. bottle. towel. cup. table. chair. power cord. cart.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

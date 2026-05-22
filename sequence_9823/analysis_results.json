@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table track",
+    "table",
+    "computer monitor",
+    "computer monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: computer monitor, table, table track, robot arm, computer monitor",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.02420106902718544,
+        "relative_position": "closest",
+        "confidence": 0.45361030101776123
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table track",
+        "mean_depth": 0.2346201390028,
+        "relative_position": "middle",
+        "confidence": 0.4881143271923065
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.5463319420814514,
+        "relative_position": "middle",
+        "confidence": 0.41616639494895935
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "computer monitor",
+        "mean_depth": 0.805865466594696,
+        "relative_position": "middle",
+        "confidence": 0.4469192326068878
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "computer monitor",
+        "mean_depth": 0.8371678590774536,
+        "relative_position": "farthest",
+        "confidence": 0.3807726800441742
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "computer monitor",
+        "mean_depth": 0.8371678590774536,
+        "relative_position": "farthest",
+        "confidence": 0.3807726800441742
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "computer monitor",
+        "mean_depth": 0.805865466594696,
+        "relative_position": "middle",
+        "confidence": 0.4469192326068878
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.5463319420814514,
+        "relative_position": "middle",
+        "confidence": 0.41616639494895935
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table track",
+        "mean_depth": 0.2346201390028,
+        "relative_position": "middle",
+        "confidence": 0.4881143271923065
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.02420106902718544,
+        "relative_position": "closest",
+        "confidence": 0.45361030101776123
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.45361030101776123,
+      "bounding_box": [
+        128.2335205078125,
+        0.14918136596679688,
+        315.9320983886719,
+        122.07553100585938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02420106902718544,
+        "median_depth": 0.023580502718687057,
+        "depth_std": 0.02577447146177292,
+        "depth_min": 0.0,
+        "depth_max": 0.3933286666870117,
+        "mask_area": 8439
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table track",
+      "confidence": 0.4881143271923065,
+      "bounding_box": [
+        103.6152572631836,
+        103.90873718261719,
+        285.6449279785156,
+        180.01795959472656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2346201390028,
+        "median_depth": 0.22685270011425018,
+        "depth_std": 0.05184304341673851,
+        "depth_min": 0.1546560376882553,
+        "depth_max": 0.6116345524787903,
+        "mask_area": 5361
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "table",
+      "confidence": 0.41616639494895935,
+      "bounding_box": [
+        -0.007731437683105469,
+        94.78474426269531,
+        28.48497772216797,
+        158.1109619140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5463319420814514,
+        "median_depth": 0.5193767547607422,
+        "depth_std": 0.07289208471775055,
+        "depth_min": 0.4583006203174591,
+        "depth_max": 0.8213464021682739,
+        "mask_area": 763
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "computer monitor",
+      "confidence": 0.4469192326068878,
+      "bounding_box": [
+        69.84512329101562,
+        63.11262893676758,
+        99.20051574707031,
+        75.3876953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.805865466594696,
+        "median_depth": 0.8065008521080017,
+        "depth_std": 0.06096271052956581,
+        "depth_min": 0.1648862212896347,
+        "depth_max": 0.8747945427894592,
+        "mask_area": 221
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "computer monitor",
+      "confidence": 0.3807726800441742,
+      "bounding_box": [
+        0.01456451416015625,
+        65.77336120605469,
+        29.521583557128906,
+        86.34375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8371678590774536,
+        "median_depth": 0.8384092450141907,
+        "depth_std": 0.01461324468255043,
+        "depth_min": 0.7898435592651367,
+        "depth_max": 0.8581905364990234,
+        "mask_area": 509
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. computer monitor. keyboard. mouse. chair. cabinet. papers. notebook. ruler. blocks. curved track.",
+  "text_prompt": "robot arm. gripper. table. computer monitor. keyboard. mouse. chair. cabinet. papers. notebook. ruler. blocks. curved track.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

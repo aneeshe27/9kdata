@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "napkins",
+    "robot arm",
+    "bowl",
+    "chair",
+    "whiteboard"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: napkins, robot arm, whiteboard, chair, bowl",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "napkins",
+        "mean_depth": 0.0575132891535759,
+        "relative_position": "closest",
+        "confidence": 0.39223626255989075
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.08596397936344147,
+        "relative_position": "middle",
+        "confidence": 0.409313827753067
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.15604254603385925,
+        "relative_position": "middle",
+        "confidence": 0.6418667435646057
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.24319475889205933,
+        "relative_position": "middle",
+        "confidence": 0.4210321605205536
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "whiteboard",
+        "mean_depth": 0.37050721049308777,
+        "relative_position": "farthest",
+        "confidence": 0.7475109696388245
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "whiteboard",
+        "mean_depth": 0.37050721049308777,
+        "relative_position": "farthest",
+        "confidence": 0.7475109696388245
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.24319475889205933,
+        "relative_position": "middle",
+        "confidence": 0.4210321605205536
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.15604254603385925,
+        "relative_position": "middle",
+        "confidence": 0.6418667435646057
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.08596397936344147,
+        "relative_position": "middle",
+        "confidence": 0.409313827753067
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "napkins",
+        "mean_depth": 0.0575132891535759,
+        "relative_position": "closest",
+        "confidence": 0.39223626255989075
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "napkins",
+      "confidence": 0.39223626255989075,
+      "bounding_box": [
+        200.13641357421875,
+        141.6526336669922,
+        263.324462890625,
+        179.6938934326172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0575132891535759,
+        "median_depth": 0.0500187985599041,
+        "depth_std": 0.040072374045848846,
+        "depth_min": 0.018289877101778984,
+        "depth_max": 0.353804349899292,
+        "mask_area": 1551
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.409313827753067,
+      "bounding_box": [
+        55.7545280456543,
+        0.025177001953125,
+        144.49559020996094,
+        74.45291137695312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08596397936344147,
+        "median_depth": 0.0013706082245334983,
+        "depth_std": 0.17927105724811554,
+        "depth_min": 0.0,
+        "depth_max": 0.9671038389205933,
+        "mask_area": 2205
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bowl",
+      "confidence": 0.6418667435646057,
+      "bounding_box": [
+        172.53802490234375,
+        118.26419067382812,
+        196.44564819335938,
+        132.86569213867188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15604254603385925,
+        "median_depth": 0.11910426616668701,
+        "depth_std": 0.10117651522159576,
+        "depth_min": 0.1034371629357338,
+        "depth_max": 0.5459103584289551,
+        "mask_area": 198
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.4210321605205536,
+      "bounding_box": [
+        286.3710632324219,
+        131.47459411621094,
+        315.9360046386719,
+        179.9147491455078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24319475889205933,
+        "median_depth": 0.24575383961200714,
+        "depth_std": 0.024881437420845032,
+        "depth_min": 0.1698339879512787,
+        "depth_max": 0.2837902903556824,
+        "mask_area": 1213
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "whiteboard",
+      "confidence": 0.7475109696388245,
+      "bounding_box": [
+        191.7847137451172,
+        0.349761962890625,
+        315.86712646484375,
+        139.07089233398438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.37050721049308777,
+        "median_depth": 0.35638946294784546,
+        "depth_std": 0.08982942998409271,
+        "depth_min": 0.23328238725662231,
+        "depth_max": 0.5794796347618103,
+        "mask_area": 15213
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. tablecloth. bowl. container. napkins. whiteboard. chair. door. window. poster.",
+  "text_prompt": "robot arm. gripper. table. tablecloth. bowl. container. napkins. whiteboard. chair. door. window. poster.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

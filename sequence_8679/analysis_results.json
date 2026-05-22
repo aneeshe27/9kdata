@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "cables",
+    "countertop",
+    "cardboard box",
+    "trash bin"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: countertop, trash bin, cardboard box, cloth, cables",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.21279311180114746,
+        "relative_position": "closest",
+        "confidence": 0.3716196119785309
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cables",
+        "mean_depth": 0.4321688115596771,
+        "relative_position": "middle",
+        "confidence": 0.3631863594055176
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.5470204949378967,
+        "relative_position": "middle",
+        "confidence": 0.4630206525325775
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.6190856695175171,
+        "relative_position": "middle",
+        "confidence": 0.6986470818519592
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "trash bin",
+        "mean_depth": 0.6540594696998596,
+        "relative_position": "farthest",
+        "confidence": 0.7486936450004578
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "trash bin",
+        "mean_depth": 0.6540594696998596,
+        "relative_position": "farthest",
+        "confidence": 0.7486936450004578
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.6190856695175171,
+        "relative_position": "middle",
+        "confidence": 0.6986470818519592
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.5470204949378967,
+        "relative_position": "middle",
+        "confidence": 0.4630206525325775
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cables",
+        "mean_depth": 0.4321688115596771,
+        "relative_position": "middle",
+        "confidence": 0.3631863594055176
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.21279311180114746,
+        "relative_position": "closest",
+        "confidence": 0.3716196119785309
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cloth",
+      "confidence": 0.3716196119785309,
+      "bounding_box": [
+        119.95451354980469,
+        96.15921020507812,
+        151.5868377685547,
+        134.89398193359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21279311180114746,
+        "median_depth": 0.2030680924654007,
+        "depth_std": 0.06228805333375931,
+        "depth_min": 0.13378635048866272,
+        "depth_max": 0.541947066783905,
+        "mask_area": 683
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cables",
+      "confidence": 0.3631863594055176,
+      "bounding_box": [
+        0.10531997680664062,
+        107.31647491455078,
+        112.28874206542969,
+        145.1949920654297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4321688115596771,
+        "median_depth": 0.4321993589401245,
+        "depth_std": 0.03234134614467621,
+        "depth_min": 0.3530675172805786,
+        "depth_max": 0.5152192115783691,
+        "mask_area": 1426
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "countertop",
+      "confidence": 0.4630206525325775,
+      "bounding_box": [
+        175.09063720703125,
+        29.922800064086914,
+        315.77081298828125,
+        49.49280548095703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5470204949378967,
+        "median_depth": 0.5565755367279053,
+        "depth_std": 0.10264449566602707,
+        "depth_min": 0.28380805253982544,
+        "depth_max": 0.809227466583252,
+        "mask_area": 718
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cardboard box",
+      "confidence": 0.6986470818519592,
+      "bounding_box": [
+        102.49471282958984,
+        57.35614776611328,
+        119.28108978271484,
+        70.15319061279297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6190856695175171,
+        "median_depth": 0.6157094836235046,
+        "depth_std": 0.013469879515469074,
+        "depth_min": 0.6027466654777527,
+        "depth_max": 0.6620693802833557,
+        "mask_area": 153
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "trash bin",
+      "confidence": 0.7486936450004578,
+      "bounding_box": [
+        149.3728790283203,
+        34.27766036987305,
+        176.48011779785156,
+        75.18911743164062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6540594696998596,
+        "median_depth": 0.6589331030845642,
+        "depth_std": 0.053599223494529724,
+        "depth_min": 0.190829798579216,
+        "depth_max": 0.6988980174064636,
+        "mask_area": 771
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "chair. cloth. robot arm. gripper. clamp. table. cabinet. countertop. cardboard box. trash bin. cables.",
+  "text_prompt": "chair. cloth. robot arm. gripper. clamp. table. cabinet. countertop. cardboard box. trash bin. cables.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

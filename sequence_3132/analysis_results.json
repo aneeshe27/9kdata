@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "fixture plate",
+    "robot arm gripper",
+    "box",
+    "chair",
+    "monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: box, chair, fixture plate, monitor, robot arm gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "fixture plate",
+        "mean_depth": 0.01707012765109539,
+        "relative_position": "closest",
+        "confidence": 0.6717716455459595
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.10390952229499817,
+        "relative_position": "middle",
+        "confidence": 0.43199992179870605
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "box",
+        "mean_depth": 0.25122910737991333,
+        "relative_position": "middle",
+        "confidence": 0.45355820655822754
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.2905353605747223,
+        "relative_position": "middle",
+        "confidence": 0.39749178290367126
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.42312192916870117,
+        "relative_position": "farthest",
+        "confidence": 0.523067057132721
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.42312192916870117,
+        "relative_position": "farthest",
+        "confidence": 0.523067057132721
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.2905353605747223,
+        "relative_position": "middle",
+        "confidence": 0.39749178290367126
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "box",
+        "mean_depth": 0.25122910737991333,
+        "relative_position": "middle",
+        "confidence": 0.45355820655822754
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.10390952229499817,
+        "relative_position": "middle",
+        "confidence": 0.43199992179870605
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "fixture plate",
+        "mean_depth": 0.01707012765109539,
+        "relative_position": "closest",
+        "confidence": 0.6717716455459595
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "fixture plate",
+      "confidence": 0.6717716455459595,
+      "bounding_box": [
+        0.06048583984375,
+        121.91035461425781,
+        51.22846603393555,
+        179.8687286376953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01707012765109539,
+        "median_depth": 0.01759476214647293,
+        "depth_std": 0.006005687639117241,
+        "depth_min": 0.005215251352638006,
+        "depth_max": 0.029317062348127365,
+        "mask_area": 1953
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm gripper",
+      "confidence": 0.43199992179870605,
+      "bounding_box": [
+        269.8374328613281,
+        102.28024291992188,
+        305.2638854980469,
+        127.44497680664062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10390952229499817,
+        "median_depth": 0.08538469672203064,
+        "depth_std": 0.0415496900677681,
+        "depth_min": 0.07243663817644119,
+        "depth_max": 0.22462594509124756,
+        "mask_area": 303
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "box",
+      "confidence": 0.45355820655822754,
+      "bounding_box": [
+        270.5059509277344,
+        77.11599731445312,
+        315.9693298339844,
+        113.82859802246094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.25122910737991333,
+        "median_depth": 0.24951840937137604,
+        "depth_std": 0.023898854851722717,
+        "depth_min": 0.10692177712917328,
+        "depth_max": 0.3074999749660492,
+        "mask_area": 1053
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.39749178290367126,
+      "bounding_box": [
+        198.274169921875,
+        23.727874755859375,
+        240.42062377929688,
+        62.768394470214844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2905353605747223,
+        "median_depth": 0.2883363366127014,
+        "depth_std": 0.10543272644281387,
+        "depth_min": 0.11042968183755875,
+        "depth_max": 0.7698510885238647,
+        "mask_area": 966
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "monitor",
+      "confidence": 0.523067057132721,
+      "bounding_box": [
+        228.70802307128906,
+        0.007862091064453125,
+        265.51708984375,
+        27.774803161621094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.42312192916870117,
+        "median_depth": 0.42284220457077026,
+        "depth_std": 0.023739580065011978,
+        "depth_min": 0.386605829000473,
+        "depth_max": 0.738658607006073,
+        "mask_area": 863
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. monitor. chair. box. fixture plate. mount.",
+  "text_prompt": "table. robot arm. gripper. monitor. chair. box. fixture plate. mount.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

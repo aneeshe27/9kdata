@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bottle",
+    "robot arm",
+    "sink",
+    "cup",
+    "cutting board"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bottle, sink, robot arm, cutting board, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "bottle",
+        "mean_depth": 0.049640052020549774,
+        "relative_position": "closest",
+        "confidence": 0.35781559348106384
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.06284438073635101,
+        "relative_position": "middle",
+        "confidence": 0.579960286617279
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.0935092568397522,
+        "relative_position": "middle",
+        "confidence": 0.5319385528564453
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.16070431470870972,
+        "relative_position": "middle",
+        "confidence": 0.45458653569221497
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cutting board",
+        "mean_depth": 0.2279854118824005,
+        "relative_position": "farthest",
+        "confidence": 0.386037677526474
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cutting board",
+        "mean_depth": 0.2279854118824005,
+        "relative_position": "farthest",
+        "confidence": 0.386037677526474
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.16070431470870972,
+        "relative_position": "middle",
+        "confidence": 0.45458653569221497
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.0935092568397522,
+        "relative_position": "middle",
+        "confidence": 0.5319385528564453
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.06284438073635101,
+        "relative_position": "middle",
+        "confidence": 0.579960286617279
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "bottle",
+        "mean_depth": 0.049640052020549774,
+        "relative_position": "closest",
+        "confidence": 0.35781559348106384
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "bottle",
+      "confidence": 0.35781559348106384,
+      "bounding_box": [
+        57.79601287841797,
+        122.60431671142578,
+        100.1799545288086,
+        179.9486083984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.049640052020549774,
+        "median_depth": 0.04923241585493088,
+        "depth_std": 0.006261027883738279,
+        "depth_min": 0.03675730898976326,
+        "depth_max": 0.06542960554361343,
+        "mask_area": 1939
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.579960286617279,
+      "bounding_box": [
+        48.97385025024414,
+        54.69697570800781,
+        114.89077758789062,
+        135.14756774902344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06284438073635101,
+        "median_depth": 0.062272749841213226,
+        "depth_std": 0.008982122875750065,
+        "depth_min": 0.04285062476992607,
+        "depth_max": 0.08723560720682144,
+        "mask_area": 1508
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.5319385528564453,
+      "bounding_box": [
+        101.96812438964844,
+        83.74016571044922,
+        220.96742248535156,
+        179.98089599609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0935092568397522,
+        "median_depth": 0.09589157998561859,
+        "depth_std": 0.018176984041929245,
+        "depth_min": 0.04211469367146492,
+        "depth_max": 0.12491383403539658,
+        "mask_area": 9230
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cup",
+      "confidence": 0.45458653569221497,
+      "bounding_box": [
+        186.20504760742188,
+        42.79304504394531,
+        214.96511840820312,
+        75.49043273925781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16070431470870972,
+        "median_depth": 0.16021506488323212,
+        "depth_std": 0.016378607600927353,
+        "depth_min": 0.1316228061914444,
+        "depth_max": 0.21347887814044952,
+        "mask_area": 585
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cutting board",
+      "confidence": 0.386037677526474,
+      "bounding_box": [
+        195.67633056640625,
+        37.731998443603516,
+        243.69448852539062,
+        53.98722457885742
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2279854118824005,
+        "median_depth": 0.21784049272537231,
+        "depth_std": 0.03121631033718586,
+        "depth_min": 0.1871250867843628,
+        "depth_max": 0.2901720702648163,
+        "mask_area": 379
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. cup. plate. dish rack. cutting board. bottle. lid. robot arm. countertop. drawer. container.",
+  "text_prompt": "sink. cup. plate. dish rack. cutting board. bottle. lid. robot arm. countertop. drawer. container.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

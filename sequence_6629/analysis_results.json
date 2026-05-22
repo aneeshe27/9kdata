@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "plate",
+    "jar bottle",
+    "bottle",
+    "cup",
+    "cup"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, cup, bottle, plate, jar bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "plate",
+        "mean_depth": 0.036512378603219986,
+        "relative_position": "closest",
+        "confidence": 0.39258822798728943
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "jar bottle",
+        "mean_depth": 0.09762687981128693,
+        "relative_position": "middle",
+        "confidence": 0.3668194115161896
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.09790749847888947,
+        "relative_position": "middle",
+        "confidence": 0.427715927362442
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.1693907529115677,
+        "relative_position": "middle",
+        "confidence": 0.5163534283638
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.3910163640975952,
+        "relative_position": "farthest",
+        "confidence": 0.3551886975765228
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.3910163640975952,
+        "relative_position": "farthest",
+        "confidence": 0.3551886975765228
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.1693907529115677,
+        "relative_position": "middle",
+        "confidence": 0.5163534283638
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.09790749847888947,
+        "relative_position": "middle",
+        "confidence": 0.427715927362442
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "jar bottle",
+        "mean_depth": 0.09762687981128693,
+        "relative_position": "middle",
+        "confidence": 0.3668194115161896
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "plate",
+        "mean_depth": 0.036512378603219986,
+        "relative_position": "closest",
+        "confidence": 0.39258822798728943
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "plate",
+      "confidence": 0.39258822798728943,
+      "bounding_box": [
+        292.9775390625,
+        115.818115234375,
+        315.7996826171875,
+        158.57131958007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.036512378603219986,
+        "median_depth": 0.03720919042825699,
+        "depth_std": 0.012338802218437195,
+        "depth_min": 0.012144625186920166,
+        "depth_max": 0.0702122300863266,
+        "mask_area": 695
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "jar bottle",
+      "confidence": 0.3668194115161896,
+      "bounding_box": [
+        254.13612365722656,
+        109.45686340332031,
+        282.03009033203125,
+        140.38479614257812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09762687981128693,
+        "median_depth": 0.09611469507217407,
+        "depth_std": 0.012959357351064682,
+        "depth_min": 0.06763169169425964,
+        "depth_max": 0.12961095571517944,
+        "mask_area": 517
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.427715927362442,
+      "bounding_box": [
+        268.3290710449219,
+        84.42755126953125,
+        296.4620056152344,
+        132.3013458251953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09790749847888947,
+        "median_depth": 0.10017766058444977,
+        "depth_std": 0.012028764933347702,
+        "depth_min": 0.07181701809167862,
+        "depth_max": 0.12372242659330368,
+        "mask_area": 770
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.5163534283638,
+      "bounding_box": [
+        201.5449981689453,
+        107.92401885986328,
+        226.68714904785156,
+        137.15127563476562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1693907529115677,
+        "median_depth": 0.16579264402389526,
+        "depth_std": 0.013854743912816048,
+        "depth_min": 0.1537761092185974,
+        "depth_max": 0.22006715834140778,
+        "mask_area": 531
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.3551886975765228,
+      "bounding_box": [
+        125.88801574707031,
+        100.39778137207031,
+        151.5790252685547,
+        133.4576873779297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3910163640975952,
+        "median_depth": 0.39142051339149475,
+        "depth_std": 0.01225331798195839,
+        "depth_min": 0.35966381430625916,
+        "depth_max": 0.42087090015411377,
+        "mask_area": 477
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. camera. cup. bowl. plate. jar. can. bottle. container. package. tray. cutting board. shelf. table.",
+  "text_prompt": "robot arm. gripper. camera. cup. bowl. plate. jar. can. bottle. container. package. tray. cutting board. shelf. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

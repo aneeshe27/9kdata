@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cabinet",
+    "utensil holder",
+    "coffee maker",
+    "wooden spoon"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, wooden spoon, cabinet, coffee maker, utensil holder",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.02340647764503956,
+        "relative_position": "closest",
+        "confidence": 0.3593355417251587
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.06199456378817558,
+        "relative_position": "middle",
+        "confidence": 0.4196922481060028
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "utensil holder",
+        "mean_depth": 0.06797973066568375,
+        "relative_position": "middle",
+        "confidence": 0.3809443414211273
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "coffee maker",
+        "mean_depth": 0.14640919864177704,
+        "relative_position": "middle",
+        "confidence": 0.38093432784080505
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "wooden spoon",
+        "mean_depth": 0.2415211945772171,
+        "relative_position": "farthest",
+        "confidence": 0.7788084149360657
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "wooden spoon",
+        "mean_depth": 0.2415211945772171,
+        "relative_position": "farthest",
+        "confidence": 0.7788084149360657
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "coffee maker",
+        "mean_depth": 0.14640919864177704,
+        "relative_position": "middle",
+        "confidence": 0.38093432784080505
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "utensil holder",
+        "mean_depth": 0.06797973066568375,
+        "relative_position": "middle",
+        "confidence": 0.3809443414211273
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.06199456378817558,
+        "relative_position": "middle",
+        "confidence": 0.4196922481060028
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.02340647764503956,
+        "relative_position": "closest",
+        "confidence": 0.3593355417251587
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3593355417251587,
+      "bounding_box": [
+        145.74716186523438,
+        13.657285690307617,
+        297.6749572753906,
+        71.92115783691406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02340647764503956,
+        "median_depth": 0.01716098189353943,
+        "depth_std": 0.056641463190317154,
+        "depth_min": 0.0067213443107903,
+        "depth_max": 0.8586589097976685,
+        "mask_area": 3966
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet",
+      "confidence": 0.4196922481060028,
+      "bounding_box": [
+        0.050930023193359375,
+        0.03329658508300781,
+        104.58883666992188,
+        62.443138122558594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06199456378817558,
+        "median_depth": 0.058629997074604034,
+        "depth_std": 0.02228901907801628,
+        "depth_min": 0.02791130170226097,
+        "depth_max": 0.1441616266965866,
+        "mask_area": 5004
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "utensil holder",
+      "confidence": 0.3809443414211273,
+      "bounding_box": [
+        50.21982192993164,
+        106.67807006835938,
+        104.8009033203125,
+        179.910888671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06797973066568375,
+        "median_depth": 0.06319582462310791,
+        "depth_std": 0.012545173987746239,
+        "depth_min": 0.054533109068870544,
+        "depth_max": 0.1280057728290558,
+        "mask_area": 2709
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "coffee maker",
+      "confidence": 0.38093432784080505,
+      "bounding_box": [
+        91.72112274169922,
+        104.84950256347656,
+        138.80116271972656,
+        179.79408264160156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14640919864177704,
+        "median_depth": 0.14514778554439545,
+        "depth_std": 0.034512538462877274,
+        "depth_min": 0.04988531023263931,
+        "depth_max": 0.26013827323913574,
+        "mask_area": 2370
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "wooden spoon",
+      "confidence": 0.7788084149360657,
+      "bounding_box": [
+        132.30078125,
+        137.82913208007812,
+        177.5843505859375,
+        165.29559326171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2415211945772171,
+        "median_depth": 0.2415970265865326,
+        "depth_std": 0.01934574730694294,
+        "depth_min": 0.2034069299697876,
+        "depth_max": 0.28303205966949463,
+        "mask_area": 338
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "coffee maker. robot arm. gripper. stove. pot. pan. bowl. wooden spoon. utensil holder. kitchen utensils. countertop. cabinet.",
+  "text_prompt": "coffee maker. robot arm. gripper. stove. pot. pan. bowl. wooden spoon. utensil holder. kitchen utensils. countertop. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

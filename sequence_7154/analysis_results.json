@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "cabinet shelf",
+    "ladder",
+    "door",
+    "cabinet shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet shelf, ladder, table, cabinet shelf, door",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.14177919924259186,
+        "relative_position": "closest",
+        "confidence": 0.5922203660011292
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.17467725276947021,
+        "relative_position": "middle",
+        "confidence": 0.3863322138786316
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "ladder",
+        "mean_depth": 0.8006202578544617,
+        "relative_position": "middle",
+        "confidence": 0.5916939973831177
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.9037092328071594,
+        "relative_position": "middle",
+        "confidence": 0.6948105692863464
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cabinet shelf",
+        "mean_depth": 0.9275891780853271,
+        "relative_position": "farthest",
+        "confidence": 0.35537654161453247
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cabinet shelf",
+        "mean_depth": 0.9275891780853271,
+        "relative_position": "farthest",
+        "confidence": 0.35537654161453247
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.9037092328071594,
+        "relative_position": "middle",
+        "confidence": 0.6948105692863464
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "ladder",
+        "mean_depth": 0.8006202578544617,
+        "relative_position": "middle",
+        "confidence": 0.5916939973831177
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.17467725276947021,
+        "relative_position": "middle",
+        "confidence": 0.3863322138786316
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.14177919924259186,
+        "relative_position": "closest",
+        "confidence": 0.5922203660011292
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.5922203660011292,
+      "bounding_box": [
+        199.1256866455078,
+        120.42156982421875,
+        315.9623107910156,
+        179.96694946289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14177919924259186,
+        "median_depth": 0.10842803865671158,
+        "depth_std": 0.08756424486637115,
+        "depth_min": 0.07210513204336166,
+        "depth_max": 0.8512287735939026,
+        "mask_area": 3865
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet shelf",
+      "confidence": 0.3863322138786316,
+      "bounding_box": [
+        0.024105072021484375,
+        -0.02101898193359375,
+        118.86421203613281,
+        179.97872924804688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17467725276947021,
+        "median_depth": 0.12862004339694977,
+        "depth_std": 0.14126764237880707,
+        "depth_min": 0.014965016394853592,
+        "depth_max": 0.8185094594955444,
+        "mask_area": 19805
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "ladder",
+      "confidence": 0.5916939973831177,
+      "bounding_box": [
+        268.3769836425781,
+        16.58652114868164,
+        315.9799499511719,
+        122.45989990234375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8006202578544617,
+        "median_depth": 0.8052083253860474,
+        "depth_std": 0.0637459084391594,
+        "depth_min": 0.3083718419075012,
+        "depth_max": 0.9208638668060303,
+        "mask_area": 1706
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "door",
+      "confidence": 0.6948105692863464,
+      "bounding_box": [
+        193.89381408691406,
+        33.767398834228516,
+        235.39613342285156,
+        113.51168823242188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9037092328071594,
+        "median_depth": 0.9071912169456482,
+        "depth_std": 0.04360508918762207,
+        "depth_min": 0.401132196187973,
+        "depth_max": 0.9379062056541443,
+        "mask_area": 2357
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet shelf",
+      "confidence": 0.35537654161453247,
+      "bounding_box": [
+        128.38092041015625,
+        87.60699462890625,
+        192.77801513671875,
+        111.0418701171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9275891780853271,
+        "median_depth": 0.9281901121139526,
+        "depth_std": 0.004549780860543251,
+        "depth_min": 0.9123726487159729,
+        "depth_max": 0.9372259378433228,
+        "mask_area": 1187
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cabinet. shelf. door. window. ladder. cable. computer.",
+  "text_prompt": "robot arm. gripper. table. cabinet. shelf. door. window. ladder. cable. computer.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

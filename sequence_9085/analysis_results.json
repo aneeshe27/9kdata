@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "pen",
+    "cup container",
+    "window blinds",
+    "pen"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: pen, pen, robot arm, cup container, window blinds",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.018149811774492264,
+        "relative_position": "closest",
+        "confidence": 0.39433908462524414
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "pen",
+        "mean_depth": 0.028096916154026985,
+        "relative_position": "middle",
+        "confidence": 0.3682410717010498
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cup container",
+        "mean_depth": 0.06464944034814835,
+        "relative_position": "middle",
+        "confidence": 0.4753676652908325
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "window blinds",
+        "mean_depth": 0.08154085278511047,
+        "relative_position": "middle",
+        "confidence": 0.4064934551715851
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "pen",
+        "mean_depth": 0.08751112222671509,
+        "relative_position": "farthest",
+        "confidence": 0.5003339052200317
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "pen",
+        "mean_depth": 0.08751112222671509,
+        "relative_position": "farthest",
+        "confidence": 0.5003339052200317
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "window blinds",
+        "mean_depth": 0.08154085278511047,
+        "relative_position": "middle",
+        "confidence": 0.4064934551715851
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cup container",
+        "mean_depth": 0.06464944034814835,
+        "relative_position": "middle",
+        "confidence": 0.4753676652908325
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "pen",
+        "mean_depth": 0.028096916154026985,
+        "relative_position": "middle",
+        "confidence": 0.3682410717010498
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.018149811774492264,
+        "relative_position": "closest",
+        "confidence": 0.39433908462524414
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.39433908462524414,
+      "bounding_box": [
+        158.66915893554688,
+        0.15676498413085938,
+        314.78680419921875,
+        89.1785888671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.018149811774492264,
+        "median_depth": 0.010242519900202751,
+        "depth_std": 0.038239967077970505,
+        "depth_min": 0.005810865666717291,
+        "depth_max": 0.43529558181762695,
+        "mask_area": 3407
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "pen",
+      "confidence": 0.3682410717010498,
+      "bounding_box": [
+        24.03304100036621,
+        124.44310760498047,
+        50.380043029785156,
+        139.4954833984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.028096916154026985,
+        "median_depth": 0.02757798694074154,
+        "depth_std": 0.0036285731475800276,
+        "depth_min": 0.021640537306666374,
+        "depth_max": 0.03663704916834831,
+        "mask_area": 143
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cup container",
+      "confidence": 0.4753676652908325,
+      "bounding_box": [
+        108.4670181274414,
+        154.87110900878906,
+        127.76712799072266,
+        174.97340393066406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06464944034814835,
+        "median_depth": 0.06412434577941895,
+        "depth_std": 0.0036525027826428413,
+        "depth_min": 0.05833832174539566,
+        "depth_max": 0.0747029110789299,
+        "mask_area": 304
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "window blinds",
+      "confidence": 0.4064934551715851,
+      "bounding_box": [
+        0.07775115966796875,
+        -0.0909271240234375,
+        174.2802734375,
+        98.53912353515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08154085278511047,
+        "median_depth": 0.050417155027389526,
+        "depth_std": 0.07900874316692352,
+        "depth_min": 0.012131044641137123,
+        "depth_max": 0.42106693983078003,
+        "mask_area": 13430
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "pen",
+      "confidence": 0.5003339052200317,
+      "bounding_box": [
+        162.0279083251953,
+        152.8184051513672,
+        181.93809509277344,
+        179.95631408691406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08751112222671509,
+        "median_depth": 0.08508539944887161,
+        "depth_std": 0.008685002103447914,
+        "depth_min": 0.07530966401100159,
+        "depth_max": 0.10594256967306137,
+        "mask_area": 161
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cup. brush. sponge. pen. container. clamp. window blinds. window. table.",
+  "text_prompt": "robot arm. gripper. cup. brush. sponge. pen. container. clamp. window blinds. window. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

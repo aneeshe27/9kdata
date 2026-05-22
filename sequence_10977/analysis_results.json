@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "bucket",
+    "wire rack",
+    "couch",
+    "pillow"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bucket, robot arm, wire rack, couch, pillow",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.08503607660531998,
+        "relative_position": "closest",
+        "confidence": 0.40400537848472595
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "bucket",
+        "mean_depth": 0.13792231678962708,
+        "relative_position": "middle",
+        "confidence": 0.7100337147712708
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "wire rack",
+        "mean_depth": 0.3159574568271637,
+        "relative_position": "middle",
+        "confidence": 0.5140726566314697
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "couch",
+        "mean_depth": 0.6778928637504578,
+        "relative_position": "middle",
+        "confidence": 0.612470269203186
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "pillow",
+        "mean_depth": 0.9965595602989197,
+        "relative_position": "farthest",
+        "confidence": 0.3820449411869049
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "pillow",
+        "mean_depth": 0.9965595602989197,
+        "relative_position": "farthest",
+        "confidence": 0.3820449411869049
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "couch",
+        "mean_depth": 0.6778928637504578,
+        "relative_position": "middle",
+        "confidence": 0.612470269203186
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "wire rack",
+        "mean_depth": 0.3159574568271637,
+        "relative_position": "middle",
+        "confidence": 0.5140726566314697
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "bucket",
+        "mean_depth": 0.13792231678962708,
+        "relative_position": "middle",
+        "confidence": 0.7100337147712708
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.08503607660531998,
+        "relative_position": "closest",
+        "confidence": 0.40400537848472595
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.40400537848472595,
+      "bounding_box": [
+        189.21783447265625,
+        0.19571304321289062,
+        315.87158203125,
+        88.79971313476562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08503607660531998,
+        "median_depth": 0.02469523437321186,
+        "depth_std": 0.15688322484493256,
+        "depth_min": 0.0,
+        "depth_max": 0.9590864181518555,
+        "mask_area": 4283
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "bucket",
+      "confidence": 0.7100337147712708,
+      "bounding_box": [
+        75.5704345703125,
+        113.87141418457031,
+        144.64193725585938,
+        179.9816131591797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13792231678962708,
+        "median_depth": 0.13415178656578064,
+        "depth_std": 0.046854279935359955,
+        "depth_min": 0.09113652259111404,
+        "depth_max": 0.5570260286331177,
+        "mask_area": 3103
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "wire rack",
+      "confidence": 0.5140726566314697,
+      "bounding_box": [
+        111.04745483398438,
+        81.60516357421875,
+        194.71112060546875,
+        139.33279418945312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3159574568271637,
+        "median_depth": 0.3183452785015106,
+        "depth_std": 0.10883530974388123,
+        "depth_min": 0.1432960033416748,
+        "depth_max": 0.9623989462852478,
+        "mask_area": 1654
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "couch",
+      "confidence": 0.612470269203186,
+      "bounding_box": [
+        252.36322021484375,
+        98.57421875,
+        315.9267578125,
+        179.94915771484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6778928637504578,
+        "median_depth": 0.6931565403938293,
+        "depth_std": 0.05720001831650734,
+        "depth_min": 0.55829918384552,
+        "depth_max": 0.8863527178764343,
+        "mask_area": 4218
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "pillow",
+      "confidence": 0.3820449411869049,
+      "bounding_box": [
+        174.40065002441406,
+        54.45218276977539,
+        192.2963409423828,
+        66.32582092285156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9965595602989197,
+        "median_depth": 0.9968196153640747,
+        "depth_std": 0.0012380508705973625,
+        "depth_min": 0.9931894540786743,
+        "depth_max": 0.9985849857330322,
+        "mask_area": 174
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bunk bed. mattress. blanket. pillow. wire rack. bag. bucket. robot arm. gripper. couch.",
+  "text_prompt": "bunk bed. mattress. blanket. pillow. wire rack. bag. bucket. robot arm. gripper. couch.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

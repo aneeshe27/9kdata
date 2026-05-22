@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "window blinds",
+    "cabinet shelf",
+    "microwave",
+    "window blinds"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: window blinds, cabinet shelf, microwave, window blinds, robot arm gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm gripper",
+        "mean_depth": 0.05175194516777992,
+        "relative_position": "closest",
+        "confidence": 0.568527340888977
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "window blinds",
+        "mean_depth": 0.22142136096954346,
+        "relative_position": "middle",
+        "confidence": 0.6647782921791077
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.5252678990364075,
+        "relative_position": "middle",
+        "confidence": 0.5167011022567749
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.5472822189331055,
+        "relative_position": "middle",
+        "confidence": 0.9137632250785828
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "window blinds",
+        "mean_depth": 0.937183141708374,
+        "relative_position": "farthest",
+        "confidence": 0.46954861283302307
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "window blinds",
+        "mean_depth": 0.937183141708374,
+        "relative_position": "farthest",
+        "confidence": 0.46954861283302307
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.5472822189331055,
+        "relative_position": "middle",
+        "confidence": 0.9137632250785828
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.5252678990364075,
+        "relative_position": "middle",
+        "confidence": 0.5167011022567749
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "window blinds",
+        "mean_depth": 0.22142136096954346,
+        "relative_position": "middle",
+        "confidence": 0.6647782921791077
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm gripper",
+        "mean_depth": 0.05175194516777992,
+        "relative_position": "closest",
+        "confidence": 0.568527340888977
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm gripper",
+      "confidence": 0.568527340888977,
+      "bounding_box": [
+        176.18856811523438,
+        42.88609313964844,
+        316.034912109375,
+        179.84365844726562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05175194516777992,
+        "median_depth": 0.026901481673121452,
+        "depth_std": 0.07470469921827316,
+        "depth_min": 0.0,
+        "depth_max": 0.9132570624351501,
+        "mask_area": 8843
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "window blinds",
+      "confidence": 0.6647782921791077,
+      "bounding_box": [
+        0.010408401489257812,
+        0.0193634033203125,
+        46.520721435546875,
+        158.9298095703125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22142136096954346,
+        "median_depth": 0.21974210441112518,
+        "depth_std": 0.02857225388288498,
+        "depth_min": 0.16076762974262238,
+        "depth_max": 0.3025161027908325,
+        "mask_area": 5419
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet shelf",
+      "confidence": 0.5167011022567749,
+      "bounding_box": [
+        107.25043487548828,
+        0.029949188232421875,
+        239.03646850585938,
+        113.80061340332031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5252678990364075,
+        "median_depth": 0.5224652290344238,
+        "depth_std": 0.04416510835289955,
+        "depth_min": 0.44305887818336487,
+        "depth_max": 0.7115129232406616,
+        "mask_area": 7245
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "microwave",
+      "confidence": 0.9137632250785828,
+      "bounding_box": [
+        116.95855712890625,
+        111.4013671875,
+        180.49893188476562,
+        151.82595825195312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5472822189331055,
+        "median_depth": 0.5446509718894958,
+        "depth_std": 0.02675160951912403,
+        "depth_min": 0.5051799416542053,
+        "depth_max": 0.6079186201095581,
+        "mask_area": 1747
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "window blinds",
+      "confidence": 0.46954861283302307,
+      "bounding_box": [
+        237.9936065673828,
+        0.5693550109863281,
+        316.0125732421875,
+        57.404666900634766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.937183141708374,
+        "median_depth": 0.9430352449417114,
+        "depth_std": 0.018945589661598206,
+        "depth_min": 0.8479459881782532,
+        "depth_max": 0.9658729434013367,
+        "mask_area": 3835
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. microwave. cabinet. shelf. countertop. bowl. cup. bottle. sponge. window blinds.",
+  "text_prompt": "robot arm. gripper. microwave. cabinet. shelf. countertop. bowl. cup. bottle. sponge. window blinds.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

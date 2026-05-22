@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "spoon",
+    "clock",
+    "jar bottle mug",
+    "stove",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, stove, jar bottle mug, spoon, clock",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "spoon",
+        "mean_depth": 0.10600443929433823,
+        "relative_position": "closest",
+        "confidence": 0.7151528000831604
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "clock",
+        "mean_depth": 0.10865367949008942,
+        "relative_position": "middle",
+        "confidence": 0.7288326621055603
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "jar bottle mug",
+        "mean_depth": 0.13880640268325806,
+        "relative_position": "middle",
+        "confidence": 0.3935588002204895
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "stove",
+        "mean_depth": 0.2275390923023224,
+        "relative_position": "middle",
+        "confidence": 0.6831696033477783
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.3578880727291107,
+        "relative_position": "farthest",
+        "confidence": 0.40761882066726685
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.3578880727291107,
+        "relative_position": "farthest",
+        "confidence": 0.40761882066726685
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "stove",
+        "mean_depth": 0.2275390923023224,
+        "relative_position": "middle",
+        "confidence": 0.6831696033477783
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "jar bottle mug",
+        "mean_depth": 0.13880640268325806,
+        "relative_position": "middle",
+        "confidence": 0.3935588002204895
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "clock",
+        "mean_depth": 0.10865367949008942,
+        "relative_position": "middle",
+        "confidence": 0.7288326621055603
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "spoon",
+        "mean_depth": 0.10600443929433823,
+        "relative_position": "closest",
+        "confidence": 0.7151528000831604
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "spoon",
+      "confidence": 0.7151528000831604,
+      "bounding_box": [
+        188.666015625,
+        114.13782501220703,
+        217.49618530273438,
+        151.9578857421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10600443929433823,
+        "median_depth": 0.10646235942840576,
+        "depth_std": 0.008400422520935535,
+        "depth_min": 0.09022844582796097,
+        "depth_max": 0.13400548696517944,
+        "mask_area": 301
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "clock",
+      "confidence": 0.7288326621055603,
+      "bounding_box": [
+        167.50804138183594,
+        0.042084693908691406,
+        187.87049865722656,
+        8.111981391906738
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10865367949008942,
+        "median_depth": 0.10756571590900421,
+        "depth_std": 0.0031324978917837143,
+        "depth_min": 0.10388769954442978,
+        "depth_max": 0.1175459697842598,
+        "mask_area": 108
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "jar bottle mug",
+      "confidence": 0.3935588002204895,
+      "bounding_box": [
+        177.0610809326172,
+        81.5270004272461,
+        191.09507751464844,
+        103.8108139038086
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13880640268325806,
+        "median_depth": 0.1366650015115738,
+        "depth_std": 0.006096155848354101,
+        "depth_min": 0.13171465694904327,
+        "depth_max": 0.1570233404636383,
+        "mask_area": 219
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "stove",
+      "confidence": 0.6831696033477783,
+      "bounding_box": [
+        228.78546142578125,
+        44.7236328125,
+        296.01617431640625,
+        75.92073059082031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2275390923023224,
+        "median_depth": 0.22556665539741516,
+        "depth_std": 0.026822902262210846,
+        "depth_min": 0.08660340309143066,
+        "depth_max": 0.5616373419761658,
+        "mask_area": 1079
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.40761882066726685,
+      "bounding_box": [
+        0.0831756591796875,
+        52.274112701416016,
+        42.1738395690918,
+        127.61471557617188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3578880727291107,
+        "median_depth": 0.35159507393836975,
+        "depth_std": 0.040566980838775635,
+        "depth_min": 0.2948893904685974,
+        "depth_max": 0.6718446612358093,
+        "mask_area": 989
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. spoon. can. jar. bottle. mug. container. stove. kettle. countertop. table. chair. clock.",
+  "text_prompt": "robot arm. gripper. spoon. can. jar. bottle. mug. container. stove. kettle. countertop. table. chair. clock.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

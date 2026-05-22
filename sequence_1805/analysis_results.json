@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_1207678/temp_image_48.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_48.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "sink",
+    "faucet",
+    "plate bowl",
+    "plate"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: plate, sink, faucet, robot arm, plate bowl",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.019735131412744522,
+        "relative_position": "closest",
+        "confidence": 0.41950228810310364
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.292644202709198,
+        "relative_position": "middle",
+        "confidence": 0.8647099137306213
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.3075355291366577,
+        "relative_position": "middle",
+        "confidence": 0.8143080472946167
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "plate bowl",
+        "mean_depth": 0.3800305128097534,
+        "relative_position": "middle",
+        "confidence": 0.4427219033241272
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "plate",
+        "mean_depth": 0.39363938570022583,
+        "relative_position": "farthest",
+        "confidence": 0.45297348499298096
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "plate",
+        "mean_depth": 0.39363938570022583,
+        "relative_position": "farthest",
+        "confidence": 0.45297348499298096
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "plate bowl",
+        "mean_depth": 0.3800305128097534,
+        "relative_position": "middle",
+        "confidence": 0.4427219033241272
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.3075355291366577,
+        "relative_position": "middle",
+        "confidence": 0.8143080472946167
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.292644202709198,
+        "relative_position": "middle",
+        "confidence": 0.8647099137306213
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.019735131412744522,
+        "relative_position": "closest",
+        "confidence": 0.41950228810310364
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.41950228810310364,
+      "bounding_box": [
+        0.029964447021484375,
+        0.08231353759765625,
+        113.83128356933594,
+        129.65982055664062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.019735131412744522,
+        "median_depth": 0.00395068246871233,
+        "depth_std": 0.08806844800710678,
+        "depth_min": 1.0524815479584504e-05,
+        "depth_max": 0.9148378968238831,
+        "mask_area": 5875
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.8647099137306213,
+      "bounding_box": [
+        154.9665069580078,
+        101.12146759033203,
+        259.6731872558594,
+        164.19857788085938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.292644202709198,
+        "median_depth": 0.3016536235809326,
+        "depth_std": 0.04511351138353348,
+        "depth_min": 0.1853581964969635,
+        "depth_max": 0.3727357089519501,
+        "mask_area": 3279
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.8143080472946167,
+      "bounding_box": [
+        199.96478271484375,
+        81.19619750976562,
+        223.0443115234375,
+        113.40425109863281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3075355291366577,
+        "median_depth": 0.3102136254310608,
+        "depth_std": 0.012322092428803444,
+        "depth_min": 0.28120675683021545,
+        "depth_max": 0.3355594873428345,
+        "mask_area": 330
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "plate bowl",
+      "confidence": 0.4427219033241272,
+      "bounding_box": [
+        135.45803833007812,
+        85.1072769165039,
+        154.44613647460938,
+        94.93889617919922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3800305128097534,
+        "median_depth": 0.37908536195755005,
+        "depth_std": 0.011380269192159176,
+        "depth_min": 0.35713642835617065,
+        "depth_max": 0.4146759808063507,
+        "mask_area": 132
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plate",
+      "confidence": 0.45297348499298096,
+      "bounding_box": [
+        116.86477661132812,
+        95.39124298095703,
+        139.21719360351562,
+        103.7104263305664
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39363938570022583,
+        "median_depth": 0.3929634094238281,
+        "depth_std": 0.0076855444349348545,
+        "depth_min": 0.38111791014671326,
+        "depth_max": 0.41324758529663086,
+        "mask_area": 137
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. countertop. sink. faucet. dish rack. plate. bowl. cup. soap dispenser. dish soap bottle. cabinet. whiteboard.",
+  "text_prompt": "robot arm. countertop. sink. faucet. dish rack. plate. bowl. cup. soap dispenser. dish soap bottle. cabinet. whiteboard.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

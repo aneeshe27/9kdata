@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "refrigerator",
+    "jar",
+    "shelf",
+    "countertop",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: door, refrigerator, shelf, jar, countertop",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.15420342981815338,
+        "relative_position": "closest",
+        "confidence": 0.6566768288612366
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "jar",
+        "mean_depth": 0.5045858025550842,
+        "relative_position": "middle",
+        "confidence": 0.3941034972667694
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.5369316935539246,
+        "relative_position": "middle",
+        "confidence": 0.5030429363250732
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.5501387119293213,
+        "relative_position": "middle",
+        "confidence": 0.4647260010242462
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "door",
+        "mean_depth": 0.8263782858848572,
+        "relative_position": "farthest",
+        "confidence": 0.47903499007225037
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "door",
+        "mean_depth": 0.8263782858848572,
+        "relative_position": "farthest",
+        "confidence": 0.47903499007225037
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.5501387119293213,
+        "relative_position": "middle",
+        "confidence": 0.4647260010242462
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.5369316935539246,
+        "relative_position": "middle",
+        "confidence": 0.5030429363250732
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "jar",
+        "mean_depth": 0.5045858025550842,
+        "relative_position": "middle",
+        "confidence": 0.3941034972667694
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.15420342981815338,
+        "relative_position": "closest",
+        "confidence": 0.6566768288612366
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "refrigerator",
+      "confidence": 0.6566768288612366,
+      "bounding_box": [
+        0.08300399780273438,
+        3.7371063232421875,
+        87.02400207519531,
+        179.97213745117188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15420342981815338,
+        "median_depth": 0.11528823524713516,
+        "depth_std": 0.11979277431964874,
+        "depth_min": 0.014658020809292793,
+        "depth_max": 0.5450422167778015,
+        "mask_area": 11685
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "jar",
+      "confidence": 0.3941034972667694,
+      "bounding_box": [
+        113.07093811035156,
+        13.38786506652832,
+        124.17552185058594,
+        35.072288513183594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5045858025550842,
+        "median_depth": 0.5032863616943359,
+        "depth_std": 0.009571466594934464,
+        "depth_min": 0.48864057660102844,
+        "depth_max": 0.5267665386199951,
+        "mask_area": 216
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "shelf",
+      "confidence": 0.5030429363250732,
+      "bounding_box": [
+        91.02629089355469,
+        33.03096008300781,
+        189.86082458496094,
+        87.42866516113281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5369316935539246,
+        "median_depth": 0.5301302671432495,
+        "depth_std": 0.04384541139006615,
+        "depth_min": 0.4475513696670532,
+        "depth_max": 0.6625705361366272,
+        "mask_area": 4180
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "countertop",
+      "confidence": 0.4647260010242462,
+      "bounding_box": [
+        143.50198364257812,
+        130.5452880859375,
+        221.3822021484375,
+        179.75970458984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5501387119293213,
+        "median_depth": 0.5313225984573364,
+        "depth_std": 0.07815337926149368,
+        "depth_min": 0.4456609785556793,
+        "depth_max": 0.9880995750427246,
+        "mask_area": 1656
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "door",
+      "confidence": 0.47903499007225037,
+      "bounding_box": [
+        182.8842315673828,
+        1.5852203369140625,
+        252.1575469970703,
+        174.67088317871094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8263782858848572,
+        "median_depth": 0.8201138973236084,
+        "depth_std": 0.09923018515110016,
+        "depth_min": 0.17724506556987762,
+        "depth_max": 1.0,
+        "mask_area": 6212
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "jar. shelf. stove. robot arm. gripper. refrigerator. countertop. door. window. blinds.",
+  "text_prompt": "jar. shelf. stove. robot arm. gripper. refrigerator. countertop. door. window. blinds.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

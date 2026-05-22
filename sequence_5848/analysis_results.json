@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "cloth",
+    "sink",
+    "window",
+    "faucet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm gripper, window, cloth, faucet, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm gripper",
+        "mean_depth": 0.034418538212776184,
+        "relative_position": "closest",
+        "confidence": 0.4377090334892273
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.08926939964294434,
+        "relative_position": "middle",
+        "confidence": 0.4759332835674286
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.1438336968421936,
+        "relative_position": "middle",
+        "confidence": 0.4321938753128052
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "window",
+        "mean_depth": 0.25113433599472046,
+        "relative_position": "middle",
+        "confidence": 0.6569387316703796
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.25649362802505493,
+        "relative_position": "farthest",
+        "confidence": 0.42489132285118103
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.25649362802505493,
+        "relative_position": "farthest",
+        "confidence": 0.42489132285118103
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "window",
+        "mean_depth": 0.25113433599472046,
+        "relative_position": "middle",
+        "confidence": 0.6569387316703796
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.1438336968421936,
+        "relative_position": "middle",
+        "confidence": 0.4321938753128052
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.08926939964294434,
+        "relative_position": "middle",
+        "confidence": 0.4759332835674286
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm gripper",
+        "mean_depth": 0.034418538212776184,
+        "relative_position": "closest",
+        "confidence": 0.4377090334892273
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm gripper",
+      "confidence": 0.4377090334892273,
+      "bounding_box": [
+        179.2432403564453,
+        31.662551879882812,
+        299.2554931640625,
+        179.6492919921875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.034418538212776184,
+        "median_depth": 0.015627413988113403,
+        "depth_std": 0.07626642286777496,
+        "depth_min": 0.006020912900567055,
+        "depth_max": 0.6715019345283508,
+        "mask_area": 6344
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.4759332835674286,
+      "bounding_box": [
+        87.97108459472656,
+        162.68692016601562,
+        138.98533630371094,
+        179.99227905273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08926939964294434,
+        "median_depth": 0.08839216828346252,
+        "depth_std": 0.004868903197348118,
+        "depth_min": 0.07755497097969055,
+        "depth_max": 0.10163575410842896,
+        "mask_area": 608
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "sink",
+      "confidence": 0.4321938753128052,
+      "bounding_box": [
+        124.54314422607422,
+        115.12785339355469,
+        223.00765991210938,
+        179.49095153808594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1438336968421936,
+        "median_depth": 0.114712193608284,
+        "depth_std": 0.060291893780231476,
+        "depth_min": 0.04351571202278137,
+        "depth_max": 0.3008308410644531,
+        "mask_area": 1383
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "window",
+      "confidence": 0.6569387316703796,
+      "bounding_box": [
+        104.00927734375,
+        0.24381637573242188,
+        180.89447021484375,
+        102.58013916015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.25113433599472046,
+        "median_depth": 0.24543650448322296,
+        "depth_std": 0.06311332434415817,
+        "depth_min": 0.099706269800663,
+        "depth_max": 0.37961527705192566,
+        "mask_area": 6739
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "faucet",
+      "confidence": 0.42489132285118103,
+      "bounding_box": [
+        137.65365600585938,
+        96.35562896728516,
+        170.11309814453125,
+        117.8609848022461
+      ],
+      "depth_stats": {
+        "mean_depth": 0.25649362802505493,
+        "median_depth": 0.259726345539093,
+        "depth_std": 0.028367964550852776,
+        "depth_min": 0.11371539533138275,
+        "depth_max": 0.3277515470981598,
+        "mask_area": 271
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. sponge. cloth. countertop. cabinet. window. blinds.",
+  "text_prompt": "robot arm. gripper. sink. faucet. sponge. cloth. countertop. cabinet. window. blinds.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

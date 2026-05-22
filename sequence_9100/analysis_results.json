@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "printer",
+    "cabinet",
+    "cup",
+    "tape roll"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, cabinet, tape roll, robot arm, printer",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.2581212818622589,
+        "relative_position": "closest",
+        "confidence": 0.4789706766605377
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "printer",
+        "mean_depth": 0.4146287441253662,
+        "relative_position": "middle",
+        "confidence": 0.38378557562828064
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.5121364593505859,
+        "relative_position": "middle",
+        "confidence": 0.3598320484161377
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.5592365860939026,
+        "relative_position": "middle",
+        "confidence": 0.6854861378669739
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "tape roll",
+        "mean_depth": 0.5617813467979431,
+        "relative_position": "farthest",
+        "confidence": 0.40425804257392883
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "tape roll",
+        "mean_depth": 0.5617813467979431,
+        "relative_position": "farthest",
+        "confidence": 0.40425804257392883
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.5592365860939026,
+        "relative_position": "middle",
+        "confidence": 0.6854861378669739
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.5121364593505859,
+        "relative_position": "middle",
+        "confidence": 0.3598320484161377
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "printer",
+        "mean_depth": 0.4146287441253662,
+        "relative_position": "middle",
+        "confidence": 0.38378557562828064
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.2581212818622589,
+        "relative_position": "closest",
+        "confidence": 0.4789706766605377
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.4789706766605377,
+      "bounding_box": [
+        0.022783279418945312,
+        91.57173919677734,
+        36.71503448486328,
+        179.56488037109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2581212818622589,
+        "median_depth": 0.2584276795387268,
+        "depth_std": 0.013097718358039856,
+        "depth_min": 0.22199518978595734,
+        "depth_max": 0.2815597951412201,
+        "mask_area": 2192
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "printer",
+      "confidence": 0.38378557562828064,
+      "bounding_box": [
+        23.502592086791992,
+        60.124603271484375,
+        82.51903533935547,
+        101.28193664550781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4146287441253662,
+        "median_depth": 0.38837531208992004,
+        "depth_std": 0.061511117964982986,
+        "depth_min": 0.33014383912086487,
+        "depth_max": 0.6105150580406189,
+        "mask_area": 1709
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3598320484161377,
+      "bounding_box": [
+        252.66598510742188,
+        78.48820495605469,
+        315.9858093261719,
+        143.34642028808594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5121364593505859,
+        "median_depth": 0.514034628868103,
+        "depth_std": 0.030206743627786636,
+        "depth_min": 0.4460160434246063,
+        "depth_max": 0.5710469484329224,
+        "mask_area": 2386
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.6854861378669739,
+      "bounding_box": [
+        251.71588134765625,
+        61.20083236694336,
+        267.9873046875,
+        75.8914566040039
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5592365860939026,
+        "median_depth": 0.5551661252975464,
+        "depth_std": 0.013833762146532536,
+        "depth_min": 0.5413736701011658,
+        "depth_max": 0.6185966730117798,
+        "mask_area": 181
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "tape roll",
+      "confidence": 0.40425804257392883,
+      "bounding_box": [
+        84.473876953125,
+        74.62309265136719,
+        116.157958984375,
+        95.30415344238281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5617813467979431,
+        "median_depth": 0.5573550462722778,
+        "depth_std": 0.02658817730844021,
+        "depth_min": 0.517916738986969,
+        "depth_max": 0.6312022805213928,
+        "mask_area": 444
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. workbench. drawer. cabinet. box. printer. tape roll. paper. cup. books. cube. rack. tray. tools.",
+  "text_prompt": "robot arm. gripper. workbench. drawer. cabinet. box. printer. tape roll. paper. cup. books. cube. rack. tray. tools.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bookshelf cabinet",
+    "table",
+    "bookshelf cabinet",
+    "door",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, bookshelf cabinet, door, window, bookshelf cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "bookshelf cabinet",
+        "mean_depth": 0.08857763558626175,
+        "relative_position": "closest",
+        "confidence": 0.3839695453643799
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.10762842744588852,
+        "relative_position": "middle",
+        "confidence": 0.6355792880058289
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bookshelf cabinet",
+        "mean_depth": 0.2253458946943283,
+        "relative_position": "middle",
+        "confidence": 0.5248396992683411
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.33911755681037903,
+        "relative_position": "middle",
+        "confidence": 0.5881443619728088
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "window",
+        "mean_depth": 0.6626694202423096,
+        "relative_position": "farthest",
+        "confidence": 0.3529694676399231
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "window",
+        "mean_depth": 0.6626694202423096,
+        "relative_position": "farthest",
+        "confidence": 0.3529694676399231
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.33911755681037903,
+        "relative_position": "middle",
+        "confidence": 0.5881443619728088
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bookshelf cabinet",
+        "mean_depth": 0.2253458946943283,
+        "relative_position": "middle",
+        "confidence": 0.5248396992683411
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.10762842744588852,
+        "relative_position": "middle",
+        "confidence": 0.6355792880058289
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "bookshelf cabinet",
+        "mean_depth": 0.08857763558626175,
+        "relative_position": "closest",
+        "confidence": 0.3839695453643799
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "bookshelf cabinet",
+      "confidence": 0.3839695453643799,
+      "bounding_box": [
+        0.23945999145507812,
+        0.19867706298828125,
+        104.10939025878906,
+        179.83087158203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08857763558626175,
+        "median_depth": 0.0813324972987175,
+        "depth_std": 0.031244732439517975,
+        "depth_min": 0.03365550562739372,
+        "depth_max": 0.1745557188987732,
+        "mask_area": 16027
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.6355792880058289,
+      "bounding_box": [
+        194.0111846923828,
+        116.68341064453125,
+        315.58831787109375,
+        179.68356323242188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10762842744588852,
+        "median_depth": 0.09782177209854126,
+        "depth_std": 0.04420553892850876,
+        "depth_min": 0.04986577481031418,
+        "depth_max": 0.5186811685562134,
+        "mask_area": 4208
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bookshelf cabinet",
+      "confidence": 0.5248396992683411,
+      "bounding_box": [
+        77.57621765136719,
+        0.6401519775390625,
+        187.2352752685547,
+        179.60592651367188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2253458946943283,
+        "median_depth": 0.22738423943519592,
+        "depth_std": 0.07106536626815796,
+        "depth_min": 0.07417357712984085,
+        "depth_max": 0.39696550369262695,
+        "mask_area": 14438
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "door",
+      "confidence": 0.5881443619728088,
+      "bounding_box": [
+        180.69776916503906,
+        0.32456207275390625,
+        234.76878356933594,
+        152.78277587890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33911755681037903,
+        "median_depth": 0.32587316632270813,
+        "depth_std": 0.07288418710231781,
+        "depth_min": 0.22660472989082336,
+        "depth_max": 0.5398808121681213,
+        "mask_area": 4407
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "window",
+      "confidence": 0.3529694676399231,
+      "bounding_box": [
+        253.9473419189453,
+        0.29965972900390625,
+        315.73486328125,
+        139.38427734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6626694202423096,
+        "median_depth": 0.598341703414917,
+        "depth_std": 0.30483710765838623,
+        "depth_min": 0.1270706057548523,
+        "depth_max": 0.997664213180542,
+        "mask_area": 920
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "book. binder. bookshelf. robot arm. gripper. table. wire rack. cable. cabinet. window. door.",
+  "text_prompt": "book. binder. bookshelf. robot arm. gripper. table. wire rack. cable. cabinet. window. door.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "refrigerator",
+    "cabinet",
+    "cabinet",
+    "sofa"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, cabinet, refrigerator, cabinet, sofa",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.1821165382862091,
+        "relative_position": "closest",
+        "confidence": 0.739490270614624
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "refrigerator",
+        "mean_depth": 0.4339471459388733,
+        "relative_position": "middle",
+        "confidence": 0.4207090735435486
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.4625518321990967,
+        "relative_position": "middle",
+        "confidence": 0.4075259864330292
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.5181756019592285,
+        "relative_position": "middle",
+        "confidence": 0.46253231167793274
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "sofa",
+        "mean_depth": 0.6665986180305481,
+        "relative_position": "farthest",
+        "confidence": 0.47189608216285706
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "sofa",
+        "mean_depth": 0.6665986180305481,
+        "relative_position": "farthest",
+        "confidence": 0.47189608216285706
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.5181756019592285,
+        "relative_position": "middle",
+        "confidence": 0.46253231167793274
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.4625518321990967,
+        "relative_position": "middle",
+        "confidence": 0.4075259864330292
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "refrigerator",
+        "mean_depth": 0.4339471459388733,
+        "relative_position": "middle",
+        "confidence": 0.4207090735435486
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.1821165382862091,
+        "relative_position": "closest",
+        "confidence": 0.739490270614624
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.739490270614624,
+      "bounding_box": [
+        -0.07891845703125,
+        78.73454284667969,
+        262.518798828125,
+        179.8132781982422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1821165382862091,
+        "median_depth": 0.17245081067085266,
+        "depth_std": 0.031940534710884094,
+        "depth_min": 0.028903484344482422,
+        "depth_max": 0.5125276446342468,
+        "mask_area": 5407
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "refrigerator",
+      "confidence": 0.4207090735435486,
+      "bounding_box": [
+        177.09921264648438,
+        12.688457489013672,
+        235.886962890625,
+        100.75193786621094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4339471459388733,
+        "median_depth": 0.4373672306537628,
+        "depth_std": 0.020005105063319206,
+        "depth_min": 0.27307212352752686,
+        "depth_max": 0.5042232275009155,
+        "mask_area": 3604
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.4075259864330292,
+      "bounding_box": [
+        185.25169372558594,
+        0.02282094955444336,
+        235.68040466308594,
+        10.349454879760742
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4625518321990967,
+        "median_depth": 0.4629227817058563,
+        "depth_std": 0.007666488643735647,
+        "depth_min": 0.44847571849823,
+        "depth_max": 0.48007696866989136,
+        "mask_area": 453
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.46253231167793274,
+      "bounding_box": [
+        72.49879455566406,
+        0.05029296875,
+        185.73497009277344,
+        39.302818298339844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5181756019592285,
+        "median_depth": 0.5174015164375305,
+        "depth_std": 0.02481071650981903,
+        "depth_min": 0.4686553478240967,
+        "depth_max": 0.6216295957565308,
+        "mask_area": 4061
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "sofa",
+      "confidence": 0.47189608216285706,
+      "bounding_box": [
+        24.5141544342041,
+        50.813114166259766,
+        84.56987762451172,
+        81.38080596923828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6665986180305481,
+        "median_depth": 0.6723716259002686,
+        "depth_std": 0.07134053111076355,
+        "depth_min": 0.41836217045783997,
+        "depth_max": 0.9067273139953613,
+        "mask_area": 1271
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. refrigerator. cabinet. container. bowl. cup. spoon. ball. bag. box. stool. sofa.",
+  "text_prompt": "robot arm. gripper. table. refrigerator. cabinet. container. bowl. cup. spoon. ball. bag. box. stool. sofa.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

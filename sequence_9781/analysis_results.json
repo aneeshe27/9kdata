@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "tape",
+    "tape",
+    "storage box",
+    "cable"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: tape, tape, storage box, robot arm, cable",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.03042767569422722,
+        "relative_position": "closest",
+        "confidence": 0.6787046194076538
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "tape",
+        "mean_depth": 0.29731228947639465,
+        "relative_position": "middle",
+        "confidence": 0.3934726119041443
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "tape",
+        "mean_depth": 0.3318513333797455,
+        "relative_position": "middle",
+        "confidence": 0.46862632036209106
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "storage box",
+        "mean_depth": 0.41383254528045654,
+        "relative_position": "middle",
+        "confidence": 0.38286250829696655
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.4186374545097351,
+        "relative_position": "farthest",
+        "confidence": 0.3525572717189789
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.4186374545097351,
+        "relative_position": "farthest",
+        "confidence": 0.3525572717189789
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "storage box",
+        "mean_depth": 0.41383254528045654,
+        "relative_position": "middle",
+        "confidence": 0.38286250829696655
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "tape",
+        "mean_depth": 0.3318513333797455,
+        "relative_position": "middle",
+        "confidence": 0.46862632036209106
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "tape",
+        "mean_depth": 0.29731228947639465,
+        "relative_position": "middle",
+        "confidence": 0.3934726119041443
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.03042767569422722,
+        "relative_position": "closest",
+        "confidence": 0.6787046194076538
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.6787046194076538,
+      "bounding_box": [
+        209.82720947265625,
+        0.01708221435546875,
+        315.96905517578125,
+        72.73098754882812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03042767569422722,
+        "median_depth": 0.014187948778271675,
+        "depth_std": 0.03913802281022072,
+        "depth_min": 0.0,
+        "depth_max": 0.40122750401496887,
+        "mask_area": 2914
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "tape",
+      "confidence": 0.3934726119041443,
+      "bounding_box": [
+        131.5194549560547,
+        170.99014282226562,
+        141.9019317626953,
+        179.86297607421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29731228947639465,
+        "median_depth": 0.29637154936790466,
+        "depth_std": 0.006496954243630171,
+        "depth_min": 0.2887025475502014,
+        "depth_max": 0.31405743956565857,
+        "mask_area": 74
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "tape",
+      "confidence": 0.46862632036209106,
+      "bounding_box": [
+        148.06851196289062,
+        162.36251831054688,
+        161.15139770507812,
+        175.72943115234375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3318513333797455,
+        "median_depth": 0.33189886808395386,
+        "depth_std": 0.008474975824356079,
+        "depth_min": 0.3155211806297302,
+        "depth_max": 0.3534167408943176,
+        "mask_area": 148
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "storage box",
+      "confidence": 0.38286250829696655,
+      "bounding_box": [
+        166.82472229003906,
+        156.30992126464844,
+        220.0170135498047,
+        179.98658752441406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.41383254528045654,
+        "median_depth": 0.41974151134490967,
+        "depth_std": 0.042450085282325745,
+        "depth_min": 0.3073371648788452,
+        "depth_max": 0.49913671612739563,
+        "mask_area": 662
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cable",
+      "confidence": 0.3525572717189789,
+      "bounding_box": [
+        146.40457153320312,
+        62.08572006225586,
+        175.6370849609375,
+        81.1990737915039
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4186374545097351,
+        "median_depth": 0.4119584560394287,
+        "depth_std": 0.029839279130101204,
+        "depth_min": 0.3734324872493744,
+        "depth_max": 0.5013616681098938,
+        "mask_area": 419
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. shelf. storage rack. tray. box. container. power drill. screwdriver. tape. cable. charger. battery.",
+  "text_prompt": "robot arm. gripper. shelf. storage rack. tray. box. container. power drill. screwdriver. tape. cable. charger. battery.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

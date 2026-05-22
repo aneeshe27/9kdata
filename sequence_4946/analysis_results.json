@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "refrigerator",
+    "stove",
+    "shelf",
+    "oven",
+    "pot pan"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: pot pan, stove, shelf, refrigerator, oven",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.3900165557861328,
+        "relative_position": "closest",
+        "confidence": 0.8937017321586609
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "stove",
+        "mean_depth": 0.574583888053894,
+        "relative_position": "middle",
+        "confidence": 0.4141124486923218
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "shelf",
+        "mean_depth": 0.5847922563552856,
+        "relative_position": "middle",
+        "confidence": 0.37074965238571167
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "oven",
+        "mean_depth": 0.6360997557640076,
+        "relative_position": "middle",
+        "confidence": 0.5590327382087708
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "pot pan",
+        "mean_depth": 0.652620255947113,
+        "relative_position": "farthest",
+        "confidence": 0.40776652097702026
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "pot pan",
+        "mean_depth": 0.652620255947113,
+        "relative_position": "farthest",
+        "confidence": 0.40776652097702026
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "oven",
+        "mean_depth": 0.6360997557640076,
+        "relative_position": "middle",
+        "confidence": 0.5590327382087708
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "shelf",
+        "mean_depth": 0.5847922563552856,
+        "relative_position": "middle",
+        "confidence": 0.37074965238571167
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "stove",
+        "mean_depth": 0.574583888053894,
+        "relative_position": "middle",
+        "confidence": 0.4141124486923218
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.3900165557861328,
+        "relative_position": "closest",
+        "confidence": 0.8937017321586609
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "refrigerator",
+      "confidence": 0.8937017321586609,
+      "bounding_box": [
+        -0.03098297119140625,
+        0.02658843994140625,
+        152.77194213867188,
+        180.02557373046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3900165557861328,
+        "median_depth": 0.3815038502216339,
+        "depth_std": 0.08026009052991867,
+        "depth_min": 0.2373582273721695,
+        "depth_max": 0.7264460325241089,
+        "mask_area": 25939
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "stove",
+      "confidence": 0.4141124486923218,
+      "bounding_box": [
+        145.29940795898438,
+        76.55281066894531,
+        228.59716796875,
+        112.25775146484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.574583888053894,
+        "median_depth": 0.5652686357498169,
+        "depth_std": 0.04311787337064743,
+        "depth_min": 0.5207011699676514,
+        "depth_max": 0.9619337916374207,
+        "mask_area": 1558
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "shelf",
+      "confidence": 0.37074965238571167,
+      "bounding_box": [
+        145.99354553222656,
+        0.2150745391845703,
+        205.14414978027344,
+        35.289939880371094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5847922563552856,
+        "median_depth": 0.5821582674980164,
+        "depth_std": 0.03279333561658859,
+        "depth_min": 0.3556406795978546,
+        "depth_max": 0.6807434558868408,
+        "mask_area": 1451
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "oven",
+      "confidence": 0.5590327382087708,
+      "bounding_box": [
+        153.82460021972656,
+        103.29822540283203,
+        227.25941467285156,
+        179.92910766601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6360997557640076,
+        "median_depth": 0.6402568221092224,
+        "depth_std": 0.03971734270453453,
+        "depth_min": 0.545219361782074,
+        "depth_max": 0.7478125095367432,
+        "mask_area": 4225
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "pot pan",
+      "confidence": 0.40776652097702026,
+      "bounding_box": [
+        155.56585693359375,
+        55.924224853515625,
+        181.56954956054688,
+        82.33642578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.652620255947113,
+        "median_depth": 0.6524664163589478,
+        "depth_std": 0.039560429751873016,
+        "depth_min": 0.6029277443885803,
+        "depth_max": 0.752875566482544,
+        "mask_area": 399
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "refrigerator. stove. oven. pot. pan. robot arm. gripper. shelf. jar.",
+  "text_prompt": "refrigerator. stove. oven. pot. pan. robot arm. gripper. shelf. jar.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

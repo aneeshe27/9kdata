@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bowl",
+    "table",
+    "robot arm",
+    "plastic bin",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: plastic bin, cabinet, robot arm, bowl, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.17622146010398865,
+        "relative_position": "closest",
+        "confidence": 0.7338460087776184
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.20918002724647522,
+        "relative_position": "middle",
+        "confidence": 0.44366902112960815
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.25421765446662903,
+        "relative_position": "middle",
+        "confidence": 0.3526715636253357
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "plastic bin",
+        "mean_depth": 0.39716702699661255,
+        "relative_position": "middle",
+        "confidence": 0.4535190761089325
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.4942997992038727,
+        "relative_position": "farthest",
+        "confidence": 0.5192420482635498
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.4942997992038727,
+        "relative_position": "farthest",
+        "confidence": 0.5192420482635498
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "plastic bin",
+        "mean_depth": 0.39716702699661255,
+        "relative_position": "middle",
+        "confidence": 0.4535190761089325
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.25421765446662903,
+        "relative_position": "middle",
+        "confidence": 0.3526715636253357
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.20918002724647522,
+        "relative_position": "middle",
+        "confidence": 0.44366902112960815
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.17622146010398865,
+        "relative_position": "closest",
+        "confidence": 0.7338460087776184
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.7338460087776184,
+      "bounding_box": [
+        150.45213317871094,
+        89.87295532226562,
+        182.3370819091797,
+        111.86308288574219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17622146010398865,
+        "median_depth": 0.18097281455993652,
+        "depth_std": 0.016987791284918785,
+        "depth_min": 0.15055017173290253,
+        "depth_max": 0.22059430181980133,
+        "mask_area": 544
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "table",
+      "confidence": 0.44366902112960815,
+      "bounding_box": [
+        240.954833984375,
+        105.13614654541016,
+        316.01025390625,
+        179.97604370117188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20918002724647522,
+        "median_depth": 0.20185144245624542,
+        "depth_std": 0.0763593316078186,
+        "depth_min": 0.08508561551570892,
+        "depth_max": 0.42495566606521606,
+        "mask_area": 4373
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3526715636253357,
+      "bounding_box": [
+        229.93153381347656,
+        32.62080001831055,
+        315.97900390625,
+        68.16729736328125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.25421765446662903,
+        "median_depth": 0.2434406727552414,
+        "depth_std": 0.036332473158836365,
+        "depth_min": 0.18803510069847107,
+        "depth_max": 0.3562683165073395,
+        "mask_area": 697
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plastic bin",
+      "confidence": 0.4535190761089325,
+      "bounding_box": [
+        0.0075225830078125,
+        90.74954223632812,
+        69.24600982666016,
+        150.30450439453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39716702699661255,
+        "median_depth": 0.3949356973171234,
+        "depth_std": 0.03369024768471718,
+        "depth_min": 0.3308435082435608,
+        "depth_max": 0.5236433744430542,
+        "mask_area": 2527
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet",
+      "confidence": 0.5192420482635498,
+      "bounding_box": [
+        2.2046966552734375,
+        45.372833251953125,
+        132.66177368164062,
+        120.15043640136719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4942997992038727,
+        "median_depth": 0.47289198637008667,
+        "depth_std": 0.07808762788772583,
+        "depth_min": 0.3988906145095825,
+        "depth_max": 0.8910468816757202,
+        "mask_area": 5767
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. table. robot arm. gripper. clamp. cabinet. plastic bin. cardboard box.",
+  "text_prompt": "bowl. table. robot arm. gripper. clamp. cabinet. plastic bin. cardboard box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

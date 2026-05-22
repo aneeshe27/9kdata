@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "microwave",
+    "food pouch",
+    "picture frame",
+    "electric kettle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: electric kettle, robot arm, microwave, food pouch, picture frame",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.03135816380381584,
+        "relative_position": "closest",
+        "confidence": 0.43683046102523804
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.26365727186203003,
+        "relative_position": "middle",
+        "confidence": 0.9302199482917786
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "food pouch",
+        "mean_depth": 0.41558951139450073,
+        "relative_position": "middle",
+        "confidence": 0.6559934616088867
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "picture frame",
+        "mean_depth": 0.502953290939331,
+        "relative_position": "middle",
+        "confidence": 0.8623535633087158
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "electric kettle",
+        "mean_depth": 0.5178459882736206,
+        "relative_position": "farthest",
+        "confidence": 0.595190703868866
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "electric kettle",
+        "mean_depth": 0.5178459882736206,
+        "relative_position": "farthest",
+        "confidence": 0.595190703868866
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "picture frame",
+        "mean_depth": 0.502953290939331,
+        "relative_position": "middle",
+        "confidence": 0.8623535633087158
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "food pouch",
+        "mean_depth": 0.41558951139450073,
+        "relative_position": "middle",
+        "confidence": 0.6559934616088867
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.26365727186203003,
+        "relative_position": "middle",
+        "confidence": 0.9302199482917786
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.03135816380381584,
+        "relative_position": "closest",
+        "confidence": 0.43683046102523804
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.43683046102523804,
+      "bounding_box": [
+        203.74111938476562,
+        -0.038112640380859375,
+        316.0154113769531,
+        78.69207763671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03135816380381584,
+        "median_depth": 0.014635048806667328,
+        "depth_std": 0.08069273829460144,
+        "depth_min": 0.0,
+        "depth_max": 0.8482773303985596,
+        "mask_area": 2764
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "microwave",
+      "confidence": 0.9302199482917786,
+      "bounding_box": [
+        75.54756164550781,
+        75.30656433105469,
+        185.03880310058594,
+        166.97535705566406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26365727186203003,
+        "median_depth": 0.25737088918685913,
+        "depth_std": 0.06638456135988235,
+        "depth_min": 0.15074089169502258,
+        "depth_max": 0.6475366353988647,
+        "mask_area": 6822
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "food pouch",
+      "confidence": 0.6559934616088867,
+      "bounding_box": [
+        191.00723266601562,
+        129.270751953125,
+        230.92495727539062,
+        152.88623046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.41558951139450073,
+        "median_depth": 0.4151809811592102,
+        "depth_std": 0.022494100034236908,
+        "depth_min": 0.368586927652359,
+        "depth_max": 0.4617890417575836,
+        "mask_area": 516
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "picture frame",
+      "confidence": 0.8623535633087158,
+      "bounding_box": [
+        148.47470092773438,
+        0.06043243408203125,
+        191.09249877929688,
+        55.80928421020508
+      ],
+      "depth_stats": {
+        "mean_depth": 0.502953290939331,
+        "median_depth": 0.5000259280204773,
+        "depth_std": 0.052392322570085526,
+        "depth_min": 0.39981621503829956,
+        "depth_max": 0.6192123293876648,
+        "mask_area": 2156
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "electric kettle",
+      "confidence": 0.595190703868866,
+      "bounding_box": [
+        180.84124755859375,
+        89.22976684570312,
+        194.73757934570312,
+        121.48373413085938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5178459882736206,
+        "median_depth": 0.504721999168396,
+        "depth_std": 0.04768891632556915,
+        "depth_min": 0.46607983112335205,
+        "depth_max": 0.7312067151069641,
+        "mask_area": 312
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "microwave. mug. electric kettle. robot arm. gripper. table. refrigerator. picture frame. food pouch.",
+  "text_prompt": "microwave. mug. electric kettle. robot arm. gripper. table. refrigerator. picture frame. food pouch.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "gripper",
+    "bottle",
+    "towel",
+    "radiator"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bottle, gripper, robot arm, radiator, towel",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.015349588356912136,
+        "relative_position": "closest",
+        "confidence": 0.39058804512023926
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "gripper",
+        "mean_depth": 0.09273836016654968,
+        "relative_position": "middle",
+        "confidence": 0.48464757204055786
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "bottle",
+        "mean_depth": 0.42916029691696167,
+        "relative_position": "middle",
+        "confidence": 0.6679630279541016
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "towel",
+        "mean_depth": 0.47582194209098816,
+        "relative_position": "middle",
+        "confidence": 0.44458186626434326
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "radiator",
+        "mean_depth": 0.5986592173576355,
+        "relative_position": "farthest",
+        "confidence": 0.36114057898521423
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "radiator",
+        "mean_depth": 0.5986592173576355,
+        "relative_position": "farthest",
+        "confidence": 0.36114057898521423
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "towel",
+        "mean_depth": 0.47582194209098816,
+        "relative_position": "middle",
+        "confidence": 0.44458186626434326
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "bottle",
+        "mean_depth": 0.42916029691696167,
+        "relative_position": "middle",
+        "confidence": 0.6679630279541016
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "gripper",
+        "mean_depth": 0.09273836016654968,
+        "relative_position": "middle",
+        "confidence": 0.48464757204055786
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.015349588356912136,
+        "relative_position": "closest",
+        "confidence": 0.39058804512023926
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.39058804512023926,
+      "bounding_box": [
+        247.31304931640625,
+        17.32009506225586,
+        315.978271484375,
+        67.06143188476562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.015349588356912136,
+        "median_depth": 0.012866973876953125,
+        "depth_std": 0.01221295166760683,
+        "depth_min": 0.0,
+        "depth_max": 0.11950362473726273,
+        "mask_area": 1167
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "gripper",
+      "confidence": 0.48464757204055786,
+      "bounding_box": [
+        218.41085815429688,
+        6.412437438964844,
+        286.2021179199219,
+        50.544044494628906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09273836016654968,
+        "median_depth": 0.05903959274291992,
+        "depth_std": 0.08470554649829865,
+        "depth_min": 0.01143610943108797,
+        "depth_max": 0.4492183029651642,
+        "mask_area": 1536
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bottle",
+      "confidence": 0.6679630279541016,
+      "bounding_box": [
+        80.99693298339844,
+        49.387428283691406,
+        103.11135864257812,
+        83.86495208740234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.42916029691696167,
+        "median_depth": 0.42650529742240906,
+        "depth_std": 0.016373641788959503,
+        "depth_min": 0.4053029417991638,
+        "depth_max": 0.5031939148902893,
+        "mask_area": 439
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "towel",
+      "confidence": 0.44458186626434326,
+      "bounding_box": [
+        179.58189392089844,
+        46.573211669921875,
+        220.62840270996094,
+        108.42680358886719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47582194209098816,
+        "median_depth": 0.4733187258243561,
+        "depth_std": 0.0658186823129654,
+        "depth_min": 0.3617863059043884,
+        "depth_max": 0.6900862455368042,
+        "mask_area": 1306
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "radiator",
+      "confidence": 0.36114057898521423,
+      "bounding_box": [
+        0.0438232421875,
+        126.32122039794922,
+        92.06128692626953,
+        179.9379119873047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5986592173576355,
+        "median_depth": 0.6093872785568237,
+        "depth_std": 0.19037610292434692,
+        "depth_min": 0.21871913969516754,
+        "depth_max": 0.8711166381835938,
+        "mask_area": 3587
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bottle. shoe. robot arm. gripper. towel. chair. radiator. window. cabinet. tissue.",
+  "text_prompt": "bottle. shoe. robot arm. gripper. towel. chair. radiator. window. cabinet. tissue.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

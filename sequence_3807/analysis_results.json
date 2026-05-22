@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "printer",
+    "cup",
+    "touchscreen",
+    "book",
+    "shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: touchscreen, book, printer, cup, shelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "printer",
+        "mean_depth": 0.10011891275644302,
+        "relative_position": "closest",
+        "confidence": 0.35544678568840027
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.11018747091293335,
+        "relative_position": "middle",
+        "confidence": 0.7868548631668091
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "touchscreen",
+        "mean_depth": 0.13505809009075165,
+        "relative_position": "middle",
+        "confidence": 0.685871958732605
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "book",
+        "mean_depth": 0.13668593764305115,
+        "relative_position": "middle",
+        "confidence": 0.491596519947052
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "shelf",
+        "mean_depth": 0.37303468585014343,
+        "relative_position": "farthest",
+        "confidence": 0.39402204751968384
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "shelf",
+        "mean_depth": 0.37303468585014343,
+        "relative_position": "farthest",
+        "confidence": 0.39402204751968384
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "book",
+        "mean_depth": 0.13668593764305115,
+        "relative_position": "middle",
+        "confidence": 0.491596519947052
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "touchscreen",
+        "mean_depth": 0.13505809009075165,
+        "relative_position": "middle",
+        "confidence": 0.685871958732605
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.11018747091293335,
+        "relative_position": "middle",
+        "confidence": 0.7868548631668091
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "printer",
+        "mean_depth": 0.10011891275644302,
+        "relative_position": "closest",
+        "confidence": 0.35544678568840027
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "printer",
+      "confidence": 0.35544678568840027,
+      "bounding_box": [
+        130.06260681152344,
+        139.49130249023438,
+        242.4431915283203,
+        179.9173583984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10011891275644302,
+        "median_depth": 0.098212830722332,
+        "depth_std": 0.015601609833538532,
+        "depth_min": 0.06394138187170029,
+        "depth_max": 0.1374930441379547,
+        "mask_area": 2630
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.7868548631668091,
+      "bounding_box": [
+        149.01805114746094,
+        123.25640106201172,
+        167.23658752441406,
+        142.5313262939453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11018747091293335,
+        "median_depth": 0.10705957561731339,
+        "depth_std": 0.008474011905491352,
+        "depth_min": 0.10319031029939651,
+        "depth_max": 0.14273880422115326,
+        "mask_area": 271
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "touchscreen",
+      "confidence": 0.685871958732605,
+      "bounding_box": [
+        100.89128875732422,
+        112.75630187988281,
+        130.61366271972656,
+        144.0608367919922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13505809009075165,
+        "median_depth": 0.133757546544075,
+        "depth_std": 0.010021732188761234,
+        "depth_min": 0.12109242379665375,
+        "depth_max": 0.16957780718803406,
+        "mask_area": 511
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "book",
+      "confidence": 0.491596519947052,
+      "bounding_box": [
+        195.41781616210938,
+        121.6981201171875,
+        233.60171508789062,
+        147.9324951171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13668593764305115,
+        "median_depth": 0.13359086215496063,
+        "depth_std": 0.012894762679934502,
+        "depth_min": 0.10720023512840271,
+        "depth_max": 0.1835341453552246,
+        "mask_area": 698
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "shelf",
+      "confidence": 0.39402204751968384,
+      "bounding_box": [
+        89.99801635742188,
+        7.299945831298828,
+        315.8962707519531,
+        120.38172912597656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.37303468585014343,
+        "median_depth": 0.33596497774124146,
+        "depth_std": 0.1323147565126419,
+        "depth_min": 0.21829606592655182,
+        "depth_max": 0.9982336163520813,
+        "mask_area": 13371
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. printer. touchscreen. shelf. paper. envelope. cup. book. table.",
+  "text_prompt": "robot arm. gripper. printer. touchscreen. shelf. paper. envelope. cup. book. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

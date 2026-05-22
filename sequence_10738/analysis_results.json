@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "cabinet",
+    "kitchen utensil",
+    "sink",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: kitchen utensil, cloth, sink, window, cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.2617475986480713,
+        "relative_position": "closest",
+        "confidence": 0.552096962928772
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.534288763999939,
+        "relative_position": "middle",
+        "confidence": 0.3770314157009125
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "kitchen utensil",
+        "mean_depth": 0.6482827663421631,
+        "relative_position": "middle",
+        "confidence": 0.42414143681526184
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.6737174987792969,
+        "relative_position": "middle",
+        "confidence": 0.6177989840507507
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.7094267010688782,
+        "relative_position": "farthest",
+        "confidence": 0.5277409553527832
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.7094267010688782,
+        "relative_position": "farthest",
+        "confidence": 0.5277409553527832
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.6737174987792969,
+        "relative_position": "middle",
+        "confidence": 0.6177989840507507
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "kitchen utensil",
+        "mean_depth": 0.6482827663421631,
+        "relative_position": "middle",
+        "confidence": 0.42414143681526184
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.534288763999939,
+        "relative_position": "middle",
+        "confidence": 0.3770314157009125
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.2617475986480713,
+        "relative_position": "closest",
+        "confidence": 0.552096962928772
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.552096962928772,
+      "bounding_box": [
+        77.50521850585938,
+        124.2308349609375,
+        111.52980041503906,
+        162.59085083007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2617475986480713,
+        "median_depth": 0.2542748749256134,
+        "depth_std": 0.050747670233249664,
+        "depth_min": 0.20436204969882965,
+        "depth_max": 0.6232871413230896,
+        "mask_area": 716
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3770314157009125,
+      "bounding_box": [
+        141.0668487548828,
+        126.2440185546875,
+        190.3430633544922,
+        179.9586181640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.534288763999939,
+        "median_depth": 0.5354005098342896,
+        "depth_std": 0.017028000205755234,
+        "depth_min": 0.4831233322620392,
+        "depth_max": 0.5739185214042664,
+        "mask_area": 1923
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "kitchen utensil",
+      "confidence": 0.42414143681526184,
+      "bounding_box": [
+        63.61509704589844,
+        115.5216064453125,
+        80.04576110839844,
+        128.4891815185547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6482827663421631,
+        "median_depth": 0.6532967686653137,
+        "depth_std": 0.018603920936584473,
+        "depth_min": 0.6151570677757263,
+        "depth_max": 0.6825872659683228,
+        "mask_area": 76
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.6177989840507507,
+      "bounding_box": [
+        156.46315002441406,
+        100.16069030761719,
+        251.1023406982422,
+        134.87632751464844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6737174987792969,
+        "median_depth": 0.7087351083755493,
+        "depth_std": 0.05997222661972046,
+        "depth_min": 0.47766029834747314,
+        "depth_max": 0.7366453409194946,
+        "mask_area": 749
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "window",
+      "confidence": 0.5277409553527832,
+      "bounding_box": [
+        143.5668487548828,
+        0.11069488525390625,
+        315.8033447265625,
+        84.15950775146484
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7094267010688782,
+        "median_depth": 0.7047448754310608,
+        "depth_std": 0.03076271153986454,
+        "depth_min": 0.6582514047622681,
+        "depth_max": 0.7873808741569519,
+        "mask_area": 3625
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. drawer. kitchen utensil. cloth. sink. faucet. countertop. cabinet. window. dish rack. cutting board.",
+  "text_prompt": "robot arm. gripper. drawer. kitchen utensil. cloth. sink. faucet. countertop. cabinet. window. dish rack. cutting board.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

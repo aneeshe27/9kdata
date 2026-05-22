@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "box",
+    "cup",
+    "shelf cabinet",
+    "robot gripper",
+    "shelf cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: shelf cabinet, shelf cabinet, box, robot gripper, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.04111733287572861,
+        "relative_position": "closest",
+        "confidence": 0.4735606014728546
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.0699646919965744,
+        "relative_position": "middle",
+        "confidence": 0.7926274538040161
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "shelf cabinet",
+        "mean_depth": 0.3001599609851837,
+        "relative_position": "middle",
+        "confidence": 0.4445919990539551
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot gripper",
+        "mean_depth": 0.32714414596557617,
+        "relative_position": "middle",
+        "confidence": 0.4338206648826599
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "shelf cabinet",
+        "mean_depth": 0.9753180742263794,
+        "relative_position": "farthest",
+        "confidence": 0.40184083580970764
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "shelf cabinet",
+        "mean_depth": 0.9753180742263794,
+        "relative_position": "farthest",
+        "confidence": 0.40184083580970764
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot gripper",
+        "mean_depth": 0.32714414596557617,
+        "relative_position": "middle",
+        "confidence": 0.4338206648826599
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "shelf cabinet",
+        "mean_depth": 0.3001599609851837,
+        "relative_position": "middle",
+        "confidence": 0.4445919990539551
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.0699646919965744,
+        "relative_position": "middle",
+        "confidence": 0.7926274538040161
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.04111733287572861,
+        "relative_position": "closest",
+        "confidence": 0.4735606014728546
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "box",
+      "confidence": 0.4735606014728546,
+      "bounding_box": [
+        102.80414581298828,
+        40.263084411621094,
+        163.68008422851562,
+        89.1529312133789
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04111733287572861,
+        "median_depth": 0.027276497334241867,
+        "depth_std": 0.043050557374954224,
+        "depth_min": 0.00427602231502533,
+        "depth_max": 0.42889636754989624,
+        "mask_area": 1933
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.7926274538040161,
+      "bounding_box": [
+        168.674072265625,
+        52.460060119628906,
+        184.900146484375,
+        75.7932357788086
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0699646919965744,
+        "median_depth": 0.05588517338037491,
+        "depth_std": 0.024537455290555954,
+        "depth_min": 0.04607304930686951,
+        "depth_max": 0.13042889535427094,
+        "mask_area": 280
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "shelf cabinet",
+      "confidence": 0.4445919990539551,
+      "bounding_box": [
+        0.011165618896484375,
+        30.395191192626953,
+        48.296348571777344,
+        116.16291809082031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3001599609851837,
+        "median_depth": 0.30654552578926086,
+        "depth_std": 0.03320365399122238,
+        "depth_min": 0.2176067978143692,
+        "depth_max": 0.4218035340309143,
+        "mask_area": 2682
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "robot gripper",
+      "confidence": 0.4338206648826599,
+      "bounding_box": [
+        174.0907745361328,
+        0.1060638427734375,
+        219.94627380371094,
+        57.50446701049805
+      ],
+      "depth_stats": {
+        "mean_depth": 0.32714414596557617,
+        "median_depth": 0.3554513454437256,
+        "depth_std": 0.08460862934589386,
+        "depth_min": 0.10146168619394302,
+        "depth_max": 0.521445095539093,
+        "mask_area": 969
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "shelf cabinet",
+      "confidence": 0.40184083580970764,
+      "bounding_box": [
+        100.3418960571289,
+        21.900005340576172,
+        145.03395080566406,
+        39.00876998901367
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9753180742263794,
+        "median_depth": 0.9833344221115112,
+        "depth_std": 0.04511556774377823,
+        "depth_min": 0.5401554107666016,
+        "depth_max": 0.9901443719863892,
+        "mask_area": 602
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. box. robot arm. robot gripper. vise. table. shelf. cabinet.",
+  "text_prompt": "cup. box. robot arm. robot gripper. vise. table. shelf. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

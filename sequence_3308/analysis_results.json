@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "glasses",
+    "book",
+    "robot arm",
+    "box",
+    "bottle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bottle, glasses, book, robot arm, box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "glasses",
+        "mean_depth": 0.6225048303604126,
+        "relative_position": "closest",
+        "confidence": 0.8129844665527344
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "book",
+        "mean_depth": 0.6351138353347778,
+        "relative_position": "middle",
+        "confidence": 0.5170697569847107
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.6654893159866333,
+        "relative_position": "middle",
+        "confidence": 0.3521271347999573
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.7151800990104675,
+        "relative_position": "middle",
+        "confidence": 0.6583374738693237
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.8144367933273315,
+        "relative_position": "farthest",
+        "confidence": 0.47841766476631165
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.8144367933273315,
+        "relative_position": "farthest",
+        "confidence": 0.47841766476631165
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.7151800990104675,
+        "relative_position": "middle",
+        "confidence": 0.6583374738693237
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.6654893159866333,
+        "relative_position": "middle",
+        "confidence": 0.3521271347999573
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "book",
+        "mean_depth": 0.6351138353347778,
+        "relative_position": "middle",
+        "confidence": 0.5170697569847107
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "glasses",
+        "mean_depth": 0.6225048303604126,
+        "relative_position": "closest",
+        "confidence": 0.8129844665527344
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "glasses",
+      "confidence": 0.8129844665527344,
+      "bounding_box": [
+        172.43988037109375,
+        151.1035614013672,
+        205.26565551757812,
+        177.2648162841797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6225048303604126,
+        "median_depth": 0.6202296018600464,
+        "depth_std": 0.02800418995320797,
+        "depth_min": 0.5686920881271362,
+        "depth_max": 0.6799327731132507,
+        "mask_area": 358
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "book",
+      "confidence": 0.5170697569847107,
+      "bounding_box": [
+        132.3587188720703,
+        135.42698669433594,
+        177.8152313232422,
+        179.9296112060547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6351138353347778,
+        "median_depth": 0.6385502815246582,
+        "depth_std": 0.04362967610359192,
+        "depth_min": 0.5505654811859131,
+        "depth_max": 0.7310628890991211,
+        "mask_area": 1248
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3521271347999573,
+      "bounding_box": [
+        218.83055114746094,
+        0.025119781494140625,
+        316.0804443359375,
+        86.23626708984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6654893159866333,
+        "median_depth": 0.6584893465042114,
+        "depth_std": 0.09923802316188812,
+        "depth_min": 0.4766943156719208,
+        "depth_max": 0.8649730086326599,
+        "mask_area": 3392
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "box",
+      "confidence": 0.6583374738693237,
+      "bounding_box": [
+        121.93006896972656,
+        95.90176391601562,
+        157.3815460205078,
+        144.1973114013672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7151800990104675,
+        "median_depth": 0.7108172178268433,
+        "depth_std": 0.02646746300160885,
+        "depth_min": 0.6149023771286011,
+        "depth_max": 0.8327188491821289,
+        "mask_area": 1075
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bottle",
+      "confidence": 0.47841766476631165,
+      "bounding_box": [
+        269.75604248046875,
+        72.9272689819336,
+        290.22943115234375,
+        120.48990631103516
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8144367933273315,
+        "median_depth": 0.814202606678009,
+        "depth_std": 0.021318675950169563,
+        "depth_min": 0.7724705338478088,
+        "depth_max": 0.857957124710083,
+        "mask_area": 602
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. bottle. can. box. book. paper. remote. glasses. cable.",
+  "text_prompt": "robot arm. gripper. table. bottle. can. box. book. paper. remote. glasses. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

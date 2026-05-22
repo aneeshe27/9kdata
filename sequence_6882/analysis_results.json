@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "chair",
+    "table countertop",
+    "stove",
+    "refrigerator",
+    "oven"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: oven, table countertop, stove, refrigerator, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.2878885567188263,
+        "relative_position": "closest",
+        "confidence": 0.4223063588142395
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "table countertop",
+        "mean_depth": 0.42671483755111694,
+        "relative_position": "middle",
+        "confidence": 0.4019518494606018
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "stove",
+        "mean_depth": 0.6359241008758545,
+        "relative_position": "middle",
+        "confidence": 0.5431395769119263
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.7483454346656799,
+        "relative_position": "middle",
+        "confidence": 0.653077244758606
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "oven",
+        "mean_depth": 0.9135457277297974,
+        "relative_position": "farthest",
+        "confidence": 0.45050856471061707
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "oven",
+        "mean_depth": 0.9135457277297974,
+        "relative_position": "farthest",
+        "confidence": 0.45050856471061707
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.7483454346656799,
+        "relative_position": "middle",
+        "confidence": 0.653077244758606
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "stove",
+        "mean_depth": 0.6359241008758545,
+        "relative_position": "middle",
+        "confidence": 0.5431395769119263
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "table countertop",
+        "mean_depth": 0.42671483755111694,
+        "relative_position": "middle",
+        "confidence": 0.4019518494606018
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.2878885567188263,
+        "relative_position": "closest",
+        "confidence": 0.4223063588142395
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.4223063588142395,
+      "bounding_box": [
+        275.2645263671875,
+        76.2410888671875,
+        316.01422119140625,
+        156.91407775878906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2878885567188263,
+        "median_depth": 0.2754482924938202,
+        "depth_std": 0.06490862369537354,
+        "depth_min": 0.21341334283351898,
+        "depth_max": 0.8257836699485779,
+        "mask_area": 2023
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "table countertop",
+      "confidence": 0.4019518494606018,
+      "bounding_box": [
+        240.08541870117188,
+        120.21444702148438,
+        315.9679870605469,
+        179.9613037109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.42671483755111694,
+        "median_depth": 0.39706486463546753,
+        "depth_std": 0.10964677482843399,
+        "depth_min": 0.27934014797210693,
+        "depth_max": 0.9373756647109985,
+        "mask_area": 2718
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "stove",
+      "confidence": 0.5431395769119263,
+      "bounding_box": [
+        226.302978515625,
+        55.8207893371582,
+        299.25469970703125,
+        99.01420593261719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6359241008758545,
+        "median_depth": 0.6731370687484741,
+        "depth_std": 0.10468745231628418,
+        "depth_min": 0.3644508421421051,
+        "depth_max": 0.7882786393165588,
+        "mask_area": 1274
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "refrigerator",
+      "confidence": 0.653077244758606,
+      "bounding_box": [
+        146.12872314453125,
+        0.124176025390625,
+        233.04605102539062,
+        154.0933837890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7483454346656799,
+        "median_depth": 0.7758461833000183,
+        "depth_std": 0.19988027215003967,
+        "depth_min": 0.010797538794577122,
+        "depth_max": 0.9987046718597412,
+        "mask_area": 9098
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "oven",
+      "confidence": 0.45050856471061707,
+      "bounding_box": [
+        208.76577758789062,
+        86.83482360839844,
+        296.02685546875,
+        151.9900360107422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9135457277297974,
+        "median_depth": 0.9169245958328247,
+        "depth_std": 0.07226874679327011,
+        "depth_min": 0.5946961641311646,
+        "depth_max": 1.0,
+        "mask_area": 1918
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. refrigerator. oven. stove. chair. hooks. table. cabinet. countertop.",
+  "text_prompt": "robot arm. gripper. refrigerator. oven. stove. chair. hooks. table. cabinet. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

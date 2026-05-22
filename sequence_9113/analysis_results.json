@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "drawer",
+    "cabinet",
+    "ceiling light",
+    "window blinds"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, cabinet, drawer, window blinds, ceiling light",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.032134175300598145,
+        "relative_position": "closest",
+        "confidence": 0.636070966720581
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "drawer",
+        "mean_depth": 0.10817523300647736,
+        "relative_position": "middle",
+        "confidence": 0.42951691150665283
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.2496359497308731,
+        "relative_position": "middle",
+        "confidence": 0.4596119821071625
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "ceiling light",
+        "mean_depth": 0.4972386360168457,
+        "relative_position": "middle",
+        "confidence": 0.5090519189834595
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "window blinds",
+        "mean_depth": 0.9619689583778381,
+        "relative_position": "farthest",
+        "confidence": 0.39310383796691895
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "window blinds",
+        "mean_depth": 0.9619689583778381,
+        "relative_position": "farthest",
+        "confidence": 0.39310383796691895
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "ceiling light",
+        "mean_depth": 0.4972386360168457,
+        "relative_position": "middle",
+        "confidence": 0.5090519189834595
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.2496359497308731,
+        "relative_position": "middle",
+        "confidence": 0.4596119821071625
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "drawer",
+        "mean_depth": 0.10817523300647736,
+        "relative_position": "middle",
+        "confidence": 0.42951691150665283
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.032134175300598145,
+        "relative_position": "closest",
+        "confidence": 0.636070966720581
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.636070966720581,
+      "bounding_box": [
+        179.738037109375,
+        92.16883087158203,
+        315.957275390625,
+        179.90997314453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.032134175300598145,
+        "median_depth": 0.008245161734521389,
+        "depth_std": 0.10093346983194351,
+        "depth_min": 0.0,
+        "depth_max": 0.9725242257118225,
+        "mask_area": 5090
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "drawer",
+      "confidence": 0.42951691150665283,
+      "bounding_box": [
+        63.700748443603516,
+        143.73724365234375,
+        138.0408172607422,
+        179.98065185546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10817523300647736,
+        "median_depth": 0.10822640359401703,
+        "depth_std": 0.010214208625257015,
+        "depth_min": 0.08737194538116455,
+        "depth_max": 0.16459806263446808,
+        "mask_area": 1723
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.4596119821071625,
+      "bounding_box": [
+        100.27845764160156,
+        40.76526641845703,
+        175.9930877685547,
+        114.78406524658203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2496359497308731,
+        "median_depth": 0.24616970121860504,
+        "depth_std": 0.03415468707680702,
+        "depth_min": 0.19019968807697296,
+        "depth_max": 0.3619020879268646,
+        "mask_area": 3357
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "ceiling light",
+      "confidence": 0.5090519189834595,
+      "bounding_box": [
+        264.3702392578125,
+        38.12225341796875,
+        316.00238037109375,
+        60.833900451660156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4972386360168457,
+        "median_depth": 0.45086488127708435,
+        "depth_std": 0.11796517670154572,
+        "depth_min": 0.3592706322669983,
+        "depth_max": 0.8315882682800293,
+        "mask_area": 315
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "window blinds",
+      "confidence": 0.39310383796691895,
+      "bounding_box": [
+        250.84182739257812,
+        55.48635482788086,
+        315.9836120605469,
+        108.44537353515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9619689583778381,
+        "median_depth": 0.9728705286979675,
+        "depth_std": 0.03841636702418327,
+        "depth_min": 0.6912291646003723,
+        "depth_max": 0.9994587302207947,
+        "mask_area": 2596
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. drawer. table. window. blinds. door. ceiling light.",
+  "text_prompt": "robot arm. gripper. cabinet. drawer. table. window. blinds. door. ceiling light.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "refrigerator",
+    "cabinet",
+    "sink",
+    "faucet",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, faucet, cabinet, refrigerator, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.019427873194217682,
+        "relative_position": "closest",
+        "confidence": 0.8514695167541504
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.2146415114402771,
+        "relative_position": "middle",
+        "confidence": 0.3534458577632904
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.29144883155822754,
+        "relative_position": "middle",
+        "confidence": 0.7675843834877014
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.29596567153930664,
+        "relative_position": "middle",
+        "confidence": 0.5687413811683655
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.5284363627433777,
+        "relative_position": "farthest",
+        "confidence": 0.39152517914772034
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.5284363627433777,
+        "relative_position": "farthest",
+        "confidence": 0.39152517914772034
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.29596567153930664,
+        "relative_position": "middle",
+        "confidence": 0.5687413811683655
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.29144883155822754,
+        "relative_position": "middle",
+        "confidence": 0.7675843834877014
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.2146415114402771,
+        "relative_position": "middle",
+        "confidence": 0.3534458577632904
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.019427873194217682,
+        "relative_position": "closest",
+        "confidence": 0.8514695167541504
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "refrigerator",
+      "confidence": 0.8514695167541504,
+      "bounding_box": [
+        225.3144073486328,
+        0.01613616943359375,
+        315.96893310546875,
+        180.01519775390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.019427873194217682,
+        "median_depth": 0.018199067562818527,
+        "depth_std": 0.010404516942799091,
+        "depth_min": 0.001762801199220121,
+        "depth_max": 0.17632503807544708,
+        "mask_area": 15711
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3534458577632904,
+      "bounding_box": [
+        198.31333923339844,
+        77.40147399902344,
+        229.99208068847656,
+        152.07298278808594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2146415114402771,
+        "median_depth": 0.2177213877439499,
+        "depth_std": 0.01906539686024189,
+        "depth_min": 0.15512828528881073,
+        "depth_max": 0.26165148615837097,
+        "mask_area": 1392
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.7675843834877014,
+      "bounding_box": [
+        156.5424041748047,
+        38.82805633544922,
+        217.9253387451172,
+        59.89073181152344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29144883155822754,
+        "median_depth": 0.29007238149642944,
+        "depth_std": 0.02581760659813881,
+        "depth_min": 0.24909651279449463,
+        "depth_max": 0.34348148107528687,
+        "mask_area": 646
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "faucet",
+      "confidence": 0.5687413811683655,
+      "bounding_box": [
+        199.093994140625,
+        16.630943298339844,
+        211.88507080078125,
+        37.656925201416016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29596567153930664,
+        "median_depth": 0.29529789090156555,
+        "depth_std": 0.009723100811243057,
+        "depth_min": 0.28039294481277466,
+        "depth_max": 0.33468711376190186,
+        "mask_area": 187
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.39152517914772034,
+      "bounding_box": [
+        80.0245361328125,
+        54.538475036621094,
+        147.2405242919922,
+        111.44525909423828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5284363627433777,
+        "median_depth": 0.5134921073913574,
+        "depth_std": 0.12372180819511414,
+        "depth_min": 0.06598920375108719,
+        "depth_max": 0.8414280414581299,
+        "mask_area": 1160
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. refrigerator. countertop. cabinet. sink. faucet. bottle. rice cooker. cooktop. rack. table.",
+  "text_prompt": "robot arm. robot gripper. refrigerator. countertop. cabinet. sink. faucet. bottle. rice cooker. cooktop. rack. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "door",
+    "hanger",
+    "drawer shelf",
+    "floor",
+    "curtain"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: drawer shelf, floor, curtain, hanger, door",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.029476890340447426,
+        "relative_position": "closest",
+        "confidence": 0.4527326822280884
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "hanger",
+        "mean_depth": 0.16715945303440094,
+        "relative_position": "middle",
+        "confidence": 0.4037502408027649
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "drawer shelf",
+        "mean_depth": 0.16878299415111542,
+        "relative_position": "middle",
+        "confidence": 0.39380136132240295
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "floor",
+        "mean_depth": 0.28079745173454285,
+        "relative_position": "middle",
+        "confidence": 0.4430745840072632
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "curtain",
+        "mean_depth": 0.9745306372642517,
+        "relative_position": "farthest",
+        "confidence": 0.4222007095813751
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "curtain",
+        "mean_depth": 0.9745306372642517,
+        "relative_position": "farthest",
+        "confidence": 0.4222007095813751
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "floor",
+        "mean_depth": 0.28079745173454285,
+        "relative_position": "middle",
+        "confidence": 0.4430745840072632
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "drawer shelf",
+        "mean_depth": 0.16878299415111542,
+        "relative_position": "middle",
+        "confidence": 0.39380136132240295
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "hanger",
+        "mean_depth": 0.16715945303440094,
+        "relative_position": "middle",
+        "confidence": 0.4037502408027649
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.029476890340447426,
+        "relative_position": "closest",
+        "confidence": 0.4527326822280884
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "door",
+      "confidence": 0.4527326822280884,
+      "bounding_box": [
+        0.35334014892578125,
+        0.061737060546875,
+        129.04550170898438,
+        180.01205444335938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.029476890340447426,
+        "median_depth": 0.025440452620387077,
+        "depth_std": 0.021694811061024666,
+        "depth_min": 7.442592323059216e-05,
+        "depth_max": 0.09782133251428604,
+        "mask_area": 21208
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "hanger",
+      "confidence": 0.4037502408027649,
+      "bounding_box": [
+        222.69168090820312,
+        42.04996871948242,
+        284.0242004394531,
+        77.54156494140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16715945303440094,
+        "median_depth": 0.15291275084018707,
+        "depth_std": 0.0768352672457695,
+        "depth_min": 0.14403879642486572,
+        "depth_max": 0.9587115049362183,
+        "mask_area": 623
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "drawer shelf",
+      "confidence": 0.39380136132240295,
+      "bounding_box": [
+        127.77825927734375,
+        112.3576889038086,
+        206.45196533203125,
+        179.8243408203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16878299415111542,
+        "median_depth": 0.1722085028886795,
+        "depth_std": 0.03604297712445259,
+        "depth_min": 0.10497166961431503,
+        "depth_max": 0.2634766697883606,
+        "mask_area": 2762
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "floor",
+      "confidence": 0.4430745840072632,
+      "bounding_box": [
+        200.41595458984375,
+        115.50927734375,
+        315.86810302734375,
+        180.00262451171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28079745173454285,
+        "median_depth": 0.26880067586898804,
+        "depth_std": 0.049039408564567566,
+        "depth_min": 0.1703934520483017,
+        "depth_max": 0.3852601945400238,
+        "mask_area": 1169
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "curtain",
+      "confidence": 0.4222007095813751,
+      "bounding_box": [
+        254.40692138671875,
+        0.7675838470458984,
+        316.00927734375,
+        49.53351593017578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9745306372642517,
+        "median_depth": 0.9819937944412231,
+        "depth_std": 0.04394135996699333,
+        "depth_min": 0.18858517706394196,
+        "depth_max": 0.9944345951080322,
+        "mask_area": 2740
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "shirt. hanger. clothing. wardrobe. drawer. shelf. curtain. door. floor. wall.",
+  "text_prompt": "shirt. hanger. clothing. wardrobe. drawer. shelf. curtain. door. floor. wall.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

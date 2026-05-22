@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm robot gripper",
+    "plate",
+    "cloth",
+    "cup",
+    "straw"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: straw, robot arm robot gripper, cup, plate, cloth",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.11657559126615524,
+        "relative_position": "closest",
+        "confidence": 0.4841880798339844
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "plate",
+        "mean_depth": 0.14306879043579102,
+        "relative_position": "middle",
+        "confidence": 0.506325900554657
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cloth",
+        "mean_depth": 0.18841548264026642,
+        "relative_position": "middle",
+        "confidence": 0.5443640947341919
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.19516372680664062,
+        "relative_position": "middle",
+        "confidence": 0.8309174180030823
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "straw",
+        "mean_depth": 0.24825012683868408,
+        "relative_position": "farthest",
+        "confidence": 0.5543900728225708
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "straw",
+        "mean_depth": 0.24825012683868408,
+        "relative_position": "farthest",
+        "confidence": 0.5543900728225708
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.19516372680664062,
+        "relative_position": "middle",
+        "confidence": 0.8309174180030823
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cloth",
+        "mean_depth": 0.18841548264026642,
+        "relative_position": "middle",
+        "confidence": 0.5443640947341919
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "plate",
+        "mean_depth": 0.14306879043579102,
+        "relative_position": "middle",
+        "confidence": 0.506325900554657
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.11657559126615524,
+        "relative_position": "closest",
+        "confidence": 0.4841880798339844
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm robot gripper",
+      "confidence": 0.4841880798339844,
+      "bounding_box": [
+        0.041107177734375,
+        0.10229873657226562,
+        83.45882415771484,
+        126.11541748046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11657559126615524,
+        "median_depth": 0.10624681413173676,
+        "depth_std": 0.08893101662397385,
+        "depth_min": 0.00985739380121231,
+        "depth_max": 0.5989415645599365,
+        "mask_area": 4395
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "plate",
+      "confidence": 0.506325900554657,
+      "bounding_box": [
+        163.16928100585938,
+        101.64140319824219,
+        211.5802001953125,
+        150.46592712402344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14306879043579102,
+        "median_depth": 0.1402759552001953,
+        "depth_std": 0.01940392702817917,
+        "depth_min": 0.10882960259914398,
+        "depth_max": 0.20093826949596405,
+        "mask_area": 1760
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cloth",
+      "confidence": 0.5443640947341919,
+      "bounding_box": [
+        195.2232208251953,
+        64.36228942871094,
+        316.007080078125,
+        145.46681213378906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18841548264026642,
+        "median_depth": 0.17180652916431427,
+        "depth_std": 0.05440697818994522,
+        "depth_min": 0.11427478492259979,
+        "depth_max": 0.46812525391578674,
+        "mask_area": 6107
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.8309174180030823,
+      "bounding_box": [
+        177.80259704589844,
+        75.04776000976562,
+        199.32518005371094,
+        100.80433654785156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19516372680664062,
+        "median_depth": 0.19514721632003784,
+        "depth_std": 0.00983423087745905,
+        "depth_min": 0.16393771767616272,
+        "depth_max": 0.2486760914325714,
+        "mask_area": 372
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "straw",
+      "confidence": 0.5543900728225708,
+      "bounding_box": [
+        150.4599609375,
+        75.36353302001953,
+        167.19180297851562,
+        89.42029571533203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24825012683868408,
+        "median_depth": 0.24959903955459595,
+        "depth_std": 0.008686820976436138,
+        "depth_min": 0.22835421562194824,
+        "depth_max": 0.2596322000026703,
+        "mask_area": 66
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. robot gripper. cup. straw. plate. box. cloth. clamp. cart. tablet.",
+  "text_prompt": "table. robot arm. robot gripper. cup. straw. plate. box. cloth. clamp. cart. tablet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

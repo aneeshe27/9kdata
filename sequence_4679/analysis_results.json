@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "appliance",
+    "power cable",
+    "burger",
+    "cloth",
+    "plate"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: plate, cloth, power cable, appliance, burger",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "appliance",
+        "mean_depth": 0.10049395263195038,
+        "relative_position": "closest",
+        "confidence": 0.5842077136039734
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "power cable",
+        "mean_depth": 0.12014628201723099,
+        "relative_position": "middle",
+        "confidence": 0.49570906162261963
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "burger",
+        "mean_depth": 0.12031801044940948,
+        "relative_position": "middle",
+        "confidence": 0.7449660301208496
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.1281394213438034,
+        "relative_position": "middle",
+        "confidence": 0.5202646851539612
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "plate",
+        "mean_depth": 0.14813880622386932,
+        "relative_position": "farthest",
+        "confidence": 0.7860671281814575
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "plate",
+        "mean_depth": 0.14813880622386932,
+        "relative_position": "farthest",
+        "confidence": 0.7860671281814575
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.1281394213438034,
+        "relative_position": "middle",
+        "confidence": 0.5202646851539612
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "burger",
+        "mean_depth": 0.12031801044940948,
+        "relative_position": "middle",
+        "confidence": 0.7449660301208496
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "power cable",
+        "mean_depth": 0.12014628201723099,
+        "relative_position": "middle",
+        "confidence": 0.49570906162261963
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "appliance",
+        "mean_depth": 0.10049395263195038,
+        "relative_position": "closest",
+        "confidence": 0.5842077136039734
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "appliance",
+      "confidence": 0.5842077136039734,
+      "bounding_box": [
+        100.40780639648438,
+        21.758071899414062,
+        154.97610473632812,
+        97.37066650390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10049395263195038,
+        "median_depth": 0.0887991189956665,
+        "depth_std": 0.05667290836572647,
+        "depth_min": 0.07010826468467712,
+        "depth_max": 0.6392699480056763,
+        "mask_area": 3107
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "power cable",
+      "confidence": 0.49570906162261963,
+      "bounding_box": [
+        49.15060043334961,
+        65.71846771240234,
+        105.75106811523438,
+        98.18199920654297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12014628201723099,
+        "median_depth": 0.12175716459751129,
+        "depth_std": 0.013977259397506714,
+        "depth_min": 0.09576407819986343,
+        "depth_max": 0.15304479002952576,
+        "mask_area": 344
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "burger",
+      "confidence": 0.7449660301208496,
+      "bounding_box": [
+        291.18450927734375,
+        61.493465423583984,
+        313.21295166015625,
+        77.97518920898438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12031801044940948,
+        "median_depth": 0.11843094229698181,
+        "depth_std": 0.00719508295878768,
+        "depth_min": 0.11184731125831604,
+        "depth_max": 0.1473904699087143,
+        "mask_area": 290
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cloth",
+      "confidence": 0.5202646851539612,
+      "bounding_box": [
+        171.7786102294922,
+        56.11532211303711,
+        254.8551483154297,
+        97.21128845214844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1281394213438034,
+        "median_depth": 0.12794144451618195,
+        "depth_std": 0.018406858667731285,
+        "depth_min": 0.09002111852169037,
+        "depth_max": 0.17480525374412537,
+        "mask_area": 1305
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "plate",
+      "confidence": 0.7860671281814575,
+      "bounding_box": [
+        33.27684783935547,
+        63.34811019897461,
+        66.5326919555664,
+        79.65040588378906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14813880622386932,
+        "median_depth": 0.14595355093479156,
+        "depth_std": 0.010798388160765171,
+        "depth_min": 0.13023541867733002,
+        "depth_max": 0.18865710496902466,
+        "mask_area": 413
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "plate. tomato. burger. appliance. power cable. robot arm. gripper. cloth. pan. spatula. table.",
+  "text_prompt": "plate. tomato. burger. appliance. power cable. robot arm. gripper. cloth. pan. spatula. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

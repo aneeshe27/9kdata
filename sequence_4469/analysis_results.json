@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "dresser",
+    "painting",
+    "blanket",
+    "pillow",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: blanket, pillow, dresser, window, painting",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "dresser",
+        "mean_depth": 0.1345638483762741,
+        "relative_position": "closest",
+        "confidence": 0.649409294128418
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "painting",
+        "mean_depth": 0.2117668092250824,
+        "relative_position": "middle",
+        "confidence": 0.7517224550247192
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "blanket",
+        "mean_depth": 0.23266878724098206,
+        "relative_position": "middle",
+        "confidence": 0.41262534260749817
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "pillow",
+        "mean_depth": 0.6152928471565247,
+        "relative_position": "middle",
+        "confidence": 0.6181693077087402
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.9225515723228455,
+        "relative_position": "farthest",
+        "confidence": 0.6098922491073608
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.9225515723228455,
+        "relative_position": "farthest",
+        "confidence": 0.6098922491073608
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "pillow",
+        "mean_depth": 0.6152928471565247,
+        "relative_position": "middle",
+        "confidence": 0.6181693077087402
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "blanket",
+        "mean_depth": 0.23266878724098206,
+        "relative_position": "middle",
+        "confidence": 0.41262534260749817
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "painting",
+        "mean_depth": 0.2117668092250824,
+        "relative_position": "middle",
+        "confidence": 0.7517224550247192
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "dresser",
+        "mean_depth": 0.1345638483762741,
+        "relative_position": "closest",
+        "confidence": 0.649409294128418
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "dresser",
+      "confidence": 0.649409294128418,
+      "bounding_box": [
+        203.89259338378906,
+        63.44315719604492,
+        315.8955078125,
+        179.9585723876953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1345638483762741,
+        "median_depth": 0.12177415937185287,
+        "depth_std": 0.10298097133636475,
+        "depth_min": 5.333854460332077e-07,
+        "depth_max": 0.5085982084274292,
+        "mask_area": 6477
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "painting",
+      "confidence": 0.7517224550247192,
+      "bounding_box": [
+        275.4797668457031,
+        0.030681610107421875,
+        315.9771423339844,
+        36.702484130859375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2117668092250824,
+        "median_depth": 0.21236452460289001,
+        "depth_std": 0.030504295602440834,
+        "depth_min": 0.15962962806224823,
+        "depth_max": 0.28285616636276245,
+        "mask_area": 1185
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "blanket",
+      "confidence": 0.41262534260749817,
+      "bounding_box": [
+        0.07281494140625,
+        127.48463439941406,
+        174.36886596679688,
+        179.9742889404297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23266878724098206,
+        "median_depth": 0.21876758337020874,
+        "depth_std": 0.08768906444311142,
+        "depth_min": 0.10742004960775375,
+        "depth_max": 0.6062847971916199,
+        "mask_area": 6816
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "pillow",
+      "confidence": 0.6181693077087402,
+      "bounding_box": [
+        -0.02646636962890625,
+        78.22318267822266,
+        47.27693176269531,
+        102.78418731689453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6152928471565247,
+        "median_depth": 0.5935424566268921,
+        "depth_std": 0.0867290273308754,
+        "depth_min": 0.5052458047866821,
+        "depth_max": 0.8842192888259888,
+        "mask_area": 689
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "window",
+      "confidence": 0.6098922491073608,
+      "bounding_box": [
+        152.64373779296875,
+        0.00621795654296875,
+        212.1539306640625,
+        64.39910125732422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9225515723228455,
+        "median_depth": 0.9195812344551086,
+        "depth_std": 0.0415053553879261,
+        "depth_min": 0.8130156993865967,
+        "depth_max": 0.9931424260139465,
+        "mask_area": 3317
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bed. pillow. blanket. dresser. window. blinds. robot arm. gripper. plastic bag. painting.",
+  "text_prompt": "bed. pillow. blanket. dresser. window. blinds. robot arm. gripper. plastic bag. painting.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

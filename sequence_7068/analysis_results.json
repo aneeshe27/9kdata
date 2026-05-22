@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "plate",
+    "bowl",
+    "tape roll",
+    "sofa"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sofa, robot arm gripper, bowl, tape roll, plate",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.09119044244289398,
+        "relative_position": "closest",
+        "confidence": 0.4183256924152374
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "plate",
+        "mean_depth": 0.14508265256881714,
+        "relative_position": "middle",
+        "confidence": 0.7715949416160583
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.1493309587240219,
+        "relative_position": "middle",
+        "confidence": 0.7001450061798096
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "tape roll",
+        "mean_depth": 0.28363505005836487,
+        "relative_position": "middle",
+        "confidence": 0.4283498525619507
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "sofa",
+        "mean_depth": 0.3353200852870941,
+        "relative_position": "farthest",
+        "confidence": 0.4561329185962677
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "sofa",
+        "mean_depth": 0.3353200852870941,
+        "relative_position": "farthest",
+        "confidence": 0.4561329185962677
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "tape roll",
+        "mean_depth": 0.28363505005836487,
+        "relative_position": "middle",
+        "confidence": 0.4283498525619507
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.1493309587240219,
+        "relative_position": "middle",
+        "confidence": 0.7001450061798096
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "plate",
+        "mean_depth": 0.14508265256881714,
+        "relative_position": "middle",
+        "confidence": 0.7715949416160583
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.09119044244289398,
+        "relative_position": "closest",
+        "confidence": 0.4183256924152374
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.4183256924152374,
+      "bounding_box": [
+        209.34396362304688,
+        0.9055404663085938,
+        315.9819030761719,
+        85.50017547607422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09119044244289398,
+        "median_depth": 0.06208197772502899,
+        "depth_std": 0.11794620007276535,
+        "depth_min": 0.0,
+        "depth_max": 0.800668478012085,
+        "mask_area": 2843
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "plate",
+      "confidence": 0.7715949416160583,
+      "bounding_box": [
+        188.49072265625,
+        115.14118957519531,
+        226.53106689453125,
+        137.71385192871094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14508265256881714,
+        "median_depth": 0.14948295056819916,
+        "depth_std": 0.027804838493466377,
+        "depth_min": 0.09106680005788803,
+        "depth_max": 0.22282341122627258,
+        "mask_area": 296
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bowl",
+      "confidence": 0.7001450061798096,
+      "bounding_box": [
+        144.74655151367188,
+        104.31312561035156,
+        184.68670654296875,
+        133.9577178955078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1493309587240219,
+        "median_depth": 0.14807918667793274,
+        "depth_std": 0.049006182700395584,
+        "depth_min": 0.07546096295118332,
+        "depth_max": 0.31545308232307434,
+        "mask_area": 683
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "tape roll",
+      "confidence": 0.4283498525619507,
+      "bounding_box": [
+        221.353515625,
+        98.64158630371094,
+        241.30227661132812,
+        113.90594482421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28363505005836487,
+        "median_depth": 0.2796773314476013,
+        "depth_std": 0.017414867877960205,
+        "depth_min": 0.2625487744808197,
+        "depth_max": 0.338835209608078,
+        "mask_area": 229
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "sofa",
+      "confidence": 0.4561329185962677,
+      "bounding_box": [
+        15.009468078613281,
+        152.51324462890625,
+        123.4657211303711,
+        179.97805786132812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3353200852870941,
+        "median_depth": 0.3221493065357208,
+        "depth_std": 0.07469823211431503,
+        "depth_min": 0.23505553603172302,
+        "depth_max": 0.7232857942581177,
+        "mask_area": 1563
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. mug. cup. plate. bowl. measuring cup. container. tape roll. bottle. napkin. window. window blind. sofa.",
+  "text_prompt": "table. robot arm. gripper. mug. cup. plate. bowl. measuring cup. container. tape roll. bottle. napkin. window. window blind. sofa.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

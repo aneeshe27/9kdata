@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper",
+    "wall",
+    "cloth",
+    "box",
+    "whiteboard"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: box, gripper, whiteboard, wall, cloth",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.08021331578493118,
+        "relative_position": "closest",
+        "confidence": 0.3924534320831299
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "wall",
+        "mean_depth": 0.1021757572889328,
+        "relative_position": "middle",
+        "confidence": 0.47670474648475647
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.12070132791996002,
+        "relative_position": "middle",
+        "confidence": 0.5441660284996033
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.2610234022140503,
+        "relative_position": "middle",
+        "confidence": 0.6316913366317749
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "whiteboard",
+        "mean_depth": 0.8600122332572937,
+        "relative_position": "farthest",
+        "confidence": 0.4499666690826416
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "whiteboard",
+        "mean_depth": 0.8600122332572937,
+        "relative_position": "farthest",
+        "confidence": 0.4499666690826416
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.2610234022140503,
+        "relative_position": "middle",
+        "confidence": 0.6316913366317749
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.12070132791996002,
+        "relative_position": "middle",
+        "confidence": 0.5441660284996033
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "wall",
+        "mean_depth": 0.1021757572889328,
+        "relative_position": "middle",
+        "confidence": 0.47670474648475647
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.08021331578493118,
+        "relative_position": "closest",
+        "confidence": 0.3924534320831299
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.3924534320831299,
+      "bounding_box": [
+        35.24397277832031,
+        138.90374755859375,
+        74.88570404052734,
+        169.91268920898438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08021331578493118,
+        "median_depth": 0.0773426741361618,
+        "depth_std": 0.018045224249362946,
+        "depth_min": 0.052046630531549454,
+        "depth_max": 0.12900781631469727,
+        "mask_area": 473
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "wall",
+      "confidence": 0.47670474648475647,
+      "bounding_box": [
+        203.1492156982422,
+        0.0132293701171875,
+        316.018310546875,
+        180.01258850097656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1021757572889328,
+        "median_depth": 0.08332957327365875,
+        "depth_std": 0.05056948587298393,
+        "depth_min": 0.03648020699620247,
+        "depth_max": 0.34929144382476807,
+        "mask_area": 11764
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.5441660284996033,
+      "bounding_box": [
+        113.74623107910156,
+        99.12559509277344,
+        176.5157012939453,
+        132.6789093017578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12070132791996002,
+        "median_depth": 0.11839565634727478,
+        "depth_std": 0.015433973632752895,
+        "depth_min": 0.07734095305204391,
+        "depth_max": 0.17562729120254517,
+        "mask_area": 957
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "box",
+      "confidence": 0.6316913366317749,
+      "bounding_box": [
+        105.05374145507812,
+        62.88753128051758,
+        168.10031127929688,
+        115.95387268066406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2610234022140503,
+        "median_depth": 0.18856729567050934,
+        "depth_std": 0.1260361671447754,
+        "depth_min": 0.09249179065227509,
+        "depth_max": 0.7482152581214905,
+        "mask_area": 1594
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "whiteboard",
+      "confidence": 0.4499666690826416,
+      "bounding_box": [
+        162.0550079345703,
+        24.914955139160156,
+        206.9785919189453,
+        81.4963150024414
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8600122332572937,
+        "median_depth": 0.8683081865310669,
+        "depth_std": 0.03384050726890564,
+        "depth_min": 0.44366174936294556,
+        "depth_max": 0.8806412220001221,
+        "mask_area": 2201
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. box. cloth. whiteboard. wall.",
+  "text_prompt": "table. robot arm. gripper. box. cloth. whiteboard. wall.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

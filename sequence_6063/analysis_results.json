@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "door",
+    "light switch",
+    "table",
+    "plant"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: door, plant, light switch, table, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.020103249698877335,
+        "relative_position": "closest",
+        "confidence": 0.4335745573043823
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "door",
+        "mean_depth": 0.19606764614582062,
+        "relative_position": "middle",
+        "confidence": 0.5832032561302185
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "light switch",
+        "mean_depth": 0.22935985028743744,
+        "relative_position": "middle",
+        "confidence": 0.7024722695350647
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.5990166068077087,
+        "relative_position": "middle",
+        "confidence": 0.676898181438446
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "plant",
+        "mean_depth": 0.641494631767273,
+        "relative_position": "farthest",
+        "confidence": 0.8122949600219727
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "plant",
+        "mean_depth": 0.641494631767273,
+        "relative_position": "farthest",
+        "confidence": 0.8122949600219727
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.5990166068077087,
+        "relative_position": "middle",
+        "confidence": 0.676898181438446
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "light switch",
+        "mean_depth": 0.22935985028743744,
+        "relative_position": "middle",
+        "confidence": 0.7024722695350647
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "door",
+        "mean_depth": 0.19606764614582062,
+        "relative_position": "middle",
+        "confidence": 0.5832032561302185
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.020103249698877335,
+        "relative_position": "closest",
+        "confidence": 0.4335745573043823
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.4335745573043823,
+      "bounding_box": [
+        236.4567108154297,
+        0.04956817626953125,
+        315.8762512207031,
+        71.00489807128906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.020103249698877335,
+        "median_depth": 0.014165553264319897,
+        "depth_std": 0.027439549565315247,
+        "depth_min": 0.0020014424808323383,
+        "depth_max": 0.4437122941017151,
+        "mask_area": 3771
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "door",
+      "confidence": 0.5832032561302185,
+      "bounding_box": [
+        66.75653076171875,
+        1.9666595458984375,
+        126.86442565917969,
+        166.58804321289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19606764614582062,
+        "median_depth": 0.19411058723926544,
+        "depth_std": 0.016043664887547493,
+        "depth_min": 0.16282516717910767,
+        "depth_max": 0.23015253245830536,
+        "mask_area": 9090
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "light switch",
+      "confidence": 0.7024722695350647,
+      "bounding_box": [
+        169.16212463378906,
+        62.40796661376953,
+        183.8465118408203,
+        94.4065933227539
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22935985028743744,
+        "median_depth": 0.2292669713497162,
+        "depth_std": 0.0032166510354727507,
+        "depth_min": 0.2238800823688507,
+        "depth_max": 0.23656895756721497,
+        "mask_area": 341
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.676898181438446,
+      "bounding_box": [
+        194.4601287841797,
+        123.3412857055664,
+        315.91119384765625,
+        179.955078125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5990166068077087,
+        "median_depth": 0.5874335169792175,
+        "depth_std": 0.17094889283180237,
+        "depth_min": 0.3000643253326416,
+        "depth_max": 0.9905645251274109,
+        "mask_area": 3115
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "plant",
+      "confidence": 0.8122949600219727,
+      "bounding_box": [
+        242.92796325683594,
+        90.09770202636719,
+        292.04302978515625,
+        148.47792053222656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.641494631767273,
+        "median_depth": 0.6340629458427429,
+        "depth_std": 0.0714091956615448,
+        "depth_min": 0.32010653614997864,
+        "depth_max": 0.9523773789405823,
+        "mask_area": 1719
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "door. door handle. light switch. robot arm. gripper. plant. pot. table.",
+  "text_prompt": "door. door handle. light switch. robot arm. gripper. plant. pot. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

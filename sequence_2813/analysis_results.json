@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cardboard box",
+    "table",
+    "jacket",
+    "cup"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cardboard box, jacket, table, cup, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.01671222411096096,
+        "relative_position": "closest",
+        "confidence": 0.3763481378555298
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.035435374826192856,
+        "relative_position": "middle",
+        "confidence": 0.5481166243553162
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.08179798722267151,
+        "relative_position": "middle",
+        "confidence": 0.5107954740524292
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "jacket",
+        "mean_depth": 0.22405296564102173,
+        "relative_position": "middle",
+        "confidence": 0.7028519511222839
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.2800210118293762,
+        "relative_position": "farthest",
+        "confidence": 0.37092819809913635
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.2800210118293762,
+        "relative_position": "farthest",
+        "confidence": 0.37092819809913635
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "jacket",
+        "mean_depth": 0.22405296564102173,
+        "relative_position": "middle",
+        "confidence": 0.7028519511222839
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.08179798722267151,
+        "relative_position": "middle",
+        "confidence": 0.5107954740524292
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.035435374826192856,
+        "relative_position": "middle",
+        "confidence": 0.5481166243553162
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.01671222411096096,
+        "relative_position": "closest",
+        "confidence": 0.3763481378555298
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3763481378555298,
+      "bounding_box": [
+        0.00899505615234375,
+        36.41619110107422,
+        47.338111877441406,
+        179.72781372070312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01671222411096096,
+        "median_depth": 0.014062769711017609,
+        "depth_std": 0.014359001070261002,
+        "depth_min": 0.0014729559188708663,
+        "depth_max": 0.2941899001598358,
+        "mask_area": 3887
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "cardboard box",
+      "confidence": 0.5481166243553162,
+      "bounding_box": [
+        268.00286865234375,
+        91.46745300292969,
+        315.91290283203125,
+        179.9368133544922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.035435374826192856,
+        "median_depth": 0.03202565014362335,
+        "depth_std": 0.027307147160172462,
+        "depth_min": 0.002820594236254692,
+        "depth_max": 0.2212042659521103,
+        "mask_area": 3839
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.5107954740524292,
+      "bounding_box": [
+        101.26453399658203,
+        122.43150329589844,
+        269.7519836425781,
+        179.9735870361328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08179798722267151,
+        "median_depth": 0.0794975534081459,
+        "depth_std": 0.015061740763485432,
+        "depth_min": 0.053221508860588074,
+        "depth_max": 0.15571387112140656,
+        "mask_area": 3327
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "jacket",
+      "confidence": 0.7028519511222839,
+      "bounding_box": [
+        54.13985061645508,
+        68.21578979492188,
+        106.2735595703125,
+        114.09481811523438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22405296564102173,
+        "median_depth": 0.18854427337646484,
+        "depth_std": 0.11288686096668243,
+        "depth_min": 0.17665502429008484,
+        "depth_max": 0.8169877529144287,
+        "mask_area": 1003
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.37092819809913635,
+      "bounding_box": [
+        173.64898681640625,
+        93.72088623046875,
+        181.392578125,
+        104.7955322265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2800210118293762,
+        "median_depth": 0.26786717772483826,
+        "depth_std": 0.04117077216506004,
+        "depth_min": 0.22554965317249298,
+        "depth_max": 0.372443825006485,
+        "mask_area": 71
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. banana. orange. ball. cup. laptop. cardboard box. plastic container. lid. clamp. power cable. jacket. cutting board. robot arm. table.",
+  "text_prompt": "bowl. banana. orange. ball. cup. laptop. cardboard box. plastic container. lid. clamp. power cable. jacket. cutting board. robot arm. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

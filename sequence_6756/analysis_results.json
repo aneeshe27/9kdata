@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper",
+    "rope",
+    "cardboard box",
+    "window",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cardboard box, window, rope, window, gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.0158675704151392,
+        "relative_position": "closest",
+        "confidence": 0.37546733021736145
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "rope",
+        "mean_depth": 0.056221503764390945,
+        "relative_position": "middle",
+        "confidence": 0.5618292689323425
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.07475245743989944,
+        "relative_position": "middle",
+        "confidence": 0.9061815738677979
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.1612570583820343,
+        "relative_position": "middle",
+        "confidence": 0.38422247767448425
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "window",
+        "mean_depth": 0.20470397174358368,
+        "relative_position": "farthest",
+        "confidence": 0.3515282869338989
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "window",
+        "mean_depth": 0.20470397174358368,
+        "relative_position": "farthest",
+        "confidence": 0.3515282869338989
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.1612570583820343,
+        "relative_position": "middle",
+        "confidence": 0.38422247767448425
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.07475245743989944,
+        "relative_position": "middle",
+        "confidence": 0.9061815738677979
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "rope",
+        "mean_depth": 0.056221503764390945,
+        "relative_position": "middle",
+        "confidence": 0.5618292689323425
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.0158675704151392,
+        "relative_position": "closest",
+        "confidence": 0.37546733021736145
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "gripper",
+      "confidence": 0.37546733021736145,
+      "bounding_box": [
+        129.20535278320312,
+        96.96305847167969,
+        167.0560302734375,
+        140.97776794433594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0158675704151392,
+        "median_depth": 0.012887921184301376,
+        "depth_std": 0.012915795668959618,
+        "depth_min": 0.007327122613787651,
+        "depth_max": 0.16140778362751007,
+        "mask_area": 657
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "rope",
+      "confidence": 0.5618292689323425,
+      "bounding_box": [
+        81.31088256835938,
+        134.4680938720703,
+        131.98863220214844,
+        179.6153106689453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.056221503764390945,
+        "median_depth": 0.05185189098119736,
+        "depth_std": 0.008597367443144321,
+        "depth_min": 0.045457977801561356,
+        "depth_max": 0.07541819661855698,
+        "mask_area": 501
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cardboard box",
+      "confidence": 0.9061815738677979,
+      "bounding_box": [
+        173.09780883789062,
+        83.23963928222656,
+        227.98580932617188,
+        143.83578491210938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07475245743989944,
+        "median_depth": 0.07379279285669327,
+        "depth_std": 0.032573338598012924,
+        "depth_min": 0.007283532526344061,
+        "depth_max": 0.4254474639892578,
+        "mask_area": 2152
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "window",
+      "confidence": 0.38422247767448425,
+      "bounding_box": [
+        0.023265838623046875,
+        9.810699462890625,
+        45.174949645996094,
+        115.92623901367188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1612570583820343,
+        "median_depth": 0.16009284555912018,
+        "depth_std": 0.0077779777348041534,
+        "depth_min": 0.14521223306655884,
+        "depth_max": 0.17785705626010895,
+        "mask_area": 3194
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "window",
+      "confidence": 0.3515282869338989,
+      "bounding_box": [
+        19.24490737915039,
+        0.05154609680175781,
+        127.88333129882812,
+        30.56488609313965
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20470397174358368,
+        "median_depth": 0.2043970823287964,
+        "depth_std": 0.02640557661652565,
+        "depth_min": 0.1600855588912964,
+        "depth_max": 0.25193190574645996,
+        "mask_area": 2392
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cardboard box. rope. bench. window.",
+  "text_prompt": "robot arm. gripper. table. cardboard box. rope. bench. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

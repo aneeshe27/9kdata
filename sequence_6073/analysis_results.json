@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "clamp",
+    "bowl",
+    "toaster",
+    "robot gripper",
+    "cardboard box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bowl, toaster, cardboard box, robot gripper, clamp",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "clamp",
+        "mean_depth": 0.14228278398513794,
+        "relative_position": "closest",
+        "confidence": 0.3709786832332611
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.2932828962802887,
+        "relative_position": "middle",
+        "confidence": 0.7979421019554138
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "toaster",
+        "mean_depth": 0.395218163728714,
+        "relative_position": "middle",
+        "confidence": 0.8545870780944824
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "robot gripper",
+        "mean_depth": 0.4569152593612671,
+        "relative_position": "middle",
+        "confidence": 0.6383022665977478
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cardboard box",
+        "mean_depth": 0.7625705003738403,
+        "relative_position": "farthest",
+        "confidence": 0.4166904091835022
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cardboard box",
+        "mean_depth": 0.7625705003738403,
+        "relative_position": "farthest",
+        "confidence": 0.4166904091835022
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "robot gripper",
+        "mean_depth": 0.4569152593612671,
+        "relative_position": "middle",
+        "confidence": 0.6383022665977478
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "toaster",
+        "mean_depth": 0.395218163728714,
+        "relative_position": "middle",
+        "confidence": 0.8545870780944824
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.2932828962802887,
+        "relative_position": "middle",
+        "confidence": 0.7979421019554138
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "clamp",
+        "mean_depth": 0.14228278398513794,
+        "relative_position": "closest",
+        "confidence": 0.3709786832332611
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "clamp",
+      "confidence": 0.3709786832332611,
+      "bounding_box": [
+        95.79261779785156,
+        119.68904876708984,
+        131.37583923339844,
+        155.36911010742188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14228278398513794,
+        "median_depth": 0.1350620985031128,
+        "depth_std": 0.021781405434012413,
+        "depth_min": 0.12534815073013306,
+        "depth_max": 0.21984398365020752,
+        "mask_area": 420
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "bowl",
+      "confidence": 0.7979421019554138,
+      "bounding_box": [
+        175.95974731445312,
+        71.84170532226562,
+        237.02130126953125,
+        111.47421264648438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2932828962802887,
+        "median_depth": 0.25216907262802124,
+        "depth_std": 0.09381067007780075,
+        "depth_min": 0.2241804003715515,
+        "depth_max": 0.9598098397254944,
+        "mask_area": 1943
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "toaster",
+      "confidence": 0.8545870780944824,
+      "bounding_box": [
+        159.6361846923828,
+        51.96611785888672,
+        195.3744659423828,
+        85.70394134521484
+      ],
+      "depth_stats": {
+        "mean_depth": 0.395218163728714,
+        "median_depth": 0.3843388557434082,
+        "depth_std": 0.041008878499269485,
+        "depth_min": 0.31826725602149963,
+        "depth_max": 0.8390172719955444,
+        "mask_area": 882
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot gripper",
+      "confidence": 0.6383022665977478,
+      "bounding_box": [
+        106.45948028564453,
+        0.07425689697265625,
+        173.51513671875,
+        89.36363220214844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4569152593612671,
+        "median_depth": 0.3876205384731293,
+        "depth_std": 0.16808472573757172,
+        "depth_min": 0.30348441004753113,
+        "depth_max": 0.9800060987472534,
+        "mask_area": 2850
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cardboard box",
+      "confidence": 0.4166904091835022,
+      "bounding_box": [
+        21.1715087890625,
+        57.9865837097168,
+        87.14622497558594,
+        84.76248168945312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7625705003738403,
+        "median_depth": 0.7573316693305969,
+        "depth_std": 0.05961722508072853,
+        "depth_min": 0.6481369733810425,
+        "depth_max": 0.8994535207748413,
+        "mask_area": 920
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. bowl. plate. toaster. rolling pin. table. tablecloth. clamp. cardboard box. mirror.",
+  "text_prompt": "robot arm. robot gripper. bowl. plate. toaster. rolling pin. table. tablecloth. clamp. cardboard box. mirror.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "plate",
+    "container",
+    "computer monitor",
+    "table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: computer monitor, table, robot arm, plate, container",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.021135909482836723,
+        "relative_position": "closest",
+        "confidence": 0.48557358980178833
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "plate",
+        "mean_depth": 0.1040373221039772,
+        "relative_position": "middle",
+        "confidence": 0.6176589131355286
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.167999267578125,
+        "relative_position": "middle",
+        "confidence": 0.502196729183197
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "computer monitor",
+        "mean_depth": 0.25707289576530457,
+        "relative_position": "middle",
+        "confidence": 0.7854903340339661
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.34136033058166504,
+        "relative_position": "farthest",
+        "confidence": 0.4026065468788147
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.34136033058166504,
+        "relative_position": "farthest",
+        "confidence": 0.4026065468788147
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "computer monitor",
+        "mean_depth": 0.25707289576530457,
+        "relative_position": "middle",
+        "confidence": 0.7854903340339661
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.167999267578125,
+        "relative_position": "middle",
+        "confidence": 0.502196729183197
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "plate",
+        "mean_depth": 0.1040373221039772,
+        "relative_position": "middle",
+        "confidence": 0.6176589131355286
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.021135909482836723,
+        "relative_position": "closest",
+        "confidence": 0.48557358980178833
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.48557358980178833,
+      "bounding_box": [
+        -0.01453399658203125,
+        43.310890197753906,
+        67.6804428100586,
+        179.81771850585938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.021135909482836723,
+        "median_depth": 0.013996210880577564,
+        "depth_std": 0.03631912171840668,
+        "depth_min": 0.006386465858668089,
+        "depth_max": 0.6374233961105347,
+        "mask_area": 5303
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "plate",
+      "confidence": 0.6176589131355286,
+      "bounding_box": [
+        262.3562316894531,
+        98.00840759277344,
+        315.9346008300781,
+        148.32333374023438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1040373221039772,
+        "median_depth": 0.09693314135074615,
+        "depth_std": 0.035657282918691635,
+        "depth_min": 0.06283839046955109,
+        "depth_max": 0.252071350812912,
+        "mask_area": 1010
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "container",
+      "confidence": 0.502196729183197,
+      "bounding_box": [
+        117.44557189941406,
+        64.46056365966797,
+        198.48609924316406,
+        125.81006622314453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.167999267578125,
+        "median_depth": 0.16847831010818481,
+        "depth_std": 0.0744524598121643,
+        "depth_min": 0.06197831779718399,
+        "depth_max": 0.5984256267547607,
+        "mask_area": 1516
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "computer monitor",
+      "confidence": 0.7854903340339661,
+      "bounding_box": [
+        5.180027008056641,
+        5.777240753173828,
+        86.05384826660156,
+        72.19668579101562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.25707289576530457,
+        "median_depth": 0.2484731525182724,
+        "depth_std": 0.04297968000173569,
+        "depth_min": 0.19816957414150238,
+        "depth_max": 0.7562696933746338,
+        "mask_area": 2673
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.4026065468788147,
+      "bounding_box": [
+        13.093002319335938,
+        45.43838882446289,
+        169.4087677001953,
+        91.50723266601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.34136033058166504,
+        "median_depth": 0.30516210198402405,
+        "depth_std": 0.10394876450300217,
+        "depth_min": 0.13934779167175293,
+        "depth_max": 0.5991659164428711,
+        "mask_area": 1921
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. plate. dish rack. container. cucumber. robot arm. computer monitor. keyboard. table.",
+  "text_prompt": "bowl. plate. dish rack. container. cucumber. robot arm. computer monitor. keyboard. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

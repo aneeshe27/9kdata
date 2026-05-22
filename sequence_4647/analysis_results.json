@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper",
+    "range hood",
+    "stove",
+    "floor",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: window, gripper, floor, range hood, stove",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.28869226574897766,
+        "relative_position": "closest",
+        "confidence": 0.4490971863269806
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "range hood",
+        "mean_depth": 0.598849356174469,
+        "relative_position": "middle",
+        "confidence": 0.4127313494682312
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "stove",
+        "mean_depth": 0.6652768850326538,
+        "relative_position": "middle",
+        "confidence": 0.4497016966342926
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "floor",
+        "mean_depth": 0.7264088988304138,
+        "relative_position": "middle",
+        "confidence": 0.5798916220664978
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.9303594827651978,
+        "relative_position": "farthest",
+        "confidence": 0.4219769537448883
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.9303594827651978,
+        "relative_position": "farthest",
+        "confidence": 0.4219769537448883
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "floor",
+        "mean_depth": 0.7264088988304138,
+        "relative_position": "middle",
+        "confidence": 0.5798916220664978
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "stove",
+        "mean_depth": 0.6652768850326538,
+        "relative_position": "middle",
+        "confidence": 0.4497016966342926
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "range hood",
+        "mean_depth": 0.598849356174469,
+        "relative_position": "middle",
+        "confidence": 0.4127313494682312
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.28869226574897766,
+        "relative_position": "closest",
+        "confidence": 0.4490971863269806
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "gripper",
+      "confidence": 0.4490971863269806,
+      "bounding_box": [
+        166.0885467529297,
+        23.006824493408203,
+        186.0915985107422,
+        62.40586471557617
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28869226574897766,
+        "median_depth": 0.2767482399940491,
+        "depth_std": 0.04174470156431198,
+        "depth_min": 0.24586673080921173,
+        "depth_max": 0.48891186714172363,
+        "mask_area": 454
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "range hood",
+      "confidence": 0.4127313494682312,
+      "bounding_box": [
+        163.1511688232422,
+        0.1052093505859375,
+        216.48619079589844,
+        23.09210777282715
+      ],
+      "depth_stats": {
+        "mean_depth": 0.598849356174469,
+        "median_depth": 0.5777126550674438,
+        "depth_std": 0.05795182287693024,
+        "depth_min": 0.531809389591217,
+        "depth_max": 0.7706257104873657,
+        "mask_area": 846
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "stove",
+      "confidence": 0.4497016966342926,
+      "bounding_box": [
+        173.86648559570312,
+        63.564659118652344,
+        211.05307006835938,
+        84.45999908447266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6652768850326538,
+        "median_depth": 0.6661141514778137,
+        "depth_std": 0.05106111243367195,
+        "depth_min": 0.3056730628013611,
+        "depth_max": 0.768072783946991,
+        "mask_area": 443
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "floor",
+      "confidence": 0.5798916220664978,
+      "bounding_box": [
+        203.75341796875,
+        99.36662292480469,
+        313.12677001953125,
+        179.96730041503906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7264088988304138,
+        "median_depth": 0.6980831623077393,
+        "depth_std": 0.1293618530035019,
+        "depth_min": 0.4724068343639374,
+        "depth_max": 1.0,
+        "mask_area": 4278
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "window",
+      "confidence": 0.4219769537448883,
+      "bounding_box": [
+        257.4514465332031,
+        6.383491516113281,
+        315.5532531738281,
+        102.61578369140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9303594827651978,
+        "median_depth": 0.9375255703926086,
+        "depth_std": 0.05912535637617111,
+        "depth_min": 0.3683561384677887,
+        "depth_max": 1.0,
+        "mask_area": 4439
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "refrigerator. robot arm. gripper. stove. oven. range hood. countertop. cabinet. drawer. door. window. floor.",
+  "text_prompt": "refrigerator. robot arm. gripper. stove. oven. range hood. countertop. cabinet. drawer. door. window. floor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

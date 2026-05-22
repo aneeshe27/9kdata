@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "saucer",
+    "table",
+    "chair",
+    "whiteboard",
+    "headphones"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: saucer, table, headphones, whiteboard, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "saucer",
+        "mean_depth": 0.016654053702950478,
+        "relative_position": "closest",
+        "confidence": 0.40675660967826843
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.061121635138988495,
+        "relative_position": "middle",
+        "confidence": 0.7312541604042053
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.09995383024215698,
+        "relative_position": "middle",
+        "confidence": 0.4148343801498413
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "whiteboard",
+        "mean_depth": 0.11884764581918716,
+        "relative_position": "middle",
+        "confidence": 0.37816688418388367
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "headphones",
+        "mean_depth": 0.246656596660614,
+        "relative_position": "farthest",
+        "confidence": 0.4410002529621124
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "headphones",
+        "mean_depth": 0.246656596660614,
+        "relative_position": "farthest",
+        "confidence": 0.4410002529621124
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "whiteboard",
+        "mean_depth": 0.11884764581918716,
+        "relative_position": "middle",
+        "confidence": 0.37816688418388367
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.09995383024215698,
+        "relative_position": "middle",
+        "confidence": 0.4148343801498413
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.061121635138988495,
+        "relative_position": "middle",
+        "confidence": 0.7312541604042053
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "saucer",
+        "mean_depth": 0.016654053702950478,
+        "relative_position": "closest",
+        "confidence": 0.40675660967826843
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "saucer",
+      "confidence": 0.40675660967826843,
+      "bounding_box": [
+        -0.009243011474609375,
+        133.9729461669922,
+        47.92684555053711,
+        179.95606994628906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.016654053702950478,
+        "median_depth": 0.016436941921710968,
+        "depth_std": 0.0035054937470704317,
+        "depth_min": 0.009332986548542976,
+        "depth_max": 0.026935968548059464,
+        "mask_area": 1431
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7312541604042053,
+      "bounding_box": [
+        111.71832275390625,
+        79.05591583251953,
+        258.0458984375,
+        179.90359497070312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.061121635138988495,
+        "median_depth": 0.05794870853424072,
+        "depth_std": 0.034803878515958786,
+        "depth_min": 0.015555582009255886,
+        "depth_max": 0.2860108017921448,
+        "mask_area": 6189
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.4148343801498413,
+      "bounding_box": [
+        230.8538360595703,
+        60.6753044128418,
+        316.05743408203125,
+        179.94285583496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09995383024215698,
+        "median_depth": 0.10008937120437622,
+        "depth_std": 0.01121397316455841,
+        "depth_min": 0.07209522277116776,
+        "depth_max": 0.12345059961080551,
+        "mask_area": 2657
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "whiteboard",
+      "confidence": 0.37816688418388367,
+      "bounding_box": [
+        161.5177001953125,
+        -0.0648040771484375,
+        315.8772888183594,
+        61.19411849975586
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11884764581918716,
+        "median_depth": 0.11445469409227371,
+        "depth_std": 0.03502780571579933,
+        "depth_min": 0.05573636293411255,
+        "depth_max": 0.19257132709026337,
+        "mask_area": 8235
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "headphones",
+      "confidence": 0.4410002529621124,
+      "bounding_box": [
+        105.99568176269531,
+        0.04630088806152344,
+        165.20558166503906,
+        55.61345672607422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.246656596660614,
+        "median_depth": 0.21980194747447968,
+        "depth_std": 0.1119862049818039,
+        "depth_min": 0.1756172627210617,
+        "depth_max": 0.8310118317604065,
+        "mask_area": 1969
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cup. saucer. marker. headphones. camera. tripod. chair. whiteboard.",
+  "text_prompt": "robot arm. gripper. table. cup. saucer. marker. headphones. camera. tripod. chair. whiteboard.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

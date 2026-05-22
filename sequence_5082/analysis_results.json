@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cup",
+    "lid",
+    "coffee machine",
+    "sink"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, cup, robot arm, lid, coffee machine",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.017473403364419937,
+        "relative_position": "closest",
+        "confidence": 0.3561370074748993
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.08114459365606308,
+        "relative_position": "middle",
+        "confidence": 0.7104002833366394
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "lid",
+        "mean_depth": 0.11427381634712219,
+        "relative_position": "middle",
+        "confidence": 0.4289260804653168
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "coffee machine",
+        "mean_depth": 0.16868694126605988,
+        "relative_position": "middle",
+        "confidence": 0.3969479203224182
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.29407092928886414,
+        "relative_position": "farthest",
+        "confidence": 0.4632719159126282
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.29407092928886414,
+        "relative_position": "farthest",
+        "confidence": 0.4632719159126282
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "coffee machine",
+        "mean_depth": 0.16868694126605988,
+        "relative_position": "middle",
+        "confidence": 0.3969479203224182
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "lid",
+        "mean_depth": 0.11427381634712219,
+        "relative_position": "middle",
+        "confidence": 0.4289260804653168
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.08114459365606308,
+        "relative_position": "middle",
+        "confidence": 0.7104002833366394
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.017473403364419937,
+        "relative_position": "closest",
+        "confidence": 0.3561370074748993
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3561370074748993,
+      "bounding_box": [
+        216.7977752685547,
+        0.0411834716796875,
+        315.97637939453125,
+        73.01102447509766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.017473403364419937,
+        "median_depth": 0.013841010630130768,
+        "depth_std": 0.01387934572994709,
+        "depth_min": 0.0008442832622677088,
+        "depth_max": 0.1758769154548645,
+        "mask_area": 3166
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.7104002833366394,
+      "bounding_box": [
+        224.81263732910156,
+        98.28190612792969,
+        262.437255859375,
+        140.5718536376953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08114459365606308,
+        "median_depth": 0.0778462365269661,
+        "depth_std": 0.014864981174468994,
+        "depth_min": 0.06247453764081001,
+        "depth_max": 0.1446639448404312,
+        "mask_area": 1083
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "lid",
+      "confidence": 0.4289260804653168,
+      "bounding_box": [
+        77.7779541015625,
+        21.997739791870117,
+        140.92002868652344,
+        55.42295837402344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11427381634712219,
+        "median_depth": 0.11049474775791168,
+        "depth_std": 0.025844495743513107,
+        "depth_min": 0.08572501689195633,
+        "depth_max": 0.5304666757583618,
+        "mask_area": 1654
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "coffee machine",
+      "confidence": 0.3969479203224182,
+      "bounding_box": [
+        138.43609619140625,
+        26.388172149658203,
+        195.81527709960938,
+        101.64395141601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16868694126605988,
+        "median_depth": 0.16461670398712158,
+        "depth_std": 0.021125251427292824,
+        "depth_min": 0.1238575205206871,
+        "depth_max": 0.564055860042572,
+        "mask_area": 1688
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.4632719159126282,
+      "bounding_box": [
+        262.6726989746094,
+        63.512550354003906,
+        313.4738464355469,
+        85.68083953857422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29407092928886414,
+        "median_depth": 0.28914743661880493,
+        "depth_std": 0.040205590426921844,
+        "depth_min": 0.13807088136672974,
+        "depth_max": 0.5463991761207581,
+        "mask_area": 585
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. coffee machine. container. lid. robot arm. gripper. sink. countertop. box. cup stack.",
+  "text_prompt": "cup. coffee machine. container. lid. robot arm. gripper. sink. countertop. box. cup stack.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

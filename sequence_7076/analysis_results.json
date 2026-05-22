@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cable",
+    "paper",
+    "bed",
+    "office chair",
+    "computer monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: computer monitor, office chair, paper, cable, bed",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.20405982434749603,
+        "relative_position": "closest",
+        "confidence": 0.41122183203697205
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "paper",
+        "mean_depth": 0.3203893005847931,
+        "relative_position": "middle",
+        "confidence": 0.4546945095062256
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bed",
+        "mean_depth": 0.3786543905735016,
+        "relative_position": "middle",
+        "confidence": 0.48085451126098633
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "office chair",
+        "mean_depth": 0.7850242853164673,
+        "relative_position": "middle",
+        "confidence": 0.8417586088180542
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "computer monitor",
+        "mean_depth": 0.9536887407302856,
+        "relative_position": "farthest",
+        "confidence": 0.6690918207168579
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "computer monitor",
+        "mean_depth": 0.9536887407302856,
+        "relative_position": "farthest",
+        "confidence": 0.6690918207168579
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "office chair",
+        "mean_depth": 0.7850242853164673,
+        "relative_position": "middle",
+        "confidence": 0.8417586088180542
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bed",
+        "mean_depth": 0.3786543905735016,
+        "relative_position": "middle",
+        "confidence": 0.48085451126098633
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "paper",
+        "mean_depth": 0.3203893005847931,
+        "relative_position": "middle",
+        "confidence": 0.4546945095062256
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.20405982434749603,
+        "relative_position": "closest",
+        "confidence": 0.41122183203697205
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "cable",
+      "confidence": 0.41122183203697205,
+      "bounding_box": [
+        144.7385711669922,
+        0.06723499298095703,
+        189.4379119873047,
+        18.68026351928711
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20405982434749603,
+        "median_depth": 0.07115587592124939,
+        "depth_std": 0.23707978427410126,
+        "depth_min": 0.02556564100086689,
+        "depth_max": 0.8990659713745117,
+        "mask_area": 172
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "paper",
+      "confidence": 0.4546945095062256,
+      "bounding_box": [
+        151.36782836914062,
+        114.32767486572266,
+        193.94970703125,
+        168.567138671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3203893005847931,
+        "median_depth": 0.3204403519630432,
+        "depth_std": 0.015231284312903881,
+        "depth_min": 0.29416024684906006,
+        "depth_max": 0.35740926861763,
+        "mask_area": 1366
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bed",
+      "confidence": 0.48085451126098633,
+      "bounding_box": [
+        0.1223297119140625,
+        61.63146209716797,
+        156.9709930419922,
+        179.80908203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3786543905735016,
+        "median_depth": 0.2652010917663574,
+        "depth_std": 0.20255498588085175,
+        "depth_min": 0.15593941509723663,
+        "depth_max": 0.9009511470794678,
+        "mask_area": 11712
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "office chair",
+      "confidence": 0.8417586088180542,
+      "bounding_box": [
+        157.49127197265625,
+        63.84934616088867,
+        198.89068603515625,
+        94.72257232666016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7850242853164673,
+        "median_depth": 0.7747606635093689,
+        "depth_std": 0.051714397966861725,
+        "depth_min": 0.7019088864326477,
+        "depth_max": 0.9292517304420471,
+        "mask_area": 677
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "computer monitor",
+      "confidence": 0.6690918207168579,
+      "bounding_box": [
+        123.62737274169922,
+        43.18566131591797,
+        179.7724151611328,
+        73.38220977783203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9536887407302856,
+        "median_depth": 0.9555047750473022,
+        "depth_std": 0.03387860953807831,
+        "depth_min": 0.8933441042900085,
+        "depth_max": 1.0,
+        "mask_area": 1087
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. bed. blanket. pillow. desk. computer monitor. office chair. cardboard box. paper. clothing. cable.",
+  "text_prompt": "robot arm. bed. blanket. pillow. desk. computer monitor. office chair. cardboard box. paper. clothing. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

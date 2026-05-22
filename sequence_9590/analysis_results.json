@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "straws",
+    "cup",
+    "stirrers",
+    "cup stack"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: stirrers, cup stack, robot arm gripper, straws, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.024884695187211037,
+        "relative_position": "closest",
+        "confidence": 0.38462844491004944
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "straws",
+        "mean_depth": 0.24822239577770233,
+        "relative_position": "middle",
+        "confidence": 0.63621586561203
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.49383479356765747,
+        "relative_position": "middle",
+        "confidence": 0.6240816712379456
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "stirrers",
+        "mean_depth": 0.5025657415390015,
+        "relative_position": "middle",
+        "confidence": 0.5329893827438354
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "cup stack",
+        "mean_depth": 0.6391109824180603,
+        "relative_position": "farthest",
+        "confidence": 0.7551229596138
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "cup stack",
+        "mean_depth": 0.6391109824180603,
+        "relative_position": "farthest",
+        "confidence": 0.7551229596138
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "stirrers",
+        "mean_depth": 0.5025657415390015,
+        "relative_position": "middle",
+        "confidence": 0.5329893827438354
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.49383479356765747,
+        "relative_position": "middle",
+        "confidence": 0.6240816712379456
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "straws",
+        "mean_depth": 0.24822239577770233,
+        "relative_position": "middle",
+        "confidence": 0.63621586561203
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.024884695187211037,
+        "relative_position": "closest",
+        "confidence": 0.38462844491004944
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.38462844491004944,
+      "bounding_box": [
+        233.9169158935547,
+        0.13354873657226562,
+        315.9139709472656,
+        100.98313903808594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.024884695187211037,
+        "median_depth": 0.004876037128269672,
+        "depth_std": 0.07240916788578033,
+        "depth_min": 0.0,
+        "depth_max": 0.8504115343093872,
+        "mask_area": 3295
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "straws",
+      "confidence": 0.63621586561203,
+      "bounding_box": [
+        84.34127807617188,
+        36.069175720214844,
+        99.52400207519531,
+        77.80316162109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24822239577770233,
+        "median_depth": 0.24728503823280334,
+        "depth_std": 0.0034562330693006516,
+        "depth_min": 0.24264879524707794,
+        "depth_max": 0.2576374411582947,
+        "mask_area": 174
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cup",
+      "confidence": 0.6240816712379456,
+      "bounding_box": [
+        224.31692504882812,
+        94.80297088623047,
+        251.30142211914062,
+        128.31362915039062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.49383479356765747,
+        "median_depth": 0.4913085997104645,
+        "depth_std": 0.040599275380373,
+        "depth_min": 0.11053375154733658,
+        "depth_max": 0.6313051581382751,
+        "mask_area": 593
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "stirrers",
+      "confidence": 0.5329893827438354,
+      "bounding_box": [
+        144.23570251464844,
+        30.952592849731445,
+        201.8287811279297,
+        55.51495361328125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5025657415390015,
+        "median_depth": 0.4960288107395172,
+        "depth_std": 0.041218288242816925,
+        "depth_min": 0.44909971952438354,
+        "depth_max": 0.7069770693778992,
+        "mask_area": 666
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup stack",
+      "confidence": 0.7551229596138,
+      "bounding_box": [
+        195.2456817626953,
+        25.60952377319336,
+        216.5580596923828,
+        94.32589721679688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6391109824180603,
+        "median_depth": 0.6253296136856079,
+        "depth_std": 0.041313908994197845,
+        "depth_min": 0.5743264555931091,
+        "depth_max": 0.887999415397644,
+        "mask_area": 842
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. robot arm. gripper. table. wooden shelf. packets. straws. stirrers. cup stack.",
+  "text_prompt": "cup. robot arm. gripper. table. wooden shelf. packets. straws. stirrers. cup stack.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

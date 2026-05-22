@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "range hood",
+    "stove",
+    "sink",
+    "faucet",
+    "pressure cooker"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: pressure cooker, sink, range hood, stove, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "range hood",
+        "mean_depth": 0.14441436529159546,
+        "relative_position": "closest",
+        "confidence": 0.7029893398284912
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "stove",
+        "mean_depth": 0.24283333122730255,
+        "relative_position": "middle",
+        "confidence": 0.5408051609992981
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.4184320867061615,
+        "relative_position": "middle",
+        "confidence": 0.8670859932899475
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.4545067846775055,
+        "relative_position": "middle",
+        "confidence": 0.8555695414543152
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "pressure cooker",
+        "mean_depth": 0.4665408432483673,
+        "relative_position": "farthest",
+        "confidence": 0.8820769190788269
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "pressure cooker",
+        "mean_depth": 0.4665408432483673,
+        "relative_position": "farthest",
+        "confidence": 0.8820769190788269
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.4545067846775055,
+        "relative_position": "middle",
+        "confidence": 0.8555695414543152
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.4184320867061615,
+        "relative_position": "middle",
+        "confidence": 0.8670859932899475
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "stove",
+        "mean_depth": 0.24283333122730255,
+        "relative_position": "middle",
+        "confidence": 0.5408051609992981
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "range hood",
+        "mean_depth": 0.14441436529159546,
+        "relative_position": "closest",
+        "confidence": 0.7029893398284912
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "range hood",
+      "confidence": 0.7029893398284912,
+      "bounding_box": [
+        0.07097625732421875,
+        41.1058349609375,
+        154.889892578125,
+        96.28681945800781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14441436529159546,
+        "median_depth": 0.13698914647102356,
+        "depth_std": 0.03652716800570488,
+        "depth_min": 0.08877110481262207,
+        "depth_max": 0.2562481760978699,
+        "mask_area": 4450
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "stove",
+      "confidence": 0.5408051609992981,
+      "bounding_box": [
+        54.904937744140625,
+        152.46481323242188,
+        132.39999389648438,
+        179.96908569335938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24283333122730255,
+        "median_depth": 0.24226397275924683,
+        "depth_std": 0.030878733843564987,
+        "depth_min": 0.1886875331401825,
+        "depth_max": 0.30892255902290344,
+        "mask_area": 1137
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.8670859932899475,
+      "bounding_box": [
+        165.15835571289062,
+        157.67849731445312,
+        219.53021240234375,
+        179.98239135742188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4184320867061615,
+        "median_depth": 0.4247608482837677,
+        "depth_std": 0.028533246368169785,
+        "depth_min": 0.31695297360420227,
+        "depth_max": 0.47183457016944885,
+        "mask_area": 640
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "faucet",
+      "confidence": 0.8555695414543152,
+      "bounding_box": [
+        170.08740234375,
+        134.84783935546875,
+        187.87240600585938,
+        164.65682983398438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4545067846775055,
+        "median_depth": 0.4547059237957001,
+        "depth_std": 0.022456694394350052,
+        "depth_min": 0.40053418278694153,
+        "depth_max": 0.5053768157958984,
+        "mask_area": 377
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "pressure cooker",
+      "confidence": 0.8820769190788269,
+      "bounding_box": [
+        202.24794006347656,
+        133.4893035888672,
+        227.16053771972656,
+        162.4940643310547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4665408432483673,
+        "median_depth": 0.4516070783138275,
+        "depth_std": 0.04376823827624321,
+        "depth_min": 0.43210652470588684,
+        "depth_max": 0.7104918956756592,
+        "mask_area": 504
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. cabinet. range hood. stove. countertop. sink. faucet. pressure cooker. water bottle.",
+  "text_prompt": "robot arm. robot gripper. cabinet. range hood. stove. countertop. sink. faucet. pressure cooker. water bottle.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

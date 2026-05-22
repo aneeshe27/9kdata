@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bottle",
+    "bowl",
+    "carton",
+    "paper bag",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: carton, cabinet, paper bag, bowl, bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "bottle",
+        "mean_depth": 0.022545993328094482,
+        "relative_position": "closest",
+        "confidence": 0.4310733377933502
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.21147125959396362,
+        "relative_position": "middle",
+        "confidence": 0.6806393265724182
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "carton",
+        "mean_depth": 0.26974374055862427,
+        "relative_position": "middle",
+        "confidence": 0.7028457522392273
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "paper bag",
+        "mean_depth": 0.7111653685569763,
+        "relative_position": "middle",
+        "confidence": 0.3781245946884155
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.8295101523399353,
+        "relative_position": "farthest",
+        "confidence": 0.3528856337070465
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.8295101523399353,
+        "relative_position": "farthest",
+        "confidence": 0.3528856337070465
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "paper bag",
+        "mean_depth": 0.7111653685569763,
+        "relative_position": "middle",
+        "confidence": 0.3781245946884155
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "carton",
+        "mean_depth": 0.26974374055862427,
+        "relative_position": "middle",
+        "confidence": 0.7028457522392273
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.21147125959396362,
+        "relative_position": "middle",
+        "confidence": 0.6806393265724182
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "bottle",
+        "mean_depth": 0.022545993328094482,
+        "relative_position": "closest",
+        "confidence": 0.4310733377933502
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "bottle",
+      "confidence": 0.4310733377933502,
+      "bounding_box": [
+        248.5509033203125,
+        163.73880004882812,
+        304.97857666015625,
+        179.99920654296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022545993328094482,
+        "median_depth": 0.02192915603518486,
+        "depth_std": 0.005440018605440855,
+        "depth_min": 0.0123466020449996,
+        "depth_max": 0.034612879157066345,
+        "mask_area": 662
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "bowl",
+      "confidence": 0.6806393265724182,
+      "bounding_box": [
+        130.68374633789062,
+        83.20736694335938,
+        167.60360717773438,
+        112.8121337890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21147125959396362,
+        "median_depth": 0.19218194484710693,
+        "depth_std": 0.04183352366089821,
+        "depth_min": 0.1754918247461319,
+        "depth_max": 0.38008537888526917,
+        "mask_area": 840
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "carton",
+      "confidence": 0.7028457522392273,
+      "bounding_box": [
+        174.5511474609375,
+        66.45032501220703,
+        194.20242309570312,
+        100.6888656616211
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26974374055862427,
+        "median_depth": 0.26502346992492676,
+        "depth_std": 0.023029549047350883,
+        "depth_min": 0.25179776549339294,
+        "depth_max": 0.4548199474811554,
+        "mask_area": 536
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "paper bag",
+      "confidence": 0.3781245946884155,
+      "bounding_box": [
+        166.8225555419922,
+        32.75401306152344,
+        197.46507263183594,
+        71.69282531738281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7111653685569763,
+        "median_depth": 0.6930797100067139,
+        "depth_std": 0.07263169437646866,
+        "depth_min": 0.6186696290969849,
+        "depth_max": 0.9090243577957153,
+        "mask_area": 738
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3528856337070465,
+      "bounding_box": [
+        44.96367263793945,
+        0.016971588134765625,
+        131.48841857910156,
+        29.774215698242188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8295101523399353,
+        "median_depth": 0.8278818726539612,
+        "depth_std": 0.024064496159553528,
+        "depth_min": 0.503117561340332,
+        "depth_max": 0.9027371406555176,
+        "mask_area": 1954
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. carton. paper towel roll. paper bag. cutting board. bottle. robot arm. gripper. stovetop. countertop. cabinet.",
+  "text_prompt": "bowl. carton. paper towel roll. paper bag. cutting board. bottle. robot arm. gripper. stovetop. countertop. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

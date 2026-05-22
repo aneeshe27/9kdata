@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "chair",
+    "gripper power",
+    "cardboard box",
+    "bench"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: gripper power, cardboard box, bench, robot arm, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.02406551130115986,
+        "relative_position": "closest",
+        "confidence": 0.497719943523407
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.05192543566226959,
+        "relative_position": "middle",
+        "confidence": 0.5613732933998108
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "gripper power",
+        "mean_depth": 0.06997010111808777,
+        "relative_position": "middle",
+        "confidence": 0.397087037563324
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.12014118582010269,
+        "relative_position": "middle",
+        "confidence": 0.8793606162071228
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "bench",
+        "mean_depth": 0.19824060797691345,
+        "relative_position": "farthest",
+        "confidence": 0.4031592607498169
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "bench",
+        "mean_depth": 0.19824060797691345,
+        "relative_position": "farthest",
+        "confidence": 0.4031592607498169
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.12014118582010269,
+        "relative_position": "middle",
+        "confidence": 0.8793606162071228
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "gripper power",
+        "mean_depth": 0.06997010111808777,
+        "relative_position": "middle",
+        "confidence": 0.397087037563324
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.05192543566226959,
+        "relative_position": "middle",
+        "confidence": 0.5613732933998108
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.02406551130115986,
+        "relative_position": "closest",
+        "confidence": 0.497719943523407
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.497719943523407,
+      "bounding_box": [
+        174.13470458984375,
+        -0.00435638427734375,
+        315.95416259765625,
+        179.992431640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02406551130115986,
+        "median_depth": 0.012087411247193813,
+        "depth_std": 0.044399626553058624,
+        "depth_min": 0.0026151533238589764,
+        "depth_max": 0.6464086174964905,
+        "mask_area": 11986
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.5613732933998108,
+      "bounding_box": [
+        138.4640655517578,
+        62.55296325683594,
+        198.6847381591797,
+        179.9508056640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05192543566226959,
+        "median_depth": 0.04818635433912277,
+        "depth_std": 0.01092076301574707,
+        "depth_min": 0.03900986537337303,
+        "depth_max": 0.15425515174865723,
+        "mask_area": 2787
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "gripper power",
+      "confidence": 0.397087037563324,
+      "bounding_box": [
+        100.26721954345703,
+        160.49876403808594,
+        117.40099334716797,
+        178.35594177246094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06997010111808777,
+        "median_depth": 0.069743812084198,
+        "depth_std": 0.00289856712333858,
+        "depth_min": 0.06464973837137222,
+        "depth_max": 0.0767093226313591,
+        "mask_area": 231
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cardboard box",
+      "confidence": 0.8793606162071228,
+      "bounding_box": [
+        107.20967864990234,
+        79.87638092041016,
+        168.5508270263672,
+        132.73573303222656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12014118582010269,
+        "median_depth": 0.10221746563911438,
+        "depth_std": 0.05399424582719803,
+        "depth_min": 0.08952943235635757,
+        "depth_max": 0.4601173996925354,
+        "mask_area": 1667
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bench",
+      "confidence": 0.4031592607498169,
+      "bounding_box": [
+        0.05693817138671875,
+        93.47776794433594,
+        118.9125747680664,
+        158.05194091796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19824060797691345,
+        "median_depth": 0.19339971244335175,
+        "depth_std": 0.029563233256340027,
+        "depth_min": 0.1447906494140625,
+        "depth_max": 0.2853812277317047,
+        "mask_area": 3679
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cardboard box. cable. power drill. chair. bench.",
+  "text_prompt": "robot arm. gripper. table. cardboard box. cable. power drill. chair. bench.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

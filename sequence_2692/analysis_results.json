@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cable",
+    "cup",
+    "robot gripper",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cable, robot arm, robot gripper, cup, box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.026401720941066742,
+        "relative_position": "closest",
+        "confidence": 0.3950464129447937
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cable",
+        "mean_depth": 0.05882321670651436,
+        "relative_position": "middle",
+        "confidence": 0.48170581459999084
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.09860894083976746,
+        "relative_position": "middle",
+        "confidence": 0.8136959671974182
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot gripper",
+        "mean_depth": 0.18397527933120728,
+        "relative_position": "middle",
+        "confidence": 0.3995820879936218
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.6229078769683838,
+        "relative_position": "farthest",
+        "confidence": 0.7481673359870911
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.6229078769683838,
+        "relative_position": "farthest",
+        "confidence": 0.7481673359870911
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot gripper",
+        "mean_depth": 0.18397527933120728,
+        "relative_position": "middle",
+        "confidence": 0.3995820879936218
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.09860894083976746,
+        "relative_position": "middle",
+        "confidence": 0.8136959671974182
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cable",
+        "mean_depth": 0.05882321670651436,
+        "relative_position": "middle",
+        "confidence": 0.48170581459999084
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.026401720941066742,
+        "relative_position": "closest",
+        "confidence": 0.3950464129447937
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3950464129447937,
+      "bounding_box": [
+        159.33688354492188,
+        0.09813308715820312,
+        240.2445068359375,
+        111.35943603515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.026401720941066742,
+        "median_depth": 0.018982265144586563,
+        "depth_std": 0.03708785027265549,
+        "depth_min": 0.0,
+        "depth_max": 0.5119940638542175,
+        "mask_area": 3096
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "cable",
+      "confidence": 0.48170581459999084,
+      "bounding_box": [
+        0.11069869995117188,
+        127.87348937988281,
+        41.48094177246094,
+        179.45152282714844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05882321670651436,
+        "median_depth": 0.05928259342908859,
+        "depth_std": 0.007310035172849894,
+        "depth_min": 0.039060890674591064,
+        "depth_max": 0.07399839162826538,
+        "mask_area": 1674
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.8136959671974182,
+      "bounding_box": [
+        137.44813537597656,
+        91.15518188476562,
+        158.8470001220703,
+        118.53387451171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09860894083976746,
+        "median_depth": 0.09723445773124695,
+        "depth_std": 0.008150357753038406,
+        "depth_min": 0.08883737027645111,
+        "depth_max": 0.11778168380260468,
+        "mask_area": 463
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "robot gripper",
+      "confidence": 0.3995820879936218,
+      "bounding_box": [
+        234.240478515625,
+        105.28265380859375,
+        315.79925537109375,
+        179.89688110351562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18397527933120728,
+        "median_depth": 0.15531198680400848,
+        "depth_std": 0.07127677649259567,
+        "depth_min": 0.11032712459564209,
+        "depth_max": 0.5184621810913086,
+        "mask_area": 3059
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "box",
+      "confidence": 0.7481673359870911,
+      "bounding_box": [
+        247.92953491210938,
+        38.2691650390625,
+        315.9085388183594,
+        100.87480163574219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6229078769683838,
+        "median_depth": 0.6035486459732056,
+        "depth_std": 0.09115207940340042,
+        "depth_min": 0.48782840371131897,
+        "depth_max": 0.9974475502967834,
+        "mask_area": 1707
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. robot arm. robot gripper. table. cable. box.",
+  "text_prompt": "cup. robot arm. robot gripper. table. cable. box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

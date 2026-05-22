@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "sponge",
+    "sink",
+    "faucet",
+    "cabinet",
+    "cutting board"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, sponge, sink, cutting board, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "sponge",
+        "mean_depth": 0.6637560129165649,
+        "relative_position": "closest",
+        "confidence": 0.4949469268321991
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.7046776413917542,
+        "relative_position": "middle",
+        "confidence": 0.5877215266227722
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.7199976444244385,
+        "relative_position": "middle",
+        "confidence": 0.8960878252983093
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.7224994897842407,
+        "relative_position": "middle",
+        "confidence": 0.5567545294761658
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cutting board",
+        "mean_depth": 0.9901857376098633,
+        "relative_position": "farthest",
+        "confidence": 0.48806172609329224
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cutting board",
+        "mean_depth": 0.9901857376098633,
+        "relative_position": "farthest",
+        "confidence": 0.48806172609329224
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.7224994897842407,
+        "relative_position": "middle",
+        "confidence": 0.5567545294761658
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.7199976444244385,
+        "relative_position": "middle",
+        "confidence": 0.8960878252983093
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.7046776413917542,
+        "relative_position": "middle",
+        "confidence": 0.5877215266227722
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "sponge",
+        "mean_depth": 0.6637560129165649,
+        "relative_position": "closest",
+        "confidence": 0.4949469268321991
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "sponge",
+      "confidence": 0.4949469268321991,
+      "bounding_box": [
+        100.39399719238281,
+        102.10831451416016,
+        118.06733703613281,
+        118.6859359741211
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6637560129165649,
+        "median_depth": 0.6322402954101562,
+        "depth_std": 0.06556516885757446,
+        "depth_min": 0.6074672341346741,
+        "depth_max": 0.825499415397644,
+        "mask_area": 230
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.5877215266227722,
+      "bounding_box": [
+        114.36486053466797,
+        93.10802459716797,
+        306.02935791015625,
+        179.92752075195312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7046776413917542,
+        "median_depth": 0.695569634437561,
+        "depth_std": 0.09220461547374725,
+        "depth_min": 0.5007241368293762,
+        "depth_max": 0.910379946231842,
+        "mask_area": 10088
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.8960878252983093,
+      "bounding_box": [
+        127.42660522460938,
+        24.56751251220703,
+        187.92694091796875,
+        102.00592041015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7199976444244385,
+        "median_depth": 0.7207018136978149,
+        "depth_std": 0.07534702867269516,
+        "depth_min": 0.5884000062942505,
+        "depth_max": 0.9071128368377686,
+        "mask_area": 1016
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.5567545294761658,
+      "bounding_box": [
+        235.95445251464844,
+        0.028473854064941406,
+        310.3743896484375,
+        27.076988220214844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7224994897842407,
+        "median_depth": 0.7192448377609253,
+        "depth_std": 0.046279359608888626,
+        "depth_min": 0.6128371357917786,
+        "depth_max": 0.8431416153907776,
+        "mask_area": 1738
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cutting board",
+      "confidence": 0.48806172609329224,
+      "bounding_box": [
+        240.93031311035156,
+        48.24652862548828,
+        272.7566833496094,
+        79.57646179199219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9901857376098633,
+        "median_depth": 0.9935714602470398,
+        "depth_std": 0.009360096417367458,
+        "depth_min": 0.943914532661438,
+        "depth_max": 0.9990994930267334,
+        "mask_area": 263
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. faucet. sponge. cloth. dish rack. plate. cup. bottle. utensil. cutting board. soap dispenser. countertop. cabinet. drain strainer.",
+  "text_prompt": "sink. faucet. sponge. cloth. dish rack. plate. cup. bottle. utensil. cutting board. soap dispenser. countertop. cabinet. drain strainer.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

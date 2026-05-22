@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "light fixture",
+    "monitor",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, robot arm, monitor, window, light fixture",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.015817390754818916,
+        "relative_position": "closest",
+        "confidence": 0.583644688129425
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.0604073666036129,
+        "relative_position": "middle",
+        "confidence": 0.6240666508674622
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "light fixture",
+        "mean_depth": 0.3397921919822693,
+        "relative_position": "middle",
+        "confidence": 0.4093160629272461
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "monitor",
+        "mean_depth": 0.5053676962852478,
+        "relative_position": "middle",
+        "confidence": 0.3926848769187927
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.6313069462776184,
+        "relative_position": "farthest",
+        "confidence": 0.5812288522720337
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.6313069462776184,
+        "relative_position": "farthest",
+        "confidence": 0.5812288522720337
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "monitor",
+        "mean_depth": 0.5053676962852478,
+        "relative_position": "middle",
+        "confidence": 0.3926848769187927
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "light fixture",
+        "mean_depth": 0.3397921919822693,
+        "relative_position": "middle",
+        "confidence": 0.4093160629272461
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.0604073666036129,
+        "relative_position": "middle",
+        "confidence": 0.6240666508674622
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.015817390754818916,
+        "relative_position": "closest",
+        "confidence": 0.583644688129425
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.583644688129425,
+      "bounding_box": [
+        6.482341766357422,
+        12.892013549804688,
+        117.34588623046875,
+        179.81033325195312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.015817390754818916,
+        "median_depth": 0.005304594524204731,
+        "depth_std": 0.05532871559262276,
+        "depth_min": 0.0,
+        "depth_max": 0.9284878373146057,
+        "mask_area": 7786
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.6240666508674622,
+      "bounding_box": [
+        74.4102554321289,
+        131.00665283203125,
+        315.8974609375,
+        179.94970703125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0604073666036129,
+        "median_depth": 0.05198471248149872,
+        "depth_std": 0.036266617476940155,
+        "depth_min": 0.025652701035141945,
+        "depth_max": 0.3432411849498749,
+        "mask_area": 9005
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "light fixture",
+      "confidence": 0.4093160629272461,
+      "bounding_box": [
+        98.60054016113281,
+        15.707392692565918,
+        200.1255645751953,
+        45.51121520996094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3397921919822693,
+        "median_depth": 0.3400941491127014,
+        "depth_std": 0.025663360953330994,
+        "depth_min": 0.28612929582595825,
+        "depth_max": 0.4425675570964813,
+        "mask_area": 873
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "monitor",
+      "confidence": 0.3926848769187927,
+      "bounding_box": [
+        108.45195007324219,
+        61.73908996582031,
+        135.15382385253906,
+        81.33157348632812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5053676962852478,
+        "median_depth": 0.5355095267295837,
+        "depth_std": 0.11109379678964615,
+        "depth_min": 0.03238559141755104,
+        "depth_max": 0.5492095351219177,
+        "mask_area": 371
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "window",
+      "confidence": 0.5812288522720337,
+      "bounding_box": [
+        246.99566650390625,
+        0.09369659423828125,
+        288.3955078125,
+        126.14066314697266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6313069462776184,
+        "median_depth": 0.651849091053009,
+        "depth_std": 0.24841414391994476,
+        "depth_min": 0.08153669536113739,
+        "depth_max": 0.9487391710281372,
+        "mask_area": 3695
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. can. tray. boxes. monitor. coat rack. window. cabinet. light fixture.",
+  "text_prompt": "robot arm. gripper. table. can. tray. boxes. monitor. coat rack. window. cabinet. light fixture.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

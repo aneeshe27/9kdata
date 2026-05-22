@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table countertop",
+    "curtain",
+    "chair",
+    "cup"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, cup, table countertop, curtain, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.19409917294979095,
+        "relative_position": "closest",
+        "confidence": 0.404264897108078
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table countertop",
+        "mean_depth": 0.19753140211105347,
+        "relative_position": "middle",
+        "confidence": 0.46833622455596924
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "curtain",
+        "mean_depth": 0.33808499574661255,
+        "relative_position": "middle",
+        "confidence": 0.5158694386482239
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.530915379524231,
+        "relative_position": "middle",
+        "confidence": 0.4982982575893402
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.6138007640838623,
+        "relative_position": "farthest",
+        "confidence": 0.4010080397129059
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.6138007640838623,
+        "relative_position": "farthest",
+        "confidence": 0.4010080397129059
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.530915379524231,
+        "relative_position": "middle",
+        "confidence": 0.4982982575893402
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "curtain",
+        "mean_depth": 0.33808499574661255,
+        "relative_position": "middle",
+        "confidence": 0.5158694386482239
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table countertop",
+        "mean_depth": 0.19753140211105347,
+        "relative_position": "middle",
+        "confidence": 0.46833622455596924
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.19409917294979095,
+        "relative_position": "closest",
+        "confidence": 0.404264897108078
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.404264897108078,
+      "bounding_box": [
+        111.63314819335938,
+        -0.061397552490234375,
+        234.012451171875,
+        127.48443603515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19409917294979095,
+        "median_depth": 0.17978596687316895,
+        "depth_std": 0.09802304208278656,
+        "depth_min": 0.055007267743349075,
+        "depth_max": 0.5737146139144897,
+        "mask_area": 2733
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "table countertop",
+      "confidence": 0.46833622455596924,
+      "bounding_box": [
+        0.0126800537109375,
+        76.75288391113281,
+        212.61676025390625,
+        179.9274444580078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19753140211105347,
+        "median_depth": 0.18595899641513824,
+        "depth_std": 0.05261998251080513,
+        "depth_min": 0.11899592727422714,
+        "depth_max": 0.5835821032524109,
+        "mask_area": 12657
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "curtain",
+      "confidence": 0.5158694386482239,
+      "bounding_box": [
+        172.94735717773438,
+        0.12873077392578125,
+        294.4104309082031,
+        159.4146728515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33808499574661255,
+        "median_depth": 0.33530566096305847,
+        "depth_std": 0.059230249375104904,
+        "depth_min": 0.09415977448225021,
+        "depth_max": 0.48295021057128906,
+        "mask_area": 11269
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.4982982575893402,
+      "bounding_box": [
+        15.507589340209961,
+        29.252716064453125,
+        74.66993713378906,
+        104.15966796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.530915379524231,
+        "median_depth": 0.4965450167655945,
+        "depth_std": 0.08659113198518753,
+        "depth_min": 0.27504459023475647,
+        "depth_max": 0.818893551826477,
+        "mask_area": 1436
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.4010080397129059,
+      "bounding_box": [
+        73.08404541015625,
+        41.12075424194336,
+        80.57221984863281,
+        48.601200103759766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6138007640838623,
+        "median_depth": 0.6098062992095947,
+        "depth_std": 0.019773000851273537,
+        "depth_min": 0.5819039940834045,
+        "depth_max": 0.647317111492157,
+        "mask_area": 45
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cup. cloth. chair. cabinet. pole. countertop. curtain.",
+  "text_prompt": "robot arm. gripper. table. cup. cloth. chair. cabinet. pole. countertop. curtain.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

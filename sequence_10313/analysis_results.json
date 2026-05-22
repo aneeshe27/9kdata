@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "backpack",
+    "whiteboard",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, robot arm, backpack, whiteboard, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.020505476742982864,
+        "relative_position": "closest",
+        "confidence": 0.5260385274887085
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.15878064930438995,
+        "relative_position": "middle",
+        "confidence": 0.6611617207527161
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "backpack",
+        "mean_depth": 0.17458510398864746,
+        "relative_position": "middle",
+        "confidence": 0.40202611684799194
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "whiteboard",
+        "mean_depth": 0.47853875160217285,
+        "relative_position": "middle",
+        "confidence": 0.6789714694023132
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.8049317002296448,
+        "relative_position": "farthest",
+        "confidence": 0.47319015860557556
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.8049317002296448,
+        "relative_position": "farthest",
+        "confidence": 0.47319015860557556
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "whiteboard",
+        "mean_depth": 0.47853875160217285,
+        "relative_position": "middle",
+        "confidence": 0.6789714694023132
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "backpack",
+        "mean_depth": 0.17458510398864746,
+        "relative_position": "middle",
+        "confidence": 0.40202611684799194
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.15878064930438995,
+        "relative_position": "middle",
+        "confidence": 0.6611617207527161
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.020505476742982864,
+        "relative_position": "closest",
+        "confidence": 0.5260385274887085
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.5260385274887085,
+      "bounding_box": [
+        0.04323577880859375,
+        103.44854736328125,
+        52.54829025268555,
+        179.92315673828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.020505476742982864,
+        "median_depth": 0.00603374233469367,
+        "depth_std": 0.038126662373542786,
+        "depth_min": 0.0,
+        "depth_max": 0.2656450569629669,
+        "mask_area": 2093
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.6611617207527161,
+      "bounding_box": [
+        100.44403839111328,
+        45.70787048339844,
+        301.3637390136719,
+        179.82797241210938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15878064930438995,
+        "median_depth": 0.10900640487670898,
+        "depth_std": 0.15010255575180054,
+        "depth_min": 0.012092324905097485,
+        "depth_max": 0.9557542204856873,
+        "mask_area": 13784
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "backpack",
+      "confidence": 0.40202611684799194,
+      "bounding_box": [
+        36.546348571777344,
+        132.44622802734375,
+        113.46587371826172,
+        180.00045776367188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17458510398864746,
+        "median_depth": 0.1786869615316391,
+        "depth_std": 0.05952902138233185,
+        "depth_min": 0.04838768020272255,
+        "depth_max": 0.39465540647506714,
+        "mask_area": 2137
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "whiteboard",
+      "confidence": 0.6789714694023132,
+      "bounding_box": [
+        231.46533203125,
+        0.046306610107421875,
+        315.938720703125,
+        71.89541625976562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47853875160217285,
+        "median_depth": 0.45609188079833984,
+        "depth_std": 0.10924328863620758,
+        "depth_min": 0.3233490288257599,
+        "depth_max": 0.7591651678085327,
+        "mask_area": 4394
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.47319015860557556,
+      "bounding_box": [
+        178.3086700439453,
+        35.53404235839844,
+        190.1829071044922,
+        54.66362762451172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8049317002296448,
+        "median_depth": 0.7869707345962524,
+        "depth_std": 0.0509345605969429,
+        "depth_min": 0.750905454158783,
+        "depth_max": 0.965315580368042,
+        "mask_area": 120
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. chair. robot arm. camera. bottle. cup. container. box. blocks. cables. backpack. whiteboard.",
+  "text_prompt": "table. chair. robot arm. camera. bottle. cup. container. box. blocks. cables. backpack. whiteboard.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cardboard box",
+    "gripper",
+    "cabinet shelf",
+    "trash bin"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, cardboard box, cabinet shelf, trash bin, gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.023184694349765778,
+        "relative_position": "closest",
+        "confidence": 0.356182724237442
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.07315368205308914,
+        "relative_position": "middle",
+        "confidence": 0.6454832553863525
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.14656318724155426,
+        "relative_position": "middle",
+        "confidence": 0.38546550273895264
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.3852696120738983,
+        "relative_position": "middle",
+        "confidence": 0.3605615794658661
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "trash bin",
+        "mean_depth": 0.5418283939361572,
+        "relative_position": "farthest",
+        "confidence": 0.43335822224617004
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "trash bin",
+        "mean_depth": 0.5418283939361572,
+        "relative_position": "farthest",
+        "confidence": 0.43335822224617004
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.3852696120738983,
+        "relative_position": "middle",
+        "confidence": 0.3605615794658661
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.14656318724155426,
+        "relative_position": "middle",
+        "confidence": 0.38546550273895264
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.07315368205308914,
+        "relative_position": "middle",
+        "confidence": 0.6454832553863525
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.023184694349765778,
+        "relative_position": "closest",
+        "confidence": 0.356182724237442
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.356182724237442,
+      "bounding_box": [
+        200.69740295410156,
+        3.272144317626953,
+        312.3194580078125,
+        90.0137939453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.023184694349765778,
+        "median_depth": 0.013381825760006905,
+        "depth_std": 0.037131521850824356,
+        "depth_min": 0.005598719697445631,
+        "depth_max": 0.29245609045028687,
+        "mask_area": 2998
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cardboard box",
+      "confidence": 0.6454832553863525,
+      "bounding_box": [
+        97.04527282714844,
+        104.4921875,
+        195.60682678222656,
+        177.93475341796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07315368205308914,
+        "median_depth": 0.07329630851745605,
+        "depth_std": 0.014886420220136642,
+        "depth_min": 0.047194499522447586,
+        "depth_max": 0.1228877604007721,
+        "mask_area": 4642
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "gripper",
+      "confidence": 0.38546550273895264,
+      "bounding_box": [
+        277.01287841796875,
+        94.47308349609375,
+        302.05499267578125,
+        123.88926696777344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14656318724155426,
+        "median_depth": 0.13867045938968658,
+        "depth_std": 0.030154205858707428,
+        "depth_min": 0.11827927082777023,
+        "depth_max": 0.26989656686782837,
+        "mask_area": 249
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet shelf",
+      "confidence": 0.3605615794658661,
+      "bounding_box": [
+        115.79631042480469,
+        28.709579467773438,
+        204.9510955810547,
+        95.0069808959961
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3852696120738983,
+        "median_depth": 0.39015597105026245,
+        "depth_std": 0.06037275865674019,
+        "depth_min": 0.3115312457084656,
+        "depth_max": 0.6249135136604309,
+        "mask_area": 4513
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "trash bin",
+      "confidence": 0.43335822224617004,
+      "bounding_box": [
+        69.78003692626953,
+        74.13987731933594,
+        84.22298431396484,
+        93.35307312011719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5418283939361572,
+        "median_depth": 0.5431103110313416,
+        "depth_std": 0.03814150020480156,
+        "depth_min": 0.46808648109436035,
+        "depth_max": 0.6201658844947815,
+        "mask_area": 209
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cardboard box. block. cylinder. whiteboard. cabinet. shelf. trash bin.",
+  "text_prompt": "robot arm. gripper. table. cardboard box. block. cylinder. whiteboard. cabinet. shelf. trash bin.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

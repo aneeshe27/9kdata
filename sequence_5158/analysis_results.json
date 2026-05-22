@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "sink",
+    "cabinet",
+    "faucet",
+    "napkin holder",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, faucet, chair, napkin holder, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.08303556591272354,
+        "relative_position": "closest",
+        "confidence": 0.7706471085548401
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.14835581183433533,
+        "relative_position": "middle",
+        "confidence": 0.49754011631011963
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.3029567301273346,
+        "relative_position": "middle",
+        "confidence": 0.766883134841919
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "napkin holder",
+        "mean_depth": 0.44324085116386414,
+        "relative_position": "middle",
+        "confidence": 0.37946075201034546
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.861655592918396,
+        "relative_position": "farthest",
+        "confidence": 0.3548557460308075
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.861655592918396,
+        "relative_position": "farthest",
+        "confidence": 0.3548557460308075
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "napkin holder",
+        "mean_depth": 0.44324085116386414,
+        "relative_position": "middle",
+        "confidence": 0.37946075201034546
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.3029567301273346,
+        "relative_position": "middle",
+        "confidence": 0.766883134841919
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.14835581183433533,
+        "relative_position": "middle",
+        "confidence": 0.49754011631011963
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.08303556591272354,
+        "relative_position": "closest",
+        "confidence": 0.7706471085548401
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.7706471085548401,
+      "bounding_box": [
+        0.05222320556640625,
+        53.87708282470703,
+        46.177425384521484,
+        118.27928924560547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08303556591272354,
+        "median_depth": 0.08062891662120819,
+        "depth_std": 0.015414930880069733,
+        "depth_min": 0.04307139664888382,
+        "depth_max": 0.19725337624549866,
+        "mask_area": 1401
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.49754011631011963,
+      "bounding_box": [
+        -0.02850341796875,
+        87.54326629638672,
+        144.63482666015625,
+        180.03079223632812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14835581183433533,
+        "median_depth": 0.1393851339817047,
+        "depth_std": 0.09097163379192352,
+        "depth_min": 0.0011756493477150798,
+        "depth_max": 0.3999319076538086,
+        "mask_area": 8115
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.766883134841919,
+      "bounding_box": [
+        44.21039962768555,
+        -0.0009326934814453125,
+        74.35350799560547,
+        41.68492126464844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3029567301273346,
+        "median_depth": 0.30013784766197205,
+        "depth_std": 0.016292691230773926,
+        "depth_min": 0.2768296003341675,
+        "depth_max": 0.3395457863807678,
+        "mask_area": 439
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "napkin holder",
+      "confidence": 0.37946075201034546,
+      "bounding_box": [
+        118.91142272949219,
+        1.0016984939575195,
+        149.69261169433594,
+        29.583515167236328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.44324085116386414,
+        "median_depth": 0.44101518392562866,
+        "depth_std": 0.020121745765209198,
+        "depth_min": 0.4026494324207306,
+        "depth_max": 0.49338945746421814,
+        "mask_area": 562
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.3548557460308075,
+      "bounding_box": [
+        223.8047637939453,
+        -0.03854560852050781,
+        292.2126159667969,
+        60.708961486816406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.861655592918396,
+        "median_depth": 0.8901209831237793,
+        "depth_std": 0.09616440534591675,
+        "depth_min": 0.6309177875518799,
+        "depth_max": 0.9973840713500977,
+        "mask_area": 1141
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. napkin holder. napkins. electric kettle. countertop. sink. faucet. cabinet. dishwasher. power cord. chair.",
+  "text_prompt": "cup. napkin holder. napkins. electric kettle. countertop. sink. faucet. cabinet. dishwasher. power cord. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

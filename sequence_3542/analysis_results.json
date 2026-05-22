@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "spatula",
+    "tongs",
+    "bowl",
+    "stove"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: stove, bowl, tongs, spatula, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.16455648839473724,
+        "relative_position": "closest",
+        "confidence": 0.3918382227420807
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "spatula",
+        "mean_depth": 0.42774122953414917,
+        "relative_position": "middle",
+        "confidence": 0.498822420835495
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "tongs",
+        "mean_depth": 0.49304428696632385,
+        "relative_position": "middle",
+        "confidence": 0.3507457673549652
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.5026081204414368,
+        "relative_position": "middle",
+        "confidence": 0.8824025392532349
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "stove",
+        "mean_depth": 0.6888651251792908,
+        "relative_position": "farthest",
+        "confidence": 0.6780857443809509
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "stove",
+        "mean_depth": 0.6888651251792908,
+        "relative_position": "farthest",
+        "confidence": 0.6780857443809509
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.5026081204414368,
+        "relative_position": "middle",
+        "confidence": 0.8824025392532349
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "tongs",
+        "mean_depth": 0.49304428696632385,
+        "relative_position": "middle",
+        "confidence": 0.3507457673549652
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "spatula",
+        "mean_depth": 0.42774122953414917,
+        "relative_position": "middle",
+        "confidence": 0.498822420835495
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.16455648839473724,
+        "relative_position": "closest",
+        "confidence": 0.3918382227420807
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3918382227420807,
+      "bounding_box": [
+        235.9549102783203,
+        0.14252090454101562,
+        310.8346862792969,
+        96.70880126953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16455648839473724,
+        "median_depth": 0.16110754013061523,
+        "depth_std": 0.02881128154695034,
+        "depth_min": 0.11078649014234543,
+        "depth_max": 0.44835183024406433,
+        "mask_area": 3742
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "spatula",
+      "confidence": 0.498822420835495,
+      "bounding_box": [
+        154.2766571044922,
+        115.53646850585938,
+        217.1592559814453,
+        177.70840454101562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.42774122953414917,
+        "median_depth": 0.4267529547214508,
+        "depth_std": 0.026197630912065506,
+        "depth_min": 0.36439815163612366,
+        "depth_max": 0.49836283922195435,
+        "mask_area": 711
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "tongs",
+      "confidence": 0.3507457673549652,
+      "bounding_box": [
+        144.21453857421875,
+        72.0965576171875,
+        168.55633544921875,
+        100.60528564453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.49304428696632385,
+        "median_depth": 0.4847373366355896,
+        "depth_std": 0.04108619689941406,
+        "depth_min": 0.4207737147808075,
+        "depth_max": 0.5917649269104004,
+        "mask_area": 314
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.8824025392532349,
+      "bounding_box": [
+        109.84556579589844,
+        67.62555694580078,
+        142.9784698486328,
+        89.91312408447266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5026081204414368,
+        "median_depth": 0.49503228068351746,
+        "depth_std": 0.022737860679626465,
+        "depth_min": 0.4789935350418091,
+        "depth_max": 0.5972355008125305,
+        "mask_area": 495
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "stove",
+      "confidence": 0.6780857443809509,
+      "bounding_box": [
+        158.1977996826172,
+        47.43531799316406,
+        230.7043914794922,
+        82.84333801269531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6888651251792908,
+        "median_depth": 0.6843925714492798,
+        "depth_std": 0.0684860572218895,
+        "depth_min": 0.40613022446632385,
+        "depth_max": 0.8272461295127869,
+        "mask_area": 1605
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. knife. spatula. tongs. spoon. ladle. drawer organizer. countertop. drawer. cabinet. stove. robot arm. gripper.",
+  "text_prompt": "bowl. knife. spatula. tongs. spoon. ladle. drawer organizer. countertop. drawer. cabinet. stove. robot arm. gripper.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

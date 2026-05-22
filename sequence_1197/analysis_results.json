@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/home/ulal/visual_reasoning/tmp/depth_extended_temp_1373754/temp_image_4269.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_4269.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cup",
+    "bowl",
+    "refrigerator",
+    "microwave"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: refrigerator, microwave, robot arm, cup, bowl",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.1199980303645134,
+        "relative_position": "closest",
+        "confidence": 0.7340642213821411
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.17611433565616608,
+        "relative_position": "middle",
+        "confidence": 0.5782092213630676
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "bowl",
+        "mean_depth": 0.20468224585056305,
+        "relative_position": "middle",
+        "confidence": 0.47997182607650757
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "refrigerator",
+        "mean_depth": 0.3917432725429535,
+        "relative_position": "middle",
+        "confidence": 0.6990602016448975
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.5225194096565247,
+        "relative_position": "farthest",
+        "confidence": 0.777353048324585
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.5225194096565247,
+        "relative_position": "farthest",
+        "confidence": 0.777353048324585
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "refrigerator",
+        "mean_depth": 0.3917432725429535,
+        "relative_position": "middle",
+        "confidence": 0.6990602016448975
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "bowl",
+        "mean_depth": 0.20468224585056305,
+        "relative_position": "middle",
+        "confidence": 0.47997182607650757
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.17611433565616608,
+        "relative_position": "middle",
+        "confidence": 0.5782092213630676
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.1199980303645134,
+        "relative_position": "closest",
+        "confidence": 0.7340642213821411
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.7340642213821411,
+      "bounding_box": [
+        37.95148468017578,
+        48.672874450683594,
+        132.9022216796875,
+        179.927734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1199980303645134,
+        "median_depth": 0.11185598373413086,
+        "depth_std": 0.04327649623155594,
+        "depth_min": 0.09667342156171799,
+        "depth_max": 0.8652526140213013,
+        "mask_area": 7622
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cup",
+      "confidence": 0.5782092213630676,
+      "bounding_box": [
+        133.98629760742188,
+        101.51799011230469,
+        145.31985473632812,
+        116.38095092773438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17611433565616608,
+        "median_depth": 0.1718066930770874,
+        "depth_std": 0.01206312607973814,
+        "depth_min": 0.16438572108745575,
+        "depth_max": 0.21174614131450653,
+        "mask_area": 137
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "bowl",
+      "confidence": 0.47997182607650757,
+      "bounding_box": [
+        166.81138610839844,
+        96.52007293701172,
+        180.9586639404297,
+        108.13727569580078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20468224585056305,
+        "median_depth": 0.18767139315605164,
+        "depth_std": 0.057547446340322495,
+        "depth_min": 0.17768067121505737,
+        "depth_max": 0.48245808482170105,
+        "mask_area": 137
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "refrigerator",
+      "confidence": 0.6990602016448975,
+      "bounding_box": [
+        209.59158325195312,
+        6.791790008544922,
+        296.16693115234375,
+        114.46864318847656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3917432725429535,
+        "median_depth": 0.39321601390838623,
+        "depth_std": 0.035583753138780594,
+        "depth_min": 0.32119467854499817,
+        "depth_max": 0.4870677590370178,
+        "mask_area": 5486
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "microwave",
+      "confidence": 0.777353048324585,
+      "bounding_box": [
+        193.69473266601562,
+        45.39928436279297,
+        218.56744384765625,
+        61.73090362548828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5225194096565247,
+        "median_depth": 0.5193361043930054,
+        "depth_std": 0.02042681910097599,
+        "depth_min": 0.4784473776817322,
+        "depth_max": 0.578605592250824,
+        "mask_area": 340
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. table. bowl. cup. container. sponge. utensil. tablet. stand. refrigerator. microwave. cabinet. sink. stool.",
+  "text_prompt": "robot arm. table. bowl. cup. container. sponge. utensil. tablet. stand. refrigerator. microwave. cabinet. sink. stool.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

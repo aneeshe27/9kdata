@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "arm gripper",
+    "utensil",
+    "window",
+    "faucet",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: arm gripper, cabinet, utensil, faucet, window",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "arm gripper",
+        "mean_depth": 0.10128341615200043,
+        "relative_position": "closest",
+        "confidence": 0.41418009996414185
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "utensil",
+        "mean_depth": 0.1977914571762085,
+        "relative_position": "middle",
+        "confidence": 0.38634732365608215
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "window",
+        "mean_depth": 0.24837490916252136,
+        "relative_position": "middle",
+        "confidence": 0.6746509671211243
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.25082316994667053,
+        "relative_position": "middle",
+        "confidence": 0.39921462535858154
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.3158841133117676,
+        "relative_position": "farthest",
+        "confidence": 0.4320312738418579
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.3158841133117676,
+        "relative_position": "farthest",
+        "confidence": 0.4320312738418579
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.25082316994667053,
+        "relative_position": "middle",
+        "confidence": 0.39921462535858154
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "window",
+        "mean_depth": 0.24837490916252136,
+        "relative_position": "middle",
+        "confidence": 0.6746509671211243
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "utensil",
+        "mean_depth": 0.1977914571762085,
+        "relative_position": "middle",
+        "confidence": 0.38634732365608215
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "arm gripper",
+        "mean_depth": 0.10128341615200043,
+        "relative_position": "closest",
+        "confidence": 0.41418009996414185
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "arm gripper",
+      "confidence": 0.41418009996414185,
+      "bounding_box": [
+        187.27947998046875,
+        40.191368103027344,
+        251.06320190429688,
+        118.70230865478516
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10128341615200043,
+        "median_depth": 0.08083543181419373,
+        "depth_std": 0.05266972631216049,
+        "depth_min": 0.06243733689188957,
+        "depth_max": 0.3840787410736084,
+        "mask_area": 1620
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "utensil",
+      "confidence": 0.38634732365608215,
+      "bounding_box": [
+        168.94033813476562,
+        152.7664031982422,
+        192.78939819335938,
+        158.9433135986328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1977914571762085,
+        "median_depth": 0.1972481906414032,
+        "depth_std": 0.004580188076943159,
+        "depth_min": 0.19056116044521332,
+        "depth_max": 0.2078395038843155,
+        "mask_area": 80
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "window",
+      "confidence": 0.6746509671211243,
+      "bounding_box": [
+        103.48490905761719,
+        0.13523101806640625,
+        181.42857360839844,
+        102.87596130371094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24837490916252136,
+        "median_depth": 0.24692243337631226,
+        "depth_std": 0.05143355950713158,
+        "depth_min": 0.11916833370923996,
+        "depth_max": 0.34472087025642395,
+        "mask_area": 6792
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "faucet",
+      "confidence": 0.39921462535858154,
+      "bounding_box": [
+        137.8560791015625,
+        96.44792938232422,
+        170.0517578125,
+        118.21672821044922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.25082316994667053,
+        "median_depth": 0.2575140595436096,
+        "depth_std": 0.02190316654741764,
+        "depth_min": 0.21050824224948883,
+        "depth_max": 0.2852535843849182,
+        "mask_area": 300
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet",
+      "confidence": 0.4320312738418579,
+      "bounding_box": [
+        189.81655883789062,
+        114.83055114746094,
+        243.26620483398438,
+        180.0166778564453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3158841133117676,
+        "median_depth": 0.31245264410972595,
+        "depth_std": 0.09615116566419601,
+        "depth_min": 0.1294059157371521,
+        "depth_max": 0.4774528741836548,
+        "mask_area": 1756
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. kettle. sink. faucet. sponge. utensil. bottle. window. blinds. cabinet. countertop.",
+  "text_prompt": "robot arm. gripper. kettle. sink. faucet. sponge. utensil. bottle. window. blinds. cabinet. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "saucepan",
+    "range hood",
+    "oven",
+    "oven",
+    "refrigerator"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: saucepan, range hood, refrigerator, oven, oven",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "saucepan",
+        "mean_depth": 0.06872884929180145,
+        "relative_position": "closest",
+        "confidence": 0.5313558578491211
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "range hood",
+        "mean_depth": 0.07846549153327942,
+        "relative_position": "middle",
+        "confidence": 0.6275620460510254
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "oven",
+        "mean_depth": 0.1675012856721878,
+        "relative_position": "middle",
+        "confidence": 0.388939768075943
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "oven",
+        "mean_depth": 0.38043534755706787,
+        "relative_position": "middle",
+        "confidence": 0.39705538749694824
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "refrigerator",
+        "mean_depth": 0.5203831791877747,
+        "relative_position": "farthest",
+        "confidence": 0.4388580322265625
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "refrigerator",
+        "mean_depth": 0.5203831791877747,
+        "relative_position": "farthest",
+        "confidence": 0.4388580322265625
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "oven",
+        "mean_depth": 0.38043534755706787,
+        "relative_position": "middle",
+        "confidence": 0.39705538749694824
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "oven",
+        "mean_depth": 0.1675012856721878,
+        "relative_position": "middle",
+        "confidence": 0.388939768075943
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "range hood",
+        "mean_depth": 0.07846549153327942,
+        "relative_position": "middle",
+        "confidence": 0.6275620460510254
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "saucepan",
+        "mean_depth": 0.06872884929180145,
+        "relative_position": "closest",
+        "confidence": 0.5313558578491211
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "saucepan",
+      "confidence": 0.5313558578491211,
+      "bounding_box": [
+        92.05895233154297,
+        120.5617904663086,
+        144.6907958984375,
+        157.5690155029297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06872884929180145,
+        "median_depth": 0.06741291284561157,
+        "depth_std": 0.018595755100250244,
+        "depth_min": 0.04477330297231674,
+        "depth_max": 0.15196527540683746,
+        "mask_area": 1149
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "range hood",
+      "confidence": 0.6275620460510254,
+      "bounding_box": [
+        0.071441650390625,
+        0.07413291931152344,
+        147.8699951171875,
+        34.26792907714844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07846549153327942,
+        "median_depth": 0.04107534512877464,
+        "depth_std": 0.08210835605859756,
+        "depth_min": 0.006622808054089546,
+        "depth_max": 0.37456291913986206,
+        "mask_area": 1537
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "oven",
+      "confidence": 0.388939768075943,
+      "bounding_box": [
+        137.81092834472656,
+        110.58784484863281,
+        171.98793029785156,
+        179.8585968017578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1675012856721878,
+        "median_depth": 0.16686369478702545,
+        "depth_std": 0.06954342871904373,
+        "depth_min": 0.047408707439899445,
+        "depth_max": 0.3497066795825958,
+        "mask_area": 612
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "oven",
+      "confidence": 0.39705538749694824,
+      "bounding_box": [
+        166.96163940429688,
+        104.3282699584961,
+        185.86199951171875,
+        179.37582397460938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.38043534755706787,
+        "median_depth": 0.3590586483478546,
+        "depth_std": 0.07058364897966385,
+        "depth_min": 0.24750375747680664,
+        "depth_max": 0.5284565091133118,
+        "mask_area": 751
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "refrigerator",
+      "confidence": 0.4388580322265625,
+      "bounding_box": [
+        154.18655395507812,
+        45.05821228027344,
+        195.49554443359375,
+        138.98861694335938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5203831791877747,
+        "median_depth": 0.541414737701416,
+        "depth_std": 0.11485755443572998,
+        "depth_min": 0.07214286923408508,
+        "depth_max": 0.7535692453384399,
+        "mask_area": 1384
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "stove. oven. saucepan. kettle. robot arm. gripper. cable. range hood. refrigerator. counter. cabinet.",
+  "text_prompt": "stove. oven. saucepan. kettle. robot arm. gripper. cable. range hood. refrigerator. counter. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

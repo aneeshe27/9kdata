@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_1207678/temp_image_800.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_800.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "sink",
+    "can",
+    "cutting board",
+    "microwave"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: microwave, sink, robot arm, cutting board, can",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.1351669877767563,
+        "relative_position": "closest",
+        "confidence": 0.48283204436302185
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.15447497367858887,
+        "relative_position": "middle",
+        "confidence": 0.830758810043335
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "can",
+        "mean_depth": 0.29954513907432556,
+        "relative_position": "middle",
+        "confidence": 0.59895259141922
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cutting board",
+        "mean_depth": 0.5076987743377686,
+        "relative_position": "middle",
+        "confidence": 0.4401605427265167
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "microwave",
+        "mean_depth": 0.7274617552757263,
+        "relative_position": "farthest",
+        "confidence": 0.5226904153823853
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "microwave",
+        "mean_depth": 0.7274617552757263,
+        "relative_position": "farthest",
+        "confidence": 0.5226904153823853
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cutting board",
+        "mean_depth": 0.5076987743377686,
+        "relative_position": "middle",
+        "confidence": 0.4401605427265167
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "can",
+        "mean_depth": 0.29954513907432556,
+        "relative_position": "middle",
+        "confidence": 0.59895259141922
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.15447497367858887,
+        "relative_position": "middle",
+        "confidence": 0.830758810043335
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.1351669877767563,
+        "relative_position": "closest",
+        "confidence": 0.48283204436302185
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.48283204436302185,
+      "bounding_box": [
+        250.8975830078125,
+        -0.01287078857421875,
+        315.908203125,
+        179.97476196289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1351669877767563,
+        "median_depth": 0.12419513612985611,
+        "depth_std": 0.06590178608894348,
+        "depth_min": 0.05206330865621567,
+        "depth_max": 0.8054812550544739,
+        "mask_area": 8147
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.830758810043335,
+      "bounding_box": [
+        0.0776519775390625,
+        148.589111328125,
+        146.36866760253906,
+        179.98794555664062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15447497367858887,
+        "median_depth": 0.15605147182941437,
+        "depth_std": 0.015863806009292603,
+        "depth_min": 0.09023598581552505,
+        "depth_max": 0.1768191009759903,
+        "mask_area": 3205
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "can",
+      "confidence": 0.59895259141922,
+      "bounding_box": [
+        81.78128051757812,
+        93.70866394042969,
+        96.89218139648438,
+        121.63984680175781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29954513907432556,
+        "median_depth": 0.2970285415649414,
+        "depth_std": 0.011753885075449944,
+        "depth_min": 0.28234973549842834,
+        "depth_max": 0.33046162128448486,
+        "mask_area": 324
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cutting board",
+      "confidence": 0.4401605427265167,
+      "bounding_box": [
+        225.2941131591797,
+        122.23675537109375,
+        262.21966552734375,
+        135.24420166015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5076987743377686,
+        "median_depth": 0.45278531312942505,
+        "depth_std": 0.12431621551513672,
+        "depth_min": 0.3257744312286377,
+        "depth_max": 0.7569274306297302,
+        "mask_area": 251
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "microwave",
+      "confidence": 0.5226904153823853,
+      "bounding_box": [
+        145.9510040283203,
+        63.1961669921875,
+        179.53379821777344,
+        89.08428955078125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7274617552757263,
+        "median_depth": 0.7597692012786865,
+        "depth_std": 0.13965220749378204,
+        "depth_min": 0.026746297255158424,
+        "depth_max": 0.8408947587013245,
+        "mask_area": 591
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. bag. counter. sink. cabinet. microwave. dishwasher. can. cutting board.",
+  "text_prompt": "robot arm. gripper. bag. counter. sink. cabinet. microwave. dishwasher. can. cutting board.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper",
+    "sofa",
+    "armchair",
+    "plant",
+    "window blinds"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: window blinds, gripper, plant, armchair, sofa",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.1036287248134613,
+        "relative_position": "closest",
+        "confidence": 0.375972718000412
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.23272448778152466,
+        "relative_position": "middle",
+        "confidence": 0.7879334092140198
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "armchair",
+        "mean_depth": 0.6044703125953674,
+        "relative_position": "middle",
+        "confidence": 0.5533435940742493
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "plant",
+        "mean_depth": 0.6617310047149658,
+        "relative_position": "middle",
+        "confidence": 0.5498865842819214
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "window blinds",
+        "mean_depth": 0.8897290229797363,
+        "relative_position": "farthest",
+        "confidence": 0.37948471307754517
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "window blinds",
+        "mean_depth": 0.8897290229797363,
+        "relative_position": "farthest",
+        "confidence": 0.37948471307754517
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "plant",
+        "mean_depth": 0.6617310047149658,
+        "relative_position": "middle",
+        "confidence": 0.5498865842819214
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "armchair",
+        "mean_depth": 0.6044703125953674,
+        "relative_position": "middle",
+        "confidence": 0.5533435940742493
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.23272448778152466,
+        "relative_position": "middle",
+        "confidence": 0.7879334092140198
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.1036287248134613,
+        "relative_position": "closest",
+        "confidence": 0.375972718000412
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.375972718000412,
+      "bounding_box": [
+        209.8922576904297,
+        126.50890350341797,
+        262.38922119140625,
+        160.30613708496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1036287248134613,
+        "median_depth": 0.09949991106987,
+        "depth_std": 0.01550355739891529,
+        "depth_min": 0.08496691286563873,
+        "depth_max": 0.15947751700878143,
+        "mask_area": 968
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "sofa",
+      "confidence": 0.7879334092140198,
+      "bounding_box": [
+        0.03491973876953125,
+        32.780189514160156,
+        163.72732543945312,
+        180.03759765625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23272448778152466,
+        "median_depth": 0.20537376403808594,
+        "depth_std": 0.09373590350151062,
+        "depth_min": 0.11302606016397476,
+        "depth_max": 0.5121561884880066,
+        "mask_area": 20111
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "armchair",
+      "confidence": 0.5533435940742493,
+      "bounding_box": [
+        159.59048461914062,
+        17.24386978149414,
+        232.14132690429688,
+        85.82756042480469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6044703125953674,
+        "median_depth": 0.5993238091468811,
+        "depth_std": 0.06389594078063965,
+        "depth_min": 0.3958075940608978,
+        "depth_max": 0.9157969951629639,
+        "mask_area": 2961
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plant",
+      "confidence": 0.5498865842819214,
+      "bounding_box": [
+        117.84151458740234,
+        0.023578643798828125,
+        134.08694458007812,
+        31.53699493408203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6617310047149658,
+        "median_depth": 0.6702725887298584,
+        "depth_std": 0.028949888423085213,
+        "depth_min": 0.6133258938789368,
+        "depth_max": 0.7198473215103149,
+        "mask_area": 215
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "window blinds",
+      "confidence": 0.37948471307754517,
+      "bounding_box": [
+        154.70379638671875,
+        -0.08754539489746094,
+        280.4675598144531,
+        48.2210693359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8897290229797363,
+        "median_depth": 0.978280782699585,
+        "depth_std": 0.1322317272424698,
+        "depth_min": 0.1832202523946762,
+        "depth_max": 0.9998007416725159,
+        "mask_area": 3082
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sofa. pillow. armchair. coffee table. side table. plant. pot. robot arm. gripper. rug. window blinds.",
+  "text_prompt": "sofa. pillow. armchair. coffee table. side table. plant. pot. robot arm. gripper. rug. window blinds.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

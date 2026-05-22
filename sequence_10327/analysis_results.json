@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "whiteboard",
+    "whiteboard",
+    "tripod",
+    "sofa"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sofa, table, whiteboard, tripod, whiteboard",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.05127071961760521,
+        "relative_position": "closest",
+        "confidence": 0.4151831269264221
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "whiteboard",
+        "mean_depth": 0.29681846499443054,
+        "relative_position": "middle",
+        "confidence": 0.35858428478240967
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "whiteboard",
+        "mean_depth": 0.42292365431785583,
+        "relative_position": "middle",
+        "confidence": 0.5427833199501038
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "tripod",
+        "mean_depth": 0.46777379512786865,
+        "relative_position": "middle",
+        "confidence": 0.6158578395843506
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "sofa",
+        "mean_depth": 0.6599840521812439,
+        "relative_position": "farthest",
+        "confidence": 0.3839283287525177
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "sofa",
+        "mean_depth": 0.6599840521812439,
+        "relative_position": "farthest",
+        "confidence": 0.3839283287525177
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "tripod",
+        "mean_depth": 0.46777379512786865,
+        "relative_position": "middle",
+        "confidence": 0.6158578395843506
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "whiteboard",
+        "mean_depth": 0.42292365431785583,
+        "relative_position": "middle",
+        "confidence": 0.5427833199501038
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "whiteboard",
+        "mean_depth": 0.29681846499443054,
+        "relative_position": "middle",
+        "confidence": 0.35858428478240967
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.05127071961760521,
+        "relative_position": "closest",
+        "confidence": 0.4151831269264221
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.4151831269264221,
+      "bounding_box": [
+        51.65654754638672,
+        76.82017517089844,
+        245.34228515625,
+        179.55152893066406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05127071961760521,
+        "median_depth": 0.04272563010454178,
+        "depth_std": 0.04442622885107994,
+        "depth_min": 0.0022726121824234724,
+        "depth_max": 0.6966132521629333,
+        "mask_area": 12217
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "whiteboard",
+      "confidence": 0.35858428478240967,
+      "bounding_box": [
+        201.92539978027344,
+        0.02320098876953125,
+        289.33526611328125,
+        57.73423767089844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29681846499443054,
+        "median_depth": 0.2935838997364044,
+        "depth_std": 0.03949258103966713,
+        "depth_min": 0.24425238370895386,
+        "depth_max": 0.8603750467300415,
+        "mask_area": 3859
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "whiteboard",
+      "confidence": 0.5427833199501038,
+      "bounding_box": [
+        142.27633666992188,
+        6.4379119873046875,
+        189.62408447265625,
+        55.26305389404297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.42292365431785583,
+        "median_depth": 0.41253483295440674,
+        "depth_std": 0.05872495099902153,
+        "depth_min": 0.3762187957763672,
+        "depth_max": 0.9449961185455322,
+        "mask_area": 1848
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "tripod",
+      "confidence": 0.6158578395843506,
+      "bounding_box": [
+        279.114013671875,
+        42.838165283203125,
+        313.56597900390625,
+        121.97322082519531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.46777379512786865,
+        "median_depth": 0.4232807159423828,
+        "depth_std": 0.14578856527805328,
+        "depth_min": 0.2736577093601227,
+        "depth_max": 0.8073595762252808,
+        "mask_area": 702
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "sofa",
+      "confidence": 0.3839283287525177,
+      "bounding_box": [
+        176.65916442871094,
+        59.07190704345703,
+        227.25062561035156,
+        81.0052719116211
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6599840521812439,
+        "median_depth": 0.6514179706573486,
+        "depth_std": 0.08268077671527863,
+        "depth_min": 0.47298887372016907,
+        "depth_max": 0.8927297592163086,
+        "mask_area": 511
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. bottle. cloth. block. cylinder. cube. ring. tripod. camera. whiteboard. sofa. bean bag chair.",
+  "text_prompt": "table. robot arm. bottle. cloth. block. cylinder. cube. ring. tripod. camera. whiteboard. sofa. bean bag chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "gripper dispenser",
+    "coffee machine dispenser",
+    "cabinet",
+    "power outlet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: power outlet, cabinet, robot arm, coffee machine dispenser, gripper dispenser",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.033257223665714264,
+        "relative_position": "closest",
+        "confidence": 0.3884434401988983
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "gripper dispenser",
+        "mean_depth": 0.17189708352088928,
+        "relative_position": "middle",
+        "confidence": 0.48240500688552856
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "coffee machine dispenser",
+        "mean_depth": 0.20565323531627655,
+        "relative_position": "middle",
+        "confidence": 0.4587514102458954
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.2226426899433136,
+        "relative_position": "middle",
+        "confidence": 0.36165013909339905
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.43554311990737915,
+        "relative_position": "farthest",
+        "confidence": 0.547447144985199
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.43554311990737915,
+        "relative_position": "farthest",
+        "confidence": 0.547447144985199
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.2226426899433136,
+        "relative_position": "middle",
+        "confidence": 0.36165013909339905
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "coffee machine dispenser",
+        "mean_depth": 0.20565323531627655,
+        "relative_position": "middle",
+        "confidence": 0.4587514102458954
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "gripper dispenser",
+        "mean_depth": 0.17189708352088928,
+        "relative_position": "middle",
+        "confidence": 0.48240500688552856
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.033257223665714264,
+        "relative_position": "closest",
+        "confidence": 0.3884434401988983
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3884434401988983,
+      "bounding_box": [
+        60.57275390625,
+        94.05265808105469,
+        114.82435607910156,
+        179.97535705566406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.033257223665714264,
+        "median_depth": 0.009919911623001099,
+        "depth_std": 0.08896200358867645,
+        "depth_min": 0.0013186685973778367,
+        "depth_max": 0.8379207849502563,
+        "mask_area": 2638
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "gripper dispenser",
+      "confidence": 0.48240500688552856,
+      "bounding_box": [
+        258.1531677246094,
+        107.43887329101562,
+        292.5793151855469,
+        149.92080688476562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17189708352088928,
+        "median_depth": 0.17030218243598938,
+        "depth_std": 0.010828257538378239,
+        "depth_min": 0.1488238126039505,
+        "depth_max": 0.20997799932956696,
+        "mask_area": 715
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "coffee machine dispenser",
+      "confidence": 0.4587514102458954,
+      "bounding_box": [
+        220.6206817626953,
+        103.625244140625,
+        260.4959716796875,
+        150.54579162597656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20565323531627655,
+        "median_depth": 0.20423778891563416,
+        "depth_std": 0.02698165737092495,
+        "depth_min": 0.15634196996688843,
+        "depth_max": 0.2785402238368988,
+        "mask_area": 1326
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.36165013909339905,
+      "bounding_box": [
+        147.47215270996094,
+        0.13570404052734375,
+        315.99981689453125,
+        70.56797790527344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2226426899433136,
+        "median_depth": 0.22013553977012634,
+        "depth_std": 0.09400862455368042,
+        "depth_min": 0.0673166811466217,
+        "depth_max": 0.399023175239563,
+        "mask_area": 8080
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "power outlet",
+      "confidence": 0.547447144985199,
+      "bounding_box": [
+        162.283447265625,
+        111.66219329833984,
+        175.39077758789062,
+        123.43978118896484
+      ],
+      "depth_stats": {
+        "mean_depth": 0.43554311990737915,
+        "median_depth": 0.43529507517814636,
+        "depth_std": 0.011705082841217518,
+        "depth_min": 0.4151897430419922,
+        "depth_max": 0.45702841877937317,
+        "mask_area": 109
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. countertop. coffee machine. dispenser. power outlet. sign. cable.",
+  "text_prompt": "robot arm. gripper. cabinet. countertop. coffee machine. dispenser. power outlet. sign. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

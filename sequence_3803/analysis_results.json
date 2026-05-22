@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "camera",
+    "sofa",
+    "articulated arm",
+    "plant",
+    "window blinds"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: window blinds, plant, sofa, camera, articulated arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.052243802696466446,
+        "relative_position": "closest",
+        "confidence": 0.5047399997711182
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.13419386744499207,
+        "relative_position": "middle",
+        "confidence": 0.806459903717041
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "articulated arm",
+        "mean_depth": 0.5696753263473511,
+        "relative_position": "middle",
+        "confidence": 0.38403648138046265
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "plant",
+        "mean_depth": 0.7455822229385376,
+        "relative_position": "middle",
+        "confidence": 0.5542309284210205
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "window blinds",
+        "mean_depth": 0.8903619647026062,
+        "relative_position": "farthest",
+        "confidence": 0.5739617943763733
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "window blinds",
+        "mean_depth": 0.8903619647026062,
+        "relative_position": "farthest",
+        "confidence": 0.5739617943763733
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "plant",
+        "mean_depth": 0.7455822229385376,
+        "relative_position": "middle",
+        "confidence": 0.5542309284210205
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "articulated arm",
+        "mean_depth": 0.5696753263473511,
+        "relative_position": "middle",
+        "confidence": 0.38403648138046265
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.13419386744499207,
+        "relative_position": "middle",
+        "confidence": 0.806459903717041
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.052243802696466446,
+        "relative_position": "closest",
+        "confidence": 0.5047399997711182
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "camera",
+      "confidence": 0.5047399997711182,
+      "bounding_box": [
+        263.1038513183594,
+        112.49256134033203,
+        288.9037780761719,
+        137.7749786376953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.052243802696466446,
+        "median_depth": 0.04209522902965546,
+        "depth_std": 0.032579947263002396,
+        "depth_min": 0.029776571318507195,
+        "depth_max": 0.22993333637714386,
+        "mask_area": 438
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "sofa",
+      "confidence": 0.806459903717041,
+      "bounding_box": [
+        -0.09358978271484375,
+        33.357818603515625,
+        160.36087036132812,
+        180.04441833496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13419386744499207,
+        "median_depth": 0.0979510247707367,
+        "depth_std": 0.12049129605293274,
+        "depth_min": 0.00502370111644268,
+        "depth_max": 0.5594570636749268,
+        "mask_area": 20211
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "articulated arm",
+      "confidence": 0.38403648138046265,
+      "bounding_box": [
+        277.1900939941406,
+        36.986289978027344,
+        315.9583435058594,
+        79.80294799804688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5696753263473511,
+        "median_depth": 0.567435085773468,
+        "depth_std": 0.03291073441505432,
+        "depth_min": 0.5044630169868469,
+        "depth_max": 0.6480085849761963,
+        "mask_area": 845
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plant",
+      "confidence": 0.5542309284210205,
+      "bounding_box": [
+        117.63019561767578,
+        0.038702964782714844,
+        134.26187133789062,
+        31.81552505493164
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7455822229385376,
+        "median_depth": 0.7459463477134705,
+        "depth_std": 0.014632229693233967,
+        "depth_min": 0.7184752225875854,
+        "depth_max": 0.788835883140564,
+        "mask_area": 218
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "window blinds",
+      "confidence": 0.5739617943763733,
+      "bounding_box": [
+        154.55059814453125,
+        0.05041694641113281,
+        279.99041748046875,
+        57.51116943359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8903619647026062,
+        "median_depth": 0.8838987946510315,
+        "depth_std": 0.04263503849506378,
+        "depth_min": 0.7497390508651733,
+        "depth_max": 0.9681705832481384,
+        "mask_area": 3724
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sofa. pillow. coffee table. book. armchair. side table. plant. pot. window blinds. camera. articulated arm.",
+  "text_prompt": "sofa. pillow. coffee table. book. armchair. side table. plant. pot. window blinds. camera. articulated arm.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

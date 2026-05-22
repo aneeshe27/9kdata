@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "light switch",
+    "camera",
+    "camera",
+    "wall mount table",
+    "power outlet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: light switch, power outlet, camera, wall mount table, camera",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "light switch",
+        "mean_depth": 0.07627410441637039,
+        "relative_position": "closest",
+        "confidence": 0.613976240158081
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "camera",
+        "mean_depth": 0.09197250008583069,
+        "relative_position": "middle",
+        "confidence": 0.35837316513061523
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "camera",
+        "mean_depth": 0.09575315564870834,
+        "relative_position": "middle",
+        "confidence": 0.44258102774620056
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "wall mount table",
+        "mean_depth": 0.3520873785018921,
+        "relative_position": "middle",
+        "confidence": 0.3662019371986389
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "power outlet",
+        "mean_depth": 0.3927154242992401,
+        "relative_position": "farthest",
+        "confidence": 0.6130645871162415
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "power outlet",
+        "mean_depth": 0.3927154242992401,
+        "relative_position": "farthest",
+        "confidence": 0.6130645871162415
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "wall mount table",
+        "mean_depth": 0.3520873785018921,
+        "relative_position": "middle",
+        "confidence": 0.3662019371986389
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "camera",
+        "mean_depth": 0.09575315564870834,
+        "relative_position": "middle",
+        "confidence": 0.44258102774620056
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "camera",
+        "mean_depth": 0.09197250008583069,
+        "relative_position": "middle",
+        "confidence": 0.35837316513061523
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "light switch",
+        "mean_depth": 0.07627410441637039,
+        "relative_position": "closest",
+        "confidence": 0.613976240158081
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "light switch",
+      "confidence": 0.613976240158081,
+      "bounding_box": [
+        78.09541320800781,
+        0.0905914306640625,
+        122.28164672851562,
+        44.540184020996094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07627410441637039,
+        "median_depth": 0.07654175907373428,
+        "depth_std": 0.01312947180122137,
+        "depth_min": 0.042087726294994354,
+        "depth_max": 0.10946161299943924,
+        "mask_area": 1423
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "camera",
+      "confidence": 0.35837316513061523,
+      "bounding_box": [
+        257.0596008300781,
+        -0.0007040500640869141,
+        293.0285339355469,
+        4.697699546813965
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09197250008583069,
+        "median_depth": 0.08948833495378494,
+        "depth_std": 0.030301330611109734,
+        "depth_min": 0.06499674916267395,
+        "depth_max": 0.3373359739780426,
+        "mask_area": 119
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "camera",
+      "confidence": 0.44258102774620056,
+      "bounding_box": [
+        112.04167175292969,
+        0.00030231475830078125,
+        167.4634246826172,
+        27.181198120117188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09575315564870834,
+        "median_depth": 0.09536294639110565,
+        "depth_std": 0.012048090808093548,
+        "depth_min": 0.06327130645513535,
+        "depth_max": 0.13013924658298492,
+        "mask_area": 926
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "wall mount table",
+      "confidence": 0.3662019371986389,
+      "bounding_box": [
+        173.21145629882812,
+        56.147037506103516,
+        295.140625,
+        179.8739013671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3520873785018921,
+        "median_depth": 0.3308224678039551,
+        "depth_std": 0.09275396913290024,
+        "depth_min": 0.20918728411197662,
+        "depth_max": 0.9637718796730042,
+        "mask_area": 7921
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "power outlet",
+      "confidence": 0.6130645871162415,
+      "bounding_box": [
+        165.15509033203125,
+        124.35494995117188,
+        174.42840576171875,
+        139.41339111328125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3927154242992401,
+        "median_depth": 0.39285314083099365,
+        "depth_std": 0.010351925157010555,
+        "depth_min": 0.37507349252700806,
+        "depth_max": 0.4142129123210907,
+        "mask_area": 99
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "light switch. camera. wall mount. cable. power outlet. plug. table. tripod. window.",
+  "text_prompt": "light switch. camera. wall mount. cable. power outlet. plug. table. tripod. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

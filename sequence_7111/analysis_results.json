@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "stove",
+    "plastic bag",
+    "cabinet",
+    "cardboard box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: stove, robot arm, cabinet, cardboard box, plastic bag",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.053120002150535583,
+        "relative_position": "closest",
+        "confidence": 0.35984471440315247
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "stove",
+        "mean_depth": 0.1376226246356964,
+        "relative_position": "middle",
+        "confidence": 0.3873867094516754
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "plastic bag",
+        "mean_depth": 0.16030466556549072,
+        "relative_position": "middle",
+        "confidence": 0.43044930696487427
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.48183727264404297,
+        "relative_position": "middle",
+        "confidence": 0.45839497447013855
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.6090698838233948,
+        "relative_position": "farthest",
+        "confidence": 0.8631436824798584
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.6090698838233948,
+        "relative_position": "farthest",
+        "confidence": 0.8631436824798584
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.48183727264404297,
+        "relative_position": "middle",
+        "confidence": 0.45839497447013855
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "plastic bag",
+        "mean_depth": 0.16030466556549072,
+        "relative_position": "middle",
+        "confidence": 0.43044930696487427
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "stove",
+        "mean_depth": 0.1376226246356964,
+        "relative_position": "middle",
+        "confidence": 0.3873867094516754
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.053120002150535583,
+        "relative_position": "closest",
+        "confidence": 0.35984471440315247
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.35984471440315247,
+      "bounding_box": [
+        252.9485321044922,
+        36.16246032714844,
+        315.91729736328125,
+        178.9136199951172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.053120002150535583,
+        "median_depth": 0.042673125863075256,
+        "depth_std": 0.04955624043941498,
+        "depth_min": 0.03412306681275368,
+        "depth_max": 0.6802211999893188,
+        "mask_area": 4630
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "stove",
+      "confidence": 0.3873867094516754,
+      "bounding_box": [
+        89.0353012084961,
+        77.36109924316406,
+        236.01950073242188,
+        141.61727905273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1376226246356964,
+        "median_depth": 0.11275742948055267,
+        "depth_std": 0.07595006376504898,
+        "depth_min": 0.08131244033575058,
+        "depth_max": 0.8219631314277649,
+        "mask_area": 3420
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plastic bag",
+      "confidence": 0.43044930696487427,
+      "bounding_box": [
+        143.5935821533203,
+        24.609661102294922,
+        194.17539978027344,
+        106.63304138183594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16030466556549072,
+        "median_depth": 0.15403978526592255,
+        "depth_std": 0.0509236641228199,
+        "depth_min": 0.1386372298002243,
+        "depth_max": 0.9786578416824341,
+        "mask_area": 2710
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet",
+      "confidence": 0.45839497447013855,
+      "bounding_box": [
+        204.57952880859375,
+        68.83963012695312,
+        277.6850280761719,
+        142.64027404785156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.48183727264404297,
+        "median_depth": 0.468928724527359,
+        "depth_std": 0.08239737153053284,
+        "depth_min": 0.1773698478937149,
+        "depth_max": 0.839614987373352,
+        "mask_area": 2831
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cardboard box",
+      "confidence": 0.8631436824798584,
+      "bounding_box": [
+        227.24710083007812,
+        51.78308868408203,
+        268.907958984375,
+        78.2779769897461
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6090698838233948,
+        "median_depth": 0.5917037725448608,
+        "depth_std": 0.07625171542167664,
+        "depth_min": 0.5355749726295471,
+        "depth_max": 0.9849182367324829,
+        "mask_area": 678
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "stove. trash bin. lid. plastic bag. refrigerator. robot arm. gripper. camera. countertop. cabinet. cardboard box.",
+  "text_prompt": "stove. trash bin. lid. plastic bag. refrigerator. robot arm. gripper. camera. countertop. cabinet. cardboard box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

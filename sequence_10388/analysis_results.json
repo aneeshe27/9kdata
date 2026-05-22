@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cup",
+    "table",
+    "toaster",
+    "coffee maker"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: toaster, coffee maker, table, robot arm, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.04179185628890991,
+        "relative_position": "closest",
+        "confidence": 0.616939127445221
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.20239350199699402,
+        "relative_position": "middle",
+        "confidence": 0.4385680556297302
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.21445289254188538,
+        "relative_position": "middle",
+        "confidence": 0.7198905348777771
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "toaster",
+        "mean_depth": 0.7682865858078003,
+        "relative_position": "middle",
+        "confidence": 0.4414710998535156
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "coffee maker",
+        "mean_depth": 0.8562992215156555,
+        "relative_position": "farthest",
+        "confidence": 0.7734443545341492
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "coffee maker",
+        "mean_depth": 0.8562992215156555,
+        "relative_position": "farthest",
+        "confidence": 0.7734443545341492
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "toaster",
+        "mean_depth": 0.7682865858078003,
+        "relative_position": "middle",
+        "confidence": 0.4414710998535156
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.21445289254188538,
+        "relative_position": "middle",
+        "confidence": 0.7198905348777771
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.20239350199699402,
+        "relative_position": "middle",
+        "confidence": 0.4385680556297302
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.04179185628890991,
+        "relative_position": "closest",
+        "confidence": 0.616939127445221
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.616939127445221,
+      "bounding_box": [
+        223.2178192138672,
+        0.10477828979492188,
+        315.8616943359375,
+        58.792842864990234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04179185628890991,
+        "median_depth": 0.017610710114240646,
+        "depth_std": 0.06471854448318481,
+        "depth_min": 0.0,
+        "depth_max": 0.678751528263092,
+        "mask_area": 2864
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.4385680556297302,
+      "bounding_box": [
+        164.143798828125,
+        37.98351287841797,
+        184.49752807617188,
+        68.58931732177734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20239350199699402,
+        "median_depth": 0.19708526134490967,
+        "depth_std": 0.02440444566309452,
+        "depth_min": 0.181169793009758,
+        "depth_max": 0.48948195576667786,
+        "mask_area": 455
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.7198905348777771,
+      "bounding_box": [
+        56.14356994628906,
+        82.66859436035156,
+        304.058349609375,
+        179.9851837158203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21445289254188538,
+        "median_depth": 0.21427997946739197,
+        "depth_std": 0.0674663633108139,
+        "depth_min": 0.0962994173169136,
+        "depth_max": 0.6407488584518433,
+        "mask_area": 8268
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "toaster",
+      "confidence": 0.4414710998535156,
+      "bounding_box": [
+        82.15216827392578,
+        43.027801513671875,
+        116.4202651977539,
+        60.05717468261719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7682865858078003,
+        "median_depth": 0.7525357604026794,
+        "depth_std": 0.04165627807378769,
+        "depth_min": 0.7199186086654663,
+        "depth_max": 0.8696340322494507,
+        "mask_area": 385
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "coffee maker",
+      "confidence": 0.7734443545341492,
+      "bounding_box": [
+        114.347412109375,
+        30.055463790893555,
+        134.06622314453125,
+        54.06050109863281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8562992215156555,
+        "median_depth": 0.8473514318466187,
+        "depth_std": 0.029330743476748466,
+        "depth_min": 0.8117740154266357,
+        "depth_max": 0.9446422457695007,
+        "mask_area": 344
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. plate. cup. paper towel. sponge. dish soap. coffee maker. toaster oven. robot arm. gripper. table.",
+  "text_prompt": "bowl. plate. cup. paper towel. sponge. dish soap. coffee maker. toaster oven. robot arm. gripper. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

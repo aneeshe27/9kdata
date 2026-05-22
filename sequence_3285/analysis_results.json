@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cabinet shelf",
+    "stove",
+    "pepper grinder",
+    "clock",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: clock, pepper grinder, cabinet shelf, window, stove",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.10711526870727539,
+        "relative_position": "closest",
+        "confidence": 0.5117003917694092
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "stove",
+        "mean_depth": 0.24186865985393524,
+        "relative_position": "middle",
+        "confidence": 0.4940657615661621
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "pepper grinder",
+        "mean_depth": 0.37491199374198914,
+        "relative_position": "middle",
+        "confidence": 0.8089087009429932
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "clock",
+        "mean_depth": 0.898377537727356,
+        "relative_position": "middle",
+        "confidence": 0.8928382396697998
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.9082385897636414,
+        "relative_position": "farthest",
+        "confidence": 0.6206462979316711
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.9082385897636414,
+        "relative_position": "farthest",
+        "confidence": 0.6206462979316711
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "clock",
+        "mean_depth": 0.898377537727356,
+        "relative_position": "middle",
+        "confidence": 0.8928382396697998
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "pepper grinder",
+        "mean_depth": 0.37491199374198914,
+        "relative_position": "middle",
+        "confidence": 0.8089087009429932
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "stove",
+        "mean_depth": 0.24186865985393524,
+        "relative_position": "middle",
+        "confidence": 0.4940657615661621
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.10711526870727539,
+        "relative_position": "closest",
+        "confidence": 0.5117003917694092
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cabinet shelf",
+      "confidence": 0.5117003917694092,
+      "bounding_box": [
+        0.0685272216796875,
+        0.0263214111328125,
+        137.10406494140625,
+        180.0254364013672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10711526870727539,
+        "median_depth": 0.09242664277553558,
+        "depth_std": 0.05947708711028099,
+        "depth_min": 0.027583329007029533,
+        "depth_max": 0.28898826241493225,
+        "mask_area": 21485
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "stove",
+      "confidence": 0.4940657615661621,
+      "bounding_box": [
+        111.24556732177734,
+        139.5354766845703,
+        217.12643432617188,
+        179.93687438964844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24186865985393524,
+        "median_depth": 0.21818877756595612,
+        "depth_std": 0.09811492264270782,
+        "depth_min": 0.019640251994132996,
+        "depth_max": 0.5388212203979492,
+        "mask_area": 2778
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "pepper grinder",
+      "confidence": 0.8089087009429932,
+      "bounding_box": [
+        150.79322814941406,
+        48.10449981689453,
+        164.1347198486328,
+        83.20507049560547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.37491199374198914,
+        "median_depth": 0.3790404796600342,
+        "depth_std": 0.03458806872367859,
+        "depth_min": 0.31933915615081787,
+        "depth_max": 0.5221258997917175,
+        "mask_area": 286
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "clock",
+      "confidence": 0.8928382396697998,
+      "bounding_box": [
+        257.3503723144531,
+        28.225109100341797,
+        285.0491027832031,
+        50.922725677490234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.898377537727356,
+        "median_depth": 0.8994261026382446,
+        "depth_std": 0.008563719689846039,
+        "depth_min": 0.8791862726211548,
+        "depth_max": 0.9149001240730286,
+        "mask_area": 463
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "window",
+      "confidence": 0.6206462979316711,
+      "bounding_box": [
+        219.46778869628906,
+        58.45563888549805,
+        316.0921936035156,
+        179.75721740722656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9082385897636414,
+        "median_depth": 0.9315260052680969,
+        "depth_std": 0.09500821679830551,
+        "depth_min": 0.00350816803984344,
+        "depth_max": 0.9856035113334656,
+        "mask_area": 6365
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. stove. range hood. shelf. bottle. pepper grinder. clock. window. blinds.",
+  "text_prompt": "robot arm. gripper. cabinet. stove. range hood. shelf. bottle. pepper grinder. clock. window. blinds.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "sink",
+    "sponge",
+    "cup",
+    "dish towel"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, sponge, cup, dish towel, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.0276897344738245,
+        "relative_position": "closest",
+        "confidence": 0.352110356092453
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.10161252319812775,
+        "relative_position": "middle",
+        "confidence": 0.6352836489677429
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "sponge",
+        "mean_depth": 0.1114867776632309,
+        "relative_position": "middle",
+        "confidence": 0.4491843581199646
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.12909995019435883,
+        "relative_position": "middle",
+        "confidence": 0.7330446839332581
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "dish towel",
+        "mean_depth": 0.2469063103199005,
+        "relative_position": "farthest",
+        "confidence": 0.35218051075935364
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "dish towel",
+        "mean_depth": 0.2469063103199005,
+        "relative_position": "farthest",
+        "confidence": 0.35218051075935364
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.12909995019435883,
+        "relative_position": "middle",
+        "confidence": 0.7330446839332581
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "sponge",
+        "mean_depth": 0.1114867776632309,
+        "relative_position": "middle",
+        "confidence": 0.4491843581199646
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.10161252319812775,
+        "relative_position": "middle",
+        "confidence": 0.6352836489677429
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.0276897344738245,
+        "relative_position": "closest",
+        "confidence": 0.352110356092453
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.352110356092453,
+      "bounding_box": [
+        183.2509002685547,
+        0.1604328155517578,
+        265.94488525390625,
+        63.79090881347656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0276897344738245,
+        "median_depth": 0.012973849661648273,
+        "depth_std": 0.048437800258398056,
+        "depth_min": 0.00011296957382000983,
+        "depth_max": 0.3386496305465698,
+        "mask_area": 1429
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.6352836489677429,
+      "bounding_box": [
+        12.758045196533203,
+        147.61871337890625,
+        94.26737976074219,
+        179.94290161132812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10161252319812775,
+        "median_depth": 0.102901391685009,
+        "depth_std": 0.005970400758087635,
+        "depth_min": 0.08318732678890228,
+        "depth_max": 0.11053929477930069,
+        "mask_area": 1416
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "sponge",
+      "confidence": 0.4491843581199646,
+      "bounding_box": [
+        197.46533203125,
+        96.78887939453125,
+        224.98983764648438,
+        128.6475067138672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1114867776632309,
+        "median_depth": 0.10901053249835968,
+        "depth_std": 0.009230579249560833,
+        "depth_min": 0.10301613062620163,
+        "depth_max": 0.17256419360637665,
+        "mask_area": 537
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.7330446839332581,
+      "bounding_box": [
+        105.9385986328125,
+        89.44200134277344,
+        126.52081298828125,
+        118.14822387695312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12909995019435883,
+        "median_depth": 0.1280805468559265,
+        "depth_std": 0.007703172042965889,
+        "depth_min": 0.11599484086036682,
+        "depth_max": 0.14759112894535065,
+        "mask_area": 461
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "dish towel",
+      "confidence": 0.35218051075935364,
+      "bounding_box": [
+        294.6239318847656,
+        169.99388122558594,
+        315.7594299316406,
+        179.6486053466797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2469063103199005,
+        "median_depth": 0.24800007045269012,
+        "depth_std": 0.07046546787023544,
+        "depth_min": 0.09827210009098053,
+        "depth_max": 0.37003740668296814,
+        "mask_area": 157
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. plate. sponge. robot arm. gripper. countertop. sink. dish towel. toaster oven. camera tripod.",
+  "text_prompt": "cup. plate. sponge. robot arm. gripper. countertop. sink. dish towel. toaster oven. camera tripod.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

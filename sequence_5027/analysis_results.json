@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bottle",
+    "bottle",
+    "bottle",
+    "robot arm",
+    "floor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, floor, bottle, bottle, bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.022722894325852394,
+        "relative_position": "closest",
+        "confidence": 0.4581770598888397
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "bottle",
+        "mean_depth": 0.022928912192583084,
+        "relative_position": "middle",
+        "confidence": 0.3775419592857361
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.024447761476039886,
+        "relative_position": "middle",
+        "confidence": 0.4199833869934082
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.024533672258257866,
+        "relative_position": "middle",
+        "confidence": 0.42990240454673767
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "floor",
+        "mean_depth": 0.7781972885131836,
+        "relative_position": "farthest",
+        "confidence": 0.6531113386154175
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "floor",
+        "mean_depth": 0.7781972885131836,
+        "relative_position": "farthest",
+        "confidence": 0.6531113386154175
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.024533672258257866,
+        "relative_position": "middle",
+        "confidence": 0.42990240454673767
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.024447761476039886,
+        "relative_position": "middle",
+        "confidence": 0.4199833869934082
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "bottle",
+        "mean_depth": 0.022928912192583084,
+        "relative_position": "middle",
+        "confidence": 0.3775419592857361
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.022722894325852394,
+        "relative_position": "closest",
+        "confidence": 0.4581770598888397
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.4581770598888397,
+      "bounding_box": [
+        197.2009735107422,
+        79.37248992919922,
+        208.46693420410156,
+        101.71881866455078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022722894325852394,
+        "median_depth": 0.022839481011033058,
+        "depth_std": 0.0004284348979126662,
+        "depth_min": 0.02157684601843357,
+        "depth_max": 0.023409618064761162,
+        "mask_area": 178
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "bottle",
+      "confidence": 0.3775419592857361,
+      "bounding_box": [
+        209.772216796875,
+        78.79743194580078,
+        217.9588623046875,
+        97.94487762451172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022928912192583084,
+        "median_depth": 0.022954048588871956,
+        "depth_std": 0.0005885642603971064,
+        "depth_min": 0.02195468544960022,
+        "depth_max": 0.024238402023911476,
+        "mask_area": 111
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bottle",
+      "confidence": 0.4199833869934082,
+      "bounding_box": [
+        217.26718139648438,
+        76.74725341796875,
+        227.69818115234375,
+        99.11453247070312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.024447761476039886,
+        "median_depth": 0.024516602978110313,
+        "depth_std": 0.001418418250977993,
+        "depth_min": 0.022503046318888664,
+        "depth_max": 0.02679588459432125,
+        "mask_area": 179
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.42990240454673767,
+      "bounding_box": [
+        201.74166870117188,
+        0.8158645629882812,
+        315.9997863769531,
+        70.52493286132812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.024533672258257866,
+        "median_depth": 0.02218674309551716,
+        "depth_std": 0.04118916764855385,
+        "depth_min": 0.018326446413993835,
+        "depth_max": 0.9153416752815247,
+        "mask_area": 3609
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "floor",
+      "confidence": 0.6531113386154175,
+      "bounding_box": [
+        181.92250061035156,
+        97.50696563720703,
+        315.9932861328125,
+        180.02926635742188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7781972885131836,
+        "median_depth": 0.7751056551933289,
+        "depth_std": 0.10873718559741974,
+        "depth_min": 0.024667758494615555,
+        "depth_max": 0.9993796348571777,
+        "mask_area": 7500
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "refrigerator. robot arm. gripper. bottle. container. shelf. cabinet. floor.",
+  "text_prompt": "refrigerator. robot arm. gripper. bottle. container. shelf. cabinet. floor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

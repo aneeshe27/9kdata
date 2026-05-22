@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "stove",
+    "robot arm",
+    "bowl",
+    "utensil holder",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: stove, robot arm, bowl, utensil holder, door",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "stove",
+        "mean_depth": 0.07954587042331696,
+        "relative_position": "closest",
+        "confidence": 0.48727500438690186
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.11994531750679016,
+        "relative_position": "middle",
+        "confidence": 0.41975200176239014
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.15695585310459137,
+        "relative_position": "middle",
+        "confidence": 0.5198756456375122
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "utensil holder",
+        "mean_depth": 0.33696627616882324,
+        "relative_position": "middle",
+        "confidence": 0.4034169316291809
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.8005984425544739,
+        "relative_position": "farthest",
+        "confidence": 0.655681312084198
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.8005984425544739,
+        "relative_position": "farthest",
+        "confidence": 0.655681312084198
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "utensil holder",
+        "mean_depth": 0.33696627616882324,
+        "relative_position": "middle",
+        "confidence": 0.4034169316291809
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.15695585310459137,
+        "relative_position": "middle",
+        "confidence": 0.5198756456375122
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.11994531750679016,
+        "relative_position": "middle",
+        "confidence": 0.41975200176239014
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "stove",
+        "mean_depth": 0.07954587042331696,
+        "relative_position": "closest",
+        "confidence": 0.48727500438690186
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "stove",
+      "confidence": 0.48727500438690186,
+      "bounding_box": [
+        58.482688903808594,
+        117.17186737060547,
+        252.26409912109375,
+        179.99057006835938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07954587042331696,
+        "median_depth": 0.07122821360826492,
+        "depth_std": 0.03544021397829056,
+        "depth_min": 0.02229377254843712,
+        "depth_max": 0.1866087168455124,
+        "mask_area": 7750
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.41975200176239014,
+      "bounding_box": [
+        231.1380615234375,
+        13.54965591430664,
+        316.02606201171875,
+        103.95162963867188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11994531750679016,
+        "median_depth": 0.0321655198931694,
+        "depth_std": 0.15814939141273499,
+        "depth_min": 0.012905348092317581,
+        "depth_max": 0.9312381744384766,
+        "mask_area": 4388
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bowl",
+      "confidence": 0.5198756456375122,
+      "bounding_box": [
+        2.179403305053711,
+        103.13790130615234,
+        52.694114685058594,
+        130.8822479248047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15695585310459137,
+        "median_depth": 0.15452586114406586,
+        "depth_std": 0.02452077902853489,
+        "depth_min": 0.11473282426595688,
+        "depth_max": 0.22159647941589355,
+        "mask_area": 997
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "utensil holder",
+      "confidence": 0.4034169316291809,
+      "bounding_box": [
+        182.4007568359375,
+        79.8182373046875,
+        208.01748657226562,
+        107.93653869628906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33696627616882324,
+        "median_depth": 0.3326638340950012,
+        "depth_std": 0.05616335570812225,
+        "depth_min": 0.24947689473628998,
+        "depth_max": 0.5758559703826904,
+        "mask_area": 401
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "door",
+      "confidence": 0.655681312084198,
+      "bounding_box": [
+        2.385303497314453,
+        0.2778663635253906,
+        73.04023742675781,
+        100.39730834960938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8005984425544739,
+        "median_depth": 0.792167067527771,
+        "depth_std": 0.08680808544158936,
+        "depth_min": 0.3963961601257324,
+        "depth_max": 0.981690526008606,
+        "mask_area": 6916
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. measuring cup. can. container. robot arm. gripper. pot. lid. stove. countertop. door. spice jar. spatula. ladle. tongs. utensil holder.",
+  "text_prompt": "bowl. measuring cup. can. container. robot arm. gripper. pot. lid. stove. countertop. door. spice jar. spatula. ladle. tongs. utensil holder.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

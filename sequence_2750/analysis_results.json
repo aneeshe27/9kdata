@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "coffee machine",
+    "mug cup",
+    "cabinet",
+    "faucet",
+    "sink"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, mug cup, faucet, coffee machine, cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "coffee machine",
+        "mean_depth": 0.04763754829764366,
+        "relative_position": "closest",
+        "confidence": 0.5370872616767883
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "mug cup",
+        "mean_depth": 0.11295627802610397,
+        "relative_position": "middle",
+        "confidence": 0.541361927986145
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.18504174053668976,
+        "relative_position": "middle",
+        "confidence": 0.38826850056648254
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.275308758020401,
+        "relative_position": "middle",
+        "confidence": 0.3667614161968231
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.2791523337364197,
+        "relative_position": "farthest",
+        "confidence": 0.7876560091972351
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.2791523337364197,
+        "relative_position": "farthest",
+        "confidence": 0.7876560091972351
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.275308758020401,
+        "relative_position": "middle",
+        "confidence": 0.3667614161968231
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.18504174053668976,
+        "relative_position": "middle",
+        "confidence": 0.38826850056648254
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "mug cup",
+        "mean_depth": 0.11295627802610397,
+        "relative_position": "middle",
+        "confidence": 0.541361927986145
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "coffee machine",
+        "mean_depth": 0.04763754829764366,
+        "relative_position": "closest",
+        "confidence": 0.5370872616767883
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "coffee machine",
+      "confidence": 0.5370872616767883,
+      "bounding_box": [
+        0.6328849792480469,
+        -0.0045928955078125,
+        109.06843566894531,
+        130.00790405273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04763754829764366,
+        "median_depth": 0.046318940818309784,
+        "depth_std": 0.012225605547428131,
+        "depth_min": 0.023630628362298012,
+        "depth_max": 0.1100180372595787,
+        "mask_area": 8396
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "mug cup",
+      "confidence": 0.541361927986145,
+      "bounding_box": [
+        132.452392578125,
+        68.99102020263672,
+        146.61361694335938,
+        86.64791107177734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11295627802610397,
+        "median_depth": 0.11197615414857864,
+        "depth_std": 0.004515644162893295,
+        "depth_min": 0.1075160801410675,
+        "depth_max": 0.13585612177848816,
+        "mask_area": 195
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.38826850056648254,
+      "bounding_box": [
+        164.8305206298828,
+        77.20413208007812,
+        201.54441833496094,
+        179.86431884765625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18504174053668976,
+        "median_depth": 0.17819517850875854,
+        "depth_std": 0.03536449000239372,
+        "depth_min": 0.13039980828762054,
+        "depth_max": 0.3207763135433197,
+        "mask_area": 1871
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "faucet",
+      "confidence": 0.3667614161968231,
+      "bounding_box": [
+        180.25099182128906,
+        30.133609771728516,
+        189.0410614013672,
+        54.49105453491211
+      ],
+      "depth_stats": {
+        "mean_depth": 0.275308758020401,
+        "median_depth": 0.27345073223114014,
+        "depth_std": 0.008461705408990383,
+        "depth_min": 0.254974365234375,
+        "depth_max": 0.2992868721485138,
+        "mask_area": 171
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.7876560091972351,
+      "bounding_box": [
+        177.22280883789062,
+        57.52007293701172,
+        204.80633544921875,
+        66.90288543701172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2791523337364197,
+        "median_depth": 0.27500075101852417,
+        "depth_std": 0.020521819591522217,
+        "depth_min": 0.23839470744132996,
+        "depth_max": 0.3377797305583954,
+        "mask_area": 164
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "coffee machine. coffee pod holder. mug. cup. robot arm. gripper. robot base. countertop. sink. faucet. cabinet. drawer.",
+  "text_prompt": "coffee machine. coffee pod holder. mug. cup. robot arm. gripper. robot base. countertop. sink. faucet. cabinet. drawer.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

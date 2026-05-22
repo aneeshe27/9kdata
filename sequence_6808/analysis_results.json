@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper clamp",
+    "curtain",
+    "blanket",
+    "table",
+    "pillow"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: curtain, gripper clamp, table, pillow, blanket",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "gripper clamp",
+        "mean_depth": 0.252899706363678,
+        "relative_position": "closest",
+        "confidence": 0.4367225170135498
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "curtain",
+        "mean_depth": 0.3144858181476593,
+        "relative_position": "middle",
+        "confidence": 0.4770429730415344
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "blanket",
+        "mean_depth": 0.31486019492149353,
+        "relative_position": "middle",
+        "confidence": 0.4696670174598694
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.38685256242752075,
+        "relative_position": "middle",
+        "confidence": 0.3640941381454468
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "pillow",
+        "mean_depth": 0.5051165223121643,
+        "relative_position": "farthest",
+        "confidence": 0.4182797074317932
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "pillow",
+        "mean_depth": 0.5051165223121643,
+        "relative_position": "farthest",
+        "confidence": 0.4182797074317932
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.38685256242752075,
+        "relative_position": "middle",
+        "confidence": 0.3640941381454468
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "blanket",
+        "mean_depth": 0.31486019492149353,
+        "relative_position": "middle",
+        "confidence": 0.4696670174598694
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "curtain",
+        "mean_depth": 0.3144858181476593,
+        "relative_position": "middle",
+        "confidence": 0.4770429730415344
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "gripper clamp",
+        "mean_depth": 0.252899706363678,
+        "relative_position": "closest",
+        "confidence": 0.4367225170135498
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "gripper clamp",
+      "confidence": 0.4367225170135498,
+      "bounding_box": [
+        159.18138122558594,
+        151.68846130371094,
+        195.5162811279297,
+        179.4116668701172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.252899706363678,
+        "median_depth": 0.2534365653991699,
+        "depth_std": 0.01159548107534647,
+        "depth_min": 0.12741878628730774,
+        "depth_max": 0.2717342972755432,
+        "mask_area": 338
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "curtain",
+      "confidence": 0.4770429730415344,
+      "bounding_box": [
+        0.08731842041015625,
+        0.09947967529296875,
+        147.63262939453125,
+        99.08847045898438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3144858181476593,
+        "median_depth": 0.3073270618915558,
+        "depth_std": 0.07758373022079468,
+        "depth_min": 0.1885538399219513,
+        "depth_max": 0.5611114501953125,
+        "mask_area": 9625
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "blanket",
+      "confidence": 0.4696670174598694,
+      "bounding_box": [
+        45.80991744995117,
+        76.73403930664062,
+        121.76382446289062,
+        168.88558959960938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.31486019492149353,
+        "median_depth": 0.3063902258872986,
+        "depth_std": 0.04025733470916748,
+        "depth_min": 0.2506738007068634,
+        "depth_max": 0.4272814989089966,
+        "mask_area": 4423
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.3640941381454468,
+      "bounding_box": [
+        238.39947509765625,
+        80.49798583984375,
+        316.0364990234375,
+        179.97174072265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.38685256242752075,
+        "median_depth": 0.37007397413253784,
+        "depth_std": 0.07268629223108292,
+        "depth_min": 0.2684634029865265,
+        "depth_max": 0.7393640279769897,
+        "mask_area": 2956
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "pillow",
+      "confidence": 0.4182797074317932,
+      "bounding_box": [
+        171.708984375,
+        69.9964828491211,
+        232.85226440429688,
+        112.3663558959961
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5051165223121643,
+        "median_depth": 0.5226101875305176,
+        "depth_std": 0.11232753098011017,
+        "depth_min": 0.09180555492639542,
+        "depth_max": 0.7101554274559021,
+        "mask_area": 1471
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sofa. cushion. pillow. blanket. curtain. window. chair. table. tray. clamp. cable.",
+  "text_prompt": "robot arm. gripper. sofa. cushion. pillow. blanket. curtain. window. chair. table. tray. clamp. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

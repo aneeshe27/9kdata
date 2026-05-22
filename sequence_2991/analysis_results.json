@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "bin",
+    "bin",
+    "storage",
+    "storage"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, storage, storage, bin, bin",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.02701209858059883,
+        "relative_position": "closest",
+        "confidence": 0.4845721125602722
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bin",
+        "mean_depth": 0.3310011327266693,
+        "relative_position": "middle",
+        "confidence": 0.464806467294693
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bin",
+        "mean_depth": 0.5183930993080139,
+        "relative_position": "middle",
+        "confidence": 0.38802269101142883
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "storage",
+        "mean_depth": 0.5542106628417969,
+        "relative_position": "middle",
+        "confidence": 0.3514168858528137
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "storage",
+        "mean_depth": 0.567874014377594,
+        "relative_position": "farthest",
+        "confidence": 0.35804271697998047
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "storage",
+        "mean_depth": 0.567874014377594,
+        "relative_position": "farthest",
+        "confidence": 0.35804271697998047
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "storage",
+        "mean_depth": 0.5542106628417969,
+        "relative_position": "middle",
+        "confidence": 0.3514168858528137
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bin",
+        "mean_depth": 0.5183930993080139,
+        "relative_position": "middle",
+        "confidence": 0.38802269101142883
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bin",
+        "mean_depth": 0.3310011327266693,
+        "relative_position": "middle",
+        "confidence": 0.464806467294693
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.02701209858059883,
+        "relative_position": "closest",
+        "confidence": 0.4845721125602722
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.4845721125602722,
+      "bounding_box": [
+        184.081298828125,
+        0.06773757934570312,
+        306.3135070800781,
+        99.60234069824219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02701209858059883,
+        "median_depth": 0.005876722279936075,
+        "depth_std": 0.07641804218292236,
+        "depth_min": 0.0,
+        "depth_max": 0.9428861737251282,
+        "mask_area": 4402
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "bin",
+      "confidence": 0.464806467294693,
+      "bounding_box": [
+        235.3861846923828,
+        156.89698791503906,
+        294.8586730957031,
+        179.9689483642578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3310011327266693,
+        "median_depth": 0.3305102288722992,
+        "depth_std": 0.03719496726989746,
+        "depth_min": 0.25694993138313293,
+        "depth_max": 0.46637243032455444,
+        "mask_area": 1031
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bin",
+      "confidence": 0.38802269101142883,
+      "bounding_box": [
+        0.0021486282348632812,
+        153.4806365966797,
+        16.66373062133789,
+        179.95445251464844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5183930993080139,
+        "median_depth": 0.515801191329956,
+        "depth_std": 0.021001679822802544,
+        "depth_min": 0.48412662744522095,
+        "depth_max": 0.5738191604614258,
+        "mask_area": 363
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "storage",
+      "confidence": 0.3514168858528137,
+      "bounding_box": [
+        23.280519485473633,
+        142.4308624267578,
+        45.496124267578125,
+        160.99314880371094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5542106628417969,
+        "median_depth": 0.5518900752067566,
+        "depth_std": 0.012578443624079227,
+        "depth_min": 0.46867886185646057,
+        "depth_max": 0.5877875089645386,
+        "mask_area": 285
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "storage",
+      "confidence": 0.35804271697998047,
+      "bounding_box": [
+        0.024740219116210938,
+        89.22958374023438,
+        20.301902770996094,
+        120.869140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.567874014377594,
+        "median_depth": 0.5680695176124573,
+        "depth_std": 0.010940478183329105,
+        "depth_min": 0.5440307259559631,
+        "depth_max": 0.589277982711792,
+        "mask_area": 539
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. drawer. storage bin. shelf. table.",
+  "text_prompt": "robot arm. gripper. cabinet. drawer. storage bin. shelf. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

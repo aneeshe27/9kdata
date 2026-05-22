@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "plastic bag",
+    "bottle",
+    "laptop",
+    "bookshelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bottle, bookshelf, laptop, plastic bag, robot arm gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.5227766633033752,
+        "relative_position": "closest",
+        "confidence": 0.36400434374809265
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "plastic bag",
+        "mean_depth": 0.5378384590148926,
+        "relative_position": "middle",
+        "confidence": 0.6027276515960693
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.5583834648132324,
+        "relative_position": "middle",
+        "confidence": 0.49500149488449097
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "laptop",
+        "mean_depth": 0.7780397534370422,
+        "relative_position": "middle",
+        "confidence": 0.8492175340652466
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "bookshelf",
+        "mean_depth": 0.8512700796127319,
+        "relative_position": "farthest",
+        "confidence": 0.5916410684585571
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "bookshelf",
+        "mean_depth": 0.8512700796127319,
+        "relative_position": "farthest",
+        "confidence": 0.5916410684585571
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "laptop",
+        "mean_depth": 0.7780397534370422,
+        "relative_position": "middle",
+        "confidence": 0.8492175340652466
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.5583834648132324,
+        "relative_position": "middle",
+        "confidence": 0.49500149488449097
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "plastic bag",
+        "mean_depth": 0.5378384590148926,
+        "relative_position": "middle",
+        "confidence": 0.6027276515960693
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.5227766633033752,
+        "relative_position": "closest",
+        "confidence": 0.36400434374809265
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.36400434374809265,
+      "bounding_box": [
+        26.655628204345703,
+        29.82126235961914,
+        62.05997848510742,
+        132.87762451171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5227766633033752,
+        "median_depth": 0.520073652267456,
+        "depth_std": 0.01446902472525835,
+        "depth_min": 0.4988909065723419,
+        "depth_max": 0.591543436050415,
+        "mask_area": 800
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "plastic bag",
+      "confidence": 0.6027276515960693,
+      "bounding_box": [
+        256.1337890625,
+        125.88933563232422,
+        315.9298095703125,
+        179.50173950195312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5378384590148926,
+        "median_depth": 0.5288520455360413,
+        "depth_std": 0.055356260389089584,
+        "depth_min": 0.4588322043418884,
+        "depth_max": 0.8402436971664429,
+        "mask_area": 1777
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bottle",
+      "confidence": 0.49500149488449097,
+      "bounding_box": [
+        56.40883255004883,
+        127.04353332519531,
+        91.12271118164062,
+        179.9421844482422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5583834648132324,
+        "median_depth": 0.550909161567688,
+        "depth_std": 0.027058586478233337,
+        "depth_min": 0.5275465846061707,
+        "depth_max": 0.723325252532959,
+        "mask_area": 1299
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "laptop",
+      "confidence": 0.8492175340652466,
+      "bounding_box": [
+        134.5764923095703,
+        122.3751449584961,
+        191.6588897705078,
+        146.33358764648438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7780397534370422,
+        "median_depth": 0.771113932132721,
+        "depth_std": 0.04838702827692032,
+        "depth_min": 0.7016379833221436,
+        "depth_max": 0.9048100709915161,
+        "mask_area": 1073
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bookshelf",
+      "confidence": 0.5916410684585571,
+      "bounding_box": [
+        87.77885437011719,
+        18.065353393554688,
+        259.508056640625,
+        126.27571105957031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8512700796127319,
+        "median_depth": 0.8971115946769714,
+        "depth_std": 0.17733100056648254,
+        "depth_min": 0.21902374923229218,
+        "depth_max": 1.0,
+        "mask_area": 5915
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. desk lamp. laptop. bottle. plastic bag. bookshelf. books. medals. toys.",
+  "text_prompt": "robot arm. gripper. table. desk lamp. laptop. bottle. plastic bag. bookshelf. books. medals. toys.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

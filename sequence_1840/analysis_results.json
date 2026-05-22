@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_1207678/temp_image_1300.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_1300.jpg"
+  },
+  "correct_ordering": [
+    "cable",
+    "cloth",
+    "robot arm",
+    "cardboard box",
+    "robot base"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot base, cloth, cardboard box, robot arm, cable",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "cable",
+        "mean_depth": 0.1292446255683899,
+        "relative_position": "closest",
+        "confidence": 0.5903171896934509
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.1653481274843216,
+        "relative_position": "middle",
+        "confidence": 0.5410659313201904
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.16703616082668304,
+        "relative_position": "middle",
+        "confidence": 0.5248821377754211
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cardboard box",
+        "mean_depth": 0.2462988942861557,
+        "relative_position": "middle",
+        "confidence": 0.48623839020729065
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot base",
+        "mean_depth": 0.26941415667533875,
+        "relative_position": "farthest",
+        "confidence": 0.3826560080051422
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot base",
+        "mean_depth": 0.26941415667533875,
+        "relative_position": "farthest",
+        "confidence": 0.3826560080051422
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cardboard box",
+        "mean_depth": 0.2462988942861557,
+        "relative_position": "middle",
+        "confidence": 0.48623839020729065
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.16703616082668304,
+        "relative_position": "middle",
+        "confidence": 0.5248821377754211
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.1653481274843216,
+        "relative_position": "middle",
+        "confidence": 0.5410659313201904
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "cable",
+        "mean_depth": 0.1292446255683899,
+        "relative_position": "closest",
+        "confidence": 0.5903171896934509
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "cable",
+      "confidence": 0.5903171896934509,
+      "bounding_box": [
+        73.18939208984375,
+        110.07908630371094,
+        99.59423828125,
+        159.3512420654297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1292446255683899,
+        "median_depth": 0.12499012798070908,
+        "depth_std": 0.019148219376802444,
+        "depth_min": 0.10732299834489822,
+        "depth_max": 0.1781296283006668,
+        "mask_area": 183
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.5410659313201904,
+      "bounding_box": [
+        139.79493713378906,
+        0.05281829833984375,
+        194.04103088378906,
+        97.58786010742188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1653481274843216,
+        "median_depth": 0.14994224905967712,
+        "depth_std": 0.07549276202917099,
+        "depth_min": 0.09042283147573471,
+        "depth_max": 0.8704355955123901,
+        "mask_area": 3404
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.5248821377754211,
+      "bounding_box": [
+        240.5994873046875,
+        149.2059783935547,
+        315.9345703125,
+        179.9656524658203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16703616082668304,
+        "median_depth": 0.16647571325302124,
+        "depth_std": 0.009005121886730194,
+        "depth_min": 0.14678485691547394,
+        "depth_max": 0.19822558760643005,
+        "mask_area": 1259
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cardboard box",
+      "confidence": 0.48623839020729065,
+      "bounding_box": [
+        130.61526489257812,
+        57.89362335205078,
+        216.76153564453125,
+        126.10295867919922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2462988942861557,
+        "median_depth": 0.2352571338415146,
+        "depth_std": 0.07029768824577332,
+        "depth_min": 0.16411320865154266,
+        "depth_max": 0.8612119555473328,
+        "mask_area": 1930
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot base",
+      "confidence": 0.3826560080051422,
+      "bounding_box": [
+        273.1270446777344,
+        56.53192138671875,
+        315.9907531738281,
+        153.22665405273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26941415667533875,
+        "median_depth": 0.26358917355537415,
+        "depth_std": 0.04639296606183052,
+        "depth_min": 0.1852259784936905,
+        "depth_max": 0.3912041187286377,
+        "mask_area": 2526
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. chair. cardboard box. cloth. plastic bottle. paper. cable. monitor. mirror. robot arm. gripper. robot base.",
+  "text_prompt": "table. chair. cardboard box. cloth. plastic bottle. paper. cable. monitor. mirror. robot arm. gripper. robot base.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "microwave",
+    "table",
+    "chair",
+    "table",
+    "monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, table, monitor, microwave, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "microwave",
+        "mean_depth": 0.054778266698122025,
+        "relative_position": "closest",
+        "confidence": 0.5032328963279724
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.0912652388215065,
+        "relative_position": "middle",
+        "confidence": 0.43602272868156433
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.6039410829544067,
+        "relative_position": "middle",
+        "confidence": 0.5686970949172974
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.6875699162483215,
+        "relative_position": "middle",
+        "confidence": 0.3569128215312958
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.7004656791687012,
+        "relative_position": "farthest",
+        "confidence": 0.619059681892395
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.7004656791687012,
+        "relative_position": "farthest",
+        "confidence": 0.619059681892395
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.6875699162483215,
+        "relative_position": "middle",
+        "confidence": 0.3569128215312958
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.6039410829544067,
+        "relative_position": "middle",
+        "confidence": 0.5686970949172974
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.0912652388215065,
+        "relative_position": "middle",
+        "confidence": 0.43602272868156433
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "microwave",
+        "mean_depth": 0.054778266698122025,
+        "relative_position": "closest",
+        "confidence": 0.5032328963279724
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "microwave",
+      "confidence": 0.5032328963279724,
+      "bounding_box": [
+        34.104270935058594,
+        51.3509521484375,
+        198.97589111328125,
+        179.33828735351562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.054778266698122025,
+        "median_depth": 0.05272326245903969,
+        "depth_std": 0.025273585692048073,
+        "depth_min": 0.027325458824634552,
+        "depth_max": 0.5638778805732727,
+        "mask_area": 12436
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "table",
+      "confidence": 0.43602272868156433,
+      "bounding_box": [
+        256.57135009765625,
+        118.86781311035156,
+        316.0152587890625,
+        179.96714782714844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0912652388215065,
+        "median_depth": 0.08812722563743591,
+        "depth_std": 0.018352095037698746,
+        "depth_min": 0.06724478304386139,
+        "depth_max": 0.15350109338760376,
+        "mask_area": 1850
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.5686970949172974,
+      "bounding_box": [
+        70.10009765625,
+        23.61602210998535,
+        114.32548522949219,
+        55.138511657714844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6039410829544067,
+        "median_depth": 0.6213966012001038,
+        "depth_std": 0.08516284823417664,
+        "depth_min": 0.29369333386421204,
+        "depth_max": 0.7525372505187988,
+        "mask_area": 616
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.3569128215312958,
+      "bounding_box": [
+        113.15560913085938,
+        37.906349182128906,
+        160.01025390625,
+        59.00835418701172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6875699162483215,
+        "median_depth": 0.6945841312408447,
+        "depth_std": 0.024747708812355995,
+        "depth_min": 0.569200873374939,
+        "depth_max": 0.7297779321670532,
+        "mask_area": 700
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "monitor",
+      "confidence": 0.619059681892395,
+      "bounding_box": [
+        54.7425537109375,
+        20.7926025390625,
+        87.13082885742188,
+        43.721641540527344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7004656791687012,
+        "median_depth": 0.6983467936515808,
+        "depth_std": 0.01920689456164837,
+        "depth_min": 0.6373962163925171,
+        "depth_max": 0.7508394718170166,
+        "mask_area": 533
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "microwave. robot arm. gripper. table. monitor. chair. shelf.",
+  "text_prompt": "microwave. robot arm. gripper. table. monitor. chair. shelf.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

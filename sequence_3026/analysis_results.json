@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "soap dispenser",
+    "sink",
+    "sink",
+    "dish rack",
+    "faucet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, soap dispenser, faucet, sink, dish rack",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "soap dispenser",
+        "mean_depth": 0.19887465238571167,
+        "relative_position": "closest",
+        "confidence": 0.6425287127494812
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.2140103578567505,
+        "relative_position": "middle",
+        "confidence": 0.5265150666236877
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "sink",
+        "mean_depth": 0.2766183912754059,
+        "relative_position": "middle",
+        "confidence": 0.3988548815250397
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "dish rack",
+        "mean_depth": 0.31623849272727966,
+        "relative_position": "middle",
+        "confidence": 0.4014412462711334
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.3281615078449249,
+        "relative_position": "farthest",
+        "confidence": 0.6803423762321472
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.3281615078449249,
+        "relative_position": "farthest",
+        "confidence": 0.6803423762321472
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "dish rack",
+        "mean_depth": 0.31623849272727966,
+        "relative_position": "middle",
+        "confidence": 0.4014412462711334
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "sink",
+        "mean_depth": 0.2766183912754059,
+        "relative_position": "middle",
+        "confidence": 0.3988548815250397
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.2140103578567505,
+        "relative_position": "middle",
+        "confidence": 0.5265150666236877
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "soap dispenser",
+        "mean_depth": 0.19887465238571167,
+        "relative_position": "closest",
+        "confidence": 0.6425287127494812
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "soap dispenser",
+      "confidence": 0.6425287127494812,
+      "bounding_box": [
+        31.278411865234375,
+        73.01455688476562,
+        58.196327209472656,
+        120.63374328613281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19887465238571167,
+        "median_depth": 0.1959780901670456,
+        "depth_std": 0.0080987848341465,
+        "depth_min": 0.19097450375556946,
+        "depth_max": 0.26694631576538086,
+        "mask_area": 766
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "sink",
+      "confidence": 0.5265150666236877,
+      "bounding_box": [
+        52.156429290771484,
+        107.31672668457031,
+        165.53073120117188,
+        173.3619842529297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2140103578567505,
+        "median_depth": 0.21499788761138916,
+        "depth_std": 0.017223378643393517,
+        "depth_min": 0.16981728374958038,
+        "depth_max": 0.2703354060649872,
+        "mask_area": 4416
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "sink",
+      "confidence": 0.3988548815250397,
+      "bounding_box": [
+        103.17800903320312,
+        85.52879333496094,
+        197.13858032226562,
+        131.15084838867188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2766183912754059,
+        "median_depth": 0.27887606620788574,
+        "depth_std": 0.015445283614099026,
+        "depth_min": 0.21096420288085938,
+        "depth_max": 0.30486980080604553,
+        "mask_area": 2008
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "dish rack",
+      "confidence": 0.4014412462711334,
+      "bounding_box": [
+        157.2098846435547,
+        56.363311767578125,
+        213.7030487060547,
+        92.87269592285156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.31623849272727966,
+        "median_depth": 0.3103061020374298,
+        "depth_std": 0.033074069768190384,
+        "depth_min": 0.2696100175380707,
+        "depth_max": 0.41652780771255493,
+        "mask_area": 1201
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.6803423762321472,
+      "bounding_box": [
+        103.80267333984375,
+        19.28575897216797,
+        150.03688049316406,
+        97.58943176269531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3281615078449249,
+        "median_depth": 0.31516778469085693,
+        "depth_std": 0.054194945842027664,
+        "depth_min": 0.2539048194885254,
+        "depth_max": 0.44538432359695435,
+        "mask_area": 521
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. countertop. dish rack. soap dispenser. basin. window. blinds. cabinet.",
+  "text_prompt": "robot arm. gripper. sink. faucet. countertop. dish rack. soap dispenser. basin. window. blinds. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

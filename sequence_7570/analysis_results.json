@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cup",
+    "robot arm",
+    "keyboard",
+    "bottle",
+    "rubber duck"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: rubber duck, robot arm, bottle, cup, keyboard",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.026494614779949188,
+        "relative_position": "closest",
+        "confidence": 0.43892034888267517
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.055438149720430374,
+        "relative_position": "middle",
+        "confidence": 0.5702979564666748
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "keyboard",
+        "mean_depth": 0.16245822608470917,
+        "relative_position": "middle",
+        "confidence": 0.765322208404541
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.178731307387352,
+        "relative_position": "middle",
+        "confidence": 0.7466909289360046
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "rubber duck",
+        "mean_depth": 0.8333816528320312,
+        "relative_position": "farthest",
+        "confidence": 0.7317905426025391
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "rubber duck",
+        "mean_depth": 0.8333816528320312,
+        "relative_position": "farthest",
+        "confidence": 0.7317905426025391
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.178731307387352,
+        "relative_position": "middle",
+        "confidence": 0.7466909289360046
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "keyboard",
+        "mean_depth": 0.16245822608470917,
+        "relative_position": "middle",
+        "confidence": 0.765322208404541
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.055438149720430374,
+        "relative_position": "middle",
+        "confidence": 0.5702979564666748
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.026494614779949188,
+        "relative_position": "closest",
+        "confidence": 0.43892034888267517
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.43892034888267517,
+      "bounding_box": [
+        0.03820228576660156,
+        0.03456878662109375,
+        51.64807891845703,
+        180.03448486328125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.026494614779949188,
+        "median_depth": 0.024983055889606476,
+        "depth_std": 0.013303731568157673,
+        "depth_min": 0.003989194054156542,
+        "depth_max": 0.2668013274669647,
+        "mask_area": 8096
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.5702979564666748,
+      "bounding_box": [
+        146.14480590820312,
+        -0.08070755004882812,
+        307.32733154296875,
+        122.64909362792969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.055438149720430374,
+        "median_depth": 0.033286258578300476,
+        "depth_std": 0.09817618131637573,
+        "depth_min": 0.015547698363661766,
+        "depth_max": 0.8853597640991211,
+        "mask_area": 5654
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "keyboard",
+      "confidence": 0.765322208404541,
+      "bounding_box": [
+        170.82037353515625,
+        159.47540283203125,
+        279.99078369140625,
+        179.99722290039062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16245822608470917,
+        "median_depth": 0.11869090795516968,
+        "depth_std": 0.10961531102657318,
+        "depth_min": 0.08450358361005783,
+        "depth_max": 0.487918496131897,
+        "mask_area": 1423
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.7466909289360046,
+      "bounding_box": [
+        135.86940002441406,
+        152.0004119873047,
+        147.8280487060547,
+        179.95484924316406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.178731307387352,
+        "median_depth": 0.11069238185882568,
+        "depth_std": 0.15588553249835968,
+        "depth_min": 0.06559142470359802,
+        "depth_max": 0.5739485621452332,
+        "mask_area": 232
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "rubber duck",
+      "confidence": 0.7317905426025391,
+      "bounding_box": [
+        126.85897064208984,
+        66.11325073242188,
+        138.53329467773438,
+        76.22773742675781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8333816528320312,
+        "median_depth": 0.8325484395027161,
+        "depth_std": 0.010416152887046337,
+        "depth_min": 0.8164218664169312,
+        "depth_max": 0.8558499217033386,
+        "mask_area": 74
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. shelf. monitor. keyboard. bottle. rubber duck. cup.",
+  "text_prompt": "robot arm. gripper. table. shelf. monitor. keyboard. bottle. rubber duck. cup.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

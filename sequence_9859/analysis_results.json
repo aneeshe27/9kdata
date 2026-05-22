@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "refrigerator",
+    "toaster",
+    "cabinet",
+    "sink",
+    "faucet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, sink, refrigerator, toaster, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "refrigerator",
+        "mean_depth": 0.02373501844704151,
+        "relative_position": "closest",
+        "confidence": 0.6532025933265686
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "toaster",
+        "mean_depth": 0.06394375115633011,
+        "relative_position": "middle",
+        "confidence": 0.7358530759811401
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.6507324576377869,
+        "relative_position": "middle",
+        "confidence": 0.3827407658100128
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.7399686574935913,
+        "relative_position": "middle",
+        "confidence": 0.8683580756187439
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.8002716302871704,
+        "relative_position": "farthest",
+        "confidence": 0.42224976420402527
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.8002716302871704,
+        "relative_position": "farthest",
+        "confidence": 0.42224976420402527
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.7399686574935913,
+        "relative_position": "middle",
+        "confidence": 0.8683580756187439
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.6507324576377869,
+        "relative_position": "middle",
+        "confidence": 0.3827407658100128
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "toaster",
+        "mean_depth": 0.06394375115633011,
+        "relative_position": "middle",
+        "confidence": 0.7358530759811401
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "refrigerator",
+        "mean_depth": 0.02373501844704151,
+        "relative_position": "closest",
+        "confidence": 0.6532025933265686
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "refrigerator",
+      "confidence": 0.6532025933265686,
+      "bounding_box": [
+        0.0932769775390625,
+        0.0913848876953125,
+        126.05923461914062,
+        180.0906982421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02373501844704151,
+        "median_depth": 0.02247319370508194,
+        "depth_std": 0.0070556942373514175,
+        "depth_min": 0.012532655149698257,
+        "depth_max": 0.29684996604919434,
+        "mask_area": 21790
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "toaster",
+      "confidence": 0.7358530759811401,
+      "bounding_box": [
+        188.365478515625,
+        136.08633422851562,
+        225.50418090820312,
+        172.94729614257812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06394375115633011,
+        "median_depth": 0.04662380740046501,
+        "depth_std": 0.07320746779441833,
+        "depth_min": 0.040338728576898575,
+        "depth_max": 0.6313448548316956,
+        "mask_area": 1028
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3827407658100128,
+      "bounding_box": [
+        121.93590545654297,
+        -0.059051513671875,
+        315.7059631347656,
+        109.16539001464844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6507324576377869,
+        "median_depth": 0.5147266387939453,
+        "depth_std": 0.20283666253089905,
+        "depth_min": 0.014396877028048038,
+        "depth_max": 0.9430696368217468,
+        "mask_area": 11394
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.8683580756187439,
+      "bounding_box": [
+        242.44775390625,
+        142.97047424316406,
+        315.98199462890625,
+        172.40098571777344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7399686574935913,
+        "median_depth": 0.7390540838241577,
+        "depth_std": 0.031995739787817,
+        "depth_min": 0.6820709109306335,
+        "depth_max": 0.853042483329773,
+        "mask_area": 1296
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "faucet",
+      "confidence": 0.42224976420402527,
+      "bounding_box": [
+        247.66461181640625,
+        110.668701171875,
+        273.63995361328125,
+        143.69314575195312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8002716302871704,
+        "median_depth": 0.8657377362251282,
+        "depth_std": 0.16836558282375336,
+        "depth_min": 0.09276727586984634,
+        "depth_max": 0.9972109794616699,
+        "mask_area": 369
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. countertop. toaster. sink. faucet. refrigerator.",
+  "text_prompt": "robot arm. gripper. cabinet. countertop. toaster. sink. faucet. refrigerator.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

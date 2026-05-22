@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "countertop",
+    "shelf cabinet",
+    "shelf cabinet",
+    "window blinds"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: window blinds, shelf cabinet, countertop, robot arm, shelf cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.24499671161174774,
+        "relative_position": "closest",
+        "confidence": 0.4285830855369568
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "countertop",
+        "mean_depth": 0.5086564421653748,
+        "relative_position": "middle",
+        "confidence": 0.6209485530853271
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "shelf cabinet",
+        "mean_depth": 0.5328240990638733,
+        "relative_position": "middle",
+        "confidence": 0.5313138961791992
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "shelf cabinet",
+        "mean_depth": 0.5929477214813232,
+        "relative_position": "middle",
+        "confidence": 0.38108158111572266
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "window blinds",
+        "mean_depth": 0.6484639644622803,
+        "relative_position": "farthest",
+        "confidence": 0.6060315370559692
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "window blinds",
+        "mean_depth": 0.6484639644622803,
+        "relative_position": "farthest",
+        "confidence": 0.6060315370559692
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "shelf cabinet",
+        "mean_depth": 0.5929477214813232,
+        "relative_position": "middle",
+        "confidence": 0.38108158111572266
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "shelf cabinet",
+        "mean_depth": 0.5328240990638733,
+        "relative_position": "middle",
+        "confidence": 0.5313138961791992
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "countertop",
+        "mean_depth": 0.5086564421653748,
+        "relative_position": "middle",
+        "confidence": 0.6209485530853271
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.24499671161174774,
+        "relative_position": "closest",
+        "confidence": 0.4285830855369568
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.4285830855369568,
+      "bounding_box": [
+        225.73587036132812,
+        21.180225372314453,
+        316.0010070800781,
+        110.93431091308594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24499671161174774,
+        "median_depth": 0.12836669385433197,
+        "depth_std": 0.2585933804512024,
+        "depth_min": 0.0,
+        "depth_max": 0.9684844613075256,
+        "mask_area": 3518
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "countertop",
+      "confidence": 0.6209485530853271,
+      "bounding_box": [
+        145.54678344726562,
+        90.12660217285156,
+        312.9776916503906,
+        134.91015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5086564421653748,
+        "median_depth": 0.49044233560562134,
+        "depth_std": 0.08602060377597809,
+        "depth_min": 0.07873618602752686,
+        "depth_max": 0.8208917379379272,
+        "mask_area": 2787
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "shelf cabinet",
+      "confidence": 0.5313138961791992,
+      "bounding_box": [
+        147.0343780517578,
+        0.04192543029785156,
+        206.72630310058594,
+        48.466026306152344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5328240990638733,
+        "median_depth": 0.5231480598449707,
+        "depth_std": 0.056236304342746735,
+        "depth_min": 0.42387667298316956,
+        "depth_max": 0.7529105544090271,
+        "mask_area": 2469
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "shelf cabinet",
+      "confidence": 0.38108158111572266,
+      "bounding_box": [
+        -0.012666702270507812,
+        101.47770690917969,
+        38.57757568359375,
+        179.93846130371094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5929477214813232,
+        "median_depth": 0.5804662108421326,
+        "depth_std": 0.08990402519702911,
+        "depth_min": 0.44578927755355835,
+        "depth_max": 0.8391097187995911,
+        "mask_area": 2251
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "window blinds",
+      "confidence": 0.6060315370559692,
+      "bounding_box": [
+        10.732627868652344,
+        0.0727386474609375,
+        138.48648071289062,
+        149.21839904785156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6484639644622803,
+        "median_depth": 0.6333072185516357,
+        "depth_std": 0.11540846526622772,
+        "depth_min": 0.4385477900505066,
+        "depth_max": 0.9364144802093506,
+        "mask_area": 14074
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. robot arm. gripper. countertop. door. window blinds. shelf. cabinet. container.",
+  "text_prompt": "cup. robot arm. gripper. countertop. door. window blinds. shelf. cabinet. container.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

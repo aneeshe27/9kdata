@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "door",
+    "bottle",
+    "bottle spice jar",
+    "paper bag"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, bottle spice jar, door, paper bag, bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.04615703970193863,
+        "relative_position": "closest",
+        "confidence": 0.4471021294593811
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.11480455100536346,
+        "relative_position": "middle",
+        "confidence": 0.3969690799713135
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.5003441572189331,
+        "relative_position": "middle",
+        "confidence": 0.5066223740577698
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "bottle spice jar",
+        "mean_depth": 0.642754852771759,
+        "relative_position": "middle",
+        "confidence": 0.4359792172908783
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "paper bag",
+        "mean_depth": 0.8251499533653259,
+        "relative_position": "farthest",
+        "confidence": 0.7158626317977905
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "paper bag",
+        "mean_depth": 0.8251499533653259,
+        "relative_position": "farthest",
+        "confidence": 0.7158626317977905
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "bottle spice jar",
+        "mean_depth": 0.642754852771759,
+        "relative_position": "middle",
+        "confidence": 0.4359792172908783
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.5003441572189331,
+        "relative_position": "middle",
+        "confidence": 0.5066223740577698
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.11480455100536346,
+        "relative_position": "middle",
+        "confidence": 0.3969690799713135
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.04615703970193863,
+        "relative_position": "closest",
+        "confidence": 0.4471021294593811
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4471021294593811,
+      "bounding_box": [
+        122.69937133789062,
+        31.61956787109375,
+        316.04150390625,
+        152.5745849609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04615703970193863,
+        "median_depth": 0.025600070133805275,
+        "depth_std": 0.0985582247376442,
+        "depth_min": 0.005264210980385542,
+        "depth_max": 0.8395042419433594,
+        "mask_area": 7151
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "door",
+      "confidence": 0.3969690799713135,
+      "bounding_box": [
+        0.06416702270507812,
+        0.0687255859375,
+        101.78115844726562,
+        180.06544494628906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11480455100536346,
+        "median_depth": 0.06822660565376282,
+        "depth_std": 0.1283603012561798,
+        "depth_min": 0.0,
+        "depth_max": 0.6535384654998779,
+        "mask_area": 15544
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.5066223740577698,
+      "bounding_box": [
+        124.21208190917969,
+        138.17466735839844,
+        138.8664093017578,
+        180.02430725097656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5003441572189331,
+        "median_depth": 0.4924391806125641,
+        "depth_std": 0.08066333830356598,
+        "depth_min": 0.04174548387527466,
+        "depth_max": 0.6253010630607605,
+        "mask_area": 455
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bottle spice jar",
+      "confidence": 0.4359792172908783,
+      "bounding_box": [
+        133.47042846679688,
+        15.90908145904541,
+        145.4732666015625,
+        38.566627502441406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.642754852771759,
+        "median_depth": 0.6428384780883789,
+        "depth_std": 0.005859043914824724,
+        "depth_min": 0.6308192610740662,
+        "depth_max": 0.6621372103691101,
+        "mask_area": 234
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "paper bag",
+      "confidence": 0.7158626317977905,
+      "bounding_box": [
+        191.10340881347656,
+        130.35736083984375,
+        240.11656188964844,
+        179.83834838867188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8251499533653259,
+        "median_depth": 0.8132594227790833,
+        "depth_std": 0.05303706228733063,
+        "depth_min": 0.6456518769264221,
+        "depth_max": 0.9964797496795654,
+        "mask_area": 979
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. stove. bottle. cup. tray. spice jar. shelf. refrigerator. door. paper bag. window blinds.",
+  "text_prompt": "robot arm. gripper. stove. bottle. cup. tray. spice jar. shelf. refrigerator. door. paper bag. window blinds.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "door",
+    "robot base",
+    "cabinet",
+    "toilet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: toilet, cabinet, robot arm gripper, door, robot base",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.01790613867342472,
+        "relative_position": "closest",
+        "confidence": 0.3964608609676361
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.05600190535187721,
+        "relative_position": "middle",
+        "confidence": 0.5481507182121277
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot base",
+        "mean_depth": 0.47568845748901367,
+        "relative_position": "middle",
+        "confidence": 0.4481460154056549
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.47688785195350647,
+        "relative_position": "middle",
+        "confidence": 0.4474106431007385
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "toilet",
+        "mean_depth": 0.680304229259491,
+        "relative_position": "farthest",
+        "confidence": 0.7064584493637085
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "toilet",
+        "mean_depth": 0.680304229259491,
+        "relative_position": "farthest",
+        "confidence": 0.7064584493637085
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.47688785195350647,
+        "relative_position": "middle",
+        "confidence": 0.4474106431007385
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot base",
+        "mean_depth": 0.47568845748901367,
+        "relative_position": "middle",
+        "confidence": 0.4481460154056549
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.05600190535187721,
+        "relative_position": "middle",
+        "confidence": 0.5481507182121277
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.01790613867342472,
+        "relative_position": "closest",
+        "confidence": 0.3964608609676361
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.3964608609676361,
+      "bounding_box": [
+        61.91353988647461,
+        0.18129348754882812,
+        180.546142578125,
+        104.43179321289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01790613867342472,
+        "median_depth": 0.013981868512928486,
+        "depth_std": 0.012489518150687218,
+        "depth_min": 0.006251751910895109,
+        "depth_max": 0.25396373867988586,
+        "mask_area": 6841
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "door",
+      "confidence": 0.5481507182121277,
+      "bounding_box": [
+        -0.02286529541015625,
+        41.57066345214844,
+        122.08198547363281,
+        179.93399047851562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05600190535187721,
+        "median_depth": 0.039355482906103134,
+        "depth_std": 0.05154396966099739,
+        "depth_min": 0.010425417684018612,
+        "depth_max": 0.5140417814254761,
+        "mask_area": 6931
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot base",
+      "confidence": 0.4481460154056549,
+      "bounding_box": [
+        201.0838623046875,
+        93.72553253173828,
+        315.9581298828125,
+        179.97207641601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47568845748901367,
+        "median_depth": 0.4744641184806824,
+        "depth_std": 0.08766849339008331,
+        "depth_min": 0.3192358613014221,
+        "depth_max": 0.9263443350791931,
+        "mask_area": 7864
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.4474106431007385,
+      "bounding_box": [
+        72.43515014648438,
+        56.766544342041016,
+        234.70272827148438,
+        168.2433319091797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47688785195350647,
+        "median_depth": 0.46568283438682556,
+        "depth_std": 0.12540104985237122,
+        "depth_min": 0.1076091006398201,
+        "depth_max": 0.8283817768096924,
+        "mask_area": 7379
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "toilet",
+      "confidence": 0.7064584493637085,
+      "bounding_box": [
+        220.95985412597656,
+        8.172618865966797,
+        292.1117248535156,
+        94.47654724121094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.680304229259491,
+        "median_depth": 0.623308539390564,
+        "depth_std": 0.13448980450630188,
+        "depth_min": 0.5063296556472778,
+        "depth_max": 0.994095504283905,
+        "mask_area": 2334
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. robot base. countertop. sink. faucet. cabinet. cup. tube. sponge. toilet. box. door. floor.",
+  "text_prompt": "robot arm. gripper. robot base. countertop. sink. faucet. cabinet. cup. tube. sponge. toilet. box. door. floor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

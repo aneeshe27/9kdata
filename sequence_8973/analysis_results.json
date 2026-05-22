@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "toolbox",
+    "robot arm",
+    "cloth",
+    "cardboard box",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cloth, cardboard box, robot arm, chair, toolbox",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "toolbox",
+        "mean_depth": 0.052776187658309937,
+        "relative_position": "closest",
+        "confidence": 0.41261255741119385
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.09865646809339523,
+        "relative_position": "middle",
+        "confidence": 0.39462098479270935
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.11918509751558304,
+        "relative_position": "middle",
+        "confidence": 0.5153324007987976
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cardboard box",
+        "mean_depth": 0.15815778076648712,
+        "relative_position": "middle",
+        "confidence": 0.39976775646209717
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.2264551967382431,
+        "relative_position": "farthest",
+        "confidence": 0.6020331978797913
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.2264551967382431,
+        "relative_position": "farthest",
+        "confidence": 0.6020331978797913
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cardboard box",
+        "mean_depth": 0.15815778076648712,
+        "relative_position": "middle",
+        "confidence": 0.39976775646209717
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.11918509751558304,
+        "relative_position": "middle",
+        "confidence": 0.5153324007987976
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.09865646809339523,
+        "relative_position": "middle",
+        "confidence": 0.39462098479270935
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "toolbox",
+        "mean_depth": 0.052776187658309937,
+        "relative_position": "closest",
+        "confidence": 0.41261255741119385
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "toolbox",
+      "confidence": 0.41261255741119385,
+      "bounding_box": [
+        0.094329833984375,
+        99.41565704345703,
+        160.3397674560547,
+        179.88217163085938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.052776187658309937,
+        "median_depth": 0.040954090654850006,
+        "depth_std": 0.053281839936971664,
+        "depth_min": 0.006009906064718962,
+        "depth_max": 0.3787398338317871,
+        "mask_area": 8913
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.39462098479270935,
+      "bounding_box": [
+        110.17042541503906,
+        0.08927536010742188,
+        200.80894470214844,
+        100.16763305664062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09865646809339523,
+        "median_depth": 0.08005093783140182,
+        "depth_std": 0.0734308660030365,
+        "depth_min": 0.05376940593123436,
+        "depth_max": 0.6648102402687073,
+        "mask_area": 3626
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.5153324007987976,
+      "bounding_box": [
+        153.57276916503906,
+        76.61761474609375,
+        212.22853088378906,
+        116.55421447753906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11918509751558304,
+        "median_depth": 0.11795099079608917,
+        "depth_std": 0.016359424218535423,
+        "depth_min": 0.08617844432592392,
+        "depth_max": 0.1758878082036972,
+        "mask_area": 1146
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cardboard box",
+      "confidence": 0.39976775646209717,
+      "bounding_box": [
+        182.37313842773438,
+        40.48278045654297,
+        270.81988525390625,
+        93.57884979248047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15815778076648712,
+        "median_depth": 0.15141794085502625,
+        "depth_std": 0.03094424121081829,
+        "depth_min": 0.08881822973489761,
+        "depth_max": 0.44989651441574097,
+        "mask_area": 2809
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.6020331978797913,
+      "bounding_box": [
+        21.335723876953125,
+        9.482009887695312,
+        104.53845977783203,
+        116.84576416015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2264551967382431,
+        "median_depth": 0.22193580865859985,
+        "depth_std": 0.04325556755065918,
+        "depth_min": 0.15250736474990845,
+        "depth_max": 0.45961323380470276,
+        "mask_area": 4739
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cloth. chair. cart. cable. clamp. toolbox. cardboard box. shelf.",
+  "text_prompt": "robot arm. gripper. table. cloth. chair. cart. cable. clamp. toolbox. cardboard box. shelf.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

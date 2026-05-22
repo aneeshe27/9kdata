@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "door",
+    "cabinet filing cabinet",
+    "cabinet cabinet",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet cabinet, door, cabinet filing cabinet, chair, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.031062282621860504,
+        "relative_position": "closest",
+        "confidence": 0.565396249294281
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.24081312119960785,
+        "relative_position": "middle",
+        "confidence": 0.38598915934562683
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet filing cabinet",
+        "mean_depth": 0.26973140239715576,
+        "relative_position": "middle",
+        "confidence": 0.3984329104423523
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cabinet cabinet",
+        "mean_depth": 0.3484852612018585,
+        "relative_position": "middle",
+        "confidence": 0.4372622072696686
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.5629067420959473,
+        "relative_position": "farthest",
+        "confidence": 0.39347800612449646
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.5629067420959473,
+        "relative_position": "farthest",
+        "confidence": 0.39347800612449646
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cabinet cabinet",
+        "mean_depth": 0.3484852612018585,
+        "relative_position": "middle",
+        "confidence": 0.4372622072696686
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet filing cabinet",
+        "mean_depth": 0.26973140239715576,
+        "relative_position": "middle",
+        "confidence": 0.3984329104423523
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.24081312119960785,
+        "relative_position": "middle",
+        "confidence": 0.38598915934562683
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.031062282621860504,
+        "relative_position": "closest",
+        "confidence": 0.565396249294281
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.565396249294281,
+      "bounding_box": [
+        173.974365234375,
+        50.48509979248047,
+        315.9458923339844,
+        133.01300048828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.031062282621860504,
+        "median_depth": 0.009468728676438332,
+        "depth_std": 0.10458769649267197,
+        "depth_min": 0.004222248215228319,
+        "depth_max": 0.9893302321434021,
+        "mask_area": 5803
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "door",
+      "confidence": 0.38598915934562683,
+      "bounding_box": [
+        0.015338897705078125,
+        40.21649169921875,
+        37.28733444213867,
+        179.94467163085938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24081312119960785,
+        "median_depth": 0.2412412017583847,
+        "depth_std": 0.008376853540539742,
+        "depth_min": 0.22187723219394684,
+        "depth_max": 0.2572443187236786,
+        "mask_area": 4665
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet filing cabinet",
+      "confidence": 0.3984329104423523,
+      "bounding_box": [
+        43.77627182006836,
+        108.33863830566406,
+        135.6175537109375,
+        179.93519592285156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26973140239715576,
+        "median_depth": 0.2661643624305725,
+        "depth_std": 0.023777853697538376,
+        "depth_min": 0.23245616257190704,
+        "depth_max": 0.33719009160995483,
+        "mask_area": 6044
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet cabinet",
+      "confidence": 0.4372622072696686,
+      "bounding_box": [
+        96.73573303222656,
+        54.03585433959961,
+        175.08116149902344,
+        127.58078002929688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3484852612018585,
+        "median_depth": 0.34154006838798523,
+        "depth_std": 0.03885497897863388,
+        "depth_min": 0.29791688919067383,
+        "depth_max": 0.49207237362861633,
+        "mask_area": 3794
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.39347800612449646,
+      "bounding_box": [
+        244.64710998535156,
+        124.37496948242188,
+        275.5779113769531,
+        179.92388916015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5629067420959473,
+        "median_depth": 0.5638078451156616,
+        "depth_std": 0.022364052012562752,
+        "depth_min": 0.43222320079803467,
+        "depth_max": 0.6231419444084167,
+        "mask_area": 558
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. filing cabinet. desk. chair. computer monitor. door. window. light fixture.",
+  "text_prompt": "robot arm. gripper. cabinet. filing cabinet. desk. chair. computer monitor. door. window. light fixture.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

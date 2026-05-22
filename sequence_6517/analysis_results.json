@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "stool",
+    "office chair",
+    "office chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: stool, robot arm, office chair, office chair, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.04031502828001976,
+        "relative_position": "closest",
+        "confidence": 0.43528133630752563
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.10858317464590073,
+        "relative_position": "middle",
+        "confidence": 0.5186975002288818
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "stool",
+        "mean_depth": 0.17486169934272766,
+        "relative_position": "middle",
+        "confidence": 0.6601734161376953
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "office chair",
+        "mean_depth": 0.28228065371513367,
+        "relative_position": "middle",
+        "confidence": 0.47632867097854614
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "office chair",
+        "mean_depth": 0.3621439039707184,
+        "relative_position": "farthest",
+        "confidence": 0.47251802682876587
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "office chair",
+        "mean_depth": 0.3621439039707184,
+        "relative_position": "farthest",
+        "confidence": 0.47251802682876587
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "office chair",
+        "mean_depth": 0.28228065371513367,
+        "relative_position": "middle",
+        "confidence": 0.47632867097854614
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "stool",
+        "mean_depth": 0.17486169934272766,
+        "relative_position": "middle",
+        "confidence": 0.6601734161376953
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.10858317464590073,
+        "relative_position": "middle",
+        "confidence": 0.5186975002288818
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.04031502828001976,
+        "relative_position": "closest",
+        "confidence": 0.43528133630752563
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.43528133630752563,
+      "bounding_box": [
+        188.8154296875,
+        0.09062957763671875,
+        316.0191650390625,
+        155.04531860351562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04031502828001976,
+        "median_depth": 0.01623963564634323,
+        "depth_std": 0.06323844939470291,
+        "depth_min": 0.0010217496892437339,
+        "depth_max": 0.6692911386489868,
+        "mask_area": 7896
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.5186975002288818,
+      "bounding_box": [
+        113.1800537109375,
+        97.2010498046875,
+        293.8028869628906,
+        179.96328735351562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10858317464590073,
+        "median_depth": 0.10482737421989441,
+        "depth_std": 0.022750986739993095,
+        "depth_min": 0.027334628626704216,
+        "depth_max": 0.2868776321411133,
+        "mask_area": 7341
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "stool",
+      "confidence": 0.6601734161376953,
+      "bounding_box": [
+        84.40061950683594,
+        81.08988952636719,
+        133.4607696533203,
+        154.29769897460938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17486169934272766,
+        "median_depth": 0.17373612523078918,
+        "depth_std": 0.014221268706023693,
+        "depth_min": 0.15094172954559326,
+        "depth_max": 0.2170497328042984,
+        "mask_area": 954
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "office chair",
+      "confidence": 0.47632867097854614,
+      "bounding_box": [
+        162.23497009277344,
+        60.65904235839844,
+        192.98426818847656,
+        107.47775268554688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28228065371513367,
+        "median_depth": 0.2725040912628174,
+        "depth_std": 0.031609367579221725,
+        "depth_min": 0.23695524036884308,
+        "depth_max": 0.5292358994483948,
+        "mask_area": 816
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "office chair",
+      "confidence": 0.47251802682876587,
+      "bounding_box": [
+        0.02082538604736328,
+        67.36222839355469,
+        31.501644134521484,
+        120.42587280273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3621439039707184,
+        "median_depth": 0.36706894636154175,
+        "depth_std": 0.02356822043657303,
+        "depth_min": 0.3093973398208618,
+        "depth_max": 0.4127708971500397,
+        "mask_area": 626
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. stool. office chair. rolling cart. monitor. cabinet.",
+  "text_prompt": "robot arm. gripper. table. stool. office chair. rolling cart. monitor. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

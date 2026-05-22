@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table counter",
+    "pan",
+    "countertop",
+    "gripper",
+    "box container"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: gripper, countertop, pan, table counter, box container",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "table counter",
+        "mean_depth": 0.1267608404159546,
+        "relative_position": "closest",
+        "confidence": 0.5848240852355957
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "pan",
+        "mean_depth": 0.28450536727905273,
+        "relative_position": "middle",
+        "confidence": 0.7949438095092773
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.3974302113056183,
+        "relative_position": "middle",
+        "confidence": 0.44832438230514526
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.441092312335968,
+        "relative_position": "middle",
+        "confidence": 0.4201246201992035
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "box container",
+        "mean_depth": 0.7338258028030396,
+        "relative_position": "farthest",
+        "confidence": 0.392986923456192
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "box container",
+        "mean_depth": 0.7338258028030396,
+        "relative_position": "farthest",
+        "confidence": 0.392986923456192
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.441092312335968,
+        "relative_position": "middle",
+        "confidence": 0.4201246201992035
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.3974302113056183,
+        "relative_position": "middle",
+        "confidence": 0.44832438230514526
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "pan",
+        "mean_depth": 0.28450536727905273,
+        "relative_position": "middle",
+        "confidence": 0.7949438095092773
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "table counter",
+        "mean_depth": 0.1267608404159546,
+        "relative_position": "closest",
+        "confidence": 0.5848240852355957
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "table counter",
+      "confidence": 0.5848240852355957,
+      "bounding_box": [
+        92.51181030273438,
+        84.00312042236328,
+        266.0663146972656,
+        179.77120971679688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1267608404159546,
+        "median_depth": 0.10932736843824387,
+        "depth_std": 0.0834246277809143,
+        "depth_min": 0.013202118687331676,
+        "depth_max": 0.9923398494720459,
+        "mask_area": 10667
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "pan",
+      "confidence": 0.7949438095092773,
+      "bounding_box": [
+        136.75257873535156,
+        67.1446304321289,
+        175.10670471191406,
+        88.94196319580078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28450536727905273,
+        "median_depth": 0.20968517661094666,
+        "depth_std": 0.17432142794132233,
+        "depth_min": 0.18677298724651337,
+        "depth_max": 0.9717907905578613,
+        "mask_area": 466
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "countertop",
+      "confidence": 0.44832438230514526,
+      "bounding_box": [
+        0.04558563232421875,
+        64.72782897949219,
+        95.88704681396484,
+        109.85617065429688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3974302113056183,
+        "median_depth": 0.3741897642612457,
+        "depth_std": 0.10976176708936691,
+        "depth_min": 0.25229644775390625,
+        "depth_max": 0.869147539138794,
+        "mask_area": 1510
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "gripper",
+      "confidence": 0.4201246201992035,
+      "bounding_box": [
+        47.78428649902344,
+        119.63732147216797,
+        92.34492492675781,
+        148.0474853515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.441092312335968,
+        "median_depth": 0.43815743923187256,
+        "depth_std": 0.04451347142457962,
+        "depth_min": 0.37130627036094666,
+        "depth_max": 0.5463652610778809,
+        "mask_area": 489
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "box container",
+      "confidence": 0.392986923456192,
+      "bounding_box": [
+        253.08998107910156,
+        13.266307830810547,
+        315.94110107421875,
+        108.99057006835938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7338258028030396,
+        "median_depth": 0.7188315391540527,
+        "depth_std": 0.10377973318099976,
+        "depth_min": 0.5746669769287109,
+        "depth_max": 0.9790425896644592,
+        "mask_area": 4549
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. paper. pen. pan. box. container. countertop.",
+  "text_prompt": "robot arm. gripper. table. paper. pen. pan. box. container. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

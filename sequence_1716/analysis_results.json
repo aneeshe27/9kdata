@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/home/ulal/visual_reasoning/tmp/depth_extended_temp_3757924/temp_image_7788.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_7788.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "plate",
+    "bowl",
+    "faucet",
+    "gripper"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: faucet, robot arm, gripper, bowl, plate",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.011832321994006634,
+        "relative_position": "closest",
+        "confidence": 0.5183036923408508
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "plate",
+        "mean_depth": 0.2645130455493927,
+        "relative_position": "middle",
+        "confidence": 0.5854117274284363
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.2858676016330719,
+        "relative_position": "middle",
+        "confidence": 0.7247689366340637
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.46385565400123596,
+        "relative_position": "middle",
+        "confidence": 0.48804640769958496
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.541496217250824,
+        "relative_position": "farthest",
+        "confidence": 0.4622723162174225
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.541496217250824,
+        "relative_position": "farthest",
+        "confidence": 0.4622723162174225
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.46385565400123596,
+        "relative_position": "middle",
+        "confidence": 0.48804640769958496
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.2858676016330719,
+        "relative_position": "middle",
+        "confidence": 0.7247689366340637
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "plate",
+        "mean_depth": 0.2645130455493927,
+        "relative_position": "middle",
+        "confidence": 0.5854117274284363
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.011832321994006634,
+        "relative_position": "closest",
+        "confidence": 0.5183036923408508
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.5183036923408508,
+      "bounding_box": [
+        120.21127319335938,
+        0.05182838439941406,
+        188.95535278320312,
+        56.57118225097656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.011832321994006634,
+        "median_depth": 0.005920481868088245,
+        "depth_std": 0.03211970627307892,
+        "depth_min": 0.002758847549557686,
+        "depth_max": 0.4853159189224243,
+        "mask_area": 1232
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "plate",
+      "confidence": 0.5854117274284363,
+      "bounding_box": [
+        80.6252670288086,
+        144.599609375,
+        111.38521575927734,
+        154.71994018554688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2645130455493927,
+        "median_depth": 0.2628432512283325,
+        "depth_std": 0.009126816876232624,
+        "depth_min": 0.24562953412532806,
+        "depth_max": 0.29192501306533813,
+        "mask_area": 189
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.7247689366340637,
+      "bounding_box": [
+        74.55206298828125,
+        120.64912414550781,
+        115.49473571777344,
+        147.2603302001953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2858676016330719,
+        "median_depth": 0.2833186388015747,
+        "depth_std": 0.02466006763279438,
+        "depth_min": 0.2416156530380249,
+        "depth_max": 0.37459737062454224,
+        "mask_area": 726
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "faucet",
+      "confidence": 0.48804640769958496,
+      "bounding_box": [
+        81.19990539550781,
+        49.611690521240234,
+        118.01069641113281,
+        95.6282958984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.46385565400123596,
+        "median_depth": 0.457925021648407,
+        "depth_std": 0.019619550555944443,
+        "depth_min": 0.43743935227394104,
+        "depth_max": 0.5189307928085327,
+        "mask_area": 706
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.4622723162174225,
+      "bounding_box": [
+        223.5656280517578,
+        126.60651397705078,
+        238.32240295410156,
+        145.76754760742188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.541496217250824,
+        "median_depth": 0.5275696516036987,
+        "depth_std": 0.06614399701356888,
+        "depth_min": 0.4748435616493225,
+        "depth_max": 0.8543453216552734,
+        "mask_area": 150
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. glass. bowl. plate. spoon. soap dispenser. sink. faucet. microwave. cabinet. drawer. countertop. robot arm. gripper.",
+  "text_prompt": "cup. glass. bowl. plate. spoon. soap dispenser. sink. faucet. microwave. cabinet. drawer. countertop. robot arm. gripper.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper",
+    "mug",
+    "container box",
+    "cable",
+    "tripod"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: mug, gripper, container box, tripod, cable",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.03534388914704323,
+        "relative_position": "closest",
+        "confidence": 0.4229397773742676
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "mug",
+        "mean_depth": 0.13130895793437958,
+        "relative_position": "middle",
+        "confidence": 0.7183057069778442
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "container box",
+        "mean_depth": 0.19253325462341309,
+        "relative_position": "middle",
+        "confidence": 0.5070876479148865
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.3472740948200226,
+        "relative_position": "middle",
+        "confidence": 0.37491998076438904
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "tripod",
+        "mean_depth": 0.5904256105422974,
+        "relative_position": "farthest",
+        "confidence": 0.5434240102767944
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "tripod",
+        "mean_depth": 0.5904256105422974,
+        "relative_position": "farthest",
+        "confidence": 0.5434240102767944
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.3472740948200226,
+        "relative_position": "middle",
+        "confidence": 0.37491998076438904
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "container box",
+        "mean_depth": 0.19253325462341309,
+        "relative_position": "middle",
+        "confidence": 0.5070876479148865
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "mug",
+        "mean_depth": 0.13130895793437958,
+        "relative_position": "middle",
+        "confidence": 0.7183057069778442
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.03534388914704323,
+        "relative_position": "closest",
+        "confidence": 0.4229397773742676
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "gripper",
+      "confidence": 0.4229397773742676,
+      "bounding_box": [
+        180.0141143798828,
+        131.41197204589844,
+        214.3809356689453,
+        178.11500549316406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03534388914704323,
+        "median_depth": 0.03435792028903961,
+        "depth_std": 0.01762603223323822,
+        "depth_min": 0.007738818414509296,
+        "depth_max": 0.07322961837053299,
+        "mask_area": 584
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "mug",
+      "confidence": 0.7183057069778442,
+      "bounding_box": [
+        135.02908325195312,
+        79.4914321899414,
+        158.78067016601562,
+        101.19506072998047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13130895793437958,
+        "median_depth": 0.12327368557453156,
+        "depth_std": 0.017336850985884666,
+        "depth_min": 0.11486954987049103,
+        "depth_max": 0.19150781631469727,
+        "mask_area": 365
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "container box",
+      "confidence": 0.5070876479148865,
+      "bounding_box": [
+        0.003032684326171875,
+        72.36221313476562,
+        56.51109313964844,
+        171.50341796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19253325462341309,
+        "median_depth": 0.20817095041275024,
+        "depth_std": 0.07889899611473083,
+        "depth_min": 0.05183101072907448,
+        "depth_max": 0.5189322233200073,
+        "mask_area": 2126
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cable",
+      "confidence": 0.37491998076438904,
+      "bounding_box": [
+        61.3818359375,
+        65.38977813720703,
+        96.31138610839844,
+        82.56098175048828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3472740948200226,
+        "median_depth": 0.34687283635139465,
+        "depth_std": 0.02125570736825466,
+        "depth_min": 0.2792361080646515,
+        "depth_max": 0.38236764073371887,
+        "mask_area": 308
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "tripod",
+      "confidence": 0.5434240102767944,
+      "bounding_box": [
+        139.0435028076172,
+        0.017103195190429688,
+        157.52076721191406,
+        43.76439666748047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5904256105422974,
+        "median_depth": 0.5795965194702148,
+        "depth_std": 0.03936123475432396,
+        "depth_min": 0.49790316820144653,
+        "depth_max": 0.7064335346221924,
+        "mask_area": 274
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "mug. spoon. table. robot arm. gripper. camera. tripod. cable. container. box.",
+  "text_prompt": "mug. spoon. table. robot arm. gripper. camera. tripod. cable. container. box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

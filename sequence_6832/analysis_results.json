@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "dish rack",
+    "cabinet",
+    "stove",
+    "countertop",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, dish rack, stove, cabinet, countertop",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "dish rack",
+        "mean_depth": 0.5387349128723145,
+        "relative_position": "closest",
+        "confidence": 0.6285015940666199
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.6634474992752075,
+        "relative_position": "middle",
+        "confidence": 0.49166619777679443
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "stove",
+        "mean_depth": 0.6731512546539307,
+        "relative_position": "middle",
+        "confidence": 0.4757022559642792
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.7156355381011963,
+        "relative_position": "middle",
+        "confidence": 0.47823259234428406
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.7744408845901489,
+        "relative_position": "farthest",
+        "confidence": 0.5809803009033203
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.7744408845901489,
+        "relative_position": "farthest",
+        "confidence": 0.5809803009033203
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.7156355381011963,
+        "relative_position": "middle",
+        "confidence": 0.47823259234428406
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "stove",
+        "mean_depth": 0.6731512546539307,
+        "relative_position": "middle",
+        "confidence": 0.4757022559642792
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.6634474992752075,
+        "relative_position": "middle",
+        "confidence": 0.49166619777679443
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "dish rack",
+        "mean_depth": 0.5387349128723145,
+        "relative_position": "closest",
+        "confidence": 0.6285015940666199
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "dish rack",
+      "confidence": 0.6285015940666199,
+      "bounding_box": [
+        80.07300567626953,
+        112.13050079345703,
+        199.69488525390625,
+        179.91110229492188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5387349128723145,
+        "median_depth": 0.5749616622924805,
+        "depth_std": 0.16535839438438416,
+        "depth_min": 0.09502457082271576,
+        "depth_max": 0.8400065302848816,
+        "mask_area": 5771
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.49166619777679443,
+      "bounding_box": [
+        38.62309265136719,
+        112.38485717773438,
+        97.49899291992188,
+        179.9664306640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6634474992752075,
+        "median_depth": 0.661109983921051,
+        "depth_std": 0.03761599585413933,
+        "depth_min": 0.5931221842765808,
+        "depth_max": 0.7386999130249023,
+        "mask_area": 2853
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "stove",
+      "confidence": 0.4757022559642792,
+      "bounding_box": [
+        0.022518157958984375,
+        79.68443298339844,
+        57.0840950012207,
+        112.18862915039062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6731512546539307,
+        "median_depth": 0.6651886701583862,
+        "depth_std": 0.06913114339113235,
+        "depth_min": 0.5737247467041016,
+        "depth_max": 0.8132322430610657,
+        "mask_area": 1430
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "countertop",
+      "confidence": 0.47823259234428406,
+      "bounding_box": [
+        33.955406188964844,
+        79.5455551147461,
+        275.5390625,
+        111.13224029541016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7156355381011963,
+        "median_depth": 0.6985543370246887,
+        "depth_std": 0.1080363467335701,
+        "depth_min": 0.04549217224121094,
+        "depth_max": 0.9709137678146362,
+        "mask_area": 3030
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet",
+      "confidence": 0.5809803009033203,
+      "bounding_box": [
+        47.8209228515625,
+        -0.00333404541015625,
+        185.1683349609375,
+        41.81622314453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7744408845901489,
+        "median_depth": 0.7745748162269592,
+        "depth_std": 0.023424483835697174,
+        "depth_min": 0.7178761959075928,
+        "depth_max": 0.8959819674491882,
+        "mask_area": 4650
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. plate. dishwasher. dish rack. bowl. countertop. cabinet. stove.",
+  "text_prompt": "robot arm. robot gripper. plate. dishwasher. dish rack. bowl. countertop. cabinet. stove.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

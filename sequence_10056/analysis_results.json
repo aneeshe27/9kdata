@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cloth",
+    "cardboard box",
+    "shelf",
+    "cloth"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cloth, cardboard box, robot arm, shelf, cloth",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.03472375124692917,
+        "relative_position": "closest",
+        "confidence": 0.4108857810497284
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.2038741409778595,
+        "relative_position": "middle",
+        "confidence": 0.4098791778087616
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.23963232338428497,
+        "relative_position": "middle",
+        "confidence": 0.817176878452301
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.2598873972892761,
+        "relative_position": "middle",
+        "confidence": 0.4209500253200531
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cloth",
+        "mean_depth": 0.2727436125278473,
+        "relative_position": "farthest",
+        "confidence": 0.367815762758255
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cloth",
+        "mean_depth": 0.2727436125278473,
+        "relative_position": "farthest",
+        "confidence": 0.367815762758255
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.2598873972892761,
+        "relative_position": "middle",
+        "confidence": 0.4209500253200531
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.23963232338428497,
+        "relative_position": "middle",
+        "confidence": 0.817176878452301
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.2038741409778595,
+        "relative_position": "middle",
+        "confidence": 0.4098791778087616
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.03472375124692917,
+        "relative_position": "closest",
+        "confidence": 0.4108857810497284
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4108857810497284,
+      "bounding_box": [
+        170.23828125,
+        0.5571250915527344,
+        253.07583618164062,
+        80.64183044433594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03472375124692917,
+        "median_depth": 0.02834867313504219,
+        "depth_std": 0.03733280301094055,
+        "depth_min": 0.015015602111816406,
+        "depth_max": 0.6867628693580627,
+        "mask_area": 2214
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cloth",
+      "confidence": 0.4098791778087616,
+      "bounding_box": [
+        52.031856536865234,
+        137.2800750732422,
+        115.26429748535156,
+        179.9539337158203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2038741409778595,
+        "median_depth": 0.2007409781217575,
+        "depth_std": 0.020115477964282036,
+        "depth_min": 0.1680835783481598,
+        "depth_max": 0.29162779450416565,
+        "mask_area": 1551
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cardboard box",
+      "confidence": 0.817176878452301,
+      "bounding_box": [
+        0.14522171020507812,
+        94.37075805664062,
+        82.41571044921875,
+        161.08726501464844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23963232338428497,
+        "median_depth": 0.23895075917243958,
+        "depth_std": 0.0196897704154253,
+        "depth_min": 0.19784307479858398,
+        "depth_max": 0.28915247321128845,
+        "mask_area": 2954
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "shelf",
+      "confidence": 0.4209500253200531,
+      "bounding_box": [
+        0.004913330078125,
+        28.332408905029297,
+        128.39869689941406,
+        119.96015930175781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2598873972892761,
+        "median_depth": 0.25995534658432007,
+        "depth_std": 0.04550671577453613,
+        "depth_min": 0.16182498633861542,
+        "depth_max": 0.3764134347438812,
+        "mask_area": 4543
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cloth",
+      "confidence": 0.367815762758255,
+      "bounding_box": [
+        99.08932495117188,
+        100.76089477539062,
+        144.33319091796875,
+        149.24911499023438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2727436125278473,
+        "median_depth": 0.26596519351005554,
+        "depth_std": 0.026713240891695023,
+        "depth_min": 0.2331939935684204,
+        "depth_max": 0.3542991876602173,
+        "mask_area": 1149
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cloth. sponge. cable. shelf. cardboard box. robot base. button.",
+  "text_prompt": "robot arm. gripper. table. cloth. sponge. cable. shelf. cardboard box. robot base. button.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

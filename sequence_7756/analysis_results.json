@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "sink",
+    "gripper clamp",
+    "cabinet shelf",
+    "chair",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, gripper clamp, cabinet shelf, chair, box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.0435015894472599,
+        "relative_position": "closest",
+        "confidence": 0.6401332020759583
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "gripper clamp",
+        "mean_depth": 0.11324607580900192,
+        "relative_position": "middle",
+        "confidence": 0.3952341377735138
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.14294734597206116,
+        "relative_position": "middle",
+        "confidence": 0.3887329399585724
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.2878817915916443,
+        "relative_position": "middle",
+        "confidence": 0.3758321702480316
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.3865000605583191,
+        "relative_position": "farthest",
+        "confidence": 0.6842970252037048
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.3865000605583191,
+        "relative_position": "farthest",
+        "confidence": 0.6842970252037048
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.2878817915916443,
+        "relative_position": "middle",
+        "confidence": 0.3758321702480316
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.14294734597206116,
+        "relative_position": "middle",
+        "confidence": 0.3887329399585724
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "gripper clamp",
+        "mean_depth": 0.11324607580900192,
+        "relative_position": "middle",
+        "confidence": 0.3952341377735138
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.0435015894472599,
+        "relative_position": "closest",
+        "confidence": 0.6401332020759583
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.6401332020759583,
+      "bounding_box": [
+        175.3358917236328,
+        104.91630554199219,
+        234.60789489746094,
+        149.07810974121094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0435015894472599,
+        "median_depth": 0.04487692564725876,
+        "depth_std": 0.008805390447378159,
+        "depth_min": 0.022675400599837303,
+        "depth_max": 0.06766097247600555,
+        "mask_area": 1330
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "gripper clamp",
+      "confidence": 0.3952341377735138,
+      "bounding_box": [
+        118.20702362060547,
+        132.40341186523438,
+        150.63401794433594,
+        172.33306884765625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11324607580900192,
+        "median_depth": 0.1124768853187561,
+        "depth_std": 0.01393817737698555,
+        "depth_min": 0.09264393895864487,
+        "depth_max": 0.16790547966957092,
+        "mask_area": 465
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet shelf",
+      "confidence": 0.3887329399585724,
+      "bounding_box": [
+        73.25959014892578,
+        19.167587280273438,
+        161.05618286132812,
+        141.8114013671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14294734597206116,
+        "median_depth": 0.13013309240341187,
+        "depth_std": 0.04020654037594795,
+        "depth_min": 0.0627409964799881,
+        "depth_max": 0.414378821849823,
+        "mask_area": 4938
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.3758321702480316,
+      "bounding_box": [
+        0.0334320068359375,
+        21.187591552734375,
+        70.65294647216797,
+        117.09841918945312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2878817915916443,
+        "median_depth": 0.25554388761520386,
+        "depth_std": 0.08374159038066864,
+        "depth_min": 0.19032520055770874,
+        "depth_max": 0.6204404830932617,
+        "mask_area": 2404
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "box",
+      "confidence": 0.6842970252037048,
+      "bounding_box": [
+        248.08724975585938,
+        70.6155776977539,
+        288.9594421386719,
+        104.14678192138672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3865000605583191,
+        "median_depth": 0.39398181438446045,
+        "depth_std": 0.049606919288635254,
+        "depth_min": 0.10277514159679413,
+        "depth_max": 0.4368129372596741,
+        "mask_area": 856
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. countertop. stove. cabinet. refrigerator. microwave. oven. table. clamp. cable. chair. shelf. box.",
+  "text_prompt": "robot arm. gripper. sink. countertop. stove. cabinet. refrigerator. microwave. oven. table. clamp. cable. chair. shelf. box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

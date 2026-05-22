@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "towel",
+    "faucet",
+    "sink",
+    "bottle spray bottle",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, towel, faucet, bottle spray bottle, cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "towel",
+        "mean_depth": 0.24295859038829803,
+        "relative_position": "closest",
+        "confidence": 0.3582744002342224
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.27116602659225464,
+        "relative_position": "middle",
+        "confidence": 0.48649612069129944
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.27571335434913635,
+        "relative_position": "middle",
+        "confidence": 0.8122342824935913
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "bottle spray bottle",
+        "mean_depth": 0.277152419090271,
+        "relative_position": "middle",
+        "confidence": 0.40422794222831726
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.47922706604003906,
+        "relative_position": "farthest",
+        "confidence": 0.47388938069343567
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.47922706604003906,
+        "relative_position": "farthest",
+        "confidence": 0.47388938069343567
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "bottle spray bottle",
+        "mean_depth": 0.277152419090271,
+        "relative_position": "middle",
+        "confidence": 0.40422794222831726
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.27571335434913635,
+        "relative_position": "middle",
+        "confidence": 0.8122342824935913
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.27116602659225464,
+        "relative_position": "middle",
+        "confidence": 0.48649612069129944
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "towel",
+        "mean_depth": 0.24295859038829803,
+        "relative_position": "closest",
+        "confidence": 0.3582744002342224
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "towel",
+      "confidence": 0.3582744002342224,
+      "bounding_box": [
+        96.15215301513672,
+        81.17578125,
+        123.10379791259766,
+        108.34825134277344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24295859038829803,
+        "median_depth": 0.2448142021894455,
+        "depth_std": 0.011296692304313183,
+        "depth_min": 0.21107301115989685,
+        "depth_max": 0.2627829313278198,
+        "mask_area": 442
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.48649612069129944,
+      "bounding_box": [
+        159.82681274414062,
+        27.038814544677734,
+        182.72628784179688,
+        47.20504379272461
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27116602659225464,
+        "median_depth": 0.2711468040943146,
+        "depth_std": 0.0013802620815113187,
+        "depth_min": 0.2677401304244995,
+        "depth_max": 0.27457213401794434,
+        "mask_area": 286
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.8122342824935913,
+      "bounding_box": [
+        148.3004913330078,
+        45.861968994140625,
+        220.46482849121094,
+        87.87582397460938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27571335434913635,
+        "median_depth": 0.27163344621658325,
+        "depth_std": 0.012565085664391518,
+        "depth_min": 0.25860515236854553,
+        "depth_max": 0.31147170066833496,
+        "mask_area": 2218
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bottle spray bottle",
+      "confidence": 0.40422794222831726,
+      "bounding_box": [
+        128.92063903808594,
+        41.25849914550781,
+        144.44773864746094,
+        80.39895629882812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.277152419090271,
+        "median_depth": 0.2763146162033081,
+        "depth_std": 0.005932758562266827,
+        "depth_min": 0.26714351773262024,
+        "depth_max": 0.2911919355392456,
+        "mask_area": 310
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.47388938069343567,
+      "bounding_box": [
+        117.31800079345703,
+        98.36482238769531,
+        230.61837768554688,
+        156.40684509277344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47922706604003906,
+        "median_depth": 0.462860643863678,
+        "depth_std": 0.10529465228319168,
+        "depth_min": 0.2941524088382721,
+        "depth_max": 0.7385852336883545,
+        "mask_area": 2684
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. faucet. countertop. cabinet. door. floor. bottle. spray bottle. container. paper. towel. cord. tray. robot arm. gripper.",
+  "text_prompt": "sink. faucet. countertop. cabinet. door. floor. bottle. spray bottle. container. paper. towel. cord. tray. robot arm. gripper.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

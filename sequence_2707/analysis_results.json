@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "metal plate",
+    "can",
+    "cup",
+    "cloth",
+    "robot arm"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cloth, robot arm, metal plate, can, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "metal plate",
+        "mean_depth": 0.015726778656244278,
+        "relative_position": "closest",
+        "confidence": 0.4905944764614105
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "can",
+        "mean_depth": 0.11273887753486633,
+        "relative_position": "middle",
+        "confidence": 0.5135902762413025
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.11392012238502502,
+        "relative_position": "middle",
+        "confidence": 0.7622995376586914
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.17119836807250977,
+        "relative_position": "middle",
+        "confidence": 0.6817095279693604
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.22334948182106018,
+        "relative_position": "farthest",
+        "confidence": 0.5390079617500305
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.22334948182106018,
+        "relative_position": "farthest",
+        "confidence": 0.5390079617500305
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.17119836807250977,
+        "relative_position": "middle",
+        "confidence": 0.6817095279693604
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.11392012238502502,
+        "relative_position": "middle",
+        "confidence": 0.7622995376586914
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "can",
+        "mean_depth": 0.11273887753486633,
+        "relative_position": "middle",
+        "confidence": 0.5135902762413025
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "metal plate",
+        "mean_depth": 0.015726778656244278,
+        "relative_position": "closest",
+        "confidence": 0.4905944764614105
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "metal plate",
+      "confidence": 0.4905944764614105,
+      "bounding_box": [
+        301.2433166503906,
+        121.236572265625,
+        315.9861755371094,
+        164.17141723632812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.015726778656244278,
+        "median_depth": 0.01608862355351448,
+        "depth_std": 0.0028509863186627626,
+        "depth_min": 0.007634017150849104,
+        "depth_max": 0.0208297036588192,
+        "mask_area": 320
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "can",
+      "confidence": 0.5135902762413025,
+      "bounding_box": [
+        200.9394073486328,
+        55.221107482910156,
+        213.6841278076172,
+        77.60570526123047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11273887753486633,
+        "median_depth": 0.10918490588665009,
+        "depth_std": 0.008925916627049446,
+        "depth_min": 0.10695304721593857,
+        "depth_max": 0.15251481533050537,
+        "mask_area": 200
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.7622995376586914,
+      "bounding_box": [
+        177.42489624023438,
+        54.077877044677734,
+        201.72207641601562,
+        76.87521362304688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11392012238502502,
+        "median_depth": 0.10997384786605835,
+        "depth_std": 0.013054722920060158,
+        "depth_min": 0.10189025849103928,
+        "depth_max": 0.17773200571537018,
+        "mask_area": 426
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.6817095279693604,
+      "bounding_box": [
+        51.16127014160156,
+        19.039682388305664,
+        125.16009521484375,
+        68.75275421142578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17119836807250977,
+        "median_depth": 0.1619483232498169,
+        "depth_std": 0.0340312235057354,
+        "depth_min": 0.12384603917598724,
+        "depth_max": 0.5163986086845398,
+        "mask_area": 2484
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.5390079617500305,
+      "bounding_box": [
+        231.45623779296875,
+        0.06922149658203125,
+        285.12445068359375,
+        67.21565246582031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22334948182106018,
+        "median_depth": 0.16788466274738312,
+        "depth_std": 0.17091971635818481,
+        "depth_min": 0.13591013848781586,
+        "depth_max": 0.9538712501525879,
+        "mask_area": 1679
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. can. robot arm. gripper. table. tool. metal plate. cloth. cable.",
+  "text_prompt": "cup. can. robot arm. gripper. table. tool. metal plate. cloth. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

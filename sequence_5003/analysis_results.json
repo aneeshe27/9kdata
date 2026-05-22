@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cardboard wooden board",
+    "box",
+    "robot arm",
+    "table",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: box, cardboard wooden board, robot arm, table, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cardboard wooden board",
+        "mean_depth": 0.049662839621305466,
+        "relative_position": "closest",
+        "confidence": 0.423871785402298
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.09082923084497452,
+        "relative_position": "middle",
+        "confidence": 0.4302982687950134
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.2876109480857849,
+        "relative_position": "middle",
+        "confidence": 0.4637143909931183
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.30863454937934875,
+        "relative_position": "middle",
+        "confidence": 0.4273339807987213
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.5196112394332886,
+        "relative_position": "farthest",
+        "confidence": 0.40630802512168884
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.5196112394332886,
+        "relative_position": "farthest",
+        "confidence": 0.40630802512168884
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.30863454937934875,
+        "relative_position": "middle",
+        "confidence": 0.4273339807987213
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.2876109480857849,
+        "relative_position": "middle",
+        "confidence": 0.4637143909931183
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.09082923084497452,
+        "relative_position": "middle",
+        "confidence": 0.4302982687950134
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cardboard wooden board",
+        "mean_depth": 0.049662839621305466,
+        "relative_position": "closest",
+        "confidence": 0.423871785402298
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cardboard wooden board",
+      "confidence": 0.423871785402298,
+      "bounding_box": [
+        79.69727325439453,
+        65.26368713378906,
+        220.48226928710938,
+        156.55027770996094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.049662839621305466,
+        "median_depth": 0.04721542447805405,
+        "depth_std": 0.03168860822916031,
+        "depth_min": 0.0045759305357933044,
+        "depth_max": 0.2116849720478058,
+        "mask_area": 6009
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "box",
+      "confidence": 0.4302982687950134,
+      "bounding_box": [
+        130.4747772216797,
+        35.55403137207031,
+        232.65638732910156,
+        94.24510192871094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09082923084497452,
+        "median_depth": 0.08316352963447571,
+        "depth_std": 0.03848719596862793,
+        "depth_min": 0.04564002528786659,
+        "depth_max": 0.41931623220443726,
+        "mask_area": 3233
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.4637143909931183,
+      "bounding_box": [
+        277.3422546386719,
+        5.626367568969727,
+        315.9346618652344,
+        51.660919189453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2876109480857849,
+        "median_depth": 0.2896849513053894,
+        "depth_std": 0.015877528116106987,
+        "depth_min": 0.25744935870170593,
+        "depth_max": 0.3572525382041931,
+        "mask_area": 526
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.4273339807987213,
+      "bounding_box": [
+        209.90896606445312,
+        41.14221954345703,
+        315.9945373535156,
+        124.44829559326172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30863454937934875,
+        "median_depth": 0.2956414818763733,
+        "depth_std": 0.04493808001279831,
+        "depth_min": 0.15180183947086334,
+        "depth_max": 0.5155742764472961,
+        "mask_area": 3020
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.40630802512168884,
+      "bounding_box": [
+        148.2360076904297,
+        9.649683952331543,
+        175.2506561279297,
+        41.43168258666992
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5196112394332886,
+        "median_depth": 0.5162301063537598,
+        "depth_std": 0.03390789404511452,
+        "depth_min": 0.4213845729827881,
+        "depth_max": 0.5956207513809204,
+        "mask_area": 479
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. chair. cardboard. wooden board. bag. robot arm. cables. box. cart. computer monitor.",
+  "text_prompt": "table. chair. cardboard. wooden board. bag. robot arm. cables. box. cart. computer monitor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

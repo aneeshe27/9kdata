@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cup",
+    "paper",
+    "television",
+    "plant"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: plant, paper, cup, television, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.010496617294847965,
+        "relative_position": "closest",
+        "confidence": 0.4929090440273285
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.17180582880973816,
+        "relative_position": "middle",
+        "confidence": 0.6610726714134216
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "paper",
+        "mean_depth": 0.19845594465732574,
+        "relative_position": "middle",
+        "confidence": 0.46175992488861084
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "television",
+        "mean_depth": 0.3066869080066681,
+        "relative_position": "middle",
+        "confidence": 0.6631729006767273
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "plant",
+        "mean_depth": 0.5009625554084778,
+        "relative_position": "farthest",
+        "confidence": 0.8236589431762695
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "plant",
+        "mean_depth": 0.5009625554084778,
+        "relative_position": "farthest",
+        "confidence": 0.8236589431762695
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "television",
+        "mean_depth": 0.3066869080066681,
+        "relative_position": "middle",
+        "confidence": 0.6631729006767273
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "paper",
+        "mean_depth": 0.19845594465732574,
+        "relative_position": "middle",
+        "confidence": 0.46175992488861084
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.17180582880973816,
+        "relative_position": "middle",
+        "confidence": 0.6610726714134216
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.010496617294847965,
+        "relative_position": "closest",
+        "confidence": 0.4929090440273285
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.4929090440273285,
+      "bounding_box": [
+        199.75762939453125,
+        0.08695220947265625,
+        315.79107666015625,
+        86.17801666259766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.010496617294847965,
+        "median_depth": 0.007221364416182041,
+        "depth_std": 0.02096344530582428,
+        "depth_min": 0.0009197501931339502,
+        "depth_max": 0.37643370032310486,
+        "mask_area": 3528
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "cup",
+      "confidence": 0.6610726714134216,
+      "bounding_box": [
+        196.2665252685547,
+        135.36422729492188,
+        220.8385772705078,
+        169.958740234375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17180582880973816,
+        "median_depth": 0.16991469264030457,
+        "depth_std": 0.012042867951095104,
+        "depth_min": 0.15292860567569733,
+        "depth_max": 0.21767845749855042,
+        "mask_area": 608
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "paper",
+      "confidence": 0.46175992488861084,
+      "bounding_box": [
+        116.99578857421875,
+        110.43962860107422,
+        148.22991943359375,
+        137.83738708496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19845594465732574,
+        "median_depth": 0.19486486911773682,
+        "depth_std": 0.012483376078307629,
+        "depth_min": 0.18539494276046753,
+        "depth_max": 0.24906957149505615,
+        "mask_area": 568
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "television",
+      "confidence": 0.6631729006767273,
+      "bounding_box": [
+        -0.046417236328125,
+        36.25429153442383,
+        128.4769744873047,
+        123.00111389160156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3066869080066681,
+        "median_depth": 0.3038088381290436,
+        "depth_std": 0.036241814494132996,
+        "depth_min": 0.23762498795986176,
+        "depth_max": 0.49681368470191956,
+        "mask_area": 8147
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "plant",
+      "confidence": 0.8236589431762695,
+      "bounding_box": [
+        135.58563232421875,
+        44.11188507080078,
+        166.27963256835938,
+        88.9161148071289
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5009625554084778,
+        "median_depth": 0.4952377378940582,
+        "depth_std": 0.018818723037838936,
+        "depth_min": 0.46968552470207214,
+        "depth_max": 0.5824732780456543,
+        "mask_area": 721
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. television. plant. jar. can. lid. cup. paper. box. shelf.",
+  "text_prompt": "robot arm. gripper. table. television. plant. jar. can. lid. cup. paper. box. shelf.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "sink",
+    "sink",
+    "cabinet",
+    "faucet",
+    "electrical outlet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: electrical outlet, faucet, cabinet, sink, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.6436046361923218,
+        "relative_position": "closest",
+        "confidence": 0.4667266011238098
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.6539294719696045,
+        "relative_position": "middle",
+        "confidence": 0.5080590844154358
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.6894057989120483,
+        "relative_position": "middle",
+        "confidence": 0.38647952675819397
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.7039276361465454,
+        "relative_position": "middle",
+        "confidence": 0.8248116970062256
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "electrical outlet",
+        "mean_depth": 0.9044981598854065,
+        "relative_position": "farthest",
+        "confidence": 0.818422794342041
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "electrical outlet",
+        "mean_depth": 0.9044981598854065,
+        "relative_position": "farthest",
+        "confidence": 0.818422794342041
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.7039276361465454,
+        "relative_position": "middle",
+        "confidence": 0.8248116970062256
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.6894057989120483,
+        "relative_position": "middle",
+        "confidence": 0.38647952675819397
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.6539294719696045,
+        "relative_position": "middle",
+        "confidence": 0.5080590844154358
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.6436046361923218,
+        "relative_position": "closest",
+        "confidence": 0.4667266011238098
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "sink",
+      "confidence": 0.4667266011238098,
+      "bounding_box": [
+        194.8585205078125,
+        141.93014526367188,
+        283.65899658203125,
+        179.99859619140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6436046361923218,
+        "median_depth": 0.6569039225578308,
+        "depth_std": 0.04623022675514221,
+        "depth_min": 0.484341561794281,
+        "depth_max": 0.7180386185646057,
+        "mask_area": 2531
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "sink",
+      "confidence": 0.5080590844154358,
+      "bounding_box": [
+        96.52955627441406,
+        129.02261352539062,
+        193.7450408935547,
+        180.07769775390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6539294719696045,
+        "median_depth": 0.6678599715232849,
+        "depth_std": 0.07192376255989075,
+        "depth_min": 0.3042219579219818,
+        "depth_max": 0.7919541597366333,
+        "mask_area": 3292
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.38647952675819397,
+      "bounding_box": [
+        0.256195068359375,
+        -0.026214599609375,
+        84.00780487060547,
+        52.33034896850586
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6894057989120483,
+        "median_depth": 0.6907755732536316,
+        "depth_std": 0.03379387408494949,
+        "depth_min": 0.5922170281410217,
+        "depth_max": 0.773999810218811,
+        "mask_area": 3323
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.8248116970062256,
+      "bounding_box": [
+        190.35498046875,
+        95.9914321899414,
+        226.88192749023438,
+        141.876220703125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7039276361465454,
+        "median_depth": 0.7119022011756897,
+        "depth_std": 0.03346017748117447,
+        "depth_min": 0.6228429079055786,
+        "depth_max": 0.7678670883178711,
+        "mask_area": 415
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "electrical outlet",
+      "confidence": 0.818422794342041,
+      "bounding_box": [
+        85.9574966430664,
+        78.74520874023438,
+        95.74402618408203,
+        93.08555603027344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9044981598854065,
+        "median_depth": 0.9067396521568298,
+        "depth_std": 0.008961324580013752,
+        "depth_min": 0.8769452571868896,
+        "depth_max": 0.9196465015411377,
+        "mask_area": 99
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. countertop. cabinet. sponge. electrical outlet.",
+  "text_prompt": "robot arm. gripper. sink. faucet. countertop. cabinet. sponge. electrical outlet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

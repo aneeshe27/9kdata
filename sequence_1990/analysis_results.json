@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_1207678/temp_image_6801.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_6801.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "table",
+    "bed",
+    "chair",
+    "poster"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bed, poster, chair, robot arm gripper, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.04648415744304657,
+        "relative_position": "closest",
+        "confidence": 0.40196332335472107
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.2235625982284546,
+        "relative_position": "middle",
+        "confidence": 0.7904211282730103
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bed",
+        "mean_depth": 0.6316815614700317,
+        "relative_position": "middle",
+        "confidence": 0.4647376835346222
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.6858465075492859,
+        "relative_position": "middle",
+        "confidence": 0.7512442469596863
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "poster",
+        "mean_depth": 0.913236141204834,
+        "relative_position": "farthest",
+        "confidence": 0.4343111217021942
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "poster",
+        "mean_depth": 0.913236141204834,
+        "relative_position": "farthest",
+        "confidence": 0.4343111217021942
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.6858465075492859,
+        "relative_position": "middle",
+        "confidence": 0.7512442469596863
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bed",
+        "mean_depth": 0.6316815614700317,
+        "relative_position": "middle",
+        "confidence": 0.4647376835346222
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.2235625982284546,
+        "relative_position": "middle",
+        "confidence": 0.7904211282730103
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.04648415744304657,
+        "relative_position": "closest",
+        "confidence": 0.40196332335472107
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.40196332335472107,
+      "bounding_box": [
+        127.91058349609375,
+        0.08668899536132812,
+        251.67324829101562,
+        107.63883972167969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04648415744304657,
+        "median_depth": 0.02407553233206272,
+        "depth_std": 0.09512442350387573,
+        "depth_min": 0.010404163971543312,
+        "depth_max": 0.9216915369033813,
+        "mask_area": 5263
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7904211282730103,
+      "bounding_box": [
+        10.773490905761719,
+        78.87667846679688,
+        200.568603515625,
+        179.9150390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2235625982284546,
+        "median_depth": 0.18046942353248596,
+        "depth_std": 0.1262686401605606,
+        "depth_min": 0.051187142729759216,
+        "depth_max": 0.6757519245147705,
+        "mask_area": 7960
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bed",
+      "confidence": 0.4647376835346222,
+      "bounding_box": [
+        231.55325317382812,
+        63.361568450927734,
+        315.8289489746094,
+        179.71463012695312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6316815614700317,
+        "median_depth": 0.6130257844924927,
+        "depth_std": 0.16582679748535156,
+        "depth_min": 0.13000212609767914,
+        "depth_max": 0.9995168447494507,
+        "mask_area": 5928
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.7512442469596863,
+      "bounding_box": [
+        176.19497680664062,
+        71.13601684570312,
+        230.9398193359375,
+        146.92990112304688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6858465075492859,
+        "median_depth": 0.6844205856323242,
+        "depth_std": 0.07739416509866714,
+        "depth_min": 0.43354859948158264,
+        "depth_max": 0.9874482750892639,
+        "mask_area": 1496
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "poster",
+      "confidence": 0.4343111217021942,
+      "bounding_box": [
+        260.0552978515625,
+        2.3033275604248047,
+        308.50115966796875,
+        28.08121681213379
+      ],
+      "depth_stats": {
+        "mean_depth": 0.913236141204834,
+        "median_depth": 0.9416859149932861,
+        "depth_std": 0.12367086112499237,
+        "depth_min": 0.1122363731265068,
+        "depth_max": 0.9601858854293823,
+        "mask_area": 876
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. tripod. table. monitor. cup. paper. chair. bed. pillow. blanket. curtain. window. poster. cable.",
+  "text_prompt": "robot arm. gripper. tripod. table. monitor. cup. paper. chair. bed. pillow. blanket. curtain. window. poster. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

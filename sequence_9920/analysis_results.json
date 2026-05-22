@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "toy car",
+    "calculator",
+    "bowl",
+    "toy car"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm gripper, calculator, bowl, toy car, toy car",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.04450744017958641,
+        "relative_position": "closest",
+        "confidence": 0.4194827377796173
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "toy car",
+        "mean_depth": 0.30262672901153564,
+        "relative_position": "middle",
+        "confidence": 0.4610280394554138
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "calculator",
+        "mean_depth": 0.36688774824142456,
+        "relative_position": "middle",
+        "confidence": 0.8850971460342407
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.39118680357933044,
+        "relative_position": "middle",
+        "confidence": 0.8044160008430481
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "toy car",
+        "mean_depth": 0.4511786997318268,
+        "relative_position": "farthest",
+        "confidence": 0.3991062045097351
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "toy car",
+        "mean_depth": 0.4511786997318268,
+        "relative_position": "farthest",
+        "confidence": 0.3991062045097351
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.39118680357933044,
+        "relative_position": "middle",
+        "confidence": 0.8044160008430481
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "calculator",
+        "mean_depth": 0.36688774824142456,
+        "relative_position": "middle",
+        "confidence": 0.8850971460342407
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "toy car",
+        "mean_depth": 0.30262672901153564,
+        "relative_position": "middle",
+        "confidence": 0.4610280394554138
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.04450744017958641,
+        "relative_position": "closest",
+        "confidence": 0.4194827377796173
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm gripper",
+      "confidence": 0.4194827377796173,
+      "bounding_box": [
+        191.0223388671875,
+        -0.030628204345703125,
+        315.936767578125,
+        78.56661987304688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04450744017958641,
+        "median_depth": 0.010912572965025902,
+        "depth_std": 0.10986387729644775,
+        "depth_min": 0.0,
+        "depth_max": 0.8931282162666321,
+        "mask_area": 3186
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "toy car",
+      "confidence": 0.4610280394554138,
+      "bounding_box": [
+        144.99452209472656,
+        131.16246032714844,
+        176.7239532470703,
+        153.8362274169922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30262672901153564,
+        "median_depth": 0.3041526973247528,
+        "depth_std": 0.009473508223891258,
+        "depth_min": 0.27802523970603943,
+        "depth_max": 0.32277461886405945,
+        "mask_area": 461
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "calculator",
+      "confidence": 0.8850971460342407,
+      "bounding_box": [
+        194.43951416015625,
+        99.81561279296875,
+        235.71612548828125,
+        133.2069549560547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.36688774824142456,
+        "median_depth": 0.36372703313827515,
+        "depth_std": 0.022116905078291893,
+        "depth_min": 0.3323792517185211,
+        "depth_max": 0.4560587704181671,
+        "mask_area": 689
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bowl",
+      "confidence": 0.8044160008430481,
+      "bounding_box": [
+        144.6645965576172,
+        87.44432830810547,
+        187.57545471191406,
+        118.63896942138672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39118680357933044,
+        "median_depth": 0.4009179174900055,
+        "depth_std": 0.03843027725815773,
+        "depth_min": 0.3115439713001251,
+        "depth_max": 0.4564123749732971,
+        "mask_area": 1038
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "toy car",
+      "confidence": 0.3991062045097351,
+      "bounding_box": [
+        194.56256103515625,
+        71.46224975585938,
+        239.86740112304688,
+        97.90676879882812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4511786997318268,
+        "median_depth": 0.4476916193962097,
+        "depth_std": 0.04672159627079964,
+        "depth_min": 0.0801239162683487,
+        "depth_max": 0.6576802134513855,
+        "mask_area": 846
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. spoon. calculator. toy car. robot arm. gripper. table.",
+  "text_prompt": "bowl. spoon. calculator. toy car. robot arm. gripper. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "microwave",
+    "cabinet shelf",
+    "bottle",
+    "sink"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: microwave, sink, bottle, cabinet shelf, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.04186380282044411,
+        "relative_position": "closest",
+        "confidence": 0.6090736389160156
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "microwave",
+        "mean_depth": 0.5579940676689148,
+        "relative_position": "middle",
+        "confidence": 0.7205645442008972
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet shelf",
+        "mean_depth": 0.6180641055107117,
+        "relative_position": "middle",
+        "confidence": 0.35044795274734497
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.7866680026054382,
+        "relative_position": "middle",
+        "confidence": 0.6086249947547913
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.847540020942688,
+        "relative_position": "farthest",
+        "confidence": 0.8286681175231934
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.847540020942688,
+        "relative_position": "farthest",
+        "confidence": 0.8286681175231934
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.7866680026054382,
+        "relative_position": "middle",
+        "confidence": 0.6086249947547913
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet shelf",
+        "mean_depth": 0.6180641055107117,
+        "relative_position": "middle",
+        "confidence": 0.35044795274734497
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "microwave",
+        "mean_depth": 0.5579940676689148,
+        "relative_position": "middle",
+        "confidence": 0.7205645442008972
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.04186380282044411,
+        "relative_position": "closest",
+        "confidence": 0.6090736389160156
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.6090736389160156,
+      "bounding_box": [
+        153.63888549804688,
+        27.114139556884766,
+        316.033935546875,
+        100.50933837890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04186380282044411,
+        "median_depth": 0.020101651549339294,
+        "depth_std": 0.0726209357380867,
+        "depth_min": 0.0032553598284721375,
+        "depth_max": 0.7589688301086426,
+        "mask_area": 5888
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "microwave",
+      "confidence": 0.7205645442008972,
+      "bounding_box": [
+        94.8048324584961,
+        123.1396713256836,
+        160.67489624023438,
+        168.3621063232422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5579940676689148,
+        "median_depth": 0.5548924207687378,
+        "depth_std": 0.028892993927001953,
+        "depth_min": 0.4691036641597748,
+        "depth_max": 0.7091702818870544,
+        "mask_area": 2075
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet shelf",
+      "confidence": 0.35044795274734497,
+      "bounding_box": [
+        89.62419128417969,
+        -0.017902374267578125,
+        160.93116760253906,
+        119.73004150390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6180641055107117,
+        "median_depth": 0.619445264339447,
+        "depth_std": 0.026950975880026817,
+        "depth_min": 0.16574256122112274,
+        "depth_max": 0.6630752682685852,
+        "mask_area": 6282
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bottle",
+      "confidence": 0.6086249947547913,
+      "bounding_box": [
+        203.58082580566406,
+        133.22064208984375,
+        210.7947235107422,
+        155.21697998046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7866680026054382,
+        "median_depth": 0.7714544534683228,
+        "depth_std": 0.0399673692882061,
+        "depth_min": 0.7365078330039978,
+        "depth_max": 0.863211989402771,
+        "mask_area": 122
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.8286681175231934,
+      "bounding_box": [
+        210.75753784179688,
+        139.48504638671875,
+        316.0607604980469,
+        177.71954345703125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.847540020942688,
+        "median_depth": 0.8788433074951172,
+        "depth_std": 0.09149559587240219,
+        "depth_min": 0.5607207417488098,
+        "depth_max": 0.9829380512237549,
+        "mask_area": 2813
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. shelf. box. container. microwave. bottle. sink. faucet. window. countertop.",
+  "text_prompt": "robot arm. gripper. cabinet. shelf. box. container. microwave. bottle. sink. faucet. window. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

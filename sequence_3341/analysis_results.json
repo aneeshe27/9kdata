@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cup",
+    "bowl",
+    "spoon",
+    "bowl",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bowl, cup, box, bowl, spoon",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.022875886410474777,
+        "relative_position": "closest",
+        "confidence": 0.5172759890556335
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.06993864476680756,
+        "relative_position": "middle",
+        "confidence": 0.555608332157135
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "spoon",
+        "mean_depth": 0.07173967361450195,
+        "relative_position": "middle",
+        "confidence": 0.4685516655445099
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.07732376456260681,
+        "relative_position": "middle",
+        "confidence": 0.6513097286224365
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.1354047954082489,
+        "relative_position": "farthest",
+        "confidence": 0.6229506731033325
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.1354047954082489,
+        "relative_position": "farthest",
+        "confidence": 0.6229506731033325
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.07732376456260681,
+        "relative_position": "middle",
+        "confidence": 0.6513097286224365
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "spoon",
+        "mean_depth": 0.07173967361450195,
+        "relative_position": "middle",
+        "confidence": 0.4685516655445099
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.06993864476680756,
+        "relative_position": "middle",
+        "confidence": 0.555608332157135
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.022875886410474777,
+        "relative_position": "closest",
+        "confidence": 0.5172759890556335
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cup",
+      "confidence": 0.5172759890556335,
+      "bounding_box": [
+        76.63077545166016,
+        107.96621704101562,
+        127.2276840209961,
+        179.98226928710938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022875886410474777,
+        "median_depth": 0.01873709261417389,
+        "depth_std": 0.012918549589812756,
+        "depth_min": 0.01589527353644371,
+        "depth_max": 0.12232500314712524,
+        "mask_area": 2834
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "bowl",
+      "confidence": 0.555608332157135,
+      "bounding_box": [
+        156.83856201171875,
+        113.33038330078125,
+        190.24658203125,
+        138.42868041992188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06993864476680756,
+        "median_depth": 0.05986135080456734,
+        "depth_std": 0.02726334147155285,
+        "depth_min": 0.055315617471933365,
+        "depth_max": 0.17671574652194977,
+        "mask_area": 592
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "spoon",
+      "confidence": 0.4685516655445099,
+      "bounding_box": [
+        183.8375701904297,
+        129.6893310546875,
+        233.32249450683594,
+        139.2001953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07173967361450195,
+        "median_depth": 0.07154124975204468,
+        "depth_std": 0.004701603669673204,
+        "depth_min": 0.05981096252799034,
+        "depth_max": 0.08289239555597305,
+        "mask_area": 302
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.6513097286224365,
+      "bounding_box": [
+        124.4166259765625,
+        110.98524475097656,
+        154.17535400390625,
+        139.6126708984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07732376456260681,
+        "median_depth": 0.07487726956605911,
+        "depth_std": 0.010611077770590782,
+        "depth_min": 0.068486288189888,
+        "depth_max": 0.14059484004974365,
+        "mask_area": 649
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "box",
+      "confidence": 0.6229506731033325,
+      "bounding_box": [
+        199.92645263671875,
+        78.49513244628906,
+        247.34164428710938,
+        114.89581298828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1354047954082489,
+        "median_depth": 0.13885626196861267,
+        "depth_std": 0.030172882601618767,
+        "depth_min": 0.05320318788290024,
+        "depth_max": 0.5240647792816162,
+        "mask_area": 1251
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. bowl. spoon. robot arm. gripper. box. washing machine.",
+  "text_prompt": "cup. bowl. spoon. robot arm. gripper. box. washing machine.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

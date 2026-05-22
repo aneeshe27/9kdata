@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "stove",
+    "sink",
+    "faucet",
+    "cutting board",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, chair, stove, cutting board, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "stove",
+        "mean_depth": 0.029251959174871445,
+        "relative_position": "closest",
+        "confidence": 0.5627626180648804
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.08093365281820297,
+        "relative_position": "middle",
+        "confidence": 0.3625944256782532
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.09500400722026825,
+        "relative_position": "middle",
+        "confidence": 0.381829172372818
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cutting board",
+        "mean_depth": 0.17606395483016968,
+        "relative_position": "middle",
+        "confidence": 0.6633150577545166
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.3040274679660797,
+        "relative_position": "farthest",
+        "confidence": 0.35275790095329285
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.3040274679660797,
+        "relative_position": "farthest",
+        "confidence": 0.35275790095329285
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cutting board",
+        "mean_depth": 0.17606395483016968,
+        "relative_position": "middle",
+        "confidence": 0.6633150577545166
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.09500400722026825,
+        "relative_position": "middle",
+        "confidence": 0.381829172372818
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.08093365281820297,
+        "relative_position": "middle",
+        "confidence": 0.3625944256782532
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "stove",
+        "mean_depth": 0.029251959174871445,
+        "relative_position": "closest",
+        "confidence": 0.5627626180648804
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "stove",
+      "confidence": 0.5627626180648804,
+      "bounding_box": [
+        262.24755859375,
+        114.40672302246094,
+        315.9739990234375,
+        179.46522521972656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.029251959174871445,
+        "median_depth": 0.02827184461057186,
+        "depth_std": 0.009354647248983383,
+        "depth_min": 0.013194728642702103,
+        "depth_max": 0.04818851500749588,
+        "mask_area": 1099
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "sink",
+      "confidence": 0.3625944256782532,
+      "bounding_box": [
+        164.01983642578125,
+        87.86293029785156,
+        254.79342651367188,
+        129.50430297851562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08093365281820297,
+        "median_depth": 0.07405504584312439,
+        "depth_std": 0.022596435621380806,
+        "depth_min": 0.048484042286872864,
+        "depth_max": 0.13051609694957733,
+        "mask_area": 1455
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "faucet",
+      "confidence": 0.381829172372818,
+      "bounding_box": [
+        172.74179077148438,
+        53.20220947265625,
+        210.3238525390625,
+        108.01927185058594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09500400722026825,
+        "median_depth": 0.08186403661966324,
+        "depth_std": 0.03722865507006645,
+        "depth_min": 0.048795800656080246,
+        "depth_max": 0.4248926341533661,
+        "mask_area": 699
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cutting board",
+      "confidence": 0.6633150577545166,
+      "bounding_box": [
+        88.53878784179688,
+        79.09217834472656,
+        166.6687774658203,
+        127.44111633300781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17606395483016968,
+        "median_depth": 0.1555584818124771,
+        "depth_std": 0.06838040798902512,
+        "depth_min": 0.09009775519371033,
+        "depth_max": 0.43249863386154175,
+        "mask_area": 2005
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.35275790095329285,
+      "bounding_box": [
+        37.11616134643555,
+        7.717903137207031,
+        104.54006958007812,
+        97.25274658203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3040274679660797,
+        "median_depth": 0.27826544642448425,
+        "depth_std": 0.1080227717757225,
+        "depth_min": 0.18881575763225555,
+        "depth_max": 0.938493549823761,
+        "mask_area": 1735
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "plate. garlic. cutting board. sponge. sink. faucet. countertop. stove. cabinet. chair. robot arm. gripper. clamp.",
+  "text_prompt": "plate. garlic. cutting board. sponge. sink. faucet. countertop. stove. cabinet. chair. robot arm. gripper. clamp.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

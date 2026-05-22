@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bottle",
+    "sink",
+    "faucet",
+    "paper",
+    "paper"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: paper, sink, bottle, faucet, paper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.2965775728225708,
+        "relative_position": "closest",
+        "confidence": 0.5898637771606445
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.3295362889766693,
+        "relative_position": "middle",
+        "confidence": 0.8707852959632874
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.40622368454933167,
+        "relative_position": "middle",
+        "confidence": 0.4127250909805298
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "paper",
+        "mean_depth": 0.6361550092697144,
+        "relative_position": "middle",
+        "confidence": 0.4523521363735199
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "paper",
+        "mean_depth": 0.7139994502067566,
+        "relative_position": "farthest",
+        "confidence": 0.36338362097740173
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "paper",
+        "mean_depth": 0.7139994502067566,
+        "relative_position": "farthest",
+        "confidence": 0.36338362097740173
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "paper",
+        "mean_depth": 0.6361550092697144,
+        "relative_position": "middle",
+        "confidence": 0.4523521363735199
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.40622368454933167,
+        "relative_position": "middle",
+        "confidence": 0.4127250909805298
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.3295362889766693,
+        "relative_position": "middle",
+        "confidence": 0.8707852959632874
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.2965775728225708,
+        "relative_position": "closest",
+        "confidence": 0.5898637771606445
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.5898637771606445,
+      "bounding_box": [
+        93.7276611328125,
+        -0.06621551513671875,
+        133.83811950683594,
+        83.65170288085938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2965775728225708,
+        "median_depth": 0.2924612760543823,
+        "depth_std": 0.0365995392203331,
+        "depth_min": 0.2388163059949875,
+        "depth_max": 0.4294453561306,
+        "mask_area": 2058
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.8707852959632874,
+      "bounding_box": [
+        155.47506713867188,
+        58.835205078125,
+        286.2434387207031,
+        128.80136108398438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3295362889766693,
+        "median_depth": 0.3259431719779968,
+        "depth_std": 0.028989696875214577,
+        "depth_min": 0.25997158885002136,
+        "depth_max": 0.41709741950035095,
+        "mask_area": 5249
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "faucet",
+      "confidence": 0.4127250909805298,
+      "bounding_box": [
+        153.71322631835938,
+        20.672821044921875,
+        242.56790161132812,
+        72.94986724853516
+      ],
+      "depth_stats": {
+        "mean_depth": 0.40622368454933167,
+        "median_depth": 0.39633193612098694,
+        "depth_std": 0.04153158888220787,
+        "depth_min": 0.33975645899772644,
+        "depth_max": 0.6354097127914429,
+        "mask_area": 1037
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "paper",
+      "confidence": 0.4523521363735199,
+      "bounding_box": [
+        223.00633239746094,
+        36.42043685913086,
+        285.87347412109375,
+        51.02633285522461
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6361550092697144,
+        "median_depth": 0.6331303119659424,
+        "depth_std": 0.05599174275994301,
+        "depth_min": 0.531644344329834,
+        "depth_max": 0.771568238735199,
+        "mask_area": 466
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "paper",
+      "confidence": 0.36338362097740173,
+      "bounding_box": [
+        285.5783386230469,
+        30.648958206176758,
+        315.9433288574219,
+        43.92871856689453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7139994502067566,
+        "median_depth": 0.7137571573257446,
+        "depth_std": 0.07821577787399292,
+        "depth_min": 0.5761106610298157,
+        "depth_max": 0.8767587542533875,
+        "mask_area": 287
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "countertop. sink. faucet. bottle. cup. paper.",
+  "text_prompt": "countertop. sink. faucet. bottle. cup. paper.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

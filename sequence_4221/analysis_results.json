@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "container",
+    "power outlet",
+    "bowl cup",
+    "shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: shelf, container, power outlet, robot arm, bowl cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.022000662982463837,
+        "relative_position": "closest",
+        "confidence": 0.367216020822525
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.06225757300853729,
+        "relative_position": "middle",
+        "confidence": 0.5506797432899475
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.17611759901046753,
+        "relative_position": "middle",
+        "confidence": 0.8028243184089661
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "bowl cup",
+        "mean_depth": 0.22767959535121918,
+        "relative_position": "middle",
+        "confidence": 0.5090355277061462
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.2360626459121704,
+        "relative_position": "farthest",
+        "confidence": 0.6043840050697327
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.2360626459121704,
+        "relative_position": "farthest",
+        "confidence": 0.6043840050697327
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "bowl cup",
+        "mean_depth": 0.22767959535121918,
+        "relative_position": "middle",
+        "confidence": 0.5090355277061462
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.17611759901046753,
+        "relative_position": "middle",
+        "confidence": 0.8028243184089661
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.06225757300853729,
+        "relative_position": "middle",
+        "confidence": 0.5506797432899475
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.022000662982463837,
+        "relative_position": "closest",
+        "confidence": 0.367216020822525
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.367216020822525,
+      "bounding_box": [
+        175.05999755859375,
+        0.07093048095703125,
+        296.787841796875,
+        82.3040771484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022000662982463837,
+        "median_depth": 0.007187852635979652,
+        "depth_std": 0.07862678915262222,
+        "depth_min": 0.0,
+        "depth_max": 0.862708330154419,
+        "mask_area": 2878
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "container",
+      "confidence": 0.5506797432899475,
+      "bounding_box": [
+        0.01324462890625,
+        64.94097137451172,
+        68.74018096923828,
+        170.99789428710938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06225757300853729,
+        "median_depth": 0.060427408665418625,
+        "depth_std": 0.010793502442538738,
+        "depth_min": 0.05017708241939545,
+        "depth_max": 0.15432801842689514,
+        "mask_area": 5109
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "power outlet",
+      "confidence": 0.8028243184089661,
+      "bounding_box": [
+        48.643157958984375,
+        29.8983211517334,
+        74.58250427246094,
+        59.71205139160156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17611759901046753,
+        "median_depth": 0.17530526220798492,
+        "depth_std": 0.008638155646622181,
+        "depth_min": 0.16059273481369019,
+        "depth_max": 0.2003645896911621,
+        "mask_area": 537
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bowl cup",
+      "confidence": 0.5090355277061462,
+      "bounding_box": [
+        98.1760025024414,
+        49.536155700683594,
+        113.05745697021484,
+        60.74009704589844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22767959535121918,
+        "median_depth": 0.22658731043338776,
+        "depth_std": 0.005778706632554531,
+        "depth_min": 0.21992923319339752,
+        "depth_max": 0.24626024067401886,
+        "mask_area": 139
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "shelf",
+      "confidence": 0.6043840050697327,
+      "bounding_box": [
+        90.84703063964844,
+        55.35270690917969,
+        146.92044067382812,
+        101.13230895996094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2360626459121704,
+        "median_depth": 0.23027025163173676,
+        "depth_std": 0.028201546519994736,
+        "depth_min": 0.17892538011074066,
+        "depth_max": 0.3177459239959717,
+        "mask_area": 1808
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. robot arm. gripper. countertop. cup. container. shelf. power outlet.",
+  "text_prompt": "bowl. robot arm. gripper. countertop. cup. container. shelf. power outlet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

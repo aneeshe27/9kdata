@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "bookshelf",
+    "robot arm gripper",
+    "window",
+    "table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm gripper, window, table, table, bookshelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.08527712523937225,
+        "relative_position": "closest",
+        "confidence": 0.6310356259346008
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "bookshelf",
+        "mean_depth": 0.11535399407148361,
+        "relative_position": "middle",
+        "confidence": 0.3765421509742737
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.23266907036304474,
+        "relative_position": "middle",
+        "confidence": 0.35602012276649475
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.24733154475688934,
+        "relative_position": "middle",
+        "confidence": 0.5641790628433228
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.28566041588783264,
+        "relative_position": "farthest",
+        "confidence": 0.4612720012664795
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.28566041588783264,
+        "relative_position": "farthest",
+        "confidence": 0.4612720012664795
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.24733154475688934,
+        "relative_position": "middle",
+        "confidence": 0.5641790628433228
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.23266907036304474,
+        "relative_position": "middle",
+        "confidence": 0.35602012276649475
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "bookshelf",
+        "mean_depth": 0.11535399407148361,
+        "relative_position": "middle",
+        "confidence": 0.3765421509742737
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.08527712523937225,
+        "relative_position": "closest",
+        "confidence": 0.6310356259346008
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.6310356259346008,
+      "bounding_box": [
+        90.4185562133789,
+        77.93022155761719,
+        270.4583435058594,
+        179.88072204589844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08527712523937225,
+        "median_depth": 0.06839630007743835,
+        "depth_std": 0.07211253046989441,
+        "depth_min": 0.0,
+        "depth_max": 0.46718305349349976,
+        "mask_area": 10705
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "bookshelf",
+      "confidence": 0.3765421509742737,
+      "bounding_box": [
+        277.1434020996094,
+        86.66810607910156,
+        315.9663391113281,
+        179.9197235107422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11535399407148361,
+        "median_depth": 0.11142393946647644,
+        "depth_std": 0.04620960354804993,
+        "depth_min": 0.0047342246398329735,
+        "depth_max": 0.21820512413978577,
+        "mask_area": 2110
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.35602012276649475,
+      "bounding_box": [
+        196.9549560546875,
+        1.3970375061035156,
+        290.1429748535156,
+        84.84579467773438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23266907036304474,
+        "median_depth": 0.2108115702867508,
+        "depth_std": 0.12581250071525574,
+        "depth_min": 0.08852101117372513,
+        "depth_max": 0.7955714464187622,
+        "mask_area": 4484
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "window",
+      "confidence": 0.5641790628433228,
+      "bounding_box": [
+        281.58062744140625,
+        0.06719970703125,
+        316.0025634765625,
+        83.62217712402344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24733154475688934,
+        "median_depth": 0.2415582537651062,
+        "depth_std": 0.044034019112586975,
+        "depth_min": 0.17166796326637268,
+        "depth_max": 0.3483119606971741,
+        "mask_area": 1604
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.4612720012664795,
+      "bounding_box": [
+        0.01937103271484375,
+        61.471351623535156,
+        102.28318786621094,
+        153.3634033203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28566041588783264,
+        "median_depth": 0.27105697989463806,
+        "depth_std": 0.08905594050884247,
+        "depth_min": 0.16871339082717896,
+        "depth_max": 0.7824168801307678,
+        "mask_area": 2611
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. cup. bowl. container. tray. box. sponge. plant. lamp. bookshelf. books. sofa. window.",
+  "text_prompt": "table. robot arm. gripper. cup. bowl. container. tray. box. sponge. plant. lamp. bookshelf. books. sofa. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "microwave",
+    "monitor",
+    "chair",
+    "desk"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: microwave, robot arm, desk, monitor, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.026606570929288864,
+        "relative_position": "closest",
+        "confidence": 0.3691747784614563
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "microwave",
+        "mean_depth": 0.08993987739086151,
+        "relative_position": "middle",
+        "confidence": 0.43919846415519714
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.7319639921188354,
+        "relative_position": "middle",
+        "confidence": 0.5848214626312256
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.7741554975509644,
+        "relative_position": "middle",
+        "confidence": 0.5597733855247498
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "desk",
+        "mean_depth": 0.8568232655525208,
+        "relative_position": "farthest",
+        "confidence": 0.3541729152202606
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "desk",
+        "mean_depth": 0.8568232655525208,
+        "relative_position": "farthest",
+        "confidence": 0.3541729152202606
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.7741554975509644,
+        "relative_position": "middle",
+        "confidence": 0.5597733855247498
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.7319639921188354,
+        "relative_position": "middle",
+        "confidence": 0.5848214626312256
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "microwave",
+        "mean_depth": 0.08993987739086151,
+        "relative_position": "middle",
+        "confidence": 0.43919846415519714
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.026606570929288864,
+        "relative_position": "closest",
+        "confidence": 0.3691747784614563
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3691747784614563,
+      "bounding_box": [
+        178.05694580078125,
+        0.11877059936523438,
+        262.38470458984375,
+        64.73672485351562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.026606570929288864,
+        "median_depth": 0.003672046586871147,
+        "depth_std": 0.07535278052091599,
+        "depth_min": 0.0,
+        "depth_max": 0.6260266304016113,
+        "mask_area": 1773
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "microwave",
+      "confidence": 0.43919846415519714,
+      "bounding_box": [
+        34.100677490234375,
+        51.19951629638672,
+        197.04983520507812,
+        179.63201904296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08993987739086151,
+        "median_depth": 0.07700300216674805,
+        "depth_std": 0.07264859974384308,
+        "depth_min": 0.028314737603068352,
+        "depth_max": 0.8605627417564392,
+        "mask_area": 12529
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "monitor",
+      "confidence": 0.5848214626312256,
+      "bounding_box": [
+        54.774436950683594,
+        20.782758712768555,
+        86.68561553955078,
+        43.71771240234375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7319639921188354,
+        "median_depth": 0.7348682880401611,
+        "depth_std": 0.026806019246578217,
+        "depth_min": 0.6772393584251404,
+        "depth_max": 0.7786222100257874,
+        "mask_area": 524
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.5597733855247498,
+      "bounding_box": [
+        70.10609436035156,
+        23.529239654541016,
+        114.3504638671875,
+        55.0694694519043
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7741554975509644,
+        "median_depth": 0.7766819000244141,
+        "depth_std": 0.02097037434577942,
+        "depth_min": 0.723018229007721,
+        "depth_max": 0.8150964975357056,
+        "mask_area": 619
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "desk",
+      "confidence": 0.3541729152202606,
+      "bounding_box": [
+        113.07927703857422,
+        37.744972229003906,
+        159.8214111328125,
+        58.34728240966797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8568232655525208,
+        "median_depth": 0.8585391044616699,
+        "depth_std": 0.01055139023810625,
+        "depth_min": 0.8211947083473206,
+        "depth_max": 0.873704731464386,
+        "mask_area": 718
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "microwave. robot arm. robot gripper. table. ruler. chair. monitor. desk.",
+  "text_prompt": "microwave. robot arm. robot gripper. table. ruler. chair. monitor. desk.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

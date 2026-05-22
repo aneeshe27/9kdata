@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "container",
+    "faucet robot arm",
+    "drain",
+    "sponge cloth",
+    "dish soap bottle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: dish soap bottle, container, drain, sponge cloth, faucet robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "container",
+        "mean_depth": 0.5045261383056641,
+        "relative_position": "closest",
+        "confidence": 0.7116553783416748
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "faucet robot arm",
+        "mean_depth": 0.7912021279335022,
+        "relative_position": "middle",
+        "confidence": 0.3605271279811859
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "drain",
+        "mean_depth": 0.7999464869499207,
+        "relative_position": "middle",
+        "confidence": 0.5754079222679138
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "sponge cloth",
+        "mean_depth": 0.835440456867218,
+        "relative_position": "middle",
+        "confidence": 0.49044936895370483
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "dish soap bottle",
+        "mean_depth": 0.8468955159187317,
+        "relative_position": "farthest",
+        "confidence": 0.7672414183616638
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "dish soap bottle",
+        "mean_depth": 0.8468955159187317,
+        "relative_position": "farthest",
+        "confidence": 0.7672414183616638
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "sponge cloth",
+        "mean_depth": 0.835440456867218,
+        "relative_position": "middle",
+        "confidence": 0.49044936895370483
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "drain",
+        "mean_depth": 0.7999464869499207,
+        "relative_position": "middle",
+        "confidence": 0.5754079222679138
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "faucet robot arm",
+        "mean_depth": 0.7912021279335022,
+        "relative_position": "middle",
+        "confidence": 0.3605271279811859
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "container",
+        "mean_depth": 0.5045261383056641,
+        "relative_position": "closest",
+        "confidence": 0.7116553783416748
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "container",
+      "confidence": 0.7116553783416748,
+      "bounding_box": [
+        237.02755737304688,
+        93.73970794677734,
+        310.9551696777344,
+        137.11241149902344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5045261383056641,
+        "median_depth": 0.48942315578460693,
+        "depth_std": 0.07228827476501465,
+        "depth_min": 0.42241042852401733,
+        "depth_max": 0.9244726896286011,
+        "mask_area": 1998
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "faucet robot arm",
+      "confidence": 0.3605271279811859,
+      "bounding_box": [
+        168.64547729492188,
+        22.63665008544922,
+        196.04928588867188,
+        107.59407806396484
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7912021279335022,
+        "median_depth": 0.814178466796875,
+        "depth_std": 0.07662498950958252,
+        "depth_min": 0.6289352774620056,
+        "depth_max": 0.949195384979248,
+        "mask_area": 921
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "drain",
+      "confidence": 0.5754079222679138,
+      "bounding_box": [
+        184.88893127441406,
+        143.49325561523438,
+        206.99986267089844,
+        159.26028442382812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7999464869499207,
+        "median_depth": 0.8004544377326965,
+        "depth_std": 0.011046613566577435,
+        "depth_min": 0.7777289152145386,
+        "depth_max": 0.8207785487174988,
+        "mask_area": 195
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "sponge cloth",
+      "confidence": 0.49044936895370483,
+      "bounding_box": [
+        115.28672790527344,
+        99.30270385742188,
+        136.60968017578125,
+        114.86149597167969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.835440456867218,
+        "median_depth": 0.8381289839744568,
+        "depth_std": 0.017929982393980026,
+        "depth_min": 0.7990552186965942,
+        "depth_max": 0.8629103302955627,
+        "mask_area": 211
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "dish soap bottle",
+      "confidence": 0.7672414183616638,
+      "bounding_box": [
+        130.66835021972656,
+        84.022705078125,
+        144.1575164794922,
+        108.911376953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8468955159187317,
+        "median_depth": 0.8484819531440735,
+        "depth_std": 0.008631485514342785,
+        "depth_min": 0.8266124129295349,
+        "depth_max": 0.8685834407806396,
+        "mask_area": 175
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. faucet. sponge. cleaning cloth. container. robot arm. gripper. dish soap bottle. countertop. backsplash. drain. dish rack.",
+  "text_prompt": "sink. faucet. sponge. cleaning cloth. container. robot arm. gripper. dish soap bottle. countertop. backsplash. drain. dish rack.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

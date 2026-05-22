@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "cabinet",
+    "bottle",
+    "sink",
+    "napkin holder"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bottle, robot arm gripper, cabinet, napkin holder, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.11458758264780045,
+        "relative_position": "closest",
+        "confidence": 0.3998284637928009
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.11877290904521942,
+        "relative_position": "middle",
+        "confidence": 0.3808697760105133
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.18727222084999084,
+        "relative_position": "middle",
+        "confidence": 0.44967812299728394
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.20611833035945892,
+        "relative_position": "middle",
+        "confidence": 0.8197168707847595
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "napkin holder",
+        "mean_depth": 0.22096779942512512,
+        "relative_position": "farthest",
+        "confidence": 0.4116962254047394
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "napkin holder",
+        "mean_depth": 0.22096779942512512,
+        "relative_position": "farthest",
+        "confidence": 0.4116962254047394
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.20611833035945892,
+        "relative_position": "middle",
+        "confidence": 0.8197168707847595
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.18727222084999084,
+        "relative_position": "middle",
+        "confidence": 0.44967812299728394
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.11877290904521942,
+        "relative_position": "middle",
+        "confidence": 0.3808697760105133
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.11458758264780045,
+        "relative_position": "closest",
+        "confidence": 0.3998284637928009
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm gripper",
+      "confidence": 0.3998284637928009,
+      "bounding_box": [
+        148.33172607421875,
+        0.14081573486328125,
+        291.9540710449219,
+        84.67435455322266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11458758264780045,
+        "median_depth": 0.0985044538974762,
+        "depth_std": 0.07612303644418716,
+        "depth_min": 0.05024276673793793,
+        "depth_max": 0.8240136504173279,
+        "mask_area": 6164
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3808697760105133,
+      "bounding_box": [
+        0.02034759521484375,
+        86.90923309326172,
+        143.92929077148438,
+        179.999267578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11877290904521942,
+        "median_depth": 0.11027462035417557,
+        "depth_std": 0.07147499918937683,
+        "depth_min": 0.003255836432799697,
+        "depth_max": 0.32879242300987244,
+        "mask_area": 8185
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.44967812299728394,
+      "bounding_box": [
+        44.377174377441406,
+        0.05266380310058594,
+        74.39305114746094,
+        41.43431854248047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18727222084999084,
+        "median_depth": 0.18543827533721924,
+        "depth_std": 0.014373655430972576,
+        "depth_min": 0.16354109346866608,
+        "depth_max": 0.21097338199615479,
+        "mask_area": 444
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.8197168707847595,
+      "bounding_box": [
+        0.032817840576171875,
+        54.206825256347656,
+        46.27338409423828,
+        118.68514251708984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20611833035945892,
+        "median_depth": 0.2009013444185257,
+        "depth_std": 0.021114690229296684,
+        "depth_min": 0.12153322249650955,
+        "depth_max": 0.271189421415329,
+        "mask_area": 1243
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "napkin holder",
+      "confidence": 0.4116962254047394,
+      "bounding_box": [
+        63.890785217285156,
+        0.5100040435791016,
+        149.49771118164062,
+        39.39940643310547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22096779942512512,
+        "median_depth": 0.2192378044128418,
+        "depth_std": 0.016939565539360046,
+        "depth_min": 0.18246245384216309,
+        "depth_max": 0.25517717003822327,
+        "mask_area": 2303
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. sink. countertop. cabinet. robot arm. gripper. power cable. napkin holder. bottle. floor.",
+  "text_prompt": "cup. sink. countertop. cabinet. robot arm. gripper. power cable. napkin holder. bottle. floor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

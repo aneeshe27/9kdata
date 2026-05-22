@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "robot arm",
+    "laptop",
+    "curtain",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: laptop, cloth, curtain, chair, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cloth",
+        "mean_depth": 0.02084093913435936,
+        "relative_position": "closest",
+        "confidence": 0.4083292782306671
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.04772092401981354,
+        "relative_position": "middle",
+        "confidence": 0.6738436222076416
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "laptop",
+        "mean_depth": 0.32160648703575134,
+        "relative_position": "middle",
+        "confidence": 0.5477732419967651
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "curtain",
+        "mean_depth": 0.37597277760505676,
+        "relative_position": "middle",
+        "confidence": 0.673173725605011
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.8354375958442688,
+        "relative_position": "farthest",
+        "confidence": 0.6553224325180054
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.8354375958442688,
+        "relative_position": "farthest",
+        "confidence": 0.6553224325180054
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "curtain",
+        "mean_depth": 0.37597277760505676,
+        "relative_position": "middle",
+        "confidence": 0.673173725605011
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "laptop",
+        "mean_depth": 0.32160648703575134,
+        "relative_position": "middle",
+        "confidence": 0.5477732419967651
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.04772092401981354,
+        "relative_position": "middle",
+        "confidence": 0.6738436222076416
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cloth",
+        "mean_depth": 0.02084093913435936,
+        "relative_position": "closest",
+        "confidence": 0.4083292782306671
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "cloth",
+      "confidence": 0.4083292782306671,
+      "bounding_box": [
+        0.063232421875,
+        81.73967742919922,
+        136.1390380859375,
+        179.9324951171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02084093913435936,
+        "median_depth": 0.01313399150967598,
+        "depth_std": 0.035069145262241364,
+        "depth_min": 0.0015662029618397355,
+        "depth_max": 0.5316624045372009,
+        "mask_area": 9688
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.6738436222076416,
+      "bounding_box": [
+        149.92323303222656,
+        12.896644592285156,
+        186.0420379638672,
+        110.97550201416016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04772092401981354,
+        "median_depth": 0.04343825951218605,
+        "depth_std": 0.028285661712288857,
+        "depth_min": 0.02300560660660267,
+        "depth_max": 0.34800946712493896,
+        "mask_area": 2235
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "laptop",
+      "confidence": 0.5477732419967651,
+      "bounding_box": [
+        265.8396301269531,
+        25.051713943481445,
+        315.9928894042969,
+        72.74984741210938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.32160648703575134,
+        "median_depth": 0.3148272931575775,
+        "depth_std": 0.04146555811166763,
+        "depth_min": 0.1202733963727951,
+        "depth_max": 0.5990779399871826,
+        "mask_area": 1586
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "curtain",
+      "confidence": 0.673173725605011,
+      "bounding_box": [
+        0.04305267333984375,
+        0.07895278930664062,
+        80.6700439453125,
+        99.716552734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.37597277760505676,
+        "median_depth": 0.3711569309234619,
+        "depth_std": 0.04771379008889198,
+        "depth_min": 0.1308678239583969,
+        "depth_max": 0.6208138465881348,
+        "mask_area": 4435
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.6553224325180054,
+      "bounding_box": [
+        76.62671661376953,
+        25.54123306274414,
+        106.8777847290039,
+        72.66972351074219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8354375958442688,
+        "median_depth": 0.8332378268241882,
+        "depth_std": 0.035385020077228546,
+        "depth_min": 0.7612004280090332,
+        "depth_max": 0.9586077332496643,
+        "mask_area": 483
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cable. table. laptop. chair. curtain. power strip. plug. cloth. container. screwdriver.",
+  "text_prompt": "robot arm. gripper. cable. table. laptop. chair. curtain. power strip. plug. cloth. container. screwdriver.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

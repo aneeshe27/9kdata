@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "monitor",
+    "robot arm gripper",
+    "cabinet shelf",
+    "countertop",
+    "recycling bin"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: countertop, cabinet shelf, monitor, robot arm gripper, recycling bin",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.04473207890987396,
+        "relative_position": "closest",
+        "confidence": 0.6626026630401611
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.1334201544523239,
+        "relative_position": "middle",
+        "confidence": 0.405770868062973
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet shelf",
+        "mean_depth": 0.3992707133293152,
+        "relative_position": "middle",
+        "confidence": 0.37704089283943176
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.5858080387115479,
+        "relative_position": "middle",
+        "confidence": 0.44951316714286804
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "recycling bin",
+        "mean_depth": 0.7867058515548706,
+        "relative_position": "farthest",
+        "confidence": 0.7481133341789246
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "recycling bin",
+        "mean_depth": 0.7867058515548706,
+        "relative_position": "farthest",
+        "confidence": 0.7481133341789246
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.5858080387115479,
+        "relative_position": "middle",
+        "confidence": 0.44951316714286804
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet shelf",
+        "mean_depth": 0.3992707133293152,
+        "relative_position": "middle",
+        "confidence": 0.37704089283943176
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.1334201544523239,
+        "relative_position": "middle",
+        "confidence": 0.405770868062973
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.04473207890987396,
+        "relative_position": "closest",
+        "confidence": 0.6626026630401611
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "monitor",
+      "confidence": 0.6626026630401611,
+      "bounding_box": [
+        0.0041294097900390625,
+        132.5879364013672,
+        56.57098388671875,
+        179.9928741455078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04473207890987396,
+        "median_depth": 0.030098631978034973,
+        "depth_std": 0.058214474469423294,
+        "depth_min": 0.018324965611100197,
+        "depth_max": 0.376179575920105,
+        "mask_area": 2094
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm gripper",
+      "confidence": 0.405770868062973,
+      "bounding_box": [
+        211.2992401123047,
+        94.65985107421875,
+        259.81170654296875,
+        177.5806884765625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1334201544523239,
+        "median_depth": 0.11168041825294495,
+        "depth_std": 0.07580382376909256,
+        "depth_min": 0.04501262679696083,
+        "depth_max": 0.5956763029098511,
+        "mask_area": 1573
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet shelf",
+      "confidence": 0.37704089283943176,
+      "bounding_box": [
+        254.12701416015625,
+        44.30486297607422,
+        315.55755615234375,
+        102.4865951538086
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3992707133293152,
+        "median_depth": 0.40841102600097656,
+        "depth_std": 0.05266570299863815,
+        "depth_min": 0.17383667826652527,
+        "depth_max": 0.49518275260925293,
+        "mask_area": 2274
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "countertop",
+      "confidence": 0.44951316714286804,
+      "bounding_box": [
+        187.9013214111328,
+        30.569171905517578,
+        315.7622375488281,
+        48.21906661987305
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5858080387115479,
+        "median_depth": 0.5823140144348145,
+        "depth_std": 0.1560760736465454,
+        "depth_min": 0.2747030556201935,
+        "depth_max": 0.8623933792114258,
+        "mask_area": 595
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "recycling bin",
+      "confidence": 0.7481133341789246,
+      "bounding_box": [
+        149.19683837890625,
+        34.62518310546875,
+        176.03753662109375,
+        74.59637451171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7867058515548706,
+        "median_depth": 0.790809154510498,
+        "depth_std": 0.024438515305519104,
+        "depth_min": 0.5345247983932495,
+        "depth_max": 0.8101717233657837,
+        "mask_area": 717
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "chair. cloth. robot arm. gripper. table. countertop. cabinet. dishwasher. recycling bin. box. cables. monitor. shelf.",
+  "text_prompt": "chair. cloth. robot arm. gripper. table. countertop. cabinet. dishwasher. recycling bin. box. cables. monitor. shelf.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

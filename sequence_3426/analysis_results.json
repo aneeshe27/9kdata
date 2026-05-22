@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table desk",
+    "robot arm",
+    "office chair",
+    "office chair",
+    "cup"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table desk, office chair, office chair, robot arm, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "table desk",
+        "mean_depth": 0.022079208865761757,
+        "relative_position": "closest",
+        "confidence": 0.4601004123687744
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.06854740530252457,
+        "relative_position": "middle",
+        "confidence": 0.40917786955833435
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "office chair",
+        "mean_depth": 0.09869854152202606,
+        "relative_position": "middle",
+        "confidence": 0.5164562463760376
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "office chair",
+        "mean_depth": 0.13642583787441254,
+        "relative_position": "middle",
+        "confidence": 0.6283729672431946
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.21819230914115906,
+        "relative_position": "farthest",
+        "confidence": 0.5173026919364929
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.21819230914115906,
+        "relative_position": "farthest",
+        "confidence": 0.5173026919364929
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "office chair",
+        "mean_depth": 0.13642583787441254,
+        "relative_position": "middle",
+        "confidence": 0.6283729672431946
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "office chair",
+        "mean_depth": 0.09869854152202606,
+        "relative_position": "middle",
+        "confidence": 0.5164562463760376
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.06854740530252457,
+        "relative_position": "middle",
+        "confidence": 0.40917786955833435
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "table desk",
+        "mean_depth": 0.022079208865761757,
+        "relative_position": "closest",
+        "confidence": 0.4601004123687744
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "table desk",
+      "confidence": 0.4601004123687744,
+      "bounding_box": [
+        -0.0181884765625,
+        84.48579406738281,
+        292.2899169921875,
+        179.91062927246094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022079208865761757,
+        "median_depth": 0.01843392476439476,
+        "depth_std": 0.014740009792149067,
+        "depth_min": 0.002470835344865918,
+        "depth_max": 0.15055426955223083,
+        "mask_area": 15193
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.40917786955833435,
+      "bounding_box": [
+        209.19259643554688,
+        2.986358642578125,
+        315.9861755371094,
+        136.3497772216797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06854740530252457,
+        "median_depth": 0.04486915469169617,
+        "depth_std": 0.07878948748111725,
+        "depth_min": 0.026760892942547798,
+        "depth_max": 0.614905834197998,
+        "mask_area": 5101
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "office chair",
+      "confidence": 0.5164562463760376,
+      "bounding_box": [
+        0.05151939392089844,
+        21.7198486328125,
+        63.18578338623047,
+        136.37408447265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09869854152202606,
+        "median_depth": 0.09007048606872559,
+        "depth_std": 0.03188874199986458,
+        "depth_min": 0.06704628467559814,
+        "depth_max": 0.31378453969955444,
+        "mask_area": 3678
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "office chair",
+      "confidence": 0.6283729672431946,
+      "bounding_box": [
+        70.46430206298828,
+        29.688079833984375,
+        129.7027587890625,
+        117.22209167480469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13642583787441254,
+        "median_depth": 0.13496731221675873,
+        "depth_std": 0.02011924795806408,
+        "depth_min": 0.10315164923667908,
+        "depth_max": 0.43386203050613403,
+        "mask_area": 2361
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.5173026919364929,
+      "bounding_box": [
+        138.80386352539062,
+        39.538124084472656,
+        144.85040283203125,
+        47.18547821044922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21819230914115906,
+        "median_depth": 0.21479099988937378,
+        "depth_std": 0.021459752693772316,
+        "depth_min": 0.18510282039642334,
+        "depth_max": 0.25319358706474304,
+        "mask_area": 40
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. cup. wine glass. block. office chair. trash can. cabinet. desk. tripod. xylophone.",
+  "text_prompt": "table. robot arm. gripper. cup. wine glass. block. office chair. trash can. cabinet. desk. tripod. xylophone.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

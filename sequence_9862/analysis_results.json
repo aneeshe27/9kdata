@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "bowl",
+    "table",
+    "cabinet shelf",
+    "storage box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, table, bowl, cabinet shelf, storage box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.12856225669384003,
+        "relative_position": "closest",
+        "confidence": 0.3831048607826233
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.16980715095996857,
+        "relative_position": "middle",
+        "confidence": 0.7910869121551514
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.2127966284751892,
+        "relative_position": "middle",
+        "confidence": 0.46426451206207275
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cabinet shelf",
+        "mean_depth": 0.49301087856292725,
+        "relative_position": "middle",
+        "confidence": 0.44982919096946716
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "storage box",
+        "mean_depth": 0.6134907603263855,
+        "relative_position": "farthest",
+        "confidence": 0.407814621925354
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "storage box",
+        "mean_depth": 0.6134907603263855,
+        "relative_position": "farthest",
+        "confidence": 0.407814621925354
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cabinet shelf",
+        "mean_depth": 0.49301087856292725,
+        "relative_position": "middle",
+        "confidence": 0.44982919096946716
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.2127966284751892,
+        "relative_position": "middle",
+        "confidence": 0.46426451206207275
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.16980715095996857,
+        "relative_position": "middle",
+        "confidence": 0.7910869121551514
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.12856225669384003,
+        "relative_position": "closest",
+        "confidence": 0.3831048607826233
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3831048607826233,
+      "bounding_box": [
+        170.26849365234375,
+        -0.024322509765625,
+        248.65658569335938,
+        88.71532440185547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12856225669384003,
+        "median_depth": 0.011991867795586586,
+        "depth_std": 0.16883550584316254,
+        "depth_min": 0.0,
+        "depth_max": 0.6003491282463074,
+        "mask_area": 2090
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.7910869121551514,
+      "bounding_box": [
+        149.84896850585938,
+        90.34141540527344,
+        181.68115234375,
+        111.90251159667969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16980715095996857,
+        "median_depth": 0.168538898229599,
+        "depth_std": 0.022956810891628265,
+        "depth_min": 0.14185453951358795,
+        "depth_max": 0.24536891281604767,
+        "mask_area": 553
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.46426451206207275,
+      "bounding_box": [
+        238.19198608398438,
+        105.36302185058594,
+        316.0931091308594,
+        179.96641540527344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2127966284751892,
+        "median_depth": 0.20899608731269836,
+        "depth_std": 0.07488442212343216,
+        "depth_min": 0.10301071405410767,
+        "depth_max": 0.49345874786376953,
+        "mask_area": 4339
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet shelf",
+      "confidence": 0.44982919096946716,
+      "bounding_box": [
+        2.1803359985351562,
+        46.05876922607422,
+        132.04660034179688,
+        119.33231353759766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.49301087856292725,
+        "median_depth": 0.48484283685684204,
+        "depth_std": 0.05037037283182144,
+        "depth_min": 0.415990948677063,
+        "depth_max": 0.9765633940696716,
+        "mask_area": 5685
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "storage box",
+      "confidence": 0.407814621925354,
+      "bounding_box": [
+        72.8095474243164,
+        20.76116371154785,
+        108.70984649658203,
+        43.200599670410156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6134907603263855,
+        "median_depth": 0.6001020073890686,
+        "depth_std": 0.03384803608059883,
+        "depth_min": 0.5854288935661316,
+        "depth_max": 0.7843185663223267,
+        "mask_area": 513
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. robot arm. gripper. table. cabinet. storage bin. box. shelf. clamp.",
+  "text_prompt": "bowl. robot arm. gripper. table. cabinet. storage bin. box. shelf. clamp.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

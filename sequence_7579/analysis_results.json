@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cutting board",
+    "blinds",
+    "blinds",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, blinds, window, blinds, cutting board",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.028051018714904785,
+        "relative_position": "closest",
+        "confidence": 0.42389607429504395
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cutting board",
+        "mean_depth": 0.19154292345046997,
+        "relative_position": "middle",
+        "confidence": 0.4262995421886444
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "blinds",
+        "mean_depth": 0.22723796963691711,
+        "relative_position": "middle",
+        "confidence": 0.5119803547859192
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "blinds",
+        "mean_depth": 0.49207547307014465,
+        "relative_position": "middle",
+        "confidence": 0.46115195751190186
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "window",
+        "mean_depth": 0.9214028120040894,
+        "relative_position": "farthest",
+        "confidence": 0.39334046840667725
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "window",
+        "mean_depth": 0.9214028120040894,
+        "relative_position": "farthest",
+        "confidence": 0.39334046840667725
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "blinds",
+        "mean_depth": 0.49207547307014465,
+        "relative_position": "middle",
+        "confidence": 0.46115195751190186
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "blinds",
+        "mean_depth": 0.22723796963691711,
+        "relative_position": "middle",
+        "confidence": 0.5119803547859192
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cutting board",
+        "mean_depth": 0.19154292345046997,
+        "relative_position": "middle",
+        "confidence": 0.4262995421886444
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.028051018714904785,
+        "relative_position": "closest",
+        "confidence": 0.42389607429504395
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.42389607429504395,
+      "bounding_box": [
+        156.4188995361328,
+        41.10010528564453,
+        315.99847412109375,
+        179.71798706054688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.028051018714904785,
+        "median_depth": 0.019450584426522255,
+        "depth_std": 0.047672007232904434,
+        "depth_min": 0.011139938607811928,
+        "depth_max": 0.9555395245552063,
+        "mask_area": 11931
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "cutting board",
+      "confidence": 0.4262995421886444,
+      "bounding_box": [
+        108.20382690429688,
+        77.7057113647461,
+        155.593017578125,
+        97.15747833251953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19154292345046997,
+        "median_depth": 0.19047431647777557,
+        "depth_std": 0.01453449111431837,
+        "depth_min": 0.16046985983848572,
+        "depth_max": 0.2280883938074112,
+        "mask_area": 600
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "blinds",
+      "confidence": 0.5119803547859192,
+      "bounding_box": [
+        37.29779815673828,
+        0.007443428039550781,
+        126.18343353271484,
+        28.713947296142578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22723796963691711,
+        "median_depth": 0.22366224229335785,
+        "depth_std": 0.04217049852013588,
+        "depth_min": 0.15958160161972046,
+        "depth_max": 0.3111158013343811,
+        "mask_area": 1940
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "blinds",
+      "confidence": 0.46115195751190186,
+      "bounding_box": [
+        136.30804443359375,
+        0.07587432861328125,
+        187.17279052734375,
+        70.55758666992188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.49207547307014465,
+        "median_depth": 0.4712521433830261,
+        "depth_std": 0.09536737203598022,
+        "depth_min": 0.3463866710662842,
+        "depth_max": 0.7030892968177795,
+        "mask_area": 2750
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "window",
+      "confidence": 0.39334046840667725,
+      "bounding_box": [
+        271.13043212890625,
+        0.2487640380859375,
+        316.01141357421875,
+        64.67256927490234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9214028120040894,
+        "median_depth": 0.9140628576278687,
+        "depth_std": 0.05444684997200966,
+        "depth_min": 0.5203531384468079,
+        "depth_max": 0.978634774684906,
+        "mask_area": 2309
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cable. table. shelf. window. blinds. chair. box. knife. cutting board. container. pen.",
+  "text_prompt": "robot arm. gripper. cable. table. shelf. window. blinds. chair. box. knife. cutting board. container. pen.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

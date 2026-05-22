@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "shelf",
+    "gripper lint roller",
+    "cloth",
+    "container",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: container, shelf, chair, cloth, gripper lint roller",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.07000982016324997,
+        "relative_position": "closest",
+        "confidence": 0.4314497709274292
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "gripper lint roller",
+        "mean_depth": 0.07900792360305786,
+        "relative_position": "middle",
+        "confidence": 0.40245383977890015
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.12189283221960068,
+        "relative_position": "middle",
+        "confidence": 0.39213231205940247
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "container",
+        "mean_depth": 0.21042534708976746,
+        "relative_position": "middle",
+        "confidence": 0.375436931848526
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.5956068634986877,
+        "relative_position": "farthest",
+        "confidence": 0.612554669380188
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.5956068634986877,
+        "relative_position": "farthest",
+        "confidence": 0.612554669380188
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "container",
+        "mean_depth": 0.21042534708976746,
+        "relative_position": "middle",
+        "confidence": 0.375436931848526
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.12189283221960068,
+        "relative_position": "middle",
+        "confidence": 0.39213231205940247
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "gripper lint roller",
+        "mean_depth": 0.07900792360305786,
+        "relative_position": "middle",
+        "confidence": 0.40245383977890015
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.07000982016324997,
+        "relative_position": "closest",
+        "confidence": 0.4314497709274292
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "shelf",
+      "confidence": 0.4314497709274292,
+      "bounding_box": [
+        0.05680084228515625,
+        109.91590881347656,
+        92.82561492919922,
+        179.9847869873047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07000982016324997,
+        "median_depth": 0.06630688905715942,
+        "depth_std": 0.02145855687558651,
+        "depth_min": 0.0347406305372715,
+        "depth_max": 0.14264284074306488,
+        "mask_area": 2386
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "gripper lint roller",
+      "confidence": 0.40245383977890015,
+      "bounding_box": [
+        30.3001651763916,
+        91.85630798339844,
+        88.50469207763672,
+        127.18682861328125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07900792360305786,
+        "median_depth": 0.07331167161464691,
+        "depth_std": 0.018656712025403976,
+        "depth_min": 0.06531033664941788,
+        "depth_max": 0.17747248709201813,
+        "mask_area": 972
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cloth",
+      "confidence": 0.39213231205940247,
+      "bounding_box": [
+        77.41456604003906,
+        135.91966247558594,
+        213.9171905517578,
+        179.9810028076172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12189283221960068,
+        "median_depth": 0.11878680437803268,
+        "depth_std": 0.03117346204817295,
+        "depth_min": 0.06743696331977844,
+        "depth_max": 0.704787015914917,
+        "mask_area": 4107
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "container",
+      "confidence": 0.375436931848526,
+      "bounding_box": [
+        157.44332885742188,
+        127.13140106201172,
+        175.11294555664062,
+        141.78915405273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21042534708976746,
+        "median_depth": 0.20749527215957642,
+        "depth_std": 0.013391952961683273,
+        "depth_min": 0.19027270376682281,
+        "depth_max": 0.2416120320558548,
+        "mask_area": 211
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.612554669380188,
+      "bounding_box": [
+        239.2449188232422,
+        94.06097412109375,
+        315.92205810546875,
+        179.96548461914062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5956068634986877,
+        "median_depth": 0.5933114886283875,
+        "depth_std": 0.08077927678823471,
+        "depth_min": 0.04559003934264183,
+        "depth_max": 0.8175145983695984,
+        "mask_area": 5141
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cable. bed. chair. table. shelf. container. lint roller. cloth. pillow. door.",
+  "text_prompt": "robot arm. gripper. cable. bed. chair. table. shelf. container. lint roller. cloth. pillow. door.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "power strip",
+    "box",
+    "shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: box, robot arm, table, shelf, power strip",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.01453599613159895,
+        "relative_position": "closest",
+        "confidence": 0.36750528216362
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.12928229570388794,
+        "relative_position": "middle",
+        "confidence": 0.4085274040699005
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "power strip",
+        "mean_depth": 0.15932735800743103,
+        "relative_position": "middle",
+        "confidence": 0.3526475429534912
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.5801849365234375,
+        "relative_position": "middle",
+        "confidence": 0.4741593897342682
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.6162589192390442,
+        "relative_position": "farthest",
+        "confidence": 0.42211663722991943
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.6162589192390442,
+        "relative_position": "farthest",
+        "confidence": 0.42211663722991943
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.5801849365234375,
+        "relative_position": "middle",
+        "confidence": 0.4741593897342682
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "power strip",
+        "mean_depth": 0.15932735800743103,
+        "relative_position": "middle",
+        "confidence": 0.3526475429534912
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.12928229570388794,
+        "relative_position": "middle",
+        "confidence": 0.4085274040699005
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.01453599613159895,
+        "relative_position": "closest",
+        "confidence": 0.36750528216362
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.36750528216362,
+      "bounding_box": [
+        216.03253173828125,
+        0.190704345703125,
+        315.37335205078125,
+        155.11920166015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01453599613159895,
+        "median_depth": 0.010739728808403015,
+        "depth_std": 0.010705485939979553,
+        "depth_min": 0.004066154360771179,
+        "depth_max": 0.08324683457612991,
+        "mask_area": 3514
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.4085274040699005,
+      "bounding_box": [
+        104.49729919433594,
+        59.926170349121094,
+        271.50823974609375,
+        179.66409301757812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12928229570388794,
+        "median_depth": 0.11763589084148407,
+        "depth_std": 0.06010944023728371,
+        "depth_min": 0.02572406828403473,
+        "depth_max": 0.6203434467315674,
+        "mask_area": 9734
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "power strip",
+      "confidence": 0.3526475429534912,
+      "bounding_box": [
+        0.08253097534179688,
+        87.317626953125,
+        79.43368530273438,
+        133.16793823242188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15932735800743103,
+        "median_depth": 0.15143394470214844,
+        "depth_std": 0.030787235125899315,
+        "depth_min": 0.1256013959646225,
+        "depth_max": 0.36220404505729675,
+        "mask_area": 1447
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "box",
+      "confidence": 0.4741593897342682,
+      "bounding_box": [
+        111.86910247802734,
+        49.51801681518555,
+        138.88308715820312,
+        69.61358642578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5801849365234375,
+        "median_depth": 0.5805846452713013,
+        "depth_std": 0.08781205117702484,
+        "depth_min": 0.4198337495326996,
+        "depth_max": 0.8314971327781677,
+        "mask_area": 460
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "shelf",
+      "confidence": 0.42211663722991943,
+      "bounding_box": [
+        147.27833557128906,
+        11.48995590209961,
+        197.4185333251953,
+        63.39860916137695
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6162589192390442,
+        "median_depth": 0.6252044439315796,
+        "depth_std": 0.10082539170980453,
+        "depth_min": 0.45837244391441345,
+        "depth_max": 0.9222335815429688,
+        "mask_area": 1320
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. clamp. cable. power strip. chair. shelf. box. cloth.",
+  "text_prompt": "robot arm. gripper. table. clamp. cable. power strip. chair. shelf. box. cloth.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "clamp robot arm",
+    "container",
+    "trash bin",
+    "floor drain",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: trash bin, clamp robot arm, floor drain, box, container",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "clamp robot arm",
+        "mean_depth": 0.07216746360063553,
+        "relative_position": "closest",
+        "confidence": 0.35847771167755127
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.16327211260795593,
+        "relative_position": "middle",
+        "confidence": 0.4964488744735718
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "trash bin",
+        "mean_depth": 0.24325868487358093,
+        "relative_position": "middle",
+        "confidence": 0.48716098070144653
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "floor drain",
+        "mean_depth": 0.4754391312599182,
+        "relative_position": "middle",
+        "confidence": 0.7678755521774292
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.5344421863555908,
+        "relative_position": "farthest",
+        "confidence": 0.5227760672569275
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.5344421863555908,
+        "relative_position": "farthest",
+        "confidence": 0.5227760672569275
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "floor drain",
+        "mean_depth": 0.4754391312599182,
+        "relative_position": "middle",
+        "confidence": 0.7678755521774292
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "trash bin",
+        "mean_depth": 0.24325868487358093,
+        "relative_position": "middle",
+        "confidence": 0.48716098070144653
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.16327211260795593,
+        "relative_position": "middle",
+        "confidence": 0.4964488744735718
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "clamp robot arm",
+        "mean_depth": 0.07216746360063553,
+        "relative_position": "closest",
+        "confidence": 0.35847771167755127
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "clamp robot arm",
+      "confidence": 0.35847771167755127,
+      "bounding_box": [
+        139.8937530517578,
+        121.33478546142578,
+        168.2448272705078,
+        152.945068359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07216746360063553,
+        "median_depth": 0.07179643213748932,
+        "depth_std": 0.006362860091030598,
+        "depth_min": 0.06081925705075264,
+        "depth_max": 0.09501608461141586,
+        "mask_area": 314
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "container",
+      "confidence": 0.4964488744735718,
+      "bounding_box": [
+        152.0411376953125,
+        75.67137145996094,
+        176.47076416015625,
+        101.36581420898438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16327211260795593,
+        "median_depth": 0.15523935854434967,
+        "depth_std": 0.024035092443227768,
+        "depth_min": 0.1335100680589676,
+        "depth_max": 0.26574790477752686,
+        "mask_area": 433
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "trash bin",
+      "confidence": 0.48716098070144653,
+      "bounding_box": [
+        251.59121704101562,
+        70.32769012451172,
+        262.9819641113281,
+        84.63819122314453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24325868487358093,
+        "median_depth": 0.22015118598937988,
+        "depth_std": 0.06210273504257202,
+        "depth_min": 0.17392310500144958,
+        "depth_max": 0.4572724401950836,
+        "mask_area": 120
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "floor drain",
+      "confidence": 0.7678755521774292,
+      "bounding_box": [
+        231.13650512695312,
+        124.32006072998047,
+        261.9892578125,
+        147.6280059814453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4754391312599182,
+        "median_depth": 0.47513020038604736,
+        "depth_std": 0.018291767686605453,
+        "depth_min": 0.4382741451263428,
+        "depth_max": 0.5137751698493958,
+        "mask_area": 464
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "box",
+      "confidence": 0.5227760672569275,
+      "bounding_box": [
+        221.6359405517578,
+        2.0445899963378906,
+        293.8595275878906,
+        43.25559616088867
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5344421863555908,
+        "median_depth": 0.5311822295188904,
+        "depth_std": 0.041620489209890366,
+        "depth_min": 0.4567134976387024,
+        "depth_max": 0.6625411510467529,
+        "mask_area": 1507
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. container. utensil. clamp. robot arm. box. cable. trash bin. floor drain.",
+  "text_prompt": "table. container. utensil. clamp. robot arm. box. cable. trash bin. floor drain.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

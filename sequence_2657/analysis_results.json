@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "metal tool",
+    "mug",
+    "cardboard box",
+    "camera",
+    "tripod"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cardboard box, camera, mug, metal tool, tripod",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "metal tool",
+        "mean_depth": 0.011894033290445805,
+        "relative_position": "closest",
+        "confidence": 0.5523689985275269
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "mug",
+        "mean_depth": 0.11119268089532852,
+        "relative_position": "middle",
+        "confidence": 0.7208264470100403
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cardboard box",
+        "mean_depth": 0.2540159225463867,
+        "relative_position": "middle",
+        "confidence": 0.4567081928253174
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "camera",
+        "mean_depth": 0.6545243263244629,
+        "relative_position": "middle",
+        "confidence": 0.39414891600608826
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "tripod",
+        "mean_depth": 0.7229720950126648,
+        "relative_position": "farthest",
+        "confidence": 0.6808620095252991
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "tripod",
+        "mean_depth": 0.7229720950126648,
+        "relative_position": "farthest",
+        "confidence": 0.6808620095252991
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "camera",
+        "mean_depth": 0.6545243263244629,
+        "relative_position": "middle",
+        "confidence": 0.39414891600608826
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cardboard box",
+        "mean_depth": 0.2540159225463867,
+        "relative_position": "middle",
+        "confidence": 0.4567081928253174
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "mug",
+        "mean_depth": 0.11119268089532852,
+        "relative_position": "middle",
+        "confidence": 0.7208264470100403
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "metal tool",
+        "mean_depth": 0.011894033290445805,
+        "relative_position": "closest",
+        "confidence": 0.5523689985275269
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "metal tool",
+      "confidence": 0.5523689985275269,
+      "bounding_box": [
+        203.08438110351562,
+        126.7354736328125,
+        242.77203369140625,
+        178.61785888671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.011894033290445805,
+        "median_depth": 0.006889056414365768,
+        "depth_std": 0.025793809443712234,
+        "depth_min": 0.0010943424422293901,
+        "depth_max": 0.2383953183889389,
+        "mask_area": 711
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "mug",
+      "confidence": 0.7208264470100403,
+      "bounding_box": [
+        165.91554260253906,
+        63.91334915161133,
+        193.67311096191406,
+        88.46805572509766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11119268089532852,
+        "median_depth": 0.1029575914144516,
+        "depth_std": 0.02032243274152279,
+        "depth_min": 0.08916990458965302,
+        "depth_max": 0.18229885399341583,
+        "mask_area": 500
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cardboard box",
+      "confidence": 0.4567081928253174,
+      "bounding_box": [
+        4.906719207763672,
+        62.64971923828125,
+        84.24629211425781,
+        146.72915649414062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2540159225463867,
+        "median_depth": 0.24440297484397888,
+        "depth_std": 0.05785583332180977,
+        "depth_min": 0.09801217913627625,
+        "depth_max": 0.5696266889572144,
+        "mask_area": 2382
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "camera",
+      "confidence": 0.39414891600608826,
+      "bounding_box": [
+        147.25379943847656,
+        33.2576904296875,
+        170.7369842529297,
+        53.47932434082031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6545243263244629,
+        "median_depth": 0.6438178420066833,
+        "depth_std": 0.02912398800253868,
+        "depth_min": 0.621699333190918,
+        "depth_max": 0.7538301348686218,
+        "mask_area": 395
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "tripod",
+      "confidence": 0.6808620095252991,
+      "bounding_box": [
+        162.6902313232422,
+        0.1777362823486328,
+        180.6305694580078,
+        37.13677978515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7229720950126648,
+        "median_depth": 0.7393586039543152,
+        "depth_std": 0.0658339187502861,
+        "depth_min": 0.5827431082725525,
+        "depth_max": 0.8610546588897705,
+        "mask_area": 295
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "mug. table. camera. tripod. metal tool. coaster. cardboard box. cables. container.",
+  "text_prompt": "mug. table. camera. tripod. metal tool. coaster. cardboard box. cables. container.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "container",
+    "table",
+    "table",
+    "camera",
+    "tripod"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, table, tripod, camera, container",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.008963440544903278,
+        "relative_position": "closest",
+        "confidence": 0.4327157139778137
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.057090193033218384,
+        "relative_position": "middle",
+        "confidence": 0.5128345489501953
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.2739338278770447,
+        "relative_position": "middle",
+        "confidence": 0.5710694193840027
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.35865384340286255,
+        "relative_position": "middle",
+        "confidence": 0.3703453242778778
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "tripod",
+        "mean_depth": 0.47427481412887573,
+        "relative_position": "farthest",
+        "confidence": 0.36248815059661865
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "tripod",
+        "mean_depth": 0.47427481412887573,
+        "relative_position": "farthest",
+        "confidence": 0.36248815059661865
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.35865384340286255,
+        "relative_position": "middle",
+        "confidence": 0.3703453242778778
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.2739338278770447,
+        "relative_position": "middle",
+        "confidence": 0.5710694193840027
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.057090193033218384,
+        "relative_position": "middle",
+        "confidence": 0.5128345489501953
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.008963440544903278,
+        "relative_position": "closest",
+        "confidence": 0.4327157139778137
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "container",
+      "confidence": 0.4327157139778137,
+      "bounding_box": [
+        262.9749755859375,
+        142.13851928710938,
+        309.0596923828125,
+        179.86798095703125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.008963440544903278,
+        "median_depth": 0.0032555460929870605,
+        "depth_std": 0.03370252624154091,
+        "depth_min": 2.731518179643899e-06,
+        "depth_max": 0.5617076754570007,
+        "mask_area": 1178
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.5128345489501953,
+      "bounding_box": [
+        24.479461669921875,
+        128.83642578125,
+        237.42813110351562,
+        179.88040161132812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.057090193033218384,
+        "median_depth": 0.03494922071695328,
+        "depth_std": 0.09496507048606873,
+        "depth_min": 0.009038868360221386,
+        "depth_max": 0.7420118451118469,
+        "mask_area": 5157
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.5710694193840027,
+      "bounding_box": [
+        -0.014797210693359375,
+        61.1982307434082,
+        99.93983459472656,
+        148.5374755859375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2739338278770447,
+        "median_depth": 0.2840275466442108,
+        "depth_std": 0.04292004555463791,
+        "depth_min": 0.18247362971305847,
+        "depth_max": 0.47018468379974365,
+        "mask_area": 1221
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "camera",
+      "confidence": 0.3703453242778778,
+      "bounding_box": [
+        98.33273315429688,
+        40.19654083251953,
+        108.64533996582031,
+        49.837547302246094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.35865384340286255,
+        "median_depth": 0.3478963077068329,
+        "depth_std": 0.029072700068354607,
+        "depth_min": 0.32619625329971313,
+        "depth_max": 0.46341413259506226,
+        "mask_area": 56
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "tripod",
+      "confidence": 0.36248815059661865,
+      "bounding_box": [
+        155.5757293701172,
+        100.71651458740234,
+        175.1332550048828,
+        136.31076049804688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47427481412887573,
+        "median_depth": 0.44202813506126404,
+        "depth_std": 0.24074938893318176,
+        "depth_min": 0.18735677003860474,
+        "depth_max": 0.9015812277793884,
+        "mask_area": 252
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. tripod. camera. robot arm. gripper. tray. cup. box. monitor. chair. boom arm. container.",
+  "text_prompt": "table. tripod. camera. robot arm. gripper. tray. cup. box. monitor. chair. boom arm. container.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

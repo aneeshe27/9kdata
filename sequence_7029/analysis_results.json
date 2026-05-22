@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "towel",
+    "bread roll",
+    "chair",
+    "camera",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bread roll, chair, camera, box, towel",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "towel",
+        "mean_depth": 0.08696182072162628,
+        "relative_position": "closest",
+        "confidence": 0.5505753755569458
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "bread roll",
+        "mean_depth": 0.13115978240966797,
+        "relative_position": "middle",
+        "confidence": 0.42896798253059387
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.14983198046684265,
+        "relative_position": "middle",
+        "confidence": 0.3680172264575958
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "camera",
+        "mean_depth": 0.33374372124671936,
+        "relative_position": "middle",
+        "confidence": 0.6602271199226379
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.4168030023574829,
+        "relative_position": "farthest",
+        "confidence": 0.5566214323043823
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.4168030023574829,
+        "relative_position": "farthest",
+        "confidence": 0.5566214323043823
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "camera",
+        "mean_depth": 0.33374372124671936,
+        "relative_position": "middle",
+        "confidence": 0.6602271199226379
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.14983198046684265,
+        "relative_position": "middle",
+        "confidence": 0.3680172264575958
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "bread roll",
+        "mean_depth": 0.13115978240966797,
+        "relative_position": "middle",
+        "confidence": 0.42896798253059387
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "towel",
+        "mean_depth": 0.08696182072162628,
+        "relative_position": "closest",
+        "confidence": 0.5505753755569458
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "towel",
+      "confidence": 0.5505753755569458,
+      "bounding_box": [
+        77.65423583984375,
+        64.6937484741211,
+        127.61785888671875,
+        91.2728042602539
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08696182072162628,
+        "median_depth": 0.08592016249895096,
+        "depth_std": 0.012783775106072426,
+        "depth_min": 0.06520233303308487,
+        "depth_max": 0.12110129743814468,
+        "mask_area": 797
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "bread roll",
+      "confidence": 0.42896798253059387,
+      "bounding_box": [
+        116.85071563720703,
+        59.255802154541016,
+        126.9209213256836,
+        67.44403076171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13115978240966797,
+        "median_depth": 0.12856867909431458,
+        "depth_std": 0.007918315008282661,
+        "depth_min": 0.12123938649892807,
+        "depth_max": 0.1496506929397583,
+        "mask_area": 66
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.3680172264575958,
+      "bounding_box": [
+        160.88897705078125,
+        52.65956497192383,
+        265.23223876953125,
+        179.5665740966797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14983198046684265,
+        "median_depth": 0.12044603377580643,
+        "depth_std": 0.06623362749814987,
+        "depth_min": 0.0776267945766449,
+        "depth_max": 0.5458623170852661,
+        "mask_area": 1153
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "camera",
+      "confidence": 0.6602271199226379,
+      "bounding_box": [
+        248.4497833251953,
+        25.01235580444336,
+        264.6110534667969,
+        43.63032913208008
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33374372124671936,
+        "median_depth": 0.3304625451564789,
+        "depth_std": 0.015801481902599335,
+        "depth_min": 0.310547411441803,
+        "depth_max": 0.3890710473060608,
+        "mask_area": 201
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "box",
+      "confidence": 0.5566214323043823,
+      "bounding_box": [
+        8.439491271972656,
+        44.90288162231445,
+        64.31207275390625,
+        84.48884582519531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4168030023574829,
+        "median_depth": 0.41095036268234253,
+        "depth_std": 0.026480361819267273,
+        "depth_min": 0.3378281891345978,
+        "depth_max": 0.47733721137046814,
+        "mask_area": 1135
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. chair. towel. bread roll. clamp. box. shelf. camera. tripod.",
+  "text_prompt": "table. chair. towel. bread roll. clamp. box. shelf. camera. tripod.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

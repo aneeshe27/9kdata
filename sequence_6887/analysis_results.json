@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "shelf cabinet",
+    "microwave",
+    "plate",
+    "carton"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: plate, shelf cabinet, microwave, robot arm, carton",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.041085418313741684,
+        "relative_position": "closest",
+        "confidence": 0.45439884066581726
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "shelf cabinet",
+        "mean_depth": 0.2123252898454666,
+        "relative_position": "middle",
+        "confidence": 0.38972681760787964
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "microwave",
+        "mean_depth": 0.23769332468509674,
+        "relative_position": "middle",
+        "confidence": 0.5332216024398804
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "plate",
+        "mean_depth": 0.2399551272392273,
+        "relative_position": "middle",
+        "confidence": 0.4672183692455292
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "carton",
+        "mean_depth": 0.2734570801258087,
+        "relative_position": "farthest",
+        "confidence": 0.8781713247299194
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "carton",
+        "mean_depth": 0.2734570801258087,
+        "relative_position": "farthest",
+        "confidence": 0.8781713247299194
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "plate",
+        "mean_depth": 0.2399551272392273,
+        "relative_position": "middle",
+        "confidence": 0.4672183692455292
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "microwave",
+        "mean_depth": 0.23769332468509674,
+        "relative_position": "middle",
+        "confidence": 0.5332216024398804
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "shelf cabinet",
+        "mean_depth": 0.2123252898454666,
+        "relative_position": "middle",
+        "confidence": 0.38972681760787964
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.041085418313741684,
+        "relative_position": "closest",
+        "confidence": 0.45439884066581726
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.45439884066581726,
+      "bounding_box": [
+        188.8339080810547,
+        0.13925933837890625,
+        315.922119140625,
+        103.76509857177734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.041085418313741684,
+        "median_depth": 0.023912321776151657,
+        "depth_std": 0.07113687694072723,
+        "depth_min": 0.0008831194718368351,
+        "depth_max": 0.7020989656448364,
+        "mask_area": 4498
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "shelf cabinet",
+      "confidence": 0.38972681760787964,
+      "bounding_box": [
+        118.31123352050781,
+        0.3504352569580078,
+        193.91709899902344,
+        47.889610290527344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2123252898454666,
+        "median_depth": 0.20397567749023438,
+        "depth_std": 0.05297796055674553,
+        "depth_min": 0.07318326085805893,
+        "depth_max": 0.4262852668762207,
+        "mask_area": 2888
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "microwave",
+      "confidence": 0.5332216024398804,
+      "bounding_box": [
+        119.87867736816406,
+        92.56652069091797,
+        187.5371551513672,
+        178.65554809570312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23769332468509674,
+        "median_depth": 0.23218150436878204,
+        "depth_std": 0.0480286069214344,
+        "depth_min": 0.15194761753082275,
+        "depth_max": 0.45647627115249634,
+        "mask_area": 3481
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plate",
+      "confidence": 0.4672183692455292,
+      "bounding_box": [
+        119.70616149902344,
+        82.8740463256836,
+        168.19471740722656,
+        101.6292495727539
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2399551272392273,
+        "median_depth": 0.23847073316574097,
+        "depth_std": 0.018197590485215187,
+        "depth_min": 0.1983727514743805,
+        "depth_max": 0.3341209292411804,
+        "mask_area": 692
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "carton",
+      "confidence": 0.8781713247299194,
+      "bounding_box": [
+        179.982666015625,
+        121.92858123779297,
+        206.24166870117188,
+        160.04739379882812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2734570801258087,
+        "median_depth": 0.266975462436676,
+        "depth_std": 0.019335446879267693,
+        "depth_min": 0.25361981987953186,
+        "depth_max": 0.369243323802948,
+        "mask_area": 650
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. microwave. plate. bowl. carton. countertop. shelf. cabinet. window. washing machine.",
+  "text_prompt": "robot arm. gripper. microwave. plate. bowl. carton. countertop. shelf. cabinet. window. washing machine.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

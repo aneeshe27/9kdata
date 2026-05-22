@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "mirror",
+    "soap dispenser",
+    "toilet paper roll",
+    "toilet",
+    "toilet paper holder"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: toilet paper holder, soap dispenser, toilet, toilet paper roll, mirror",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "mirror",
+        "mean_depth": 0.06862068921327591,
+        "relative_position": "closest",
+        "confidence": 0.6182309985160828
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "soap dispenser",
+        "mean_depth": 0.3794655203819275,
+        "relative_position": "middle",
+        "confidence": 0.8729434609413147
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "toilet paper roll",
+        "mean_depth": 0.7187871336936951,
+        "relative_position": "middle",
+        "confidence": 0.8391071557998657
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "toilet",
+        "mean_depth": 0.7834652066230774,
+        "relative_position": "middle",
+        "confidence": 0.5779575109481812
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "toilet paper holder",
+        "mean_depth": 0.8464836478233337,
+        "relative_position": "farthest",
+        "confidence": 0.7683656215667725
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "toilet paper holder",
+        "mean_depth": 0.8464836478233337,
+        "relative_position": "farthest",
+        "confidence": 0.7683656215667725
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "toilet",
+        "mean_depth": 0.7834652066230774,
+        "relative_position": "middle",
+        "confidence": 0.5779575109481812
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "toilet paper roll",
+        "mean_depth": 0.7187871336936951,
+        "relative_position": "middle",
+        "confidence": 0.8391071557998657
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "soap dispenser",
+        "mean_depth": 0.3794655203819275,
+        "relative_position": "middle",
+        "confidence": 0.8729434609413147
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "mirror",
+        "mean_depth": 0.06862068921327591,
+        "relative_position": "closest",
+        "confidence": 0.6182309985160828
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "mirror",
+      "confidence": 0.6182309985160828,
+      "bounding_box": [
+        0.1415252685546875,
+        0.054340362548828125,
+        111.1661376953125,
+        65.09503173828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06862068921327591,
+        "median_depth": 0.07059240341186523,
+        "depth_std": 0.04543571546673775,
+        "depth_min": 0.0,
+        "depth_max": 0.19380442798137665,
+        "mask_area": 3930
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "soap dispenser",
+      "confidence": 0.8729434609413147,
+      "bounding_box": [
+        114.2215576171875,
+        68.44170379638672,
+        131.32481384277344,
+        95.67443084716797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3794655203819275,
+        "median_depth": 0.38386350870132446,
+        "depth_std": 0.024991242215037346,
+        "depth_min": 0.32206594944000244,
+        "depth_max": 0.45858636498451233,
+        "mask_area": 312
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "toilet paper roll",
+      "confidence": 0.8391071557998657,
+      "bounding_box": [
+        153.02133178710938,
+        57.906776428222656,
+        166.75558471679688,
+        73.40074920654297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7187871336936951,
+        "median_depth": 0.7199103236198425,
+        "depth_std": 0.01048186607658863,
+        "depth_min": 0.69450443983078,
+        "depth_max": 0.7463046908378601,
+        "mask_area": 165
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "toilet",
+      "confidence": 0.5779575109481812,
+      "bounding_box": [
+        167.8995819091797,
+        50.328948974609375,
+        220.87266540527344,
+        116.64463806152344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7834652066230774,
+        "median_depth": 0.7700344324111938,
+        "depth_std": 0.055488552898168564,
+        "depth_min": 0.5792562961578369,
+        "depth_max": 0.9934328198432922,
+        "mask_area": 644
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "toilet paper holder",
+      "confidence": 0.7683656215667725,
+      "bounding_box": [
+        213.73565673828125,
+        52.22584533691406,
+        231.56289672851562,
+        66.53606414794922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8464836478233337,
+        "median_depth": 0.8470383286476135,
+        "depth_std": 0.01822938583791256,
+        "depth_min": 0.806086540222168,
+        "depth_max": 0.8797118067741394,
+        "mask_area": 171
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. faucet. mirror. robot arm. gripper. toilet. toilet paper roll. toilet paper holder. soap dispenser. countertop.",
+  "text_prompt": "sink. faucet. mirror. robot arm. gripper. toilet. toilet paper roll. toilet paper holder. soap dispenser. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

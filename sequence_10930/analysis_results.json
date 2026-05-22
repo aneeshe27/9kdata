@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "metal rail",
+    "tape roll",
+    "cardboard box",
+    "floor drain",
+    "cup"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, cardboard box, metal rail, tape roll, floor drain",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "metal rail",
+        "mean_depth": 0.0641774982213974,
+        "relative_position": "closest",
+        "confidence": 0.41643163561820984
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "tape roll",
+        "mean_depth": 0.10714971274137497,
+        "relative_position": "middle",
+        "confidence": 0.38127461075782776
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.14200451970100403,
+        "relative_position": "middle",
+        "confidence": 0.49810320138931274
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "floor drain",
+        "mean_depth": 0.18351566791534424,
+        "relative_position": "middle",
+        "confidence": 0.6871710419654846
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.5489253401756287,
+        "relative_position": "farthest",
+        "confidence": 0.35339024662971497
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.5489253401756287,
+        "relative_position": "farthest",
+        "confidence": 0.35339024662971497
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "floor drain",
+        "mean_depth": 0.18351566791534424,
+        "relative_position": "middle",
+        "confidence": 0.6871710419654846
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.14200451970100403,
+        "relative_position": "middle",
+        "confidence": 0.49810320138931274
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "tape roll",
+        "mean_depth": 0.10714971274137497,
+        "relative_position": "middle",
+        "confidence": 0.38127461075782776
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "metal rail",
+        "mean_depth": 0.0641774982213974,
+        "relative_position": "closest",
+        "confidence": 0.41643163561820984
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "metal rail",
+      "confidence": 0.41643163561820984,
+      "bounding_box": [
+        34.74122619628906,
+        105.64154052734375,
+        103.34996032714844,
+        155.27728271484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0641774982213974,
+        "median_depth": 0.062364283949136734,
+        "depth_std": 0.013767121359705925,
+        "depth_min": 0.04310058057308197,
+        "depth_max": 0.09569663554430008,
+        "mask_area": 662
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "tape roll",
+      "confidence": 0.38127461075782776,
+      "bounding_box": [
+        151.63177490234375,
+        79.86575317382812,
+        174.75051879882812,
+        105.20875549316406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10714971274137497,
+        "median_depth": 0.10487759858369827,
+        "depth_std": 0.008369713090360165,
+        "depth_min": 0.093840591609478,
+        "depth_max": 0.13246504962444305,
+        "mask_area": 304
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cardboard box",
+      "confidence": 0.49810320138931274,
+      "bounding_box": [
+        164.47634887695312,
+        40.616065979003906,
+        264.7549133300781,
+        99.77928924560547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14200451970100403,
+        "median_depth": 0.12911275029182434,
+        "depth_std": 0.06121093034744263,
+        "depth_min": 0.09690813720226288,
+        "depth_max": 0.6941008567810059,
+        "mask_area": 3042
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "floor drain",
+      "confidence": 0.6871710419654846,
+      "bounding_box": [
+        230.82522583007812,
+        126.59117126464844,
+        262.1240234375,
+        151.38087463378906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18351566791534424,
+        "median_depth": 0.18352340161800385,
+        "depth_std": 0.004965814296156168,
+        "depth_min": 0.171886146068573,
+        "depth_max": 0.19311560690402985,
+        "mask_area": 467
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.35339024662971497,
+      "bounding_box": [
+        233.5669403076172,
+        33.95355987548828,
+        243.2037811279297,
+        40.96366882324219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5489253401756287,
+        "median_depth": 0.5459240674972534,
+        "depth_std": 0.024105772376060486,
+        "depth_min": 0.5116332173347473,
+        "depth_max": 0.6170524954795837,
+        "mask_area": 52
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cup. table. workbench. clamp. cardboard box. wooden board. tape roll. metal rail. tray. floor drain.",
+  "text_prompt": "robot arm. gripper. cup. table. workbench. clamp. cardboard box. wooden board. tape roll. metal rail. tray. floor drain.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "coffee maker",
+    "table",
+    "box",
+    "flag",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: door, flag, box, table, coffee maker",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "coffee maker",
+        "mean_depth": 0.0641014501452446,
+        "relative_position": "closest",
+        "confidence": 0.37525004148483276
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.2759283185005188,
+        "relative_position": "middle",
+        "confidence": 0.7001705169677734
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.326786071062088,
+        "relative_position": "middle",
+        "confidence": 0.37187981605529785
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "flag",
+        "mean_depth": 0.45032498240470886,
+        "relative_position": "middle",
+        "confidence": 0.4931751787662506
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.8432774543762207,
+        "relative_position": "farthest",
+        "confidence": 0.35598257184028625
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.8432774543762207,
+        "relative_position": "farthest",
+        "confidence": 0.35598257184028625
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "flag",
+        "mean_depth": 0.45032498240470886,
+        "relative_position": "middle",
+        "confidence": 0.4931751787662506
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.326786071062088,
+        "relative_position": "middle",
+        "confidence": 0.37187981605529785
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.2759283185005188,
+        "relative_position": "middle",
+        "confidence": 0.7001705169677734
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "coffee maker",
+        "mean_depth": 0.0641014501452446,
+        "relative_position": "closest",
+        "confidence": 0.37525004148483276
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "coffee maker",
+      "confidence": 0.37525004148483276,
+      "bounding_box": [
+        235.92971801757812,
+        121.98246002197266,
+        315.7491760253906,
+        179.7421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0641014501452446,
+        "median_depth": 0.06412418186664581,
+        "depth_std": 0.0556672103703022,
+        "depth_min": 0.0,
+        "depth_max": 0.3238345682621002,
+        "mask_area": 2861
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7001705169677734,
+      "bounding_box": [
+        83.36865234375,
+        125.08396911621094,
+        236.68716430664062,
+        179.88426208496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2759283185005188,
+        "median_depth": 0.24823139607906342,
+        "depth_std": 0.10150167346000671,
+        "depth_min": 0.1308988332748413,
+        "depth_max": 0.9766396880149841,
+        "mask_area": 5159
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "box",
+      "confidence": 0.37187981605529785,
+      "bounding_box": [
+        214.57278442382812,
+        107.48856353759766,
+        269.700439453125,
+        170.44509887695312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.326786071062088,
+        "median_depth": 0.32134032249450684,
+        "depth_std": 0.05410360172390938,
+        "depth_min": 0.16345125436782837,
+        "depth_max": 0.5089959502220154,
+        "mask_area": 1615
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "flag",
+      "confidence": 0.4931751787662506,
+      "bounding_box": [
+        160.40853881835938,
+        0.061283111572265625,
+        315.7685546875,
+        59.89158630371094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.45032498240470886,
+        "median_depth": 0.44326621294021606,
+        "depth_std": 0.14699473977088928,
+        "depth_min": 0.2130867838859558,
+        "depth_max": 0.7566442489624023,
+        "mask_area": 7902
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "door",
+      "confidence": 0.35598257184028625,
+      "bounding_box": [
+        40.62688064575195,
+        0.0890045166015625,
+        118.9185791015625,
+        97.93696594238281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8432774543762207,
+        "median_depth": 0.8325749039649963,
+        "depth_std": 0.064366415143013,
+        "depth_min": 0.6454262137413025,
+        "depth_max": 0.9926303625106812,
+        "mask_area": 5561
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cup. paper towel roll. coffee maker. electric kettle. metal rack. box. bag. table. door. flag.",
+  "text_prompt": "robot arm. gripper. cup. paper towel roll. coffee maker. electric kettle. metal rack. box. bag. table. door. flag.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

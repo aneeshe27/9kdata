@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cable",
+    "floor",
+    "cup container",
+    "sink"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup container, sink, floor, robot arm, cable",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.08662804216146469,
+        "relative_position": "closest",
+        "confidence": 0.4982783794403076
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.3013201653957367,
+        "relative_position": "middle",
+        "confidence": 0.3881835341453552
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "floor",
+        "mean_depth": 0.4755246639251709,
+        "relative_position": "middle",
+        "confidence": 0.5541489124298096
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cup container",
+        "mean_depth": 0.6655490398406982,
+        "relative_position": "middle",
+        "confidence": 0.4448210895061493
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.8221946358680725,
+        "relative_position": "farthest",
+        "confidence": 0.613464891910553
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.8221946358680725,
+        "relative_position": "farthest",
+        "confidence": 0.613464891910553
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cup container",
+        "mean_depth": 0.6655490398406982,
+        "relative_position": "middle",
+        "confidence": 0.4448210895061493
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "floor",
+        "mean_depth": 0.4755246639251709,
+        "relative_position": "middle",
+        "confidence": 0.5541489124298096
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.3013201653957367,
+        "relative_position": "middle",
+        "confidence": 0.3881835341453552
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.08662804216146469,
+        "relative_position": "closest",
+        "confidence": 0.4982783794403076
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4982783794403076,
+      "bounding_box": [
+        161.2067413330078,
+        0.07197189331054688,
+        315.91485595703125,
+        56.66172790527344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08662804216146469,
+        "median_depth": 0.06764519214630127,
+        "depth_std": 0.07274631410837173,
+        "depth_min": 0.02567899040877819,
+        "depth_max": 0.7399595975875854,
+        "mask_area": 2998
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cable",
+      "confidence": 0.3881835341453552,
+      "bounding_box": [
+        240.27633666992188,
+        34.12902069091797,
+        294.6880187988281,
+        107.92305755615234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3013201653957367,
+        "median_depth": 0.20742382109165192,
+        "depth_std": 0.2242537885904312,
+        "depth_min": 0.05616480112075806,
+        "depth_max": 0.9190291166305542,
+        "mask_area": 453
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "floor",
+      "confidence": 0.5541489124298096,
+      "bounding_box": [
+        126.03221130371094,
+        97.1090087890625,
+        290.1434326171875,
+        180.02996826171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4755246639251709,
+        "median_depth": 0.45105287432670593,
+        "depth_std": 0.08624491095542908,
+        "depth_min": 0.08312804996967316,
+        "depth_max": 0.7296090126037598,
+        "mask_area": 4896
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cup container",
+      "confidence": 0.4448210895061493,
+      "bounding_box": [
+        98.2142562866211,
+        56.939903259277344,
+        117.89801788330078,
+        77.49468231201172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6655490398406982,
+        "median_depth": 0.6418759822845459,
+        "depth_std": 0.06521015614271164,
+        "depth_min": 0.5737216472625732,
+        "depth_max": 0.936687707901001,
+        "mask_area": 326
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.613464891910553,
+      "bounding_box": [
+        114.92021179199219,
+        46.2288703918457,
+        202.85133361816406,
+        71.96294403076172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8221946358680725,
+        "median_depth": 0.8155838251113892,
+        "depth_std": 0.0900215283036232,
+        "depth_min": 0.6628665924072266,
+        "depth_max": 0.9891849160194397,
+        "mask_area": 1132
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cable. sink. faucet. countertop. cabinet. drawer. cup. container. bottle. tube. window. wall. floor.",
+  "text_prompt": "robot arm. gripper. cable. sink. faucet. countertop. cabinet. drawer. cup. container. bottle. tube. window. wall. floor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

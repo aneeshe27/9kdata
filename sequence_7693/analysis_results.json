@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cable",
+    "cloth",
+    "tablet",
+    "sofa",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sofa, chair, cloth, cable, tablet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.05029755085706711,
+        "relative_position": "closest",
+        "confidence": 0.3730308711528778
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.05909724161028862,
+        "relative_position": "middle",
+        "confidence": 0.5261245369911194
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "tablet",
+        "mean_depth": 0.08139631897211075,
+        "relative_position": "middle",
+        "confidence": 0.6477095484733582
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "sofa",
+        "mean_depth": 0.19874630868434906,
+        "relative_position": "middle",
+        "confidence": 0.4425285756587982
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.30608561635017395,
+        "relative_position": "farthest",
+        "confidence": 0.3573633134365082
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.30608561635017395,
+        "relative_position": "farthest",
+        "confidence": 0.3573633134365082
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "sofa",
+        "mean_depth": 0.19874630868434906,
+        "relative_position": "middle",
+        "confidence": 0.4425285756587982
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "tablet",
+        "mean_depth": 0.08139631897211075,
+        "relative_position": "middle",
+        "confidence": 0.6477095484733582
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.05909724161028862,
+        "relative_position": "middle",
+        "confidence": 0.5261245369911194
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.05029755085706711,
+        "relative_position": "closest",
+        "confidence": 0.3730308711528778
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cable",
+      "confidence": 0.3730308711528778,
+      "bounding_box": [
+        60.67700958251953,
+        88.4773941040039,
+        119.38550567626953,
+        179.7601318359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05029755085706711,
+        "median_depth": 0.05017559975385666,
+        "depth_std": 0.004836190491914749,
+        "depth_min": 0.035834237933158875,
+        "depth_max": 0.06142546236515045,
+        "mask_area": 671
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.5261245369911194,
+      "bounding_box": [
+        9.385597229003906,
+        135.2215576171875,
+        86.18656158447266,
+        180.00088500976562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05909724161028862,
+        "median_depth": 0.059930525720119476,
+        "depth_std": 0.004550058860331774,
+        "depth_min": 0.04384855926036835,
+        "depth_max": 0.06696221232414246,
+        "mask_area": 1838
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "tablet",
+      "confidence": 0.6477095484733582,
+      "bounding_box": [
+        91.20089721679688,
+        59.35352325439453,
+        123.85914611816406,
+        79.36321258544922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08139631897211075,
+        "median_depth": 0.07980433106422424,
+        "depth_std": 0.0058347187004983425,
+        "depth_min": 0.07337632030248642,
+        "depth_max": 0.10179051011800766,
+        "mask_area": 363
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "sofa",
+      "confidence": 0.4425285756587982,
+      "bounding_box": [
+        0.07283782958984375,
+        10.406734466552734,
+        98.50933074951172,
+        75.79000854492188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19874630868434906,
+        "median_depth": 0.19262748956680298,
+        "depth_std": 0.0718056783080101,
+        "depth_min": 0.09024239331483841,
+        "depth_max": 0.42299604415893555,
+        "mask_area": 4049
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.3573633134365082,
+      "bounding_box": [
+        100.54757690429688,
+        29.282556533813477,
+        111.5758056640625,
+        41.42835235595703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30608561635017395,
+        "median_depth": 0.3074524402618408,
+        "depth_std": 0.028940575197339058,
+        "depth_min": 0.24102552235126495,
+        "depth_max": 0.36370882391929626,
+        "mask_area": 86
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. container. cloth. cable. table. tablet. chair. sofa.",
+  "text_prompt": "robot arm. gripper. container. cloth. cable. table. tablet. chair. sofa.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

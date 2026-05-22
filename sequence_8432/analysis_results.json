@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "chair",
+    "window blinds",
+    "cabinet",
+    "countertop"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, countertop, window blinds, chair, cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.12195998430252075,
+        "relative_position": "closest",
+        "confidence": 0.7319047451019287
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.39920973777770996,
+        "relative_position": "middle",
+        "confidence": 0.524582028388977
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "window blinds",
+        "mean_depth": 0.468656450510025,
+        "relative_position": "middle",
+        "confidence": 0.854907751083374
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.6308277249336243,
+        "relative_position": "middle",
+        "confidence": 0.3900337517261505
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.6742280721664429,
+        "relative_position": "farthest",
+        "confidence": 0.43935322761535645
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.6742280721664429,
+        "relative_position": "farthest",
+        "confidence": 0.43935322761535645
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.6308277249336243,
+        "relative_position": "middle",
+        "confidence": 0.3900337517261505
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "window blinds",
+        "mean_depth": 0.468656450510025,
+        "relative_position": "middle",
+        "confidence": 0.854907751083374
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.39920973777770996,
+        "relative_position": "middle",
+        "confidence": 0.524582028388977
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.12195998430252075,
+        "relative_position": "closest",
+        "confidence": 0.7319047451019287
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.7319047451019287,
+      "bounding_box": [
+        99.94607543945312,
+        72.01316833496094,
+        261.6650085449219,
+        179.67755126953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12195998430252075,
+        "median_depth": 0.10858097672462463,
+        "depth_std": 0.08640442788600922,
+        "depth_min": 0.00643554562702775,
+        "depth_max": 0.6086726188659668,
+        "mask_area": 10780
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.524582028388977,
+      "bounding_box": [
+        237.8900604248047,
+        54.317543029785156,
+        295.3172607421875,
+        156.9901123046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39920973777770996,
+        "median_depth": 0.36946865916252136,
+        "depth_std": 0.09234605729579926,
+        "depth_min": 0.07384087145328522,
+        "depth_max": 0.6391677260398865,
+        "mask_area": 1081
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "window blinds",
+      "confidence": 0.854907751083374,
+      "bounding_box": [
+        108.220703125,
+        0.14876556396484375,
+        225.67575073242188,
+        63.73542785644531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.468656450510025,
+        "median_depth": 0.46788448095321655,
+        "depth_std": 0.0717645063996315,
+        "depth_min": 0.0,
+        "depth_max": 0.8919168710708618,
+        "mask_area": 5914
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3900337517261505,
+      "bounding_box": [
+        251.54446411132812,
+        0.0016260147094726562,
+        315.6271057128906,
+        11.840384483337402
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6308277249336243,
+        "median_depth": 0.6118888258934021,
+        "depth_std": 0.08113522082567215,
+        "depth_min": 0.5308554768562317,
+        "depth_max": 0.8502109050750732,
+        "mask_area": 579
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "countertop",
+      "confidence": 0.43935322761535645,
+      "bounding_box": [
+        242.3568572998047,
+        32.542327880859375,
+        315.854736328125,
+        51.99769592285156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6742280721664429,
+        "median_depth": 0.6768161058425903,
+        "depth_std": 0.03941374272108078,
+        "depth_min": 0.581793487071991,
+        "depth_max": 0.841839611530304,
+        "mask_area": 718
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. chair. container. utensil holder. wooden spoon. spatula. cloth. window blinds. countertop. cabinet.",
+  "text_prompt": "table. chair. container. utensil holder. wooden spoon. spatula. cloth. window blinds. countertop. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

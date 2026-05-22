@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/home/ulal/visual_reasoning/tmp/depth_extended_temp_1373754/temp_image_8610.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_8610.jpg"
+  },
+  "correct_ordering": [
+    "wall",
+    "ceiling fan",
+    "floor",
+    "window",
+    "sink"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: ceiling fan, sink, wall, window, floor",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "wall",
+        "mean_depth": 0.15114817023277283,
+        "relative_position": "closest",
+        "confidence": 0.4706501364707947
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "ceiling fan",
+        "mean_depth": 0.158021941781044,
+        "relative_position": "middle",
+        "confidence": 0.38322657346725464
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "floor",
+        "mean_depth": 0.4697840213775635,
+        "relative_position": "middle",
+        "confidence": 0.6362025141716003
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.47469353675842285,
+        "relative_position": "middle",
+        "confidence": 0.5585117340087891
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.9421795010566711,
+        "relative_position": "farthest",
+        "confidence": 0.6389243006706238
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.9421795010566711,
+        "relative_position": "farthest",
+        "confidence": 0.6389243006706238
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "window",
+        "mean_depth": 0.47469353675842285,
+        "relative_position": "middle",
+        "confidence": 0.5585117340087891
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "floor",
+        "mean_depth": 0.4697840213775635,
+        "relative_position": "middle",
+        "confidence": 0.6362025141716003
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "ceiling fan",
+        "mean_depth": 0.158021941781044,
+        "relative_position": "middle",
+        "confidence": 0.38322657346725464
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "wall",
+        "mean_depth": 0.15114817023277283,
+        "relative_position": "closest",
+        "confidence": 0.4706501364707947
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "wall",
+      "confidence": 0.4706501364707947,
+      "bounding_box": [
+        152.01141357421875,
+        0.12982177734375,
+        268.5543518066406,
+        179.8431396484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15114817023277283,
+        "median_depth": 0.14773467183113098,
+        "depth_std": 0.016049658879637718,
+        "depth_min": 0.1226976290345192,
+        "depth_max": 0.3270008862018585,
+        "mask_area": 16208
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "ceiling fan",
+      "confidence": 0.38322657346725464,
+      "bounding_box": [
+        0.7400741577148438,
+        0.005748748779296875,
+        86.329345703125,
+        20.96615982055664
+      ],
+      "depth_stats": {
+        "mean_depth": 0.158021941781044,
+        "median_depth": 0.180640310049057,
+        "depth_std": 0.08345697820186615,
+        "depth_min": 0.06445808708667755,
+        "depth_max": 0.4301784038543701,
+        "mask_area": 394
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "floor",
+      "confidence": 0.6362025141716003,
+      "bounding_box": [
+        44.4249153137207,
+        111.56794738769531,
+        154.44898986816406,
+        180.0094451904297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4697840213775635,
+        "median_depth": 0.448779821395874,
+        "depth_std": 0.13024067878723145,
+        "depth_min": 0.23768439888954163,
+        "depth_max": 0.9398126006126404,
+        "mask_area": 4316
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "window",
+      "confidence": 0.5585117340087891,
+      "bounding_box": [
+        1.5987319946289062,
+        23.13359832763672,
+        70.84347534179688,
+        105.27118682861328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47469353675842285,
+        "median_depth": 0.47341910004615784,
+        "depth_std": 0.054821282625198364,
+        "depth_min": 0.21264292299747467,
+        "depth_max": 0.578331708908081,
+        "mask_area": 3361
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.6389243006706238,
+      "bounding_box": [
+        123.90186309814453,
+        86.2214584350586,
+        140.64413452148438,
+        90.31751251220703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9421795010566711,
+        "median_depth": 0.9405118227005005,
+        "depth_std": 0.02419060654938221,
+        "depth_min": 0.8790803551673889,
+        "depth_max": 0.9851424098014832,
+        "mask_area": 41
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. camera. cabinet. drawer. countertop. sink. faucet. bottle. window. blinds. ceiling fan. light. chair. floor. wall.",
+  "text_prompt": "robot arm. gripper. camera. cabinet. drawer. countertop. sink. faucet. bottle. window. blinds. ceiling fan. light. chair. floor. wall.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

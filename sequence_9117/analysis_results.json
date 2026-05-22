@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "container",
+    "plastic bag",
+    "chair",
+    "monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm gripper, chair, monitor, plastic bag, container",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.046763915568590164,
+        "relative_position": "closest",
+        "confidence": 0.4025138020515442
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "container",
+        "mean_depth": 0.09527791291475296,
+        "relative_position": "middle",
+        "confidence": 0.834089457988739
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "plastic bag",
+        "mean_depth": 0.10978823155164719,
+        "relative_position": "middle",
+        "confidence": 0.8035449385643005
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.2600516676902771,
+        "relative_position": "middle",
+        "confidence": 0.4074813425540924
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "monitor",
+        "mean_depth": 0.5718443989753723,
+        "relative_position": "farthest",
+        "confidence": 0.5580716133117676
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "monitor",
+        "mean_depth": 0.5718443989753723,
+        "relative_position": "farthest",
+        "confidence": 0.5580716133117676
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.2600516676902771,
+        "relative_position": "middle",
+        "confidence": 0.4074813425540924
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "plastic bag",
+        "mean_depth": 0.10978823155164719,
+        "relative_position": "middle",
+        "confidence": 0.8035449385643005
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "container",
+        "mean_depth": 0.09527791291475296,
+        "relative_position": "middle",
+        "confidence": 0.834089457988739
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.046763915568590164,
+        "relative_position": "closest",
+        "confidence": 0.4025138020515442
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.4025138020515442,
+      "bounding_box": [
+        189.323486328125,
+        -0.05693817138671875,
+        315.9206237792969,
+        91.7374496459961
+      ],
+      "depth_stats": {
+        "mean_depth": 0.046763915568590164,
+        "median_depth": 0.026055924594402313,
+        "depth_std": 0.09222309291362762,
+        "depth_min": 0.0,
+        "depth_max": 0.7147722840309143,
+        "mask_area": 5364
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "container",
+      "confidence": 0.834089457988739,
+      "bounding_box": [
+        206.071044921875,
+        81.83646392822266,
+        289.5235595703125,
+        133.24464416503906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09527791291475296,
+        "median_depth": 0.07665571570396423,
+        "depth_std": 0.06452479958534241,
+        "depth_min": 0.054188322275877,
+        "depth_max": 0.72414630651474,
+        "mask_area": 3102
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "plastic bag",
+      "confidence": 0.8035449385643005,
+      "bounding_box": [
+        145.37843322753906,
+        71.22169494628906,
+        209.62953186035156,
+        131.4417724609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10978823155164719,
+        "median_depth": 0.08465015143156052,
+        "depth_std": 0.09003559499979019,
+        "depth_min": 0.05157344788312912,
+        "depth_max": 0.6034281253814697,
+        "mask_area": 2570
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.4074813425540924,
+      "bounding_box": [
+        -0.00415802001953125,
+        82.21168518066406,
+        76.42435455322266,
+        121.31765747070312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2600516676902771,
+        "median_depth": 0.2532554864883423,
+        "depth_std": 0.04864199832081795,
+        "depth_min": 0.2165842205286026,
+        "depth_max": 0.561776876449585,
+        "mask_area": 2124
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "monitor",
+      "confidence": 0.5580716133117676,
+      "bounding_box": [
+        44.892738342285156,
+        66.42707824707031,
+        62.722389221191406,
+        77.17054748535156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5718443989753723,
+        "median_depth": 0.5709571838378906,
+        "depth_std": 0.006056926213204861,
+        "depth_min": 0.561996340751648,
+        "depth_max": 0.5839259028434753,
+        "mask_area": 145
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. plastic bag. cloth. container. chair. door. window. monitor.",
+  "text_prompt": "table. robot arm. gripper. plastic bag. cloth. container. chair. door. window. monitor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

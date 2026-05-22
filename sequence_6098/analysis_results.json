@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "sink",
+    "shelf",
+    "stove",
+    "countertop",
+    "storage"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: stove, sink, storage, shelf, countertop",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.08892802149057388,
+        "relative_position": "closest",
+        "confidence": 0.5534830093383789
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.13645006716251373,
+        "relative_position": "middle",
+        "confidence": 0.39904138445854187
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "stove",
+        "mean_depth": 0.14234833419322968,
+        "relative_position": "middle",
+        "confidence": 0.3695729672908783
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "countertop",
+        "mean_depth": 0.22001215815544128,
+        "relative_position": "middle",
+        "confidence": 0.36092621088027954
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "storage",
+        "mean_depth": 0.675244152545929,
+        "relative_position": "farthest",
+        "confidence": 0.49564480781555176
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "storage",
+        "mean_depth": 0.675244152545929,
+        "relative_position": "farthest",
+        "confidence": 0.49564480781555176
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "countertop",
+        "mean_depth": 0.22001215815544128,
+        "relative_position": "middle",
+        "confidence": 0.36092621088027954
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "stove",
+        "mean_depth": 0.14234833419322968,
+        "relative_position": "middle",
+        "confidence": 0.3695729672908783
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.13645006716251373,
+        "relative_position": "middle",
+        "confidence": 0.39904138445854187
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.08892802149057388,
+        "relative_position": "closest",
+        "confidence": 0.5534830093383789
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.5534830093383789,
+      "bounding_box": [
+        178.19195556640625,
+        116.22452545166016,
+        246.97320556640625,
+        172.04800415039062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08892802149057388,
+        "median_depth": 0.08760164678096771,
+        "depth_std": 0.012108688242733479,
+        "depth_min": 0.0651562437415123,
+        "depth_max": 0.1164751648902893,
+        "mask_area": 1586
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "shelf",
+      "confidence": 0.39904138445854187,
+      "bounding_box": [
+        72.15036010742188,
+        18.502819061279297,
+        165.0763397216797,
+        131.86099243164062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13645006716251373,
+        "median_depth": 0.13444241881370544,
+        "depth_std": 0.03681439533829689,
+        "depth_min": 0.07850228250026703,
+        "depth_max": 0.47364795207977295,
+        "mask_area": 5652
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "stove",
+      "confidence": 0.3695729672908783,
+      "bounding_box": [
+        132.6461181640625,
+        86.08036041259766,
+        201.18820190429688,
+        130.86212158203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14234833419322968,
+        "median_depth": 0.139701709151268,
+        "depth_std": 0.019981784746050835,
+        "depth_min": 0.10508564859628677,
+        "depth_max": 0.19724102318286896,
+        "mask_area": 1765
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "countertop",
+      "confidence": 0.36092621088027954,
+      "bounding_box": [
+        172.46246337890625,
+        22.418785095214844,
+        304.5494079589844,
+        38.886653900146484
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22001215815544128,
+        "median_depth": 0.21800507605075836,
+        "depth_std": 0.0416664183139801,
+        "depth_min": 0.04410453885793686,
+        "depth_max": 0.45448359847068787,
+        "mask_area": 913
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "storage",
+      "confidence": 0.49564480781555176,
+      "bounding_box": [
+        0.01346588134765625,
+        106.9404067993164,
+        24.659502029418945,
+        137.1870574951172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.675244152545929,
+        "median_depth": 0.7089736461639404,
+        "depth_std": 0.08512286841869354,
+        "depth_min": 0.42262181639671326,
+        "depth_max": 0.7507133483886719,
+        "mask_area": 464
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. pot. stove. knobs. microwave. countertop. table. clamp. cables. storage bins. shelf. rail.",
+  "text_prompt": "robot arm. gripper. sink. pot. stove. knobs. microwave. countertop. table. clamp. cables. storage bins. shelf. rail.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

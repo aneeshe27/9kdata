@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "mug",
+    "cardboard box",
+    "camera",
+    "tripod"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: camera, cardboard box, mug, robot arm gripper, tripod",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.014539097435772419,
+        "relative_position": "closest",
+        "confidence": 0.40962427854537964
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "mug",
+        "mean_depth": 0.0737544447183609,
+        "relative_position": "middle",
+        "confidence": 0.7146626710891724
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cardboard box",
+        "mean_depth": 0.24629159271717072,
+        "relative_position": "middle",
+        "confidence": 0.5073747634887695
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.6053454875946045,
+        "relative_position": "middle",
+        "confidence": 0.4638192057609558
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "tripod",
+        "mean_depth": 0.8283900618553162,
+        "relative_position": "farthest",
+        "confidence": 0.5552348494529724
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "tripod",
+        "mean_depth": 0.8283900618553162,
+        "relative_position": "farthest",
+        "confidence": 0.5552348494529724
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.6053454875946045,
+        "relative_position": "middle",
+        "confidence": 0.4638192057609558
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cardboard box",
+        "mean_depth": 0.24629159271717072,
+        "relative_position": "middle",
+        "confidence": 0.5073747634887695
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "mug",
+        "mean_depth": 0.0737544447183609,
+        "relative_position": "middle",
+        "confidence": 0.7146626710891724
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.014539097435772419,
+        "relative_position": "closest",
+        "confidence": 0.40962427854537964
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.40962427854537964,
+      "bounding_box": [
+        201.94041442871094,
+        126.66441345214844,
+        243.87388610839844,
+        178.46128845214844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.014539097435772419,
+        "median_depth": 0.010046872310340405,
+        "depth_std": 0.019747046753764153,
+        "depth_min": 0.0024066453333944082,
+        "depth_max": 0.15911293029785156,
+        "mask_area": 731
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "mug",
+      "confidence": 0.7146626710891724,
+      "bounding_box": [
+        196.3886260986328,
+        74.91029357910156,
+        230.89869689941406,
+        103.79887390136719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0737544447183609,
+        "median_depth": 0.06990018486976624,
+        "depth_std": 0.016740282997488976,
+        "depth_min": 0.054911527782678604,
+        "depth_max": 0.12759146094322205,
+        "mask_area": 706
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cardboard box",
+      "confidence": 0.5073747634887695,
+      "bounding_box": [
+        4.7777099609375,
+        62.55583572387695,
+        84.81111145019531,
+        146.86180114746094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24629159271717072,
+        "median_depth": 0.22424419224262238,
+        "depth_std": 0.09226636588573456,
+        "depth_min": 0.07652981579303741,
+        "depth_max": 0.7155762910842896,
+        "mask_area": 2291
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "camera",
+      "confidence": 0.4638192057609558,
+      "bounding_box": [
+        147.13424682617188,
+        32.697608947753906,
+        171.01596069335938,
+        53.186378479003906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6053454875946045,
+        "median_depth": 0.5840528607368469,
+        "depth_std": 0.06291155517101288,
+        "depth_min": 0.5305255055427551,
+        "depth_max": 0.8353424072265625,
+        "mask_area": 416
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "tripod",
+      "confidence": 0.5552348494529724,
+      "bounding_box": [
+        162.61463928222656,
+        0.143157958984375,
+        180.9235076904297,
+        34.21458435058594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8283900618553162,
+        "median_depth": 0.81345534324646,
+        "depth_std": 0.0651131421327591,
+        "depth_min": 0.7229201197624207,
+        "depth_max": 0.9872450232505798,
+        "mask_area": 267
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "mug. robot arm. gripper. table. tripod. camera. metal plate. cardboard box. cables.",
+  "text_prompt": "mug. robot arm. gripper. table. tripod. camera. metal plate. cardboard box. cables.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

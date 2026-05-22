@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "coffee maker",
+    "power outlet",
+    "paper cup",
+    "sink"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, robot arm, power outlet, coffee maker, paper cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.10685325413942337,
+        "relative_position": "closest",
+        "confidence": 0.3544275760650635
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "coffee maker",
+        "mean_depth": 0.14900505542755127,
+        "relative_position": "middle",
+        "confidence": 0.6334130764007568
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.27478915452957153,
+        "relative_position": "middle",
+        "confidence": 0.7400490045547485
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "paper cup",
+        "mean_depth": 0.5460282564163208,
+        "relative_position": "middle",
+        "confidence": 0.6095241904258728
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.8741494417190552,
+        "relative_position": "farthest",
+        "confidence": 0.4825620651245117
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.8741494417190552,
+        "relative_position": "farthest",
+        "confidence": 0.4825620651245117
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "paper cup",
+        "mean_depth": 0.5460282564163208,
+        "relative_position": "middle",
+        "confidence": 0.6095241904258728
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.27478915452957153,
+        "relative_position": "middle",
+        "confidence": 0.7400490045547485
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "coffee maker",
+        "mean_depth": 0.14900505542755127,
+        "relative_position": "middle",
+        "confidence": 0.6334130764007568
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.10685325413942337,
+        "relative_position": "closest",
+        "confidence": 0.3544275760650635
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3544275760650635,
+      "bounding_box": [
+        276.5897216796875,
+        0.05562019348144531,
+        315.9783935546875,
+        41.68534851074219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10685325413942337,
+        "median_depth": 0.09763108193874359,
+        "depth_std": 0.04992492124438286,
+        "depth_min": 0.0422227717936039,
+        "depth_max": 0.5312708616256714,
+        "mask_area": 1116
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "coffee maker",
+      "confidence": 0.6334130764007568,
+      "bounding_box": [
+        94.77114868164062,
+        0.0559844970703125,
+        179.86947631835938,
+        146.24288940429688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14900505542755127,
+        "median_depth": 0.1424517184495926,
+        "depth_std": 0.04609135538339615,
+        "depth_min": 0.06515680253505707,
+        "depth_max": 0.362326979637146,
+        "mask_area": 7635
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "power outlet",
+      "confidence": 0.7400490045547485,
+      "bounding_box": [
+        70.00042724609375,
+        26.271610260009766,
+        101.68643188476562,
+        56.321475982666016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27478915452957153,
+        "median_depth": 0.27498605847358704,
+        "depth_std": 0.011673870496451855,
+        "depth_min": 0.25315260887145996,
+        "depth_max": 0.2977152168750763,
+        "mask_area": 551
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "paper cup",
+      "confidence": 0.6095241904258728,
+      "bounding_box": [
+        268.6430358886719,
+        61.17667770385742,
+        291.2977600097656,
+        82.44749450683594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5460282564163208,
+        "median_depth": 0.4995369613170624,
+        "depth_std": 0.08687727898359299,
+        "depth_min": 0.4786801338195801,
+        "depth_max": 0.8319689631462097,
+        "mask_area": 287
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "sink",
+      "confidence": 0.4825620651245117,
+      "bounding_box": [
+        251.19140625,
+        51.34615707397461,
+        308.38763427734375,
+        71.73717498779297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8741494417190552,
+        "median_depth": 0.885210394859314,
+        "depth_std": 0.028826607391238213,
+        "depth_min": 0.6973485350608826,
+        "depth_max": 0.9079237580299377,
+        "mask_area": 316
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "coffee maker. coffee pod. pod holder. paper cup. cup lid. napkin. robot arm. gripper. countertop. sink. power outlet.",
+  "text_prompt": "coffee maker. coffee pod. pod holder. paper cup. cup lid. napkin. robot arm. gripper. countertop. sink. power outlet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

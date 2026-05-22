@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "box",
+    "electronic device",
+    "electronic device",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: box, electronic device, box, electronic device, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.027730625122785568,
+        "relative_position": "closest",
+        "confidence": 0.46176308393478394
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.36447200179100037,
+        "relative_position": "middle",
+        "confidence": 0.36582082509994507
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "electronic device",
+        "mean_depth": 0.44401803612709045,
+        "relative_position": "middle",
+        "confidence": 0.3566249907016754
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "electronic device",
+        "mean_depth": 0.45929673314094543,
+        "relative_position": "middle",
+        "confidence": 0.45905235409736633
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.5509732961654663,
+        "relative_position": "farthest",
+        "confidence": 0.5336183905601501
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.5509732961654663,
+        "relative_position": "farthest",
+        "confidence": 0.5336183905601501
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "electronic device",
+        "mean_depth": 0.45929673314094543,
+        "relative_position": "middle",
+        "confidence": 0.45905235409736633
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "electronic device",
+        "mean_depth": 0.44401803612709045,
+        "relative_position": "middle",
+        "confidence": 0.3566249907016754
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.36447200179100037,
+        "relative_position": "middle",
+        "confidence": 0.36582082509994507
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.027730625122785568,
+        "relative_position": "closest",
+        "confidence": 0.46176308393478394
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.46176308393478394,
+      "bounding_box": [
+        185.6329345703125,
+        -0.03951263427734375,
+        315.623779296875,
+        87.40009307861328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.027730625122785568,
+        "median_depth": 0.011270733550190926,
+        "depth_std": 0.047053080052137375,
+        "depth_min": 0.0,
+        "depth_max": 0.6304580569267273,
+        "mask_area": 4288
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "box",
+      "confidence": 0.36582082509994507,
+      "bounding_box": [
+        68.38215637207031,
+        95.41780090332031,
+        124.32719421386719,
+        141.09495544433594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.36447200179100037,
+        "median_depth": 0.360365629196167,
+        "depth_std": 0.03785732015967369,
+        "depth_min": 0.27135300636291504,
+        "depth_max": 0.459835410118103,
+        "mask_area": 1733
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "electronic device",
+      "confidence": 0.3566249907016754,
+      "bounding_box": [
+        122.9102783203125,
+        126.21949005126953,
+        166.1832275390625,
+        169.01766967773438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.44401803612709045,
+        "median_depth": 0.44319361448287964,
+        "depth_std": 0.021796857938170433,
+        "depth_min": 0.3877924084663391,
+        "depth_max": 0.5997085571289062,
+        "mask_area": 1224
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "electronic device",
+      "confidence": 0.45905235409736633,
+      "bounding_box": [
+        138.4403533935547,
+        96.25048065185547,
+        163.58738708496094,
+        121.2291030883789
+      ],
+      "depth_stats": {
+        "mean_depth": 0.45929673314094543,
+        "median_depth": 0.459712415933609,
+        "depth_std": 0.015129197388887405,
+        "depth_min": 0.4274666905403137,
+        "depth_max": 0.5060692429542542,
+        "mask_area": 436
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "box",
+      "confidence": 0.5336183905601501,
+      "bounding_box": [
+        167.58738708496094,
+        155.90127563476562,
+        219.83860778808594,
+        179.98904418945312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5509732961654663,
+        "median_depth": 0.5513200759887695,
+        "depth_std": 0.03847385570406914,
+        "depth_min": 0.42912212014198303,
+        "depth_max": 0.6209230422973633,
+        "mask_area": 704
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. shelf. rack. box. plastic bin. power drill. cable. tray. electronic device.",
+  "text_prompt": "robot arm. gripper. shelf. rack. box. plastic bin. power drill. cable. tray. electronic device.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "refrigerator",
+    "spice jar bottle",
+    "shelf",
+    "electrical outlet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, refrigerator, electrical outlet, shelf, spice jar bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.06555167585611343,
+        "relative_position": "closest",
+        "confidence": 0.44281360507011414
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "refrigerator",
+        "mean_depth": 0.13184168934822083,
+        "relative_position": "middle",
+        "confidence": 0.39588987827301025
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "spice jar bottle",
+        "mean_depth": 0.3733261227607727,
+        "relative_position": "middle",
+        "confidence": 0.39044955372810364
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.3909633755683899,
+        "relative_position": "middle",
+        "confidence": 0.5306227803230286
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "electrical outlet",
+        "mean_depth": 0.4910241961479187,
+        "relative_position": "farthest",
+        "confidence": 0.6264387369155884
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "electrical outlet",
+        "mean_depth": 0.4910241961479187,
+        "relative_position": "farthest",
+        "confidence": 0.6264387369155884
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.3909633755683899,
+        "relative_position": "middle",
+        "confidence": 0.5306227803230286
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "spice jar bottle",
+        "mean_depth": 0.3733261227607727,
+        "relative_position": "middle",
+        "confidence": 0.39044955372810364
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "refrigerator",
+        "mean_depth": 0.13184168934822083,
+        "relative_position": "middle",
+        "confidence": 0.39588987827301025
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.06555167585611343,
+        "relative_position": "closest",
+        "confidence": 0.44281360507011414
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.44281360507011414,
+      "bounding_box": [
+        211.8091278076172,
+        53.40544891357422,
+        315.948974609375,
+        179.77255249023438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06555167585611343,
+        "median_depth": 0.02404615841805935,
+        "depth_std": 0.11548919230699539,
+        "depth_min": 0.002832151483744383,
+        "depth_max": 0.8951283097267151,
+        "mask_area": 4012
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "refrigerator",
+      "confidence": 0.39588987827301025,
+      "bounding_box": [
+        0.1160736083984375,
+        0.017303466796875,
+        100.082763671875,
+        180.0154571533203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13184168934822083,
+        "median_depth": 0.12072162330150604,
+        "depth_std": 0.05944475159049034,
+        "depth_min": 0.04615350812673569,
+        "depth_max": 0.27361202239990234,
+        "mask_area": 16971
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "spice jar bottle",
+      "confidence": 0.39044955372810364,
+      "bounding_box": [
+        160.1627655029297,
+        29.395313262939453,
+        172.5981903076172,
+        53.857479095458984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3733261227607727,
+        "median_depth": 0.37275829911231995,
+        "depth_std": 0.007647689897567034,
+        "depth_min": 0.3564387857913971,
+        "depth_max": 0.40370437502861023,
+        "mask_area": 253
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "shelf",
+      "confidence": 0.5306227803230286,
+      "bounding_box": [
+        124.17078399658203,
+        47.00115203857422,
+        222.482421875,
+        104.01505279541016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3909633755683899,
+        "median_depth": 0.3829748034477234,
+        "depth_std": 0.058123230934143066,
+        "depth_min": 0.28083956241607666,
+        "depth_max": 0.5738728642463684,
+        "mask_area": 4459
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "electrical outlet",
+      "confidence": 0.6264387369155884,
+      "bounding_box": [
+        184.51824951171875,
+        110.47047424316406,
+        195.10317993164062,
+        129.13987731933594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4910241961479187,
+        "median_depth": 0.48962193727493286,
+        "depth_std": 0.009553215466439724,
+        "depth_min": 0.4768979251384735,
+        "depth_max": 0.5138021111488342,
+        "mask_area": 180
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. pot. spice jar. bottle. shelf. stove. refrigerator. window. blinds. electrical outlet.",
+  "text_prompt": "robot arm. pot. spice jar. bottle. shelf. stove. refrigerator. window. blinds. electrical outlet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

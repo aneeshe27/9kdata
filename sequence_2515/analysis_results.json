@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "chair",
+    "cabinet",
+    "refrigerator",
+    "refrigerator"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, refrigerator, refrigerator, cabinet, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.14701849222183228,
+        "relative_position": "closest",
+        "confidence": 0.6773175001144409
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.2484341710805893,
+        "relative_position": "middle",
+        "confidence": 0.7007830142974854
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.4039449989795685,
+        "relative_position": "middle",
+        "confidence": 0.6084740161895752
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "refrigerator",
+        "mean_depth": 0.5032500624656677,
+        "relative_position": "middle",
+        "confidence": 0.5226218104362488
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "refrigerator",
+        "mean_depth": 0.6002387404441833,
+        "relative_position": "farthest",
+        "confidence": 0.4733400344848633
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "refrigerator",
+        "mean_depth": 0.6002387404441833,
+        "relative_position": "farthest",
+        "confidence": 0.4733400344848633
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "refrigerator",
+        "mean_depth": 0.5032500624656677,
+        "relative_position": "middle",
+        "confidence": 0.5226218104362488
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.4039449989795685,
+        "relative_position": "middle",
+        "confidence": 0.6084740161895752
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.2484341710805893,
+        "relative_position": "middle",
+        "confidence": 0.7007830142974854
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.14701849222183228,
+        "relative_position": "closest",
+        "confidence": 0.6773175001144409
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.6773175001144409,
+      "bounding_box": [
+        55.947227478027344,
+        76.32502746582031,
+        229.73562622070312,
+        179.9820098876953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14701849222183228,
+        "median_depth": 0.12883692979812622,
+        "depth_std": 0.08898007869720459,
+        "depth_min": 0.0296473391354084,
+        "depth_max": 0.9204275608062744,
+        "mask_area": 7898
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.7007830142974854,
+      "bounding_box": [
+        220.6145477294922,
+        70.5411376953125,
+        281.82281494140625,
+        167.58123779296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2484341710805893,
+        "median_depth": 0.24667783081531525,
+        "depth_std": 0.04172627627849579,
+        "depth_min": 0.17724470794200897,
+        "depth_max": 0.5653493404388428,
+        "mask_area": 3021
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.6084740161895752,
+      "bounding_box": [
+        -0.001190185546875,
+        0.0141754150390625,
+        107.17369842529297,
+        148.33859252929688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4039449989795685,
+        "median_depth": 0.38616785407066345,
+        "depth_std": 0.09257840365171432,
+        "depth_min": 0.06544176489114761,
+        "depth_max": 0.7578428387641907,
+        "mask_area": 11501
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "refrigerator",
+      "confidence": 0.5226218104362488,
+      "bounding_box": [
+        224.23231506347656,
+        0.08156967163085938,
+        315.9815673828125,
+        108.85418701171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5032500624656677,
+        "median_depth": 0.5006764531135559,
+        "depth_std": 0.043145813047885895,
+        "depth_min": 0.2020615190267563,
+        "depth_max": 0.84963458776474,
+        "mask_area": 5692
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "refrigerator",
+      "confidence": 0.4733400344848633,
+      "bounding_box": [
+        170.8450469970703,
+        0.11666488647460938,
+        233.57627868652344,
+        86.79838562011719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6002387404441833,
+        "median_depth": 0.6000027656555176,
+        "depth_std": 0.05604833364486694,
+        "depth_min": 0.20711517333984375,
+        "depth_max": 0.7525996565818787,
+        "mask_area": 3960
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. frying pan. table. chair. cloth. cabinet. refrigerator.",
+  "text_prompt": "robot arm. gripper. frying pan. table. chair. cloth. cabinet. refrigerator.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

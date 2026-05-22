@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cardboard box",
+    "bowl",
+    "gripper",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, cardboard box, gripper, bowl, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.039701495319604874,
+        "relative_position": "closest",
+        "confidence": 0.3594263195991516
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.12834618985652924,
+        "relative_position": "middle",
+        "confidence": 0.4544927775859833
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.3146115839481354,
+        "relative_position": "middle",
+        "confidence": 0.4374754726886749
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.39792153239250183,
+        "relative_position": "middle",
+        "confidence": 0.36824432015419006
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.9238950610160828,
+        "relative_position": "farthest",
+        "confidence": 0.45381006598472595
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.9238950610160828,
+        "relative_position": "farthest",
+        "confidence": 0.45381006598472595
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.39792153239250183,
+        "relative_position": "middle",
+        "confidence": 0.36824432015419006
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.3146115839481354,
+        "relative_position": "middle",
+        "confidence": 0.4374754726886749
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.12834618985652924,
+        "relative_position": "middle",
+        "confidence": 0.4544927775859833
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.039701495319604874,
+        "relative_position": "closest",
+        "confidence": 0.3594263195991516
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3594263195991516,
+      "bounding_box": [
+        2.1866912841796875,
+        14.01230239868164,
+        163.47752380371094,
+        102.23974609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.039701495319604874,
+        "median_depth": 0.01770702190697193,
+        "depth_std": 0.06542933732271194,
+        "depth_min": 0.008094578981399536,
+        "depth_max": 0.7535032033920288,
+        "mask_area": 8015
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cardboard box",
+      "confidence": 0.4544927775859833,
+      "bounding_box": [
+        209.93118286132812,
+        140.9737091064453,
+        292.04937744140625,
+        179.9529571533203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12834618985652924,
+        "median_depth": 0.12546998262405396,
+        "depth_std": 0.031921759247779846,
+        "depth_min": 0.08370055258274078,
+        "depth_max": 0.3015727698802948,
+        "mask_area": 1482
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bowl",
+      "confidence": 0.4374754726886749,
+      "bounding_box": [
+        176.10289001464844,
+        109.54767608642578,
+        201.4933624267578,
+        130.70703125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3146115839481354,
+        "median_depth": 0.3090534806251526,
+        "depth_std": 0.020337186753749847,
+        "depth_min": 0.2954042851924896,
+        "depth_max": 0.39641159772872925,
+        "mask_area": 414
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "gripper",
+      "confidence": 0.36824432015419006,
+      "bounding_box": [
+        84.36521911621094,
+        130.83140563964844,
+        114.24444580078125,
+        154.72666931152344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39792153239250183,
+        "median_depth": 0.38604649901390076,
+        "depth_std": 0.03438287600874901,
+        "depth_min": 0.3570394217967987,
+        "depth_max": 0.5213613510131836,
+        "mask_area": 303
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.45381006598472595,
+      "bounding_box": [
+        157.68252563476562,
+        0.09135055541992188,
+        181.35693359375,
+        27.741687774658203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9238950610160828,
+        "median_depth": 0.9726756811141968,
+        "depth_std": 0.09650778025388718,
+        "depth_min": 0.5724684596061707,
+        "depth_max": 0.9997327327728271,
+        "mask_area": 600
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. shelf. bowl. plate. cup. container. cardboard box. bag. chair. cutting board. utensil.",
+  "text_prompt": "robot arm. gripper. shelf. bowl. plate. cup. container. cardboard box. bag. chair. cutting board. utensil.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

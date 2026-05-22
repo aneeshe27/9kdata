@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "sink",
+    "sink trash bin",
+    "robot arm",
+    "gripper",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink trash bin, sink, robot arm, cabinet, gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.21977747976779938,
+        "relative_position": "closest",
+        "confidence": 0.5655339360237122
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink trash bin",
+        "mean_depth": 0.25253427028656006,
+        "relative_position": "middle",
+        "confidence": 0.44114431738853455
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.3293280601501465,
+        "relative_position": "middle",
+        "confidence": 0.39054059982299805
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.41065922379493713,
+        "relative_position": "middle",
+        "confidence": 0.3622714877128601
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.7688144445419312,
+        "relative_position": "farthest",
+        "confidence": 0.40677040815353394
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.7688144445419312,
+        "relative_position": "farthest",
+        "confidence": 0.40677040815353394
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.41065922379493713,
+        "relative_position": "middle",
+        "confidence": 0.3622714877128601
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.3293280601501465,
+        "relative_position": "middle",
+        "confidence": 0.39054059982299805
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink trash bin",
+        "mean_depth": 0.25253427028656006,
+        "relative_position": "middle",
+        "confidence": 0.44114431738853455
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.21977747976779938,
+        "relative_position": "closest",
+        "confidence": 0.5655339360237122
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.5655339360237122,
+      "bounding_box": [
+        229.1053924560547,
+        15.105243682861328,
+        315.8522033691406,
+        39.6455192565918
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21977747976779938,
+        "median_depth": 0.1798555552959442,
+        "depth_std": 0.18046623468399048,
+        "depth_min": 0.0025140317156910896,
+        "depth_max": 0.7752254009246826,
+        "mask_area": 1442
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "sink trash bin",
+      "confidence": 0.44114431738853455,
+      "bounding_box": [
+        228.65147399902344,
+        31.645538330078125,
+        284.8874816894531,
+        75.60942077636719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.25253427028656006,
+        "median_depth": 0.24971216917037964,
+        "depth_std": 0.033493973314762115,
+        "depth_min": 0.1963306963443756,
+        "depth_max": 0.47236403822898865,
+        "mask_area": 1416
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.39054059982299805,
+      "bounding_box": [
+        0.666290283203125,
+        96.9903564453125,
+        130.84461975097656,
+        179.8673095703125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3293280601501465,
+        "median_depth": 0.32776787877082825,
+        "depth_std": 0.19310493767261505,
+        "depth_min": 0.04371584206819534,
+        "depth_max": 0.9938838481903076,
+        "mask_area": 3225
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.3622714877128601,
+      "bounding_box": [
+        198.31808471679688,
+        103.341552734375,
+        216.36343383789062,
+        139.35635375976562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.41065922379493713,
+        "median_depth": 0.4126936197280884,
+        "depth_std": 0.04661843180656433,
+        "depth_min": 0.30605414509773254,
+        "depth_max": 0.5094534754753113,
+        "mask_area": 372
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.40677040815353394,
+      "bounding_box": [
+        69.62132263183594,
+        0.16867446899414062,
+        185.40940856933594,
+        106.16973876953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7688144445419312,
+        "median_depth": 0.7528049945831299,
+        "depth_std": 0.07520413398742676,
+        "depth_min": 0.49082428216934204,
+        "depth_max": 0.9083390235900879,
+        "mask_area": 5660
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. sink. drawer. cabinet. trash bin. box. jar. pan. cup.",
+  "text_prompt": "robot arm. gripper. countertop. sink. drawer. cabinet. trash bin. box. jar. pan. cup.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

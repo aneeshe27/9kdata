@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bowl",
+    "box",
+    "window",
+    "bowl",
+    "plant"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: plant, bowl, window, bowl, box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.11527665704488754,
+        "relative_position": "closest",
+        "confidence": 0.6984965205192566
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.17500506341457367,
+        "relative_position": "middle",
+        "confidence": 0.5122083425521851
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "window",
+        "mean_depth": 0.2006252110004425,
+        "relative_position": "middle",
+        "confidence": 0.3945530652999878
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.30776718258857727,
+        "relative_position": "middle",
+        "confidence": 0.6441998481750488
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "plant",
+        "mean_depth": 0.4007420241832733,
+        "relative_position": "farthest",
+        "confidence": 0.8143953680992126
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "plant",
+        "mean_depth": 0.4007420241832733,
+        "relative_position": "farthest",
+        "confidence": 0.8143953680992126
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.30776718258857727,
+        "relative_position": "middle",
+        "confidence": 0.6441998481750488
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "window",
+        "mean_depth": 0.2006252110004425,
+        "relative_position": "middle",
+        "confidence": 0.3945530652999878
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.17500506341457367,
+        "relative_position": "middle",
+        "confidence": 0.5122083425521851
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.11527665704488754,
+        "relative_position": "closest",
+        "confidence": 0.6984965205192566
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "bowl",
+      "confidence": 0.6984965205192566,
+      "bounding_box": [
+        169.73828125,
+        62.54808044433594,
+        210.67950439453125,
+        93.31239318847656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11527665704488754,
+        "median_depth": 0.11774778366088867,
+        "depth_std": 0.03178979083895683,
+        "depth_min": 0.043143387883901596,
+        "depth_max": 0.3096908926963806,
+        "mask_area": 935
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "box",
+      "confidence": 0.5122083425521851,
+      "bounding_box": [
+        105.23876190185547,
+        58.95423889160156,
+        143.60585021972656,
+        90.91056823730469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17500506341457367,
+        "median_depth": 0.16342610120773315,
+        "depth_std": 0.05713977664709091,
+        "depth_min": 0.1060577780008316,
+        "depth_max": 0.301424503326416,
+        "mask_area": 859
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "window",
+      "confidence": 0.3945530652999878,
+      "bounding_box": [
+        0.010507583618164062,
+        0.35385894775390625,
+        34.57673645019531,
+        85.71295166015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2006252110004425,
+        "median_depth": 0.20491383969783783,
+        "depth_std": 0.057705357670784,
+        "depth_min": 0.05849418416619301,
+        "depth_max": 0.32476964592933655,
+        "mask_area": 1379
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bowl",
+      "confidence": 0.6441998481750488,
+      "bounding_box": [
+        142.81478881835938,
+        39.08521270751953,
+        173.27227783203125,
+        58.63616180419922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30776718258857727,
+        "median_depth": 0.2970477044582367,
+        "depth_std": 0.041716318577528,
+        "depth_min": 0.27517494559288025,
+        "depth_max": 0.7500948905944824,
+        "mask_area": 278
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "plant",
+      "confidence": 0.8143953680992126,
+      "bounding_box": [
+        60.74620056152344,
+        0.04702949523925781,
+        155.72390747070312,
+        49.873619079589844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4007420241832733,
+        "median_depth": 0.3553330898284912,
+        "depth_std": 0.10535801202058792,
+        "depth_min": 0.26333048939704895,
+        "depth_max": 0.7057093977928162,
+        "mask_area": 1664
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. cup. box. utensil. plant. pot. robot arm. gripper. table. bench. window.",
+  "text_prompt": "bowl. cup. box. utensil. plant. pot. robot arm. gripper. table. bench. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "container plastic bin box",
+    "table",
+    "chair",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, chair, table, chair, container plastic bin box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.026726586744189262,
+        "relative_position": "closest",
+        "confidence": 0.35805168747901917
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "container plastic bin box",
+        "mean_depth": 0.030067069455981255,
+        "relative_position": "middle",
+        "confidence": 0.36390960216522217
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.03137711063027382,
+        "relative_position": "middle",
+        "confidence": 0.36008381843566895
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.15978282690048218,
+        "relative_position": "middle",
+        "confidence": 0.546238362789154
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.17972134053707123,
+        "relative_position": "farthest",
+        "confidence": 0.49201667308807373
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.17972134053707123,
+        "relative_position": "farthest",
+        "confidence": 0.49201667308807373
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.15978282690048218,
+        "relative_position": "middle",
+        "confidence": 0.546238362789154
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.03137711063027382,
+        "relative_position": "middle",
+        "confidence": 0.36008381843566895
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "container plastic bin box",
+        "mean_depth": 0.030067069455981255,
+        "relative_position": "middle",
+        "confidence": 0.36390960216522217
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.026726586744189262,
+        "relative_position": "closest",
+        "confidence": 0.35805168747901917
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.35805168747901917,
+      "bounding_box": [
+        0.0044155120849609375,
+        0.0904388427734375,
+        48.41084289550781,
+        179.93914794921875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.026726586744189262,
+        "median_depth": 0.009639473631978035,
+        "depth_std": 0.09059778600931168,
+        "depth_min": 0.000929596892092377,
+        "depth_max": 0.6524935364723206,
+        "mask_area": 5546
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "container plastic bin box",
+      "confidence": 0.36390960216522217,
+      "bounding_box": [
+        207.5662078857422,
+        111.01856994628906,
+        295.4815673828125,
+        168.6122283935547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.030067069455981255,
+        "median_depth": 0.027046164497733116,
+        "depth_std": 0.011032657697796822,
+        "depth_min": 0.016894284635782242,
+        "depth_max": 0.0854969471693039,
+        "mask_area": 2907
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "table",
+      "confidence": 0.36008381843566895,
+      "bounding_box": [
+        99.57989501953125,
+        122.65046691894531,
+        239.90982055664062,
+        179.95338439941406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03137711063027382,
+        "median_depth": 0.028403861448168755,
+        "depth_std": 0.012509338557720184,
+        "depth_min": 0.013941852375864983,
+        "depth_max": 0.07155255228281021,
+        "mask_area": 2715
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.546238362789154,
+      "bounding_box": [
+        179.26473999023438,
+        67.24720001220703,
+        206.78955078125,
+        99.14424896240234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15978282690048218,
+        "median_depth": 0.1402452290058136,
+        "depth_std": 0.08205026388168335,
+        "depth_min": 0.1084703579545021,
+        "depth_max": 0.8115825057029724,
+        "mask_area": 620
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.49201667308807373,
+      "bounding_box": [
+        223.05506896972656,
+        79.65790557861328,
+        254.58595275878906,
+        108.74263763427734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17972134053707123,
+        "median_depth": 0.17534410953521729,
+        "depth_std": 0.034157644957304,
+        "depth_min": 0.10922608524560928,
+        "depth_max": 0.33332598209381104,
+        "mask_area": 688
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. container. plastic bin. box. clamp. knife. banana. cutting board. camera. tripod. shelf. cable. chair.",
+  "text_prompt": "robot arm. gripper. table. container. plastic bin. box. clamp. knife. banana. cutting board. camera. tripod. shelf. cable. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

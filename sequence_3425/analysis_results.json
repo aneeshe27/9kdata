@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper",
+    "container box",
+    "monitor",
+    "monitor",
+    "monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: monitor, monitor, monitor, gripper, container box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.03194190561771393,
+        "relative_position": "closest",
+        "confidence": 0.4574047923088074
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "container box",
+        "mean_depth": 0.062339384108781815,
+        "relative_position": "middle",
+        "confidence": 0.49478012323379517
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.3294999897480011,
+        "relative_position": "middle",
+        "confidence": 0.6019608378410339
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "monitor",
+        "mean_depth": 0.7422740459442139,
+        "relative_position": "middle",
+        "confidence": 0.35818204283714294
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "monitor",
+        "mean_depth": 0.9708738923072815,
+        "relative_position": "farthest",
+        "confidence": 0.40757641196250916
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "monitor",
+        "mean_depth": 0.9708738923072815,
+        "relative_position": "farthest",
+        "confidence": 0.40757641196250916
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "monitor",
+        "mean_depth": 0.7422740459442139,
+        "relative_position": "middle",
+        "confidence": 0.35818204283714294
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.3294999897480011,
+        "relative_position": "middle",
+        "confidence": 0.6019608378410339
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "container box",
+        "mean_depth": 0.062339384108781815,
+        "relative_position": "middle",
+        "confidence": 0.49478012323379517
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.03194190561771393,
+        "relative_position": "closest",
+        "confidence": 0.4574047923088074
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "gripper",
+      "confidence": 0.4574047923088074,
+      "bounding_box": [
+        173.20849609375,
+        104.47600555419922,
+        243.04898071289062,
+        179.87838745117188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03194190561771393,
+        "median_depth": 0.031063927337527275,
+        "depth_std": 0.003440948436036706,
+        "depth_min": 0.02683369256556034,
+        "depth_max": 0.04693277180194855,
+        "mask_area": 2410
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "container box",
+      "confidence": 0.49478012323379517,
+      "bounding_box": [
+        279.55291748046875,
+        45.95056915283203,
+        315.9766845703125,
+        127.16545867919922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.062339384108781815,
+        "median_depth": 0.058332182466983795,
+        "depth_std": 0.020267648622393608,
+        "depth_min": 0.04240091145038605,
+        "depth_max": 0.24656973779201508,
+        "mask_area": 1842
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "monitor",
+      "confidence": 0.6019608378410339,
+      "bounding_box": [
+        10.839815139770508,
+        19.823745727539062,
+        55.26133728027344,
+        42.53425216674805
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3294999897480011,
+        "median_depth": 0.3288532793521881,
+        "depth_std": 0.016020188108086586,
+        "depth_min": 0.29776689410209656,
+        "depth_max": 0.3712034225463867,
+        "mask_area": 525
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "monitor",
+      "confidence": 0.35818204283714294,
+      "bounding_box": [
+        110.83623504638672,
+        9.43429946899414,
+        120.47074127197266,
+        18.617433547973633
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7422740459442139,
+        "median_depth": 0.7278950810432434,
+        "depth_std": 0.03972878307104111,
+        "depth_min": 0.714052677154541,
+        "depth_max": 0.8884488940238953,
+        "mask_area": 69
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "monitor",
+      "confidence": 0.40757641196250916,
+      "bounding_box": [
+        134.89747619628906,
+        15.932860374450684,
+        143.52210998535156,
+        24.925521850585938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9708738923072815,
+        "median_depth": 0.9723501801490784,
+        "depth_std": 0.014174683019518852,
+        "depth_min": 0.9400365948677063,
+        "depth_max": 0.9918217658996582,
+        "mask_area": 61
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. couch. chair. table. monitor. container. cable. box. shelf.",
+  "text_prompt": "robot arm. gripper. couch. chair. table. monitor. container. cable. box. shelf.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

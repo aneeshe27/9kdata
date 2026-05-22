@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "beam",
+    "ceiling light",
+    "container",
+    "curtain"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: ceiling light, curtain, robot arm, beam, container",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.05283985286951065,
+        "relative_position": "closest",
+        "confidence": 0.5036978125572205
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "beam",
+        "mean_depth": 0.16231676936149597,
+        "relative_position": "middle",
+        "confidence": 0.3524717688560486
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "ceiling light",
+        "mean_depth": 0.27600371837615967,
+        "relative_position": "middle",
+        "confidence": 0.5737972855567932
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "container",
+        "mean_depth": 0.33255618810653687,
+        "relative_position": "middle",
+        "confidence": 0.696275532245636
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "curtain",
+        "mean_depth": 0.47743427753448486,
+        "relative_position": "farthest",
+        "confidence": 0.5539162158966064
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "curtain",
+        "mean_depth": 0.47743427753448486,
+        "relative_position": "farthest",
+        "confidence": 0.5539162158966064
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "container",
+        "mean_depth": 0.33255618810653687,
+        "relative_position": "middle",
+        "confidence": 0.696275532245636
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "ceiling light",
+        "mean_depth": 0.27600371837615967,
+        "relative_position": "middle",
+        "confidence": 0.5737972855567932
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "beam",
+        "mean_depth": 0.16231676936149597,
+        "relative_position": "middle",
+        "confidence": 0.3524717688560486
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.05283985286951065,
+        "relative_position": "closest",
+        "confidence": 0.5036978125572205
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.5036978125572205,
+      "bounding_box": [
+        134.64724731445312,
+        86.46659851074219,
+        312.4829406738281,
+        177.49269104003906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05283985286951065,
+        "median_depth": 0.047028541564941406,
+        "depth_std": 0.08343109488487244,
+        "depth_min": 0.0017162258736789227,
+        "depth_max": 0.8842965364456177,
+        "mask_area": 7040
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "beam",
+      "confidence": 0.3524717688560486,
+      "bounding_box": [
+        243.9784393310547,
+        0.08530807495117188,
+        309.63348388671875,
+        88.58207702636719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16231676936149597,
+        "median_depth": 0.1517525613307953,
+        "depth_std": 0.030269891023635864,
+        "depth_min": 0.12551969289779663,
+        "depth_max": 0.2446340173482895,
+        "mask_area": 692
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "ceiling light",
+      "confidence": 0.5737972855567932,
+      "bounding_box": [
+        149.73898315429688,
+        0.08667945861816406,
+        213.82977294921875,
+        34.77782440185547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27600371837615967,
+        "median_depth": 0.27407529950141907,
+        "depth_std": 0.03843086212873459,
+        "depth_min": 0.20636437833309174,
+        "depth_max": 0.40755388140678406,
+        "mask_area": 844
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "container",
+      "confidence": 0.696275532245636,
+      "bounding_box": [
+        0.005519866943359375,
+        145.63401794433594,
+        69.16075134277344,
+        179.96693420410156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33255618810653687,
+        "median_depth": 0.33437347412109375,
+        "depth_std": 0.032918959856033325,
+        "depth_min": 0.2403985857963562,
+        "depth_max": 0.42471346259117126,
+        "mask_area": 1797
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "curtain",
+      "confidence": 0.5539162158966064,
+      "bounding_box": [
+        103.83192443847656,
+        39.48681640625,
+        196.1147918701172,
+        179.67495727539062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47743427753448486,
+        "median_depth": 0.4799066483974457,
+        "depth_std": 0.03391224145889282,
+        "depth_min": 0.05681127309799194,
+        "depth_max": 0.5591792464256287,
+        "mask_area": 4217
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. shelf. curtain. wall. ceiling light. beam. container.",
+  "text_prompt": "robot arm. gripper. table. shelf. curtain. wall. ceiling light. beam. container.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "chair",
+    "box trash bin",
+    "whiteboard"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, robot arm, table, whiteboard, box trash bin",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.08682096004486084,
+        "relative_position": "closest",
+        "confidence": 0.38019710779190063
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.1104346513748169,
+        "relative_position": "middle",
+        "confidence": 0.7698267698287964
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.35544049739837646,
+        "relative_position": "middle",
+        "confidence": 0.6996206045150757
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "box trash bin",
+        "mean_depth": 0.46251580119132996,
+        "relative_position": "middle",
+        "confidence": 0.44674548506736755
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "whiteboard",
+        "mean_depth": 0.8534222841262817,
+        "relative_position": "farthest",
+        "confidence": 0.5214202404022217
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "whiteboard",
+        "mean_depth": 0.8534222841262817,
+        "relative_position": "farthest",
+        "confidence": 0.5214202404022217
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "box trash bin",
+        "mean_depth": 0.46251580119132996,
+        "relative_position": "middle",
+        "confidence": 0.44674548506736755
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.35544049739837646,
+        "relative_position": "middle",
+        "confidence": 0.6996206045150757
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.1104346513748169,
+        "relative_position": "middle",
+        "confidence": 0.7698267698287964
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.08682096004486084,
+        "relative_position": "closest",
+        "confidence": 0.38019710779190063
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.38019710779190063,
+      "bounding_box": [
+        174.17596435546875,
+        -0.026611328125,
+        245.53076171875,
+        72.48560333251953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08682096004486084,
+        "median_depth": 0.0556466281414032,
+        "depth_std": 0.11227366328239441,
+        "depth_min": 0.028962615877389908,
+        "depth_max": 0.7503577470779419,
+        "mask_area": 1848
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7698267698287964,
+      "bounding_box": [
+        -0.017120361328125,
+        76.84136199951172,
+        242.00274658203125,
+        179.94073486328125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1104346513748169,
+        "median_depth": 0.0945349633693695,
+        "depth_std": 0.0468943826854229,
+        "depth_min": 0.05568777769804001,
+        "depth_max": 0.5185042023658752,
+        "mask_area": 8270
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.6996206045150757,
+      "bounding_box": [
+        72.59676361083984,
+        52.37653350830078,
+        113.89305877685547,
+        91.66472625732422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.35544049739837646,
+        "median_depth": 0.33985835313796997,
+        "depth_std": 0.06372451037168503,
+        "depth_min": 0.32773351669311523,
+        "depth_max": 0.8319549560546875,
+        "mask_area": 1147
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "box trash bin",
+      "confidence": 0.44674548506736755,
+      "bounding_box": [
+        197.37722778320312,
+        55.341522216796875,
+        231.51492309570312,
+        90.5166015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.46251580119132996,
+        "median_depth": 0.4554304778575897,
+        "depth_std": 0.029338961467146873,
+        "depth_min": 0.30816158652305603,
+        "depth_max": 0.5337043404579163,
+        "mask_area": 699
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "whiteboard",
+      "confidence": 0.5214202404022217,
+      "bounding_box": [
+        0.076873779296875,
+        -0.0036163330078125,
+        187.1514434814453,
+        71.5148696899414
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8534222841262817,
+        "median_depth": 0.8417812585830688,
+        "depth_std": 0.08699432760477066,
+        "depth_min": 0.7026232481002808,
+        "depth_max": 1.0,
+        "mask_area": 10756
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. container. box. bag. cup. bottle. remote control. chair. whiteboard. trash bin.",
+  "text_prompt": "table. robot arm. gripper. container. box. bag. cup. bottle. remote control. chair. whiteboard. trash bin.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

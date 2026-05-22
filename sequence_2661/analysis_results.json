@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "range hood",
+    "gripper",
+    "wall outlet",
+    "laptop",
+    "fire extinguisher"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: gripper, wall outlet, fire extinguisher, laptop, range hood",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "range hood",
+        "mean_depth": 0.052608128637075424,
+        "relative_position": "closest",
+        "confidence": 0.5055637955665588
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.12692691385746002,
+        "relative_position": "middle",
+        "confidence": 0.390031099319458
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "wall outlet",
+        "mean_depth": 0.5307904481887817,
+        "relative_position": "middle",
+        "confidence": 0.6443493962287903
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "laptop",
+        "mean_depth": 0.5316863059997559,
+        "relative_position": "middle",
+        "confidence": 0.36952897906303406
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "fire extinguisher",
+        "mean_depth": 0.6760216951370239,
+        "relative_position": "farthest",
+        "confidence": 0.9387919306755066
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "fire extinguisher",
+        "mean_depth": 0.6760216951370239,
+        "relative_position": "farthest",
+        "confidence": 0.9387919306755066
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "laptop",
+        "mean_depth": 0.5316863059997559,
+        "relative_position": "middle",
+        "confidence": 0.36952897906303406
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "wall outlet",
+        "mean_depth": 0.5307904481887817,
+        "relative_position": "middle",
+        "confidence": 0.6443493962287903
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.12692691385746002,
+        "relative_position": "middle",
+        "confidence": 0.390031099319458
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "range hood",
+        "mean_depth": 0.052608128637075424,
+        "relative_position": "closest",
+        "confidence": 0.5055637955665588
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "range hood",
+      "confidence": 0.5055637955665588,
+      "bounding_box": [
+        -0.03792572021484375,
+        27.08663558959961,
+        88.97501373291016,
+        93.89552307128906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.052608128637075424,
+        "median_depth": 0.042336881160736084,
+        "depth_std": 0.04747027903795242,
+        "depth_min": 0.001159823383204639,
+        "depth_max": 0.2437257021665573,
+        "mask_area": 4187
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "gripper",
+      "confidence": 0.390031099319458,
+      "bounding_box": [
+        213.51036071777344,
+        0.04195404052734375,
+        315.92071533203125,
+        151.94039916992188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12692691385746002,
+        "median_depth": 0.06859898567199707,
+        "depth_std": 0.09782325476408005,
+        "depth_min": 0.012414300814270973,
+        "depth_max": 0.3761977553367615,
+        "mask_area": 7848
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "wall outlet",
+      "confidence": 0.6443493962287903,
+      "bounding_box": [
+        99.55931854248047,
+        128.2158966064453,
+        114.97740936279297,
+        147.91383361816406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5307904481887817,
+        "median_depth": 0.526011049747467,
+        "depth_std": 0.020426487550139427,
+        "depth_min": 0.5033448338508606,
+        "depth_max": 0.5765392184257507,
+        "mask_area": 157
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "laptop",
+      "confidence": 0.36952897906303406,
+      "bounding_box": [
+        124.0002670288086,
+        136.87826538085938,
+        171.71803283691406,
+        179.9266357421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5316863059997559,
+        "median_depth": 0.526140570640564,
+        "depth_std": 0.0635209009051323,
+        "depth_min": 0.4309811294078827,
+        "depth_max": 0.6940165162086487,
+        "mask_area": 931
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "fire extinguisher",
+      "confidence": 0.9387919306755066,
+      "bounding_box": [
+        120.19453430175781,
+        105.56581115722656,
+        151.71189880371094,
+        153.5205535888672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6760216951370239,
+        "median_depth": 0.6737040877342224,
+        "depth_std": 0.012171379290521145,
+        "depth_min": 0.6452133059501648,
+        "depth_max": 0.712073564529419,
+        "mask_area": 627
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cabinet. range hood. countertop. drawer. fire extinguisher. wall outlet. power cord. banana. orange. laptop. robot arm. gripper.",
+  "text_prompt": "cabinet. range hood. countertop. drawer. fire extinguisher. wall outlet. power cord. banana. orange. laptop. robot arm. gripper.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

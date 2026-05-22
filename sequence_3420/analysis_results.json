@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "hanger",
+    "plastic bag",
+    "shelf",
+    "basket"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: basket, robot arm, hanger, shelf, plastic bag",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.046532463282346725,
+        "relative_position": "closest",
+        "confidence": 0.48241621255874634
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "hanger",
+        "mean_depth": 0.09910698980093002,
+        "relative_position": "middle",
+        "confidence": 0.6476563811302185
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "plastic bag",
+        "mean_depth": 0.24026793241500854,
+        "relative_position": "middle",
+        "confidence": 0.48685652017593384
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "shelf",
+        "mean_depth": 0.3031248450279236,
+        "relative_position": "middle",
+        "confidence": 0.3740151524543762
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "basket",
+        "mean_depth": 0.3246540427207947,
+        "relative_position": "farthest",
+        "confidence": 0.7326706051826477
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "basket",
+        "mean_depth": 0.3246540427207947,
+        "relative_position": "farthest",
+        "confidence": 0.7326706051826477
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "shelf",
+        "mean_depth": 0.3031248450279236,
+        "relative_position": "middle",
+        "confidence": 0.3740151524543762
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "plastic bag",
+        "mean_depth": 0.24026793241500854,
+        "relative_position": "middle",
+        "confidence": 0.48685652017593384
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "hanger",
+        "mean_depth": 0.09910698980093002,
+        "relative_position": "middle",
+        "confidence": 0.6476563811302185
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.046532463282346725,
+        "relative_position": "closest",
+        "confidence": 0.48241621255874634
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.48241621255874634,
+      "bounding_box": [
+        239.06439208984375,
+        0.13691329956054688,
+        316.01446533203125,
+        65.34947204589844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.046532463282346725,
+        "median_depth": 0.03652343526482582,
+        "depth_std": 0.04032473638653755,
+        "depth_min": 0.00010930805001407862,
+        "depth_max": 0.27940070629119873,
+        "mask_area": 2412
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "hanger",
+      "confidence": 0.6476563811302185,
+      "bounding_box": [
+        170.7687530517578,
+        27.30673599243164,
+        240.7018280029297,
+        58.828800201416016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09910698980093002,
+        "median_depth": 0.05761466175317764,
+        "depth_std": 0.07381626218557358,
+        "depth_min": 0.029238630086183548,
+        "depth_max": 0.32843631505966187,
+        "mask_area": 457
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plastic bag",
+      "confidence": 0.48685652017593384,
+      "bounding_box": [
+        215.48960876464844,
+        124.44979858398438,
+        278.56622314453125,
+        167.89620971679688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24026793241500854,
+        "median_depth": 0.23364657163619995,
+        "depth_std": 0.03285783901810646,
+        "depth_min": 0.19014282524585724,
+        "depth_max": 0.33661723136901855,
+        "mask_area": 1525
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "shelf",
+      "confidence": 0.3740151524543762,
+      "bounding_box": [
+        -0.06871795654296875,
+        91.30885314941406,
+        173.95217895507812,
+        179.9397430419922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3031248450279236,
+        "median_depth": 0.29071807861328125,
+        "depth_std": 0.11024174839258194,
+        "depth_min": 0.08859099447727203,
+        "depth_max": 0.8999217748641968,
+        "mask_area": 7158
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "basket",
+      "confidence": 0.7326706051826477,
+      "bounding_box": [
+        194.99502563476562,
+        88.508544921875,
+        233.33038330078125,
+        129.9331512451172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3246540427207947,
+        "median_depth": 0.3113830089569092,
+        "depth_std": 0.05396157130599022,
+        "depth_min": 0.28494253754615784,
+        "depth_max": 0.639470100402832,
+        "mask_area": 1178
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bed. hanger. shelf. table. basket. robot arm. curtain. window. rug. plastic bag. door.",
+  "text_prompt": "bed. hanger. shelf. table. basket. robot arm. curtain. window. rug. plastic bag. door.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

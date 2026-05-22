@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot gripper",
+    "cable",
+    "book",
+    "clothing",
+    "robot body"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot body, clothing, book, cable, robot gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot gripper",
+        "mean_depth": 0.028355183079838753,
+        "relative_position": "closest",
+        "confidence": 0.42451971769332886
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.1479794979095459,
+        "relative_position": "middle",
+        "confidence": 0.36941805481910706
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "book",
+        "mean_depth": 0.34116750955581665,
+        "relative_position": "middle",
+        "confidence": 0.5320180058479309
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "clothing",
+        "mean_depth": 0.39205920696258545,
+        "relative_position": "middle",
+        "confidence": 0.3725259602069855
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot body",
+        "mean_depth": 0.4180857837200165,
+        "relative_position": "farthest",
+        "confidence": 0.3986039161682129
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot body",
+        "mean_depth": 0.4180857837200165,
+        "relative_position": "farthest",
+        "confidence": 0.3986039161682129
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "clothing",
+        "mean_depth": 0.39205920696258545,
+        "relative_position": "middle",
+        "confidence": 0.3725259602069855
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "book",
+        "mean_depth": 0.34116750955581665,
+        "relative_position": "middle",
+        "confidence": 0.5320180058479309
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.1479794979095459,
+        "relative_position": "middle",
+        "confidence": 0.36941805481910706
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot gripper",
+        "mean_depth": 0.028355183079838753,
+        "relative_position": "closest",
+        "confidence": 0.42451971769332886
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot gripper",
+      "confidence": 0.42451971769332886,
+      "bounding_box": [
+        122.58696746826172,
+        32.22025680541992,
+        244.6019287109375,
+        144.1335906982422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.028355183079838753,
+        "median_depth": 0.02525842748582363,
+        "depth_std": 0.026103772222995758,
+        "depth_min": 0.01977473683655262,
+        "depth_max": 0.7958120107650757,
+        "mask_area": 7670
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cable",
+      "confidence": 0.36941805481910706,
+      "bounding_box": [
+        144.86697387695312,
+        136.24801635742188,
+        182.29742431640625,
+        179.57296752929688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1479794979095459,
+        "median_depth": 0.07501499354839325,
+        "depth_std": 0.11599764972925186,
+        "depth_min": 0.03720037266612053,
+        "depth_max": 0.3430272340774536,
+        "mask_area": 235
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "book",
+      "confidence": 0.5320180058479309,
+      "bounding_box": [
+        177.7084197998047,
+        133.7578887939453,
+        213.0082550048828,
+        156.14598083496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.34116750955581665,
+        "median_depth": 0.3530871570110321,
+        "depth_std": 0.06458988040685654,
+        "depth_min": 0.03285011649131775,
+        "depth_max": 0.39372488856315613,
+        "mask_area": 511
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "clothing",
+      "confidence": 0.3725259602069855,
+      "bounding_box": [
+        235.69508361816406,
+        81.35965728759766,
+        315.951904296875,
+        144.41558837890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39205920696258545,
+        "median_depth": 0.38985154032707214,
+        "depth_std": 0.04542781040072441,
+        "depth_min": 0.3134969174861908,
+        "depth_max": 0.6908543109893799,
+        "mask_area": 3691
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot body",
+      "confidence": 0.3986039161682129,
+      "bounding_box": [
+        -0.02706146240234375,
+        0.48964691162109375,
+        61.07042694091797,
+        179.84967041015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4180857837200165,
+        "median_depth": 0.4061346650123596,
+        "depth_std": 0.05519944429397583,
+        "depth_min": 0.3603300154209137,
+        "depth_max": 0.8115860819816589,
+        "mask_area": 5006
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot body. gripper. bed. mattress. bedsheet. blanket. clothing. book. cable. window blinds.",
+  "text_prompt": "robot arm. robot body. gripper. bed. mattress. bedsheet. blanket. clothing. book. cable. window blinds.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

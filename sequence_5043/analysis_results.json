@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "plate",
+    "bottle",
+    "burger",
+    "trash can"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: plate, burger, trash can, robot arm, bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.03701252490282059,
+        "relative_position": "closest",
+        "confidence": 0.4099980294704437
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "plate",
+        "mean_depth": 0.2072402983903885,
+        "relative_position": "middle",
+        "confidence": 0.45295965671539307
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.26802921295166016,
+        "relative_position": "middle",
+        "confidence": 0.5223939418792725
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "burger",
+        "mean_depth": 0.27881762385368347,
+        "relative_position": "middle",
+        "confidence": 0.37391436100006104
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "trash can",
+        "mean_depth": 0.906084418296814,
+        "relative_position": "farthest",
+        "confidence": 0.7826381325721741
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "trash can",
+        "mean_depth": 0.906084418296814,
+        "relative_position": "farthest",
+        "confidence": 0.7826381325721741
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "burger",
+        "mean_depth": 0.27881762385368347,
+        "relative_position": "middle",
+        "confidence": 0.37391436100006104
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.26802921295166016,
+        "relative_position": "middle",
+        "confidence": 0.5223939418792725
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "plate",
+        "mean_depth": 0.2072402983903885,
+        "relative_position": "middle",
+        "confidence": 0.45295965671539307
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.03701252490282059,
+        "relative_position": "closest",
+        "confidence": 0.4099980294704437
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.4099980294704437,
+      "bounding_box": [
+        9.783248901367188,
+        90.61886596679688,
+        158.24610900878906,
+        179.906982421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03701252490282059,
+        "median_depth": 0.03259827569127083,
+        "depth_std": 0.031550440937280655,
+        "depth_min": 0.0,
+        "depth_max": 0.43396490812301636,
+        "mask_area": 4829
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "plate",
+      "confidence": 0.45295965671539307,
+      "bounding_box": [
+        177.86302185058594,
+        86.20563507080078,
+        209.7228240966797,
+        114.7317123413086
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2072402983903885,
+        "median_depth": 0.20948511362075806,
+        "depth_std": 0.015842460095882416,
+        "depth_min": 0.17265060544013977,
+        "depth_max": 0.23995403945446014,
+        "mask_area": 731
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.5223939418792725,
+      "bounding_box": [
+        104.45610046386719,
+        55.86713790893555,
+        120.72076416015625,
+        83.65009307861328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26802921295166016,
+        "median_depth": 0.22420643270015717,
+        "depth_std": 0.1282825469970703,
+        "depth_min": 0.1899241954088211,
+        "depth_max": 0.8172479867935181,
+        "mask_area": 227
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "burger",
+      "confidence": 0.37391436100006104,
+      "bounding_box": [
+        185.87417602539062,
+        66.34671020507812,
+        196.5054931640625,
+        76.61250305175781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27881762385368347,
+        "median_depth": 0.2756132483482361,
+        "depth_std": 0.008409191854298115,
+        "depth_min": 0.27107295393943787,
+        "depth_max": 0.305307000875473,
+        "mask_area": 86
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "trash can",
+      "confidence": 0.7826381325721741,
+      "bounding_box": [
+        249.02127075195312,
+        29.38833236694336,
+        285.6436462402344,
+        74.63316345214844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.906084418296814,
+        "median_depth": 0.9127093553543091,
+        "depth_std": 0.030037621036171913,
+        "depth_min": 0.8300658464431763,
+        "depth_max": 0.9517407417297363,
+        "mask_area": 1209
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "toaster. bottle. cup. tray. plate. toy food. burger. robot arm. gripper. table. tripod. trash can.",
+  "text_prompt": "toaster. bottle. cup. tray. plate. toy food. burger. robot arm. gripper. table. tripod. trash can.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

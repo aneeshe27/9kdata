@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "scissors",
+    "scissors",
+    "plastic bin",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: scissors, cloth, chair, plastic bin, scissors",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.049681831151247025,
+        "relative_position": "closest",
+        "confidence": 0.5189160704612732
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "scissors",
+        "mean_depth": 0.05211413651704788,
+        "relative_position": "middle",
+        "confidence": 0.3882445693016052
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "scissors",
+        "mean_depth": 0.05619209632277489,
+        "relative_position": "middle",
+        "confidence": 0.39948180317878723
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "plastic bin",
+        "mean_depth": 0.08131645619869232,
+        "relative_position": "middle",
+        "confidence": 0.5267987847328186
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.2336992472410202,
+        "relative_position": "farthest",
+        "confidence": 0.3906659185886383
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.2336992472410202,
+        "relative_position": "farthest",
+        "confidence": 0.3906659185886383
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "plastic bin",
+        "mean_depth": 0.08131645619869232,
+        "relative_position": "middle",
+        "confidence": 0.5267987847328186
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "scissors",
+        "mean_depth": 0.05619209632277489,
+        "relative_position": "middle",
+        "confidence": 0.39948180317878723
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "scissors",
+        "mean_depth": 0.05211413651704788,
+        "relative_position": "middle",
+        "confidence": 0.3882445693016052
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.049681831151247025,
+        "relative_position": "closest",
+        "confidence": 0.5189160704612732
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.5189160704612732,
+      "bounding_box": [
+        121.03172302246094,
+        112.84878540039062,
+        207.6710662841797,
+        179.95257568359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.049681831151247025,
+        "median_depth": 0.04905916750431061,
+        "depth_std": 0.011350813321769238,
+        "depth_min": 0.030387839302420616,
+        "depth_max": 0.07889782637357712,
+        "mask_area": 3568
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "scissors",
+      "confidence": 0.3882445693016052,
+      "bounding_box": [
+        100.68885803222656,
+        119.52498626708984,
+        139.76803588867188,
+        167.3409423828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05211413651704788,
+        "median_depth": 0.04998742789030075,
+        "depth_std": 0.0081695057451725,
+        "depth_min": 0.04067103937268257,
+        "depth_max": 0.07281392067670822,
+        "mask_area": 678
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "scissors",
+      "confidence": 0.39948180317878723,
+      "bounding_box": [
+        37.00907897949219,
+        126.9484634399414,
+        85.69800567626953,
+        147.95162963867188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05619209632277489,
+        "median_depth": 0.05551755800843239,
+        "depth_std": 0.003595032263547182,
+        "depth_min": 0.04983288049697876,
+        "depth_max": 0.06488117575645447,
+        "mask_area": 385
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "plastic bin",
+      "confidence": 0.5267987847328186,
+      "bounding_box": [
+        110.39427947998047,
+        63.9327507019043,
+        159.3380126953125,
+        123.036376953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08131645619869232,
+        "median_depth": 0.0693722814321518,
+        "depth_std": 0.03498173505067825,
+        "depth_min": 0.05747023969888687,
+        "depth_max": 0.38201746344566345,
+        "mask_area": 1880
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.3906659185886383,
+      "bounding_box": [
+        201.66824340820312,
+        69.67070007324219,
+        285.2166748046875,
+        178.3509979248047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2336992472410202,
+        "median_depth": 0.2301338016986847,
+        "depth_std": 0.06703417748212814,
+        "depth_min": 0.0781068429350853,
+        "depth_max": 0.53743577003479,
+        "mask_area": 5639
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. chair. plant pot. scissors. knife. bag. box. container. plastic bin. cloth. cable.",
+  "text_prompt": "robot arm. gripper. table. chair. plant pot. scissors. knife. bag. box. container. plastic bin. cloth. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

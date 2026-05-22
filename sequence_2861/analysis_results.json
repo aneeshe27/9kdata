@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "light",
+    "cable",
+    "laptop",
+    "robot arm",
+    "power outlet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: laptop, light, power outlet, robot arm, cable",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "light",
+        "mean_depth": 0.05342162027955055,
+        "relative_position": "closest",
+        "confidence": 0.44032201170921326
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.11493929475545883,
+        "relative_position": "middle",
+        "confidence": 0.3818097710609436
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "laptop",
+        "mean_depth": 0.3860941529273987,
+        "relative_position": "middle",
+        "confidence": 0.3556760847568512
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.4084486663341522,
+        "relative_position": "middle",
+        "confidence": 0.40569907426834106
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "power outlet",
+        "mean_depth": 0.47486692667007446,
+        "relative_position": "farthest",
+        "confidence": 0.3945099115371704
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "power outlet",
+        "mean_depth": 0.47486692667007446,
+        "relative_position": "farthest",
+        "confidence": 0.3945099115371704
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.4084486663341522,
+        "relative_position": "middle",
+        "confidence": 0.40569907426834106
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "laptop",
+        "mean_depth": 0.3860941529273987,
+        "relative_position": "middle",
+        "confidence": 0.3556760847568512
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.11493929475545883,
+        "relative_position": "middle",
+        "confidence": 0.3818097710609436
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "light",
+        "mean_depth": 0.05342162027955055,
+        "relative_position": "closest",
+        "confidence": 0.44032201170921326
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "light",
+      "confidence": 0.44032201170921326,
+      "bounding_box": [
+        259.5466003417969,
+        3.5356783866882324,
+        277.8719177246094,
+        16.958566665649414
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05342162027955055,
+        "median_depth": 0.05280384048819542,
+        "depth_std": 0.003682840848341584,
+        "depth_min": 0.04842168092727661,
+        "depth_max": 0.06263959407806396,
+        "mask_area": 154
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cable",
+      "confidence": 0.3818097710609436,
+      "bounding_box": [
+        164.08238220214844,
+        88.46855163574219,
+        174.75526428222656,
+        179.8773651123047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11493929475545883,
+        "median_depth": 0.11458238959312439,
+        "depth_std": 0.020960599184036255,
+        "depth_min": 0.08181529492139816,
+        "depth_max": 0.15829621255397797,
+        "mask_area": 303
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "laptop",
+      "confidence": 0.3556760847568512,
+      "bounding_box": [
+        16.72782325744629,
+        112.05171203613281,
+        51.584617614746094,
+        131.03843688964844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3860941529273987,
+        "median_depth": 0.3865496516227722,
+        "depth_std": 0.015789810568094254,
+        "depth_min": 0.34741950035095215,
+        "depth_max": 0.4201548099517822,
+        "mask_area": 388
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.40569907426834106,
+      "bounding_box": [
+        41.950294494628906,
+        85.17809295654297,
+        94.86255645751953,
+        137.7388916015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4084486663341522,
+        "median_depth": 0.4012991189956665,
+        "depth_std": 0.038462672382593155,
+        "depth_min": 0.341757595539093,
+        "depth_max": 0.47845616936683655,
+        "mask_area": 726
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "power outlet",
+      "confidence": 0.3945099115371704,
+      "bounding_box": [
+        72.51428985595703,
+        11.195283889770508,
+        101.55782318115234,
+        43.56329345703125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47486692667007446,
+        "median_depth": 0.48004472255706787,
+        "depth_std": 0.02776072546839714,
+        "depth_min": 0.24055269360542297,
+        "depth_max": 0.49823927879333496,
+        "mask_area": 457
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. whiteboard. chair. laptop. cable. power outlet. light. wall.",
+  "text_prompt": "robot arm. gripper. whiteboard. chair. laptop. cable. power outlet. light. wall.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

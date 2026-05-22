@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "container",
+    "sink",
+    "sink",
+    "faucet",
+    "cup"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, faucet, sink, container, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "container",
+        "mean_depth": 0.024111803621053696,
+        "relative_position": "closest",
+        "confidence": 0.7943562269210815
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.07758612930774689,
+        "relative_position": "middle",
+        "confidence": 0.3836649954319
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.13568928837776184,
+        "relative_position": "middle",
+        "confidence": 0.4596503674983978
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.1412384808063507,
+        "relative_position": "middle",
+        "confidence": 0.35131558775901794
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.21646150946617126,
+        "relative_position": "farthest",
+        "confidence": 0.6025673151016235
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.21646150946617126,
+        "relative_position": "farthest",
+        "confidence": 0.6025673151016235
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.1412384808063507,
+        "relative_position": "middle",
+        "confidence": 0.35131558775901794
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.13568928837776184,
+        "relative_position": "middle",
+        "confidence": 0.4596503674983978
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.07758612930774689,
+        "relative_position": "middle",
+        "confidence": 0.3836649954319
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "container",
+        "mean_depth": 0.024111803621053696,
+        "relative_position": "closest",
+        "confidence": 0.7943562269210815
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "container",
+      "confidence": 0.7943562269210815,
+      "bounding_box": [
+        247.91136169433594,
+        95.36210632324219,
+        315.8441162109375,
+        179.83009338378906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.024111803621053696,
+        "median_depth": 0.023081228137016296,
+        "depth_std": 0.006364813540130854,
+        "depth_min": 0.01568150520324707,
+        "depth_max": 0.06748578697443008,
+        "mask_area": 3992
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "sink",
+      "confidence": 0.3836649954319,
+      "bounding_box": [
+        168.6310577392578,
+        97.91120910644531,
+        259.29608154296875,
+        151.27963256835938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07758612930774689,
+        "median_depth": 0.07379150390625,
+        "depth_std": 0.017049303278326988,
+        "depth_min": 0.04858555644750595,
+        "depth_max": 0.12233325839042664,
+        "mask_area": 2350
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "sink",
+      "confidence": 0.4596503674983978,
+      "bounding_box": [
+        151.98707580566406,
+        77.0857925415039,
+        206.7820587158203,
+        102.98815155029297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13568928837776184,
+        "median_depth": 0.13659073412418365,
+        "depth_std": 0.009253307245671749,
+        "depth_min": 0.11132986843585968,
+        "depth_max": 0.1543283611536026,
+        "mask_area": 1025
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "faucet",
+      "confidence": 0.35131558775901794,
+      "bounding_box": [
+        207.79617309570312,
+        55.05165481567383,
+        230.13955688476562,
+        82.78129577636719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1412384808063507,
+        "median_depth": 0.14178353548049927,
+        "depth_std": 0.006133424583822489,
+        "depth_min": 0.12369953840970993,
+        "depth_max": 0.1533137410879135,
+        "mask_area": 243
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.6025673151016235,
+      "bounding_box": [
+        135.36521911621094,
+        40.95534133911133,
+        149.43324279785156,
+        71.7223892211914
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21646150946617126,
+        "median_depth": 0.2134373039007187,
+        "depth_std": 0.02309407666325569,
+        "depth_min": 0.17835880815982819,
+        "depth_max": 0.278795063495636,
+        "mask_area": 344
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. countertop. sink. faucet. cabinet. drawer. dish rack. cup. container. workbench. clamp. sponge.",
+  "text_prompt": "robot arm. robot gripper. countertop. sink. faucet. cabinet. drawer. dish rack. cup. container. workbench. clamp. sponge.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

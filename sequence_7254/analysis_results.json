@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "power outlet",
+    "coffee maker",
+    "knife block",
+    "cutting board"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cutting board, knife block, power outlet, coffee maker, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.06601720303297043,
+        "relative_position": "closest",
+        "confidence": 0.3949369490146637
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.39551541209220886,
+        "relative_position": "middle",
+        "confidence": 0.8272653818130493
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "coffee maker",
+        "mean_depth": 0.5396155714988708,
+        "relative_position": "middle",
+        "confidence": 0.7942957282066345
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "knife block",
+        "mean_depth": 0.5881587862968445,
+        "relative_position": "middle",
+        "confidence": 0.38094857335090637
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cutting board",
+        "mean_depth": 0.7065246105194092,
+        "relative_position": "farthest",
+        "confidence": 0.43356195092201233
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cutting board",
+        "mean_depth": 0.7065246105194092,
+        "relative_position": "farthest",
+        "confidence": 0.43356195092201233
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "knife block",
+        "mean_depth": 0.5881587862968445,
+        "relative_position": "middle",
+        "confidence": 0.38094857335090637
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "coffee maker",
+        "mean_depth": 0.5396155714988708,
+        "relative_position": "middle",
+        "confidence": 0.7942957282066345
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.39551541209220886,
+        "relative_position": "middle",
+        "confidence": 0.8272653818130493
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.06601720303297043,
+        "relative_position": "closest",
+        "confidence": 0.3949369490146637
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3949369490146637,
+      "bounding_box": [
+        180.99539184570312,
+        -0.08752059936523438,
+        315.9739074707031,
+        90.10151672363281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06601720303297043,
+        "median_depth": 0.014635059982538223,
+        "depth_std": 0.13333262503147125,
+        "depth_min": 0.0,
+        "depth_max": 0.963472306728363,
+        "mask_area": 3366
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "power outlet",
+      "confidence": 0.8272653818130493,
+      "bounding_box": [
+        76.09476470947266,
+        33.21997833251953,
+        95.68785858154297,
+        57.742218017578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39551541209220886,
+        "median_depth": 0.3930091857910156,
+        "depth_std": 0.014102703891694546,
+        "depth_min": 0.37324491143226624,
+        "depth_max": 0.4419126808643341,
+        "mask_area": 274
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "coffee maker",
+      "confidence": 0.7942957282066345,
+      "bounding_box": [
+        125.4847640991211,
+        30.653398513793945,
+        153.32908630371094,
+        79.04182434082031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5396155714988708,
+        "median_depth": 0.5380837321281433,
+        "depth_std": 0.02601090632379055,
+        "depth_min": 0.5005914568901062,
+        "depth_max": 0.6261844635009766,
+        "mask_area": 953
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "knife block",
+      "confidence": 0.38094857335090637,
+      "bounding_box": [
+        161.2858123779297,
+        29.810039520263672,
+        186.4813690185547,
+        76.96623229980469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5881587862968445,
+        "median_depth": 0.5883035659790039,
+        "depth_std": 0.0330466665327549,
+        "depth_min": 0.42967116832733154,
+        "depth_max": 0.6833779811859131,
+        "mask_area": 459
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cutting board",
+      "confidence": 0.43356195092201233,
+      "bounding_box": [
+        205.56187438964844,
+        125.92451477050781,
+        263.64532470703125,
+        179.99415588378906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7065246105194092,
+        "median_depth": 0.7080519199371338,
+        "depth_std": 0.03477654606103897,
+        "depth_min": 0.3254666030406952,
+        "depth_max": 0.8052377104759216,
+        "mask_area": 1109
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sponge. countertop. cabinet. coffee maker. power outlet. cable. smartphone. knife block. knife. cutting board.",
+  "text_prompt": "robot arm. gripper. sponge. countertop. cabinet. coffee maker. power outlet. cable. smartphone. knife block. knife. cutting board.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

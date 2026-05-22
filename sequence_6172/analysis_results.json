@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "tape roll",
+    "gripper clamp",
+    "cloth",
+    "box container",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: gripper clamp, box container, box, cloth, tape roll",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "tape roll",
+        "mean_depth": 0.050978437066078186,
+        "relative_position": "closest",
+        "confidence": 0.3611692786216736
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "gripper clamp",
+        "mean_depth": 0.057692043483257294,
+        "relative_position": "middle",
+        "confidence": 0.3690682649612427
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cloth",
+        "mean_depth": 0.12846873700618744,
+        "relative_position": "middle",
+        "confidence": 0.5303420424461365
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "box container",
+        "mean_depth": 0.1482905149459839,
+        "relative_position": "middle",
+        "confidence": 0.4282091557979584
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.2761549651622772,
+        "relative_position": "farthest",
+        "confidence": 0.4332304298877716
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.2761549651622772,
+        "relative_position": "farthest",
+        "confidence": 0.4332304298877716
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "box container",
+        "mean_depth": 0.1482905149459839,
+        "relative_position": "middle",
+        "confidence": 0.4282091557979584
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cloth",
+        "mean_depth": 0.12846873700618744,
+        "relative_position": "middle",
+        "confidence": 0.5303420424461365
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "gripper clamp",
+        "mean_depth": 0.057692043483257294,
+        "relative_position": "middle",
+        "confidence": 0.3690682649612427
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "tape roll",
+        "mean_depth": 0.050978437066078186,
+        "relative_position": "closest",
+        "confidence": 0.3611692786216736
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "tape roll",
+      "confidence": 0.3611692786216736,
+      "bounding_box": [
+        199.4119110107422,
+        95.36859893798828,
+        207.19923400878906,
+        107.8570327758789
+      ],
+      "depth_stats": {
+        "mean_depth": 0.050978437066078186,
+        "median_depth": 0.050822220742702484,
+        "depth_std": 0.003809606656432152,
+        "depth_min": 0.0395943857729435,
+        "depth_max": 0.058168187737464905,
+        "mask_area": 73
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "gripper clamp",
+      "confidence": 0.3690682649612427,
+      "bounding_box": [
+        81.25125122070312,
+        138.77215576171875,
+        132.47842407226562,
+        179.41961669921875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.057692043483257294,
+        "median_depth": 0.05117514729499817,
+        "depth_std": 0.02424784004688263,
+        "depth_min": 0.032419491559267044,
+        "depth_max": 0.17175260186195374,
+        "mask_area": 758
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cloth",
+      "confidence": 0.5303420424461365,
+      "bounding_box": [
+        72.37236022949219,
+        80.45487976074219,
+        124.64849853515625,
+        99.20745849609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12846873700618744,
+        "median_depth": 0.10779878497123718,
+        "depth_std": 0.044407546520233154,
+        "depth_min": 0.09485713392496109,
+        "depth_max": 0.25575312972068787,
+        "mask_area": 429
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "box container",
+      "confidence": 0.4282091557979584,
+      "bounding_box": [
+        112.74921417236328,
+        61.51070785522461,
+        140.76934814453125,
+        89.90995788574219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1482905149459839,
+        "median_depth": 0.13998299837112427,
+        "depth_std": 0.023965202271938324,
+        "depth_min": 0.12806004285812378,
+        "depth_max": 0.2563069760799408,
+        "mask_area": 619
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "box",
+      "confidence": 0.4332304298877716,
+      "bounding_box": [
+        219.27577209472656,
+        86.76398468017578,
+        262.56866455078125,
+        122.86467742919922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2761549651622772,
+        "median_depth": 0.2764729857444763,
+        "depth_std": 0.023548763245344162,
+        "depth_min": 0.08750370144844055,
+        "depth_max": 0.32299041748046875,
+        "mask_area": 771
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. banana. workbench. table. clamp. chair. box. cloth. wire. container. tape roll.",
+  "text_prompt": "robot arm. gripper. banana. workbench. table. clamp. chair. box. cloth. wire. container. tape roll.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

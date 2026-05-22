@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "shelf",
+    "box container",
+    "suitcase",
+    "chair",
+    "picture frame"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: suitcase, chair, picture frame, box container, shelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.2856942415237427,
+        "relative_position": "closest",
+        "confidence": 0.5360125303268433
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "box container",
+        "mean_depth": 0.43455052375793457,
+        "relative_position": "middle",
+        "confidence": 0.4020353853702545
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "suitcase",
+        "mean_depth": 0.45364469289779663,
+        "relative_position": "middle",
+        "confidence": 0.5584319829940796
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.46040916442871094,
+        "relative_position": "middle",
+        "confidence": 0.48871469497680664
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "picture frame",
+        "mean_depth": 0.6281401515007019,
+        "relative_position": "farthest",
+        "confidence": 0.7327731251716614
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "picture frame",
+        "mean_depth": 0.6281401515007019,
+        "relative_position": "farthest",
+        "confidence": 0.7327731251716614
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.46040916442871094,
+        "relative_position": "middle",
+        "confidence": 0.48871469497680664
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "suitcase",
+        "mean_depth": 0.45364469289779663,
+        "relative_position": "middle",
+        "confidence": 0.5584319829940796
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "box container",
+        "mean_depth": 0.43455052375793457,
+        "relative_position": "middle",
+        "confidence": 0.4020353853702545
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.2856942415237427,
+        "relative_position": "closest",
+        "confidence": 0.5360125303268433
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "shelf",
+      "confidence": 0.5360125303268433,
+      "bounding_box": [
+        159.70816040039062,
+        26.638389587402344,
+        233.091552734375,
+        161.1353759765625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2856942415237427,
+        "median_depth": 0.2837429940700531,
+        "depth_std": 0.03264277055859566,
+        "depth_min": 0.21725261211395264,
+        "depth_max": 0.6687531471252441,
+        "mask_area": 6578
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "box container",
+      "confidence": 0.4020353853702545,
+      "bounding_box": [
+        114.5138931274414,
+        116.41952514648438,
+        148.32290649414062,
+        168.45016479492188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.43455052375793457,
+        "median_depth": 0.4324347674846649,
+        "depth_std": 0.015476134605705738,
+        "depth_min": 0.4084523022174835,
+        "depth_max": 0.4885481894016266,
+        "mask_area": 1055
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "suitcase",
+      "confidence": 0.5584319829940796,
+      "bounding_box": [
+        48.14663314819336,
+        100.78477478027344,
+        111.42549133300781,
+        150.33660888671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.45364469289779663,
+        "median_depth": 0.45704954862594604,
+        "depth_std": 0.028351636603474617,
+        "depth_min": 0.2783813774585724,
+        "depth_max": 0.508237898349762,
+        "mask_area": 1785
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.48871469497680664,
+      "bounding_box": [
+        251.12567138671875,
+        62.837120056152344,
+        315.9837646484375,
+        136.7554931640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.46040916442871094,
+        "median_depth": 0.4615311622619629,
+        "depth_std": 0.05474245175719261,
+        "depth_min": 0.1985848844051361,
+        "depth_max": 0.8694362044334412,
+        "mask_area": 1470
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "picture frame",
+      "confidence": 0.7327731251716614,
+      "bounding_box": [
+        89.75035095214844,
+        44.7557373046875,
+        119.79072570800781,
+        77.05293273925781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6281401515007019,
+        "median_depth": 0.6262521743774414,
+        "depth_std": 0.01490744762122631,
+        "depth_min": 0.6010519862174988,
+        "depth_max": 0.6587136387825012,
+        "mask_area": 756
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. shelf. chair. table. whiteboard. picture frame. box. container. suitcase. air purifier.",
+  "text_prompt": "robot arm. gripper. shelf. chair. table. whiteboard. picture frame. box. container. suitcase. air purifier.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

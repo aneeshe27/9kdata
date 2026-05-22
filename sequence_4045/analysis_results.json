@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cabinet",
+    "electrical outlet",
+    "bowl",
+    "electrical outlet",
+    "plastic bottle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: electrical outlet, bowl, plastic bottle, cabinet, electrical outlet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.05304715409874916,
+        "relative_position": "closest",
+        "confidence": 0.43233126401901245
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "electrical outlet",
+        "mean_depth": 0.10303924977779388,
+        "relative_position": "middle",
+        "confidence": 0.46476972103118896
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.10946405678987503,
+        "relative_position": "middle",
+        "confidence": 0.792035698890686
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "electrical outlet",
+        "mean_depth": 0.11552761495113373,
+        "relative_position": "middle",
+        "confidence": 0.35015034675598145
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "plastic bottle",
+        "mean_depth": 0.16691091656684875,
+        "relative_position": "farthest",
+        "confidence": 0.8631617426872253
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "plastic bottle",
+        "mean_depth": 0.16691091656684875,
+        "relative_position": "farthest",
+        "confidence": 0.8631617426872253
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "electrical outlet",
+        "mean_depth": 0.11552761495113373,
+        "relative_position": "middle",
+        "confidence": 0.35015034675598145
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.10946405678987503,
+        "relative_position": "middle",
+        "confidence": 0.792035698890686
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "electrical outlet",
+        "mean_depth": 0.10303924977779388,
+        "relative_position": "middle",
+        "confidence": 0.46476972103118896
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.05304715409874916,
+        "relative_position": "closest",
+        "confidence": 0.43233126401901245
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.43233126401901245,
+      "bounding_box": [
+        0.15341949462890625,
+        0.09237384796142578,
+        200.77883911132812,
+        20.372676849365234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05304715409874916,
+        "median_depth": 0.035191651433706284,
+        "depth_std": 0.05243372172117233,
+        "depth_min": 0.001073602237738669,
+        "depth_max": 0.2221887856721878,
+        "mask_area": 3548
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "electrical outlet",
+      "confidence": 0.46476972103118896,
+      "bounding_box": [
+        105.82470703125,
+        59.14519119262695,
+        119.4853515625,
+        81.53131866455078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10303924977779388,
+        "median_depth": 0.10278227180242538,
+        "depth_std": 0.0034035425633192062,
+        "depth_min": 0.09668640047311783,
+        "depth_max": 0.11097335815429688,
+        "mask_area": 205
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bowl",
+      "confidence": 0.792035698890686,
+      "bounding_box": [
+        180.7038116455078,
+        95.29606628417969,
+        212.41685485839844,
+        120.82313537597656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10946405678987503,
+        "median_depth": 0.10856791585683823,
+        "depth_std": 0.007635889109224081,
+        "depth_min": 0.09363493323326111,
+        "depth_max": 0.13965120911598206,
+        "mask_area": 489
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "electrical outlet",
+      "confidence": 0.35015034675598145,
+      "bounding_box": [
+        120.54052734375,
+        54.15373992919922,
+        131.22889709472656,
+        74.95391082763672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11552761495113373,
+        "median_depth": 0.11546090990304947,
+        "depth_std": 0.0039032134227454662,
+        "depth_min": 0.107821986079216,
+        "depth_max": 0.1244073137640953,
+        "mask_area": 163
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "plastic bottle",
+      "confidence": 0.8631617426872253,
+      "bounding_box": [
+        161.8638458251953,
+        48.21429443359375,
+        174.61476135253906,
+        87.04673767089844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16691091656684875,
+        "median_depth": 0.16743576526641846,
+        "depth_std": 0.0037825468461960554,
+        "depth_min": 0.15739968419075012,
+        "depth_max": 0.17809604108333588,
+        "mask_area": 300
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. spoon. plastic bottle. robot arm. robot gripper. countertop. cabinet. electrical outlet. camera. tripod.",
+  "text_prompt": "bowl. spoon. plastic bottle. robot arm. robot gripper. countertop. cabinet. electrical outlet. camera. tripod.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "bowl",
+    "spray bottle",
+    "cup bowl",
+    "bowl"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, cup bowl, spray bottle, bowl, bowl",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.054339732974767685,
+        "relative_position": "closest",
+        "confidence": 0.5511050820350647
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.17154070734977722,
+        "relative_position": "middle",
+        "confidence": 0.5059360265731812
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "spray bottle",
+        "mean_depth": 0.19682401418685913,
+        "relative_position": "middle",
+        "confidence": 0.7101891040802002
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cup bowl",
+        "mean_depth": 0.23110640048980713,
+        "relative_position": "middle",
+        "confidence": 0.3835562765598297
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "bowl",
+        "mean_depth": 0.4140377342700958,
+        "relative_position": "farthest",
+        "confidence": 0.48133963346481323
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "bowl",
+        "mean_depth": 0.4140377342700958,
+        "relative_position": "farthest",
+        "confidence": 0.48133963346481323
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cup bowl",
+        "mean_depth": 0.23110640048980713,
+        "relative_position": "middle",
+        "confidence": 0.3835562765598297
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "spray bottle",
+        "mean_depth": 0.19682401418685913,
+        "relative_position": "middle",
+        "confidence": 0.7101891040802002
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.17154070734977722,
+        "relative_position": "middle",
+        "confidence": 0.5059360265731812
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.054339732974767685,
+        "relative_position": "closest",
+        "confidence": 0.5511050820350647
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.5511050820350647,
+      "bounding_box": [
+        69.58829498291016,
+        53.78086853027344,
+        244.96408081054688,
+        179.9293975830078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.054339732974767685,
+        "median_depth": 0.04983185976743698,
+        "depth_std": 0.03688067942857742,
+        "depth_min": 0.0024728106800466776,
+        "depth_max": 0.3969908356666565,
+        "mask_area": 14457
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "bowl",
+      "confidence": 0.5059360265731812,
+      "bounding_box": [
+        248.93209838867188,
+        60.588741302490234,
+        274.8439636230469,
+        76.1702651977539
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17154070734977722,
+        "median_depth": 0.17261402308940887,
+        "depth_std": 0.010554458014667034,
+        "depth_min": 0.1527533382177353,
+        "depth_max": 0.20453202724456787,
+        "mask_area": 309
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "spray bottle",
+      "confidence": 0.7101891040802002,
+      "bounding_box": [
+        166.4610137939453,
+        28.169347763061523,
+        180.0603485107422,
+        61.60480499267578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19682401418685913,
+        "median_depth": 0.15503619611263275,
+        "depth_std": 0.09319517016410828,
+        "depth_min": 0.1282152533531189,
+        "depth_max": 0.525019645690918,
+        "mask_area": 308
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup bowl",
+      "confidence": 0.3835562765598297,
+      "bounding_box": [
+        95.60794830322266,
+        40.95929718017578,
+        110.3903579711914,
+        50.82283020019531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23110640048980713,
+        "median_depth": 0.22829243540763855,
+        "depth_std": 0.011225282214581966,
+        "depth_min": 0.21668143570423126,
+        "depth_max": 0.256483256816864,
+        "mask_area": 113
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bowl",
+      "confidence": 0.48133963346481323,
+      "bounding_box": [
+        242.99798583984375,
+        11.454269409179688,
+        277.689208984375,
+        23.219482421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4140377342700958,
+        "median_depth": 0.3915635049343109,
+        "depth_std": 0.059246040880680084,
+        "depth_min": 0.3765566051006317,
+        "depth_max": 0.8155232667922974,
+        "mask_area": 261
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. bowl. spray bottle. block. cabinet. table.",
+  "text_prompt": "cup. bowl. spray bottle. block. cabinet. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

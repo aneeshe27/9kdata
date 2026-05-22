@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "shelf cabinet",
+    "container carton trash",
+    "door handle",
+    "countertop",
+    "trash bag"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: countertop, door handle, container carton trash, trash bag, shelf cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "shelf cabinet",
+        "mean_depth": 0.2660532593727112,
+        "relative_position": "closest",
+        "confidence": 0.45716363191604614
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "container carton trash",
+        "mean_depth": 0.3865143358707428,
+        "relative_position": "middle",
+        "confidence": 0.46960243582725525
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "door handle",
+        "mean_depth": 0.4615896940231323,
+        "relative_position": "middle",
+        "confidence": 0.36330318450927734
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.47286996245384216,
+        "relative_position": "middle",
+        "confidence": 0.4272485375404358
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "trash bag",
+        "mean_depth": 0.6044028401374817,
+        "relative_position": "farthest",
+        "confidence": 0.6150969862937927
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "trash bag",
+        "mean_depth": 0.6044028401374817,
+        "relative_position": "farthest",
+        "confidence": 0.6150969862937927
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.47286996245384216,
+        "relative_position": "middle",
+        "confidence": 0.4272485375404358
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "door handle",
+        "mean_depth": 0.4615896940231323,
+        "relative_position": "middle",
+        "confidence": 0.36330318450927734
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "container carton trash",
+        "mean_depth": 0.3865143358707428,
+        "relative_position": "middle",
+        "confidence": 0.46960243582725525
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "shelf cabinet",
+        "mean_depth": 0.2660532593727112,
+        "relative_position": "closest",
+        "confidence": 0.45716363191604614
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "shelf cabinet",
+      "confidence": 0.45716363191604614,
+      "bounding_box": [
+        151.9304962158203,
+        0.03639411926269531,
+        255.69313049316406,
+        33.87409973144531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2660532593727112,
+        "median_depth": 0.2707074284553528,
+        "depth_std": 0.058965135365724564,
+        "depth_min": 0.1426587849855423,
+        "depth_max": 0.36834484338760376,
+        "mask_area": 1990
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "container carton trash",
+      "confidence": 0.46960243582725525,
+      "bounding_box": [
+        55.42435073852539,
+        156.22509765625,
+        96.01443481445312,
+        179.93850708007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3865143358707428,
+        "median_depth": 0.3826521039009094,
+        "depth_std": 0.021083906292915344,
+        "depth_min": 0.3378485441207886,
+        "depth_max": 0.5270323753356934,
+        "mask_area": 659
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "door handle",
+      "confidence": 0.36330318450927734,
+      "bounding_box": [
+        129.04696655273438,
+        125.87806701660156,
+        136.0728759765625,
+        138.8290557861328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4615896940231323,
+        "median_depth": 0.460254430770874,
+        "depth_std": 0.007311630062758923,
+        "depth_min": 0.448333740234375,
+        "depth_max": 0.4754304587841034,
+        "mask_area": 53
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "countertop",
+      "confidence": 0.4272485375404358,
+      "bounding_box": [
+        118.34442138671875,
+        94.667236328125,
+        146.63543701171875,
+        114.31703186035156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47286996245384216,
+        "median_depth": 0.48128119111061096,
+        "depth_std": 0.0271944347769022,
+        "depth_min": 0.39350104331970215,
+        "depth_max": 0.5104967355728149,
+        "mask_area": 313
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "trash bag",
+      "confidence": 0.6150969862937927,
+      "bounding_box": [
+        81.302978515625,
+        117.97593688964844,
+        107.42514038085938,
+        152.64222717285156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6044028401374817,
+        "median_depth": 0.5935157537460327,
+        "depth_std": 0.03670395538210869,
+        "depth_min": 0.5754203200340271,
+        "depth_max": 0.8644551634788513,
+        "mask_area": 597
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. refrigerator. shelf. bottle. container. jar. carton. cabinet. drawer. countertop. trash bag. door handle. camera. floor. wall.",
+  "text_prompt": "robot arm. gripper. refrigerator. shelf. bottle. container. jar. carton. cabinet. drawer. countertop. trash bag. door handle. camera. floor. wall.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

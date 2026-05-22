@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bowl",
+    "lamp",
+    "table",
+    "picture frame",
+    "plant"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: picture frame, lamp, plant, table, bowl",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "bowl",
+        "mean_depth": 0.03591851145029068,
+        "relative_position": "closest",
+        "confidence": 0.40461626648902893
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "lamp",
+        "mean_depth": 0.27191174030303955,
+        "relative_position": "middle",
+        "confidence": 0.43364766240119934
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.5490698218345642,
+        "relative_position": "middle",
+        "confidence": 0.6510146856307983
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "picture frame",
+        "mean_depth": 0.6535537242889404,
+        "relative_position": "middle",
+        "confidence": 0.38321545720100403
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "plant",
+        "mean_depth": 0.6724568605422974,
+        "relative_position": "farthest",
+        "confidence": 0.44226303696632385
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "plant",
+        "mean_depth": 0.6724568605422974,
+        "relative_position": "farthest",
+        "confidence": 0.44226303696632385
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "picture frame",
+        "mean_depth": 0.6535537242889404,
+        "relative_position": "middle",
+        "confidence": 0.38321545720100403
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.5490698218345642,
+        "relative_position": "middle",
+        "confidence": 0.6510146856307983
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "lamp",
+        "mean_depth": 0.27191174030303955,
+        "relative_position": "middle",
+        "confidence": 0.43364766240119934
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "bowl",
+        "mean_depth": 0.03591851145029068,
+        "relative_position": "closest",
+        "confidence": 0.40461626648902893
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "bowl",
+      "confidence": 0.40461626648902893,
+      "bounding_box": [
+        -0.005341529846191406,
+        121.68161010742188,
+        21.82437515258789,
+        161.33245849609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03591851145029068,
+        "median_depth": 0.0367673821747303,
+        "depth_std": 0.002536238171160221,
+        "depth_min": 0.028871262446045876,
+        "depth_max": 0.043757807463407516,
+        "mask_area": 602
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "lamp",
+      "confidence": 0.43364766240119934,
+      "bounding_box": [
+        240.91488647460938,
+        41.27375793457031,
+        316.0366516113281,
+        99.20541381835938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27191174030303955,
+        "median_depth": 0.2580025792121887,
+        "depth_std": 0.0396185927093029,
+        "depth_min": 0.23371832072734833,
+        "depth_max": 0.5417628884315491,
+        "mask_area": 2796
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.6510146856307983,
+      "bounding_box": [
+        73.6406478881836,
+        122.19473266601562,
+        311.8778991699219,
+        179.91012573242188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5490698218345642,
+        "median_depth": 0.5094596147537231,
+        "depth_std": 0.11542154103517532,
+        "depth_min": 0.33748453855514526,
+        "depth_max": 0.9413598775863647,
+        "mask_area": 3468
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "picture frame",
+      "confidence": 0.38321545720100403,
+      "bounding_box": [
+        209.1666259765625,
+        1.3755359649658203,
+        236.20391845703125,
+        28.20310401916504
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6535537242889404,
+        "median_depth": 0.6506553888320923,
+        "depth_std": 0.015484037809073925,
+        "depth_min": 0.6135597825050354,
+        "depth_max": 0.6987365484237671,
+        "mask_area": 426
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "plant",
+      "confidence": 0.44226303696632385,
+      "bounding_box": [
+        175.4447784423828,
+        2.190826416015625,
+        221.6037139892578,
+        72.9297866821289
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6724568605422974,
+        "median_depth": 0.6585745811462402,
+        "depth_std": 0.04557214677333832,
+        "depth_min": 0.6070176362991333,
+        "depth_max": 0.8274387121200562,
+        "mask_area": 1061
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. shelf. laptop. bowl. plate. mug. bottle. spoon. lamp. hat. plant. book. picture frame. jar.",
+  "text_prompt": "robot arm. gripper. table. shelf. laptop. bowl. plate. mug. bottle. spoon. lamp. hat. plant. book. picture frame. jar.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

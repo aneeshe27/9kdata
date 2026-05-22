@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "monitor",
+    "chair",
+    "pillow"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, table, pillow, monitor, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.037989817559719086,
+        "relative_position": "closest",
+        "confidence": 0.41527971625328064
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.13613292574882507,
+        "relative_position": "middle",
+        "confidence": 0.6388117074966431
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.20175345242023468,
+        "relative_position": "middle",
+        "confidence": 0.7626279592514038
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.33923375606536865,
+        "relative_position": "middle",
+        "confidence": 0.7740824818611145
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "pillow",
+        "mean_depth": 0.5813379287719727,
+        "relative_position": "farthest",
+        "confidence": 0.7596709132194519
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "pillow",
+        "mean_depth": 0.5813379287719727,
+        "relative_position": "farthest",
+        "confidence": 0.7596709132194519
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.33923375606536865,
+        "relative_position": "middle",
+        "confidence": 0.7740824818611145
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.20175345242023468,
+        "relative_position": "middle",
+        "confidence": 0.7626279592514038
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.13613292574882507,
+        "relative_position": "middle",
+        "confidence": 0.6388117074966431
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.037989817559719086,
+        "relative_position": "closest",
+        "confidence": 0.41527971625328064
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.41527971625328064,
+      "bounding_box": [
+        137.14317321777344,
+        -0.05015754699707031,
+        311.555419921875,
+        57.78417205810547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.037989817559719086,
+        "median_depth": 0.02707522176206112,
+        "depth_std": 0.0844971090555191,
+        "depth_min": 0.002359143691137433,
+        "depth_max": 0.7152076363563538,
+        "mask_area": 4647
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "table",
+      "confidence": 0.6388117074966431,
+      "bounding_box": [
+        5.3723907470703125,
+        84.65199279785156,
+        222.0969696044922,
+        179.91236877441406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13613292574882507,
+        "median_depth": 0.12118218839168549,
+        "depth_std": 0.06914667040109634,
+        "depth_min": 0.055684152990579605,
+        "depth_max": 0.6379284262657166,
+        "mask_area": 7790
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "monitor",
+      "confidence": 0.7626279592514038,
+      "bounding_box": [
+        9.10891342163086,
+        6.168670654296875,
+        107.15684509277344,
+        134.5947265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20175345242023468,
+        "median_depth": 0.18297606706619263,
+        "depth_std": 0.07338335365056992,
+        "depth_min": 0.11387329548597336,
+        "depth_max": 0.5275757312774658,
+        "mask_area": 7241
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.7740824818611145,
+      "bounding_box": [
+        188.29159545898438,
+        84.52485656738281,
+        273.224853515625,
+        179.8253936767578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33923375606536865,
+        "median_depth": 0.3444806933403015,
+        "depth_std": 0.04875966161489487,
+        "depth_min": 0.19381529092788696,
+        "depth_max": 0.7688736319541931,
+        "mask_area": 5213
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "pillow",
+      "confidence": 0.7596709132194519,
+      "bounding_box": [
+        240.41392517089844,
+        53.40263366699219,
+        296.84588623046875,
+        93.15994262695312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5813379287719727,
+        "median_depth": 0.5686627626419067,
+        "depth_std": 0.0528993159532547,
+        "depth_min": 0.25792810320854187,
+        "depth_max": 0.7979280352592468,
+        "mask_area": 1158
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. monitor. keyboard. mouse. mouse pad. earphones. remote control. cable. table. chair. curtain. bed. pillow. blanket.",
+  "text_prompt": "robot arm. robot gripper. monitor. keyboard. mouse. mouse pad. earphones. remote control. cable. table. chair. curtain. bed. pillow. blanket.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

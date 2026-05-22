@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cup",
+    "robot arm",
+    "cabinet",
+    "coffee machine",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, coffee machine, cabinet, cabinet, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.0822841227054596,
+        "relative_position": "closest",
+        "confidence": 0.5524146556854248
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.10132817178964615,
+        "relative_position": "middle",
+        "confidence": 0.3773268163204193
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.10585182905197144,
+        "relative_position": "middle",
+        "confidence": 0.4047965109348297
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "coffee machine",
+        "mean_depth": 0.23378252983093262,
+        "relative_position": "middle",
+        "confidence": 0.658202588558197
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.29390066862106323,
+        "relative_position": "farthest",
+        "confidence": 0.3579654395580292
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.29390066862106323,
+        "relative_position": "farthest",
+        "confidence": 0.3579654395580292
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "coffee machine",
+        "mean_depth": 0.23378252983093262,
+        "relative_position": "middle",
+        "confidence": 0.658202588558197
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.10585182905197144,
+        "relative_position": "middle",
+        "confidence": 0.4047965109348297
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.10132817178964615,
+        "relative_position": "middle",
+        "confidence": 0.3773268163204193
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.0822841227054596,
+        "relative_position": "closest",
+        "confidence": 0.5524146556854248
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.5524146556854248,
+      "bounding_box": [
+        169.3563232421875,
+        143.3303680419922,
+        191.83413696289062,
+        171.41343688964844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0822841227054596,
+        "median_depth": 0.08154410123825073,
+        "depth_std": 0.00759412907063961,
+        "depth_min": 0.07074963301420212,
+        "depth_max": 0.1023133248090744,
+        "mask_area": 511
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3773268163204193,
+      "bounding_box": [
+        224.413818359375,
+        34.686973571777344,
+        316.02020263671875,
+        97.43712615966797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10132817178964615,
+        "median_depth": 0.05922640860080719,
+        "depth_std": 0.09074074029922485,
+        "depth_min": 0.02442089468240738,
+        "depth_max": 0.8974426984786987,
+        "mask_area": 3441
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.4047965109348297,
+      "bounding_box": [
+        0.09787750244140625,
+        72.76869201660156,
+        118.86641693115234,
+        179.86642456054688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10585182905197144,
+        "median_depth": 0.10982566326856613,
+        "depth_std": 0.03228415921330452,
+        "depth_min": 0.028873223811388016,
+        "depth_max": 0.21543462574481964,
+        "mask_area": 10175
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "coffee machine",
+      "confidence": 0.658202588558197,
+      "bounding_box": [
+        179.94044494628906,
+        65.20718383789062,
+        227.4756317138672,
+        115.55009460449219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23378252983093262,
+        "median_depth": 0.22393798828125,
+        "depth_std": 0.034447673708200455,
+        "depth_min": 0.19497491419315338,
+        "depth_max": 0.4352780282497406,
+        "mask_area": 1879
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3579654395580292,
+      "bounding_box": [
+        194.06961059570312,
+        117.48553466796875,
+        256.2065734863281,
+        179.95294189453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29390066862106323,
+        "median_depth": 0.301245778799057,
+        "depth_std": 0.08589013665914536,
+        "depth_min": 0.08506632596254349,
+        "depth_max": 0.4272224009037018,
+        "mask_area": 1703
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. lid. cup holder. packet. organizer. coffee machine. robot arm. gripper. countertop. cabinet. plate.",
+  "text_prompt": "cup. lid. cup holder. packet. organizer. coffee machine. robot arm. gripper. countertop. cabinet. plate.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cabinet",
+    "sink",
+    "clamp",
+    "faucet",
+    "floor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: floor, cabinet, clamp, faucet, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.0909942165017128,
+        "relative_position": "closest",
+        "confidence": 0.4461986720561981
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.09506537765264511,
+        "relative_position": "middle",
+        "confidence": 0.8403966426849365
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "clamp",
+        "mean_depth": 0.13930447399616241,
+        "relative_position": "middle",
+        "confidence": 0.4064716100692749
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.16196128726005554,
+        "relative_position": "middle",
+        "confidence": 0.7971044182777405
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "floor",
+        "mean_depth": 0.33381298184394836,
+        "relative_position": "farthest",
+        "confidence": 0.3625081479549408
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "floor",
+        "mean_depth": 0.33381298184394836,
+        "relative_position": "farthest",
+        "confidence": 0.3625081479549408
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.16196128726005554,
+        "relative_position": "middle",
+        "confidence": 0.7971044182777405
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "clamp",
+        "mean_depth": 0.13930447399616241,
+        "relative_position": "middle",
+        "confidence": 0.4064716100692749
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.09506537765264511,
+        "relative_position": "middle",
+        "confidence": 0.8403966426849365
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.0909942165017128,
+        "relative_position": "closest",
+        "confidence": 0.4461986720561981
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.4461986720561981,
+      "bounding_box": [
+        0.045013427734375,
+        87.46739196777344,
+        143.93524169921875,
+        179.9511260986328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0909942165017128,
+        "median_depth": 0.08318663388490677,
+        "depth_std": 0.05638398230075836,
+        "depth_min": 0.006016086786985397,
+        "depth_max": 0.25151681900024414,
+        "mask_area": 8134
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.8403966426849365,
+      "bounding_box": [
+        0.04431724548339844,
+        53.9991340637207,
+        46.145233154296875,
+        118.08534240722656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09506537765264511,
+        "median_depth": 0.09505350887775421,
+        "depth_std": 0.017082300037145615,
+        "depth_min": 0.054606638848781586,
+        "depth_max": 0.12580804526805878,
+        "mask_area": 1360
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "clamp",
+      "confidence": 0.4064716100692749,
+      "bounding_box": [
+        2.611278533935547,
+        37.04986572265625,
+        21.898178100585938,
+        52.6595458984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13930447399616241,
+        "median_depth": 0.13947618007659912,
+        "depth_std": 0.006232868414372206,
+        "depth_min": 0.12663032114505768,
+        "depth_max": 0.15399153530597687,
+        "mask_area": 168
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.7971044182777405,
+      "bounding_box": [
+        44.35089874267578,
+        0.018384933471679688,
+        74.41032409667969,
+        41.57483673095703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16196128726005554,
+        "median_depth": 0.1591152548789978,
+        "depth_std": 0.008206912316381931,
+        "depth_min": 0.14910109341144562,
+        "depth_max": 0.1829656958580017,
+        "mask_area": 448
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "floor",
+      "confidence": 0.3625081479549408,
+      "bounding_box": [
+        121.01543426513672,
+        11.659416198730469,
+        315.8476867675781,
+        179.79598999023438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33381298184394836,
+        "median_depth": 0.3142053186893463,
+        "depth_std": 0.09680133312940598,
+        "depth_min": 0.04420631006360054,
+        "depth_max": 0.6282520294189453,
+        "mask_area": 14813
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. sink. faucet. countertop. soap dispenser. napkin holder. napkins. dishwasher. cabinet. tripod. camera. clamp. cable. floor.",
+  "text_prompt": "cup. sink. faucet. countertop. soap dispenser. napkin holder. napkins. dishwasher. cabinet. tripod. camera. clamp. cable. floor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

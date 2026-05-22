@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "frying pan",
+    "spatula",
+    "lid notebook",
+    "notebook"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, frying pan, notebook, lid notebook, spatula",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.04618079215288162,
+        "relative_position": "closest",
+        "confidence": 0.4382690489292145
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "frying pan",
+        "mean_depth": 0.23183876276016235,
+        "relative_position": "middle",
+        "confidence": 0.7186382412910461
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "spatula",
+        "mean_depth": 0.24112142622470856,
+        "relative_position": "middle",
+        "confidence": 0.5087032318115234
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "lid notebook",
+        "mean_depth": 0.3977053165435791,
+        "relative_position": "middle",
+        "confidence": 0.38620680570602417
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "notebook",
+        "mean_depth": 0.4151272773742676,
+        "relative_position": "farthest",
+        "confidence": 0.39705798029899597
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "notebook",
+        "mean_depth": 0.4151272773742676,
+        "relative_position": "farthest",
+        "confidence": 0.39705798029899597
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "lid notebook",
+        "mean_depth": 0.3977053165435791,
+        "relative_position": "middle",
+        "confidence": 0.38620680570602417
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "spatula",
+        "mean_depth": 0.24112142622470856,
+        "relative_position": "middle",
+        "confidence": 0.5087032318115234
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "frying pan",
+        "mean_depth": 0.23183876276016235,
+        "relative_position": "middle",
+        "confidence": 0.7186382412910461
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.04618079215288162,
+        "relative_position": "closest",
+        "confidence": 0.4382690489292145
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4382690489292145,
+      "bounding_box": [
+        2.587085723876953,
+        24.91433334350586,
+        108.85958862304688,
+        105.211669921875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04618079215288162,
+        "median_depth": 0.01947300136089325,
+        "depth_std": 0.08121532946825027,
+        "depth_min": 0.0,
+        "depth_max": 0.9948077201843262,
+        "mask_area": 4418
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "frying pan",
+      "confidence": 0.7186382412910461,
+      "bounding_box": [
+        102.17382049560547,
+        78.14850616455078,
+        175.33523559570312,
+        135.34384155273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23183876276016235,
+        "median_depth": 0.2254040241241455,
+        "depth_std": 0.023819727823138237,
+        "depth_min": 0.19704890251159668,
+        "depth_max": 0.3037473261356354,
+        "mask_area": 2214
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "spatula",
+      "confidence": 0.5087032318115234,
+      "bounding_box": [
+        172.5106201171875,
+        77.43352508544922,
+        188.59417724609375,
+        131.8308563232422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24112142622470856,
+        "median_depth": 0.24722838401794434,
+        "depth_std": 0.018759513273835182,
+        "depth_min": 0.20915837585926056,
+        "depth_max": 0.2821744680404663,
+        "mask_area": 343
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "lid notebook",
+      "confidence": 0.38620680570602417,
+      "bounding_box": [
+        169.09814453125,
+        33.52046585083008,
+        197.74349975585938,
+        54.10451126098633
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3977053165435791,
+        "median_depth": 0.38525310158729553,
+        "depth_std": 0.07080121338367462,
+        "depth_min": 0.35373491048812866,
+        "depth_max": 0.8636637330055237,
+        "mask_area": 422
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "notebook",
+      "confidence": 0.39705798029899597,
+      "bounding_box": [
+        131.80426025390625,
+        37.06071853637695,
+        159.40631103515625,
+        60.8996696472168
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4151272773742676,
+        "median_depth": 0.40452826023101807,
+        "depth_std": 0.05925919488072395,
+        "depth_min": 0.3773036301136017,
+        "depth_max": 0.9127938151359558,
+        "mask_area": 475
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. camera. frying pan. lid. spatula. tray. table. notebook. pen. trash bin.",
+  "text_prompt": "robot arm. gripper. camera. frying pan. lid. spatula. tray. table. notebook. pen. trash bin.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

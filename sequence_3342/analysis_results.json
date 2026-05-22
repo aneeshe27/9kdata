@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "gripper",
+    "paper book",
+    "cup",
+    "cable"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cable, cup, gripper, paper book, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.022895315662026405,
+        "relative_position": "closest",
+        "confidence": 0.4001813232898712
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.07695881277322769,
+        "relative_position": "middle",
+        "confidence": 0.408360093832016
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "paper book",
+        "mean_depth": 0.41737988591194153,
+        "relative_position": "middle",
+        "confidence": 0.39911317825317383
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.6489869356155396,
+        "relative_position": "middle",
+        "confidence": 0.7415918111801147
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cable",
+        "mean_depth": 0.690961480140686,
+        "relative_position": "farthest",
+        "confidence": 0.4369009733200073
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cable",
+        "mean_depth": 0.690961480140686,
+        "relative_position": "farthest",
+        "confidence": 0.4369009733200073
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.6489869356155396,
+        "relative_position": "middle",
+        "confidence": 0.7415918111801147
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "paper book",
+        "mean_depth": 0.41737988591194153,
+        "relative_position": "middle",
+        "confidence": 0.39911317825317383
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.07695881277322769,
+        "relative_position": "middle",
+        "confidence": 0.408360093832016
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.022895315662026405,
+        "relative_position": "closest",
+        "confidence": 0.4001813232898712
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.4001813232898712,
+      "bounding_box": [
+        224.37814331054688,
+        0.08390045166015625,
+        315.9430847167969,
+        26.778121948242188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022895315662026405,
+        "median_depth": 0.0,
+        "depth_std": 0.08014185726642609,
+        "depth_min": 0.0,
+        "depth_max": 0.4824974834918976,
+        "mask_area": 1442
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "gripper",
+      "confidence": 0.408360093832016,
+      "bounding_box": [
+        186.3092803955078,
+        0.20701980590820312,
+        226.0849151611328,
+        73.80711364746094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07695881277322769,
+        "median_depth": 0.02226577326655388,
+        "depth_std": 0.14277252554893494,
+        "depth_min": 0.0,
+        "depth_max": 0.8862555623054504,
+        "mask_area": 1308
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "paper book",
+      "confidence": 0.39911317825317383,
+      "bounding_box": [
+        83.51625061035156,
+        61.224395751953125,
+        119.27622985839844,
+        69.84716796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.41737988591194153,
+        "median_depth": 0.40108245611190796,
+        "depth_std": 0.04088282957673073,
+        "depth_min": 0.37322166562080383,
+        "depth_max": 0.5160646438598633,
+        "mask_area": 180
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.7415918111801147,
+      "bounding_box": [
+        157.448486328125,
+        87.24089050292969,
+        169.89544677734375,
+        103.57894897460938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6489869356155396,
+        "median_depth": 0.6466039419174194,
+        "depth_std": 0.020924240350723267,
+        "depth_min": 0.6123062968254089,
+        "depth_max": 0.7145938277244568,
+        "mask_area": 144
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cable",
+      "confidence": 0.4369009733200073,
+      "bounding_box": [
+        127.76878356933594,
+        50.03142166137695,
+        155.5305938720703,
+        65.07014465332031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.690961480140686,
+        "median_depth": 0.6921094059944153,
+        "depth_std": 0.06630857288837433,
+        "depth_min": 0.553804337978363,
+        "depth_max": 0.9062657356262207,
+        "mask_area": 267
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "desk. paper. cup. book. cable. robot arm. gripper.",
+  "text_prompt": "desk. paper. cup. book. cable. robot arm. gripper.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

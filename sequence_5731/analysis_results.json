@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "sponge",
+    "box",
+    "chair",
+    "clamp",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: box, clamp, box, sponge, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "sponge",
+        "mean_depth": 0.02704549767076969,
+        "relative_position": "closest",
+        "confidence": 0.6027536392211914
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.09766493737697601,
+        "relative_position": "middle",
+        "confidence": 0.6213417053222656
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.11223103106021881,
+        "relative_position": "middle",
+        "confidence": 0.4117419421672821
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "clamp",
+        "mean_depth": 0.1299269050359726,
+        "relative_position": "middle",
+        "confidence": 0.45060446858406067
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.4044390916824341,
+        "relative_position": "farthest",
+        "confidence": 0.3670964539051056
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.4044390916824341,
+        "relative_position": "farthest",
+        "confidence": 0.3670964539051056
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "clamp",
+        "mean_depth": 0.1299269050359726,
+        "relative_position": "middle",
+        "confidence": 0.45060446858406067
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.11223103106021881,
+        "relative_position": "middle",
+        "confidence": 0.4117419421672821
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "box",
+        "mean_depth": 0.09766493737697601,
+        "relative_position": "middle",
+        "confidence": 0.6213417053222656
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "sponge",
+        "mean_depth": 0.02704549767076969,
+        "relative_position": "closest",
+        "confidence": 0.6027536392211914
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "sponge",
+      "confidence": 0.6027536392211914,
+      "bounding_box": [
+        183.51206970214844,
+        115.27452087402344,
+        218.52818298339844,
+        128.9558868408203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02704549767076969,
+        "median_depth": 0.025326820090413094,
+        "depth_std": 0.004903040360659361,
+        "depth_min": 0.02121034823358059,
+        "depth_max": 0.03979858383536339,
+        "mask_area": 376
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "box",
+      "confidence": 0.6213417053222656,
+      "bounding_box": [
+        185.71864318847656,
+        57.77119445800781,
+        241.24989318847656,
+        102.21109008789062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09766493737697601,
+        "median_depth": 0.06313350051641464,
+        "depth_std": 0.10724877566099167,
+        "depth_min": 0.04749864712357521,
+        "depth_max": 0.5455740690231323,
+        "mask_area": 1847
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.4117419421672821,
+      "bounding_box": [
+        259.3744812011719,
+        71.06390380859375,
+        315.8574523925781,
+        179.61305236816406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11223103106021881,
+        "median_depth": 0.1152140274643898,
+        "depth_std": 0.026416560634970665,
+        "depth_min": 0.06191730126738548,
+        "depth_max": 0.1824968457221985,
+        "mask_area": 1315
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "clamp",
+      "confidence": 0.45060446858406067,
+      "bounding_box": [
+        95.4384765625,
+        121.55982971191406,
+        136.97976684570312,
+        163.33924865722656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1299269050359726,
+        "median_depth": 0.127276211977005,
+        "depth_std": 0.014712540432810783,
+        "depth_min": 0.11007115989923477,
+        "depth_max": 0.17056196928024292,
+        "mask_area": 600
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "box",
+      "confidence": 0.3670964539051056,
+      "bounding_box": [
+        120.13792419433594,
+        8.869142532348633,
+        142.51768493652344,
+        19.235445022583008
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4044390916824341,
+        "median_depth": 0.3970935642719269,
+        "depth_std": 0.01801551692187786,
+        "depth_min": 0.3841548562049866,
+        "depth_max": 0.4580923318862915,
+        "mask_area": 203
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. chair. clamp. sponge. toy car. box. tray.",
+  "text_prompt": "table. chair. clamp. sponge. toy car. box. tray.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

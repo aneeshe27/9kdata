@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "handheld vacuum",
+    "trash bin chair",
+    "cabinet",
+    "countertop",
+    "plastic bag"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: countertop, plastic bag, trash bin chair, cabinet, handheld vacuum",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "handheld vacuum",
+        "mean_depth": 0.12798592448234558,
+        "relative_position": "closest",
+        "confidence": 0.42472413182258606
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "trash bin chair",
+        "mean_depth": 0.45618778467178345,
+        "relative_position": "middle",
+        "confidence": 0.3695788085460663
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.4980945885181427,
+        "relative_position": "middle",
+        "confidence": 0.4065351188182831
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "countertop",
+        "mean_depth": 0.5469163060188293,
+        "relative_position": "middle",
+        "confidence": 0.5869752168655396
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "plastic bag",
+        "mean_depth": 0.7557650804519653,
+        "relative_position": "farthest",
+        "confidence": 0.6934370994567871
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "plastic bag",
+        "mean_depth": 0.7557650804519653,
+        "relative_position": "farthest",
+        "confidence": 0.6934370994567871
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "countertop",
+        "mean_depth": 0.5469163060188293,
+        "relative_position": "middle",
+        "confidence": 0.5869752168655396
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.4980945885181427,
+        "relative_position": "middle",
+        "confidence": 0.4065351188182831
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "trash bin chair",
+        "mean_depth": 0.45618778467178345,
+        "relative_position": "middle",
+        "confidence": 0.3695788085460663
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "handheld vacuum",
+        "mean_depth": 0.12798592448234558,
+        "relative_position": "closest",
+        "confidence": 0.42472413182258606
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "handheld vacuum",
+      "confidence": 0.42472413182258606,
+      "bounding_box": [
+        195.99671936035156,
+        53.31017303466797,
+        315.92083740234375,
+        146.5426025390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12798592448234558,
+        "median_depth": 0.027238378301262856,
+        "depth_std": 0.20865903794765472,
+        "depth_min": 0.0018446017056703568,
+        "depth_max": 0.9785325527191162,
+        "mask_area": 4812
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "trash bin chair",
+      "confidence": 0.3695788085460663,
+      "bounding_box": [
+        0.02152252197265625,
+        149.12451171875,
+        75.41331481933594,
+        179.97885131835938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.45618778467178345,
+        "median_depth": 0.4453379511833191,
+        "depth_std": 0.04570139944553375,
+        "depth_min": 0.3893606960773468,
+        "depth_max": 0.6241576671600342,
+        "mask_area": 1909
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.4065351188182831,
+      "bounding_box": [
+        48.959205627441406,
+        90.93031311035156,
+        108.84613800048828,
+        164.35946655273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4980945885181427,
+        "median_depth": 0.4858487546443939,
+        "depth_std": 0.0758187398314476,
+        "depth_min": 0.3711141347885132,
+        "depth_max": 0.6693512797355652,
+        "mask_area": 3075
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "countertop",
+      "confidence": 0.5869752168655396,
+      "bounding_box": [
+        -0.01090240478515625,
+        38.20619201660156,
+        237.6953125,
+        109.66944885253906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5469163060188293,
+        "median_depth": 0.521663248538971,
+        "depth_std": 0.1454927623271942,
+        "depth_min": 0.34535694122314453,
+        "depth_max": 0.9546434283256531,
+        "mask_area": 7671
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "plastic bag",
+      "confidence": 0.6934370994567871,
+      "bounding_box": [
+        0.10342216491699219,
+        0.08325767517089844,
+        56.95451354980469,
+        49.645118713378906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7557650804519653,
+        "median_depth": 0.7508114576339722,
+        "depth_std": 0.022844143211841583,
+        "depth_min": 0.7198361754417419,
+        "depth_max": 0.8669101595878601,
+        "mask_area": 1657
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. cabinet. trash bin. recycling bin. container. gloves. handheld vacuum. tape dispenser. power outlet. chair. plastic bag.",
+  "text_prompt": "robot arm. gripper. countertop. cabinet. trash bin. recycling bin. container. gloves. handheld vacuum. tape dispenser. power outlet. chair. plastic bag.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

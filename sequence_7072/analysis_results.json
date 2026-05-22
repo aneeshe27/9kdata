@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm robot gripper",
+    "clamp",
+    "pot",
+    "toaster",
+    "bottle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm robot gripper, pot, toaster, bottle, clamp",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.04651976376771927,
+        "relative_position": "closest",
+        "confidence": 0.393603652715683
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "clamp",
+        "mean_depth": 0.1044670045375824,
+        "relative_position": "middle",
+        "confidence": 0.37790757417678833
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "pot",
+        "mean_depth": 0.4225805997848511,
+        "relative_position": "middle",
+        "confidence": 0.8573762774467468
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "toaster",
+        "mean_depth": 0.5670984387397766,
+        "relative_position": "middle",
+        "confidence": 0.8787645101547241
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "bottle",
+        "mean_depth": 0.7267928719520569,
+        "relative_position": "farthest",
+        "confidence": 0.541976273059845
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "bottle",
+        "mean_depth": 0.7267928719520569,
+        "relative_position": "farthest",
+        "confidence": 0.541976273059845
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "toaster",
+        "mean_depth": 0.5670984387397766,
+        "relative_position": "middle",
+        "confidence": 0.8787645101547241
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "pot",
+        "mean_depth": 0.4225805997848511,
+        "relative_position": "middle",
+        "confidence": 0.8573762774467468
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "clamp",
+        "mean_depth": 0.1044670045375824,
+        "relative_position": "middle",
+        "confidence": 0.37790757417678833
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.04651976376771927,
+        "relative_position": "closest",
+        "confidence": 0.393603652715683
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm robot gripper",
+      "confidence": 0.393603652715683,
+      "bounding_box": [
+        -0.05488395690917969,
+        0.0367279052734375,
+        60.430999755859375,
+        180.03631591796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04651976376771927,
+        "median_depth": 0.02229573391377926,
+        "depth_std": 0.1080617755651474,
+        "depth_min": 0.011976589448750019,
+        "depth_max": 0.6688686013221741,
+        "mask_area": 4906
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "clamp",
+      "confidence": 0.37790757417678833,
+      "bounding_box": [
+        95.97598266601562,
+        119.93528747558594,
+        131.3479766845703,
+        155.24742126464844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1044670045375824,
+        "median_depth": 0.09213568270206451,
+        "depth_std": 0.04467527195811272,
+        "depth_min": 0.06715501844882965,
+        "depth_max": 0.3402480483055115,
+        "mask_area": 422
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "pot",
+      "confidence": 0.8573762774467468,
+      "bounding_box": [
+        177.4694061279297,
+        73.40179443359375,
+        232.63157653808594,
+        114.82427978515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4225805997848511,
+        "median_depth": 0.39887529611587524,
+        "depth_std": 0.08178134262561798,
+        "depth_min": 0.3780859410762787,
+        "depth_max": 0.9975883364677429,
+        "mask_area": 1711
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "toaster",
+      "confidence": 0.8787645101547241,
+      "bounding_box": [
+        145.2161407470703,
+        58.57261657714844,
+        178.86549377441406,
+        91.41378784179688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5670984387397766,
+        "median_depth": 0.5504927635192871,
+        "depth_std": 0.054620664566755295,
+        "depth_min": 0.528320848941803,
+        "depth_max": 0.9312686920166016,
+        "mask_area": 934
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bottle",
+      "confidence": 0.541976273059845,
+      "bounding_box": [
+        137.46701049804688,
+        68.02192687988281,
+        143.47286987304688,
+        83.70217895507812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7267928719520569,
+        "median_depth": 0.6726700067520142,
+        "depth_std": 0.09840337187051773,
+        "depth_min": 0.6457132697105408,
+        "depth_max": 0.9513774514198303,
+        "mask_area": 81
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. toaster. pot. lid. bottle. clamp. rail. table. cardboard box. mirror.",
+  "text_prompt": "robot arm. robot gripper. toaster. pot. lid. bottle. clamp. rail. table. cardboard box. mirror.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

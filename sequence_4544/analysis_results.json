@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm water heater",
+    "gripper",
+    "bottle",
+    "bottle",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bottle, bottle, gripper, robot arm water heater, box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm water heater",
+        "mean_depth": 0.0306716151535511,
+        "relative_position": "closest",
+        "confidence": 0.4308338761329651
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.1649087518453598,
+        "relative_position": "middle",
+        "confidence": 0.3674125671386719
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.20470936596393585,
+        "relative_position": "middle",
+        "confidence": 0.6599943041801453
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "bottle",
+        "mean_depth": 0.2049466073513031,
+        "relative_position": "middle",
+        "confidence": 0.6713002920150757
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "box",
+        "mean_depth": 0.3370520770549774,
+        "relative_position": "farthest",
+        "confidence": 0.524895429611206
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "box",
+        "mean_depth": 0.3370520770549774,
+        "relative_position": "farthest",
+        "confidence": 0.524895429611206
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "bottle",
+        "mean_depth": 0.2049466073513031,
+        "relative_position": "middle",
+        "confidence": 0.6713002920150757
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.20470936596393585,
+        "relative_position": "middle",
+        "confidence": 0.6599943041801453
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.1649087518453598,
+        "relative_position": "middle",
+        "confidence": 0.3674125671386719
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm water heater",
+        "mean_depth": 0.0306716151535511,
+        "relative_position": "closest",
+        "confidence": 0.4308338761329651
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm water heater",
+      "confidence": 0.4308338761329651,
+      "bounding_box": [
+        185.31271362304688,
+        4.142692565917969,
+        315.9208984375,
+        179.6702880859375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0306716151535511,
+        "median_depth": 0.017350126057863235,
+        "depth_std": 0.04669392108917236,
+        "depth_min": 0.0049948059022426605,
+        "depth_max": 0.824076235294342,
+        "mask_area": 10618
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.3674125671386719,
+      "bounding_box": [
+        13.915210723876953,
+        165.0163116455078,
+        55.76259994506836,
+        179.9738006591797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1649087518453598,
+        "median_depth": 0.16495877504348755,
+        "depth_std": 0.0043997494503855705,
+        "depth_min": 0.15513524413108826,
+        "depth_max": 0.17537696659564972,
+        "mask_area": 357
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.6599943041801453,
+      "bounding_box": [
+        78.33055114746094,
+        97.46522521972656,
+        111.56553649902344,
+        151.04551696777344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20470936596393585,
+        "median_depth": 0.20154200494289398,
+        "depth_std": 0.016593338921666145,
+        "depth_min": 0.18168635666370392,
+        "depth_max": 0.28760460019111633,
+        "mask_area": 1053
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bottle",
+      "confidence": 0.6713002920150757,
+      "bounding_box": [
+        39.816837310791016,
+        115.1566162109375,
+        74.72271728515625,
+        157.22280883789062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2049466073513031,
+        "median_depth": 0.20103347301483154,
+        "depth_std": 0.011716639623045921,
+        "depth_min": 0.18604668974876404,
+        "depth_max": 0.2354069948196411,
+        "mask_area": 887
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "box",
+      "confidence": 0.524895429611206,
+      "bounding_box": [
+        106.25846862792969,
+        39.88140869140625,
+        143.28111267089844,
+        96.65444946289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3370520770549774,
+        "median_depth": 0.3077389895915985,
+        "depth_std": 0.06491442024707794,
+        "depth_min": 0.29347556829452515,
+        "depth_max": 0.787966251373291,
+        "mask_area": 1563
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. washing machine. box. bottle. brush. shelf. sink. faucet. water heater. pipes.",
+  "text_prompt": "robot arm. gripper. washing machine. box. bottle. brush. shelf. sink. faucet. water heater. pipes.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

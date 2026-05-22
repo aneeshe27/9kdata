@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "wall",
+    "drawer",
+    "book",
+    "floor",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: book, wall, floor, drawer, window",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "wall",
+        "mean_depth": 0.06692321598529816,
+        "relative_position": "closest",
+        "confidence": 0.41775357723236084
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "drawer",
+        "mean_depth": 0.14676423370838165,
+        "relative_position": "middle",
+        "confidence": 0.4491601884365082
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "book",
+        "mean_depth": 0.22867451608181,
+        "relative_position": "middle",
+        "confidence": 0.37064817547798157
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "floor",
+        "mean_depth": 0.5317733883857727,
+        "relative_position": "middle",
+        "confidence": 0.6094523072242737
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.9954448342323303,
+        "relative_position": "farthest",
+        "confidence": 0.5345059633255005
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.9954448342323303,
+        "relative_position": "farthest",
+        "confidence": 0.5345059633255005
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "floor",
+        "mean_depth": 0.5317733883857727,
+        "relative_position": "middle",
+        "confidence": 0.6094523072242737
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "book",
+        "mean_depth": 0.22867451608181,
+        "relative_position": "middle",
+        "confidence": 0.37064817547798157
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "drawer",
+        "mean_depth": 0.14676423370838165,
+        "relative_position": "middle",
+        "confidence": 0.4491601884365082
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "wall",
+        "mean_depth": 0.06692321598529816,
+        "relative_position": "closest",
+        "confidence": 0.41775357723236084
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "wall",
+      "confidence": 0.41775357723236084,
+      "bounding_box": [
+        -0.06964111328125,
+        0.0761566162109375,
+        111.91227722167969,
+        180.07589721679688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06692321598529816,
+        "median_depth": 0.06357872486114502,
+        "depth_std": 0.0237139780074358,
+        "depth_min": 0.027430109679698944,
+        "depth_max": 0.14081232249736786,
+        "mask_area": 15685
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "drawer",
+      "confidence": 0.4491601884365082,
+      "bounding_box": [
+        102.00064086914062,
+        86.14739990234375,
+        170.38766479492188,
+        128.1981964111328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14676423370838165,
+        "median_depth": 0.14431151747703552,
+        "depth_std": 0.020372992381453514,
+        "depth_min": 0.10901321470737457,
+        "depth_max": 0.1890454888343811,
+        "mask_area": 1645
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "book",
+      "confidence": 0.37064817547798157,
+      "bounding_box": [
+        163.9939422607422,
+        39.41881561279297,
+        177.10240173339844,
+        82.37870025634766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22867451608181,
+        "median_depth": 0.22911278903484344,
+        "depth_std": 0.009298503398895264,
+        "depth_min": 0.1950731724500656,
+        "depth_max": 0.2505515515804291,
+        "mask_area": 248
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "floor",
+      "confidence": 0.6094523072242737,
+      "bounding_box": [
+        222.91061401367188,
+        97.09571838378906,
+        315.9327697753906,
+        179.93629455566406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5317733883857727,
+        "median_depth": 0.4944297671318054,
+        "depth_std": 0.13653504848480225,
+        "depth_min": 0.34068453311920166,
+        "depth_max": 0.9505647420883179,
+        "mask_area": 5230
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "window",
+      "confidence": 0.5345059633255005,
+      "bounding_box": [
+        298.27325439453125,
+        14.921205520629883,
+        315.9932861328125,
+        66.01994323730469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9954448342323303,
+        "median_depth": 0.9957283735275269,
+        "depth_std": 0.0014235363341867924,
+        "depth_min": 0.9889478087425232,
+        "depth_max": 0.9982396960258484,
+        "mask_area": 633
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. drawer. shelf. book. wall. floor. window.",
+  "text_prompt": "robot arm. gripper. cabinet. drawer. shelf. book. wall. floor. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

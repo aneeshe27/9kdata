@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bottle",
+    "power cord",
+    "toaster",
+    "plate",
+    "cup"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: toaster, cup, power cord, plate, bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "bottle",
+        "mean_depth": 0.022241467610001564,
+        "relative_position": "closest",
+        "confidence": 0.5272972583770752
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "power cord",
+        "mean_depth": 0.05058169737458229,
+        "relative_position": "middle",
+        "confidence": 0.574236273765564
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "toaster",
+        "mean_depth": 0.057672131806612015,
+        "relative_position": "middle",
+        "confidence": 0.7292578816413879
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "plate",
+        "mean_depth": 0.2088811695575714,
+        "relative_position": "middle",
+        "confidence": 0.6582076549530029
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.32119715213775635,
+        "relative_position": "farthest",
+        "confidence": 0.6613719463348389
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.32119715213775635,
+        "relative_position": "farthest",
+        "confidence": 0.6613719463348389
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "plate",
+        "mean_depth": 0.2088811695575714,
+        "relative_position": "middle",
+        "confidence": 0.6582076549530029
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "toaster",
+        "mean_depth": 0.057672131806612015,
+        "relative_position": "middle",
+        "confidence": 0.7292578816413879
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "power cord",
+        "mean_depth": 0.05058169737458229,
+        "relative_position": "middle",
+        "confidence": 0.574236273765564
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "bottle",
+        "mean_depth": 0.022241467610001564,
+        "relative_position": "closest",
+        "confidence": 0.5272972583770752
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "bottle",
+      "confidence": 0.5272972583770752,
+      "bounding_box": [
+        0.0062389373779296875,
+        114.77146911621094,
+        32.705963134765625,
+        154.95521545410156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022241467610001564,
+        "median_depth": 0.020340368151664734,
+        "depth_std": 0.010142507031559944,
+        "depth_min": 0.009571496397256851,
+        "depth_max": 0.0818905308842659,
+        "mask_area": 667
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "power cord",
+      "confidence": 0.574236273765564,
+      "bounding_box": [
+        65.18406677246094,
+        86.30342864990234,
+        100.50367736816406,
+        179.9085693359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05058169737458229,
+        "median_depth": 0.046613141894340515,
+        "depth_std": 0.02454378269612789,
+        "depth_min": 0.008839690126478672,
+        "depth_max": 0.12311673164367676,
+        "mask_area": 921
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "toaster",
+      "confidence": 0.7292578816413879,
+      "bounding_box": [
+        70.46109008789062,
+        39.94289779663086,
+        182.43223571777344,
+        131.71922302246094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.057672131806612015,
+        "median_depth": 0.05409524589776993,
+        "depth_std": 0.029300477355718613,
+        "depth_min": 0.01935827173292637,
+        "depth_max": 0.5284132361412048,
+        "mask_area": 6683
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plate",
+      "confidence": 0.6582076549530029,
+      "bounding_box": [
+        180.8582000732422,
+        55.13268280029297,
+        212.27244567871094,
+        73.76358795166016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2088811695575714,
+        "median_depth": 0.20254653692245483,
+        "depth_std": 0.024221982806921005,
+        "depth_min": 0.12753406167030334,
+        "depth_max": 0.2900095283985138,
+        "mask_area": 490
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.6613719463348389,
+      "bounding_box": [
+        199.51853942871094,
+        36.63085174560547,
+        212.0899200439453,
+        54.087730407714844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.32119715213775635,
+        "median_depth": 0.3094562888145447,
+        "depth_std": 0.030130431056022644,
+        "depth_min": 0.29343798756599426,
+        "depth_max": 0.4230533540248871,
+        "mask_area": 174
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "toaster. power cord. plate. cup. bowl. container. bottle. fruit. robot arm. table. camera. stand.",
+  "text_prompt": "toaster. power cord. plate. cup. bowl. container. bottle. fruit. robot arm. table. camera. stand.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

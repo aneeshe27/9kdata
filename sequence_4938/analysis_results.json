@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "microwave",
+    "cabinet",
+    "cup",
+    "sink",
+    "coffee maker"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: microwave, coffee maker, cup, sink, cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "microwave",
+        "mean_depth": 0.16219884157180786,
+        "relative_position": "closest",
+        "confidence": 0.5954340100288391
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.26599061489105225,
+        "relative_position": "middle",
+        "confidence": 0.47718706727027893
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.4539688527584076,
+        "relative_position": "middle",
+        "confidence": 0.47649744153022766
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.7043305039405823,
+        "relative_position": "middle",
+        "confidence": 0.6918454170227051
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "coffee maker",
+        "mean_depth": 0.8763866424560547,
+        "relative_position": "farthest",
+        "confidence": 0.37554731965065
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "coffee maker",
+        "mean_depth": 0.8763866424560547,
+        "relative_position": "farthest",
+        "confidence": 0.37554731965065
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.7043305039405823,
+        "relative_position": "middle",
+        "confidence": 0.6918454170227051
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cup",
+        "mean_depth": 0.4539688527584076,
+        "relative_position": "middle",
+        "confidence": 0.47649744153022766
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.26599061489105225,
+        "relative_position": "middle",
+        "confidence": 0.47718706727027893
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "microwave",
+        "mean_depth": 0.16219884157180786,
+        "relative_position": "closest",
+        "confidence": 0.5954340100288391
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "microwave",
+      "confidence": 0.5954340100288391,
+      "bounding_box": [
+        18.69165802001953,
+        27.902088165283203,
+        169.02560424804688,
+        133.77175903320312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16219884157180786,
+        "median_depth": 0.15193744003772736,
+        "depth_std": 0.05249873548746109,
+        "depth_min": 0.07916603982448578,
+        "depth_max": 0.33259961009025574,
+        "mask_area": 11573
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.47718706727027893,
+      "bounding_box": [
+        81.1471176147461,
+        112.3944091796875,
+        203.21240234375,
+        180.00424194335938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26599061489105225,
+        "median_depth": 0.26519396901130676,
+        "depth_std": 0.07129211723804474,
+        "depth_min": 0.11491944640874863,
+        "depth_max": 0.4283203184604645,
+        "mask_area": 3459
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cup",
+      "confidence": 0.47649744153022766,
+      "bounding_box": [
+        184.21636962890625,
+        43.734352111816406,
+        208.11300659179688,
+        75.87017822265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4539688527584076,
+        "median_depth": 0.4452889859676361,
+        "depth_std": 0.025198912248015404,
+        "depth_min": 0.4234800338745117,
+        "depth_max": 0.5471346974372864,
+        "mask_area": 568
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.6918454170227051,
+      "bounding_box": [
+        220.07000732421875,
+        57.122718811035156,
+        263.2597961425781,
+        73.66466522216797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7043305039405823,
+        "median_depth": 0.7179687023162842,
+        "depth_std": 0.048703383654356,
+        "depth_min": 0.5807507634162903,
+        "depth_max": 0.7667310833930969,
+        "mask_area": 430
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "coffee maker",
+      "confidence": 0.37554731965065,
+      "bounding_box": [
+        262.8302307128906,
+        29.763935089111328,
+        296.9953918457031,
+        61.76347732543945
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8763866424560547,
+        "median_depth": 0.8709790706634521,
+        "depth_std": 0.051273081451654434,
+        "depth_min": 0.8010913729667664,
+        "depth_max": 0.9865343570709229,
+        "mask_area": 710
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "microwave. countertop. cabinet. sink. faucet. dish rack. plate. cup. coffee maker. electric kettle. robot arm. tray.",
+  "text_prompt": "microwave. countertop. cabinet. sink. faucet. dish rack. plate. cup. coffee maker. electric kettle. robot arm. tray.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

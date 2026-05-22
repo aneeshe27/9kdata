@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper",
+    "robot arm",
+    "basket",
+    "cup",
+    "bottle water jug"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bottle water jug, gripper, robot arm, basket, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.024010024964809418,
+        "relative_position": "closest",
+        "confidence": 0.4078984558582306
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.025803321972489357,
+        "relative_position": "middle",
+        "confidence": 0.40023931860923767
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "basket",
+        "mean_depth": 0.06829574704170227,
+        "relative_position": "middle",
+        "confidence": 0.7735670208930969
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.10160474479198456,
+        "relative_position": "middle",
+        "confidence": 0.4535601735115051
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "bottle water jug",
+        "mean_depth": 0.8562962412834167,
+        "relative_position": "farthest",
+        "confidence": 0.43946462869644165
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "bottle water jug",
+        "mean_depth": 0.8562962412834167,
+        "relative_position": "farthest",
+        "confidence": 0.43946462869644165
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.10160474479198456,
+        "relative_position": "middle",
+        "confidence": 0.4535601735115051
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "basket",
+        "mean_depth": 0.06829574704170227,
+        "relative_position": "middle",
+        "confidence": 0.7735670208930969
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.025803321972489357,
+        "relative_position": "middle",
+        "confidence": 0.40023931860923767
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.024010024964809418,
+        "relative_position": "closest",
+        "confidence": 0.4078984558582306
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "gripper",
+      "confidence": 0.4078984558582306,
+      "bounding_box": [
+        251.92840576171875,
+        71.8603515625,
+        316.00439453125,
+        175.03074645996094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.024010024964809418,
+        "median_depth": 0.02161291427910328,
+        "depth_std": 0.015472394414246082,
+        "depth_min": 0.014376829378306866,
+        "depth_max": 0.17796677350997925,
+        "mask_area": 3457
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.40023931860923767,
+      "bounding_box": [
+        193.11431884765625,
+        0.0448760986328125,
+        315.982177734375,
+        75.1274185180664
+      ],
+      "depth_stats": {
+        "mean_depth": 0.025803321972489357,
+        "median_depth": 0.016923118382692337,
+        "depth_std": 0.046426258981227875,
+        "depth_min": 0.005436391569674015,
+        "depth_max": 0.5977979302406311,
+        "mask_area": 3547
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "basket",
+      "confidence": 0.7735670208930969,
+      "bounding_box": [
+        125.48994445800781,
+        65.78231811523438,
+        175.4858856201172,
+        98.35650634765625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06829574704170227,
+        "median_depth": 0.06952261179685593,
+        "depth_std": 0.006328265648335218,
+        "depth_min": 0.05608128383755684,
+        "depth_max": 0.09374161064624786,
+        "mask_area": 1082
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.4535601735115051,
+      "bounding_box": [
+        113.53610229492188,
+        12.239059448242188,
+        131.48715209960938,
+        30.072933197021484
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10160474479198456,
+        "median_depth": 0.1008366197347641,
+        "depth_std": 0.005104821640998125,
+        "depth_min": 0.09230689704418182,
+        "depth_max": 0.11763513088226318,
+        "mask_area": 257
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bottle water jug",
+      "confidence": 0.43946462869644165,
+      "bounding_box": [
+        212.5758514404297,
+        68.46200561523438,
+        230.77842712402344,
+        97.04801940917969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8562962412834167,
+        "median_depth": 0.8895572423934937,
+        "depth_std": 0.09736166894435883,
+        "depth_min": 0.07342460006475449,
+        "depth_max": 0.9585256576538086,
+        "mask_area": 409
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "washing machine. basket. bottle. box. cup. robot arm. gripper. shelf. water jug. table.",
+  "text_prompt": "washing machine. basket. bottle. box. cup. robot arm. gripper. shelf. water jug. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

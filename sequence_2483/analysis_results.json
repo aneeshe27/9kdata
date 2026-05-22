@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "workbench",
+    "whisk clamp",
+    "towel",
+    "bowl"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bowl, workbench, robot arm, towel, whisk clamp",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.027355004101991653,
+        "relative_position": "closest",
+        "confidence": 0.3942684233188629
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "workbench",
+        "mean_depth": 0.11816263943910599,
+        "relative_position": "middle",
+        "confidence": 0.35794785618782043
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "whisk clamp",
+        "mean_depth": 0.12570218741893768,
+        "relative_position": "middle",
+        "confidence": 0.4873105585575104
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "towel",
+        "mean_depth": 0.20699092745780945,
+        "relative_position": "middle",
+        "confidence": 0.43306440114974976
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.32883840799331665,
+        "relative_position": "farthest",
+        "confidence": 0.6702287793159485
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.32883840799331665,
+        "relative_position": "farthest",
+        "confidence": 0.6702287793159485
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "towel",
+        "mean_depth": 0.20699092745780945,
+        "relative_position": "middle",
+        "confidence": 0.43306440114974976
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "whisk clamp",
+        "mean_depth": 0.12570218741893768,
+        "relative_position": "middle",
+        "confidence": 0.4873105585575104
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "workbench",
+        "mean_depth": 0.11816263943910599,
+        "relative_position": "middle",
+        "confidence": 0.35794785618782043
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.027355004101991653,
+        "relative_position": "closest",
+        "confidence": 0.3942684233188629
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3942684233188629,
+      "bounding_box": [
+        179.2843475341797,
+        0.17447280883789062,
+        257.2366638183594,
+        99.7584228515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.027355004101991653,
+        "median_depth": 0.010195150040090084,
+        "depth_std": 0.08378158509731293,
+        "depth_min": 0.00011269782407907769,
+        "depth_max": 0.843280017375946,
+        "mask_area": 2781
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "workbench",
+      "confidence": 0.35794785618782043,
+      "bounding_box": [
+        0.3013877868652344,
+        70.30864715576172,
+        107.25914001464844,
+        179.82284545898438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11816263943910599,
+        "median_depth": 0.08584856986999512,
+        "depth_std": 0.09655692428350449,
+        "depth_min": 0.017666250467300415,
+        "depth_max": 0.9236907958984375,
+        "mask_area": 5690
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "whisk clamp",
+      "confidence": 0.4873105585575104,
+      "bounding_box": [
+        144.93199157714844,
+        147.3144073486328,
+        233.34120178222656,
+        179.93955993652344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12570218741893768,
+        "median_depth": 0.1245422214269638,
+        "depth_std": 0.01377292349934578,
+        "depth_min": 0.09516917169094086,
+        "depth_max": 0.16150163114070892,
+        "mask_area": 561
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "towel",
+      "confidence": 0.43306440114974976,
+      "bounding_box": [
+        164.55282592773438,
+        118.70053100585938,
+        187.70065307617188,
+        157.30978393554688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20699092745780945,
+        "median_depth": 0.2042771577835083,
+        "depth_std": 0.02919762395322323,
+        "depth_min": 0.15716898441314697,
+        "depth_max": 0.26858726143836975,
+        "mask_area": 603
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.6702287793159485,
+      "bounding_box": [
+        144.4445037841797,
+        93.94629669189453,
+        177.47645568847656,
+        118.23314666748047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.32883840799331665,
+        "median_depth": 0.3059632182121277,
+        "depth_std": 0.12411430478096008,
+        "depth_min": 0.25390177965164185,
+        "depth_max": 0.9998784065246582,
+        "mask_area": 534
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. bowl. pot. lid. whisk. towel. table. workbench. clamp.",
+  "text_prompt": "robot arm. gripper. bowl. pot. lid. whisk. towel. table. workbench. clamp.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

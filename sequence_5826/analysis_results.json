@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "chair",
+    "cloth",
+    "glass door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cloth, table, robot arm, glass door, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.03989391401410103,
+        "relative_position": "closest",
+        "confidence": 0.6051889061927795
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.13114646077156067,
+        "relative_position": "middle",
+        "confidence": 0.35517534613609314
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.16575966775417328,
+        "relative_position": "middle",
+        "confidence": 0.39260590076446533
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cloth",
+        "mean_depth": 0.29137709736824036,
+        "relative_position": "middle",
+        "confidence": 0.4055529534816742
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "glass door",
+        "mean_depth": 0.8177823424339294,
+        "relative_position": "farthest",
+        "confidence": 0.5261542797088623
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "glass door",
+        "mean_depth": 0.8177823424339294,
+        "relative_position": "farthest",
+        "confidence": 0.5261542797088623
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cloth",
+        "mean_depth": 0.29137709736824036,
+        "relative_position": "middle",
+        "confidence": 0.4055529534816742
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.16575966775417328,
+        "relative_position": "middle",
+        "confidence": 0.39260590076446533
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.13114646077156067,
+        "relative_position": "middle",
+        "confidence": 0.35517534613609314
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.03989391401410103,
+        "relative_position": "closest",
+        "confidence": 0.6051889061927795
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.6051889061927795,
+      "bounding_box": [
+        130.42019653320312,
+        3.4863052368164062,
+        316.01226806640625,
+        153.62539672851562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03989391401410103,
+        "median_depth": 0.013594090938568115,
+        "depth_std": 0.06473219394683838,
+        "depth_min": 0.0023869320284575224,
+        "depth_max": 0.7300182580947876,
+        "mask_area": 10984
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.35517534613609314,
+      "bounding_box": [
+        0.016881942749023438,
+        26.589111328125,
+        61.129127502441406,
+        54.44232177734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13114646077156067,
+        "median_depth": 0.12991632521152496,
+        "depth_std": 0.0064228312112390995,
+        "depth_min": 0.11782732605934143,
+        "depth_max": 0.14700232446193695,
+        "mask_area": 880
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.39260590076446533,
+      "bounding_box": [
+        24.94495391845703,
+        61.60383605957031,
+        87.81202697753906,
+        113.37135314941406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16575966775417328,
+        "median_depth": 0.16517850756645203,
+        "depth_std": 0.01069682277739048,
+        "depth_min": 0.14151817560195923,
+        "depth_max": 0.19829227030277252,
+        "mask_area": 1558
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cloth",
+      "confidence": 0.4055529534816742,
+      "bounding_box": [
+        129.16326904296875,
+        148.59706115722656,
+        170.29428100585938,
+        179.49497985839844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29137709736824036,
+        "median_depth": 0.30155014991760254,
+        "depth_std": 0.05167767405509949,
+        "depth_min": 0.05058225616812706,
+        "depth_max": 0.3617907464504242,
+        "mask_area": 865
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "glass door",
+      "confidence": 0.5261542797088623,
+      "bounding_box": [
+        90.04801177978516,
+        0.10652923583984375,
+        143.4512481689453,
+        75.71000671386719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8177823424339294,
+        "median_depth": 0.8209043145179749,
+        "depth_std": 0.1005045473575592,
+        "depth_min": 0.6012248992919922,
+        "depth_max": 0.9952148199081421,
+        "mask_area": 2167
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cloth. box. container. emergency stop button. table. chair. glass door. door handle. wall. floor.",
+  "text_prompt": "robot arm. gripper. cloth. box. container. emergency stop button. table. chair. glass door. door handle. wall. floor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

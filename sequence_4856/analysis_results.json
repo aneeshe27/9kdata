@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "washing machine",
+    "washing machine",
+    "bag cloth",
+    "gripper"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: washing machine, bag cloth, gripper, robot arm, washing machine",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.03317020833492279,
+        "relative_position": "closest",
+        "confidence": 0.39845189452171326
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "washing machine",
+        "mean_depth": 0.09420188516378403,
+        "relative_position": "middle",
+        "confidence": 0.37874835729599
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "washing machine",
+        "mean_depth": 0.20507510006427765,
+        "relative_position": "middle",
+        "confidence": 0.49516838788986206
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bag cloth",
+        "mean_depth": 0.21036691963672638,
+        "relative_position": "middle",
+        "confidence": 0.4423602223396301
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.5735116004943848,
+        "relative_position": "farthest",
+        "confidence": 0.3545909821987152
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.5735116004943848,
+        "relative_position": "farthest",
+        "confidence": 0.3545909821987152
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bag cloth",
+        "mean_depth": 0.21036691963672638,
+        "relative_position": "middle",
+        "confidence": 0.4423602223396301
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "washing machine",
+        "mean_depth": 0.20507510006427765,
+        "relative_position": "middle",
+        "confidence": 0.49516838788986206
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "washing machine",
+        "mean_depth": 0.09420188516378403,
+        "relative_position": "middle",
+        "confidence": 0.37874835729599
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.03317020833492279,
+        "relative_position": "closest",
+        "confidence": 0.39845189452171326
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.39845189452171326,
+      "bounding_box": [
+        16.327880859375,
+        0.11830902099609375,
+        147.2013397216797,
+        119.23147583007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03317020833492279,
+        "median_depth": 0.01704235002398491,
+        "depth_std": 0.07813385128974915,
+        "depth_min": 1.6521395806989858e-08,
+        "depth_max": 0.9313221573829651,
+        "mask_area": 5492
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "washing machine",
+      "confidence": 0.37874835729599,
+      "bounding_box": [
+        242.8782196044922,
+        84.42283630371094,
+        315.98529052734375,
+        180.06626892089844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09420188516378403,
+        "median_depth": 0.09342146664857864,
+        "depth_std": 0.015500793233513832,
+        "depth_min": 0.06500579416751862,
+        "depth_max": 0.14091524481773376,
+        "mask_area": 5143
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "washing machine",
+      "confidence": 0.49516838788986206,
+      "bounding_box": [
+        136.81503295898438,
+        59.32965850830078,
+        278.503173828125,
+        180.065185546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20507510006427765,
+        "median_depth": 0.19679827988147736,
+        "depth_std": 0.06824330985546112,
+        "depth_min": 0.11132629215717316,
+        "depth_max": 0.4274912476539612,
+        "mask_area": 11917
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bag cloth",
+      "confidence": 0.4423602223396301,
+      "bounding_box": [
+        148.9263916015625,
+        0.060882568359375,
+        249.67254638671875,
+        72.50118255615234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21036691963672638,
+        "median_depth": 0.2028728574514389,
+        "depth_std": 0.025963211432099342,
+        "depth_min": 0.15063339471817017,
+        "depth_max": 0.29191336035728455,
+        "mask_area": 5006
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.3545909821987152,
+      "bounding_box": [
+        80.01934814453125,
+        142.3297119140625,
+        111.98979187011719,
+        164.23910522460938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5735116004943848,
+        "median_depth": 0.5604975819587708,
+        "depth_std": 0.04164853319525719,
+        "depth_min": 0.5176426768302917,
+        "depth_max": 0.6739779114723206,
+        "mask_area": 274
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "washing machine. dryer. robot arm. gripper. detergent bottle. bag. cloth. stool.",
+  "text_prompt": "washing machine. dryer. robot arm. gripper. detergent bottle. bag. cloth. stool.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

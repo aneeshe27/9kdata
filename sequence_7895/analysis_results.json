@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "couch",
+    "gripper",
+    "screwdriver",
+    "book",
+    "hat"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: gripper, book, screwdriver, hat, couch",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "couch",
+        "mean_depth": 0.12463218718767166,
+        "relative_position": "closest",
+        "confidence": 0.6135525107383728
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.13434134423732758,
+        "relative_position": "middle",
+        "confidence": 0.42078113555908203
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "screwdriver",
+        "mean_depth": 0.2917478084564209,
+        "relative_position": "middle",
+        "confidence": 0.4124966263771057
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "book",
+        "mean_depth": 0.4106975197792053,
+        "relative_position": "middle",
+        "confidence": 0.36498284339904785
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "hat",
+        "mean_depth": 0.4395641088485718,
+        "relative_position": "farthest",
+        "confidence": 0.4923376142978668
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "hat",
+        "mean_depth": 0.4395641088485718,
+        "relative_position": "farthest",
+        "confidence": 0.4923376142978668
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "book",
+        "mean_depth": 0.4106975197792053,
+        "relative_position": "middle",
+        "confidence": 0.36498284339904785
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "screwdriver",
+        "mean_depth": 0.2917478084564209,
+        "relative_position": "middle",
+        "confidence": 0.4124966263771057
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.13434134423732758,
+        "relative_position": "middle",
+        "confidence": 0.42078113555908203
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "couch",
+        "mean_depth": 0.12463218718767166,
+        "relative_position": "closest",
+        "confidence": 0.6135525107383728
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "couch",
+      "confidence": 0.6135525107383728,
+      "bounding_box": [
+        0.06601715087890625,
+        116.62353515625,
+        152.97195434570312,
+        179.9989013671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12463218718767166,
+        "median_depth": 0.12227977812290192,
+        "depth_std": 0.012718857266008854,
+        "depth_min": 0.10636971890926361,
+        "depth_max": 0.19608096778392792,
+        "mask_area": 6485
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "gripper",
+      "confidence": 0.42078113555908203,
+      "bounding_box": [
+        84.33635711669922,
+        66.93403625488281,
+        129.21824645996094,
+        92.91558837890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13434134423732758,
+        "median_depth": 0.13330616056919098,
+        "depth_std": 0.005009062588214874,
+        "depth_min": 0.12555840611457825,
+        "depth_max": 0.1524873822927475,
+        "mask_area": 771
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "screwdriver",
+      "confidence": 0.4124966263771057,
+      "bounding_box": [
+        198.0363311767578,
+        129.3706817626953,
+        218.55274963378906,
+        162.70286560058594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2917478084564209,
+        "median_depth": 0.29041269421577454,
+        "depth_std": 0.015464754775166512,
+        "depth_min": 0.264458030462265,
+        "depth_max": 0.3191143870353699,
+        "mask_area": 281
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "book",
+      "confidence": 0.36498284339904785,
+      "bounding_box": [
+        261.68902587890625,
+        55.05067443847656,
+        296.336181640625,
+        73.33700561523438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4106975197792053,
+        "median_depth": 0.40241098403930664,
+        "depth_std": 0.037751276046037674,
+        "depth_min": 0.32576629519462585,
+        "depth_max": 0.4928177297115326,
+        "mask_area": 395
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "hat",
+      "confidence": 0.4923376142978668,
+      "bounding_box": [
+        237.91763305664062,
+        46.33620834350586,
+        265.15008544921875,
+        65.72980499267578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4395641088485718,
+        "median_depth": 0.42490026354789734,
+        "depth_std": 0.04706043004989624,
+        "depth_min": 0.38247931003570557,
+        "depth_max": 0.598791778087616,
+        "mask_area": 275
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. container. screwdriver. couch. window blinds. book. cable. desk. hat.",
+  "text_prompt": "robot arm. gripper. table. container. screwdriver. couch. window blinds. book. cable. desk. hat.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

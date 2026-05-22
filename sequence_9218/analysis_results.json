@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot gripper",
+    "pan",
+    "lid",
+    "utensil holder",
+    "utensils"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot gripper, utensil holder, utensils, lid, pan",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot gripper",
+        "mean_depth": 0.21614092588424683,
+        "relative_position": "closest",
+        "confidence": 0.552698016166687
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "pan",
+        "mean_depth": 0.2820228636264801,
+        "relative_position": "middle",
+        "confidence": 0.7262946963310242
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "lid",
+        "mean_depth": 0.36097705364227295,
+        "relative_position": "middle",
+        "confidence": 0.37749871611595154
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "utensil holder",
+        "mean_depth": 0.426519513130188,
+        "relative_position": "middle",
+        "confidence": 0.4595273733139038
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "utensils",
+        "mean_depth": 0.4469013214111328,
+        "relative_position": "farthest",
+        "confidence": 0.3786579966545105
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "utensils",
+        "mean_depth": 0.4469013214111328,
+        "relative_position": "farthest",
+        "confidence": 0.3786579966545105
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "utensil holder",
+        "mean_depth": 0.426519513130188,
+        "relative_position": "middle",
+        "confidence": 0.4595273733139038
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "lid",
+        "mean_depth": 0.36097705364227295,
+        "relative_position": "middle",
+        "confidence": 0.37749871611595154
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "pan",
+        "mean_depth": 0.2820228636264801,
+        "relative_position": "middle",
+        "confidence": 0.7262946963310242
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot gripper",
+        "mean_depth": 0.21614092588424683,
+        "relative_position": "closest",
+        "confidence": 0.552698016166687
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot gripper",
+      "confidence": 0.552698016166687,
+      "bounding_box": [
+        185.17520141601562,
+        0.15468597412109375,
+        297.5627746582031,
+        131.48025512695312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21614092588424683,
+        "median_depth": 0.11429297178983688,
+        "depth_std": 0.22571887075901031,
+        "depth_min": 0.0,
+        "depth_max": 0.995698869228363,
+        "mask_area": 7071
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "pan",
+      "confidence": 0.7262946963310242,
+      "bounding_box": [
+        22.645755767822266,
+        87.26426696777344,
+        140.3574676513672,
+        137.50497436523438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2820228636264801,
+        "median_depth": 0.28006425499916077,
+        "depth_std": 0.04287448897957802,
+        "depth_min": 0.20355284214019775,
+        "depth_max": 0.4306837320327759,
+        "mask_area": 3386
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "lid",
+      "confidence": 0.37749871611595154,
+      "bounding_box": [
+        0.04882049560546875,
+        42.458457946777344,
+        132.29293823242188,
+        105.82721710205078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.36097705364227295,
+        "median_depth": 0.3536289632320404,
+        "depth_std": 0.04646020010113716,
+        "depth_min": 0.27764835953712463,
+        "depth_max": 0.4651947319507599,
+        "mask_area": 6046
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "utensil holder",
+      "confidence": 0.4595273733139038,
+      "bounding_box": [
+        137.11769104003906,
+        59.090110778808594,
+        173.9961395263672,
+        102.69287872314453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.426519513130188,
+        "median_depth": 0.4157707095146179,
+        "depth_std": 0.028263142332434654,
+        "depth_min": 0.3913807272911072,
+        "depth_max": 0.4985036551952362,
+        "mask_area": 991
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "utensils",
+      "confidence": 0.3786579966545105,
+      "bounding_box": [
+        141.7215118408203,
+        36.12855911254883,
+        159.36976623535156,
+        67.17764282226562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4469013214111328,
+        "median_depth": 0.44481009244918823,
+        "depth_std": 0.030873648822307587,
+        "depth_min": 0.39656907320022583,
+        "depth_max": 0.503080427646637,
+        "mask_area": 406
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "stove. pan. lid. utensil holder. utensils. robot arm. robot gripper. cup. countertop.",
+  "text_prompt": "stove. pan. lid. utensil holder. utensils. robot arm. robot gripper. cup. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

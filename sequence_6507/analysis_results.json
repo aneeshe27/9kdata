@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "faucet",
+    "sink",
+    "soap bottle",
+    "tissue box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, sink, tissue box, soap bottle, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.10781235992908478,
+        "relative_position": "closest",
+        "confidence": 0.5489464402198792
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.423491507768631,
+        "relative_position": "middle",
+        "confidence": 0.4256073236465454
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.5324164032936096,
+        "relative_position": "middle",
+        "confidence": 0.8221249580383301
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "soap bottle",
+        "mean_depth": 0.6010475158691406,
+        "relative_position": "middle",
+        "confidence": 0.5504727363586426
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "tissue box",
+        "mean_depth": 0.6877976655960083,
+        "relative_position": "farthest",
+        "confidence": 0.7739787101745605
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "tissue box",
+        "mean_depth": 0.6877976655960083,
+        "relative_position": "farthest",
+        "confidence": 0.7739787101745605
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "soap bottle",
+        "mean_depth": 0.6010475158691406,
+        "relative_position": "middle",
+        "confidence": 0.5504727363586426
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.5324164032936096,
+        "relative_position": "middle",
+        "confidence": 0.8221249580383301
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.423491507768631,
+        "relative_position": "middle",
+        "confidence": 0.4256073236465454
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.10781235992908478,
+        "relative_position": "closest",
+        "confidence": 0.5489464402198792
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.5489464402198792,
+      "bounding_box": [
+        178.92355346679688,
+        15.428848266601562,
+        249.02230834960938,
+        82.51249694824219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10781235992908478,
+        "median_depth": 0.005659852642565966,
+        "depth_std": 0.19449512660503387,
+        "depth_min": 0.0,
+        "depth_max": 0.8455334901809692,
+        "mask_area": 1280
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "faucet",
+      "confidence": 0.4256073236465454,
+      "bounding_box": [
+        50.52528381347656,
+        53.786197662353516,
+        108.10044860839844,
+        120.10035705566406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.423491507768631,
+        "median_depth": 0.41075143218040466,
+        "depth_std": 0.056333206593990326,
+        "depth_min": 0.34207162261009216,
+        "depth_max": 0.6595989465713501,
+        "mask_area": 1075
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.8221249580383301,
+      "bounding_box": [
+        58.194252014160156,
+        90.98062133789062,
+        179.11767578125,
+        179.90786743164062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5324164032936096,
+        "median_depth": 0.530430257320404,
+        "depth_std": 0.05041858181357384,
+        "depth_min": 0.3659757375717163,
+        "depth_max": 0.6395789384841919,
+        "mask_area": 6447
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "soap bottle",
+      "confidence": 0.5504727363586426,
+      "bounding_box": [
+        135.81704711914062,
+        53.25704574584961,
+        149.622802734375,
+        88.24772644042969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6010475158691406,
+        "median_depth": 0.5954563021659851,
+        "depth_std": 0.02781548537313938,
+        "depth_min": 0.5663958787918091,
+        "depth_max": 0.72258061170578,
+        "mask_area": 280
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "tissue box",
+      "confidence": 0.7739787101745605,
+      "bounding_box": [
+        158.7427215576172,
+        45.140167236328125,
+        191.3750457763672,
+        80.7516098022461
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6877976655960083,
+        "median_depth": 0.677918553352356,
+        "depth_std": 0.04076075553894043,
+        "depth_min": 0.5488317608833313,
+        "depth_max": 0.9093961715698242,
+        "mask_area": 632
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. faucet. countertop. robot arm. gripper. soap bottle. sponge. tissue box. paper towels. appliance.",
+  "text_prompt": "sink. faucet. countertop. robot arm. gripper. soap bottle. sponge. tissue box. paper towels. appliance.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

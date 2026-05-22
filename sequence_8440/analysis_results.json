@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "shelf table",
+    "robot arm",
+    "door",
+    "shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, shelf, shelf table, table, door",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.2224063277244568,
+        "relative_position": "closest",
+        "confidence": 0.559921145439148
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "shelf table",
+        "mean_depth": 0.32134810090065,
+        "relative_position": "middle",
+        "confidence": 0.49324163794517517
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.3824526369571686,
+        "relative_position": "middle",
+        "confidence": 0.3794398903846741
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "door",
+        "mean_depth": 0.6855091452598572,
+        "relative_position": "middle",
+        "confidence": 0.4226108491420746
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.7796967625617981,
+        "relative_position": "farthest",
+        "confidence": 0.47832098603248596
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.7796967625617981,
+        "relative_position": "farthest",
+        "confidence": 0.47832098603248596
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "door",
+        "mean_depth": 0.6855091452598572,
+        "relative_position": "middle",
+        "confidence": 0.4226108491420746
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.3824526369571686,
+        "relative_position": "middle",
+        "confidence": 0.3794398903846741
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "shelf table",
+        "mean_depth": 0.32134810090065,
+        "relative_position": "middle",
+        "confidence": 0.49324163794517517
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.2224063277244568,
+        "relative_position": "closest",
+        "confidence": 0.559921145439148
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.559921145439148,
+      "bounding_box": [
+        0.02085113525390625,
+        93.1458740234375,
+        68.78665161132812,
+        179.98684692382812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2224063277244568,
+        "median_depth": 0.1581406593322754,
+        "depth_std": 0.2082235962152481,
+        "depth_min": 0.041790831834077835,
+        "depth_max": 0.912136971950531,
+        "mask_area": 3273
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "shelf table",
+      "confidence": 0.49324163794517517,
+      "bounding_box": [
+        109.19554901123047,
+        41.21179962158203,
+        252.99807739257812,
+        179.957275390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.32134810090065,
+        "median_depth": 0.3096785545349121,
+        "depth_std": 0.12272170931100845,
+        "depth_min": 0.06375258415937424,
+        "depth_max": 0.7624914646148682,
+        "mask_area": 11773
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3794398903846741,
+      "bounding_box": [
+        44.743751525878906,
+        93.0058364868164,
+        94.0346908569336,
+        148.641357421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3824526369571686,
+        "median_depth": 0.3537501096725464,
+        "depth_std": 0.10235874354839325,
+        "depth_min": 0.28462082147598267,
+        "depth_max": 0.9714722633361816,
+        "mask_area": 944
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "door",
+      "confidence": 0.4226108491420746,
+      "bounding_box": [
+        80.87002563476562,
+        0.05850982666015625,
+        133.5977783203125,
+        96.22338104248047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6855091452598572,
+        "median_depth": 0.6612014770507812,
+        "depth_std": 0.14012053608894348,
+        "depth_min": 0.31637510657310486,
+        "depth_max": 0.9913026690483093,
+        "mask_area": 2231
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "shelf",
+      "confidence": 0.47832098603248596,
+      "bounding_box": [
+        0.037288665771484375,
+        -0.0731964111328125,
+        97.52456665039062,
+        102.74207305908203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7796967625617981,
+        "median_depth": 0.7757410407066345,
+        "depth_std": 0.12370402365922928,
+        "depth_min": 0.2949545979499817,
+        "depth_max": 1.0,
+        "mask_area": 5691
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. shelf. shoe. table. door.",
+  "text_prompt": "robot arm. gripper. shelf. shoe. table. door.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

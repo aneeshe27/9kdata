@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "refrigerator",
+    "stove",
+    "shelf",
+    "spice jar bottle",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: refrigerator, spice jar bottle, window, stove, shelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.2536430060863495,
+        "relative_position": "closest",
+        "confidence": 0.8351073861122131
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "stove",
+        "mean_depth": 0.558907687664032,
+        "relative_position": "middle",
+        "confidence": 0.45754119753837585
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "shelf",
+        "mean_depth": 0.6952148675918579,
+        "relative_position": "middle",
+        "confidence": 0.45041120052337646
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "spice jar bottle",
+        "mean_depth": 0.6992093920707703,
+        "relative_position": "middle",
+        "confidence": 0.394618958234787
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.7417598366737366,
+        "relative_position": "farthest",
+        "confidence": 0.5700807571411133
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.7417598366737366,
+        "relative_position": "farthest",
+        "confidence": 0.5700807571411133
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "spice jar bottle",
+        "mean_depth": 0.6992093920707703,
+        "relative_position": "middle",
+        "confidence": 0.394618958234787
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "shelf",
+        "mean_depth": 0.6952148675918579,
+        "relative_position": "middle",
+        "confidence": 0.45041120052337646
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "stove",
+        "mean_depth": 0.558907687664032,
+        "relative_position": "middle",
+        "confidence": 0.45754119753837585
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.2536430060863495,
+        "relative_position": "closest",
+        "confidence": 0.8351073861122131
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "refrigerator",
+      "confidence": 0.8351073861122131,
+      "bounding_box": [
+        0.0914764404296875,
+        0.0771484375,
+        128.86236572265625,
+        180.06387329101562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2536430060863495,
+        "median_depth": 0.2177691012620926,
+        "depth_std": 0.13768073916435242,
+        "depth_min": 0.06514950841665268,
+        "depth_max": 0.6941661834716797,
+        "mask_area": 20171
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "stove",
+      "confidence": 0.45754119753837585,
+      "bounding_box": [
+        129.14517211914062,
+        144.095947265625,
+        223.76028442382812,
+        179.98391723632812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.558907687664032,
+        "median_depth": 0.552475094795227,
+        "depth_std": 0.06713640689849854,
+        "depth_min": 0.11219070851802826,
+        "depth_max": 0.7817586660385132,
+        "mask_area": 1868
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "shelf",
+      "confidence": 0.45041120052337646,
+      "bounding_box": [
+        142.77630615234375,
+        60.572044372558594,
+        226.15780639648438,
+        100.83422088623047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6952148675918579,
+        "median_depth": 0.695372998714447,
+        "depth_std": 0.018588777631521225,
+        "depth_min": 0.33933302760124207,
+        "depth_max": 0.7194936275482178,
+        "mask_area": 2092
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "spice jar bottle",
+      "confidence": 0.394618958234787,
+      "bounding_box": [
+        169.32876586914062,
+        44.853797912597656,
+        179.34661865234375,
+        63.06495666503906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6992093920707703,
+        "median_depth": 0.6986690163612366,
+        "depth_std": 0.009462052024900913,
+        "depth_min": 0.685375452041626,
+        "depth_max": 0.731133222579956,
+        "mask_area": 161
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "window",
+      "confidence": 0.5700807571411133,
+      "bounding_box": [
+        231.54803466796875,
+        23.92186737060547,
+        315.91375732421875,
+        128.0115966796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7417598366737366,
+        "median_depth": 0.9358112812042236,
+        "depth_std": 0.368956983089447,
+        "depth_min": 0.013076681643724442,
+        "depth_max": 0.9814125895500183,
+        "mask_area": 4680
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. stove. oven. pot. pan. spatula. refrigerator. shelf. spice jar. bottle. rack. window.",
+  "text_prompt": "robot arm. gripper. stove. oven. pot. pan. spatula. refrigerator. shelf. spice jar. bottle. rack. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

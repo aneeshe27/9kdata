@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "tripod",
+    "plate",
+    "container",
+    "chair",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, plate, tripod, container, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "tripod",
+        "mean_depth": 0.1754998415708542,
+        "relative_position": "closest",
+        "confidence": 0.3579719364643097
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "plate",
+        "mean_depth": 0.302472859621048,
+        "relative_position": "middle",
+        "confidence": 0.728688657283783
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "container",
+        "mean_depth": 0.39213311672210693,
+        "relative_position": "middle",
+        "confidence": 0.6596440672874451
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.4288618266582489,
+        "relative_position": "middle",
+        "confidence": 0.6018513441085815
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.8015134930610657,
+        "relative_position": "farthest",
+        "confidence": 0.49589046835899353
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.8015134930610657,
+        "relative_position": "farthest",
+        "confidence": 0.49589046835899353
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.4288618266582489,
+        "relative_position": "middle",
+        "confidence": 0.6018513441085815
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "container",
+        "mean_depth": 0.39213311672210693,
+        "relative_position": "middle",
+        "confidence": 0.6596440672874451
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "plate",
+        "mean_depth": 0.302472859621048,
+        "relative_position": "middle",
+        "confidence": 0.728688657283783
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "tripod",
+        "mean_depth": 0.1754998415708542,
+        "relative_position": "closest",
+        "confidence": 0.3579719364643097
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "tripod",
+      "confidence": 0.3579719364643097,
+      "bounding_box": [
+        190.93914794921875,
+        137.59378051757812,
+        220.146728515625,
+        179.90283203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1754998415708542,
+        "median_depth": 0.17439131438732147,
+        "depth_std": 0.015241190791130066,
+        "depth_min": 0.14362193644046783,
+        "depth_max": 0.270229697227478,
+        "mask_area": 796
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "plate",
+      "confidence": 0.728688657283783,
+      "bounding_box": [
+        198.3310546875,
+        123.53968811035156,
+        245.56341552734375,
+        164.67771911621094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.302472859621048,
+        "median_depth": 0.30522236227989197,
+        "depth_std": 0.029054315760731697,
+        "depth_min": 0.18333622813224792,
+        "depth_max": 0.36346617341041565,
+        "mask_area": 1110
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "container",
+      "confidence": 0.6596440672874451,
+      "bounding_box": [
+        164.62811279296875,
+        65.25851440429688,
+        231.67471313476562,
+        118.83918762207031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39213311672210693,
+        "median_depth": 0.3816695809364319,
+        "depth_std": 0.031001264229416847,
+        "depth_min": 0.20262476801872253,
+        "depth_max": 0.521827757358551,
+        "mask_area": 1145
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.6018513441085815,
+      "bounding_box": [
+        133.63674926757812,
+        71.57781219482422,
+        180.65814208984375,
+        130.59048461914062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4288618266582489,
+        "median_depth": 0.4116256535053253,
+        "depth_std": 0.0883786603808403,
+        "depth_min": 0.2908646762371063,
+        "depth_max": 0.92741858959198,
+        "mask_area": 1292
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.49589046835899353,
+      "bounding_box": [
+        134.50296020507812,
+        33.99299621582031,
+        160.8143310546875,
+        76.16320037841797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8015134930610657,
+        "median_depth": 0.8265337944030762,
+        "depth_std": 0.10039462149143219,
+        "depth_min": 0.5718079209327698,
+        "depth_max": 0.951272189617157,
+        "mask_area": 456
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. container. plastic bag. plate. scissors. camera. tripod. table. chair.",
+  "text_prompt": "robot arm. gripper. container. plastic bag. plate. scissors. camera. tripod. table. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

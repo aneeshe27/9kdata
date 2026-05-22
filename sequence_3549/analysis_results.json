@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "lamp",
+    "sofa",
+    "gripper",
+    "bottle",
+    "frying pan"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: lamp, frying pan, sofa, gripper, bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "lamp",
+        "mean_depth": 0.26183855533599854,
+        "relative_position": "closest",
+        "confidence": 0.48778924345970154
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.43321850895881653,
+        "relative_position": "middle",
+        "confidence": 0.8398363590240479
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.6091016530990601,
+        "relative_position": "middle",
+        "confidence": 0.4034249484539032
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "bottle",
+        "mean_depth": 0.6381767392158508,
+        "relative_position": "middle",
+        "confidence": 0.44285985827445984
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "frying pan",
+        "mean_depth": 0.8045337796211243,
+        "relative_position": "farthest",
+        "confidence": 0.43076592683792114
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "frying pan",
+        "mean_depth": 0.8045337796211243,
+        "relative_position": "farthest",
+        "confidence": 0.43076592683792114
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "bottle",
+        "mean_depth": 0.6381767392158508,
+        "relative_position": "middle",
+        "confidence": 0.44285985827445984
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.6091016530990601,
+        "relative_position": "middle",
+        "confidence": 0.4034249484539032
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.43321850895881653,
+        "relative_position": "middle",
+        "confidence": 0.8398363590240479
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "lamp",
+        "mean_depth": 0.26183855533599854,
+        "relative_position": "closest",
+        "confidence": 0.48778924345970154
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "lamp",
+      "confidence": 0.48778924345970154,
+      "bounding_box": [
+        120.42433166503906,
+        0.01805877685546875,
+        207.50477600097656,
+        69.82283020019531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26183855533599854,
+        "median_depth": 0.005676142871379852,
+        "depth_std": 0.3838142156600952,
+        "depth_min": 0.0,
+        "depth_max": 0.9744612574577332,
+        "mask_area": 2339
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "sofa",
+      "confidence": 0.8398363590240479,
+      "bounding_box": [
+        -0.02034759521484375,
+        57.119747161865234,
+        169.0848388671875,
+        180.02020263671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.43321850895881653,
+        "median_depth": 0.43992429971694946,
+        "depth_std": 0.0866527333855629,
+        "depth_min": 0.24394908547401428,
+        "depth_max": 0.9846171140670776,
+        "mask_area": 15743
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.4034249484539032,
+      "bounding_box": [
+        215.70303344726562,
+        125.97794342041016,
+        234.1309814453125,
+        162.1239776611328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6091016530990601,
+        "median_depth": 0.5669954419136047,
+        "depth_std": 0.11800272017717361,
+        "depth_min": 0.4865027964115143,
+        "depth_max": 0.9128934741020203,
+        "mask_area": 312
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bottle",
+      "confidence": 0.44285985827445984,
+      "bounding_box": [
+        232.71875,
+        4.472696304321289,
+        263.6182556152344,
+        52.49378204345703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6381767392158508,
+        "median_depth": 0.6378617286682129,
+        "depth_std": 0.04530315846204758,
+        "depth_min": 0.5469816327095032,
+        "depth_max": 0.7384811043739319,
+        "mask_area": 560
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "frying pan",
+      "confidence": 0.43076592683792114,
+      "bounding_box": [
+        175.93142700195312,
+        64.34886932373047,
+        214.14102172851562,
+        92.72274017333984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8045337796211243,
+        "median_depth": 0.8142322301864624,
+        "depth_std": 0.044113870710134506,
+        "depth_min": 0.6965324282646179,
+        "depth_max": 0.9201509952545166,
+        "mask_area": 736
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sofa. robot arm. gripper. frying pan. keyboard. cabinet. drawer. bottle. window. table. screwdriver. pliers. lamp.",
+  "text_prompt": "sofa. robot arm. gripper. frying pan. keyboard. cabinet. drawer. bottle. window. table. screwdriver. pliers. lamp.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

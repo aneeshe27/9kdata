@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "bottle",
+    "vase",
+    "flowers",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bottle, vase, chair, robot arm, flowers",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.05965535715222359,
+        "relative_position": "closest",
+        "confidence": 0.5709989666938782
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "bottle",
+        "mean_depth": 0.19060856103897095,
+        "relative_position": "middle",
+        "confidence": 0.4994245767593384
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "vase",
+        "mean_depth": 0.4038276672363281,
+        "relative_position": "middle",
+        "confidence": 0.7026261687278748
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "flowers",
+        "mean_depth": 0.40891358256340027,
+        "relative_position": "middle",
+        "confidence": 0.6538006663322449
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.449119508266449,
+        "relative_position": "farthest",
+        "confidence": 0.5728999376296997
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.449119508266449,
+        "relative_position": "farthest",
+        "confidence": 0.5728999376296997
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "flowers",
+        "mean_depth": 0.40891358256340027,
+        "relative_position": "middle",
+        "confidence": 0.6538006663322449
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "vase",
+        "mean_depth": 0.4038276672363281,
+        "relative_position": "middle",
+        "confidence": 0.7026261687278748
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "bottle",
+        "mean_depth": 0.19060856103897095,
+        "relative_position": "middle",
+        "confidence": 0.4994245767593384
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.05965535715222359,
+        "relative_position": "closest",
+        "confidence": 0.5709989666938782
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.5709989666938782,
+      "bounding_box": [
+        232.3753662109375,
+        -0.09914016723632812,
+        315.949951171875,
+        118.96745300292969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05965535715222359,
+        "median_depth": 0.053800709545612335,
+        "depth_std": 0.043411850929260254,
+        "depth_min": 0.025140972808003426,
+        "depth_max": 0.7873929738998413,
+        "mask_area": 4464
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "bottle",
+      "confidence": 0.4994245767593384,
+      "bounding_box": [
+        114.84614562988281,
+        76.02693176269531,
+        126.24049377441406,
+        97.29493713378906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19060856103897095,
+        "median_depth": 0.1895092874765396,
+        "depth_std": 0.01914186403155327,
+        "depth_min": 0.15864267945289612,
+        "depth_max": 0.22773557901382446,
+        "mask_area": 145
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "vase",
+      "confidence": 0.7026261687278748,
+      "bounding_box": [
+        133.0282440185547,
+        20.777597427368164,
+        141.83140563964844,
+        33.04083251953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4038276672363281,
+        "median_depth": 0.4053809940814972,
+        "depth_std": 0.006948032882064581,
+        "depth_min": 0.386935830116272,
+        "depth_max": 0.412227988243103,
+        "mask_area": 96
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "flowers",
+      "confidence": 0.6538006663322449,
+      "bounding_box": [
+        127.99018859863281,
+        2.7347707748413086,
+        144.8731231689453,
+        20.889564514160156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.40891358256340027,
+        "median_depth": 0.40959876775741577,
+        "depth_std": 0.0024927067570388317,
+        "depth_min": 0.4013870358467102,
+        "depth_max": 0.41293254494667053,
+        "mask_area": 184
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.5728999376296997,
+      "bounding_box": [
+        204.62506103515625,
+        46.86911392211914,
+        233.52377319335938,
+        81.95603942871094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.449119508266449,
+        "median_depth": 0.4587833285331726,
+        "depth_std": 0.04610385373234749,
+        "depth_min": 0.2986139953136444,
+        "depth_max": 0.5270501375198364,
+        "mask_area": 666
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. shelf. robot arm. camera. shoes. toaster oven. bottle. box. chair. workbench. cloth. vase. flowers.",
+  "text_prompt": "table. shelf. robot arm. camera. shoes. toaster oven. bottle. box. chair. workbench. cloth. vase. flowers.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

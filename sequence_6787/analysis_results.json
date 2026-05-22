@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "refrigerator door",
+    "countertop",
+    "light switch",
+    "rug",
+    "picture frame"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: picture frame, countertop, refrigerator door, light switch, rug",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "refrigerator door",
+        "mean_depth": 0.2073630541563034,
+        "relative_position": "closest",
+        "confidence": 0.5167399048805237
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.7475884556770325,
+        "relative_position": "middle",
+        "confidence": 0.4709990918636322
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "light switch",
+        "mean_depth": 0.7725133299827576,
+        "relative_position": "middle",
+        "confidence": 0.5844277143478394
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "rug",
+        "mean_depth": 0.8153084516525269,
+        "relative_position": "middle",
+        "confidence": 0.45447200536727905
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "picture frame",
+        "mean_depth": 0.8194236159324646,
+        "relative_position": "farthest",
+        "confidence": 0.6834542751312256
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "picture frame",
+        "mean_depth": 0.8194236159324646,
+        "relative_position": "farthest",
+        "confidence": 0.6834542751312256
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "rug",
+        "mean_depth": 0.8153084516525269,
+        "relative_position": "middle",
+        "confidence": 0.45447200536727905
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "light switch",
+        "mean_depth": 0.7725133299827576,
+        "relative_position": "middle",
+        "confidence": 0.5844277143478394
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.7475884556770325,
+        "relative_position": "middle",
+        "confidence": 0.4709990918636322
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "refrigerator door",
+        "mean_depth": 0.2073630541563034,
+        "relative_position": "closest",
+        "confidence": 0.5167399048805237
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "refrigerator door",
+      "confidence": 0.5167399048805237,
+      "bounding_box": [
+        -0.02588653564453125,
+        0.0495758056640625,
+        173.11514282226562,
+        180.04953002929688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2073630541563034,
+        "median_depth": 0.19995979964733124,
+        "depth_std": 0.06124471127986908,
+        "depth_min": 0.09486479312181473,
+        "depth_max": 0.4070065915584564,
+        "mask_area": 25370
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "countertop",
+      "confidence": 0.4709990918636322,
+      "bounding_box": [
+        199.4314422607422,
+        72.70764923095703,
+        289.89715576171875,
+        103.6678695678711
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7475884556770325,
+        "median_depth": 0.7458173632621765,
+        "depth_std": 0.07513213157653809,
+        "depth_min": 0.4707997143268585,
+        "depth_max": 0.9071713089942932,
+        "mask_area": 768
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "light switch",
+      "confidence": 0.5844277143478394,
+      "bounding_box": [
+        200.0542449951172,
+        44.022727966308594,
+        205.9978790283203,
+        54.724395751953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7725133299827576,
+        "median_depth": 0.7734518051147461,
+        "depth_std": 0.0146779241040349,
+        "depth_min": 0.7378510236740112,
+        "depth_max": 0.7981945276260376,
+        "mask_area": 54
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "rug",
+      "confidence": 0.45447200536727905,
+      "bounding_box": [
+        187.2674102783203,
+        136.39695739746094,
+        220.0735626220703,
+        176.3326873779297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8153084516525269,
+        "median_depth": 0.8233506679534912,
+        "depth_std": 0.09789597988128662,
+        "depth_min": 0.5154086947441101,
+        "depth_max": 0.9968600869178772,
+        "mask_area": 643
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "picture frame",
+      "confidence": 0.6834542751312256,
+      "bounding_box": [
+        213.5028533935547,
+        20.65885353088379,
+        227.3774871826172,
+        38.54993438720703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8194236159324646,
+        "median_depth": 0.8193511962890625,
+        "depth_std": 0.014293449930846691,
+        "depth_min": 0.7929357290267944,
+        "depth_max": 0.8527001142501831,
+        "mask_area": 190
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "refrigerator. paper. magnet. handle. robot arm. gripper. countertop. cabinet. drawer. box. stove. rug. light switch. door. picture frame.",
+  "text_prompt": "refrigerator. paper. magnet. handle. robot arm. gripper. countertop. cabinet. drawer. box. stove. rug. light switch. door. picture frame.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

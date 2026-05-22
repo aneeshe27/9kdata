@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "screwdriver",
+    "cabinet shelf",
+    "container cup",
+    "window blinds",
+    "sink"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: screwdriver, sink, container cup, cabinet shelf, window blinds",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "screwdriver",
+        "mean_depth": 0.3771982789039612,
+        "relative_position": "closest",
+        "confidence": 0.6772445440292358
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.45242998003959656,
+        "relative_position": "middle",
+        "confidence": 0.485090434551239
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "container cup",
+        "mean_depth": 0.5252022743225098,
+        "relative_position": "middle",
+        "confidence": 0.429762065410614
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "window blinds",
+        "mean_depth": 0.5361995697021484,
+        "relative_position": "middle",
+        "confidence": 0.7182276844978333
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.7713212370872498,
+        "relative_position": "farthest",
+        "confidence": 0.49873149394989014
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.7713212370872498,
+        "relative_position": "farthest",
+        "confidence": 0.49873149394989014
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "window blinds",
+        "mean_depth": 0.5361995697021484,
+        "relative_position": "middle",
+        "confidence": 0.7182276844978333
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "container cup",
+        "mean_depth": 0.5252022743225098,
+        "relative_position": "middle",
+        "confidence": 0.429762065410614
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.45242998003959656,
+        "relative_position": "middle",
+        "confidence": 0.485090434551239
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "screwdriver",
+        "mean_depth": 0.3771982789039612,
+        "relative_position": "closest",
+        "confidence": 0.6772445440292358
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "screwdriver",
+      "confidence": 0.6772445440292358,
+      "bounding_box": [
+        151.5658416748047,
+        119.09085845947266,
+        163.88572692871094,
+        136.09910583496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3771982789039612,
+        "median_depth": 0.372493714094162,
+        "depth_std": 0.02731037326157093,
+        "depth_min": 0.32335737347602844,
+        "depth_max": 0.46290189027786255,
+        "mask_area": 116
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet shelf",
+      "confidence": 0.485090434551239,
+      "bounding_box": [
+        128.1107177734375,
+        -0.009952545166015625,
+        194.09994506835938,
+        56.535545349121094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.45242998003959656,
+        "median_depth": 0.4560326337814331,
+        "depth_std": 0.06668642908334732,
+        "depth_min": 0.30788978934288025,
+        "depth_max": 0.695105254650116,
+        "mask_area": 3048
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "container cup",
+      "confidence": 0.429762065410614,
+      "bounding_box": [
+        154.05947875976562,
+        82.18626403808594,
+        176.428955078125,
+        117.972900390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5252022743225098,
+        "median_depth": 0.5058753490447998,
+        "depth_std": 0.061404917389154434,
+        "depth_min": 0.3205733895301819,
+        "depth_max": 0.6690024137496948,
+        "mask_area": 604
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "window blinds",
+      "confidence": 0.7182276844978333,
+      "bounding_box": [
+        -0.034759521484375,
+        0.07038116455078125,
+        125.50028991699219,
+        174.6961669921875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5361995697021484,
+        "median_depth": 0.5324915647506714,
+        "depth_std": 0.09357171505689621,
+        "depth_min": 0.3414609432220459,
+        "depth_max": 0.7876057624816895,
+        "mask_area": 17987
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "sink",
+      "confidence": 0.49873149394989014,
+      "bounding_box": [
+        209.208984375,
+        91.98797607421875,
+        289.7504577636719,
+        114.33831787109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7713212370872498,
+        "median_depth": 0.7729666233062744,
+        "depth_std": 0.08290455490350723,
+        "depth_min": 0.5322707891464233,
+        "depth_max": 0.9760753512382507,
+        "mask_area": 812
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. sink. faucet. drawer. cabinet. door. window blinds. shelf. container. cup. bowl. dish rack. screwdriver.",
+  "text_prompt": "robot arm. gripper. countertop. sink. faucet. drawer. cabinet. door. window blinds. shelf. container. cup. bowl. dish rack. screwdriver.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

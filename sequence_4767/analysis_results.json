@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm grip",
+    "soap dispenser",
+    "window",
+    "sink",
+    "drain"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: soap dispenser, drain, window, robot arm grip, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm grip",
+        "mean_depth": 0.01890682987868786,
+        "relative_position": "closest",
+        "confidence": 0.3713037669658661
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "soap dispenser",
+        "mean_depth": 0.08381109684705734,
+        "relative_position": "middle",
+        "confidence": 0.8531895875930786
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.11104929447174072,
+        "relative_position": "middle",
+        "confidence": 0.4231683611869812
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.15439441800117493,
+        "relative_position": "middle",
+        "confidence": 0.4278818666934967
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "drain",
+        "mean_depth": 0.15705636143684387,
+        "relative_position": "farthest",
+        "confidence": 0.5541347861289978
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "drain",
+        "mean_depth": 0.15705636143684387,
+        "relative_position": "farthest",
+        "confidence": 0.5541347861289978
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.15439441800117493,
+        "relative_position": "middle",
+        "confidence": 0.4278818666934967
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.11104929447174072,
+        "relative_position": "middle",
+        "confidence": 0.4231683611869812
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "soap dispenser",
+        "mean_depth": 0.08381109684705734,
+        "relative_position": "middle",
+        "confidence": 0.8531895875930786
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm grip",
+        "mean_depth": 0.01890682987868786,
+        "relative_position": "closest",
+        "confidence": 0.3713037669658661
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm grip",
+      "confidence": 0.3713037669658661,
+      "bounding_box": [
+        133.7461395263672,
+        0.4797706604003906,
+        315.83013916015625,
+        107.79084777832031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01890682987868786,
+        "median_depth": 0.016859913244843483,
+        "depth_std": 0.013329291716217995,
+        "depth_min": 0.002854726044461131,
+        "depth_max": 0.4749094843864441,
+        "mask_area": 10545
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "soap dispenser",
+      "confidence": 0.8531895875930786,
+      "bounding_box": [
+        62.443565368652344,
+        133.55528259277344,
+        107.87487030029297,
+        179.9025115966797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08381109684705734,
+        "median_depth": 0.08463989943265915,
+        "depth_std": 0.012665080837905407,
+        "depth_min": 0.05640960484743118,
+        "depth_max": 0.11629584431648254,
+        "mask_area": 1110
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "window",
+      "confidence": 0.4231683611869812,
+      "bounding_box": [
+        0.174591064453125,
+        0.02059173583984375,
+        194.38735961914062,
+        81.77633666992188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11104929447174072,
+        "median_depth": 0.09089161455631256,
+        "depth_std": 0.08957326412200928,
+        "depth_min": 0.05207682028412819,
+        "depth_max": 0.815352737903595,
+        "mask_area": 1302
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "sink",
+      "confidence": 0.4278818666934967,
+      "bounding_box": [
+        198.5890350341797,
+        82.78929138183594,
+        310.7003479003906,
+        149.9634552001953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15439441800117493,
+        "median_depth": 0.15814810991287231,
+        "depth_std": 0.021709559485316277,
+        "depth_min": 0.05032750591635704,
+        "depth_max": 0.18486273288726807,
+        "mask_area": 3659
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "drain",
+      "confidence": 0.5541347861289978,
+      "bounding_box": [
+        163.5265655517578,
+        146.4735565185547,
+        185.98890686035156,
+        168.9910430908203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15705636143684387,
+        "median_depth": 0.15691561996936798,
+        "depth_std": 0.0037233089096844196,
+        "depth_min": 0.1505107432603836,
+        "depth_max": 0.16319029033184052,
+        "mask_area": 357
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. soap dispenser. bottle. window. countertop. drain.",
+  "text_prompt": "robot arm. gripper. sink. faucet. soap dispenser. bottle. window. countertop. drain.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

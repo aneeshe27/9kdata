@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "sink",
+    "bottle",
+    "paper towel dispenser",
+    "dish rack"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: paper towel dispenser, sink, dish rack, bottle, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.03808121383190155,
+        "relative_position": "closest",
+        "confidence": 0.7213125824928284
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.17569465935230255,
+        "relative_position": "middle",
+        "confidence": 0.7354104518890381
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.20297442376613617,
+        "relative_position": "middle",
+        "confidence": 0.5666478872299194
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "paper towel dispenser",
+        "mean_depth": 0.21656690537929535,
+        "relative_position": "middle",
+        "confidence": 0.8238865733146667
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "dish rack",
+        "mean_depth": 0.27007707953453064,
+        "relative_position": "farthest",
+        "confidence": 0.3886489272117615
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "dish rack",
+        "mean_depth": 0.27007707953453064,
+        "relative_position": "farthest",
+        "confidence": 0.3886489272117615
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "paper towel dispenser",
+        "mean_depth": 0.21656690537929535,
+        "relative_position": "middle",
+        "confidence": 0.8238865733146667
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.20297442376613617,
+        "relative_position": "middle",
+        "confidence": 0.5666478872299194
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.17569465935230255,
+        "relative_position": "middle",
+        "confidence": 0.7354104518890381
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.03808121383190155,
+        "relative_position": "closest",
+        "confidence": 0.7213125824928284
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.7213125824928284,
+      "bounding_box": [
+        7.008918762207031,
+        117.4610366821289,
+        111.75434875488281,
+        179.90615844726562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03808121383190155,
+        "median_depth": 0.01195982750505209,
+        "depth_std": 0.12735655903816223,
+        "depth_min": 0.0073452303186059,
+        "depth_max": 0.9797679781913757,
+        "mask_area": 3080
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.7354104518890381,
+      "bounding_box": [
+        158.1673126220703,
+        91.02227783203125,
+        315.83856201171875,
+        179.97927856445312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17569465935230255,
+        "median_depth": 0.16694985330104828,
+        "depth_std": 0.04453861340880394,
+        "depth_min": 0.09862737357616425,
+        "depth_max": 0.2704463005065918,
+        "mask_area": 10520
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bottle",
+      "confidence": 0.5666478872299194,
+      "bounding_box": [
+        221.82418823242188,
+        57.690773010253906,
+        242.0029296875,
+        91.21387481689453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20297442376613617,
+        "median_depth": 0.20447412133216858,
+        "depth_std": 0.00958944484591484,
+        "depth_min": 0.18510185182094574,
+        "depth_max": 0.22375202178955078,
+        "mask_area": 392
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "paper towel dispenser",
+      "confidence": 0.8238865733146667,
+      "bounding_box": [
+        136.8946075439453,
+        0.10111045837402344,
+        219.4265594482422,
+        56.82550048828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21656690537929535,
+        "median_depth": 0.21164411306381226,
+        "depth_std": 0.025943107903003693,
+        "depth_min": 0.17239533364772797,
+        "depth_max": 0.27952682971954346,
+        "mask_area": 3233
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "dish rack",
+      "confidence": 0.3886489272117615,
+      "bounding_box": [
+        129.68153381347656,
+        69.86912536621094,
+        192.4530792236328,
+        112.14828491210938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27007707953453064,
+        "median_depth": 0.27692124247550964,
+        "depth_std": 0.028932195156812668,
+        "depth_min": 0.1987147182226181,
+        "depth_max": 0.33856624364852905,
+        "mask_area": 1683
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. sink. faucet. dish rack. plate. bowl. cup. bottle. sponge. paper towel dispenser. cabinet.",
+  "text_prompt": "robot arm. gripper. countertop. sink. faucet. dish rack. plate. bowl. cup. bottle. sponge. paper towel dispenser. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "shelf",
+    "cutting board",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, shelf, robot arm, chair, cutting board",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.017124565318226814,
+        "relative_position": "closest",
+        "confidence": 0.4601876139640808
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.06053885817527771,
+        "relative_position": "middle",
+        "confidence": 0.3525142967700958
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.14359188079833984,
+        "relative_position": "middle",
+        "confidence": 0.5000846982002258
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cutting board",
+        "mean_depth": 0.16605672240257263,
+        "relative_position": "middle",
+        "confidence": 0.5814933180809021
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.45064494013786316,
+        "relative_position": "farthest",
+        "confidence": 0.6122539043426514
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.45064494013786316,
+        "relative_position": "farthest",
+        "confidence": 0.6122539043426514
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cutting board",
+        "mean_depth": 0.16605672240257263,
+        "relative_position": "middle",
+        "confidence": 0.5814933180809021
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "shelf",
+        "mean_depth": 0.14359188079833984,
+        "relative_position": "middle",
+        "confidence": 0.5000846982002258
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.06053885817527771,
+        "relative_position": "middle",
+        "confidence": 0.3525142967700958
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.017124565318226814,
+        "relative_position": "closest",
+        "confidence": 0.4601876139640808
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.4601876139640808,
+      "bounding_box": [
+        204.73594665527344,
+        0.03610992431640625,
+        313.6850891113281,
+        35.586036682128906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.017124565318226814,
+        "median_depth": 0.015439067035913467,
+        "depth_std": 0.010873669758439064,
+        "depth_min": 0.0020800551865249872,
+        "depth_max": 0.0690365731716156,
+        "mask_area": 2924
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.3525142967700958,
+      "bounding_box": [
+        0.1424407958984375,
+        98.47208404541016,
+        155.21157836914062,
+        179.97088623046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06053885817527771,
+        "median_depth": 0.04339708387851715,
+        "depth_std": 0.05480191111564636,
+        "depth_min": 0.010266086086630821,
+        "depth_max": 0.5212059020996094,
+        "mask_area": 6860
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "shelf",
+      "confidence": 0.5000846982002258,
+      "bounding_box": [
+        143.96261596679688,
+        2.1097259521484375,
+        234.50933837890625,
+        117.6858901977539
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14359188079833984,
+        "median_depth": 0.14012378454208374,
+        "depth_std": 0.03527216985821724,
+        "depth_min": 0.04701332002878189,
+        "depth_max": 0.24133116006851196,
+        "mask_area": 6446
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cutting board",
+      "confidence": 0.5814933180809021,
+      "bounding_box": [
+        114.68852233886719,
+        91.14213562011719,
+        205.9241180419922,
+        156.13836669921875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16605672240257263,
+        "median_depth": 0.15708567202091217,
+        "depth_std": 0.056188683956861496,
+        "depth_min": 0.11383975297212601,
+        "depth_max": 0.7711315155029297,
+        "mask_area": 2584
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.6122539043426514,
+      "bounding_box": [
+        6.723045349121094,
+        5.182487487792969,
+        116.31245422363281,
+        135.8331298828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.45064494013786316,
+        "median_depth": 0.4342219829559326,
+        "depth_std": 0.09283880889415741,
+        "depth_min": 0.27021902799606323,
+        "depth_max": 0.8375914096832275,
+        "mask_area": 6165
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. chair. table. cutting board. sponge. corn. clamp. shelf.",
+  "text_prompt": "robot arm. gripper. chair. table. cutting board. sponge. corn. clamp. shelf.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

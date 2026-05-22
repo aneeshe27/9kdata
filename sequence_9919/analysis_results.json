@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "countertop table",
+    "robot arm",
+    "sink",
+    "faucet",
+    "sink"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, countertop table, robot arm, faucet, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "countertop table",
+        "mean_depth": 0.021171025931835175,
+        "relative_position": "closest",
+        "confidence": 0.5236551761627197
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.022890646010637283,
+        "relative_position": "middle",
+        "confidence": 0.38956937193870544
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.08043954521417618,
+        "relative_position": "middle",
+        "confidence": 0.7625438570976257
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.11198095232248306,
+        "relative_position": "middle",
+        "confidence": 0.6574159264564514
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "sink",
+        "mean_depth": 0.13888618350028992,
+        "relative_position": "farthest",
+        "confidence": 0.36213618516921997
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "sink",
+        "mean_depth": 0.13888618350028992,
+        "relative_position": "farthest",
+        "confidence": 0.36213618516921997
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.11198095232248306,
+        "relative_position": "middle",
+        "confidence": 0.6574159264564514
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.08043954521417618,
+        "relative_position": "middle",
+        "confidence": 0.7625438570976257
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.022890646010637283,
+        "relative_position": "middle",
+        "confidence": 0.38956937193870544
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "countertop table",
+        "mean_depth": 0.021171025931835175,
+        "relative_position": "closest",
+        "confidence": 0.5236551761627197
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "countertop table",
+      "confidence": 0.5236551761627197,
+      "bounding_box": [
+        0.0779571533203125,
+        128.6834259033203,
+        216.35275268554688,
+        179.96311950683594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.021171025931835175,
+        "median_depth": 0.018372874706983566,
+        "depth_std": 0.012195796705782413,
+        "depth_min": 0.005702073685824871,
+        "depth_max": 0.14382456243038177,
+        "mask_area": 8099
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.38956937193870544,
+      "bounding_box": [
+        165.52154541015625,
+        18.18584442138672,
+        301.16046142578125,
+        179.73464965820312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022890646010637283,
+        "median_depth": 0.01751042902469635,
+        "depth_std": 0.03291895613074303,
+        "depth_min": 0.007314786314964294,
+        "depth_max": 0.8066789507865906,
+        "mask_area": 7409
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.7625438570976257,
+      "bounding_box": [
+        130.18759155273438,
+        115.22594451904297,
+        199.8802490234375,
+        138.6662139892578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08043954521417618,
+        "median_depth": 0.0840936005115509,
+        "depth_std": 0.012662275694310665,
+        "depth_min": 0.04511476308107376,
+        "depth_max": 0.106846384704113,
+        "mask_area": 1169
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.6574159264564514,
+      "bounding_box": [
+        162.3131561279297,
+        104.3901596069336,
+        168.43858337402344,
+        117.65694427490234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11198095232248306,
+        "median_depth": 0.11153994500637054,
+        "depth_std": 0.008722236379981041,
+        "depth_min": 0.0972186028957367,
+        "depth_max": 0.13983449339866638,
+        "mask_area": 55
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "sink",
+      "confidence": 0.36213618516921997,
+      "bounding_box": [
+        126.44587707519531,
+        104.00122833251953,
+        163.1065216064453,
+        114.55364227294922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13888618350028992,
+        "median_depth": 0.13861516118049622,
+        "depth_std": 0.014542071148753166,
+        "depth_min": 0.10460415482521057,
+        "depth_max": 0.16837748885154724,
+        "mask_area": 311
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. mug. sink. faucet. countertop. table. rack. container.",
+  "text_prompt": "robot arm. gripper. mug. sink. faucet. countertop. table. rack. container.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

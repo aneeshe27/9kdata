@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cable",
+    "shelf",
+    "hard case",
+    "chair",
+    "picture frame"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, hard case, picture frame, cable, shelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.244772806763649,
+        "relative_position": "closest",
+        "confidence": 0.3506312072277069
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.3941337764263153,
+        "relative_position": "middle",
+        "confidence": 0.4470177888870239
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "hard case",
+        "mean_depth": 0.5604539513587952,
+        "relative_position": "middle",
+        "confidence": 0.44251227378845215
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.5614960789680481,
+        "relative_position": "middle",
+        "confidence": 0.3636336624622345
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "picture frame",
+        "mean_depth": 0.7398738265037537,
+        "relative_position": "farthest",
+        "confidence": 0.8541988730430603
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "picture frame",
+        "mean_depth": 0.7398738265037537,
+        "relative_position": "farthest",
+        "confidence": 0.8541988730430603
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.5614960789680481,
+        "relative_position": "middle",
+        "confidence": 0.3636336624622345
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "hard case",
+        "mean_depth": 0.5604539513587952,
+        "relative_position": "middle",
+        "confidence": 0.44251227378845215
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.3941337764263153,
+        "relative_position": "middle",
+        "confidence": 0.4470177888870239
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.244772806763649,
+        "relative_position": "closest",
+        "confidence": 0.3506312072277069
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "cable",
+      "confidence": 0.3506312072277069,
+      "bounding_box": [
+        220.1531524658203,
+        0.15112876892089844,
+        265.9652404785156,
+        52.104881286621094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.244772806763649,
+        "median_depth": 0.1977333128452301,
+        "depth_std": 0.17670655250549316,
+        "depth_min": 0.0012507438659667969,
+        "depth_max": 0.8318179845809937,
+        "mask_area": 244
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "shelf",
+      "confidence": 0.4470177888870239,
+      "bounding_box": [
+        162.75430297851562,
+        26.89330291748047,
+        231.2841796875,
+        160.77593994140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3941337764263153,
+        "median_depth": 0.3946983516216278,
+        "depth_std": 0.0431312657892704,
+        "depth_min": 0.32579779624938965,
+        "depth_max": 0.7013276219367981,
+        "mask_area": 5944
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "hard case",
+      "confidence": 0.44251227378845215,
+      "bounding_box": [
+        46.563018798828125,
+        100.41648864746094,
+        111.36331176757812,
+        150.37387084960938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5604539513587952,
+        "median_depth": 0.5580857992172241,
+        "depth_std": 0.031281664967536926,
+        "depth_min": 0.49603500962257385,
+        "depth_max": 0.6416807770729065,
+        "mask_area": 1863
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.3636336624622345,
+      "bounding_box": [
+        251.35321044921875,
+        62.22438430786133,
+        316.00848388671875,
+        137.42745971679688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5614960789680481,
+        "median_depth": 0.5243014097213745,
+        "depth_std": 0.10104594379663467,
+        "depth_min": 0.3156358301639557,
+        "depth_max": 0.9460118412971497,
+        "mask_area": 1612
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "picture frame",
+      "confidence": 0.8541988730430603,
+      "bounding_box": [
+        89.67818450927734,
+        44.74528884887695,
+        119.7838363647461,
+        77.10769653320312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7398738265037537,
+        "median_depth": 0.7396240234375,
+        "depth_std": 0.014419523999094963,
+        "depth_min": 0.7108153700828552,
+        "depth_max": 0.7739056944847107,
+        "mask_area": 758
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. shelf. chair. whiteboard. picture frame. box. air purifier. hard case. power strip. cable. spool. desk. pole.",
+  "text_prompt": "robot arm. gripper. shelf. chair. whiteboard. picture frame. box. air purifier. hard case. power strip. cable. spool. desk. pole.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

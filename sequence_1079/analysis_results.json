@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/home/ulal/visual_reasoning/tmp/depth_extended_temp_1373754/temp_image_1430.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_1430.jpg"
+  },
+  "correct_ordering": [
+    "robot gripper",
+    "robot arm",
+    "tool",
+    "bag",
+    "bicycle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: tool, robot gripper, bicycle, bag, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot gripper",
+        "mean_depth": 0.04881802946329117,
+        "relative_position": "closest",
+        "confidence": 0.3883700370788574
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.061844371259212494,
+        "relative_position": "middle",
+        "confidence": 0.4237072467803955
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "tool",
+        "mean_depth": 0.4643745720386505,
+        "relative_position": "middle",
+        "confidence": 0.352556973695755
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "bag",
+        "mean_depth": 0.5074742436408997,
+        "relative_position": "middle",
+        "confidence": 0.4223402440547943
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "bicycle",
+        "mean_depth": 0.7419890761375427,
+        "relative_position": "farthest",
+        "confidence": 0.7918738722801208
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "bicycle",
+        "mean_depth": 0.7419890761375427,
+        "relative_position": "farthest",
+        "confidence": 0.7918738722801208
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "bag",
+        "mean_depth": 0.5074742436408997,
+        "relative_position": "middle",
+        "confidence": 0.4223402440547943
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "tool",
+        "mean_depth": 0.4643745720386505,
+        "relative_position": "middle",
+        "confidence": 0.352556973695755
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.061844371259212494,
+        "relative_position": "middle",
+        "confidence": 0.4237072467803955
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot gripper",
+        "mean_depth": 0.04881802946329117,
+        "relative_position": "closest",
+        "confidence": 0.3883700370788574
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot gripper",
+      "confidence": 0.3883700370788574,
+      "bounding_box": [
+        139.87106323242188,
+        3.487234115600586,
+        203.78573608398438,
+        62.23601531982422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04881802946329117,
+        "median_depth": 0.0067269466817379,
+        "depth_std": 0.09100557118654251,
+        "depth_min": 0.0,
+        "depth_max": 0.4043169319629669,
+        "mask_area": 1940
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.4237072467803955,
+      "bounding_box": [
+        -0.08353424072265625,
+        0.31644439697265625,
+        99.73674774169922,
+        172.64749145507812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.061844371259212494,
+        "median_depth": 0.038506604731082916,
+        "depth_std": 0.059760238975286484,
+        "depth_min": 0.005567486863583326,
+        "depth_max": 0.6388680934906006,
+        "mask_area": 6952
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "tool",
+      "confidence": 0.352556973695755,
+      "bounding_box": [
+        96.04217529296875,
+        112.94097137451172,
+        132.6736297607422,
+        157.89321899414062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4643745720386505,
+        "median_depth": 0.3805667459964752,
+        "depth_std": 0.149957537651062,
+        "depth_min": 0.2937133014202118,
+        "depth_max": 0.7329419851303101,
+        "mask_area": 655
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bag",
+      "confidence": 0.4223402440547943,
+      "bounding_box": [
+        266.38092041015625,
+        52.79192352294922,
+        298.56097412109375,
+        87.87342071533203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5074742436408997,
+        "median_depth": 0.5095050930976868,
+        "depth_std": 0.033179134130477905,
+        "depth_min": 0.4358590543270111,
+        "depth_max": 0.5799184441566467,
+        "mask_area": 651
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bicycle",
+      "confidence": 0.7918738722801208,
+      "bounding_box": [
+        213.64222717285156,
+        28.560388565063477,
+        251.88868713378906,
+        72.24958801269531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7419890761375427,
+        "median_depth": 0.7575395107269287,
+        "depth_std": 0.09168665111064911,
+        "depth_min": 0.5610671639442444,
+        "depth_max": 0.9184728264808655,
+        "mask_area": 1066
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. sliding glass door. table. power strip. cables. electronic device. tool. bicycle. railing. bag.",
+  "text_prompt": "robot arm. robot gripper. sliding glass door. table. power strip. cables. electronic device. tool. bicycle. railing. bag.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

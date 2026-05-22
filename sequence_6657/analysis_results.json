@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "countertop",
+    "power outlet",
+    "mug",
+    "cabinet shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, mug, power outlet, countertop, cabinet shelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.03903881460428238,
+        "relative_position": "closest",
+        "confidence": 0.456265389919281
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.08969419449567795,
+        "relative_position": "middle",
+        "confidence": 0.48366764187812805
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "power outlet",
+        "mean_depth": 0.1089642122387886,
+        "relative_position": "middle",
+        "confidence": 0.7789558172225952
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "mug",
+        "mean_depth": 0.13202086091041565,
+        "relative_position": "middle",
+        "confidence": 0.8147164583206177
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cabinet shelf",
+        "mean_depth": 0.14294016361236572,
+        "relative_position": "farthest",
+        "confidence": 0.37386640906333923
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cabinet shelf",
+        "mean_depth": 0.14294016361236572,
+        "relative_position": "farthest",
+        "confidence": 0.37386640906333923
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "mug",
+        "mean_depth": 0.13202086091041565,
+        "relative_position": "middle",
+        "confidence": 0.8147164583206177
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "power outlet",
+        "mean_depth": 0.1089642122387886,
+        "relative_position": "middle",
+        "confidence": 0.7789558172225952
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.08969419449567795,
+        "relative_position": "middle",
+        "confidence": 0.48366764187812805
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.03903881460428238,
+        "relative_position": "closest",
+        "confidence": 0.456265389919281
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.456265389919281,
+      "bounding_box": [
+        0.00183868408203125,
+        0.19152069091796875,
+        85.2662582397461,
+        154.93902587890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03903881460428238,
+        "median_depth": 0.035418085753917694,
+        "depth_std": 0.04726862534880638,
+        "depth_min": 0.002210947684943676,
+        "depth_max": 0.7166851162910461,
+        "mask_area": 8156
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "countertop",
+      "confidence": 0.48366764187812805,
+      "bounding_box": [
+        0.11478424072265625,
+        103.74348449707031,
+        132.11279296875,
+        179.9315948486328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08969419449567795,
+        "median_depth": 0.06179174780845642,
+        "depth_std": 0.07733981311321259,
+        "depth_min": 0.03192884847521782,
+        "depth_max": 0.9675665497779846,
+        "mask_area": 4945
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "power outlet",
+      "confidence": 0.7789558172225952,
+      "bounding_box": [
+        283.2460021972656,
+        78.91722869873047,
+        306.9336853027344,
+        107.42870330810547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1089642122387886,
+        "median_depth": 0.10823903977870941,
+        "depth_std": 0.011412193067371845,
+        "depth_min": 0.08840712904930115,
+        "depth_max": 0.134603813290596,
+        "mask_area": 414
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "mug",
+      "confidence": 0.8147164583206177,
+      "bounding_box": [
+        181.66151428222656,
+        109.42093658447266,
+        212.62953186035156,
+        137.26329040527344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13202086091041565,
+        "median_depth": 0.12281307578086853,
+        "depth_std": 0.021882079541683197,
+        "depth_min": 0.09688318520784378,
+        "depth_max": 0.21344037353992462,
+        "mask_area": 556
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet shelf",
+      "confidence": 0.37386640906333923,
+      "bounding_box": [
+        186.26898193359375,
+        0.08303451538085938,
+        315.8914794921875,
+        34.8841667175293
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14294016361236572,
+        "median_depth": 0.10766397416591644,
+        "depth_std": 0.11530984193086624,
+        "depth_min": 0.0015201254282146692,
+        "depth_max": 0.6486554145812988,
+        "mask_area": 2847
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. mug. countertop. cabinet. shelf. power outlet. clamp. marker.",
+  "text_prompt": "robot arm. gripper. mug. countertop. cabinet. shelf. power outlet. clamp. marker.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

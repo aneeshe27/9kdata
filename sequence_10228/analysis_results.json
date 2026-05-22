@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "refrigerator",
+    "cabinet",
+    "faucet",
+    "sink"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: faucet, cabinet, sink, robot arm, refrigerator",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.07017162442207336,
+        "relative_position": "closest",
+        "confidence": 0.6607110500335693
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.12733222544193268,
+        "relative_position": "middle",
+        "confidence": 0.8132659196853638
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.6736123561859131,
+        "relative_position": "middle",
+        "confidence": 0.3757781684398651
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.7404316067695618,
+        "relative_position": "middle",
+        "confidence": 0.4759089946746826
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.772502601146698,
+        "relative_position": "farthest",
+        "confidence": 0.7914615273475647
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.772502601146698,
+        "relative_position": "farthest",
+        "confidence": 0.7914615273475647
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "faucet",
+        "mean_depth": 0.7404316067695618,
+        "relative_position": "middle",
+        "confidence": 0.4759089946746826
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.6736123561859131,
+        "relative_position": "middle",
+        "confidence": 0.3757781684398651
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.12733222544193268,
+        "relative_position": "middle",
+        "confidence": 0.8132659196853638
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.07017162442207336,
+        "relative_position": "closest",
+        "confidence": 0.6607110500335693
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.6607110500335693,
+      "bounding_box": [
+        0.097381591796875,
+        0.09223175048828125,
+        178.4894256591797,
+        153.41537475585938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07017162442207336,
+        "median_depth": 0.03315669298171997,
+        "depth_std": 0.0909964069724083,
+        "depth_min": 0.012021941132843494,
+        "depth_max": 0.8875172138214111,
+        "mask_area": 6311
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "refrigerator",
+      "confidence": 0.8132659196853638,
+      "bounding_box": [
+        217.95428466796875,
+        0.08084869384765625,
+        315.8402099609375,
+        180.0421142578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12733222544193268,
+        "median_depth": 0.1137702465057373,
+        "depth_std": 0.0799747109413147,
+        "depth_min": 0.0022096987813711166,
+        "depth_max": 0.6873858571052551,
+        "mask_area": 14798
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3757781684398651,
+      "bounding_box": [
+        164.88748168945312,
+        49.0484504699707,
+        234.83993530273438,
+        126.14993286132812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6736123561859131,
+        "median_depth": 0.6527222990989685,
+        "depth_std": 0.12388008087873459,
+        "depth_min": 0.43805813789367676,
+        "depth_max": 0.9726642370223999,
+        "mask_area": 2341
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "faucet",
+      "confidence": 0.4759089946746826,
+      "bounding_box": [
+        205.09735107421875,
+        7.0905656814575195,
+        219.1229248046875,
+        36.65082931518555
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7404316067695618,
+        "median_depth": 0.7435145974159241,
+        "depth_std": 0.032270997762680054,
+        "depth_min": 0.5769742727279663,
+        "depth_max": 0.8059981465339661,
+        "mask_area": 285
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.7914615273475647,
+      "bounding_box": [
+        181.506103515625,
+        38.02207946777344,
+        220.44451904296875,
+        53.748512268066406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.772502601146698,
+        "median_depth": 0.7721070051193237,
+        "depth_std": 0.03339654952287674,
+        "depth_min": 0.6189654469490051,
+        "depth_max": 0.833893895149231,
+        "mask_area": 365
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. refrigerator. sink. faucet. countertop. cabinet. drawer. rice cooker.",
+  "text_prompt": "robot arm. gripper. table. refrigerator. sink. faucet. countertop. cabinet. drawer. rice cooker.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "paper towel roll",
+    "chair",
+    "placemat",
+    "##per clamp",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, ##per clamp, paper towel roll, chair, placemat",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "paper towel roll",
+        "mean_depth": 0.0704326406121254,
+        "relative_position": "closest",
+        "confidence": 0.8558291792869568
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.1293056458234787,
+        "relative_position": "middle",
+        "confidence": 0.4356215298175812
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "placemat",
+        "mean_depth": 0.15317296981811523,
+        "relative_position": "middle",
+        "confidence": 0.852597177028656
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "##per clamp",
+        "mean_depth": 0.17751485109329224,
+        "relative_position": "middle",
+        "confidence": 0.4686863422393799
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.41072720289230347,
+        "relative_position": "farthest",
+        "confidence": 0.5806165337562561
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.41072720289230347,
+        "relative_position": "farthest",
+        "confidence": 0.5806165337562561
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "##per clamp",
+        "mean_depth": 0.17751485109329224,
+        "relative_position": "middle",
+        "confidence": 0.4686863422393799
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "placemat",
+        "mean_depth": 0.15317296981811523,
+        "relative_position": "middle",
+        "confidence": 0.852597177028656
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.1293056458234787,
+        "relative_position": "middle",
+        "confidence": 0.4356215298175812
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "paper towel roll",
+        "mean_depth": 0.0704326406121254,
+        "relative_position": "closest",
+        "confidence": 0.8558291792869568
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "paper towel roll",
+      "confidence": 0.8558291792869568,
+      "bounding_box": [
+        108.87017059326172,
+        28.387317657470703,
+        148.13156127929688,
+        123.47599792480469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0704326406121254,
+        "median_depth": 0.06813640892505646,
+        "depth_std": 0.026247577741742134,
+        "depth_min": 0.04741990566253662,
+        "depth_max": 0.5173404216766357,
+        "mask_area": 2573
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.4356215298175812,
+      "bounding_box": [
+        0.04537010192871094,
+        100.46843719482422,
+        52.96318054199219,
+        179.96310424804688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1293056458234787,
+        "median_depth": 0.11443324387073517,
+        "depth_std": 0.08147161453962326,
+        "depth_min": 0.031355466693639755,
+        "depth_max": 0.6926996111869812,
+        "mask_area": 2971
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "placemat",
+      "confidence": 0.852597177028656,
+      "bounding_box": [
+        144.4308624267578,
+        68.29834747314453,
+        229.5811004638672,
+        119.8603744506836
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15317296981811523,
+        "median_depth": 0.1482241302728653,
+        "depth_std": 0.035830531269311905,
+        "depth_min": 0.08248987793922424,
+        "depth_max": 0.2403830736875534,
+        "mask_area": 1698
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "##per clamp",
+      "confidence": 0.4686863422393799,
+      "bounding_box": [
+        166.15509033203125,
+        0.017650604248046875,
+        221.82748413085938,
+        95.38003540039062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17751485109329224,
+        "median_depth": 0.09984836727380753,
+        "depth_std": 0.19966787099838257,
+        "depth_min": 0.05312695726752281,
+        "depth_max": 0.9433530569076538,
+        "mask_area": 2911
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.5806165337562561,
+      "bounding_box": [
+        218.84457397460938,
+        43.925193786621094,
+        281.4596862792969,
+        75.16963195800781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.41072720289230347,
+        "median_depth": 0.3882410526275635,
+        "depth_std": 0.12575340270996094,
+        "depth_min": 0.2660149037837982,
+        "depth_max": 0.85370934009552,
+        "mask_area": 1101
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "paper towel roll. knife. placemat. robot arm. gripper. clamp. chair. table.",
+  "text_prompt": "paper towel roll. knife. placemat. robot arm. gripper. clamp. chair. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

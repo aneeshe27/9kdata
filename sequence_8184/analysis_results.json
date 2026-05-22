@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "faucet",
+    "robot arm",
+    "sink",
+    "soap dispenser",
+    "tissue box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: soap dispenser, sink, tissue box, robot arm, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.06916134059429169,
+        "relative_position": "closest",
+        "confidence": 0.8051004409790039
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.30380523204803467,
+        "relative_position": "middle",
+        "confidence": 0.39426472783088684
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.47247132658958435,
+        "relative_position": "middle",
+        "confidence": 0.7936979532241821
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "soap dispenser",
+        "mean_depth": 0.5472384095191956,
+        "relative_position": "middle",
+        "confidence": 0.87628573179245
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "tissue box",
+        "mean_depth": 0.6164876222610474,
+        "relative_position": "farthest",
+        "confidence": 0.888256847858429
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "tissue box",
+        "mean_depth": 0.6164876222610474,
+        "relative_position": "farthest",
+        "confidence": 0.888256847858429
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "soap dispenser",
+        "mean_depth": 0.5472384095191956,
+        "relative_position": "middle",
+        "confidence": 0.87628573179245
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.47247132658958435,
+        "relative_position": "middle",
+        "confidence": 0.7936979532241821
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.30380523204803467,
+        "relative_position": "middle",
+        "confidence": 0.39426472783088684
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "faucet",
+        "mean_depth": 0.06916134059429169,
+        "relative_position": "closest",
+        "confidence": 0.8051004409790039
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "faucet",
+      "confidence": 0.8051004409790039,
+      "bounding_box": [
+        0.07384872436523438,
+        88.72451782226562,
+        84.40402221679688,
+        179.69241333007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06916134059429169,
+        "median_depth": 0.024265311658382416,
+        "depth_std": 0.09576257318258286,
+        "depth_min": 0.0,
+        "depth_max": 0.5313804745674133,
+        "mask_area": 2453
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.39426472783088684,
+      "bounding_box": [
+        169.70870971679688,
+        0.08592605590820312,
+        315.99505615234375,
+        86.861083984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30380523204803467,
+        "median_depth": 0.058370381593704224,
+        "depth_std": 0.3625553846359253,
+        "depth_min": 0.007242977619171143,
+        "depth_max": 0.9969543218612671,
+        "mask_area": 7544
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "sink",
+      "confidence": 0.7936979532241821,
+      "bounding_box": [
+        48.393653869628906,
+        112.27067565917969,
+        188.55667114257812,
+        179.96754455566406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47247132658958435,
+        "median_depth": 0.46956783533096313,
+        "depth_std": 0.03231354430317879,
+        "depth_min": 0.4000736474990845,
+        "depth_max": 0.5594557523727417,
+        "mask_area": 5231
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "soap dispenser",
+      "confidence": 0.87628573179245,
+      "bounding_box": [
+        111.17208862304688,
+        67.99064636230469,
+        133.72100830078125,
+        108.55171203613281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5472384095191956,
+        "median_depth": 0.5429199934005737,
+        "depth_std": 0.019957493990659714,
+        "depth_min": 0.5194960236549377,
+        "depth_max": 0.6563717722892761,
+        "mask_area": 440
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "tissue box",
+      "confidence": 0.888256847858429,
+      "bounding_box": [
+        138.68759155273438,
+        49.463260650634766,
+        174.82061767578125,
+        92.84585571289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6164876222610474,
+        "median_depth": 0.6144981384277344,
+        "depth_std": 0.03732695430517197,
+        "depth_min": 0.518181324005127,
+        "depth_max": 0.879021942615509,
+        "mask_area": 922
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "faucet. sink. soap dispenser. sponge. tissue box. paper towel. cup. mug. coffee maker. robot arm. gripper. countertop.",
+  "text_prompt": "faucet. sink. soap dispenser. sponge. tissue box. paper towel. cup. mug. coffee maker. robot arm. gripper. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

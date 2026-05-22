@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "countertop",
+    "power outlet",
+    "microwave",
+    "cup"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, microwave, countertop, robot arm, power outlet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.20680516958236694,
+        "relative_position": "closest",
+        "confidence": 0.40494224429130554
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.5340597033500671,
+        "relative_position": "middle",
+        "confidence": 0.6376664638519287
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "power outlet",
+        "mean_depth": 0.7243675589561462,
+        "relative_position": "middle",
+        "confidence": 0.7837429046630859
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.7738795876502991,
+        "relative_position": "middle",
+        "confidence": 0.8903441429138184
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.8121334910392761,
+        "relative_position": "farthest",
+        "confidence": 0.7552836537361145
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.8121334910392761,
+        "relative_position": "farthest",
+        "confidence": 0.7552836537361145
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "microwave",
+        "mean_depth": 0.7738795876502991,
+        "relative_position": "middle",
+        "confidence": 0.8903441429138184
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "power outlet",
+        "mean_depth": 0.7243675589561462,
+        "relative_position": "middle",
+        "confidence": 0.7837429046630859
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "countertop",
+        "mean_depth": 0.5340597033500671,
+        "relative_position": "middle",
+        "confidence": 0.6376664638519287
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.20680516958236694,
+        "relative_position": "closest",
+        "confidence": 0.40494224429130554
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.40494224429130554,
+      "bounding_box": [
+        192.1757354736328,
+        0.021724700927734375,
+        316.0462341308594,
+        50.90040969848633
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20680516958236694,
+        "median_depth": 0.20135816931724548,
+        "depth_std": 0.1815178096294403,
+        "depth_min": 0.0,
+        "depth_max": 0.9264976382255554,
+        "mask_area": 2066
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "countertop",
+      "confidence": 0.6376664638519287,
+      "bounding_box": [
+        0.02382659912109375,
+        83.06587219238281,
+        216.00515747070312,
+        180.02732849121094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5340597033500671,
+        "median_depth": 0.5042202472686768,
+        "depth_std": 0.12290550768375397,
+        "depth_min": 0.3643174469470978,
+        "depth_max": 0.9602830410003662,
+        "mask_area": 12488
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "power outlet",
+      "confidence": 0.7837429046630859,
+      "bounding_box": [
+        104.28912353515625,
+        57.875755310058594,
+        114.06668090820312,
+        74.46239471435547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7243675589561462,
+        "median_depth": 0.7243651747703552,
+        "depth_std": 0.008377041667699814,
+        "depth_min": 0.7072053551673889,
+        "depth_max": 0.7416372895240784,
+        "mask_area": 109
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "microwave",
+      "confidence": 0.8903441429138184,
+      "bounding_box": [
+        120.27766418457031,
+        49.32147216796875,
+        198.26048278808594,
+        101.35067749023438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7738795876502991,
+        "median_depth": 0.7650995254516602,
+        "depth_std": 0.056139081716537476,
+        "depth_min": 0.6771019101142883,
+        "depth_max": 0.9560886025428772,
+        "mask_area": 3149
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cup",
+      "confidence": 0.7552836537361145,
+      "bounding_box": [
+        167.99234008789062,
+        38.42845153808594,
+        180.3497314453125,
+        57.408851623535156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8121334910392761,
+        "median_depth": 0.7948254942893982,
+        "depth_std": 0.047417521476745605,
+        "depth_min": 0.7729777693748474,
+        "depth_max": 0.9680472612380981,
+        "mask_area": 168
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. microwave. robot arm. gripper. countertop. refrigerator. cabinet. drawer. power outlet.",
+  "text_prompt": "cup. microwave. robot arm. gripper. countertop. refrigerator. cabinet. drawer. power outlet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

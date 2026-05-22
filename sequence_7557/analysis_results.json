@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "gripper",
+    "metal plate",
+    "cup",
+    "cable",
+    "camera"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: camera, cup, cable, gripper, metal plate",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.0745864287018776,
+        "relative_position": "closest",
+        "confidence": 0.42804184556007385
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "metal plate",
+        "mean_depth": 0.07819103449583054,
+        "relative_position": "middle",
+        "confidence": 0.5666821002960205
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.12790322303771973,
+        "relative_position": "middle",
+        "confidence": 0.6561664342880249
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cable",
+        "mean_depth": 0.19867029786109924,
+        "relative_position": "middle",
+        "confidence": 0.466581791639328
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.5147995352745056,
+        "relative_position": "farthest",
+        "confidence": 0.45559197664260864
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.5147995352745056,
+        "relative_position": "farthest",
+        "confidence": 0.45559197664260864
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cable",
+        "mean_depth": 0.19867029786109924,
+        "relative_position": "middle",
+        "confidence": 0.466581791639328
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.12790322303771973,
+        "relative_position": "middle",
+        "confidence": 0.6561664342880249
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "metal plate",
+        "mean_depth": 0.07819103449583054,
+        "relative_position": "middle",
+        "confidence": 0.5666821002960205
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.0745864287018776,
+        "relative_position": "closest",
+        "confidence": 0.42804184556007385
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.42804184556007385,
+      "bounding_box": [
+        180.0233917236328,
+        133.41709899902344,
+        214.9672393798828,
+        178.1016387939453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0745864287018776,
+        "median_depth": 0.0643235594034195,
+        "depth_std": 0.039639830589294434,
+        "depth_min": 0.042159684002399445,
+        "depth_max": 0.29404377937316895,
+        "mask_area": 566
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "metal plate",
+      "confidence": 0.5666821002960205,
+      "bounding_box": [
+        0.013843536376953125,
+        70.4456787109375,
+        87.66224670410156,
+        112.73094177246094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07819103449583054,
+        "median_depth": 0.07571715861558914,
+        "depth_std": 0.018016265705227852,
+        "depth_min": 0.051378898322582245,
+        "depth_max": 0.18478375673294067,
+        "mask_area": 2316
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.6561664342880249,
+      "bounding_box": [
+        150.4359893798828,
+        53.55754089355469,
+        170.52418518066406,
+        76.65635681152344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12790322303771973,
+        "median_depth": 0.12267512083053589,
+        "depth_std": 0.014374131336808205,
+        "depth_min": 0.11609251797199249,
+        "depth_max": 0.19159072637557983,
+        "mask_area": 366
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cable",
+      "confidence": 0.466581791639328,
+      "bounding_box": [
+        184.6168670654297,
+        0.14115333557128906,
+        315.7747802734375,
+        43.43360900878906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19867029786109924,
+        "median_depth": 0.2158273607492447,
+        "depth_std": 0.13638480007648468,
+        "depth_min": 0.02419738657772541,
+        "depth_max": 0.5498844981193542,
+        "mask_area": 618
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "camera",
+      "confidence": 0.45559197664260864,
+      "bounding_box": [
+        123.49818420410156,
+        27.820186614990234,
+        149.2222442626953,
+        48.33681869506836
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5147995352745056,
+        "median_depth": 0.4982852339744568,
+        "depth_std": 0.04735317826271057,
+        "depth_min": 0.4702872633934021,
+        "depth_max": 0.7332874536514282,
+        "mask_area": 374
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. robot arm. gripper. camera. table. cable. metal plate.",
+  "text_prompt": "cup. robot arm. gripper. camera. table. cable. metal plate.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

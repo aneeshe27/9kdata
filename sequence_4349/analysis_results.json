@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "tissue box tissue",
+    "cloth",
+    "shoe",
+    "spray bottle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: tissue box tissue, spray bottle, cloth, shoe, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.11324874311685562,
+        "relative_position": "closest",
+        "confidence": 0.4729539453983307
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "tissue box tissue",
+        "mean_depth": 0.27575555443763733,
+        "relative_position": "middle",
+        "confidence": 0.42458751797676086
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.44922199845314026,
+        "relative_position": "middle",
+        "confidence": 0.5393484234809875
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "shoe",
+        "mean_depth": 0.5973716974258423,
+        "relative_position": "middle",
+        "confidence": 0.37331855297088623
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "spray bottle",
+        "mean_depth": 0.6645411849021912,
+        "relative_position": "farthest",
+        "confidence": 0.719325602054596
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "spray bottle",
+        "mean_depth": 0.6645411849021912,
+        "relative_position": "farthest",
+        "confidence": 0.719325602054596
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "shoe",
+        "mean_depth": 0.5973716974258423,
+        "relative_position": "middle",
+        "confidence": 0.37331855297088623
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.44922199845314026,
+        "relative_position": "middle",
+        "confidence": 0.5393484234809875
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "tissue box tissue",
+        "mean_depth": 0.27575555443763733,
+        "relative_position": "middle",
+        "confidence": 0.42458751797676086
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.11324874311685562,
+        "relative_position": "closest",
+        "confidence": 0.4729539453983307
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.4729539453983307,
+      "bounding_box": [
+        222.8123321533203,
+        126.59848022460938,
+        315.99224853515625,
+        179.96148681640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11324874311685562,
+        "median_depth": 0.07646218687295914,
+        "depth_std": 0.08197177201509476,
+        "depth_min": 0.03707999736070633,
+        "depth_max": 0.7639724612236023,
+        "mask_area": 2788
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "tissue box tissue",
+      "confidence": 0.42458751797676086,
+      "bounding_box": [
+        87.25286865234375,
+        141.21914672851562,
+        120.95098876953125,
+        179.96661376953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27575555443763733,
+        "median_depth": 0.26430395245552063,
+        "depth_std": 0.046547602862119675,
+        "depth_min": 0.21007715165615082,
+        "depth_max": 0.45678162574768066,
+        "mask_area": 936
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.5393484234809875,
+      "bounding_box": [
+        75.97579193115234,
+        93.3109130859375,
+        131.234375,
+        127.22077941894531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.44922199845314026,
+        "median_depth": 0.4172074794769287,
+        "depth_std": 0.10388637334108353,
+        "depth_min": 0.3430527150630951,
+        "depth_max": 0.7735095620155334,
+        "mask_area": 1034
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "shoe",
+      "confidence": 0.37331855297088623,
+      "bounding_box": [
+        98.14653015136719,
+        70.98919677734375,
+        146.6240997314453,
+        93.99465942382812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5973716974258423,
+        "median_depth": 0.5845324993133545,
+        "depth_std": 0.043173566460609436,
+        "depth_min": 0.565660297870636,
+        "depth_max": 0.8351836204528809,
+        "mask_area": 754
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "spray bottle",
+      "confidence": 0.719325602054596,
+      "bounding_box": [
+        151.796875,
+        91.59324645996094,
+        168.67324829101562,
+        128.0131072998047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6645411849021912,
+        "median_depth": 0.6511598825454712,
+        "depth_std": 0.03445584699511528,
+        "depth_min": 0.6311049461364746,
+        "depth_max": 0.7829824090003967,
+        "mask_area": 374
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. camera. table. shelving unit. shoe. spray bottle. tissue box. tissue. cloth.",
+  "text_prompt": "robot arm. gripper. camera. table. shelving unit. shoe. spray bottle. tissue box. tissue. cloth.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

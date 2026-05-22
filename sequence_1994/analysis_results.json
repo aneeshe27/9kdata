@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_1207678/temp_image_6898.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_6898.jpg"
+  },
+  "correct_ordering": [
+    "gripper",
+    "container",
+    "plastic bag",
+    "box container",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: box container, container, gripper, plastic bag, box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.0630713477730751,
+        "relative_position": "closest",
+        "confidence": 0.42590272426605225
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.12127026915550232,
+        "relative_position": "middle",
+        "confidence": 0.5014376044273376
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "plastic bag",
+        "mean_depth": 0.16109105944633484,
+        "relative_position": "middle",
+        "confidence": 0.6605401039123535
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "box container",
+        "mean_depth": 0.16331548988819122,
+        "relative_position": "middle",
+        "confidence": 0.4421435296535492
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.41967833042144775,
+        "relative_position": "farthest",
+        "confidence": 0.5769401788711548
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "box",
+        "mean_depth": 0.41967833042144775,
+        "relative_position": "farthest",
+        "confidence": 0.5769401788711548
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "box container",
+        "mean_depth": 0.16331548988819122,
+        "relative_position": "middle",
+        "confidence": 0.4421435296535492
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "plastic bag",
+        "mean_depth": 0.16109105944633484,
+        "relative_position": "middle",
+        "confidence": 0.6605401039123535
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.12127026915550232,
+        "relative_position": "middle",
+        "confidence": 0.5014376044273376
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.0630713477730751,
+        "relative_position": "closest",
+        "confidence": 0.42590272426605225
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.42590272426605225,
+      "bounding_box": [
+        86.61357879638672,
+        144.15650939941406,
+        115.35076141357422,
+        175.09010314941406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0630713477730751,
+        "median_depth": 0.024451889097690582,
+        "depth_std": 0.08561164885759354,
+        "depth_min": 0.014879087917506695,
+        "depth_max": 0.2906087636947632,
+        "mask_area": 248
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "container",
+      "confidence": 0.5014376044273376,
+      "bounding_box": [
+        18.27978515625,
+        74.445556640625,
+        100.00340270996094,
+        120.55950927734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12127026915550232,
+        "median_depth": 0.10742570459842682,
+        "depth_std": 0.03530823439359665,
+        "depth_min": 0.09207427501678467,
+        "depth_max": 0.3827023506164551,
+        "mask_area": 2164
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "plastic bag",
+      "confidence": 0.6605401039123535,
+      "bounding_box": [
+        130.40103149414062,
+        61.41252517700195,
+        165.98764038085938,
+        105.36296081542969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16109105944633484,
+        "median_depth": 0.15846531093120575,
+        "depth_std": 0.01675536297261715,
+        "depth_min": 0.14104041457176208,
+        "depth_max": 0.32865411043167114,
+        "mask_area": 1134
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "box container",
+      "confidence": 0.4421435296535492,
+      "bounding_box": [
+        160.257080078125,
+        65.78147888183594,
+        197.2437744140625,
+        111.79653930664062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16331548988819122,
+        "median_depth": 0.15043795108795166,
+        "depth_std": 0.07064409554004669,
+        "depth_min": 0.13352230191230774,
+        "depth_max": 0.7916346788406372,
+        "mask_area": 1082
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "box",
+      "confidence": 0.5769401788711548,
+      "bounding_box": [
+        133.9921875,
+        43.98023223876953,
+        187.5726318359375,
+        72.59056854248047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.41967833042144775,
+        "median_depth": 0.3816843628883362,
+        "depth_std": 0.1200183555483818,
+        "depth_min": 0.14625944197177887,
+        "depth_max": 0.9614496827125549,
+        "mask_area": 772
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. workbench. box. plastic bag. container. cloth. chair.",
+  "text_prompt": "robot arm. gripper. table. workbench. box. plastic bag. container. cloth. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

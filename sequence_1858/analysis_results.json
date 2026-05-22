@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_1207678/temp_image_2292.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_2292.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "faucet",
+    "scrub brush",
+    "tripod",
+    "soap dispenser"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: faucet, scrub brush, soap dispenser, robot arm, tripod",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.04097319766879082,
+        "relative_position": "closest",
+        "confidence": 0.3607366681098938
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.2168569415807724,
+        "relative_position": "middle",
+        "confidence": 0.8867074251174927
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "scrub brush",
+        "mean_depth": 0.23191671073436737,
+        "relative_position": "middle",
+        "confidence": 0.4458230435848236
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "tripod",
+        "mean_depth": 0.418621301651001,
+        "relative_position": "middle",
+        "confidence": 0.524833083152771
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "soap dispenser",
+        "mean_depth": 0.8872510194778442,
+        "relative_position": "farthest",
+        "confidence": 0.6323710680007935
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "soap dispenser",
+        "mean_depth": 0.8872510194778442,
+        "relative_position": "farthest",
+        "confidence": 0.6323710680007935
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "tripod",
+        "mean_depth": 0.418621301651001,
+        "relative_position": "middle",
+        "confidence": 0.524833083152771
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "scrub brush",
+        "mean_depth": 0.23191671073436737,
+        "relative_position": "middle",
+        "confidence": 0.4458230435848236
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.2168569415807724,
+        "relative_position": "middle",
+        "confidence": 0.8867074251174927
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.04097319766879082,
+        "relative_position": "closest",
+        "confidence": 0.3607366681098938
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3607366681098938,
+      "bounding_box": [
+        0.05271148681640625,
+        -0.06451416015625,
+        160.219482421875,
+        121.42247009277344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04097319766879082,
+        "median_depth": 0.02351161651313305,
+        "depth_std": 0.07645078003406525,
+        "depth_min": 0.00141244160477072,
+        "depth_max": 0.7163569927215576,
+        "mask_area": 5697
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.8867074251174927,
+      "bounding_box": [
+        152.95359802246094,
+        31.90373420715332,
+        195.18006896972656,
+        94.63105773925781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2168569415807724,
+        "median_depth": 0.19570517539978027,
+        "depth_std": 0.10443621873855591,
+        "depth_min": 0.13454852998256683,
+        "depth_max": 0.822407066822052,
+        "mask_area": 665
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "scrub brush",
+      "confidence": 0.4458230435848236,
+      "bounding_box": [
+        145.32164001464844,
+        113.26647186279297,
+        167.66001892089844,
+        130.2950439453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23191671073436737,
+        "median_depth": 0.24191127717494965,
+        "depth_std": 0.03977276384830475,
+        "depth_min": 0.08727756142616272,
+        "depth_max": 0.27645593881607056,
+        "mask_area": 206
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "tripod",
+      "confidence": 0.524833083152771,
+      "bounding_box": [
+        232.8722686767578,
+        5.512901306152344,
+        281.2636413574219,
+        96.04798126220703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.418621301651001,
+        "median_depth": 0.2644089162349701,
+        "depth_std": 0.22428183257579803,
+        "depth_min": 0.20318518579006195,
+        "depth_max": 0.7952799201011658,
+        "mask_area": 744
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "soap dispenser",
+      "confidence": 0.6323710680007935,
+      "bounding_box": [
+        156.00546264648438,
+        18.58898162841797,
+        166.57244873046875,
+        35.135684967041016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8872510194778442,
+        "median_depth": 0.8885419964790344,
+        "depth_std": 0.012488441541790962,
+        "depth_min": 0.8588515520095825,
+        "depth_max": 0.9067850112915039,
+        "mask_area": 116
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. sponge. scrub brush. soap dispenser. drain strainer. countertop. bottle. tripod.",
+  "text_prompt": "robot arm. gripper. sink. faucet. sponge. scrub brush. soap dispenser. drain strainer. countertop. bottle. tripod.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "robot arm gripper",
+    "plant",
+    "cabinet",
+    "cup mug"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm gripper, cup mug, plant, cabinet, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.06129595264792442,
+        "relative_position": "closest",
+        "confidence": 0.7226921916007996
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.14680355787277222,
+        "relative_position": "middle",
+        "confidence": 0.3543923497200012
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "plant",
+        "mean_depth": 0.203655406832695,
+        "relative_position": "middle",
+        "confidence": 0.7772564888000488
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.22098390758037567,
+        "relative_position": "middle",
+        "confidence": 0.7287179827690125
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cup mug",
+        "mean_depth": 0.2245374619960785,
+        "relative_position": "farthest",
+        "confidence": 0.3569885790348053
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cup mug",
+        "mean_depth": 0.2245374619960785,
+        "relative_position": "farthest",
+        "confidence": 0.3569885790348053
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.22098390758037567,
+        "relative_position": "middle",
+        "confidence": 0.7287179827690125
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "plant",
+        "mean_depth": 0.203655406832695,
+        "relative_position": "middle",
+        "confidence": 0.7772564888000488
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.14680355787277222,
+        "relative_position": "middle",
+        "confidence": 0.3543923497200012
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.06129595264792442,
+        "relative_position": "closest",
+        "confidence": 0.7226921916007996
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.7226921916007996,
+      "bounding_box": [
+        192.45953369140625,
+        116.069091796875,
+        315.82598876953125,
+        179.84378051757812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06129595264792442,
+        "median_depth": 0.04323122650384903,
+        "depth_std": 0.058744970709085464,
+        "depth_min": 0.01643957756459713,
+        "depth_max": 0.8828732967376709,
+        "mask_area": 2120
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.3543923497200012,
+      "bounding_box": [
+        249.14251708984375,
+        39.018917083740234,
+        315.91534423828125,
+        123.59007263183594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14680355787277222,
+        "median_depth": 0.11047619581222534,
+        "depth_std": 0.09680364280939102,
+        "depth_min": 0.07177366316318512,
+        "depth_max": 0.6279982924461365,
+        "mask_area": 2379
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "plant",
+      "confidence": 0.7772564888000488,
+      "bounding_box": [
+        154.97506713867188,
+        0.06093406677246094,
+        185.34005737304688,
+        34.06475830078125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.203655406832695,
+        "median_depth": 0.20479458570480347,
+        "depth_std": 0.013895168900489807,
+        "depth_min": 0.18007761240005493,
+        "depth_max": 0.2612055242061615,
+        "mask_area": 657
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet",
+      "confidence": 0.7287179827690125,
+      "bounding_box": [
+        127.20697021484375,
+        28.50592803955078,
+        200.71322631835938,
+        179.85757446289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22098390758037567,
+        "median_depth": 0.2225053310394287,
+        "depth_std": 0.030172845348715782,
+        "depth_min": 0.15046368539333344,
+        "depth_max": 0.8562570214271545,
+        "mask_area": 8958
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cup mug",
+      "confidence": 0.3569885790348053,
+      "bounding_box": [
+        180.45297241210938,
+        18.924049377441406,
+        194.19580078125,
+        36.05684280395508
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2245374619960785,
+        "median_depth": 0.21702788770198822,
+        "depth_std": 0.028579095378518105,
+        "depth_min": 0.20175647735595703,
+        "depth_max": 0.4636686146259308,
+        "mask_area": 200
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. kettle. cup. mug. glass. plate. sponge. plant. pot. cabinet. table.",
+  "text_prompt": "robot arm. gripper. kettle. cup. mug. glass. plate. sponge. plant. pot. cabinet. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

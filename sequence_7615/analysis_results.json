@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "desk",
+    "lid plate",
+    "robot arm",
+    "towel",
+    "frying pan"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: towel, robot arm, desk, lid plate, frying pan",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "desk",
+        "mean_depth": 0.1564256101846695,
+        "relative_position": "closest",
+        "confidence": 0.4240427017211914
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "lid plate",
+        "mean_depth": 0.3752698004245758,
+        "relative_position": "middle",
+        "confidence": 0.3760317265987396
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.3816136121749878,
+        "relative_position": "middle",
+        "confidence": 0.3711094856262207
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "towel",
+        "mean_depth": 0.45022255182266235,
+        "relative_position": "middle",
+        "confidence": 0.4537128508090973
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "frying pan",
+        "mean_depth": 0.5579432249069214,
+        "relative_position": "farthest",
+        "confidence": 0.6960647702217102
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "frying pan",
+        "mean_depth": 0.5579432249069214,
+        "relative_position": "farthest",
+        "confidence": 0.6960647702217102
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "towel",
+        "mean_depth": 0.45022255182266235,
+        "relative_position": "middle",
+        "confidence": 0.4537128508090973
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.3816136121749878,
+        "relative_position": "middle",
+        "confidence": 0.3711094856262207
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "lid plate",
+        "mean_depth": 0.3752698004245758,
+        "relative_position": "middle",
+        "confidence": 0.3760317265987396
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "desk",
+        "mean_depth": 0.1564256101846695,
+        "relative_position": "closest",
+        "confidence": 0.4240427017211914
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "desk",
+      "confidence": 0.4240427017211914,
+      "bounding_box": [
+        0.005992889404296875,
+        50.40526580810547,
+        93.33354187011719,
+        179.91360473632812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1564256101846695,
+        "median_depth": 0.12126956880092621,
+        "depth_std": 0.1259506642818451,
+        "depth_min": 0.0008131028735078871,
+        "depth_max": 0.8474335670471191,
+        "mask_area": 3632
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "lid plate",
+      "confidence": 0.3760317265987396,
+      "bounding_box": [
+        148.9767303466797,
+        52.886173248291016,
+        182.76841735839844,
+        67.18608093261719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3752698004245758,
+        "median_depth": 0.3765401840209961,
+        "depth_std": 0.0351058728992939,
+        "depth_min": 0.3105490505695343,
+        "depth_max": 0.44800397753715515,
+        "mask_area": 383
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3711094856262207,
+      "bounding_box": [
+        149.89663696289062,
+        0.019324302673339844,
+        170.854248046875,
+        27.949817657470703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3816136121749878,
+        "median_depth": 0.341018408536911,
+        "depth_std": 0.08975555747747421,
+        "depth_min": 0.30785489082336426,
+        "depth_max": 0.7596200704574585,
+        "mask_area": 279
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "towel",
+      "confidence": 0.4537128508090973,
+      "bounding_box": [
+        81.18124389648438,
+        39.76432800292969,
+        119.26615905761719,
+        58.71856689453125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.45022255182266235,
+        "median_depth": 0.40898871421813965,
+        "depth_std": 0.1459473818540573,
+        "depth_min": 0.32177022099494934,
+        "depth_max": 0.9940165281295776,
+        "mask_area": 408
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "frying pan",
+      "confidence": 0.6960647702217102,
+      "bounding_box": [
+        127.21295166015625,
+        32.540164947509766,
+        171.86459350585938,
+        52.662960052490234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5579432249069214,
+        "median_depth": 0.5363727807998657,
+        "depth_std": 0.08060195297002792,
+        "depth_min": 0.46212679147720337,
+        "depth_max": 0.8418437242507935,
+        "mask_area": 363
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "frying pan. pot. lid. plate. towel. robot arm. gripper. table. desk. office chair. folding chair. whiteboard.",
+  "text_prompt": "frying pan. pot. lid. plate. towel. robot arm. gripper. table. desk. office chair. folding chair. whiteboard.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "stand mixer robot base",
+    "sink",
+    "snack bag",
+    "bottle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bottle, sink, stand mixer robot base, robot arm, snack bag",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.03574347868561745,
+        "relative_position": "closest",
+        "confidence": 0.4252181351184845
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "stand mixer robot base",
+        "mean_depth": 0.08288296312093735,
+        "relative_position": "middle",
+        "confidence": 0.42022469639778137
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.12157132476568222,
+        "relative_position": "middle",
+        "confidence": 0.7218490839004517
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "snack bag",
+        "mean_depth": 0.2933788001537323,
+        "relative_position": "middle",
+        "confidence": 0.6320028305053711
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.37765413522720337,
+        "relative_position": "farthest",
+        "confidence": 0.421898752450943
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.37765413522720337,
+        "relative_position": "farthest",
+        "confidence": 0.421898752450943
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "snack bag",
+        "mean_depth": 0.2933788001537323,
+        "relative_position": "middle",
+        "confidence": 0.6320028305053711
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.12157132476568222,
+        "relative_position": "middle",
+        "confidence": 0.7218490839004517
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "stand mixer robot base",
+        "mean_depth": 0.08288296312093735,
+        "relative_position": "middle",
+        "confidence": 0.42022469639778137
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.03574347868561745,
+        "relative_position": "closest",
+        "confidence": 0.4252181351184845
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4252181351184845,
+      "bounding_box": [
+        178.57388305664062,
+        0.0202484130859375,
+        241.49752807617188,
+        65.9693603515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03574347868561745,
+        "median_depth": 0.0,
+        "depth_std": 0.12328093498945236,
+        "depth_min": 0.0,
+        "depth_max": 0.8502184748649597,
+        "mask_area": 1338
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "stand mixer robot base",
+      "confidence": 0.42022469639778137,
+      "bounding_box": [
+        250.49053955078125,
+        22.094871520996094,
+        315.99542236328125,
+        179.8729248046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08288296312093735,
+        "median_depth": 0.07417793571949005,
+        "depth_std": 0.0419791005551815,
+        "depth_min": 0.057123567909002304,
+        "depth_max": 0.7518292665481567,
+        "mask_area": 7386
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.7218490839004517,
+      "bounding_box": [
+        0.06916046142578125,
+        141.34979248046875,
+        146.46707153320312,
+        179.98074340820312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12157132476568222,
+        "median_depth": 0.12399864196777344,
+        "depth_std": 0.015000100247561932,
+        "depth_min": 0.06591744720935822,
+        "depth_max": 0.15039949119091034,
+        "mask_area": 4230
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "snack bag",
+      "confidence": 0.6320028305053711,
+      "bounding_box": [
+        123.19667053222656,
+        99.56737518310547,
+        162.2710723876953,
+        134.72555541992188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2933788001537323,
+        "median_depth": 0.2868320345878601,
+        "depth_std": 0.0490013025701046,
+        "depth_min": 0.21123531460762024,
+        "depth_max": 0.47695988416671753,
+        "mask_area": 701
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bottle",
+      "confidence": 0.421898752450943,
+      "bounding_box": [
+        81.03706359863281,
+        88.61312866210938,
+        96.54183959960938,
+        116.84275817871094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.37765413522720337,
+        "median_depth": 0.37542229890823364,
+        "depth_std": 0.021541709080338478,
+        "depth_min": 0.32276612520217896,
+        "depth_max": 0.43583041429519653,
+        "mask_area": 312
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "snack bag. bottle. stand mixer. countertop. sink. cabinet. robot arm. robot gripper. robot base.",
+  "text_prompt": "snack bag. bottle. stand mixer. countertop. sink. cabinet. robot arm. robot gripper. robot base.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

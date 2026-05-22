@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cup shot glass",
+    "robot arm",
+    "cup",
+    "monitor",
+    "plastic container"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, plastic container, cup, monitor, cup shot glass",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cup shot glass",
+        "mean_depth": 0.012916375882923603,
+        "relative_position": "closest",
+        "confidence": 0.43719831109046936
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.03772878274321556,
+        "relative_position": "middle",
+        "confidence": 0.48147356510162354
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.057057805359363556,
+        "relative_position": "middle",
+        "confidence": 0.40384000539779663
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.1667429655790329,
+        "relative_position": "middle",
+        "confidence": 0.7694416642189026
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "plastic container",
+        "mean_depth": 0.2599770724773407,
+        "relative_position": "farthest",
+        "confidence": 0.7610828280448914
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "plastic container",
+        "mean_depth": 0.2599770724773407,
+        "relative_position": "farthest",
+        "confidence": 0.7610828280448914
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.1667429655790329,
+        "relative_position": "middle",
+        "confidence": 0.7694416642189026
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.057057805359363556,
+        "relative_position": "middle",
+        "confidence": 0.40384000539779663
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.03772878274321556,
+        "relative_position": "middle",
+        "confidence": 0.48147356510162354
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cup shot glass",
+        "mean_depth": 0.012916375882923603,
+        "relative_position": "closest",
+        "confidence": 0.43719831109046936
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cup shot glass",
+      "confidence": 0.43719831109046936,
+      "bounding_box": [
+        28.820960998535156,
+        105.62007141113281,
+        102.88898468017578,
+        179.89830017089844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.012916375882923603,
+        "median_depth": 0.008467363193631172,
+        "depth_std": 0.018890125676989555,
+        "depth_min": 0.005063764750957489,
+        "depth_max": 0.15531231462955475,
+        "mask_area": 3490
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.48147356510162354,
+      "bounding_box": [
+        172.95156860351562,
+        0.10833168029785156,
+        257.579833984375,
+        55.849212646484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03772878274321556,
+        "median_depth": 0.021731723099946976,
+        "depth_std": 0.08469346910715103,
+        "depth_min": 0.0045692818239331245,
+        "depth_max": 0.743428111076355,
+        "mask_area": 1606
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.40384000539779663,
+      "bounding_box": [
+        110.07498931884766,
+        131.08721923828125,
+        140.66024780273438,
+        168.37448120117188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.057057805359363556,
+        "median_depth": 0.05907618626952171,
+        "depth_std": 0.011390906758606434,
+        "depth_min": 0.039846792817115784,
+        "depth_max": 0.10003600269556046,
+        "mask_area": 773
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "monitor",
+      "confidence": 0.7694416642189026,
+      "bounding_box": [
+        -0.00811767578125,
+        0.20612716674804688,
+        141.61521911621094,
+        124.5029296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1667429655790329,
+        "median_depth": 0.15774887800216675,
+        "depth_std": 0.04566583037376404,
+        "depth_min": 0.09303445369005203,
+        "depth_max": 0.479442298412323,
+        "mask_area": 12154
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "plastic container",
+      "confidence": 0.7610828280448914,
+      "bounding_box": [
+        135.23779296875,
+        46.51849365234375,
+        207.27783203125,
+        93.35646057128906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2599770724773407,
+        "median_depth": 0.24921159446239471,
+        "depth_std": 0.045414406806230545,
+        "depth_min": 0.19209060072898865,
+        "depth_max": 0.39983025193214417,
+        "mask_area": 1542
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. monitor. robot arm. gripper. cup. marker. water bottle. shot glass. plastic container. hex keys. tool holder. cable. chair.",
+  "text_prompt": "table. monitor. robot arm. gripper. cup. marker. water bottle. shot glass. plastic container. hex keys. tool holder. cable. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

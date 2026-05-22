@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot gripper",
+    "cabinet",
+    "range hood",
+    "stove",
+    "refrigerator"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: range hood, cabinet, stove, refrigerator, robot gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot gripper",
+        "mean_depth": 0.05895480513572693,
+        "relative_position": "closest",
+        "confidence": 0.36960577964782715
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.3204842805862427,
+        "relative_position": "middle",
+        "confidence": 0.4264577031135559
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "range hood",
+        "mean_depth": 0.45762282609939575,
+        "relative_position": "middle",
+        "confidence": 0.4948265254497528
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "stove",
+        "mean_depth": 0.7355102300643921,
+        "relative_position": "middle",
+        "confidence": 0.518514096736908
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.7853742837905884,
+        "relative_position": "farthest",
+        "confidence": 0.8719781637191772
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.7853742837905884,
+        "relative_position": "farthest",
+        "confidence": 0.8719781637191772
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "stove",
+        "mean_depth": 0.7355102300643921,
+        "relative_position": "middle",
+        "confidence": 0.518514096736908
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "range hood",
+        "mean_depth": 0.45762282609939575,
+        "relative_position": "middle",
+        "confidence": 0.4948265254497528
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.3204842805862427,
+        "relative_position": "middle",
+        "confidence": 0.4264577031135559
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot gripper",
+        "mean_depth": 0.05895480513572693,
+        "relative_position": "closest",
+        "confidence": 0.36960577964782715
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot gripper",
+      "confidence": 0.36960577964782715,
+      "bounding_box": [
+        150.4002227783203,
+        7.804615020751953,
+        223.6811065673828,
+        86.08895874023438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05895480513572693,
+        "median_depth": 0.018948085606098175,
+        "depth_std": 0.1043248251080513,
+        "depth_min": 0.008144944906234741,
+        "depth_max": 0.6948923468589783,
+        "mask_area": 2793
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.4264577031135559,
+      "bounding_box": [
+        255.8525848388672,
+        0.03073883056640625,
+        316.00018310546875,
+        132.43695068359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3204842805862427,
+        "median_depth": 0.31578201055526733,
+        "depth_std": 0.030720066279172897,
+        "depth_min": 0.2700989246368408,
+        "depth_max": 0.4402124285697937,
+        "mask_area": 5735
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "range hood",
+      "confidence": 0.4948265254497528,
+      "bounding_box": [
+        141.94125366210938,
+        55.05116271972656,
+        266.9875183105469,
+        105.63095092773438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.45762282609939575,
+        "median_depth": 0.43945372104644775,
+        "depth_std": 0.08055184036493301,
+        "depth_min": 0.037969235330820084,
+        "depth_max": 0.7122989296913147,
+        "mask_area": 2976
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "stove",
+      "confidence": 0.518514096736908,
+      "bounding_box": [
+        116.72274017333984,
+        102.24073791503906,
+        262.51910400390625,
+        179.99952697753906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7355102300643921,
+        "median_depth": 0.7233136296272278,
+        "depth_std": 0.08372775465250015,
+        "depth_min": 0.5317147970199585,
+        "depth_max": 0.9992336630821228,
+        "mask_area": 6425
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "refrigerator",
+      "confidence": 0.8719781637191772,
+      "bounding_box": [
+        60.44044494628906,
+        50.78168487548828,
+        109.52317810058594,
+        179.949951171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7853742837905884,
+        "median_depth": 0.7679253816604614,
+        "depth_std": 0.060267142951488495,
+        "depth_min": 0.7212920784950256,
+        "depth_max": 0.9993833303451538,
+        "mask_area": 2339
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "refrigerator. cabinet. stove. pot. pan. measuring cup. kettle. cutting board. range hood. countertop. robot arm. robot gripper. camera.",
+  "text_prompt": "refrigerator. cabinet. stove. pot. pan. measuring cup. kettle. cutting board. range hood. countertop. robot arm. robot gripper. camera.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

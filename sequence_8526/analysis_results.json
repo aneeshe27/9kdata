@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "chair",
+    "book",
+    "bowl",
+    "box",
+    "bowl"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bowl, box, book, chair, bowl",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.03339162841439247,
+        "relative_position": "closest",
+        "confidence": 0.6800873279571533
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "book",
+        "mean_depth": 0.1594811975955963,
+        "relative_position": "middle",
+        "confidence": 0.6378996968269348
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "bowl",
+        "mean_depth": 0.23585261404514313,
+        "relative_position": "middle",
+        "confidence": 0.4170039892196655
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.2948128283023834,
+        "relative_position": "middle",
+        "confidence": 0.38725385069847107
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.44180944561958313,
+        "relative_position": "farthest",
+        "confidence": 0.4863128066062927
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.44180944561958313,
+        "relative_position": "farthest",
+        "confidence": 0.4863128066062927
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.2948128283023834,
+        "relative_position": "middle",
+        "confidence": 0.38725385069847107
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "bowl",
+        "mean_depth": 0.23585261404514313,
+        "relative_position": "middle",
+        "confidence": 0.4170039892196655
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "book",
+        "mean_depth": 0.1594811975955963,
+        "relative_position": "middle",
+        "confidence": 0.6378996968269348
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.03339162841439247,
+        "relative_position": "closest",
+        "confidence": 0.6800873279571533
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.6800873279571533,
+      "bounding_box": [
+        192.42050170898438,
+        131.92266845703125,
+        303.6791076660156,
+        179.96298217773438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03339162841439247,
+        "median_depth": 0.02867819182574749,
+        "depth_std": 0.01864723488688469,
+        "depth_min": 0.011846240609884262,
+        "depth_max": 0.1382787972688675,
+        "mask_area": 2284
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "book",
+      "confidence": 0.6378996968269348,
+      "bounding_box": [
+        206.77981567382812,
+        109.19699096679688,
+        258.56817626953125,
+        129.85641479492188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1594811975955963,
+        "median_depth": 0.15758566558361053,
+        "depth_std": 0.014170560985803604,
+        "depth_min": 0.13901105523109436,
+        "depth_max": 0.2001197785139084,
+        "mask_area": 559
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bowl",
+      "confidence": 0.4170039892196655,
+      "bounding_box": [
+        146.5584259033203,
+        98.58039093017578,
+        168.43299865722656,
+        110.71503448486328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23585261404514313,
+        "median_depth": 0.23290055990219116,
+        "depth_std": 0.008421428501605988,
+        "depth_min": 0.22717256844043732,
+        "depth_max": 0.26518625020980835,
+        "mask_area": 186
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "box",
+      "confidence": 0.38725385069847107,
+      "bounding_box": [
+        122.798095703125,
+        69.11746215820312,
+        156.95315551757812,
+        104.99813842773438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2948128283023834,
+        "median_depth": 0.29428669810295105,
+        "depth_std": 0.022747404873371124,
+        "depth_min": 0.17328225076198578,
+        "depth_max": 0.3441273868083954,
+        "mask_area": 941
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bowl",
+      "confidence": 0.4863128066062927,
+      "bounding_box": [
+        8.819365501403809,
+        134.90948486328125,
+        34.34583282470703,
+        153.51248168945312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.44180944561958313,
+        "median_depth": 0.43132972717285156,
+        "depth_std": 0.04232911020517349,
+        "depth_min": 0.3505793809890747,
+        "depth_max": 0.549886167049408,
+        "mask_area": 350
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. bowl. box. book. table. chair.",
+  "text_prompt": "robot arm. gripper. bowl. box. book. table. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

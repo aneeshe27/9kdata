@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robotic gripper",
+    "cloth",
+    "chair",
+    "chair",
+    "shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robotic gripper, cloth, chair, chair, shelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robotic gripper",
+        "mean_depth": 0.04301046207547188,
+        "relative_position": "closest",
+        "confidence": 0.41722020506858826
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.17492179572582245,
+        "relative_position": "middle",
+        "confidence": 0.48268935084342957
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.24877871572971344,
+        "relative_position": "middle",
+        "confidence": 0.38676661252975464
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.27762430906295776,
+        "relative_position": "middle",
+        "confidence": 0.4761385917663574
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "shelf",
+        "mean_depth": 0.8155707716941833,
+        "relative_position": "farthest",
+        "confidence": 0.5563565492630005
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "shelf",
+        "mean_depth": 0.8155707716941833,
+        "relative_position": "farthest",
+        "confidence": 0.5563565492630005
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.27762430906295776,
+        "relative_position": "middle",
+        "confidence": 0.4761385917663574
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.24877871572971344,
+        "relative_position": "middle",
+        "confidence": 0.38676661252975464
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.17492179572582245,
+        "relative_position": "middle",
+        "confidence": 0.48268935084342957
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robotic gripper",
+        "mean_depth": 0.04301046207547188,
+        "relative_position": "closest",
+        "confidence": 0.41722020506858826
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robotic gripper",
+      "confidence": 0.41722020506858826,
+      "bounding_box": [
+        17.236614227294922,
+        0.0727996826171875,
+        98.18283081054688,
+        179.33743286132812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04301046207547188,
+        "median_depth": 0.044955991208553314,
+        "depth_std": 0.03515811264514923,
+        "depth_min": 0.0015941117890179157,
+        "depth_max": 0.5560185313224792,
+        "mask_area": 5104
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.48268935084342957,
+      "bounding_box": [
+        137.68341064453125,
+        83.84346008300781,
+        158.47299194335938,
+        120.45950317382812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17492179572582245,
+        "median_depth": 0.12412905693054199,
+        "depth_std": 0.13319304585456848,
+        "depth_min": 0.10285602509975433,
+        "depth_max": 0.7445363998413086,
+        "mask_area": 533
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.38676661252975464,
+      "bounding_box": [
+        159.42230224609375,
+        118.74678802490234,
+        226.15081787109375,
+        179.85110473632812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24877871572971344,
+        "median_depth": 0.23201170563697815,
+        "depth_std": 0.06289103627204895,
+        "depth_min": 0.1829388588666916,
+        "depth_max": 0.7377180457115173,
+        "mask_area": 3248
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.4761385917663574,
+      "bounding_box": [
+        265.4423522949219,
+        92.43931579589844,
+        315.8821105957031,
+        179.93544006347656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27762430906295776,
+        "median_depth": 0.2668628692626953,
+        "depth_std": 0.082581527531147,
+        "depth_min": 0.15581341087818146,
+        "depth_max": 0.8664084672927856,
+        "mask_area": 3229
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "shelf",
+      "confidence": 0.5563565492630005,
+      "bounding_box": [
+        163.9416961669922,
+        48.63776397705078,
+        233.44618225097656,
+        115.09569549560547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8155707716941833,
+        "median_depth": 0.8130367398262024,
+        "depth_std": 0.022138750180602074,
+        "depth_min": 0.6610150337219238,
+        "depth_max": 0.9009928703308105,
+        "mask_area": 1552
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robotic gripper. camera. cable. table. shelf. chair. bin. door. tripod. cloth.",
+  "text_prompt": "robot arm. robotic gripper. camera. cable. table. shelf. chair. bin. door. tripod. cloth.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

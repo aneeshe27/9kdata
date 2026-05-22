@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cabinet",
+    "gripper",
+    "coffee machine",
+    "trash can"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: trash can, gripper, robot arm, cabinet, coffee machine",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.04715830832719803,
+        "relative_position": "closest",
+        "confidence": 0.38018688559532166
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.3501536548137665,
+        "relative_position": "middle",
+        "confidence": 0.42358338832855225
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.5850962400436401,
+        "relative_position": "middle",
+        "confidence": 0.3829972445964813
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "coffee machine",
+        "mean_depth": 0.657478928565979,
+        "relative_position": "middle",
+        "confidence": 0.7087684869766235
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "trash can",
+        "mean_depth": 0.8432955145835876,
+        "relative_position": "farthest",
+        "confidence": 0.7534758448600769
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "trash can",
+        "mean_depth": 0.8432955145835876,
+        "relative_position": "farthest",
+        "confidence": 0.7534758448600769
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "coffee machine",
+        "mean_depth": 0.657478928565979,
+        "relative_position": "middle",
+        "confidence": 0.7087684869766235
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.5850962400436401,
+        "relative_position": "middle",
+        "confidence": 0.3829972445964813
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.3501536548137665,
+        "relative_position": "middle",
+        "confidence": 0.42358338832855225
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.04715830832719803,
+        "relative_position": "closest",
+        "confidence": 0.38018688559532166
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.38018688559532166,
+      "bounding_box": [
+        126.82222747802734,
+        0.01750946044921875,
+        188.7142791748047,
+        66.82481384277344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04715830832719803,
+        "median_depth": 0.009690366685390472,
+        "depth_std": 0.09544430673122406,
+        "depth_min": 0.000794054998550564,
+        "depth_max": 0.6241239905357361,
+        "mask_area": 1979
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.42358338832855225,
+      "bounding_box": [
+        153.94390869140625,
+        55.28541564941406,
+        265.9417724609375,
+        180.0543670654297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3501536548137665,
+        "median_depth": 0.3207979202270508,
+        "depth_std": 0.18390382826328278,
+        "depth_min": 0.05852354317903519,
+        "depth_max": 0.8175225257873535,
+        "mask_area": 5982
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "gripper",
+      "confidence": 0.3829972445964813,
+      "bounding_box": [
+        300.9468078613281,
+        87.30329132080078,
+        315.9878234863281,
+        142.662109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5850962400436401,
+        "median_depth": 0.594994306564331,
+        "depth_std": 0.04827762395143509,
+        "depth_min": 0.5155038833618164,
+        "depth_max": 0.7165619730949402,
+        "mask_area": 419
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "coffee machine",
+      "confidence": 0.7087684869766235,
+      "bounding_box": [
+        207.83372497558594,
+        10.33950424194336,
+        247.3367156982422,
+        61.85916519165039
+      ],
+      "depth_stats": {
+        "mean_depth": 0.657478928565979,
+        "median_depth": 0.655157208442688,
+        "depth_std": 0.02228076383471489,
+        "depth_min": 0.6106723546981812,
+        "depth_max": 0.845734715461731,
+        "mask_area": 1250
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "trash can",
+      "confidence": 0.7534758448600769,
+      "bounding_box": [
+        248.93995666503906,
+        39.11408233642578,
+        271.3083801269531,
+        58.08624267578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8432955145835876,
+        "median_depth": 0.8281983137130737,
+        "depth_std": 0.05352389067411423,
+        "depth_min": 0.7676630616188049,
+        "depth_max": 0.9945712685585022,
+        "mask_area": 214
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. mug. glass. cup. coffee machine. countertop. sink. trash can. cabinet.",
+  "text_prompt": "robot arm. gripper. mug. glass. cup. coffee machine. countertop. sink. trash can. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

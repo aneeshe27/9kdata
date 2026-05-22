@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cup",
+    "table",
+    "camera camera mount",
+    "pillow",
+    "window blinds"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: pillow, cup, camera camera mount, window blinds, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.008821760304272175,
+        "relative_position": "closest",
+        "confidence": 0.49408629536628723
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.11865808069705963,
+        "relative_position": "middle",
+        "confidence": 0.7319680452346802
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "camera camera mount",
+        "mean_depth": 0.30912163853645325,
+        "relative_position": "middle",
+        "confidence": 0.3901855945587158
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "pillow",
+        "mean_depth": 0.36024370789527893,
+        "relative_position": "middle",
+        "confidence": 0.3875231444835663
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "window blinds",
+        "mean_depth": 0.6401376724243164,
+        "relative_position": "farthest",
+        "confidence": 0.4199257791042328
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "window blinds",
+        "mean_depth": 0.6401376724243164,
+        "relative_position": "farthest",
+        "confidence": 0.4199257791042328
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "pillow",
+        "mean_depth": 0.36024370789527893,
+        "relative_position": "middle",
+        "confidence": 0.3875231444835663
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "camera camera mount",
+        "mean_depth": 0.30912163853645325,
+        "relative_position": "middle",
+        "confidence": 0.3901855945587158
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.11865808069705963,
+        "relative_position": "middle",
+        "confidence": 0.7319680452346802
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.008821760304272175,
+        "relative_position": "closest",
+        "confidence": 0.49408629536628723
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.49408629536628723,
+      "bounding_box": [
+        297.9114074707031,
+        155.75929260253906,
+        315.9922790527344,
+        175.68885803222656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.008821760304272175,
+        "median_depth": 0.00724389310926199,
+        "depth_std": 0.006390392780303955,
+        "depth_min": 0.00023477777722291648,
+        "depth_max": 0.0251910500228405,
+        "mask_area": 279
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7319680452346802,
+      "bounding_box": [
+        55.68358612060547,
+        66.48741149902344,
+        195.6121826171875,
+        179.97804260253906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11865808069705963,
+        "median_depth": 0.09297163784503937,
+        "depth_std": 0.09096862375736237,
+        "depth_min": 0.014062480069696903,
+        "depth_max": 0.6958855986595154,
+        "mask_area": 4980
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "camera camera mount",
+      "confidence": 0.3901855945587158,
+      "bounding_box": [
+        161.515869140625,
+        0.034717559814453125,
+        190.537841796875,
+        36.863826751708984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30912163853645325,
+        "median_depth": 0.26421475410461426,
+        "depth_std": 0.11364347487688065,
+        "depth_min": 0.24109692871570587,
+        "depth_max": 0.8415146470069885,
+        "mask_area": 679
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "pillow",
+      "confidence": 0.3875231444835663,
+      "bounding_box": [
+        3.621593475341797,
+        103.748291015625,
+        39.063472747802734,
+        125.4066162109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.36024370789527893,
+        "median_depth": 0.3513943552970886,
+        "depth_std": 0.041825827211141586,
+        "depth_min": 0.2970123887062073,
+        "depth_max": 0.4708421230316162,
+        "mask_area": 460
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "window blinds",
+      "confidence": 0.4199257791042328,
+      "bounding_box": [
+        0.05739593505859375,
+        0.0215911865234375,
+        158.3297119140625,
+        72.78583526611328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6401376724243164,
+        "median_depth": 0.6260216236114502,
+        "depth_std": 0.14021892845630646,
+        "depth_min": 0.3691621720790863,
+        "depth_max": 0.9687957167625427,
+        "mask_area": 9626
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. sofa. pillow. window. blinds. camera. camera mount. jacket. robot arm. container. box. shelf. cup.",
+  "text_prompt": "table. sofa. pillow. window. blinds. camera. camera mount. jacket. robot arm. container. box. shelf. cup.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "table",
+    "cabinet",
+    "door handle",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: door handle, door, table, robot arm gripper, cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.06489133834838867,
+        "relative_position": "closest",
+        "confidence": 0.40296730399131775
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.13581660389900208,
+        "relative_position": "middle",
+        "confidence": 0.7865936756134033
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.5289427042007446,
+        "relative_position": "middle",
+        "confidence": 0.4085341691970825
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "door handle",
+        "mean_depth": 0.6441594958305359,
+        "relative_position": "middle",
+        "confidence": 0.4299229383468628
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.8221647143363953,
+        "relative_position": "farthest",
+        "confidence": 0.44542211294174194
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.8221647143363953,
+        "relative_position": "farthest",
+        "confidence": 0.44542211294174194
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "door handle",
+        "mean_depth": 0.6441594958305359,
+        "relative_position": "middle",
+        "confidence": 0.4299229383468628
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.5289427042007446,
+        "relative_position": "middle",
+        "confidence": 0.4085341691970825
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.13581660389900208,
+        "relative_position": "middle",
+        "confidence": 0.7865936756134033
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.06489133834838867,
+        "relative_position": "closest",
+        "confidence": 0.40296730399131775
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.40296730399131775,
+      "bounding_box": [
+        44.53758239746094,
+        -0.023347854614257812,
+        128.7180633544922,
+        61.74951171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06489133834838867,
+        "median_depth": 0.003052727784961462,
+        "depth_std": 0.13313449919223785,
+        "depth_min": 0.0,
+        "depth_max": 0.7970304489135742,
+        "mask_area": 2317
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7865936756134033,
+      "bounding_box": [
+        0.08078765869140625,
+        115.01338958740234,
+        207.38717651367188,
+        179.90402221679688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13581660389900208,
+        "median_depth": 0.10367460548877716,
+        "depth_std": 0.12131095677614212,
+        "depth_min": 0.018761299550533295,
+        "depth_max": 0.9951067566871643,
+        "mask_area": 7491
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.4085341691970825,
+      "bounding_box": [
+        89.10431671142578,
+        0.032379150390625,
+        168.91848754882812,
+        130.32522583007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5289427042007446,
+        "median_depth": 0.5208304524421692,
+        "depth_std": 0.07634934037923813,
+        "depth_min": 2.8821303203585558e-05,
+        "depth_max": 0.9012544751167297,
+        "mask_area": 7643
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "door handle",
+      "confidence": 0.4299229383468628,
+      "bounding_box": [
+        16.01828956604004,
+        74.34260559082031,
+        43.50578308105469,
+        88.77546691894531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6441594958305359,
+        "median_depth": 0.5819580554962158,
+        "depth_std": 0.11736878752708435,
+        "depth_min": 0.5681900978088379,
+        "depth_max": 0.996127724647522,
+        "mask_area": 188
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "door",
+      "confidence": 0.44542211294174194,
+      "bounding_box": [
+        164.73861694335938,
+        0.17676544189453125,
+        284.20257568359375,
+        146.16806030273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8221647143363953,
+        "median_depth": 0.8221716284751892,
+        "depth_std": 0.040806274861097336,
+        "depth_min": 0.7292835712432861,
+        "depth_max": 0.9184287786483765,
+        "mask_area": 14062
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. towel. cabinet. door. door handle. whiteboard.",
+  "text_prompt": "robot arm. gripper. table. towel. cabinet. door. door handle. whiteboard.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

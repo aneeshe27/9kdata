@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "door",
+    "camera",
+    "doorknob",
+    "shelf",
+    "floor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: doorknob, camera, door, floor, shelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.12642017006874084,
+        "relative_position": "closest",
+        "confidence": 0.3950839042663574
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.19557809829711914,
+        "relative_position": "middle",
+        "confidence": 0.39749664068222046
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "doorknob",
+        "mean_depth": 0.2566746175289154,
+        "relative_position": "middle",
+        "confidence": 0.6712616086006165
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.2905176877975464,
+        "relative_position": "middle",
+        "confidence": 0.6123344898223877
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "floor",
+        "mean_depth": 0.8365196585655212,
+        "relative_position": "farthest",
+        "confidence": 0.4313932955265045
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "floor",
+        "mean_depth": 0.8365196585655212,
+        "relative_position": "farthest",
+        "confidence": 0.4313932955265045
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.2905176877975464,
+        "relative_position": "middle",
+        "confidence": 0.6123344898223877
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "doorknob",
+        "mean_depth": 0.2566746175289154,
+        "relative_position": "middle",
+        "confidence": 0.6712616086006165
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "camera",
+        "mean_depth": 0.19557809829711914,
+        "relative_position": "middle",
+        "confidence": 0.39749664068222046
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.12642017006874084,
+        "relative_position": "closest",
+        "confidence": 0.3950839042663574
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "door",
+      "confidence": 0.3950839042663574,
+      "bounding_box": [
+        150.1094512939453,
+        0.07003021240234375,
+        246.56016540527344,
+        180.061279296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12642017006874084,
+        "median_depth": 0.11980189383029938,
+        "depth_std": 0.08106008917093277,
+        "depth_min": 0.0,
+        "depth_max": 0.3230905532836914,
+        "mask_area": 12454
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "camera",
+      "confidence": 0.39749664068222046,
+      "bounding_box": [
+        244.32693481445312,
+        0.027374267578125,
+        263.8548278808594,
+        13.335798263549805
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19557809829711914,
+        "median_depth": 0.19627898931503296,
+        "depth_std": 0.007330931723117828,
+        "depth_min": 0.17198361456394196,
+        "depth_max": 0.20736858248710632,
+        "mask_area": 182
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "doorknob",
+      "confidence": 0.6712616086006165,
+      "bounding_box": [
+        79.32652282714844,
+        92.9574966430664,
+        93.01736450195312,
+        106.15099334716797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2566746175289154,
+        "median_depth": 0.25528794527053833,
+        "depth_std": 0.008665209636092186,
+        "depth_min": 0.2433760166168213,
+        "depth_max": 0.2754650413990021,
+        "mask_area": 104
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "shelf",
+      "confidence": 0.6123344898223877,
+      "bounding_box": [
+        236.52944946289062,
+        71.18637084960938,
+        315.8599548339844,
+        123.03285217285156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2905176877975464,
+        "median_depth": 0.2904345393180847,
+        "depth_std": 0.02018561400473118,
+        "depth_min": 0.24470572173595428,
+        "depth_max": 0.3297611176967621,
+        "mask_area": 2824
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "floor",
+      "confidence": 0.4313932955265045,
+      "bounding_box": [
+        0.037387847900390625,
+        121.29419708251953,
+        87.27346801757812,
+        180.01260375976562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8365196585655212,
+        "median_depth": 0.8208144307136536,
+        "depth_std": 0.09761503338813782,
+        "depth_min": 0.6082072854042053,
+        "depth_max": 1.0,
+        "mask_area": 3087
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "door. doorknob. light switch. wall. floor. shelf. book. camera. mounting arm. vent.",
+  "text_prompt": "door. doorknob. light switch. wall. floor. shelf. book. camera. mounting arm. vent.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "shoe",
+    "door",
+    "shoe",
+    "floor",
+    "shelf door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: shelf door, floor, shoe, door, shoe",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "shoe",
+        "mean_depth": 0.11611171066761017,
+        "relative_position": "closest",
+        "confidence": 0.48854973912239075
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.17583853006362915,
+        "relative_position": "middle",
+        "confidence": 0.3541009724140167
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "shoe",
+        "mean_depth": 0.33894380927085876,
+        "relative_position": "middle",
+        "confidence": 0.36744630336761475
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "floor",
+        "mean_depth": 0.4626297056674957,
+        "relative_position": "middle",
+        "confidence": 0.6145913004875183
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "shelf door",
+        "mean_depth": 0.7571138143539429,
+        "relative_position": "farthest",
+        "confidence": 0.4373716413974762
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "shelf door",
+        "mean_depth": 0.7571138143539429,
+        "relative_position": "farthest",
+        "confidence": 0.4373716413974762
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "floor",
+        "mean_depth": 0.4626297056674957,
+        "relative_position": "middle",
+        "confidence": 0.6145913004875183
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "shoe",
+        "mean_depth": 0.33894380927085876,
+        "relative_position": "middle",
+        "confidence": 0.36744630336761475
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.17583853006362915,
+        "relative_position": "middle",
+        "confidence": 0.3541009724140167
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "shoe",
+        "mean_depth": 0.11611171066761017,
+        "relative_position": "closest",
+        "confidence": 0.48854973912239075
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "shoe",
+      "confidence": 0.48854973912239075,
+      "bounding_box": [
+        176.181640625,
+        34.76566696166992,
+        209.17398071289062,
+        57.44522476196289
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11611171066761017,
+        "median_depth": 0.1129874438047409,
+        "depth_std": 0.013699416071176529,
+        "depth_min": 0.09821761399507523,
+        "depth_max": 0.16065473854541779,
+        "mask_area": 431
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "door",
+      "confidence": 0.3541009724140167,
+      "bounding_box": [
+        258.9656066894531,
+        -0.0701141357421875,
+        316.0200500488281,
+        165.15957641601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17583853006362915,
+        "median_depth": 0.1769563853740692,
+        "depth_std": 0.11740279942750931,
+        "depth_min": 0.0,
+        "depth_max": 0.373096764087677,
+        "mask_area": 4900
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "shoe",
+      "confidence": 0.36744630336761475,
+      "bounding_box": [
+        121.85887908935547,
+        72.62541198730469,
+        148.31661987304688,
+        89.59945678710938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33894380927085876,
+        "median_depth": 0.33394795656204224,
+        "depth_std": 0.02141084335744381,
+        "depth_min": 0.30124300718307495,
+        "depth_max": 0.44749507308006287,
+        "mask_area": 276
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "floor",
+      "confidence": 0.6145913004875183,
+      "bounding_box": [
+        32.56053161621094,
+        86.76838684082031,
+        315.7371826171875,
+        179.94691467285156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4626297056674957,
+        "median_depth": 0.3793187439441681,
+        "depth_std": 0.18492954969406128,
+        "depth_min": 0.2629142701625824,
+        "depth_max": 0.9964739680290222,
+        "mask_area": 8519
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "shelf door",
+      "confidence": 0.4373716413974762,
+      "bounding_box": [
+        0.3755226135253906,
+        0.04131317138671875,
+        99.67485046386719,
+        102.41834259033203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7571138143539429,
+        "median_depth": 0.7533972859382629,
+        "depth_std": 0.12078661471605301,
+        "depth_min": 0.456479012966156,
+        "depth_max": 0.9962043166160583,
+        "mask_area": 6340
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "shoe. shelf. robot arm. gripper. cable. door. wall. floor. table.",
+  "text_prompt": "shoe. shelf. robot arm. gripper. cable. door. wall. floor. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

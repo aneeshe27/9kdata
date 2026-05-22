@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "gripper",
+    "bottle",
+    "wall outlet",
+    "cabinet shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: gripper, robot arm, cabinet shelf, bottle, wall outlet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.009423899464309216,
+        "relative_position": "closest",
+        "confidence": 0.5287224054336548
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.027340535074472427,
+        "relative_position": "middle",
+        "confidence": 0.381666898727417
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "bottle",
+        "mean_depth": 0.044712137430906296,
+        "relative_position": "middle",
+        "confidence": 0.6388208866119385
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "wall outlet",
+        "mean_depth": 0.13690583407878876,
+        "relative_position": "middle",
+        "confidence": 0.5629295110702515
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.19532108306884766,
+        "relative_position": "farthest",
+        "confidence": 0.4226227104663849
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cabinet shelf",
+        "mean_depth": 0.19532108306884766,
+        "relative_position": "farthest",
+        "confidence": 0.4226227104663849
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "wall outlet",
+        "mean_depth": 0.13690583407878876,
+        "relative_position": "middle",
+        "confidence": 0.5629295110702515
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "bottle",
+        "mean_depth": 0.044712137430906296,
+        "relative_position": "middle",
+        "confidence": 0.6388208866119385
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.027340535074472427,
+        "relative_position": "middle",
+        "confidence": 0.381666898727417
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.009423899464309216,
+        "relative_position": "closest",
+        "confidence": 0.5287224054336548
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.5287224054336548,
+      "bounding_box": [
+        194.71888732910156,
+        0.1313934326171875,
+        315.9957275390625,
+        132.79379272460938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.009423899464309216,
+        "median_depth": 0.005845283158123493,
+        "depth_std": 0.033985111862421036,
+        "depth_min": 0.0012644665548577905,
+        "depth_max": 0.6406365633010864,
+        "mask_area": 8112
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.381666898727417,
+      "bounding_box": [
+        158.4517059326172,
+        64.81402587890625,
+        209.80799865722656,
+        179.96951293945312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.027340535074472427,
+        "median_depth": 0.01888393424451351,
+        "depth_std": 0.02344304323196411,
+        "depth_min": 0.009212156757712364,
+        "depth_max": 0.2862491011619568,
+        "mask_area": 3839
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bottle",
+      "confidence": 0.6388208866119385,
+      "bounding_box": [
+        41.19380569458008,
+        111.26490783691406,
+        65.40235900878906,
+        177.87669372558594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.044712137430906296,
+        "median_depth": 0.04448104649782181,
+        "depth_std": 0.002968466142192483,
+        "depth_min": 0.03781253471970558,
+        "depth_max": 0.05417938530445099,
+        "mask_area": 1022
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "wall outlet",
+      "confidence": 0.5629295110702515,
+      "bounding_box": [
+        139.12152099609375,
+        96.51846313476562,
+        149.0313720703125,
+        113.97911071777344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13690583407878876,
+        "median_depth": 0.1359567791223526,
+        "depth_std": 0.005562164355069399,
+        "depth_min": 0.12817193567752838,
+        "depth_max": 0.14940285682678223,
+        "mask_area": 134
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet shelf",
+      "confidence": 0.4226227104663849,
+      "bounding_box": [
+        99.3447265625,
+        0.009807586669921875,
+        229.70257568359375,
+        74.36634826660156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19532108306884766,
+        "median_depth": 0.18409720063209534,
+        "depth_std": 0.09645982831716537,
+        "depth_min": 0.06821073591709137,
+        "depth_max": 0.42664140462875366,
+        "mask_area": 7513
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. bottle. napkin holder. countertop. cabinet. shelf. light. wall outlet. tiled wall.",
+  "text_prompt": "robot arm. gripper. bottle. napkin holder. countertop. cabinet. shelf. light. wall outlet. tiled wall.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

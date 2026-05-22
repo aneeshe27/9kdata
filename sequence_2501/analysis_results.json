@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "towel",
+    "robot arm gripper",
+    "container",
+    "chair",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: container, towel, chair, chair, robot arm gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "towel",
+        "mean_depth": 0.03264009580016136,
+        "relative_position": "closest",
+        "confidence": 0.5557114481925964
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.15795651078224182,
+        "relative_position": "middle",
+        "confidence": 0.3751673400402069
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.24189190566539764,
+        "relative_position": "middle",
+        "confidence": 0.5089475512504578
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.36304453015327454,
+        "relative_position": "middle",
+        "confidence": 0.4424782395362854
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.5690047740936279,
+        "relative_position": "farthest",
+        "confidence": 0.6298060417175293
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.5690047740936279,
+        "relative_position": "farthest",
+        "confidence": 0.6298060417175293
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.36304453015327454,
+        "relative_position": "middle",
+        "confidence": 0.4424782395362854
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.24189190566539764,
+        "relative_position": "middle",
+        "confidence": 0.5089475512504578
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.15795651078224182,
+        "relative_position": "middle",
+        "confidence": 0.3751673400402069
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "towel",
+        "mean_depth": 0.03264009580016136,
+        "relative_position": "closest",
+        "confidence": 0.5557114481925964
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "towel",
+      "confidence": 0.5557114481925964,
+      "bounding_box": [
+        0.033641815185546875,
+        114.84739685058594,
+        74.652099609375,
+        179.9649200439453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03264009580016136,
+        "median_depth": 0.02863958105444908,
+        "depth_std": 0.026438090950250626,
+        "depth_min": 0.00048489842447452247,
+        "depth_max": 0.12479091435670853,
+        "mask_area": 2767
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.3751673400402069,
+      "bounding_box": [
+        6.241992950439453,
+        71.97711181640625,
+        66.87301635742188,
+        118.32562255859375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15795651078224182,
+        "median_depth": 0.15412144362926483,
+        "depth_std": 0.026631338521838188,
+        "depth_min": 0.11982517689466476,
+        "depth_max": 0.22748348116874695,
+        "mask_area": 1063
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "container",
+      "confidence": 0.5089475512504578,
+      "bounding_box": [
+        201.965087890625,
+        51.757225036621094,
+        245.24917602539062,
+        95.2597427368164
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24189190566539764,
+        "median_depth": 0.22455593943595886,
+        "depth_std": 0.07123561203479767,
+        "depth_min": 0.18560902774333954,
+        "depth_max": 0.7664492726325989,
+        "mask_area": 1313
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.4424782395362854,
+      "bounding_box": [
+        88.02587890625,
+        45.89834976196289,
+        153.47622680664062,
+        85.16874694824219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.36304453015327454,
+        "median_depth": 0.3588913083076477,
+        "depth_std": 0.03688124194741249,
+        "depth_min": 0.2950606048107147,
+        "depth_max": 0.43660736083984375,
+        "mask_area": 1230
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.6298060417175293,
+      "bounding_box": [
+        216.33837890625,
+        35.55335998535156,
+        274.108642578125,
+        72.76068878173828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5690047740936279,
+        "median_depth": 0.5395968556404114,
+        "depth_std": 0.10877875983715057,
+        "depth_min": 0.4300146996974945,
+        "depth_max": 0.8884438872337341,
+        "mask_area": 1115
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. container. box. chair. robot arm. gripper. towel. utensil holder. utensils.",
+  "text_prompt": "table. container. box. chair. robot arm. gripper. towel. utensil holder. utensils.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

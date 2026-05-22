@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "nightstand",
+    "blanket",
+    "window",
+    "pillow"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: nightstand, robot arm, pillow, window, blanket",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.02761637419462204,
+        "relative_position": "closest",
+        "confidence": 0.37672537565231323
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "nightstand",
+        "mean_depth": 0.3478364944458008,
+        "relative_position": "middle",
+        "confidence": 0.38282692432403564
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "blanket",
+        "mean_depth": 0.3722077012062073,
+        "relative_position": "middle",
+        "confidence": 0.4426250159740448
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.6345293521881104,
+        "relative_position": "middle",
+        "confidence": 0.47524991631507874
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "pillow",
+        "mean_depth": 0.802402138710022,
+        "relative_position": "farthest",
+        "confidence": 0.5480696558952332
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "pillow",
+        "mean_depth": 0.802402138710022,
+        "relative_position": "farthest",
+        "confidence": 0.5480696558952332
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.6345293521881104,
+        "relative_position": "middle",
+        "confidence": 0.47524991631507874
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "blanket",
+        "mean_depth": 0.3722077012062073,
+        "relative_position": "middle",
+        "confidence": 0.4426250159740448
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "nightstand",
+        "mean_depth": 0.3478364944458008,
+        "relative_position": "middle",
+        "confidence": 0.38282692432403564
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.02761637419462204,
+        "relative_position": "closest",
+        "confidence": 0.37672537565231323
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.37672537565231323,
+      "bounding_box": [
+        181.35972595214844,
+        0.15226364135742188,
+        316.016357421875,
+        126.97837829589844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02761637419462204,
+        "median_depth": 0.02664227969944477,
+        "depth_std": 0.03308938071131706,
+        "depth_min": 0.00017175501852761954,
+        "depth_max": 0.6621153354644775,
+        "mask_area": 6969
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "nightstand",
+      "confidence": 0.38282692432403564,
+      "bounding_box": [
+        251.63429260253906,
+        87.48774719238281,
+        315.98345947265625,
+        179.8592987060547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3478364944458008,
+        "median_depth": 0.3540199100971222,
+        "depth_std": 0.03624411299824715,
+        "depth_min": 0.1071731448173523,
+        "depth_max": 0.44105401635169983,
+        "mask_area": 4467
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "blanket",
+      "confidence": 0.4426250159740448,
+      "bounding_box": [
+        2.3379135131835938,
+        96.69501495361328,
+        244.15133666992188,
+        180.1214599609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3722077012062073,
+        "median_depth": 0.3390783667564392,
+        "depth_std": 0.11926167458295822,
+        "depth_min": 0.24560900032520294,
+        "depth_max": 0.9924345016479492,
+        "mask_area": 13378
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "window",
+      "confidence": 0.47524991631507874,
+      "bounding_box": [
+        0.042283058166503906,
+        0.100006103515625,
+        29.162029266357422,
+        117.56287384033203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6345293521881104,
+        "median_depth": 0.6314530372619629,
+        "depth_std": 0.025636693462729454,
+        "depth_min": 0.5603780746459961,
+        "depth_max": 0.6924560070037842,
+        "mask_area": 2164
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "pillow",
+      "confidence": 0.5480696558952332,
+      "bounding_box": [
+        70.6147689819336,
+        80.40802764892578,
+        126.53997039794922,
+        99.7316665649414
+      ],
+      "depth_stats": {
+        "mean_depth": 0.802402138710022,
+        "median_depth": 0.781644880771637,
+        "depth_std": 0.08263121545314789,
+        "depth_min": 0.6743542551994324,
+        "depth_max": 0.9955727458000183,
+        "mask_area": 621
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bunk bed. pillow. blanket. robot arm. baseball bat. window. nightstand.",
+  "text_prompt": "bunk bed. pillow. blanket. robot arm. baseball bat. window. nightstand.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

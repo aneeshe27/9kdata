@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "blanket",
+    "table",
+    "metal frame",
+    "hat"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, blanket, metal frame, hat, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.09532421082258224,
+        "relative_position": "closest",
+        "confidence": 0.3863203525543213
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "blanket",
+        "mean_depth": 0.3208169639110565,
+        "relative_position": "middle",
+        "confidence": 0.4270567297935486
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.33317723870277405,
+        "relative_position": "middle",
+        "confidence": 0.41562309861183167
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "metal frame",
+        "mean_depth": 0.41937699913978577,
+        "relative_position": "middle",
+        "confidence": 0.7441933155059814
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "hat",
+        "mean_depth": 0.5035678148269653,
+        "relative_position": "farthest",
+        "confidence": 0.6790250539779663
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "hat",
+        "mean_depth": 0.5035678148269653,
+        "relative_position": "farthest",
+        "confidence": 0.6790250539779663
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "metal frame",
+        "mean_depth": 0.41937699913978577,
+        "relative_position": "middle",
+        "confidence": 0.7441933155059814
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.33317723870277405,
+        "relative_position": "middle",
+        "confidence": 0.41562309861183167
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "blanket",
+        "mean_depth": 0.3208169639110565,
+        "relative_position": "middle",
+        "confidence": 0.4270567297935486
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.09532421082258224,
+        "relative_position": "closest",
+        "confidence": 0.3863203525543213
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3863203525543213,
+      "bounding_box": [
+        189.84982299804688,
+        0.03281974792480469,
+        236.31039428710938,
+        61.60566711425781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09532421082258224,
+        "median_depth": 0.08267690241336823,
+        "depth_std": 0.08778145164251328,
+        "depth_min": 4.395277574076317e-05,
+        "depth_max": 0.7631665468215942,
+        "mask_area": 1138
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "blanket",
+      "confidence": 0.4270567297935486,
+      "bounding_box": [
+        33.42009735107422,
+        74.98654174804688,
+        125.0779037475586,
+        159.53013610839844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3208169639110565,
+        "median_depth": 0.3099461793899536,
+        "depth_std": 0.059019092470407486,
+        "depth_min": 0.24631108343601227,
+        "depth_max": 0.48645147681236267,
+        "mask_area": 4288
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "table",
+      "confidence": 0.41562309861183167,
+      "bounding_box": [
+        238.32546997070312,
+        80.03681182861328,
+        315.9800109863281,
+        180.00384521484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.33317723870277405,
+        "median_depth": 0.3196732997894287,
+        "depth_std": 0.10137757658958435,
+        "depth_min": 0.17230971157550812,
+        "depth_max": 0.8019400238990784,
+        "mask_area": 3035
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "metal frame",
+      "confidence": 0.7441933155059814,
+      "bounding_box": [
+        128.8001708984375,
+        71.57898712158203,
+        211.90756225585938,
+        144.63125610351562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.41937699913978577,
+        "median_depth": 0.41861221194267273,
+        "depth_std": 0.050545498728752136,
+        "depth_min": 0.32780927419662476,
+        "depth_max": 0.6667215824127197,
+        "mask_area": 1516
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "hat",
+      "confidence": 0.6790250539779663,
+      "bounding_box": [
+        109.38042449951172,
+        43.66800308227539,
+        141.908203125,
+        68.27909851074219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5035678148269653,
+        "median_depth": 0.49267667531967163,
+        "depth_std": 0.030928736552596092,
+        "depth_min": 0.4580734670162201,
+        "depth_max": 0.6427781581878662,
+        "mask_area": 441
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sofa. cushion. pillow. blanket. hat. robot arm. gripper. screwdriver. pliers. metal frame. table. curtain. window.",
+  "text_prompt": "sofa. cushion. pillow. blanket. hat. robot arm. gripper. screwdriver. pliers. metal frame. table. curtain. window.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

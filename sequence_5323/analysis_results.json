@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "gripper",
+    "pillow",
+    "pillow",
+    "air conditioner"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: gripper, pillow, air conditioner, robot arm, pillow",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.034905511885881424,
+        "relative_position": "closest",
+        "confidence": 0.4422048330307007
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.14466942846775055,
+        "relative_position": "middle",
+        "confidence": 0.40472471714019775
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "pillow",
+        "mean_depth": 0.36310404539108276,
+        "relative_position": "middle",
+        "confidence": 0.5845156311988831
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "pillow",
+        "mean_depth": 0.7987642288208008,
+        "relative_position": "middle",
+        "confidence": 0.5004188418388367
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "air conditioner",
+        "mean_depth": 0.8601383566856384,
+        "relative_position": "farthest",
+        "confidence": 0.3818630278110504
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "air conditioner",
+        "mean_depth": 0.8601383566856384,
+        "relative_position": "farthest",
+        "confidence": 0.3818630278110504
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "pillow",
+        "mean_depth": 0.7987642288208008,
+        "relative_position": "middle",
+        "confidence": 0.5004188418388367
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "pillow",
+        "mean_depth": 0.36310404539108276,
+        "relative_position": "middle",
+        "confidence": 0.5845156311988831
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.14466942846775055,
+        "relative_position": "middle",
+        "confidence": 0.40472471714019775
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.034905511885881424,
+        "relative_position": "closest",
+        "confidence": 0.4422048330307007
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4422048330307007,
+      "bounding_box": [
+        249.63250732421875,
+        49.3680534362793,
+        315.48394775390625,
+        113.93988037109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.034905511885881424,
+        "median_depth": 0.02551555261015892,
+        "depth_std": 0.039354875683784485,
+        "depth_min": 0.0,
+        "depth_max": 0.32056042551994324,
+        "mask_area": 1694
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "gripper",
+      "confidence": 0.40472471714019775,
+      "bounding_box": [
+        231.66519165039062,
+        104.58572387695312,
+        268.1541748046875,
+        142.8517303466797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14466942846775055,
+        "median_depth": 0.09748395532369614,
+        "depth_std": 0.10520259290933609,
+        "depth_min": 0.038135699927806854,
+        "depth_max": 0.5822676420211792,
+        "mask_area": 874
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "pillow",
+      "confidence": 0.5845156311988831,
+      "bounding_box": [
+        160.55401611328125,
+        96.98832702636719,
+        245.48947143554688,
+        144.46481323242188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.36310404539108276,
+        "median_depth": 0.3388112187385559,
+        "depth_std": 0.06801830232143402,
+        "depth_min": 0.09833148866891861,
+        "depth_max": 0.775580644607544,
+        "mask_area": 2362
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "pillow",
+      "confidence": 0.5004188418388367,
+      "bounding_box": [
+        99.3233871459961,
+        80.11119842529297,
+        148.05934143066406,
+        96.17203521728516
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7987642288208008,
+        "median_depth": 0.7851433157920837,
+        "depth_std": 0.06743481755256653,
+        "depth_min": 0.7063982486724854,
+        "depth_max": 0.9959010481834412,
+        "mask_area": 487
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "air conditioner",
+      "confidence": 0.3818630278110504,
+      "bounding_box": [
+        210.5358428955078,
+        86.3384780883789,
+        243.33045959472656,
+        105.80712127685547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8601383566856384,
+        "median_depth": 0.8685704469680786,
+        "depth_std": 0.05164945870637894,
+        "depth_min": 0.6683580875396729,
+        "depth_max": 0.9326055645942688,
+        "mask_area": 452
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bed. pillow. blanket. smartphone. robot arm. gripper. window. window blind. air conditioner.",
+  "text_prompt": "bed. pillow. blanket. smartphone. robot arm. gripper. window. window blind. air conditioner.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

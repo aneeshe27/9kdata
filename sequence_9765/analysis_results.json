@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "plant",
+    "robot arm",
+    "basket",
+    "clothes",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: clothes, plant, basket, box, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "plant",
+        "mean_depth": 0.09764539450407028,
+        "relative_position": "closest",
+        "confidence": 0.7063156962394714
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.18128041923046112,
+        "relative_position": "middle",
+        "confidence": 0.3626716434955597
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "basket",
+        "mean_depth": 0.4513821005821228,
+        "relative_position": "middle",
+        "confidence": 0.4384016692638397
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "clothes",
+        "mean_depth": 0.5859581232070923,
+        "relative_position": "middle",
+        "confidence": 0.3739467263221741
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.6568810939788818,
+        "relative_position": "farthest",
+        "confidence": 0.36542242765426636
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "box",
+        "mean_depth": 0.6568810939788818,
+        "relative_position": "farthest",
+        "confidence": 0.36542242765426636
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "clothes",
+        "mean_depth": 0.5859581232070923,
+        "relative_position": "middle",
+        "confidence": 0.3739467263221741
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "basket",
+        "mean_depth": 0.4513821005821228,
+        "relative_position": "middle",
+        "confidence": 0.4384016692638397
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.18128041923046112,
+        "relative_position": "middle",
+        "confidence": 0.3626716434955597
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "plant",
+        "mean_depth": 0.09764539450407028,
+        "relative_position": "closest",
+        "confidence": 0.7063156962394714
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "plant",
+      "confidence": 0.7063156962394714,
+      "bounding_box": [
+        5.7061004638671875,
+        -0.0037841796875,
+        198.7093048095703,
+        179.9908447265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09764539450407028,
+        "median_depth": 0.08818015456199646,
+        "depth_std": 0.06588289886713028,
+        "depth_min": 0.004511098377406597,
+        "depth_max": 0.46357858180999756,
+        "mask_area": 14664
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3626716434955597,
+      "bounding_box": [
+        219.10826110839844,
+        0.0062618255615234375,
+        278.9710388183594,
+        36.99140930175781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18128041923046112,
+        "median_depth": 0.16785886883735657,
+        "depth_std": 0.08242867887020111,
+        "depth_min": 0.1072295531630516,
+        "depth_max": 0.7520087957382202,
+        "mask_area": 1307
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "basket",
+      "confidence": 0.4384016692638397,
+      "bounding_box": [
+        197.73501586914062,
+        109.19670867919922,
+        225.35891723632812,
+        155.04942321777344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4513821005821228,
+        "median_depth": 0.4509684443473816,
+        "depth_std": 0.03953289985656738,
+        "depth_min": 0.3783286213874817,
+        "depth_max": 0.5300442576408386,
+        "mask_area": 848
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "clothes",
+      "confidence": 0.3739467263221741,
+      "bounding_box": [
+        242.05728149414062,
+        50.2907829284668,
+        302.1668395996094,
+        136.6217803955078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5859581232070923,
+        "median_depth": 0.5768493413925171,
+        "depth_std": 0.03935142979025841,
+        "depth_min": 0.5332222580909729,
+        "depth_max": 0.8816040754318237,
+        "mask_area": 2974
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "box",
+      "confidence": 0.36542242765426636,
+      "bounding_box": [
+        304.2903747558594,
+        10.678668975830078,
+        315.9829406738281,
+        37.98990249633789
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6568810939788818,
+        "median_depth": 0.6561814546585083,
+        "depth_std": 0.012488005682826042,
+        "depth_min": 0.6096433401107788,
+        "depth_max": 0.6811206936836243,
+        "mask_area": 226
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "plant. pot. bookshelf. books. basket. figurine. robot arm. gripper. clothes. hangers. closet rod. box.",
+  "text_prompt": "plant. pot. bookshelf. books. basket. figurine. robot arm. gripper. clothes. hangers. closet rod. box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

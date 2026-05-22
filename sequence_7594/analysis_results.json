@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "frying pan",
+    "cooking spray",
+    "bread",
+    "bicycle",
+    "egg carton"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bread, cooking spray, frying pan, egg carton, bicycle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "frying pan",
+        "mean_depth": 0.050350118428468704,
+        "relative_position": "closest",
+        "confidence": 0.551706075668335
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cooking spray",
+        "mean_depth": 0.1120540127158165,
+        "relative_position": "middle",
+        "confidence": 0.7170480489730835
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "bread",
+        "mean_depth": 0.21778210997581482,
+        "relative_position": "middle",
+        "confidence": 0.3910571038722992
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "bicycle",
+        "mean_depth": 0.2945401668548584,
+        "relative_position": "middle",
+        "confidence": 0.37244880199432373
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "egg carton",
+        "mean_depth": 0.443735271692276,
+        "relative_position": "farthest",
+        "confidence": 0.5397651791572571
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "egg carton",
+        "mean_depth": 0.443735271692276,
+        "relative_position": "farthest",
+        "confidence": 0.5397651791572571
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "bicycle",
+        "mean_depth": 0.2945401668548584,
+        "relative_position": "middle",
+        "confidence": 0.37244880199432373
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "bread",
+        "mean_depth": 0.21778210997581482,
+        "relative_position": "middle",
+        "confidence": 0.3910571038722992
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cooking spray",
+        "mean_depth": 0.1120540127158165,
+        "relative_position": "middle",
+        "confidence": 0.7170480489730835
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "frying pan",
+        "mean_depth": 0.050350118428468704,
+        "relative_position": "closest",
+        "confidence": 0.551706075668335
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "frying pan",
+      "confidence": 0.551706075668335,
+      "bounding_box": [
+        83.43572998046875,
+        45.42532730102539,
+        185.1614990234375,
+        130.3933563232422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.050350118428468704,
+        "median_depth": 0.04909728839993477,
+        "depth_std": 0.020760247483849525,
+        "depth_min": 0.021463878452777863,
+        "depth_max": 0.1330288201570511,
+        "mask_area": 3463
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cooking spray",
+      "confidence": 0.7170480489730835,
+      "bounding_box": [
+        79.24214935302734,
+        25.62857437133789,
+        109.18744659423828,
+        70.76626586914062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1120540127158165,
+        "median_depth": 0.10987488925457001,
+        "depth_std": 0.011786745861172676,
+        "depth_min": 0.08865100890398026,
+        "depth_max": 0.1762378215789795,
+        "mask_area": 718
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bread",
+      "confidence": 0.3910571038722992,
+      "bounding_box": [
+        132.49356079101562,
+        20.75511360168457,
+        168.37176513671875,
+        49.377647399902344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21778210997581482,
+        "median_depth": 0.20239216089248657,
+        "depth_std": 0.04149381443858147,
+        "depth_min": 0.1678016036748886,
+        "depth_max": 0.3431091010570526,
+        "mask_area": 588
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "bicycle",
+      "confidence": 0.37244880199432373,
+      "bounding_box": [
+        256.4364929199219,
+        0.06985092163085938,
+        315.9683532714844,
+        77.36679077148438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2945401668548584,
+        "median_depth": 0.21835042536258698,
+        "depth_std": 0.19709160923957825,
+        "depth_min": 0.14147765934467316,
+        "depth_max": 0.9264046549797058,
+        "mask_area": 1763
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "egg carton",
+      "confidence": 0.5397651791572571,
+      "bounding_box": [
+        184.75326538085938,
+        3.5452260971069336,
+        216.81417846679688,
+        26.89496612548828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.443735271692276,
+        "median_depth": 0.4360209107398987,
+        "depth_std": 0.02382863499224186,
+        "depth_min": 0.4028424024581909,
+        "depth_max": 0.530899703502655,
+        "mask_area": 495
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "stove. pot. frying pan. cooking spray can. spatula. egg carton. bread. bowl. bicycle. table. countertop.",
+  "text_prompt": "stove. pot. frying pan. cooking spray can. spatula. egg carton. bread. bowl. bicycle. table. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "sofa",
+    "lamp",
+    "3d printer",
+    "table",
+    "cables"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sofa, lamp, 3d printer, cables, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.07978969067335129,
+        "relative_position": "closest",
+        "confidence": 0.7415956258773804
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "lamp",
+        "mean_depth": 0.13326773047447205,
+        "relative_position": "middle",
+        "confidence": 0.36215609312057495
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "3d printer",
+        "mean_depth": 0.18162083625793457,
+        "relative_position": "middle",
+        "confidence": 0.3949509561061859
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.3700152635574341,
+        "relative_position": "middle",
+        "confidence": 0.3696252107620239
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cables",
+        "mean_depth": 0.40765470266342163,
+        "relative_position": "farthest",
+        "confidence": 0.3582720160484314
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cables",
+        "mean_depth": 0.40765470266342163,
+        "relative_position": "farthest",
+        "confidence": 0.3582720160484314
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.3700152635574341,
+        "relative_position": "middle",
+        "confidence": 0.3696252107620239
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "3d printer",
+        "mean_depth": 0.18162083625793457,
+        "relative_position": "middle",
+        "confidence": 0.3949509561061859
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "lamp",
+        "mean_depth": 0.13326773047447205,
+        "relative_position": "middle",
+        "confidence": 0.36215609312057495
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.07978969067335129,
+        "relative_position": "closest",
+        "confidence": 0.7415956258773804
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "sofa",
+      "confidence": 0.7415956258773804,
+      "bounding_box": [
+        -0.0189666748046875,
+        80.0174560546875,
+        218.47946166992188,
+        179.98043823242188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07978969067335129,
+        "median_depth": 0.07832098007202148,
+        "depth_std": 0.05751704052090645,
+        "depth_min": 0.0013972223969176412,
+        "depth_max": 0.47001323103904724,
+        "mask_area": 13709
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "lamp",
+      "confidence": 0.36215609312057495,
+      "bounding_box": [
+        174.34263610839844,
+        0.028032302856445312,
+        214.4488983154297,
+        35.92870330810547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13326773047447205,
+        "median_depth": 0.10309617221355438,
+        "depth_std": 0.09878380596637726,
+        "depth_min": 0.0694407969713211,
+        "depth_max": 0.6389758586883545,
+        "mask_area": 1051
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "3d printer",
+      "confidence": 0.3949509561061859,
+      "bounding_box": [
+        223.84677124023438,
+        57.424251556396484,
+        316.0016784667969,
+        179.83251953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18162083625793457,
+        "median_depth": 0.16726961731910706,
+        "depth_std": 0.14931394159793854,
+        "depth_min": 0.005079413298517466,
+        "depth_max": 0.9777669906616211,
+        "mask_area": 8860
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.3696252107620239,
+      "bounding_box": [
+        116.15049743652344,
+        23.675750732421875,
+        216.6377716064453,
+        128.55120849609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3700152635574341,
+        "median_depth": 0.36671292781829834,
+        "depth_std": 0.05103275924921036,
+        "depth_min": 0.2623836100101471,
+        "depth_max": 0.74852055311203,
+        "mask_area": 4460
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cables",
+      "confidence": 0.3582720160484314,
+      "bounding_box": [
+        219.3311767578125,
+        0.08870601654052734,
+        277.2183837890625,
+        26.5804443359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.40765470266342163,
+        "median_depth": 0.3894052803516388,
+        "depth_std": 0.06010281294584274,
+        "depth_min": 0.3207186162471771,
+        "depth_max": 0.5810895562171936,
+        "mask_area": 239
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sofa. side table. lamp. smartphone. notebook. power strip. cables. wall outlet. clamp. 3d printer. table.",
+  "text_prompt": "sofa. side table. lamp. smartphone. notebook. power strip. cables. wall outlet. clamp. 3d printer. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

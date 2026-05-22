@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cup",
+    "scissors",
+    "monitor",
+    "container"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: scissors, cup, container, robot arm, monitor",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.022561749443411827,
+        "relative_position": "closest",
+        "confidence": 0.44173896312713623
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.08741600811481476,
+        "relative_position": "middle",
+        "confidence": 0.5513732433319092
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "scissors",
+        "mean_depth": 0.18689292669296265,
+        "relative_position": "middle",
+        "confidence": 0.40219396352767944
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.1984744518995285,
+        "relative_position": "middle",
+        "confidence": 0.6953349113464355
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "container",
+        "mean_depth": 0.3069153130054474,
+        "relative_position": "farthest",
+        "confidence": 0.7731082439422607
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "container",
+        "mean_depth": 0.3069153130054474,
+        "relative_position": "farthest",
+        "confidence": 0.7731082439422607
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.1984744518995285,
+        "relative_position": "middle",
+        "confidence": 0.6953349113464355
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "scissors",
+        "mean_depth": 0.18689292669296265,
+        "relative_position": "middle",
+        "confidence": 0.40219396352767944
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.08741600811481476,
+        "relative_position": "middle",
+        "confidence": 0.5513732433319092
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.022561749443411827,
+        "relative_position": "closest",
+        "confidence": 0.44173896312713623
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.44173896312713623,
+      "bounding_box": [
+        168.52685546875,
+        0.043548583984375,
+        263.26513671875,
+        64.8487777709961
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022561749443411827,
+        "median_depth": 0.010135551914572716,
+        "depth_std": 0.0358000323176384,
+        "depth_min": 0.003264723578467965,
+        "depth_max": 0.5094447135925293,
+        "mask_area": 2668
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "cup",
+      "confidence": 0.5513732433319092,
+      "bounding_box": [
+        113.04834747314453,
+        125.71267700195312,
+        140.74436950683594,
+        160.56005859375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08741600811481476,
+        "median_depth": 0.08693917095661163,
+        "depth_std": 0.009133152663707733,
+        "depth_min": 0.07440727949142456,
+        "depth_max": 0.11819439381361008,
+        "mask_area": 690
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "scissors",
+      "confidence": 0.40219396352767944,
+      "bounding_box": [
+        148.70213317871094,
+        88.34162139892578,
+        163.04051208496094,
+        101.84102630615234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18689292669296265,
+        "median_depth": 0.18261831998825073,
+        "depth_std": 0.009754358790814877,
+        "depth_min": 0.177602618932724,
+        "depth_max": 0.2158544510602951,
+        "mask_area": 133
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "monitor",
+      "confidence": 0.6953349113464355,
+      "bounding_box": [
+        0.032562255859375,
+        0.11436080932617188,
+        141.20285034179688,
+        123.0224609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1984744518995285,
+        "median_depth": 0.18529453873634338,
+        "depth_std": 0.06062442809343338,
+        "depth_min": 0.10566894710063934,
+        "depth_max": 0.4860491454601288,
+        "mask_area": 12088
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "container",
+      "confidence": 0.7731082439422607,
+      "bounding_box": [
+        134.57586669921875,
+        46.06507110595703,
+        207.33477783203125,
+        92.19916534423828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3069153130054474,
+        "median_depth": 0.29543909430503845,
+        "depth_std": 0.0542481504380703,
+        "depth_min": 0.13178355991840363,
+        "depth_max": 0.4652097523212433,
+        "mask_area": 1734
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. monitor. robot arm. gripper. container. scissors. pliers. cup. bottle. hex key set. parts organizer.",
+  "text_prompt": "table. monitor. robot arm. gripper. container. scissors. pliers. cup. bottle. hex key set. parts organizer.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

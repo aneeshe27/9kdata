@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "gripper",
+    "cable",
+    "chair",
+    "door handle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cable, door handle, chair, gripper, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.046788640320301056,
+        "relative_position": "closest",
+        "confidence": 0.3947483003139496
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.15197406709194183,
+        "relative_position": "middle",
+        "confidence": 0.3754819631576538
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cable",
+        "mean_depth": 0.48786208033561707,
+        "relative_position": "middle",
+        "confidence": 0.4105854034423828
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.6760411858558655,
+        "relative_position": "middle",
+        "confidence": 0.3532141447067261
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "door handle",
+        "mean_depth": 0.7282059192657471,
+        "relative_position": "farthest",
+        "confidence": 0.45616966485977173
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "door handle",
+        "mean_depth": 0.7282059192657471,
+        "relative_position": "farthest",
+        "confidence": 0.45616966485977173
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.6760411858558655,
+        "relative_position": "middle",
+        "confidence": 0.3532141447067261
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cable",
+        "mean_depth": 0.48786208033561707,
+        "relative_position": "middle",
+        "confidence": 0.4105854034423828
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.15197406709194183,
+        "relative_position": "middle",
+        "confidence": 0.3754819631576538
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.046788640320301056,
+        "relative_position": "closest",
+        "confidence": 0.3947483003139496
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.3947483003139496,
+      "bounding_box": [
+        89.20748901367188,
+        0.44876861572265625,
+        159.18716430664062,
+        178.951171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.046788640320301056,
+        "median_depth": 0.037580572068691254,
+        "depth_std": 0.02692900411784649,
+        "depth_min": 0.012787919491529465,
+        "depth_max": 0.1639249324798584,
+        "mask_area": 6515
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "gripper",
+      "confidence": 0.3754819631576538,
+      "bounding_box": [
+        278.3790283203125,
+        106.6471176147461,
+        316.0074462890625,
+        171.41659545898438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15197406709194183,
+        "median_depth": 0.1118040680885315,
+        "depth_std": 0.14622193574905396,
+        "depth_min": 0.07284935563802719,
+        "depth_max": 0.8249677419662476,
+        "mask_area": 1378
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cable",
+      "confidence": 0.4105854034423828,
+      "bounding_box": [
+        153.4853057861328,
+        103.38133239746094,
+        253.69300842285156,
+        132.19708251953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.48786208033561707,
+        "median_depth": 0.515914261341095,
+        "depth_std": 0.09471361339092255,
+        "depth_min": 0.15569841861724854,
+        "depth_max": 0.6690354943275452,
+        "mask_area": 719
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.3532141447067261,
+      "bounding_box": [
+        212.54310607910156,
+        110.8453598022461,
+        261.5460510253906,
+        179.8902587890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6760411858558655,
+        "median_depth": 0.6732038259506226,
+        "depth_std": 0.035042744129896164,
+        "depth_min": 0.36257657408714294,
+        "depth_max": 0.7455533146858215,
+        "mask_area": 1182
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "door handle",
+      "confidence": 0.45616966485977173,
+      "bounding_box": [
+        255.2090606689453,
+        5.905009746551514,
+        270.8710632324219,
+        14.930839538574219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7282059192657471,
+        "median_depth": 0.726609468460083,
+        "depth_std": 0.012487891130149364,
+        "depth_min": 0.7023807168006897,
+        "depth_max": 0.7559780478477478,
+        "mask_area": 70
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cable. door. door handle. table. cup. container. chair. control box.",
+  "text_prompt": "robot arm. gripper. cable. door. door handle. table. cup. container. chair. control box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

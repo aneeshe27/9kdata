@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "sofa",
+    "window",
+    "robot gripper",
+    "table",
+    "toolbox"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, robot gripper, window, sofa, toolbox",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.15632465481758118,
+        "relative_position": "closest",
+        "confidence": 0.852299153804779
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.36871927976608276,
+        "relative_position": "middle",
+        "confidence": 0.6090166568756104
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot gripper",
+        "mean_depth": 0.38935062289237976,
+        "relative_position": "middle",
+        "confidence": 0.7809286713600159
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.44185352325439453,
+        "relative_position": "middle",
+        "confidence": 0.6012507081031799
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "toolbox",
+        "mean_depth": 0.4637454152107239,
+        "relative_position": "farthest",
+        "confidence": 0.8233392238616943
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "toolbox",
+        "mean_depth": 0.4637454152107239,
+        "relative_position": "farthest",
+        "confidence": 0.8233392238616943
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.44185352325439453,
+        "relative_position": "middle",
+        "confidence": 0.6012507081031799
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot gripper",
+        "mean_depth": 0.38935062289237976,
+        "relative_position": "middle",
+        "confidence": 0.7809286713600159
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "window",
+        "mean_depth": 0.36871927976608276,
+        "relative_position": "middle",
+        "confidence": 0.6090166568756104
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.15632465481758118,
+        "relative_position": "closest",
+        "confidence": 0.852299153804779
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "sofa",
+      "confidence": 0.852299153804779,
+      "bounding_box": [
+        -0.01973724365234375,
+        64.534423828125,
+        170.33517456054688,
+        180.00390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15632465481758118,
+        "median_depth": 0.16865205764770508,
+        "depth_std": 0.08085548132658005,
+        "depth_min": 0.0,
+        "depth_max": 0.7639268040657043,
+        "mask_area": 14242
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "window",
+      "confidence": 0.6090166568756104,
+      "bounding_box": [
+        203.2183380126953,
+        0.09220123291015625,
+        315.9781799316406,
+        79.16692352294922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.36871927976608276,
+        "median_depth": 0.3658325672149658,
+        "depth_std": 0.07893689721822739,
+        "depth_min": 0.18085132539272308,
+        "depth_max": 0.5283066034317017,
+        "mask_area": 6433
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot gripper",
+      "confidence": 0.7809286713600159,
+      "bounding_box": [
+        129.75645446777344,
+        0.04775238037109375,
+        198.98011779785156,
+        71.23441314697266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.38935062289237976,
+        "median_depth": 0.374353289604187,
+        "depth_std": 0.07458239048719406,
+        "depth_min": 0.2967742681503296,
+        "depth_max": 0.9500438570976257,
+        "mask_area": 1528
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.6012507081031799,
+      "bounding_box": [
+        58.094261169433594,
+        38.42118835449219,
+        213.0992431640625,
+        115.54725646972656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.44185352325439453,
+        "median_depth": 0.42614126205444336,
+        "depth_std": 0.10591298341751099,
+        "depth_min": 0.11843796074390411,
+        "depth_max": 0.9634289145469666,
+        "mask_area": 4925
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "toolbox",
+      "confidence": 0.8233392238616943,
+      "bounding_box": [
+        216.93780517578125,
+        108.91421508789062,
+        315.9310302734375,
+        179.8983154296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4637454152107239,
+        "median_depth": 0.43900567293167114,
+        "depth_std": 0.14860080182552338,
+        "depth_min": 0.21408236026763916,
+        "depth_max": 0.9985572695732117,
+        "mask_area": 5401
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "spray bottle. robot arm. robot gripper. table. book. sofa. window. radiator. ball. toolbox. screwdriver. paper. cable.",
+  "text_prompt": "spray bottle. robot arm. robot gripper. table. book. sofa. window. radiator. ball. toolbox. screwdriver. paper. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

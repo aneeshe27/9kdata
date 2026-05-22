@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "radiator",
+    "robot arm",
+    "backpack",
+    "chair",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, backpack, window, radiator, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "radiator",
+        "mean_depth": 0.016356172040104866,
+        "relative_position": "closest",
+        "confidence": 0.3726194202899933
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.018837669864296913,
+        "relative_position": "middle",
+        "confidence": 0.4375099241733551
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "backpack",
+        "mean_depth": 0.025066794827580452,
+        "relative_position": "middle",
+        "confidence": 0.40898922085762024
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.028957976028323174,
+        "relative_position": "middle",
+        "confidence": 0.4880427122116089
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.2358214259147644,
+        "relative_position": "farthest",
+        "confidence": 0.45001253485679626
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "window",
+        "mean_depth": 0.2358214259147644,
+        "relative_position": "farthest",
+        "confidence": 0.45001253485679626
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.028957976028323174,
+        "relative_position": "middle",
+        "confidence": 0.4880427122116089
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "backpack",
+        "mean_depth": 0.025066794827580452,
+        "relative_position": "middle",
+        "confidence": 0.40898922085762024
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.018837669864296913,
+        "relative_position": "middle",
+        "confidence": 0.4375099241733551
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "radiator",
+        "mean_depth": 0.016356172040104866,
+        "relative_position": "closest",
+        "confidence": 0.3726194202899933
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "radiator",
+      "confidence": 0.3726194202899933,
+      "bounding_box": [
+        61.328224182128906,
+        118.53096771240234,
+        123.11302947998047,
+        179.9534454345703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.016356172040104866,
+        "median_depth": 0.01635460928082466,
+        "depth_std": 0.002156823640689254,
+        "depth_min": 0.012076986022293568,
+        "depth_max": 0.02027636393904686,
+        "mask_area": 1812
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4375099241733551,
+      "bounding_box": [
+        232.37765502929688,
+        0.07080459594726562,
+        307.3434143066406,
+        124.35556030273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.018837669864296913,
+        "median_depth": 0.018346959725022316,
+        "depth_std": 0.0017146554309874773,
+        "depth_min": 0.015224953182041645,
+        "depth_max": 0.024543149396777153,
+        "mask_area": 4951
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "backpack",
+      "confidence": 0.40898922085762024,
+      "bounding_box": [
+        112.72062683105469,
+        58.214439392089844,
+        172.02464294433594,
+        122.23799896240234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.025066794827580452,
+        "median_depth": 0.024072550237178802,
+        "depth_std": 0.004139755852520466,
+        "depth_min": 0.01840328611433506,
+        "depth_max": 0.03555719181895256,
+        "mask_area": 2658
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.4880427122116089,
+      "bounding_box": [
+        156.4337158203125,
+        31.61758804321289,
+        233.4068603515625,
+        113.70254516601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.028957976028323174,
+        "median_depth": 0.030146965757012367,
+        "depth_std": 0.003869435517117381,
+        "depth_min": 0.021039610728621483,
+        "depth_max": 0.035811737179756165,
+        "mask_area": 3337
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "window",
+      "confidence": 0.45001253485679626,
+      "bounding_box": [
+        0.07979965209960938,
+        0.06528854370117188,
+        96.27581787109375,
+        101.26878356933594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2358214259147644,
+        "median_depth": 0.08545718342065811,
+        "depth_std": 0.22289472818374634,
+        "depth_min": 0.026311686262488365,
+        "depth_max": 0.9572580456733704,
+        "mask_area": 1452
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. table. chair. backpack. window. windowsill. radiator. cloth. power strip. cables. metal bar. box.",
+  "text_prompt": "robot arm. table. chair. backpack. window. windowsill. radiator. cloth. power strip. cables. metal bar. box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

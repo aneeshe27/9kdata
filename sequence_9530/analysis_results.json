@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "bin",
+    "straw",
+    "plastic sheet",
+    "cup"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm gripper, plastic sheet, cup, straw, bin",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.013631672598421574,
+        "relative_position": "closest",
+        "confidence": 0.3770400583744049
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "bin",
+        "mean_depth": 0.02502470649778843,
+        "relative_position": "middle",
+        "confidence": 0.38760805130004883
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "straw",
+        "mean_depth": 0.27403950691223145,
+        "relative_position": "middle",
+        "confidence": 0.6020371317863464
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "plastic sheet",
+        "mean_depth": 0.5522249937057495,
+        "relative_position": "middle",
+        "confidence": 0.4178886413574219
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.9037410020828247,
+        "relative_position": "farthest",
+        "confidence": 0.5869038105010986
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.9037410020828247,
+        "relative_position": "farthest",
+        "confidence": 0.5869038105010986
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "plastic sheet",
+        "mean_depth": 0.5522249937057495,
+        "relative_position": "middle",
+        "confidence": 0.4178886413574219
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "straw",
+        "mean_depth": 0.27403950691223145,
+        "relative_position": "middle",
+        "confidence": 0.6020371317863464
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "bin",
+        "mean_depth": 0.02502470649778843,
+        "relative_position": "middle",
+        "confidence": 0.38760805130004883
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.013631672598421574,
+        "relative_position": "closest",
+        "confidence": 0.3770400583744049
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.3770400583744049,
+      "bounding_box": [
+        169.2471160888672,
+        0.008464813232421875,
+        244.25672912597656,
+        55.08525085449219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.013631672598421574,
+        "median_depth": 0.0014248369261622429,
+        "depth_std": 0.04771672561764717,
+        "depth_min": 0.0,
+        "depth_max": 0.46020087599754333,
+        "mask_area": 1910
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "bin",
+      "confidence": 0.38760805130004883,
+      "bounding_box": [
+        307.7201843261719,
+        145.46417236328125,
+        316.0003967285156,
+        179.91754150390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02502470649778843,
+        "median_depth": 0.024936970323324203,
+        "depth_std": 0.003746282309293747,
+        "depth_min": 0.014678603038191795,
+        "depth_max": 0.03320614993572235,
+        "mask_area": 152
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "straw",
+      "confidence": 0.6020371317863464,
+      "bounding_box": [
+        64.01053619384766,
+        33.901397705078125,
+        84.18492889404297,
+        75.75166320800781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27403950691223145,
+        "median_depth": 0.2736057639122009,
+        "depth_std": 0.008267024531960487,
+        "depth_min": 0.25721895694732666,
+        "depth_max": 0.28964269161224365,
+        "mask_area": 178
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plastic sheet",
+      "confidence": 0.4178886413574219,
+      "bounding_box": [
+        147.14024353027344,
+        112.58316040039062,
+        282.40185546875,
+        179.95928955078125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5522249937057495,
+        "median_depth": 0.5474271774291992,
+        "depth_std": 0.05824911594390869,
+        "depth_min": 0.07545612007379532,
+        "depth_max": 0.6946167349815369,
+        "mask_area": 5951
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.5869038105010986,
+      "bounding_box": [
+        247.4657440185547,
+        69.35871887207031,
+        264.2782897949219,
+        88.77804565429688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9037410020828247,
+        "median_depth": 0.9391922354698181,
+        "depth_std": 0.09925615042448044,
+        "depth_min": 0.28750818967819214,
+        "depth_max": 0.9539371728897095,
+        "mask_area": 200
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "shelf. bin. packet. straw. stirrer. robot arm. gripper. cup. coffee machine. paper towel roll. plastic sheet. table.",
+  "text_prompt": "shelf. bin. packet. straw. stirrer. robot arm. gripper. cup. coffee machine. paper towel roll. plastic sheet. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

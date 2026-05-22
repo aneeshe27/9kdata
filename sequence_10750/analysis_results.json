@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm robot gripper",
+    "bowl",
+    "whiteboard bulletin board",
+    "clamp",
+    "cloth"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: whiteboard bulletin board, robot arm robot gripper, cloth, bowl, clamp",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.04519469290971756,
+        "relative_position": "closest",
+        "confidence": 0.4676133692264557
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.1977216750383377,
+        "relative_position": "middle",
+        "confidence": 0.593772828578949
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "whiteboard bulletin board",
+        "mean_depth": 0.20302972197532654,
+        "relative_position": "middle",
+        "confidence": 0.6421301364898682
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "clamp",
+        "mean_depth": 0.20499703288078308,
+        "relative_position": "middle",
+        "confidence": 0.3574545085430145
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cloth",
+        "mean_depth": 0.22775334119796753,
+        "relative_position": "farthest",
+        "confidence": 0.584563672542572
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cloth",
+        "mean_depth": 0.22775334119796753,
+        "relative_position": "farthest",
+        "confidence": 0.584563672542572
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "clamp",
+        "mean_depth": 0.20499703288078308,
+        "relative_position": "middle",
+        "confidence": 0.3574545085430145
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "whiteboard bulletin board",
+        "mean_depth": 0.20302972197532654,
+        "relative_position": "middle",
+        "confidence": 0.6421301364898682
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.1977216750383377,
+        "relative_position": "middle",
+        "confidence": 0.593772828578949
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.04519469290971756,
+        "relative_position": "closest",
+        "confidence": 0.4676133692264557
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm robot gripper",
+      "confidence": 0.4676133692264557,
+      "bounding_box": [
+        0.12765884399414062,
+        0.27553558349609375,
+        81.5523681640625,
+        132.27108764648438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04519469290971756,
+        "median_depth": 0.021429987624287605,
+        "depth_std": 0.05552143231034279,
+        "depth_min": 1.3834998753736727e-05,
+        "depth_max": 0.5738657712936401,
+        "mask_area": 5559
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "bowl",
+      "confidence": 0.593772828578949,
+      "bounding_box": [
+        157.8292999267578,
+        110.09183502197266,
+        191.8293914794922,
+        142.2210693359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1977216750383377,
+        "median_depth": 0.19650064408779144,
+        "depth_std": 0.007527152542024851,
+        "depth_min": 0.18813100457191467,
+        "depth_max": 0.22740158438682556,
+        "mask_area": 785
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "whiteboard bulletin board",
+      "confidence": 0.6421301364898682,
+      "bounding_box": [
+        219.69448852539062,
+        0.12543106079101562,
+        315.6438903808594,
+        111.57188415527344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20302972197532654,
+        "median_depth": 0.19493746757507324,
+        "depth_std": 0.035008084028959274,
+        "depth_min": 0.1520693451166153,
+        "depth_max": 0.3046247065067291,
+        "mask_area": 6970
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "clamp",
+      "confidence": 0.3574545085430145,
+      "bounding_box": [
+        90.70587158203125,
+        113.0328369140625,
+        120.99337768554688,
+        132.65414428710938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20499703288078308,
+        "median_depth": 0.19944359362125397,
+        "depth_std": 0.014364062808454037,
+        "depth_min": 0.18690595030784607,
+        "depth_max": 0.2413957118988037,
+        "mask_area": 270
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cloth",
+      "confidence": 0.584563672542572,
+      "bounding_box": [
+        191.7852783203125,
+        74.53499603271484,
+        281.74432373046875,
+        147.86639404296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22775334119796753,
+        "median_depth": 0.22656014561653137,
+        "depth_std": 0.029854733496904373,
+        "depth_min": 0.03432498872280121,
+        "depth_max": 0.2955097258090973,
+        "mask_area": 3438
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. table. workbench. clamp. bowl. container. cloth. chair. whiteboard. bulletin board. cable.",
+  "text_prompt": "robot arm. robot gripper. table. workbench. clamp. bowl. container. cloth. chair. whiteboard. bulletin board. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

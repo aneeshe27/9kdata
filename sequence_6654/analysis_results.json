@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "dish rack",
+    "plate",
+    "container",
+    "table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: plate, robot arm, container, table, dish rack",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.040040478110313416,
+        "relative_position": "closest",
+        "confidence": 0.7695565223693848
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "dish rack",
+        "mean_depth": 0.0439990796148777,
+        "relative_position": "middle",
+        "confidence": 0.45067599415779114
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "plate",
+        "mean_depth": 0.10378170013427734,
+        "relative_position": "middle",
+        "confidence": 0.4173833131790161
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.1288958191871643,
+        "relative_position": "middle",
+        "confidence": 0.4838378131389618
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.4646978974342346,
+        "relative_position": "farthest",
+        "confidence": 0.48481160402297974
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.4646978974342346,
+        "relative_position": "farthest",
+        "confidence": 0.48481160402297974
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.1288958191871643,
+        "relative_position": "middle",
+        "confidence": 0.4838378131389618
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "plate",
+        "mean_depth": 0.10378170013427734,
+        "relative_position": "middle",
+        "confidence": 0.4173833131790161
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "dish rack",
+        "mean_depth": 0.0439990796148777,
+        "relative_position": "middle",
+        "confidence": 0.45067599415779114
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.040040478110313416,
+        "relative_position": "closest",
+        "confidence": 0.7695565223693848
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.7695565223693848,
+      "bounding_box": [
+        0.00418853759765625,
+        23.572845458984375,
+        87.68036651611328,
+        158.038330078125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.040040478110313416,
+        "median_depth": 0.03921440988779068,
+        "depth_std": 0.03498978912830353,
+        "depth_min": 0.01389977615326643,
+        "depth_max": 0.4627273678779602,
+        "mask_area": 6122
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "dish rack",
+      "confidence": 0.45067599415779114,
+      "bounding_box": [
+        142.07041931152344,
+        84.92855834960938,
+        246.7288055419922,
+        165.8902130126953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0439990796148777,
+        "median_depth": 0.0419248566031456,
+        "depth_std": 0.018115665763616562,
+        "depth_min": 0.016375266015529633,
+        "depth_max": 0.10486632585525513,
+        "mask_area": 3994
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "plate",
+      "confidence": 0.4173833131790161,
+      "bounding_box": [
+        266.9045715332031,
+        101.62244415283203,
+        315.9930725097656,
+        151.48538208007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10378170013427734,
+        "median_depth": 0.09657503664493561,
+        "depth_std": 0.03772084787487984,
+        "depth_min": 0.06495653837919235,
+        "depth_max": 0.32273179292678833,
+        "mask_area": 1157
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "container",
+      "confidence": 0.4838378131389618,
+      "bounding_box": [
+        131.18984985351562,
+        65.61337280273438,
+        205.2547607421875,
+        111.67416381835938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1288958191871643,
+        "median_depth": 0.11399409174919128,
+        "depth_std": 0.06897269934415817,
+        "depth_min": 0.06818040460348129,
+        "depth_max": 0.5092493891716003,
+        "mask_area": 1225
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.48481160402297974,
+      "bounding_box": [
+        53.15928649902344,
+        46.248291015625,
+        181.01361083984375,
+        81.59709930419922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4646978974342346,
+        "median_depth": 0.46248698234558105,
+        "depth_std": 0.053715527057647705,
+        "depth_min": 0.32093605399131775,
+        "depth_max": 0.6429745554924011,
+        "mask_area": 1366
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. table. dish rack. plate. bowl. tongs. spatula. monitor. keyboard. mouse. cable. container. tray.",
+  "text_prompt": "robot arm. table. dish rack. plate. bowl. tongs. spatula. monitor. keyboard. mouse. cable. container. tray.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

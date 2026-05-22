@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "mug",
+    "chair",
+    "bag",
+    "monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bag, mug, robot arm gripper, monitor, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.17724676430225372,
+        "relative_position": "closest",
+        "confidence": 0.4256828725337982
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "mug",
+        "mean_depth": 0.48503631353378296,
+        "relative_position": "middle",
+        "confidence": 0.7609050273895264
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.490943044424057,
+        "relative_position": "middle",
+        "confidence": 0.4298356771469116
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "bag",
+        "mean_depth": 0.570494532585144,
+        "relative_position": "middle",
+        "confidence": 0.3515170216560364
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.6307669281959534,
+        "relative_position": "farthest",
+        "confidence": 0.45697760581970215
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.6307669281959534,
+        "relative_position": "farthest",
+        "confidence": 0.45697760581970215
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "bag",
+        "mean_depth": 0.570494532585144,
+        "relative_position": "middle",
+        "confidence": 0.3515170216560364
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.490943044424057,
+        "relative_position": "middle",
+        "confidence": 0.4298356771469116
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "mug",
+        "mean_depth": 0.48503631353378296,
+        "relative_position": "middle",
+        "confidence": 0.7609050273895264
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.17724676430225372,
+        "relative_position": "closest",
+        "confidence": 0.4256828725337982
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm gripper",
+      "confidence": 0.4256828725337982,
+      "bounding_box": [
+        94.62102508544922,
+        127.37274169921875,
+        132.27069091796875,
+        162.07003784179688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17724676430225372,
+        "median_depth": 0.11842960864305496,
+        "depth_std": 0.17572207748889923,
+        "depth_min": 0.06775570660829544,
+        "depth_max": 0.8568789958953857,
+        "mask_area": 411
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "mug",
+      "confidence": 0.7609050273895264,
+      "bounding_box": [
+        147.3062286376953,
+        83.2013168334961,
+        169.6335906982422,
+        103.96082305908203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.48503631353378296,
+        "median_depth": 0.45465123653411865,
+        "depth_std": 0.07306866347789764,
+        "depth_min": 0.43502941727638245,
+        "depth_max": 0.8866492509841919,
+        "mask_area": 360
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.4298356771469116,
+      "bounding_box": [
+        250.048828125,
+        87.29495239257812,
+        315.9884033203125,
+        180.03118896484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.490943044424057,
+        "median_depth": 0.4745456874370575,
+        "depth_std": 0.03795348480343819,
+        "depth_min": 0.4504663646221161,
+        "depth_max": 0.6306750774383545,
+        "mask_area": 1793
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "bag",
+      "confidence": 0.3515170216560364,
+      "bounding_box": [
+        181.1631622314453,
+        39.357872009277344,
+        237.3473663330078,
+        91.62528228759766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.570494532585144,
+        "median_depth": 0.554273247718811,
+        "depth_std": 0.06543213129043579,
+        "depth_min": 0.5114202499389648,
+        "depth_max": 0.9939391016960144,
+        "mask_area": 2088
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "monitor",
+      "confidence": 0.45697760581970215,
+      "bounding_box": [
+        33.46080017089844,
+        -0.08352279663085938,
+        175.087646484375,
+        67.93031311035156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6307669281959534,
+        "median_depth": 0.6096699833869934,
+        "depth_std": 0.12002166360616684,
+        "depth_min": 0.3747996389865875,
+        "depth_max": 0.9692997932434082,
+        "mask_area": 6475
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "mug. bag. robot arm. gripper. table. chair. whiteboard. monitor.",
+  "text_prompt": "mug. bag. robot arm. gripper. table. chair. whiteboard. monitor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

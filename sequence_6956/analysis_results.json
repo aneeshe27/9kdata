@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "gripper clamp",
+    "device",
+    "bowl",
+    "toy blocks"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: toy blocks, robot arm, gripper clamp, device, bowl",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.22718895971775055,
+        "relative_position": "closest",
+        "confidence": 0.39585354924201965
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "gripper clamp",
+        "mean_depth": 0.23057785630226135,
+        "relative_position": "middle",
+        "confidence": 0.3787265419960022
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "device",
+        "mean_depth": 0.41104403138160706,
+        "relative_position": "middle",
+        "confidence": 0.379843145608902
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.6647658944129944,
+        "relative_position": "middle",
+        "confidence": 0.4818532466888428
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "toy blocks",
+        "mean_depth": 0.7164512276649475,
+        "relative_position": "farthest",
+        "confidence": 0.4886147379875183
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "toy blocks",
+        "mean_depth": 0.7164512276649475,
+        "relative_position": "farthest",
+        "confidence": 0.4886147379875183
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bowl",
+        "mean_depth": 0.6647658944129944,
+        "relative_position": "middle",
+        "confidence": 0.4818532466888428
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "device",
+        "mean_depth": 0.41104403138160706,
+        "relative_position": "middle",
+        "confidence": 0.379843145608902
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "gripper clamp",
+        "mean_depth": 0.23057785630226135,
+        "relative_position": "middle",
+        "confidence": 0.3787265419960022
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.22718895971775055,
+        "relative_position": "closest",
+        "confidence": 0.39585354924201965
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.39585354924201965,
+      "bounding_box": [
+        0.3104248046875,
+        0.10454940795898438,
+        153.5023193359375,
+        104.41989135742188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22718895971775055,
+        "median_depth": 0.28505387902259827,
+        "depth_std": 0.1720726639032364,
+        "depth_min": 0.007090727332979441,
+        "depth_max": 0.8431751728057861,
+        "mask_area": 3805
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "gripper clamp",
+      "confidence": 0.3787265419960022,
+      "bounding_box": [
+        224.38758850097656,
+        113.27902221679688,
+        282.3589172363281,
+        159.34103393554688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23057785630226135,
+        "median_depth": 0.20493662357330322,
+        "depth_std": 0.08014008402824402,
+        "depth_min": 0.18864302337169647,
+        "depth_max": 0.64284348487854,
+        "mask_area": 1140
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "device",
+      "confidence": 0.379843145608902,
+      "bounding_box": [
+        27.133136749267578,
+        109.15938568115234,
+        140.60870361328125,
+        179.9449462890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.41104403138160706,
+        "median_depth": 0.40014028549194336,
+        "depth_std": 0.05439211055636406,
+        "depth_min": 0.32347485423088074,
+        "depth_max": 0.5795467495918274,
+        "mask_area": 3309
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bowl",
+      "confidence": 0.4818532466888428,
+      "bounding_box": [
+        154.02174377441406,
+        104.73656463623047,
+        180.90147399902344,
+        129.133056640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6647658944129944,
+        "median_depth": 0.6656433939933777,
+        "depth_std": 0.017962882295250893,
+        "depth_min": 0.6268464922904968,
+        "depth_max": 0.6983902454376221,
+        "mask_area": 530
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "toy blocks",
+      "confidence": 0.4886147379875183,
+      "bounding_box": [
+        190.94189453125,
+        80.92872619628906,
+        223.15646362304688,
+        112.48918151855469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7164512276649475,
+        "median_depth": 0.7133018374443054,
+        "depth_std": 0.029292361810803413,
+        "depth_min": 0.6689161062240601,
+        "depth_max": 0.7875512838363647,
+        "mask_area": 606
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. bowl. toy blocks. table. clamp. device.",
+  "text_prompt": "robot arm. gripper. bowl. toy blocks. table. clamp. device.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

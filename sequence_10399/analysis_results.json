@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "container cup",
+    "cabinet",
+    "container cup",
+    "sink",
+    "faucet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: container cup, sink, container cup, cabinet, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "container cup",
+        "mean_depth": 0.05570223927497864,
+        "relative_position": "closest",
+        "confidence": 0.3917379677295685
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.11861315369606018,
+        "relative_position": "middle",
+        "confidence": 0.4984937012195587
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "container cup",
+        "mean_depth": 0.1413932591676712,
+        "relative_position": "middle",
+        "confidence": 0.5209659337997437
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.17015786468982697,
+        "relative_position": "middle",
+        "confidence": 0.7676069140434265
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.2062172144651413,
+        "relative_position": "farthest",
+        "confidence": 0.6009457111358643
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.2062172144651413,
+        "relative_position": "farthest",
+        "confidence": 0.6009457111358643
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.17015786468982697,
+        "relative_position": "middle",
+        "confidence": 0.7676069140434265
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "container cup",
+        "mean_depth": 0.1413932591676712,
+        "relative_position": "middle",
+        "confidence": 0.5209659337997437
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.11861315369606018,
+        "relative_position": "middle",
+        "confidence": 0.4984937012195587
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "container cup",
+        "mean_depth": 0.05570223927497864,
+        "relative_position": "closest",
+        "confidence": 0.3917379677295685
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "container cup",
+      "confidence": 0.3917379677295685,
+      "bounding_box": [
+        133.34678649902344,
+        126.87162017822266,
+        154.5926971435547,
+        147.7202911376953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05570223927497864,
+        "median_depth": 0.048849932849407196,
+        "depth_std": 0.014197096228599548,
+        "depth_min": 0.04318133369088173,
+        "depth_max": 0.09715685248374939,
+        "mask_area": 340
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.4984937012195587,
+      "bounding_box": [
+        72.73951721191406,
+        0.10099411010742188,
+        168.31414794921875,
+        76.63552856445312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11861315369606018,
+        "median_depth": 0.1116875559091568,
+        "depth_std": 0.03195460885763168,
+        "depth_min": 0.07557393610477448,
+        "depth_max": 0.26227521896362305,
+        "mask_area": 5900
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "container cup",
+      "confidence": 0.5209659337997437,
+      "bounding_box": [
+        154.75135803222656,
+        108.24083709716797,
+        168.54237365722656,
+        125.63671112060547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1413932591676712,
+        "median_depth": 0.11812041699886322,
+        "depth_std": 0.042571477591991425,
+        "depth_min": 0.09789254516363144,
+        "depth_max": 0.22438094019889832,
+        "mask_area": 185
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.7676069140434265,
+      "bounding_box": [
+        175.5498809814453,
+        115.3250732421875,
+        224.15904235839844,
+        132.96661376953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17015786468982697,
+        "median_depth": 0.16671103239059448,
+        "depth_std": 0.01439055148512125,
+        "depth_min": 0.14420747756958008,
+        "depth_max": 0.21055836975574493,
+        "mask_area": 470
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.6009457111358643,
+      "bounding_box": [
+        204.1651611328125,
+        109.50654602050781,
+        215.91583251953125,
+        119.88285827636719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2062172144651413,
+        "median_depth": 0.20676115155220032,
+        "depth_std": 0.003772685071453452,
+        "depth_min": 0.19774934649467468,
+        "depth_max": 0.21417327225208282,
+        "mask_area": 76
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "container. cup. robot arm. gripper. countertop. sink. faucet. cabinet. dish rack.",
+  "text_prompt": "container. cup. robot arm. gripper. countertop. sink. faucet. cabinet. dish rack.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table sofa",
+    "table",
+    "laptop",
+    "chair",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table sofa, chair, laptop, chair, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "table sofa",
+        "mean_depth": 0.04104088991880417,
+        "relative_position": "closest",
+        "confidence": 0.5471991896629333
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.04276527091860771,
+        "relative_position": "middle",
+        "confidence": 0.5348051190376282
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "laptop",
+        "mean_depth": 0.24317795038223267,
+        "relative_position": "middle",
+        "confidence": 0.6013486981391907
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.26750263571739197,
+        "relative_position": "middle",
+        "confidence": 0.4735817313194275
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.3628651797771454,
+        "relative_position": "farthest",
+        "confidence": 0.431664377450943
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.3628651797771454,
+        "relative_position": "farthest",
+        "confidence": 0.431664377450943
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.26750263571739197,
+        "relative_position": "middle",
+        "confidence": 0.4735817313194275
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "laptop",
+        "mean_depth": 0.24317795038223267,
+        "relative_position": "middle",
+        "confidence": 0.6013486981391907
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.04276527091860771,
+        "relative_position": "middle",
+        "confidence": 0.5348051190376282
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "table sofa",
+        "mean_depth": 0.04104088991880417,
+        "relative_position": "closest",
+        "confidence": 0.5471991896629333
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "table sofa",
+      "confidence": 0.5471991896629333,
+      "bounding_box": [
+        0.0691070556640625,
+        98.77018737792969,
+        191.83290100097656,
+        179.9486846923828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04104088991880417,
+        "median_depth": 0.03349177539348602,
+        "depth_std": 0.026269083842635155,
+        "depth_min": 0.01729421131312847,
+        "depth_max": 0.41605132818222046,
+        "mask_area": 8203
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.5348051190376282,
+      "bounding_box": [
+        194.80361938476562,
+        111.45817565917969,
+        315.90533447265625,
+        179.97227478027344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04276527091860771,
+        "median_depth": 0.03585539758205414,
+        "depth_std": 0.02992510236799717,
+        "depth_min": 0.02171650342643261,
+        "depth_max": 0.3717144727706909,
+        "mask_area": 3903
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "laptop",
+      "confidence": 0.6013486981391907,
+      "bounding_box": [
+        295.88763427734375,
+        68.28325653076172,
+        315.98187255859375,
+        114.4980239868164
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24317795038223267,
+        "median_depth": 0.23924531042575836,
+        "depth_std": 0.024678168818354607,
+        "depth_min": 0.19791491329669952,
+        "depth_max": 0.3216785788536072,
+        "mask_area": 450
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.4735817313194275,
+      "bounding_box": [
+        62.55827331542969,
+        82.28141784667969,
+        101.03564453125,
+        101.62930297851562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.26750263571739197,
+        "median_depth": 0.2451549768447876,
+        "depth_std": 0.06038275361061096,
+        "depth_min": 0.11028064042329788,
+        "depth_max": 0.39446932077407837,
+        "mask_area": 591
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.431664377450943,
+      "bounding_box": [
+        113.63426208496094,
+        84.04334259033203,
+        164.34742736816406,
+        105.96793365478516
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3628651797771454,
+        "median_depth": 0.31452858448028564,
+        "depth_std": 0.16420067846775055,
+        "depth_min": 0.10155264288187027,
+        "depth_max": 0.9592574834823608,
+        "mask_area": 750
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. camera. table. chair. sofa. laptop. box. cloth. paper. cable. screwdriver.",
+  "text_prompt": "robot arm. gripper. camera. table. chair. sofa. laptop. box. cloth. paper. cable. screwdriver.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

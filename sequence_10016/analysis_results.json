@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "drawer",
+    "dish rack",
+    "countertop",
+    "cabinet",
+    "faucet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: countertop, cabinet, drawer, dish rack, faucet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "drawer",
+        "mean_depth": 0.4069484770298004,
+        "relative_position": "closest",
+        "confidence": 0.4602803885936737
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "dish rack",
+        "mean_depth": 0.4564043879508972,
+        "relative_position": "middle",
+        "confidence": 0.630011796951294
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.5480353832244873,
+        "relative_position": "middle",
+        "confidence": 0.5048924088478088
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.6805055737495422,
+        "relative_position": "middle",
+        "confidence": 0.45262545347213745
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.9088170528411865,
+        "relative_position": "farthest",
+        "confidence": 0.8490360975265503
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.9088170528411865,
+        "relative_position": "farthest",
+        "confidence": 0.8490360975265503
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.6805055737495422,
+        "relative_position": "middle",
+        "confidence": 0.45262545347213745
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "countertop",
+        "mean_depth": 0.5480353832244873,
+        "relative_position": "middle",
+        "confidence": 0.5048924088478088
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "dish rack",
+        "mean_depth": 0.4564043879508972,
+        "relative_position": "middle",
+        "confidence": 0.630011796951294
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "drawer",
+        "mean_depth": 0.4069484770298004,
+        "relative_position": "closest",
+        "confidence": 0.4602803885936737
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "drawer",
+      "confidence": 0.4602803885936737,
+      "bounding_box": [
+        0.227264404296875,
+        114.94891357421875,
+        73.59811401367188,
+        151.25100708007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4069484770298004,
+        "median_depth": 0.40416330099105835,
+        "depth_std": 0.021387936547398567,
+        "depth_min": 0.36998477578163147,
+        "depth_max": 0.4539302587509155,
+        "mask_area": 1768
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "dish rack",
+      "confidence": 0.630011796951294,
+      "bounding_box": [
+        57.08458709716797,
+        112.36212158203125,
+        202.016845703125,
+        179.95132446289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4564043879508972,
+        "median_depth": 0.4905414283275604,
+        "depth_std": 0.17536132037639618,
+        "depth_min": 0.05096689984202385,
+        "depth_max": 0.6982565522193909,
+        "mask_area": 6709
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "countertop",
+      "confidence": 0.5048924088478088,
+      "bounding_box": [
+        0.18194580078125,
+        78.88046264648438,
+        268.0439147949219,
+        118.2694091796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5480353832244873,
+        "median_depth": 0.524929404258728,
+        "depth_std": 0.13149945437908173,
+        "depth_min": 0.07625294476747513,
+        "depth_max": 0.893050491809845,
+        "mask_area": 3340
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.45262545347213745,
+      "bounding_box": [
+        15.425666809082031,
+        0.040653228759765625,
+        163.695556640625,
+        38.21159744262695
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6805055737495422,
+        "median_depth": 0.6781262159347534,
+        "depth_std": 0.04309283569455147,
+        "depth_min": 0.4413726329803467,
+        "depth_max": 0.7736112475395203,
+        "mask_area": 4242
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.8490360975265503,
+      "bounding_box": [
+        188.10792541503906,
+        62.65119171142578,
+        202.40367126464844,
+        83.45354461669922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9088170528411865,
+        "median_depth": 0.9063411951065063,
+        "depth_std": 0.026191391050815582,
+        "depth_min": 0.8400431871414185,
+        "depth_max": 0.9837599396705627,
+        "mask_area": 128
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. plate. dishwasher. dish rack. countertop. sink. faucet. cabinet. drawer.",
+  "text_prompt": "robot arm. gripper. plate. dishwasher. dish rack. countertop. sink. faucet. cabinet. drawer.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

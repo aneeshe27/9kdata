@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "faucet",
+    "strainer",
+    "strainer",
+    "soap dispenser",
+    "brush"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: brush, faucet, soap dispenser, strainer, strainer",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.193816140294075,
+        "relative_position": "closest",
+        "confidence": 0.7772845029830933
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "strainer",
+        "mean_depth": 0.2664319574832916,
+        "relative_position": "middle",
+        "confidence": 0.46212196350097656
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "strainer",
+        "mean_depth": 0.5762162208557129,
+        "relative_position": "middle",
+        "confidence": 0.36212074756622314
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "soap dispenser",
+        "mean_depth": 0.6295409202575684,
+        "relative_position": "middle",
+        "confidence": 0.9417967200279236
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "brush",
+        "mean_depth": 0.665505051612854,
+        "relative_position": "farthest",
+        "confidence": 0.44540566205978394
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "brush",
+        "mean_depth": 0.665505051612854,
+        "relative_position": "farthest",
+        "confidence": 0.44540566205978394
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "soap dispenser",
+        "mean_depth": 0.6295409202575684,
+        "relative_position": "middle",
+        "confidence": 0.9417967200279236
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "strainer",
+        "mean_depth": 0.5762162208557129,
+        "relative_position": "middle",
+        "confidence": 0.36212074756622314
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "strainer",
+        "mean_depth": 0.2664319574832916,
+        "relative_position": "middle",
+        "confidence": 0.46212196350097656
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.193816140294075,
+        "relative_position": "closest",
+        "confidence": 0.7772845029830933
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.7772845029830933,
+      "bounding_box": [
+        183.8527374267578,
+        3.131298065185547,
+        250.3677520751953,
+        71.61428833007812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.193816140294075,
+        "median_depth": 0.12865251302719116,
+        "depth_std": 0.2184092253446579,
+        "depth_min": 0.0,
+        "depth_max": 0.9410701394081116,
+        "mask_area": 1754
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "strainer",
+      "confidence": 0.46212196350097656,
+      "bounding_box": [
+        145.12869262695312,
+        119.24826049804688,
+        193.73605346679688,
+        163.17611694335938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2664319574832916,
+        "median_depth": 0.26175451278686523,
+        "depth_std": 0.057877685874700546,
+        "depth_min": 0.16372711956501007,
+        "depth_max": 0.3964868485927582,
+        "mask_area": 1588
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "strainer",
+      "confidence": 0.36212074756622314,
+      "bounding_box": [
+        145.10015869140625,
+        61.554725646972656,
+        182.65707397460938,
+        95.85980987548828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5762162208557129,
+        "median_depth": 0.569006085395813,
+        "depth_std": 0.03748450055718422,
+        "depth_min": 0.5234047174453735,
+        "depth_max": 0.760908305644989,
+        "mask_area": 880
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "soap dispenser",
+      "confidence": 0.9417967200279236,
+      "bounding_box": [
+        82.26797485351562,
+        22.348600387573242,
+        113.59220886230469,
+        77.15092468261719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6295409202575684,
+        "median_depth": 0.6156660914421082,
+        "depth_std": 0.04899758845567703,
+        "depth_min": 0.5858184695243835,
+        "depth_max": 0.8790419697761536,
+        "mask_area": 809
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "brush",
+      "confidence": 0.44540566205978394,
+      "bounding_box": [
+        28.504150390625,
+        50.504791259765625,
+        61.028297424316406,
+        66.35260772705078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.665505051612854,
+        "median_depth": 0.65590500831604,
+        "depth_std": 0.07211170345544815,
+        "depth_min": 0.5605603456497192,
+        "depth_max": 0.8802893757820129,
+        "mask_area": 331
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "sink. faucet. water. soap dispenser. sponge. brush. dish rack. cup. container. strainer. drain. dishcloth. countertop.",
+  "text_prompt": "sink. faucet. water. soap dispenser. sponge. brush. dish rack. cup. container. strainer. drain. dishcloth. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

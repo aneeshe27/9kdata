@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cup",
+    "chair",
+    "chair",
+    "robot arm",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, cup, chair, chair, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.1287759393453598,
+        "relative_position": "closest",
+        "confidence": 0.8419727087020874
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.5022208094596863,
+        "relative_position": "middle",
+        "confidence": 0.3623257577419281
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.6290301084518433,
+        "relative_position": "middle",
+        "confidence": 0.39673832058906555
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.6443572640419006,
+        "relative_position": "middle",
+        "confidence": 0.3537800908088684
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.6457081437110901,
+        "relative_position": "farthest",
+        "confidence": 0.42099329829216003
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.6457081437110901,
+        "relative_position": "farthest",
+        "confidence": 0.42099329829216003
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.6443572640419006,
+        "relative_position": "middle",
+        "confidence": 0.3537800908088684
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.6290301084518433,
+        "relative_position": "middle",
+        "confidence": 0.39673832058906555
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.5022208094596863,
+        "relative_position": "middle",
+        "confidence": 0.3623257577419281
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.1287759393453598,
+        "relative_position": "closest",
+        "confidence": 0.8419727087020874
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.8419727087020874,
+      "bounding_box": [
+        159.32521057128906,
+        68.37406921386719,
+        185.68312072753906,
+        99.44044494628906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1287759393453598,
+        "median_depth": 0.12614284455776215,
+        "depth_std": 0.011758644133806229,
+        "depth_min": 0.1138940304517746,
+        "depth_max": 0.19921690225601196,
+        "mask_area": 498
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.3623257577419281,
+      "bounding_box": [
+        -0.015870094299316406,
+        88.86015319824219,
+        14.684260368347168,
+        138.646728515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5022208094596863,
+        "median_depth": 0.4993858337402344,
+        "depth_std": 0.04971309378743172,
+        "depth_min": 0.42248374223709106,
+        "depth_max": 0.6469082832336426,
+        "mask_area": 508
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.39673832058906555,
+      "bounding_box": [
+        16.378887176513672,
+        95.01286315917969,
+        57.82338333129883,
+        129.2261199951172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6290301084518433,
+        "median_depth": 0.6278042793273926,
+        "depth_std": 0.05062546953558922,
+        "depth_min": 0.516757071018219,
+        "depth_max": 0.7279557585716248,
+        "mask_area": 892
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3537800908088684,
+      "bounding_box": [
+        94.81230163574219,
+        -0.0096893310546875,
+        165.28648376464844,
+        81.09901428222656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6443572640419006,
+        "median_depth": 0.6623711585998535,
+        "depth_std": 0.08006792515516281,
+        "depth_min": 0.5125436186790466,
+        "depth_max": 0.860393226146698,
+        "mask_area": 2101
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.42099329829216003,
+      "bounding_box": [
+        38.212440490722656,
+        5.328390121459961,
+        72.14039611816406,
+        37.38780212402344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6457081437110901,
+        "median_depth": 0.6453741788864136,
+        "depth_std": 0.022861788049340248,
+        "depth_min": 0.6015155911445618,
+        "depth_max": 0.7066636085510254,
+        "mask_area": 445
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. robot arm. gripper. table. tripod. chair.",
+  "text_prompt": "cup. robot arm. gripper. table. tripod. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

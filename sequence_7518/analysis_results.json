@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot gripper",
+    "table",
+    "cable",
+    "cardboard box",
+    "robot arm"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, robot arm, robot gripper, cable, cardboard box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot gripper",
+        "mean_depth": 0.06106875091791153,
+        "relative_position": "closest",
+        "confidence": 0.5018836855888367
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.10351920872926712,
+        "relative_position": "middle",
+        "confidence": 0.6138392090797424
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.10369069874286652,
+        "relative_position": "middle",
+        "confidence": 0.3820548951625824
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cardboard box",
+        "mean_depth": 0.20618349313735962,
+        "relative_position": "middle",
+        "confidence": 0.4082834720611572
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.38824114203453064,
+        "relative_position": "farthest",
+        "confidence": 0.36309340596199036
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.38824114203453064,
+        "relative_position": "farthest",
+        "confidence": 0.36309340596199036
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cardboard box",
+        "mean_depth": 0.20618349313735962,
+        "relative_position": "middle",
+        "confidence": 0.4082834720611572
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.10369069874286652,
+        "relative_position": "middle",
+        "confidence": 0.3820548951625824
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.10351920872926712,
+        "relative_position": "middle",
+        "confidence": 0.6138392090797424
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot gripper",
+        "mean_depth": 0.06106875091791153,
+        "relative_position": "closest",
+        "confidence": 0.5018836855888367
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot gripper",
+      "confidence": 0.5018836855888367,
+      "bounding_box": [
+        188.7134246826172,
+        0.3418769836425781,
+        312.94696044921875,
+        98.63197326660156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06106875091791153,
+        "median_depth": 0.03269609063863754,
+        "depth_std": 0.144392192363739,
+        "depth_min": 0.015110301785171032,
+        "depth_max": 0.9653816819190979,
+        "mask_area": 4980
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.6138392090797424,
+      "bounding_box": [
+        66.41287231445312,
+        41.694427490234375,
+        271.6165466308594,
+        170.7117462158203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10351920872926712,
+        "median_depth": 0.09595970064401627,
+        "depth_std": 0.05555261671543121,
+        "depth_min": 0.017671404406428337,
+        "depth_max": 0.5582762360572815,
+        "mask_area": 12272
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cable",
+      "confidence": 0.3820548951625824,
+      "bounding_box": [
+        0.04871368408203125,
+        117.0719223022461,
+        69.74967193603516,
+        179.90191650390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10369069874286652,
+        "median_depth": 0.0908280462026596,
+        "depth_std": 0.042552340775728226,
+        "depth_min": 0.059590894728899,
+        "depth_max": 0.28309184312820435,
+        "mask_area": 2266
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cardboard box",
+      "confidence": 0.4082834720611572,
+      "bounding_box": [
+        124.42803955078125,
+        2.863283157348633,
+        226.61471557617188,
+        58.034881591796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20618349313735962,
+        "median_depth": 0.20693817734718323,
+        "depth_std": 0.04834749549627304,
+        "depth_min": 0.06541857123374939,
+        "depth_max": 0.816796064376831,
+        "mask_area": 3065
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.36309340596199036,
+      "bounding_box": [
+        5.578495025634766,
+        0.24325942993164062,
+        70.54693603515625,
+        90.27059936523438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.38824114203453064,
+        "median_depth": 0.3734070956707001,
+        "depth_std": 0.09247197210788727,
+        "depth_min": 0.25888365507125854,
+        "depth_max": 0.9509621262550354,
+        "mask_area": 2981
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. wooden block. robot gripper. robot arm. cardboard box. cable. electronic device.",
+  "text_prompt": "table. wooden block. robot gripper. robot arm. cardboard box. cable. electronic device.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

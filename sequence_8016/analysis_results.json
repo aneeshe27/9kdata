@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "container lid",
+    "power outlet",
+    "cabinet",
+    "cutting board"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, container lid, cutting board, power outlet, cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.041441403329372406,
+        "relative_position": "closest",
+        "confidence": 0.3956308364868164
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "container lid",
+        "mean_depth": 0.30932101607322693,
+        "relative_position": "middle",
+        "confidence": 0.4091721177101135
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.41727215051651,
+        "relative_position": "middle",
+        "confidence": 0.8207223415374756
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.7670835852622986,
+        "relative_position": "middle",
+        "confidence": 0.3790237307548523
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cutting board",
+        "mean_depth": 0.7779191732406616,
+        "relative_position": "farthest",
+        "confidence": 0.3968549966812134
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cutting board",
+        "mean_depth": 0.7779191732406616,
+        "relative_position": "farthest",
+        "confidence": 0.3968549966812134
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.7670835852622986,
+        "relative_position": "middle",
+        "confidence": 0.3790237307548523
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "power outlet",
+        "mean_depth": 0.41727215051651,
+        "relative_position": "middle",
+        "confidence": 0.8207223415374756
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "container lid",
+        "mean_depth": 0.30932101607322693,
+        "relative_position": "middle",
+        "confidence": 0.4091721177101135
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.041441403329372406,
+        "relative_position": "closest",
+        "confidence": 0.3956308364868164
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3956308364868164,
+      "bounding_box": [
+        162.095458984375,
+        0.003643035888671875,
+        257.7443542480469,
+        56.280914306640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.041441403329372406,
+        "median_depth": 0.03458945080637932,
+        "depth_std": 0.03618874028325081,
+        "depth_min": 1.3820423191646114e-05,
+        "depth_max": 0.46569952368736267,
+        "mask_area": 2417
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "container lid",
+      "confidence": 0.4091721177101135,
+      "bounding_box": [
+        94.98307800292969,
+        101.77752685546875,
+        142.93185424804688,
+        140.74038696289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30932101607322693,
+        "median_depth": 0.3075966536998749,
+        "depth_std": 0.027842113748192787,
+        "depth_min": 0.2667212188243866,
+        "depth_max": 0.3833189010620117,
+        "mask_area": 1173
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "power outlet",
+      "confidence": 0.8207223415374756,
+      "bounding_box": [
+        107.31768798828125,
+        32.34130859375,
+        121.47012329101562,
+        53.737464904785156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.41727215051651,
+        "median_depth": 0.4150083363056183,
+        "depth_std": 0.00900737289339304,
+        "depth_min": 0.40452587604522705,
+        "depth_max": 0.44972214102745056,
+        "mask_area": 221
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3790237307548523,
+      "bounding_box": [
+        223.3077392578125,
+        75.98590850830078,
+        270.67584228515625,
+        131.90377807617188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7670835852622986,
+        "median_depth": 0.7612074613571167,
+        "depth_std": 0.08895685523748398,
+        "depth_min": 0.33363640308380127,
+        "depth_max": 0.9634904265403748,
+        "mask_area": 1553
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cutting board",
+      "confidence": 0.3968549966812134,
+      "bounding_box": [
+        201.01300048828125,
+        123.07540130615234,
+        237.3095703125,
+        179.96986389160156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7779191732406616,
+        "median_depth": 0.7706807851791382,
+        "depth_std": 0.09161341190338135,
+        "depth_min": 0.20570161938667297,
+        "depth_max": 0.9575592279434204,
+        "mask_area": 946
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. container. lid. towel. cutting board. microwave. countertop. cable. power outlet. bottle. sink. faucet. cabinet.",
+  "text_prompt": "robot arm. gripper. container. lid. towel. cutting board. microwave. countertop. cable. power outlet. bottle. sink. faucet. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

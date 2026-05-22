@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "container",
+    "tool cabinet",
+    "computer monitor",
+    "robot arm"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: computer monitor, cloth, container, robot arm, tool cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.05019974708557129,
+        "relative_position": "closest",
+        "confidence": 0.5057218074798584
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.12251479923725128,
+        "relative_position": "middle",
+        "confidence": 0.47249484062194824
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "tool cabinet",
+        "mean_depth": 0.3047289550304413,
+        "relative_position": "middle",
+        "confidence": 0.43180009722709656
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "computer monitor",
+        "mean_depth": 0.5131803154945374,
+        "relative_position": "middle",
+        "confidence": 0.6418206095695496
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.5649056434631348,
+        "relative_position": "farthest",
+        "confidence": 0.42271941900253296
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.5649056434631348,
+        "relative_position": "farthest",
+        "confidence": 0.42271941900253296
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "computer monitor",
+        "mean_depth": 0.5131803154945374,
+        "relative_position": "middle",
+        "confidence": 0.6418206095695496
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "tool cabinet",
+        "mean_depth": 0.3047289550304413,
+        "relative_position": "middle",
+        "confidence": 0.43180009722709656
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "container",
+        "mean_depth": 0.12251479923725128,
+        "relative_position": "middle",
+        "confidence": 0.47249484062194824
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.05019974708557129,
+        "relative_position": "closest",
+        "confidence": 0.5057218074798584
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.5057218074798584,
+      "bounding_box": [
+        139.05050659179688,
+        28.798141479492188,
+        188.75454711914062,
+        119.26893615722656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05019974708557129,
+        "median_depth": 0.015096049755811691,
+        "depth_std": 0.13348907232284546,
+        "depth_min": 1.4164532331051305e-05,
+        "depth_max": 0.6560537219047546,
+        "mask_area": 2612
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "container",
+      "confidence": 0.47249484062194824,
+      "bounding_box": [
+        176.52188110351562,
+        74.55533599853516,
+        211.27957153320312,
+        117.02303314208984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12251479923725128,
+        "median_depth": 0.10349833220243454,
+        "depth_std": 0.07590744644403458,
+        "depth_min": 0.06423331052064896,
+        "depth_max": 0.5653313398361206,
+        "mask_area": 619
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "tool cabinet",
+      "confidence": 0.43180009722709656,
+      "bounding_box": [
+        210.73358154296875,
+        30.376636505126953,
+        315.81365966796875,
+        98.28871154785156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3047289550304413,
+        "median_depth": 0.2863526940345764,
+        "depth_std": 0.0793110579252243,
+        "depth_min": 0.02377798780798912,
+        "depth_max": 0.5911058783531189,
+        "mask_area": 3440
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "computer monitor",
+      "confidence": 0.6418206095695496,
+      "bounding_box": [
+        49.682838439941406,
+        11.170166969299316,
+        100.07169342041016,
+        38.205196380615234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5131803154945374,
+        "median_depth": 0.5128775238990784,
+        "depth_std": 0.02000604197382927,
+        "depth_min": 0.4686843156814575,
+        "depth_max": 0.5489095449447632,
+        "mask_area": 954
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.42271941900253296,
+      "bounding_box": [
+        134.32345581054688,
+        0.19257736206054688,
+        167.53836059570312,
+        41.917259216308594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5649056434631348,
+        "median_depth": 0.6107528209686279,
+        "depth_std": 0.10420848429203033,
+        "depth_min": 0.1318911612033844,
+        "depth_max": 0.6897678375244141,
+        "mask_area": 714
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cloth. container. box. table. tape roll. computer monitor. tool cabinet. cable. paper. robot base.",
+  "text_prompt": "robot arm. gripper. cloth. container. box. table. tape roll. computer monitor. tool cabinet. cable. paper. robot base.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

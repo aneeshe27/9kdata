@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "keyboard",
+    "table",
+    "partition",
+    "computer monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: partition, table, computer monitor, robot arm, keyboard",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.013866683468222618,
+        "relative_position": "closest",
+        "confidence": 0.43598029017448425
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "keyboard",
+        "mean_depth": 0.028960587456822395,
+        "relative_position": "middle",
+        "confidence": 0.41210904717445374
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.039114877581596375,
+        "relative_position": "middle",
+        "confidence": 0.5141004323959351
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "partition",
+        "mean_depth": 0.0476485937833786,
+        "relative_position": "middle",
+        "confidence": 0.38998156785964966
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "computer monitor",
+        "mean_depth": 0.1662389636039734,
+        "relative_position": "farthest",
+        "confidence": 0.47098487615585327
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "computer monitor",
+        "mean_depth": 0.1662389636039734,
+        "relative_position": "farthest",
+        "confidence": 0.47098487615585327
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "partition",
+        "mean_depth": 0.0476485937833786,
+        "relative_position": "middle",
+        "confidence": 0.38998156785964966
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.039114877581596375,
+        "relative_position": "middle",
+        "confidence": 0.5141004323959351
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "keyboard",
+        "mean_depth": 0.028960587456822395,
+        "relative_position": "middle",
+        "confidence": 0.41210904717445374
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.013866683468222618,
+        "relative_position": "closest",
+        "confidence": 0.43598029017448425
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.43598029017448425,
+      "bounding_box": [
+        148.4378204345703,
+        -0.00872802734375,
+        200.26695251464844,
+        78.03762817382812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.013866683468222618,
+        "median_depth": 0.007920188829302788,
+        "depth_std": 0.0437949076294899,
+        "depth_min": 0.003780730301514268,
+        "depth_max": 0.9046064615249634,
+        "mask_area": 1900
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "keyboard",
+      "confidence": 0.41210904717445374,
+      "bounding_box": [
+        301.88922119140625,
+        121.07521057128906,
+        315.99224853515625,
+        179.9292449951172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.028960587456822395,
+        "median_depth": 0.027086779475212097,
+        "depth_std": 0.005599186755716801,
+        "depth_min": 0.020943259820342064,
+        "depth_max": 0.04110341519117355,
+        "mask_area": 508
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.5141004323959351,
+      "bounding_box": [
+        123.26250457763672,
+        61.71872329711914,
+        289.65032958984375,
+        179.8236083984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.039114877581596375,
+        "median_depth": 0.033225350081920624,
+        "depth_std": 0.0248882956802845,
+        "depth_min": 0.0039365254342556,
+        "depth_max": 0.13626939058303833,
+        "mask_area": 11102
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "partition",
+      "confidence": 0.38998156785964966,
+      "bounding_box": [
+        0.1432342529296875,
+        82.32376098632812,
+        176.38821411132812,
+        179.90533447265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0476485937833786,
+        "median_depth": 0.0460798516869545,
+        "depth_std": 0.011671449989080429,
+        "depth_min": 0.023750029504299164,
+        "depth_max": 0.2182733565568924,
+        "mask_area": 9228
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "computer monitor",
+      "confidence": 0.47098487615585327,
+      "bounding_box": [
+        113.14147186279297,
+        -0.007607460021972656,
+        166.9356689453125,
+        26.652076721191406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1662389636039734,
+        "median_depth": 0.16292797029018402,
+        "depth_std": 0.02401060052216053,
+        "depth_min": 0.12205851078033447,
+        "depth_max": 0.23853908479213715,
+        "mask_area": 973
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. table. power strip. cables. computer monitor. keyboard. mouse. cup. chair. partition. air conditioner. ceiling lights.",
+  "text_prompt": "robot arm. table. power strip. cables. computer monitor. keyboard. mouse. cup. chair. partition. air conditioner. ceiling lights.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

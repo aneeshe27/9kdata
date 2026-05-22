@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cabinet",
+    "faucet",
+    "floor",
+    "sink",
+    "soap dispenser"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: faucet, sink, soap dispenser, cabinet, floor",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.1245499923825264,
+        "relative_position": "closest",
+        "confidence": 0.4059220850467682
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.2961038053035736,
+        "relative_position": "middle",
+        "confidence": 0.7824066877365112
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "floor",
+        "mean_depth": 0.5077328085899353,
+        "relative_position": "middle",
+        "confidence": 0.4236380159854889
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.7090075016021729,
+        "relative_position": "middle",
+        "confidence": 0.7748791575431824
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "soap dispenser",
+        "mean_depth": 0.748378574848175,
+        "relative_position": "farthest",
+        "confidence": 0.3557974100112915
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "soap dispenser",
+        "mean_depth": 0.748378574848175,
+        "relative_position": "farthest",
+        "confidence": 0.3557974100112915
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.7090075016021729,
+        "relative_position": "middle",
+        "confidence": 0.7748791575431824
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "floor",
+        "mean_depth": 0.5077328085899353,
+        "relative_position": "middle",
+        "confidence": 0.4236380159854889
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.2961038053035736,
+        "relative_position": "middle",
+        "confidence": 0.7824066877365112
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.1245499923825264,
+        "relative_position": "closest",
+        "confidence": 0.4059220850467682
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.4059220850467682,
+      "bounding_box": [
+        0.04790496826171875,
+        87.72293090820312,
+        144.11810302734375,
+        179.95840454101562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1245499923825264,
+        "median_depth": 0.11623207479715347,
+        "depth_std": 0.0822671502828598,
+        "depth_min": 0.00010464790830155835,
+        "depth_max": 0.35655638575553894,
+        "mask_area": 8126
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.7824066877365112,
+      "bounding_box": [
+        44.33549499511719,
+        0.03647422790527344,
+        74.47782897949219,
+        41.68248748779297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2961038053035736,
+        "median_depth": 0.29397428035736084,
+        "depth_std": 0.024246489629149437,
+        "depth_min": 0.25567561388015747,
+        "depth_max": 0.3559197783470154,
+        "mask_area": 448
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "floor",
+      "confidence": 0.4236380159854889,
+      "bounding_box": [
+        121.16273498535156,
+        47.62439727783203,
+        315.958251953125,
+        179.87942504882812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5077328085899353,
+        "median_depth": 0.4753725528717041,
+        "depth_std": 0.15401729941368103,
+        "depth_min": 0.03716447576880455,
+        "depth_max": 0.9286655187606812,
+        "mask_area": 14441
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.7748791575431824,
+      "bounding_box": [
+        0.0507049560546875,
+        54.206626892089844,
+        46.28264236450195,
+        118.74625396728516
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7090075016021729,
+        "median_depth": 0.814717710018158,
+        "depth_std": 0.20160886645317078,
+        "depth_min": 0.19381506741046906,
+        "depth_max": 0.9204963445663452,
+        "mask_area": 1405
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "soap dispenser",
+      "confidence": 0.3557974100112915,
+      "bounding_box": [
+        216.8289031982422,
+        -0.04656982421875,
+        275.30279541015625,
+        63.76710510253906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.748378574848175,
+        "median_depth": 0.7943819761276245,
+        "depth_std": 0.11138661950826645,
+        "depth_min": 0.44671788811683655,
+        "depth_max": 0.9493386745452881,
+        "mask_area": 2260
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. sink. faucet. soap dispenser. napkin holder. countertop. dishwasher. cabinet. power cord. floor.",
+  "text_prompt": "cup. sink. faucet. soap dispenser. napkin holder. countertop. dishwasher. cabinet. power cord. floor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

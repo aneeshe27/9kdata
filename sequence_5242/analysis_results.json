@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "gripper",
+    "bowl",
+    "tongs",
+    "cardboard box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bowl, robot arm, cardboard box, tongs, gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.03297228366136551,
+        "relative_position": "closest",
+        "confidence": 0.36732733249664307
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.05066357180476189,
+        "relative_position": "middle",
+        "confidence": 0.3863183557987213
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.05363081395626068,
+        "relative_position": "middle",
+        "confidence": 0.6688899993896484
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "tongs",
+        "mean_depth": 0.21800386905670166,
+        "relative_position": "middle",
+        "confidence": 0.38754576444625854
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.6926177740097046,
+        "relative_position": "farthest",
+        "confidence": 0.4017985463142395
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.6926177740097046,
+        "relative_position": "farthest",
+        "confidence": 0.4017985463142395
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "tongs",
+        "mean_depth": 0.21800386905670166,
+        "relative_position": "middle",
+        "confidence": 0.38754576444625854
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.05363081395626068,
+        "relative_position": "middle",
+        "confidence": 0.6688899993896484
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.05066357180476189,
+        "relative_position": "middle",
+        "confidence": 0.3863183557987213
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.03297228366136551,
+        "relative_position": "closest",
+        "confidence": 0.36732733249664307
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.36732733249664307,
+      "bounding_box": [
+        117.45873260498047,
+        8.750164031982422,
+        190.12826538085938,
+        132.6101531982422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03297228366136551,
+        "median_depth": 0.02080402337014675,
+        "depth_std": 0.07270518690347672,
+        "depth_min": 1.3439542271953542e-05,
+        "depth_max": 0.9284304976463318,
+        "mask_area": 4913
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "gripper",
+      "confidence": 0.3863183557987213,
+      "bounding_box": [
+        122.92184448242188,
+        122.39283752441406,
+        188.42755126953125,
+        153.52369689941406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05066357180476189,
+        "median_depth": 0.04973027855157852,
+        "depth_std": 0.006072021555155516,
+        "depth_min": 0.03844764828681946,
+        "depth_max": 0.06986075639724731,
+        "mask_area": 434
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.6688899993896484,
+      "bounding_box": [
+        167.4325408935547,
+        131.0602264404297,
+        207.38169860839844,
+        165.8527069091797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05363081395626068,
+        "median_depth": 0.05356435850262642,
+        "depth_std": 0.00409224396571517,
+        "depth_min": 0.04225844144821167,
+        "depth_max": 0.06440962105989456,
+        "mask_area": 1012
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "tongs",
+      "confidence": 0.38754576444625854,
+      "bounding_box": [
+        183.9560546875,
+        98.00812530517578,
+        236.32562255859375,
+        127.63504791259766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21800386905670166,
+        "median_depth": 0.10451526194810867,
+        "depth_std": 0.22533953189849854,
+        "depth_min": 0.08311568200588226,
+        "depth_max": 0.9825634956359863,
+        "mask_area": 413
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cardboard box",
+      "confidence": 0.4017985463142395,
+      "bounding_box": [
+        187.150634765625,
+        0.23880767822265625,
+        271.5720520019531,
+        88.87803649902344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6926177740097046,
+        "median_depth": 0.6727039813995361,
+        "depth_std": 0.05741319805383682,
+        "depth_min": 0.6393228769302368,
+        "depth_max": 0.9865520000457764,
+        "mask_area": 5069
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. camera. bowl. tongs. spoon. pot lid. table. workbench. door. cardboard box.",
+  "text_prompt": "robot arm. gripper. camera. bowl. tongs. spoon. pot lid. table. workbench. door. cardboard box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

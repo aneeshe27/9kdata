@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "refrigerator",
+    "robot arm",
+    "serving stand",
+    "carton",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: carton, cabinet, robot arm, refrigerator, serving stand",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "refrigerator",
+        "mean_depth": 0.08384556323289871,
+        "relative_position": "closest",
+        "confidence": 0.7673107385635376
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.11360017210245132,
+        "relative_position": "middle",
+        "confidence": 0.44175246357917786
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "serving stand",
+        "mean_depth": 0.4832300841808319,
+        "relative_position": "middle",
+        "confidence": 0.5423423051834106
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "carton",
+        "mean_depth": 0.5603716373443604,
+        "relative_position": "middle",
+        "confidence": 0.7878770232200623
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.6110811829566956,
+        "relative_position": "farthest",
+        "confidence": 0.5248281359672546
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.6110811829566956,
+        "relative_position": "farthest",
+        "confidence": 0.5248281359672546
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "carton",
+        "mean_depth": 0.5603716373443604,
+        "relative_position": "middle",
+        "confidence": 0.7878770232200623
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "serving stand",
+        "mean_depth": 0.4832300841808319,
+        "relative_position": "middle",
+        "confidence": 0.5423423051834106
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.11360017210245132,
+        "relative_position": "middle",
+        "confidence": 0.44175246357917786
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "refrigerator",
+        "mean_depth": 0.08384556323289871,
+        "relative_position": "closest",
+        "confidence": 0.7673107385635376
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "refrigerator",
+      "confidence": 0.7673107385635376,
+      "bounding_box": [
+        0.09862518310546875,
+        0.06006622314453125,
+        122.71935272216797,
+        180.06005859375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08384556323289871,
+        "median_depth": 0.07895702123641968,
+        "depth_std": 0.042531076818704605,
+        "depth_min": 0.008934429846704006,
+        "depth_max": 0.21477045118808746,
+        "mask_area": 6650
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.44175246357917786,
+      "bounding_box": [
+        230.07908630371094,
+        47.7997932434082,
+        316.04071044921875,
+        134.6934051513672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11360017210245132,
+        "median_depth": 0.11293429136276245,
+        "depth_std": 0.02854108065366745,
+        "depth_min": 0.08683113753795624,
+        "depth_max": 0.826164960861206,
+        "mask_area": 2740
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "serving stand",
+      "confidence": 0.5423423051834106,
+      "bounding_box": [
+        129.48728942871094,
+        69.59819030761719,
+        182.28822326660156,
+        114.82148742675781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4832300841808319,
+        "median_depth": 0.4695599675178528,
+        "depth_std": 0.07562118768692017,
+        "depth_min": 0.36968332529067993,
+        "depth_max": 0.7630464434623718,
+        "mask_area": 1638
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "carton",
+      "confidence": 0.7878770232200623,
+      "bounding_box": [
+        183.75778198242188,
+        80.51832580566406,
+        204.46578979492188,
+        109.60340881347656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5603716373443604,
+        "median_depth": 0.5494790077209473,
+        "depth_std": 0.028762444853782654,
+        "depth_min": 0.5352967381477356,
+        "depth_max": 0.7167137861251831,
+        "mask_area": 426
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.5248281359672546,
+      "bounding_box": [
+        89.14251708984375,
+        0.06463050842285156,
+        208.71673583984375,
+        28.449420928955078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6110811829566956,
+        "median_depth": 0.6019144058227539,
+        "depth_std": 0.04334087669849396,
+        "depth_min": 0.518580973148346,
+        "depth_max": 0.6939911246299744,
+        "mask_area": 2801
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. cabinet. drawer. stovetop. serving stand. carton. jar. refrigerator. utensil.",
+  "text_prompt": "robot arm. gripper. countertop. cabinet. drawer. stovetop. serving stand. carton. jar. refrigerator. utensil.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

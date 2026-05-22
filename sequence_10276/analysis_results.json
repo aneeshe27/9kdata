@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "towel",
+    "table",
+    "dispenser",
+    "chair",
+    "door handle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: dispenser, door handle, chair, table, towel",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "towel",
+        "mean_depth": 0.2630099654197693,
+        "relative_position": "closest",
+        "confidence": 0.4242090582847595
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.3300592005252838,
+        "relative_position": "middle",
+        "confidence": 0.7553173899650574
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "dispenser",
+        "mean_depth": 0.5247891545295715,
+        "relative_position": "middle",
+        "confidence": 0.47935253381729126
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.6145018935203552,
+        "relative_position": "middle",
+        "confidence": 0.8149887919425964
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "door handle",
+        "mean_depth": 0.6886763572692871,
+        "relative_position": "farthest",
+        "confidence": 0.4779220223426819
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "door handle",
+        "mean_depth": 0.6886763572692871,
+        "relative_position": "farthest",
+        "confidence": 0.4779220223426819
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.6145018935203552,
+        "relative_position": "middle",
+        "confidence": 0.8149887919425964
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "dispenser",
+        "mean_depth": 0.5247891545295715,
+        "relative_position": "middle",
+        "confidence": 0.47935253381729126
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.3300592005252838,
+        "relative_position": "middle",
+        "confidence": 0.7553173899650574
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "towel",
+        "mean_depth": 0.2630099654197693,
+        "relative_position": "closest",
+        "confidence": 0.4242090582847595
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "towel",
+      "confidence": 0.4242090582847595,
+      "bounding_box": [
+        99.0517349243164,
+        32.70323944091797,
+        157.14089965820312,
+        179.5015869140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2630099654197693,
+        "median_depth": 0.2291981726884842,
+        "depth_std": 0.08247105777263641,
+        "depth_min": 0.17642684280872345,
+        "depth_max": 0.6026674509048462,
+        "mask_area": 4656
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.7553173899650574,
+      "bounding_box": [
+        192.0198211669922,
+        119.80260467529297,
+        316.0115051269531,
+        179.9773406982422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3300592005252838,
+        "median_depth": 0.2977866530418396,
+        "depth_std": 0.11812577396631241,
+        "depth_min": 0.21790553629398346,
+        "depth_max": 0.9975759387016296,
+        "mask_area": 4960
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "dispenser",
+      "confidence": 0.47935253381729126,
+      "bounding_box": [
+        143.19912719726562,
+        -0.023729324340820312,
+        187.75018310546875,
+        37.026275634765625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5247891545295715,
+        "median_depth": 0.5192186236381531,
+        "depth_std": 0.03935099393129349,
+        "depth_min": 0.45830288529396057,
+        "depth_max": 0.6310384273529053,
+        "mask_area": 732
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.8149887919425964,
+      "bounding_box": [
+        143.27101135253906,
+        78.87422180175781,
+        217.0167999267578,
+        179.94432067871094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6145018935203552,
+        "median_depth": 0.6325045824050903,
+        "depth_std": 0.09746237844228745,
+        "depth_min": 0.23688937723636627,
+        "depth_max": 0.9946115612983704,
+        "mask_area": 4202
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "door handle",
+      "confidence": 0.4779220223426819,
+      "bounding_box": [
+        249.1272430419922,
+        43.09775924682617,
+        271.88177490234375,
+        79.62615966796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6886763572692871,
+        "median_depth": 0.6829875111579895,
+        "depth_std": 0.06944092363119125,
+        "depth_min": 0.5902373194694519,
+        "depth_max": 0.9111890196800232,
+        "mask_area": 335
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "towel. chair. table. clamp. screwdriver. dispenser. door. door handle. towel rack. lamp.",
+  "text_prompt": "towel. chair. table. clamp. screwdriver. dispenser. door. door handle. towel rack. lamp.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

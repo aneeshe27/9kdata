@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "glass",
+    "chair",
+    "cabinet",
+    "light"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: glass, robot arm gripper, light, cabinet, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm gripper",
+        "mean_depth": 0.03234566003084183,
+        "relative_position": "closest",
+        "confidence": 0.4146839678287506
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "glass",
+        "mean_depth": 0.05817647650837898,
+        "relative_position": "middle",
+        "confidence": 0.4898565411567688
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.1993631273508072,
+        "relative_position": "middle",
+        "confidence": 0.6512077450752258
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.22027546167373657,
+        "relative_position": "middle",
+        "confidence": 0.3956429958343506
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "light",
+        "mean_depth": 0.6684877872467041,
+        "relative_position": "farthest",
+        "confidence": 0.38614141941070557
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "light",
+        "mean_depth": 0.6684877872467041,
+        "relative_position": "farthest",
+        "confidence": 0.38614141941070557
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.22027546167373657,
+        "relative_position": "middle",
+        "confidence": 0.3956429958343506
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.1993631273508072,
+        "relative_position": "middle",
+        "confidence": 0.6512077450752258
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "glass",
+        "mean_depth": 0.05817647650837898,
+        "relative_position": "middle",
+        "confidence": 0.4898565411567688
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm gripper",
+        "mean_depth": 0.03234566003084183,
+        "relative_position": "closest",
+        "confidence": 0.4146839678287506
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm gripper",
+      "confidence": 0.4146839678287506,
+      "bounding_box": [
+        208.81019592285156,
+        2.4165420532226562,
+        315.9322509765625,
+        151.56204223632812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03234566003084183,
+        "median_depth": 0.014381473883986473,
+        "depth_std": 0.08401046693325043,
+        "depth_min": 0.0007016935269348323,
+        "depth_max": 0.7097719311714172,
+        "mask_area": 5453
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "glass",
+      "confidence": 0.4898565411567688,
+      "bounding_box": [
+        123.1640396118164,
+        119.39053344726562,
+        136.31101989746094,
+        146.4935302734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05817647650837898,
+        "median_depth": 0.055352069437503815,
+        "depth_std": 0.0066187516786158085,
+        "depth_min": 0.050585031509399414,
+        "depth_max": 0.08399216085672379,
+        "mask_area": 140
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.6512077450752258,
+      "bounding_box": [
+        51.480438232421875,
+        48.735862731933594,
+        115.37248229980469,
+        138.6170654296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1993631273508072,
+        "median_depth": 0.19640344381332397,
+        "depth_std": 0.03505181521177292,
+        "depth_min": 0.14174215495586395,
+        "depth_max": 0.580933690071106,
+        "mask_area": 2815
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.3956429958343506,
+      "bounding_box": [
+        109.73145294189453,
+        58.36144256591797,
+        160.926513671875,
+        112.08751678466797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22027546167373657,
+        "median_depth": 0.21554520726203918,
+        "depth_std": 0.025383610278367996,
+        "depth_min": 0.19335970282554626,
+        "depth_max": 0.6258301138877869,
+        "mask_area": 2035
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "light",
+      "confidence": 0.38614141941070557,
+      "bounding_box": [
+        172.08680725097656,
+        0.036721229553222656,
+        193.8492889404297,
+        13.758747100830078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6684877872467041,
+        "median_depth": 0.6436518430709839,
+        "depth_std": 0.08319591730833054,
+        "depth_min": 0.5787391066551208,
+        "depth_max": 0.9595439434051514,
+        "mask_area": 122
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. chair. desk. monitor. keyboard. mouse. tripod. light. cabinet. window. glass. rack. orange.",
+  "text_prompt": "robot arm. gripper. table. chair. desk. monitor. keyboard. mouse. tripod. light. cabinet. window. glass. rack. orange.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

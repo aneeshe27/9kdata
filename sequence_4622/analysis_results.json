@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "marker",
+    "bowl",
+    "plastic bag",
+    "gripper",
+    "robot arm"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: gripper, marker, plastic bag, robot arm, bowl",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "marker",
+        "mean_depth": 0.03409869223833084,
+        "relative_position": "closest",
+        "confidence": 0.5343857407569885
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.04083244502544403,
+        "relative_position": "middle",
+        "confidence": 0.5464996695518494
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "plastic bag",
+        "mean_depth": 0.09665053337812424,
+        "relative_position": "middle",
+        "confidence": 0.526918351650238
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.10253961384296417,
+        "relative_position": "middle",
+        "confidence": 0.38897404074668884
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.3584832549095154,
+        "relative_position": "farthest",
+        "confidence": 0.46575674414634705
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.3584832549095154,
+        "relative_position": "farthest",
+        "confidence": 0.46575674414634705
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.10253961384296417,
+        "relative_position": "middle",
+        "confidence": 0.38897404074668884
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "plastic bag",
+        "mean_depth": 0.09665053337812424,
+        "relative_position": "middle",
+        "confidence": 0.526918351650238
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.04083244502544403,
+        "relative_position": "middle",
+        "confidence": 0.5464996695518494
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "marker",
+        "mean_depth": 0.03409869223833084,
+        "relative_position": "closest",
+        "confidence": 0.5343857407569885
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "marker",
+      "confidence": 0.5343857407569885,
+      "bounding_box": [
+        197.72457885742188,
+        160.18568420410156,
+        240.2681884765625,
+        174.0745391845703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03409869223833084,
+        "median_depth": 0.034065086394548416,
+        "depth_std": 0.0026336321607232094,
+        "depth_min": 0.029488058760762215,
+        "depth_max": 0.0402221754193306,
+        "mask_area": 290
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.5464996695518494,
+      "bounding_box": [
+        74.403564453125,
+        141.03854370117188,
+        117.46388244628906,
+        179.09823608398438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04083244502544403,
+        "median_depth": 0.0402626097202301,
+        "depth_std": 0.00844142772257328,
+        "depth_min": 0.024990472942590714,
+        "depth_max": 0.05914022773504257,
+        "mask_area": 1120
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "plastic bag",
+      "confidence": 0.526918351650238,
+      "bounding_box": [
+        89.40738677978516,
+        108.30237579345703,
+        123.35022735595703,
+        128.46182250976562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09665053337812424,
+        "median_depth": 0.09125210344791412,
+        "depth_std": 0.020371342077851295,
+        "depth_min": 0.08108352869749069,
+        "depth_max": 0.21356691420078278,
+        "mask_area": 470
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.38897404074668884,
+      "bounding_box": [
+        126.56094360351562,
+        14.180294036865234,
+        182.4459228515625,
+        117.50718688964844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10253961384296417,
+        "median_depth": 0.08109675347805023,
+        "depth_std": 0.05385150760412216,
+        "depth_min": 0.02803693152964115,
+        "depth_max": 0.601891040802002,
+        "mask_area": 2239
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.46575674414634705,
+      "bounding_box": [
+        159.27288818359375,
+        -0.009370803833007812,
+        219.44696044921875,
+        54.45140075683594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3584832549095154,
+        "median_depth": 0.09345279633998871,
+        "depth_std": 0.37815240025520325,
+        "depth_min": 0.010428953915834427,
+        "depth_max": 0.8846782445907593,
+        "mask_area": 1721
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. bowl. tennis ball. marker. cloth. plastic bag. tube.",
+  "text_prompt": "robot arm. gripper. table. bowl. tennis ball. marker. cloth. plastic bag. tube.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

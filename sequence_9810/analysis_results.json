@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "whiteboard",
+    "cabinet",
+    "drawer",
+    "wall cabinet",
+    "ceiling light"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, whiteboard, ceiling light, drawer, wall cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "whiteboard",
+        "mean_depth": 0.20584304630756378,
+        "relative_position": "closest",
+        "confidence": 0.4958154261112213
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.21121419966220856,
+        "relative_position": "middle",
+        "confidence": 0.35378384590148926
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "drawer",
+        "mean_depth": 0.25867459177970886,
+        "relative_position": "middle",
+        "confidence": 0.385397344827652
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "wall cabinet",
+        "mean_depth": 0.3467544913291931,
+        "relative_position": "middle",
+        "confidence": 0.4851352274417877
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "ceiling light",
+        "mean_depth": 0.772826611995697,
+        "relative_position": "farthest",
+        "confidence": 0.4928508400917053
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "ceiling light",
+        "mean_depth": 0.772826611995697,
+        "relative_position": "farthest",
+        "confidence": 0.4928508400917053
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "wall cabinet",
+        "mean_depth": 0.3467544913291931,
+        "relative_position": "middle",
+        "confidence": 0.4851352274417877
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "drawer",
+        "mean_depth": 0.25867459177970886,
+        "relative_position": "middle",
+        "confidence": 0.385397344827652
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.21121419966220856,
+        "relative_position": "middle",
+        "confidence": 0.35378384590148926
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "whiteboard",
+        "mean_depth": 0.20584304630756378,
+        "relative_position": "closest",
+        "confidence": 0.4958154261112213
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "whiteboard",
+      "confidence": 0.4958154261112213,
+      "bounding_box": [
+        0.03267860412597656,
+        24.977981567382812,
+        42.888587951660156,
+        180.00572204589844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20584304630756378,
+        "median_depth": 0.20439472794532776,
+        "depth_std": 0.0070914919488132,
+        "depth_min": 0.18849901854991913,
+        "depth_max": 0.22143815457820892,
+        "mask_area": 1735
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.35378384590148926,
+      "bounding_box": [
+        41.60602951049805,
+        94.00334167480469,
+        149.9800262451172,
+        180.0004119873047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21121419966220856,
+        "median_depth": 0.20011037588119507,
+        "depth_std": 0.02688607946038246,
+        "depth_min": 0.17931683361530304,
+        "depth_max": 0.3249068260192871,
+        "mask_area": 7672
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "drawer",
+      "confidence": 0.385397344827652,
+      "bounding_box": [
+        200.091796875,
+        122.68898010253906,
+        250.35565185546875,
+        176.9862823486328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.25867459177970886,
+        "median_depth": 0.28363656997680664,
+        "depth_std": 0.07723629474639893,
+        "depth_min": 0.03150336071848869,
+        "depth_max": 0.34820613265037537,
+        "mask_area": 1748
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "wall cabinet",
+      "confidence": 0.4851352274417877,
+      "bounding_box": [
+        104.94631958007812,
+        39.82114791870117,
+        187.21295166015625,
+        120.372802734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3467544913291931,
+        "median_depth": 0.341242253780365,
+        "depth_std": 0.04547828435897827,
+        "depth_min": 0.28443947434425354,
+        "depth_max": 0.46071839332580566,
+        "mask_area": 4053
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "ceiling light",
+      "confidence": 0.4928508400917053,
+      "bounding_box": [
+        284.01300048828125,
+        41.59810256958008,
+        315.9754638671875,
+        58.7253532409668
+      ],
+      "depth_stats": {
+        "mean_depth": 0.772826611995697,
+        "median_depth": 0.772284984588623,
+        "depth_std": 0.08589544147253036,
+        "depth_min": 0.6126209497451782,
+        "depth_max": 0.9477558732032776,
+        "mask_area": 222
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. filing cabinet. drawer. wall cabinet. whiteboard. window. ceiling light.",
+  "text_prompt": "robot arm. gripper. filing cabinet. drawer. wall cabinet. whiteboard. window. ceiling light.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

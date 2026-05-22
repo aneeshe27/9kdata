@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "gripper game controller",
+    "table",
+    "box",
+    "monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, box, monitor, gripper game controller, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.06109175831079483,
+        "relative_position": "closest",
+        "confidence": 0.4711482524871826
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "gripper game controller",
+        "mean_depth": 0.36023303866386414,
+        "relative_position": "middle",
+        "confidence": 0.3948317766189575
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.42772066593170166,
+        "relative_position": "middle",
+        "confidence": 0.5397939682006836
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.6370194554328918,
+        "relative_position": "middle",
+        "confidence": 0.3806176781654358
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "monitor",
+        "mean_depth": 0.8612164855003357,
+        "relative_position": "farthest",
+        "confidence": 0.4320753514766693
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "monitor",
+        "mean_depth": 0.8612164855003357,
+        "relative_position": "farthest",
+        "confidence": 0.4320753514766693
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.6370194554328918,
+        "relative_position": "middle",
+        "confidence": 0.3806176781654358
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.42772066593170166,
+        "relative_position": "middle",
+        "confidence": 0.5397939682006836
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "gripper game controller",
+        "mean_depth": 0.36023303866386414,
+        "relative_position": "middle",
+        "confidence": 0.3948317766189575
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.06109175831079483,
+        "relative_position": "closest",
+        "confidence": 0.4711482524871826
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.4711482524871826,
+      "bounding_box": [
+        -0.000263214111328125,
+        33.18171691894531,
+        68.44393920898438,
+        105.537109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06109175831079483,
+        "median_depth": 0.03619762882590294,
+        "depth_std": 0.11168735474348068,
+        "depth_min": 0.015292222611606121,
+        "depth_max": 0.7258907556533813,
+        "mask_area": 2313
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "gripper game controller",
+      "confidence": 0.3948317766189575,
+      "bounding_box": [
+        259.1107482910156,
+        129.9759063720703,
+        291.6750183105469,
+        158.3569793701172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.36023303866386414,
+        "median_depth": 0.35836267471313477,
+        "depth_std": 0.020046895369887352,
+        "depth_min": 0.32344546914100647,
+        "depth_max": 0.4062943756580353,
+        "mask_area": 483
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.5397939682006836,
+      "bounding_box": [
+        66.67951965332031,
+        69.58191680908203,
+        249.6671600341797,
+        179.795654296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.42772066593170166,
+        "median_depth": 0.39893946051597595,
+        "depth_std": 0.11328214406967163,
+        "depth_min": 0.2528281509876251,
+        "depth_max": 0.7474676966667175,
+        "mask_area": 6158
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "box",
+      "confidence": 0.3806176781654358,
+      "bounding_box": [
+        234.75274658203125,
+        26.092517852783203,
+        287.66302490234375,
+        56.274600982666016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6370194554328918,
+        "median_depth": 0.6386018395423889,
+        "depth_std": 0.03597285971045494,
+        "depth_min": 0.5570953488349915,
+        "depth_max": 0.7206109166145325,
+        "mask_area": 969
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "monitor",
+      "confidence": 0.4320753514766693,
+      "bounding_box": [
+        92.6211166381836,
+        0.9030017852783203,
+        117.88585662841797,
+        27.057647705078125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8612164855003357,
+        "median_depth": 0.8609062433242798,
+        "depth_std": 0.01271846890449524,
+        "depth_min": 0.8115160465240479,
+        "depth_max": 0.8833377957344055,
+        "mask_area": 524
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. box. game controller. cube. cylinder. whiteboard. chair. shelf. monitor. cart.",
+  "text_prompt": "robot arm. gripper. table. box. game controller. cube. cylinder. whiteboard. chair. shelf. monitor. cart.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

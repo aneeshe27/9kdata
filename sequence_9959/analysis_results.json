@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "faucet",
+    "sink",
+    "container",
+    "cup",
+    "bowl"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, container, cup, faucet, bowl",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.08589223027229309,
+        "relative_position": "closest",
+        "confidence": 0.816253662109375
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.09317172318696976,
+        "relative_position": "middle",
+        "confidence": 0.6777309775352478
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "container",
+        "mean_depth": 0.11426045000553131,
+        "relative_position": "middle",
+        "confidence": 0.368704229593277
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.16943331062793732,
+        "relative_position": "middle",
+        "confidence": 0.377151757478714
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "bowl",
+        "mean_depth": 0.2284335047006607,
+        "relative_position": "farthest",
+        "confidence": 0.3576356768608093
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "bowl",
+        "mean_depth": 0.2284335047006607,
+        "relative_position": "farthest",
+        "confidence": 0.3576356768608093
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.16943331062793732,
+        "relative_position": "middle",
+        "confidence": 0.377151757478714
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "container",
+        "mean_depth": 0.11426045000553131,
+        "relative_position": "middle",
+        "confidence": 0.368704229593277
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.09317172318696976,
+        "relative_position": "middle",
+        "confidence": 0.6777309775352478
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.08589223027229309,
+        "relative_position": "closest",
+        "confidence": 0.816253662109375
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.816253662109375,
+      "bounding_box": [
+        208.08592224121094,
+        88.13423156738281,
+        242.5537872314453,
+        127.23486328125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08589223027229309,
+        "median_depth": 0.08643942326307297,
+        "depth_std": 0.01649974100291729,
+        "depth_min": 0.05890755355358124,
+        "depth_max": 0.13042199611663818,
+        "mask_area": 601
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.6777309775352478,
+      "bounding_box": [
+        158.91098022460938,
+        114.73112487792969,
+        232.4093017578125,
+        175.1963653564453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09317172318696976,
+        "median_depth": 0.09111820161342621,
+        "depth_std": 0.019701175391674042,
+        "depth_min": 0.0548170804977417,
+        "depth_max": 0.13396085798740387,
+        "mask_area": 2377
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "container",
+      "confidence": 0.368704229593277,
+      "bounding_box": [
+        296.98651123046875,
+        88.99125671386719,
+        315.85247802734375,
+        135.25830078125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11426045000553131,
+        "median_depth": 0.11300603300333023,
+        "depth_std": 0.011693994514644146,
+        "depth_min": 0.08797512948513031,
+        "depth_max": 0.13744555413722992,
+        "mask_area": 610
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cup",
+      "confidence": 0.377151757478714,
+      "bounding_box": [
+        151.38766479492188,
+        85.0237045288086,
+        161.40267944335938,
+        100.91307830810547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16943331062793732,
+        "median_depth": 0.16952934861183167,
+        "depth_std": 0.007497161626815796,
+        "depth_min": 0.15758052468299866,
+        "depth_max": 0.18151599168777466,
+        "mask_area": 114
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "bowl",
+      "confidence": 0.3576356768608093,
+      "bounding_box": [
+        220.12496948242188,
+        11.827898025512695,
+        238.43118286132812,
+        19.29849624633789
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2284335047006607,
+        "median_depth": 0.2026296705007553,
+        "depth_std": 0.06040002778172493,
+        "depth_min": 0.17535151541233063,
+        "depth_max": 0.41799578070640564,
+        "mask_area": 111
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. countertop. shelf. cup. bowl. container. screwdriver. clamp. power strip. cable.",
+  "text_prompt": "robot arm. gripper. sink. faucet. countertop. shelf. cup. bowl. container. screwdriver. clamp. power strip. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

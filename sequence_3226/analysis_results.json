@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "coffee maker",
+    "shelf",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: coffee maker, chair, robot arm, shelf, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.045889802277088165,
+        "relative_position": "closest",
+        "confidence": 0.4551583230495453
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.2741287350654602,
+        "relative_position": "middle",
+        "confidence": 0.39972788095474243
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "coffee maker",
+        "mean_depth": 0.29954448342323303,
+        "relative_position": "middle",
+        "confidence": 0.43561941385269165
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "shelf",
+        "mean_depth": 0.5010271072387695,
+        "relative_position": "middle",
+        "confidence": 0.426582008600235
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.5096881985664368,
+        "relative_position": "farthest",
+        "confidence": 0.6367560625076294
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.5096881985664368,
+        "relative_position": "farthest",
+        "confidence": 0.6367560625076294
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "shelf",
+        "mean_depth": 0.5010271072387695,
+        "relative_position": "middle",
+        "confidence": 0.426582008600235
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "coffee maker",
+        "mean_depth": 0.29954448342323303,
+        "relative_position": "middle",
+        "confidence": 0.43561941385269165
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "table",
+        "mean_depth": 0.2741287350654602,
+        "relative_position": "middle",
+        "confidence": 0.39972788095474243
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.045889802277088165,
+        "relative_position": "closest",
+        "confidence": 0.4551583230495453
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.4551583230495453,
+      "bounding_box": [
+        -0.035915374755859375,
+        0.11237335205078125,
+        90.82698059082031,
+        180.08358764648438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.045889802277088165,
+        "median_depth": 0.03833021968603134,
+        "depth_std": 0.03279232978820801,
+        "depth_min": 0.011524857953190804,
+        "depth_max": 0.3152675926685333,
+        "mask_area": 7852
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "table",
+      "confidence": 0.39972788095474243,
+      "bounding_box": [
+        184.21449279785156,
+        128.83016967773438,
+        315.9910888671875,
+        179.98257446289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2741287350654602,
+        "median_depth": 0.2708432972431183,
+        "depth_std": 0.02072126790881157,
+        "depth_min": 0.22950412333011627,
+        "depth_max": 0.32284724712371826,
+        "mask_area": 3989
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "coffee maker",
+      "confidence": 0.43561941385269165,
+      "bounding_box": [
+        217.3622283935547,
+        50.352210998535156,
+        283.46600341796875,
+        121.37004852294922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29954448342323303,
+        "median_depth": 0.29911285638809204,
+        "depth_std": 0.025090785697102547,
+        "depth_min": 0.158555269241333,
+        "depth_max": 0.370956152677536,
+        "mask_area": 3179
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "shelf",
+      "confidence": 0.426582008600235,
+      "bounding_box": [
+        152.38150024414062,
+        23.47894287109375,
+        230.85147094726562,
+        126.80091857910156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5010271072387695,
+        "median_depth": 0.7106454372406006,
+        "depth_std": 0.3640739917755127,
+        "depth_min": 0.03171691298484802,
+        "depth_max": 0.9745457768440247,
+        "mask_area": 2520
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.6367560625076294,
+      "bounding_box": [
+        70.23101043701172,
+        65.84112548828125,
+        121.38416290283203,
+        128.0420379638672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5096881985664368,
+        "median_depth": 0.43186068534851074,
+        "depth_std": 0.13756334781646729,
+        "depth_min": 0.36804255843162537,
+        "depth_max": 0.976256251335144,
+        "mask_area": 1703
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. coffee maker. refrigerator. table. chair. shelf. clamp. cable. wall. floor.",
+  "text_prompt": "robot arm. gripper. coffee maker. refrigerator. table. chair. shelf. clamp. cable. wall. floor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

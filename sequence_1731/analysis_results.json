@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/home/ulal/visual_reasoning/tmp/depth_extended_temp_3757924/temp_image_7980.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_7980.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "container",
+    "chair",
+    "refrigerator",
+    "microwave"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: microwave, chair, robot arm, refrigerator, container",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.040834467858076096,
+        "relative_position": "closest",
+        "confidence": 0.43720993399620056
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "container",
+        "mean_depth": 0.215978741645813,
+        "relative_position": "middle",
+        "confidence": 0.4568408727645874
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.419651061296463,
+        "relative_position": "middle",
+        "confidence": 0.7234065532684326
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.6431602239608765,
+        "relative_position": "middle",
+        "confidence": 0.891639232635498
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "microwave",
+        "mean_depth": 0.9984095096588135,
+        "relative_position": "farthest",
+        "confidence": 0.8273420333862305
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "microwave",
+        "mean_depth": 0.9984095096588135,
+        "relative_position": "farthest",
+        "confidence": 0.8273420333862305
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "refrigerator",
+        "mean_depth": 0.6431602239608765,
+        "relative_position": "middle",
+        "confidence": 0.891639232635498
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.419651061296463,
+        "relative_position": "middle",
+        "confidence": 0.7234065532684326
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "container",
+        "mean_depth": 0.215978741645813,
+        "relative_position": "middle",
+        "confidence": 0.4568408727645874
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.040834467858076096,
+        "relative_position": "closest",
+        "confidence": 0.43720993399620056
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.43720993399620056,
+      "bounding_box": [
+        187.9247589111328,
+        -0.002933502197265625,
+        316.10626220703125,
+        99.79985046386719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.040834467858076096,
+        "median_depth": 0.029291875660419464,
+        "depth_std": 0.04818383976817131,
+        "depth_min": 0.00021525926422327757,
+        "depth_max": 0.6963767409324646,
+        "mask_area": 4022
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "container",
+      "confidence": 0.4568408727645874,
+      "bounding_box": [
+        156.5823211669922,
+        101.03772735595703,
+        185.5229034423828,
+        126.97220611572266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.215978741645813,
+        "median_depth": 0.21126453578472137,
+        "depth_std": 0.013848657719790936,
+        "depth_min": 0.18965798616409302,
+        "depth_max": 0.2932421565055847,
+        "mask_area": 574
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.7234065532684326,
+      "bounding_box": [
+        84.05390930175781,
+        93.2509765625,
+        133.66766357421875,
+        133.83790588378906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.419651061296463,
+        "median_depth": 0.3607221245765686,
+        "depth_std": 0.13241028785705566,
+        "depth_min": 0.2993171513080597,
+        "depth_max": 0.8453742861747742,
+        "mask_area": 739
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "refrigerator",
+      "confidence": 0.891639232635498,
+      "bounding_box": [
+        94.8587417602539,
+        0.5816993713378906,
+        160.6629638671875,
+        108.18931579589844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6431602239608765,
+        "median_depth": 0.6354802846908569,
+        "depth_std": 0.035479843616485596,
+        "depth_min": 0.5829700231552124,
+        "depth_max": 0.7769371867179871,
+        "mask_area": 5682
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "microwave",
+      "confidence": 0.8273420333862305,
+      "bounding_box": [
+        59.340946197509766,
+        47.27899932861328,
+        88.92680358886719,
+        64.08391571044922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9984095096588135,
+        "median_depth": 0.9986507892608643,
+        "depth_std": 0.0012581266928464174,
+        "depth_min": 0.993946373462677,
+        "depth_max": 1.0,
+        "mask_area": 407
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. container. mushroom. countertop. chair. refrigerator. cabinet. microwave.",
+  "text_prompt": "robot arm. gripper. container. mushroom. countertop. chair. refrigerator. cabinet. microwave.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

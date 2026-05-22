@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "door",
+    "trash bin",
+    "trash bin",
+    "light switch"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: trash bin, door, light switch, trash bin, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.04476791247725487,
+        "relative_position": "closest",
+        "confidence": 0.4527394473552704
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.10821973532438278,
+        "relative_position": "middle",
+        "confidence": 0.6747265458106995
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "trash bin",
+        "mean_depth": 0.2577151656150818,
+        "relative_position": "middle",
+        "confidence": 0.3848617374897003
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "trash bin",
+        "mean_depth": 0.3063082695007324,
+        "relative_position": "middle",
+        "confidence": 0.604479968547821
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "light switch",
+        "mean_depth": 0.3844304382801056,
+        "relative_position": "farthest",
+        "confidence": 0.73124098777771
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "light switch",
+        "mean_depth": 0.3844304382801056,
+        "relative_position": "farthest",
+        "confidence": 0.73124098777771
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "trash bin",
+        "mean_depth": 0.3063082695007324,
+        "relative_position": "middle",
+        "confidence": 0.604479968547821
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "trash bin",
+        "mean_depth": 0.2577151656150818,
+        "relative_position": "middle",
+        "confidence": 0.3848617374897003
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "door",
+        "mean_depth": 0.10821973532438278,
+        "relative_position": "middle",
+        "confidence": 0.6747265458106995
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.04476791247725487,
+        "relative_position": "closest",
+        "confidence": 0.4527394473552704
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.4527394473552704,
+      "bounding_box": [
+        0.017185211181640625,
+        0.9804306030273438,
+        113.183349609375,
+        176.50152587890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04476791247725487,
+        "median_depth": 0.03367837518453598,
+        "depth_std": 0.061826445162296295,
+        "depth_min": 0.009220026433467865,
+        "depth_max": 0.7960049510002136,
+        "mask_area": 6534
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "door",
+      "confidence": 0.6747265458106995,
+      "bounding_box": [
+        221.84710693359375,
+        0.03155517578125,
+        315.98907470703125,
+        180.0121307373047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10821973532438278,
+        "median_depth": 0.10590258240699768,
+        "depth_std": 0.01713705249130726,
+        "depth_min": 0.07828865945339203,
+        "depth_max": 0.1486208736896515,
+        "mask_area": 13412
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "trash bin",
+      "confidence": 0.3848617374897003,
+      "bounding_box": [
+        161.4244384765625,
+        113.93702697753906,
+        194.28472900390625,
+        179.79774475097656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2577151656150818,
+        "median_depth": 0.24558593332767487,
+        "depth_std": 0.022165261209011078,
+        "depth_min": 0.23148885369300842,
+        "depth_max": 0.3336338698863983,
+        "mask_area": 1574
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "trash bin",
+      "confidence": 0.604479968547821,
+      "bounding_box": [
+        145.8629913330078,
+        132.65879821777344,
+        164.18479919433594,
+        171.1764373779297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3063082695007324,
+        "median_depth": 0.2994169294834137,
+        "depth_std": 0.02889009565114975,
+        "depth_min": 0.24861618876457214,
+        "depth_max": 0.4394127428531647,
+        "mask_area": 531
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "light switch",
+      "confidence": 0.73124098777771,
+      "bounding_box": [
+        168.97633361816406,
+        31.869583129882812,
+        182.10862731933594,
+        46.06517791748047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3844304382801056,
+        "median_depth": 0.3848608732223511,
+        "depth_std": 0.003329190192744136,
+        "depth_min": 0.3773348331451416,
+        "depth_max": 0.39067381620407104,
+        "mask_area": 132
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. trash bin. door. door handle. light switch. countertop. cabinet. chair.",
+  "text_prompt": "robot arm. gripper. table. trash bin. door. door handle. light switch. countertop. cabinet. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

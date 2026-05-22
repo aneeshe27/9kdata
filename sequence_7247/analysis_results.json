@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "##per container",
+    "bowl",
+    "monitor",
+    "chair",
+    "keyboard"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, keyboard, ##per container, monitor, bowl",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "##per container",
+        "mean_depth": 0.09245892614126205,
+        "relative_position": "closest",
+        "confidence": 0.3559491038322449
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.11412901431322098,
+        "relative_position": "middle",
+        "confidence": 0.6943977475166321
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.5007237195968628,
+        "relative_position": "middle",
+        "confidence": 0.5339743494987488
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.5280764698982239,
+        "relative_position": "middle",
+        "confidence": 0.5200389623641968
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "keyboard",
+        "mean_depth": 0.6060646176338196,
+        "relative_position": "farthest",
+        "confidence": 0.4609459638595581
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "keyboard",
+        "mean_depth": 0.6060646176338196,
+        "relative_position": "farthest",
+        "confidence": 0.4609459638595581
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.5280764698982239,
+        "relative_position": "middle",
+        "confidence": 0.5200389623641968
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.5007237195968628,
+        "relative_position": "middle",
+        "confidence": 0.5339743494987488
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.11412901431322098,
+        "relative_position": "middle",
+        "confidence": 0.6943977475166321
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "##per container",
+        "mean_depth": 0.09245892614126205,
+        "relative_position": "closest",
+        "confidence": 0.3559491038322449
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "##per container",
+      "confidence": 0.3559491038322449,
+      "bounding_box": [
+        190.46319580078125,
+        116.06193542480469,
+        229.82540893554688,
+        167.28431701660156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09245892614126205,
+        "median_depth": 0.08934968709945679,
+        "depth_std": 0.016108376905322075,
+        "depth_min": 0.06950030475854874,
+        "depth_max": 0.15775486826896667,
+        "mask_area": 1249
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.6943977475166321,
+      "bounding_box": [
+        154.4351348876953,
+        109.87980651855469,
+        189.17759704589844,
+        135.95004272460938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11412901431322098,
+        "median_depth": 0.11236224323511124,
+        "depth_std": 0.01353930402547121,
+        "depth_min": 0.0957135483622551,
+        "depth_max": 0.17615178227424622,
+        "mask_area": 696
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "monitor",
+      "confidence": 0.5339743494987488,
+      "bounding_box": [
+        273.9260559082031,
+        48.10370635986328,
+        315.9786071777344,
+        87.48600006103516
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5007237195968628,
+        "median_depth": 0.49868983030319214,
+        "depth_std": 0.03164902701973915,
+        "depth_min": 0.4480641484260559,
+        "depth_max": 0.5925285816192627,
+        "mask_area": 1026
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.5200389623641968,
+      "bounding_box": [
+        46.161949157714844,
+        61.938690185546875,
+        92.27680206298828,
+        107.06228637695312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5280764698982239,
+        "median_depth": 0.5227689146995544,
+        "depth_std": 0.02390461042523384,
+        "depth_min": 0.48772957921028137,
+        "depth_max": 0.5904608964920044,
+        "mask_area": 771
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "keyboard",
+      "confidence": 0.4609459638595581,
+      "bounding_box": [
+        177.45216369628906,
+        74.33804321289062,
+        192.9525909423828,
+        79.8568115234375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6060646176338196,
+        "median_depth": 0.654086172580719,
+        "depth_std": 0.13955119252204895,
+        "depth_min": 0.04077259078621864,
+        "depth_max": 0.6779995560646057,
+        "mask_area": 60
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. spatula. robot arm. gripper. sponge. container. table. monitor. keyboard. chair. whiteboard.",
+  "text_prompt": "bowl. spatula. robot arm. gripper. sponge. container. table. monitor. keyboard. chair. whiteboard.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cable",
+    "table workbench",
+    "bag",
+    "chair",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bag, table workbench, chair, cable, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cable",
+        "mean_depth": 0.08664830029010773,
+        "relative_position": "closest",
+        "confidence": 0.4281529486179352
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "table workbench",
+        "mean_depth": 0.18073514103889465,
+        "relative_position": "middle",
+        "confidence": 0.386051744222641
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "bag",
+        "mean_depth": 0.39918801188468933,
+        "relative_position": "middle",
+        "confidence": 0.4450491666793823
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.46224796772003174,
+        "relative_position": "middle",
+        "confidence": 0.4355350434780121
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.570489764213562,
+        "relative_position": "farthest",
+        "confidence": 0.3799065351486206
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.570489764213562,
+        "relative_position": "farthest",
+        "confidence": 0.3799065351486206
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.46224796772003174,
+        "relative_position": "middle",
+        "confidence": 0.4355350434780121
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "bag",
+        "mean_depth": 0.39918801188468933,
+        "relative_position": "middle",
+        "confidence": 0.4450491666793823
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "table workbench",
+        "mean_depth": 0.18073514103889465,
+        "relative_position": "middle",
+        "confidence": 0.386051744222641
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cable",
+        "mean_depth": 0.08664830029010773,
+        "relative_position": "closest",
+        "confidence": 0.4281529486179352
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "cable",
+      "confidence": 0.4281529486179352,
+      "bounding_box": [
+        81.95547485351562,
+        133.93130493164062,
+        152.12123107910156,
+        179.71084594726562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08664830029010773,
+        "median_depth": 0.08234972506761551,
+        "depth_std": 0.03360378369688988,
+        "depth_min": 0.03263165056705475,
+        "depth_max": 0.21489235758781433,
+        "mask_area": 2176
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "table workbench",
+      "confidence": 0.386051744222641,
+      "bounding_box": [
+        113.54009246826172,
+        43.519805908203125,
+        260.1787109375,
+        136.4327392578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18073514103889465,
+        "median_depth": 0.17570041120052338,
+        "depth_std": 0.0488678403198719,
+        "depth_min": 0.11545049399137497,
+        "depth_max": 0.8003709316253662,
+        "mask_area": 5739
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "bag",
+      "confidence": 0.4450491666793823,
+      "bounding_box": [
+        241.05386352539062,
+        158.78317260742188,
+        291.5848693847656,
+        179.78857421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39918801188468933,
+        "median_depth": 0.3964620530605316,
+        "depth_std": 0.029954006895422935,
+        "depth_min": 0.3438088893890381,
+        "depth_max": 0.4684752821922302,
+        "mask_area": 749
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.4355350434780121,
+      "bounding_box": [
+        0.16506576538085938,
+        0.075164794921875,
+        103.19879150390625,
+        104.03146362304688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.46224796772003174,
+        "median_depth": 0.47039854526519775,
+        "depth_std": 0.08587627112865448,
+        "depth_min": 0.1500028669834137,
+        "depth_max": 0.9820780158042908,
+        "mask_area": 3615
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.3799065351486206,
+      "bounding_box": [
+        88.26324462890625,
+        6.526172637939453,
+        158.09153747558594,
+        100.88041687011719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.570489764213562,
+        "median_depth": 0.5507077574729919,
+        "depth_std": 0.06455451995134354,
+        "depth_min": 0.5051717162132263,
+        "depth_max": 0.8752905130386353,
+        "mask_area": 1456
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cube. chair. cable. clamp. emergency stop button. pegboard. aluminum rail. bag. cardboard. workbench.",
+  "text_prompt": "robot arm. gripper. table. cube. chair. cable. clamp. emergency stop button. pegboard. aluminum rail. bag. cardboard. workbench.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

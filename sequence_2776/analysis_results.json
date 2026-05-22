@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table cart",
+    "envelope",
+    "chair",
+    "window metal frame"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, envelope, window metal frame, robot arm, table cart",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.014589531347155571,
+        "relative_position": "closest",
+        "confidence": 0.36236119270324707
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table cart",
+        "mean_depth": 0.017907284200191498,
+        "relative_position": "middle",
+        "confidence": 0.36237767338752747
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "envelope",
+        "mean_depth": 0.025490961968898773,
+        "relative_position": "middle",
+        "confidence": 0.4585817754268646
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.05093895271420479,
+        "relative_position": "middle",
+        "confidence": 0.6024258732795715
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "window metal frame",
+        "mean_depth": 0.07452426850795746,
+        "relative_position": "farthest",
+        "confidence": 0.35316750407218933
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "window metal frame",
+        "mean_depth": 0.07452426850795746,
+        "relative_position": "farthest",
+        "confidence": 0.35316750407218933
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.05093895271420479,
+        "relative_position": "middle",
+        "confidence": 0.6024258732795715
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "envelope",
+        "mean_depth": 0.025490961968898773,
+        "relative_position": "middle",
+        "confidence": 0.4585817754268646
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table cart",
+        "mean_depth": 0.017907284200191498,
+        "relative_position": "middle",
+        "confidence": 0.36237767338752747
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.014589531347155571,
+        "relative_position": "closest",
+        "confidence": 0.36236119270324707
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.36236119270324707,
+      "bounding_box": [
+        105.16476440429688,
+        0.056804656982421875,
+        162.13104248046875,
+        67.440185546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.014589531347155571,
+        "median_depth": 0.012271689251065254,
+        "depth_std": 0.006145330611616373,
+        "depth_min": 0.004918902646750212,
+        "depth_max": 0.05828365311026573,
+        "mask_area": 990
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "table cart",
+      "confidence": 0.36237767338752747,
+      "bounding_box": [
+        0.052219390869140625,
+        29.256065368652344,
+        120.786865234375,
+        179.90213012695312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.017907284200191498,
+        "median_depth": 0.014804717153310776,
+        "depth_std": 0.010423094965517521,
+        "depth_min": 0.004077708814293146,
+        "depth_max": 0.06675649434328079,
+        "mask_area": 14534
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "envelope",
+      "confidence": 0.4585817754268646,
+      "bounding_box": [
+        146.3421630859375,
+        60.90224838256836,
+        225.488037109375,
+        166.1457977294922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.025490961968898773,
+        "median_depth": 0.023938598111271858,
+        "depth_std": 0.026943480595946312,
+        "depth_min": 0.005409731063991785,
+        "depth_max": 0.6109982132911682,
+        "mask_area": 3869
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.6024258732795715,
+      "bounding_box": [
+        31.516098022460938,
+        0.04770469665527344,
+        99.31521606445312,
+        42.541046142578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05093895271420479,
+        "median_depth": 0.05231650173664093,
+        "depth_std": 0.007397632114589214,
+        "depth_min": 0.030919568613171577,
+        "depth_max": 0.07231484353542328,
+        "mask_area": 1236
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "window metal frame",
+      "confidence": 0.35316750407218933,
+      "bounding_box": [
+        187.97573852539062,
+        0.03464508056640625,
+        315.9906005859375,
+        180.01614379882812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07452426850795746,
+        "median_depth": 0.04768107086420059,
+        "depth_std": 0.12869484722614288,
+        "depth_min": 0.027394995093345642,
+        "depth_max": 0.9312516450881958,
+        "mask_area": 4408
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. envelope. paper. window. chair. cables. metal frame. cart. railing.",
+  "text_prompt": "robot arm. gripper. table. envelope. paper. window. chair. cables. metal frame. cart. railing.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

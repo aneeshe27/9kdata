@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cylinder wooden block cardboard",
+    "cup",
+    "cup",
+    "chair",
+    "robot arm"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, cylinder wooden block cardboard, chair, cup, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cylinder wooden block cardboard",
+        "mean_depth": 0.07630211859941483,
+        "relative_position": "closest",
+        "confidence": 0.40199244022369385
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.13083109259605408,
+        "relative_position": "middle",
+        "confidence": 0.6447506546974182
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.1809462010860443,
+        "relative_position": "middle",
+        "confidence": 0.35707661509513855
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.2911252975463867,
+        "relative_position": "middle",
+        "confidence": 0.38887739181518555
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.6372395157814026,
+        "relative_position": "farthest",
+        "confidence": 0.4182837903499603
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.6372395157814026,
+        "relative_position": "farthest",
+        "confidence": 0.4182837903499603
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.2911252975463867,
+        "relative_position": "middle",
+        "confidence": 0.38887739181518555
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.1809462010860443,
+        "relative_position": "middle",
+        "confidence": 0.35707661509513855
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.13083109259605408,
+        "relative_position": "middle",
+        "confidence": 0.6447506546974182
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cylinder wooden block cardboard",
+        "mean_depth": 0.07630211859941483,
+        "relative_position": "closest",
+        "confidence": 0.40199244022369385
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "cylinder wooden block cardboard",
+      "confidence": 0.40199244022369385,
+      "bounding_box": [
+        195.05020141601562,
+        80.68574523925781,
+        223.55245971679688,
+        108.36288452148438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07630211859941483,
+        "median_depth": 0.07374763488769531,
+        "depth_std": 0.01555552426725626,
+        "depth_min": 0.05426866188645363,
+        "depth_max": 0.12007579952478409,
+        "mask_area": 400
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.6447506546974182,
+      "bounding_box": [
+        118.47803497314453,
+        52.97221755981445,
+        136.50804138183594,
+        75.8526840209961
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13083109259605408,
+        "median_depth": 0.12337213009595871,
+        "depth_std": 0.024592630565166473,
+        "depth_min": 0.11290589720010757,
+        "depth_max": 0.24652694165706635,
+        "mask_area": 291
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.35707661509513855,
+      "bounding_box": [
+        191.328125,
+        36.21290588378906,
+        203.21426391601562,
+        59.079307556152344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1809462010860443,
+        "median_depth": 0.17887195944786072,
+        "depth_std": 0.0075577436946332455,
+        "depth_min": 0.17102669179439545,
+        "depth_max": 0.21376660466194153,
+        "mask_area": 208
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.38887739181518555,
+      "bounding_box": [
+        0.24715805053710938,
+        0.28388214111328125,
+        76.59910583496094,
+        105.0714340209961
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2911252975463867,
+        "median_depth": 0.28694629669189453,
+        "depth_std": 0.06559289246797562,
+        "depth_min": 0.19126775860786438,
+        "depth_max": 0.5747136473655701,
+        "mask_area": 2976
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.4182837903499603,
+      "bounding_box": [
+        175.97540283203125,
+        0.4635658264160156,
+        222.50625610351562,
+        47.40806198120117
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6372395157814026,
+        "median_depth": 0.786756157875061,
+        "depth_std": 0.238442525267601,
+        "depth_min": 0.16512392461299896,
+        "depth_max": 0.902754008769989,
+        "mask_area": 1014
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. cup. wooden cylinder. wooden block. cardboard. chair. cable.",
+  "text_prompt": "table. robot arm. gripper. cup. wooden cylinder. wooden block. cardboard. chair. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

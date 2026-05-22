@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "wall",
+    "bowl",
+    "countertop",
+    "cabinet",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: wall, door, cabinet, countertop, bowl",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "wall",
+        "mean_depth": 0.14607658982276917,
+        "relative_position": "closest",
+        "confidence": 0.4354951083660126
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.2653712332248688,
+        "relative_position": "middle",
+        "confidence": 0.5371561646461487
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "countertop",
+        "mean_depth": 0.40376830101013184,
+        "relative_position": "middle",
+        "confidence": 0.39303457736968994
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.466164767742157,
+        "relative_position": "middle",
+        "confidence": 0.41004568338394165
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "door",
+        "mean_depth": 0.8650863170623779,
+        "relative_position": "farthest",
+        "confidence": 0.39520519971847534
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "door",
+        "mean_depth": 0.8650863170623779,
+        "relative_position": "farthest",
+        "confidence": 0.39520519971847534
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.466164767742157,
+        "relative_position": "middle",
+        "confidence": 0.41004568338394165
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "countertop",
+        "mean_depth": 0.40376830101013184,
+        "relative_position": "middle",
+        "confidence": 0.39303457736968994
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "bowl",
+        "mean_depth": 0.2653712332248688,
+        "relative_position": "middle",
+        "confidence": 0.5371561646461487
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "wall",
+        "mean_depth": 0.14607658982276917,
+        "relative_position": "closest",
+        "confidence": 0.4354951083660126
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "wall",
+      "confidence": 0.4354951083660126,
+      "bounding_box": [
+        190.5314483642578,
+        5.0288848876953125,
+        315.677978515625,
+        133.68576049804688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14607658982276917,
+        "median_depth": 0.13870064914226532,
+        "depth_std": 0.03705572336912155,
+        "depth_min": 0.08894173055887222,
+        "depth_max": 0.2388838678598404,
+        "mask_area": 11201
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "bowl",
+      "confidence": 0.5371561646461487,
+      "bounding_box": [
+        150.9969024658203,
+        119.9870376586914,
+        190.81153869628906,
+        149.8744354248047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2653712332248688,
+        "median_depth": 0.27132803201675415,
+        "depth_std": 0.028519146144390106,
+        "depth_min": 0.17313963174819946,
+        "depth_max": 0.3188800513744354,
+        "mask_area": 774
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "countertop",
+      "confidence": 0.39303457736968994,
+      "bounding_box": [
+        100.88548278808594,
+        106.71736145019531,
+        150.3349609375,
+        150.6588592529297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.40376830101013184,
+        "median_depth": 0.3717308044433594,
+        "depth_std": 0.13750781118869781,
+        "depth_min": 0.24087382853031158,
+        "depth_max": 0.9968901872634888,
+        "mask_area": 1288
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.41004568338394165,
+      "bounding_box": [
+        119.8248291015625,
+        0.14301681518554688,
+        191.57257080078125,
+        71.97695922851562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.466164767742157,
+        "median_depth": 0.4693296551704407,
+        "depth_std": 0.12130405008792877,
+        "depth_min": 0.24575625360012054,
+        "depth_max": 0.8680784106254578,
+        "mask_area": 3025
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "door",
+      "confidence": 0.39520519971847534,
+      "bounding_box": [
+        5.345745086669922,
+        24.225852966308594,
+        70.09375,
+        179.97930908203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8650863170623779,
+        "median_depth": 0.9414834976196289,
+        "depth_std": 0.242622509598732,
+        "depth_min": 0.015275097452104092,
+        "depth_max": 0.9715136885643005,
+        "mask_area": 7432
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. colander. utensil holder. whisk. spatula. egg. frying pan. stove. oven. range hood. countertop. cabinet. door. wall. robot arm. robot gripper.",
+  "text_prompt": "bowl. colander. utensil holder. whisk. spatula. egg. frying pan. stove. oven. range hood. countertop. cabinet. door. wall. robot arm. robot gripper.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

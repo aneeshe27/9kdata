@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "frying pan",
+    "pot",
+    "lid",
+    "table",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: lid, frying pan, pot, door, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "frying pan",
+        "mean_depth": 0.09507959336042404,
+        "relative_position": "closest",
+        "confidence": 0.5809392333030701
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "pot",
+        "mean_depth": 0.17608726024627686,
+        "relative_position": "middle",
+        "confidence": 0.4730090796947479
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "lid",
+        "mean_depth": 0.19957764446735382,
+        "relative_position": "middle",
+        "confidence": 0.36477363109588623
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.3921228051185608,
+        "relative_position": "middle",
+        "confidence": 0.4437684714794159
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "door",
+        "mean_depth": 0.7326238751411438,
+        "relative_position": "farthest",
+        "confidence": 0.42647793889045715
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "door",
+        "mean_depth": 0.7326238751411438,
+        "relative_position": "farthest",
+        "confidence": 0.42647793889045715
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.3921228051185608,
+        "relative_position": "middle",
+        "confidence": 0.4437684714794159
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "lid",
+        "mean_depth": 0.19957764446735382,
+        "relative_position": "middle",
+        "confidence": 0.36477363109588623
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "pot",
+        "mean_depth": 0.17608726024627686,
+        "relative_position": "middle",
+        "confidence": 0.4730090796947479
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "frying pan",
+        "mean_depth": 0.09507959336042404,
+        "relative_position": "closest",
+        "confidence": 0.5809392333030701
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "frying pan",
+      "confidence": 0.5809392333030701,
+      "bounding_box": [
+        106.95733642578125,
+        63.32630920410156,
+        180.85076904296875,
+        163.55165100097656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09507959336042404,
+        "median_depth": 0.09435519576072693,
+        "depth_std": 0.015945598483085632,
+        "depth_min": 0.06507036089897156,
+        "depth_max": 0.15945643186569214,
+        "mask_area": 3889
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "pot",
+      "confidence": 0.4730090796947479,
+      "bounding_box": [
+        140.2897491455078,
+        42.310333251953125,
+        205.6671600341797,
+        65.76820373535156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.17608726024627686,
+        "median_depth": 0.17314615845680237,
+        "depth_std": 0.008699535392224789,
+        "depth_min": 0.16303123533725739,
+        "depth_max": 0.23362980782985687,
+        "mask_area": 534
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "lid",
+      "confidence": 0.36477363109588623,
+      "bounding_box": [
+        278.2301025390625,
+        106.12014770507812,
+        315.9815673828125,
+        173.000244140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19957764446735382,
+        "median_depth": 0.20050540566444397,
+        "depth_std": 0.021284345537424088,
+        "depth_min": 0.1641267091035843,
+        "depth_max": 0.3867412209510803,
+        "mask_area": 1482
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.4437684714794159,
+      "bounding_box": [
+        198.6021728515625,
+        31.78985023498535,
+        262.2643737792969,
+        71.9129867553711
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3921228051185608,
+        "median_depth": 0.37136948108673096,
+        "depth_std": 0.07197071611881256,
+        "depth_min": 0.3162708580493927,
+        "depth_max": 0.7305406332015991,
+        "mask_area": 630
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "door",
+      "confidence": 0.42647793889045715,
+      "bounding_box": [
+        235.91836547851562,
+        0.028656005859375,
+        315.9255676269531,
+        73.42204284667969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7326238751411438,
+        "median_depth": 0.7169797420501709,
+        "depth_std": 0.06552653759717941,
+        "depth_min": 0.4360921382904053,
+        "depth_max": 0.8937001824378967,
+        "mask_area": 3084
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "stove. frying pan. pot. lid. kettle. table. door.",
+  "text_prompt": "stove. frying pan. pot. lid. kettle. table. door.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

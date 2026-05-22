@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "utensil organizer",
+    "range hood",
+    "floor",
+    "cooktop"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: range hood, utensil organizer, cooktop, floor, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.11776000261306763,
+        "relative_position": "closest",
+        "confidence": 0.3837583065032959
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "utensil organizer",
+        "mean_depth": 0.12808378040790558,
+        "relative_position": "middle",
+        "confidence": 0.3764997124671936
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "range hood",
+        "mean_depth": 0.5679070353507996,
+        "relative_position": "middle",
+        "confidence": 0.4748219847679138
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "floor",
+        "mean_depth": 0.6985762119293213,
+        "relative_position": "middle",
+        "confidence": 0.5421059131622314
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cooktop",
+        "mean_depth": 0.7393013834953308,
+        "relative_position": "farthest",
+        "confidence": 0.35559141635894775
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cooktop",
+        "mean_depth": 0.7393013834953308,
+        "relative_position": "farthest",
+        "confidence": 0.35559141635894775
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "floor",
+        "mean_depth": 0.6985762119293213,
+        "relative_position": "middle",
+        "confidence": 0.5421059131622314
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "range hood",
+        "mean_depth": 0.5679070353507996,
+        "relative_position": "middle",
+        "confidence": 0.4748219847679138
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "utensil organizer",
+        "mean_depth": 0.12808378040790558,
+        "relative_position": "middle",
+        "confidence": 0.3764997124671936
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.11776000261306763,
+        "relative_position": "closest",
+        "confidence": 0.3837583065032959
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.3837583065032959,
+      "bounding_box": [
+        214.87571716308594,
+        0.13152694702148438,
+        315.4399719238281,
+        67.09707641601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11776000261306763,
+        "median_depth": 0.06657783687114716,
+        "depth_std": 0.12368198484182358,
+        "depth_min": 0.04447755217552185,
+        "depth_max": 0.931837797164917,
+        "mask_area": 1866
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "utensil organizer",
+      "confidence": 0.3764997124671936,
+      "bounding_box": [
+        166.47312927246094,
+        23.070066452026367,
+        185.8540802001953,
+        62.39207458496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12808378040790558,
+        "median_depth": 0.10268434137105942,
+        "depth_std": 0.07971146702766418,
+        "depth_min": 0.08753892779350281,
+        "depth_max": 0.6696720123291016,
+        "mask_area": 444
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "range hood",
+      "confidence": 0.4748219847679138,
+      "bounding_box": [
+        162.839599609375,
+        0.17939472198486328,
+        216.37295532226562,
+        23.266971588134766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5679070353507996,
+        "median_depth": 0.555666983127594,
+        "depth_std": 0.05948948860168457,
+        "depth_min": 0.4920693635940552,
+        "depth_max": 0.8214375376701355,
+        "mask_area": 847
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "floor",
+      "confidence": 0.5421059131622314,
+      "bounding_box": [
+        198.7328338623047,
+        98.52423095703125,
+        310.35760498046875,
+        179.88128662109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6985762119293213,
+        "median_depth": 0.6762599349021912,
+        "depth_std": 0.16484232246875763,
+        "depth_min": 0.36561164259910583,
+        "depth_max": 1.0,
+        "mask_area": 3799
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cooktop",
+      "confidence": 0.35559141635894775,
+      "bounding_box": [
+        174.2629852294922,
+        62.752197265625,
+        222.9178009033203,
+        86.14340209960938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7393013834953308,
+        "median_depth": 0.7403375506401062,
+        "depth_std": 0.049398258328437805,
+        "depth_min": 0.2354177087545395,
+        "depth_max": 0.8533437252044678,
+        "mask_area": 677
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "refrigerator. robot arm. drawer. utensil organizer. cooktop. pan. countertop. cabinet. range hood. door. floor.",
+  "text_prompt": "refrigerator. robot arm. drawer. utensil organizer. cooktop. pan. countertop. cabinet. range hood. door. floor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

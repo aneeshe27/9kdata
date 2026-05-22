@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "door",
+    "cabinet shelf",
+    "table",
+    "ceiling light"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: ceiling light, cabinet shelf, robot arm, door, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.014091292396187782,
+        "relative_position": "closest",
+        "confidence": 0.46738484501838684
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.2715131938457489,
+        "relative_position": "middle",
+        "confidence": 0.3779940903186798
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cabinet shelf",
+        "mean_depth": 0.34774285554885864,
+        "relative_position": "middle",
+        "confidence": 0.4168916642665863
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.5106668472290039,
+        "relative_position": "middle",
+        "confidence": 0.4065082371234894
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "ceiling light",
+        "mean_depth": 0.820589542388916,
+        "relative_position": "farthest",
+        "confidence": 0.40480151772499084
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "ceiling light",
+        "mean_depth": 0.820589542388916,
+        "relative_position": "farthest",
+        "confidence": 0.40480151772499084
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.5106668472290039,
+        "relative_position": "middle",
+        "confidence": 0.4065082371234894
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cabinet shelf",
+        "mean_depth": 0.34774285554885864,
+        "relative_position": "middle",
+        "confidence": 0.4168916642665863
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.2715131938457489,
+        "relative_position": "middle",
+        "confidence": 0.3779940903186798
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.014091292396187782,
+        "relative_position": "closest",
+        "confidence": 0.46738484501838684
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.46738484501838684,
+      "bounding_box": [
+        201.18116760253906,
+        64.22419738769531,
+        294.5891418457031,
+        115.52894592285156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.014091292396187782,
+        "median_depth": 0.008944176137447357,
+        "depth_std": 0.03992902487516403,
+        "depth_min": 0.0050570848397910595,
+        "depth_max": 0.6825277209281921,
+        "mask_area": 2743
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "door",
+      "confidence": 0.3779940903186798,
+      "bounding_box": [
+        120.39666748046875,
+        112.06149291992188,
+        184.71636962890625,
+        179.83428955078125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2715131938457489,
+        "median_depth": 0.27113401889801025,
+        "depth_std": 0.026694264262914658,
+        "depth_min": 0.21854066848754883,
+        "depth_max": 0.36138078570365906,
+        "mask_area": 4008
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet shelf",
+      "confidence": 0.4168916642665863,
+      "bounding_box": [
+        104.89411163330078,
+        46.637107849121094,
+        186.9913330078125,
+        111.44884490966797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.34774285554885864,
+        "median_depth": 0.33526092767715454,
+        "depth_std": 0.04014766216278076,
+        "depth_min": 0.2871464490890503,
+        "depth_max": 0.4915918707847595,
+        "mask_area": 3890
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.4065082371234894,
+      "bounding_box": [
+        247.77899169921875,
+        151.951904296875,
+        294.8218994140625,
+        180.0167236328125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5106668472290039,
+        "median_depth": 0.5090911388397217,
+        "depth_std": 0.052315931767225266,
+        "depth_min": 0.3930882215499878,
+        "depth_max": 0.608794629573822,
+        "mask_area": 892
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "ceiling light",
+      "confidence": 0.40480151772499084,
+      "bounding_box": [
+        284.018798828125,
+        45.30366134643555,
+        315.93780517578125,
+        60.79127883911133
+      ],
+      "depth_stats": {
+        "mean_depth": 0.820589542388916,
+        "median_depth": 0.8262205123901367,
+        "depth_std": 0.03918715566396713,
+        "depth_min": 0.7331814765930176,
+        "depth_max": 0.8863703608512878,
+        "mask_area": 181
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cabinet. drawer. door. shelf. table. ceiling light.",
+  "text_prompt": "robot arm. gripper. cabinet. drawer. door. shelf. table. ceiling light.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

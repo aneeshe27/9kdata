@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "optical breadboard",
+    "robot arm",
+    "cloth",
+    "gripper",
+    "cable"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: optical breadboard, robot arm, cable, cloth, gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "optical breadboard",
+        "mean_depth": 0.01622782088816166,
+        "relative_position": "closest",
+        "confidence": 0.6605889797210693
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.09094660729169846,
+        "relative_position": "middle",
+        "confidence": 0.3531583845615387
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.09883923083543777,
+        "relative_position": "middle",
+        "confidence": 0.47426319122314453
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.11793014407157898,
+        "relative_position": "middle",
+        "confidence": 0.41807109117507935
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.317837119102478,
+        "relative_position": "farthest",
+        "confidence": 0.3932739794254303
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.317837119102478,
+        "relative_position": "farthest",
+        "confidence": 0.3932739794254303
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "gripper",
+        "mean_depth": 0.11793014407157898,
+        "relative_position": "middle",
+        "confidence": 0.41807109117507935
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.09883923083543777,
+        "relative_position": "middle",
+        "confidence": 0.47426319122314453
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.09094660729169846,
+        "relative_position": "middle",
+        "confidence": 0.3531583845615387
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "optical breadboard",
+        "mean_depth": 0.01622782088816166,
+        "relative_position": "closest",
+        "confidence": 0.6605889797210693
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "optical breadboard",
+      "confidence": 0.6605889797210693,
+      "bounding_box": [
+        0.05924224853515625,
+        122.2707748413086,
+        51.000240325927734,
+        179.8879852294922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01622782088816166,
+        "median_depth": 0.016672786325216293,
+        "depth_std": 0.006772790104150772,
+        "depth_min": 0.0010015510488301516,
+        "depth_max": 0.03102349303662777,
+        "mask_area": 1836
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3531583845615387,
+      "bounding_box": [
+        109.14579010009766,
+        29.236751556396484,
+        148.20285034179688,
+        73.37403869628906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09094660729169846,
+        "median_depth": 0.08994217962026596,
+        "depth_std": 0.005760995205491781,
+        "depth_min": 0.08275937288999557,
+        "depth_max": 0.10683608800172806,
+        "mask_area": 583
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.47426319122314453,
+      "bounding_box": [
+        144.34878540039062,
+        58.90287780761719,
+        202.97674560546875,
+        103.15266418457031
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09883923083543777,
+        "median_depth": 0.09787917137145996,
+        "depth_std": 0.020627254620194435,
+        "depth_min": 0.0629793033003807,
+        "depth_max": 0.14402352273464203,
+        "mask_area": 1266
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "gripper",
+      "confidence": 0.41807109117507935,
+      "bounding_box": [
+        268.8588562011719,
+        102.08690643310547,
+        305.1355895996094,
+        127.52342987060547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11793014407157898,
+        "median_depth": 0.10238146036863327,
+        "depth_std": 0.035461049526929855,
+        "depth_min": 0.08251670747995377,
+        "depth_max": 0.2295302152633667,
+        "mask_area": 344
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cable",
+      "confidence": 0.3932739794254303,
+      "bounding_box": [
+        221.38577270507812,
+        0.10752487182617188,
+        266.2656555175781,
+        58.85488510131836
+      ],
+      "depth_stats": {
+        "mean_depth": 0.317837119102478,
+        "median_depth": 0.22309188544750214,
+        "depth_std": 0.21433141827583313,
+        "depth_min": 0.08618270605802536,
+        "depth_max": 0.8859688639640808,
+        "mask_area": 841
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. articulated arm. cloth. optical breadboard. box. cable.",
+  "text_prompt": "table. robot arm. gripper. articulated arm. cloth. optical breadboard. box. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

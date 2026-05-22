@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm robot gripper",
+    "wooden block",
+    "robot base",
+    "laptop",
+    "cardboard box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot base, wooden block, cardboard box, laptop, robot arm robot gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.022002609446644783,
+        "relative_position": "closest",
+        "confidence": 0.3909621834754944
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "wooden block",
+        "mean_depth": 0.09324177354574203,
+        "relative_position": "middle",
+        "confidence": 0.4051329791545868
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot base",
+        "mean_depth": 0.2180345207452774,
+        "relative_position": "middle",
+        "confidence": 0.3528498113155365
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "laptop",
+        "mean_depth": 0.3546333909034729,
+        "relative_position": "middle",
+        "confidence": 0.8037595748901367
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.8362234830856323,
+        "relative_position": "farthest",
+        "confidence": 0.5586076378822327
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.8362234830856323,
+        "relative_position": "farthest",
+        "confidence": 0.5586076378822327
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "laptop",
+        "mean_depth": 0.3546333909034729,
+        "relative_position": "middle",
+        "confidence": 0.8037595748901367
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot base",
+        "mean_depth": 0.2180345207452774,
+        "relative_position": "middle",
+        "confidence": 0.3528498113155365
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "wooden block",
+        "mean_depth": 0.09324177354574203,
+        "relative_position": "middle",
+        "confidence": 0.4051329791545868
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.022002609446644783,
+        "relative_position": "closest",
+        "confidence": 0.3909621834754944
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm robot gripper",
+      "confidence": 0.3909621834754944,
+      "bounding_box": [
+        157.24407958984375,
+        0.045490264892578125,
+        245.499755859375,
+        90.08613586425781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022002609446644783,
+        "median_depth": 0.012402295134961605,
+        "depth_std": 0.04021751880645752,
+        "depth_min": 0.0032635373063385487,
+        "depth_max": 0.7054903507232666,
+        "mask_area": 3623
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "wooden block",
+      "confidence": 0.4051329791545868,
+      "bounding_box": [
+        72.18508911132812,
+        75.8741226196289,
+        100.82901000976562,
+        92.77701568603516
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09324177354574203,
+        "median_depth": 0.09063858538866043,
+        "depth_std": 0.009440233930945396,
+        "depth_min": 0.08192840963602066,
+        "depth_max": 0.1252680867910385,
+        "mask_area": 311
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot base",
+      "confidence": 0.3528498113155365,
+      "bounding_box": [
+        0.147491455078125,
+        106.3196792602539,
+        164.9417266845703,
+        179.9083251953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2180345207452774,
+        "median_depth": 0.18769457936286926,
+        "depth_std": 0.08227825164794922,
+        "depth_min": 0.12999677658081055,
+        "depth_max": 0.5449044704437256,
+        "mask_area": 6642
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "laptop",
+      "confidence": 0.8037595748901367,
+      "bounding_box": [
+        0.02022552490234375,
+        29.201683044433594,
+        63.71272277832031,
+        80.18104553222656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3546333909034729,
+        "median_depth": 0.32995840907096863,
+        "depth_std": 0.0911283791065216,
+        "depth_min": 0.2561550438404083,
+        "depth_max": 0.7999228835105896,
+        "mask_area": 1232
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cardboard box",
+      "confidence": 0.5586076378822327,
+      "bounding_box": [
+        90.46974182128906,
+        2.7452526092529297,
+        172.5486602783203,
+        51.62568664550781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8362234830856323,
+        "median_depth": 0.8445360064506531,
+        "depth_std": 0.06490261107683182,
+        "depth_min": 0.04836640506982803,
+        "depth_max": 0.8908898234367371,
+        "mask_area": 2607
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. wooden block. robot arm. robot gripper. laptop. cable. cardboard box. microphone. microphone stand. robot base.",
+  "text_prompt": "table. wooden block. robot arm. robot gripper. laptop. cable. cardboard box. microphone. microphone stand. robot base.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bottle",
+    "box",
+    "camera mount",
+    "curtain",
+    "whiteboard"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: curtain, box, whiteboard, bottle, camera mount",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.14280469715595245,
+        "relative_position": "closest",
+        "confidence": 0.5716286897659302
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "box",
+        "mean_depth": 0.3060503900051117,
+        "relative_position": "middle",
+        "confidence": 0.41832593083381653
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "camera mount",
+        "mean_depth": 0.4732958674430847,
+        "relative_position": "middle",
+        "confidence": 0.3905649781227112
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "curtain",
+        "mean_depth": 0.5233808755874634,
+        "relative_position": "middle",
+        "confidence": 0.8448566794395447
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "whiteboard",
+        "mean_depth": 0.9078776836395264,
+        "relative_position": "farthest",
+        "confidence": 0.3790335953235626
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "whiteboard",
+        "mean_depth": 0.9078776836395264,
+        "relative_position": "farthest",
+        "confidence": 0.3790335953235626
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "curtain",
+        "mean_depth": 0.5233808755874634,
+        "relative_position": "middle",
+        "confidence": 0.8448566794395447
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "camera mount",
+        "mean_depth": 0.4732958674430847,
+        "relative_position": "middle",
+        "confidence": 0.3905649781227112
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "box",
+        "mean_depth": 0.3060503900051117,
+        "relative_position": "middle",
+        "confidence": 0.41832593083381653
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.14280469715595245,
+        "relative_position": "closest",
+        "confidence": 0.5716286897659302
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.5716286897659302,
+      "bounding_box": [
+        154.62510681152344,
+        68.89912414550781,
+        167.9219207763672,
+        92.40350341796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14280469715595245,
+        "median_depth": 0.10437276214361191,
+        "depth_std": 0.14048084616661072,
+        "depth_min": 0.09392324835062027,
+        "depth_max": 0.8210803866386414,
+        "mask_area": 218
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "box",
+      "confidence": 0.41832593083381653,
+      "bounding_box": [
+        70.35591125488281,
+        60.522483825683594,
+        155.70567321777344,
+        103.51567840576172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3060503900051117,
+        "median_depth": 0.29363203048706055,
+        "depth_std": 0.052133865654468536,
+        "depth_min": 0.23593732714653015,
+        "depth_max": 0.8084247708320618,
+        "mask_area": 1686
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "camera mount",
+      "confidence": 0.3905649781227112,
+      "bounding_box": [
+        293.7642517089844,
+        0.06163215637207031,
+        315.9341125488281,
+        38.704986572265625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4732958674430847,
+        "median_depth": 0.46289119124412537,
+        "depth_std": 0.0403449721634388,
+        "depth_min": 0.4338585436344147,
+        "depth_max": 0.6508507132530212,
+        "mask_area": 412
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "curtain",
+      "confidence": 0.8448566794395447,
+      "bounding_box": [
+        -0.00550079345703125,
+        0.044353485107421875,
+        117.10305786132812,
+        97.4779052734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5233808755874634,
+        "median_depth": 0.5141829252243042,
+        "depth_std": 0.06606767326593399,
+        "depth_min": 0.35332033038139343,
+        "depth_max": 0.7884180545806885,
+        "mask_area": 8365
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "whiteboard",
+      "confidence": 0.3790335953235626,
+      "bounding_box": [
+        102.48787689208984,
+        0.11935234069824219,
+        227.4765625,
+        63.82331085205078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9078776836395264,
+        "median_depth": 0.9045681357383728,
+        "depth_std": 0.05607553943991661,
+        "depth_min": 0.7700607776641846,
+        "depth_max": 0.9960983991622925,
+        "mask_area": 6626
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. bottle. box. turntable. cable. curtain. whiteboard. camera mount.",
+  "text_prompt": "table. bottle. box. turntable. cable. curtain. whiteboard. camera mount.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

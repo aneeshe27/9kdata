@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "tissue box",
+    "jar",
+    "dispenser bottle",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: tissue box, chair, dispenser bottle, robot arm, jar",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.08008996397256851,
+        "relative_position": "closest",
+        "confidence": 0.44937053322792053
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "tissue box",
+        "mean_depth": 0.3368423283100128,
+        "relative_position": "middle",
+        "confidence": 0.5568478107452393
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "jar",
+        "mean_depth": 0.343777596950531,
+        "relative_position": "middle",
+        "confidence": 0.5716869831085205
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "dispenser bottle",
+        "mean_depth": 0.36952003836631775,
+        "relative_position": "middle",
+        "confidence": 0.5435778498649597
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.5185627937316895,
+        "relative_position": "farthest",
+        "confidence": 0.6697523593902588
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.5185627937316895,
+        "relative_position": "farthest",
+        "confidence": 0.6697523593902588
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "dispenser bottle",
+        "mean_depth": 0.36952003836631775,
+        "relative_position": "middle",
+        "confidence": 0.5435778498649597
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "jar",
+        "mean_depth": 0.343777596950531,
+        "relative_position": "middle",
+        "confidence": 0.5716869831085205
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "tissue box",
+        "mean_depth": 0.3368423283100128,
+        "relative_position": "middle",
+        "confidence": 0.5568478107452393
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.08008996397256851,
+        "relative_position": "closest",
+        "confidence": 0.44937053322792053
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.44937053322792053,
+      "bounding_box": [
+        175.45269775390625,
+        0.37978363037109375,
+        315.7579650878906,
+        179.55471801757812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08008996397256851,
+        "median_depth": 0.03802292048931122,
+        "depth_std": 0.10184302181005478,
+        "depth_min": 0.004337877966463566,
+        "depth_max": 0.9519095420837402,
+        "mask_area": 18729
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "tissue box",
+      "confidence": 0.5568478107452393,
+      "bounding_box": [
+        106.5696792602539,
+        64.7501220703125,
+        150.9320526123047,
+        132.28070068359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3368423283100128,
+        "median_depth": 0.31984418630599976,
+        "depth_std": 0.05082257464528084,
+        "depth_min": 0.2593860924243927,
+        "depth_max": 0.5606691837310791,
+        "mask_area": 2370
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "jar",
+      "confidence": 0.5716869831085205,
+      "bounding_box": [
+        57.68879699707031,
+        102.04830932617188,
+        87.29270935058594,
+        129.60472106933594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.343777596950531,
+        "median_depth": 0.3403262197971344,
+        "depth_std": 0.01376680564135313,
+        "depth_min": 0.32003679871559143,
+        "depth_max": 0.39540016651153564,
+        "mask_area": 603
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "dispenser bottle",
+      "confidence": 0.5435778498649597,
+      "bounding_box": [
+        32.22519302368164,
+        66.85982513427734,
+        86.09124755859375,
+        106.7876968383789
+      ],
+      "depth_stats": {
+        "mean_depth": 0.36952003836631775,
+        "median_depth": 0.3597574532032013,
+        "depth_std": 0.028754202648997307,
+        "depth_min": 0.33675825595855713,
+        "depth_max": 0.4795498549938202,
+        "mask_area": 811
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.6697523593902588,
+      "bounding_box": [
+        71.00299072265625,
+        46.31555938720703,
+        146.16908264160156,
+        90.79390716552734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5185627937316895,
+        "median_depth": 0.516426682472229,
+        "depth_std": 0.031585387885570526,
+        "depth_min": 0.46184876561164856,
+        "depth_max": 0.58000648021698,
+        "mask_area": 1670
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. chair. tissue box. dispenser bottle. jar. towel. appliance.",
+  "text_prompt": "robot arm. gripper. table. chair. tissue box. dispenser bottle. jar. towel. appliance.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

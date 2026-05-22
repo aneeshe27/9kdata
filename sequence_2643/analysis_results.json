@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "bottle",
+    "sink",
+    "faucet",
+    "paper",
+    "power outlet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, faucet, bottle, power outlet, paper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.31169289350509644,
+        "relative_position": "closest",
+        "confidence": 0.6286354064941406
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.3473617434501648,
+        "relative_position": "middle",
+        "confidence": 0.8418561220169067
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.43444013595581055,
+        "relative_position": "middle",
+        "confidence": 0.4135735034942627
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "paper",
+        "mean_depth": 0.6223185062408447,
+        "relative_position": "middle",
+        "confidence": 0.537501335144043
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "power outlet",
+        "mean_depth": 0.9459577202796936,
+        "relative_position": "farthest",
+        "confidence": 0.48501455783843994
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "power outlet",
+        "mean_depth": 0.9459577202796936,
+        "relative_position": "farthest",
+        "confidence": 0.48501455783843994
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "paper",
+        "mean_depth": 0.6223185062408447,
+        "relative_position": "middle",
+        "confidence": 0.537501335144043
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "faucet",
+        "mean_depth": 0.43444013595581055,
+        "relative_position": "middle",
+        "confidence": 0.4135735034942627
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.3473617434501648,
+        "relative_position": "middle",
+        "confidence": 0.8418561220169067
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.31169289350509644,
+        "relative_position": "closest",
+        "confidence": 0.6286354064941406
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.6286354064941406,
+      "bounding_box": [
+        92.37296295166016,
+        -0.10393905639648438,
+        133.88998413085938,
+        83.50462341308594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.31169289350509644,
+        "median_depth": 0.3139273524284363,
+        "depth_std": 0.03771771118044853,
+        "depth_min": 0.24170973896980286,
+        "depth_max": 0.45114386081695557,
+        "mask_area": 2098
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.8418561220169067,
+      "bounding_box": [
+        155.34326171875,
+        58.80069351196289,
+        286.3275451660156,
+        128.9033660888672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3473617434501648,
+        "median_depth": 0.34504055976867676,
+        "depth_std": 0.04442215338349342,
+        "depth_min": 0.22901551425457,
+        "depth_max": 0.43144387006759644,
+        "mask_area": 5230
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "faucet",
+      "confidence": 0.4135735034942627,
+      "bounding_box": [
+        153.74061584472656,
+        24.899494171142578,
+        239.4973602294922,
+        73.247802734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.43444013595581055,
+        "median_depth": 0.4183022081851959,
+        "depth_std": 0.05356193706393242,
+        "depth_min": 0.3797209560871124,
+        "depth_max": 0.7628462910652161,
+        "mask_area": 1029
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "paper",
+      "confidence": 0.537501335144043,
+      "bounding_box": [
+        223.69171142578125,
+        36.6180419921875,
+        285.8633117675781,
+        51.112892150878906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6223185062408447,
+        "median_depth": 0.6153778433799744,
+        "depth_std": 0.05466385930776596,
+        "depth_min": 0.5261792540550232,
+        "depth_max": 0.7861804962158203,
+        "mask_area": 420
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "power outlet",
+      "confidence": 0.48501455783843994,
+      "bounding_box": [
+        260.6314697265625,
+        -0.012764453887939453,
+        272.35260009765625,
+        8.73248291015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9459577202796936,
+        "median_depth": 0.9459777474403381,
+        "depth_std": 0.009058760479092598,
+        "depth_min": 0.9268057942390442,
+        "depth_max": 0.9650471806526184,
+        "mask_area": 79
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bottle. faucet. sink. drain. countertop. clamp. paper. power outlet.",
+  "text_prompt": "bottle. faucet. sink. drain. countertop. clamp. paper. power outlet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

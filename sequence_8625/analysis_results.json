@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "chair",
+    "ceiling light",
+    "chair",
+    "table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, table, chair, robot arm, ceiling light",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.04619014635682106,
+        "relative_position": "closest",
+        "confidence": 0.35802245140075684
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.10193898528814316,
+        "relative_position": "middle",
+        "confidence": 0.36167025566101074
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "ceiling light",
+        "mean_depth": 0.41507425904273987,
+        "relative_position": "middle",
+        "confidence": 0.3816571831703186
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.5703312158584595,
+        "relative_position": "middle",
+        "confidence": 0.38346752524375916
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.5911713242530823,
+        "relative_position": "farthest",
+        "confidence": 0.37611111998558044
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.5911713242530823,
+        "relative_position": "farthest",
+        "confidence": 0.37611111998558044
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.5703312158584595,
+        "relative_position": "middle",
+        "confidence": 0.38346752524375916
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "ceiling light",
+        "mean_depth": 0.41507425904273987,
+        "relative_position": "middle",
+        "confidence": 0.3816571831703186
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.10193898528814316,
+        "relative_position": "middle",
+        "confidence": 0.36167025566101074
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.04619014635682106,
+        "relative_position": "closest",
+        "confidence": 0.35802245140075684
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.35802245140075684,
+      "bounding_box": [
+        116.40464782714844,
+        83.25892639160156,
+        312.11968994140625,
+        160.91629028320312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04619014635682106,
+        "median_depth": 0.03352973237633705,
+        "depth_std": 0.07010164856910706,
+        "depth_min": 0.005765595473349094,
+        "depth_max": 0.6145264506340027,
+        "mask_area": 6518
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.36167025566101074,
+      "bounding_box": [
+        50.96754837036133,
+        130.62864685058594,
+        120.86567687988281,
+        179.93199157714844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10193898528814316,
+        "median_depth": 0.08963529765605927,
+        "depth_std": 0.05524277687072754,
+        "depth_min": 0.07082656025886536,
+        "depth_max": 0.5381436944007874,
+        "mask_area": 1990
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "ceiling light",
+      "confidence": 0.3816571831703186,
+      "bounding_box": [
+        77.47818756103516,
+        -0.005123138427734375,
+        191.96142578125,
+        89.20024108886719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.41507425904273987,
+        "median_depth": 0.40562522411346436,
+        "depth_std": 0.057542845606803894,
+        "depth_min": 0.324101984500885,
+        "depth_max": 0.5557478666305542,
+        "mask_area": 2123
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.38346752524375916,
+      "bounding_box": [
+        18.40814971923828,
+        81.54119110107422,
+        73.47796630859375,
+        133.8287353515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5703312158584595,
+        "median_depth": 0.5813680291175842,
+        "depth_std": 0.033581919968128204,
+        "depth_min": 0.41956663131713867,
+        "depth_max": 0.6241857409477234,
+        "mask_area": 1168
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.37611111998558044,
+      "bounding_box": [
+        96.75202941894531,
+        106.67665100097656,
+        124.77552795410156,
+        132.4043731689453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5911713242530823,
+        "median_depth": 0.5910974144935608,
+        "depth_std": 0.02454160340130329,
+        "depth_min": 0.34667065739631653,
+        "depth_max": 0.6255429983139038,
+        "mask_area": 238
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. chair. table. shelf. curtain. ceiling light. vent. pipe. tripod.",
+  "text_prompt": "robot arm. chair. table. shelf. curtain. ceiling light. vent. pipe. tripod.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

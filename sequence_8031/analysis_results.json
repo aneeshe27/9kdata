@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "refrigerator",
+    "cabinet",
+    "stool",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: refrigerator, cabinet, table, stool, cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.04190462827682495,
+        "relative_position": "closest",
+        "confidence": 0.6770257949829102
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "refrigerator",
+        "mean_depth": 0.1496027112007141,
+        "relative_position": "middle",
+        "confidence": 0.43006911873817444
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.2518066465854645,
+        "relative_position": "middle",
+        "confidence": 0.44325780868530273
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "stool",
+        "mean_depth": 0.297905296087265,
+        "relative_position": "middle",
+        "confidence": 0.6677008867263794
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.3662489950656891,
+        "relative_position": "farthest",
+        "confidence": 0.3815952241420746
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.3662489950656891,
+        "relative_position": "farthest",
+        "confidence": 0.3815952241420746
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "stool",
+        "mean_depth": 0.297905296087265,
+        "relative_position": "middle",
+        "confidence": 0.6677008867263794
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cabinet",
+        "mean_depth": 0.2518066465854645,
+        "relative_position": "middle",
+        "confidence": 0.44325780868530273
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "refrigerator",
+        "mean_depth": 0.1496027112007141,
+        "relative_position": "middle",
+        "confidence": 0.43006911873817444
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.04190462827682495,
+        "relative_position": "closest",
+        "confidence": 0.6770257949829102
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.6770257949829102,
+      "bounding_box": [
+        92.57709503173828,
+        110.88191223144531,
+        315.99456787109375,
+        179.91661071777344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04190462827682495,
+        "median_depth": 0.01844855025410652,
+        "depth_std": 0.07760709524154663,
+        "depth_min": 0.0,
+        "depth_max": 0.8402937650680542,
+        "mask_area": 6305
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "refrigerator",
+      "confidence": 0.43006911873817444,
+      "bounding_box": [
+        252.45933532714844,
+        30.141273498535156,
+        315.9976501464844,
+        140.13375854492188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1496027112007141,
+        "median_depth": 0.19725428521633148,
+        "depth_std": 0.09661610424518585,
+        "depth_min": 0.0247789453715086,
+        "depth_max": 0.3257358968257904,
+        "mask_area": 5358
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cabinet",
+      "confidence": 0.44325780868530273,
+      "bounding_box": [
+        251.99130249023438,
+        0.09954452514648438,
+        316.0279846191406,
+        47.65300750732422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2518066465854645,
+        "median_depth": 0.24987080693244934,
+        "depth_std": 0.023259280249476433,
+        "depth_min": 0.21319477260112762,
+        "depth_max": 0.3124735653400421,
+        "mask_area": 1586
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "stool",
+      "confidence": 0.6677008867263794,
+      "bounding_box": [
+        33.1606559753418,
+        146.32435607910156,
+        59.76736068725586,
+        179.9756622314453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.297905296087265,
+        "median_depth": 0.2672434449195862,
+        "depth_std": 0.09765160828828812,
+        "depth_min": 0.20121893286705017,
+        "depth_max": 0.6225380301475525,
+        "mask_area": 454
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.3815952241420746,
+      "bounding_box": [
+        219.6927490234375,
+        24.20903205871582,
+        255.951416015625,
+        81.6584701538086
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3662489950656891,
+        "median_depth": 0.36486101150512695,
+        "depth_std": 0.02495892532169819,
+        "depth_min": 0.31270498037338257,
+        "depth_max": 0.43044209480285645,
+        "mask_area": 1553
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. bowl. cup. plate. plastic bag. orange. blender. refrigerator. cabinet. stool.",
+  "text_prompt": "robot arm. gripper. table. bowl. cup. plate. plastic bag. orange. blender. refrigerator. cabinet. stool.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

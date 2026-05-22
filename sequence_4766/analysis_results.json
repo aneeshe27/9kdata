@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cable",
+    "robot arm",
+    "gripper clamp",
+    "chair",
+    "container"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, chair, cable, container, gripper clamp",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "cable",
+        "mean_depth": 0.022459514439105988,
+        "relative_position": "closest",
+        "confidence": 0.5227364897727966
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.04952126741409302,
+        "relative_position": "middle",
+        "confidence": 0.583885669708252
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "gripper clamp",
+        "mean_depth": 0.05434267222881317,
+        "relative_position": "middle",
+        "confidence": 0.3755089342594147
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.30693385004997253,
+        "relative_position": "middle",
+        "confidence": 0.5072274804115295
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "container",
+        "mean_depth": 0.5227935910224915,
+        "relative_position": "farthest",
+        "confidence": 0.6793860197067261
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "container",
+        "mean_depth": 0.5227935910224915,
+        "relative_position": "farthest",
+        "confidence": 0.6793860197067261
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.30693385004997253,
+        "relative_position": "middle",
+        "confidence": 0.5072274804115295
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "gripper clamp",
+        "mean_depth": 0.05434267222881317,
+        "relative_position": "middle",
+        "confidence": 0.3755089342594147
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.04952126741409302,
+        "relative_position": "middle",
+        "confidence": 0.583885669708252
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "cable",
+        "mean_depth": 0.022459514439105988,
+        "relative_position": "closest",
+        "confidence": 0.5227364897727966
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "cable",
+      "confidence": 0.5227364897727966,
+      "bounding_box": [
+        0.2294178009033203,
+        122.91888427734375,
+        53.03961181640625,
+        179.96389770507812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022459514439105988,
+        "median_depth": 0.021826643496751785,
+        "depth_std": 0.009967324323952198,
+        "depth_min": 0.0036573712714016438,
+        "depth_max": 0.054118044674396515,
+        "mask_area": 1791
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.583885669708252,
+      "bounding_box": [
+        61.3624267578125,
+        0.1381244659423828,
+        137.5267333984375,
+        42.92460632324219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04952126741409302,
+        "median_depth": 0.03396226465702057,
+        "depth_std": 0.06765143573284149,
+        "depth_min": 0.011025739833712578,
+        "depth_max": 0.5399019122123718,
+        "mask_area": 1646
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "gripper clamp",
+      "confidence": 0.3755089342594147,
+      "bounding_box": [
+        84.4415512084961,
+        105.67243957519531,
+        130.68482971191406,
+        154.08314514160156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05434267222881317,
+        "median_depth": 0.05386773869395256,
+        "depth_std": 0.008609202690422535,
+        "depth_min": 0.04071948677301407,
+        "depth_max": 0.07118404656648636,
+        "mask_area": 639
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.5072274804115295,
+      "bounding_box": [
+        226.45062255859375,
+        6.7953338623046875,
+        315.8211669921875,
+        117.4768295288086
+      ],
+      "depth_stats": {
+        "mean_depth": 0.30693385004997253,
+        "median_depth": 0.29615601897239685,
+        "depth_std": 0.05094972625374794,
+        "depth_min": 0.23030318319797516,
+        "depth_max": 0.5746980309486389,
+        "mask_area": 4262
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "container",
+      "confidence": 0.6793860197067261,
+      "bounding_box": [
+        204.64712524414062,
+        0.11667537689208984,
+        245.3922119140625,
+        31.193218231201172
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5227935910224915,
+        "median_depth": 0.5151541233062744,
+        "depth_std": 0.05455305427312851,
+        "depth_min": 0.48573538661003113,
+        "depth_max": 0.9871214032173157,
+        "mask_area": 936
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. clamp. cable. cup. tray. toy fruit. toy vegetable. container. chair. table. workbench.",
+  "text_prompt": "robot arm. gripper. clamp. cable. cup. tray. toy fruit. toy vegetable. container. chair. table. workbench.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "lamp",
+    "table",
+    "window blind",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, table, door, lamp, window blind",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.04534531384706497,
+        "relative_position": "closest",
+        "confidence": 0.3936009705066681
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "lamp",
+        "mean_depth": 0.09843113273382187,
+        "relative_position": "middle",
+        "confidence": 0.6083281636238098
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.3925095200538635,
+        "relative_position": "middle",
+        "confidence": 0.7088971734046936
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "window blind",
+        "mean_depth": 0.4850230813026428,
+        "relative_position": "middle",
+        "confidence": 0.5920538306236267
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.6724920868873596,
+        "relative_position": "farthest",
+        "confidence": 0.38128337264060974
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "door",
+        "mean_depth": 0.6724920868873596,
+        "relative_position": "farthest",
+        "confidence": 0.38128337264060974
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "window blind",
+        "mean_depth": 0.4850230813026428,
+        "relative_position": "middle",
+        "confidence": 0.5920538306236267
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.3925095200538635,
+        "relative_position": "middle",
+        "confidence": 0.7088971734046936
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "lamp",
+        "mean_depth": 0.09843113273382187,
+        "relative_position": "middle",
+        "confidence": 0.6083281636238098
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.04534531384706497,
+        "relative_position": "closest",
+        "confidence": 0.3936009705066681
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3936009705066681,
+      "bounding_box": [
+        204.2945098876953,
+        6.208560943603516,
+        315.9401550292969,
+        63.928096771240234
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04534531384706497,
+        "median_depth": 0.040325745940208435,
+        "depth_std": 0.04925734922289848,
+        "depth_min": 0.0,
+        "depth_max": 0.684462308883667,
+        "mask_area": 3017
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "lamp",
+      "confidence": 0.6083281636238098,
+      "bounding_box": [
+        0.008876800537109375,
+        8.24561882019043,
+        88.572998046875,
+        56.119873046875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09843113273382187,
+        "median_depth": 0.09119965136051178,
+        "depth_std": 0.03647482395172119,
+        "depth_min": 0.06298044323921204,
+        "depth_max": 0.26805225014686584,
+        "mask_area": 1418
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7088971734046936,
+      "bounding_box": [
+        90.06266784667969,
+        80.90147399902344,
+        255.8218536376953,
+        179.9616241455078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3925095200538635,
+        "median_depth": 0.38497549295425415,
+        "depth_std": 0.09161379188299179,
+        "depth_min": 0.21819624304771423,
+        "depth_max": 0.9946602582931519,
+        "mask_area": 7046
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "window blind",
+      "confidence": 0.5920538306236267,
+      "bounding_box": [
+        60.18830871582031,
+        -0.02133941650390625,
+        168.48150634765625,
+        96.41413879394531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4850230813026428,
+        "median_depth": 0.4881417155265808,
+        "depth_std": 0.09050238877534866,
+        "depth_min": 0.15522825717926025,
+        "depth_max": 0.7006874680519104,
+        "mask_area": 7046
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "door",
+      "confidence": 0.38128337264060974,
+      "bounding_box": [
+        167.85134887695312,
+        0.02845001220703125,
+        201.4346923828125,
+        87.38607025146484
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6724920868873596,
+        "median_depth": 0.6597616076469421,
+        "depth_std": 0.08397779613733292,
+        "depth_min": 0.5054348111152649,
+        "depth_max": 0.9961708188056946,
+        "mask_area": 2455
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "lamp. window blind. table. robot arm. gripper. chair. game board. game pieces. book. napkin. container. shelf. door.",
+  "text_prompt": "lamp. window blind. table. robot arm. gripper. chair. game board. game pieces. book. napkin. container. shelf. door.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

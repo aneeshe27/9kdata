@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cabinet filing cabinet shelf",
+    "cabinet cabinet shelf",
+    "light",
+    "light"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet cabinet shelf, light, robot arm, light, cabinet filing cabinet shelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.037462268024683,
+        "relative_position": "closest",
+        "confidence": 0.39375877380371094
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cabinet filing cabinet shelf",
+        "mean_depth": 0.13242509961128235,
+        "relative_position": "middle",
+        "confidence": 0.4623308777809143
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet cabinet shelf",
+        "mean_depth": 0.192740797996521,
+        "relative_position": "middle",
+        "confidence": 0.3585386276245117
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "light",
+        "mean_depth": 0.4237351715564728,
+        "relative_position": "middle",
+        "confidence": 0.3677980601787567
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "light",
+        "mean_depth": 0.7200362682342529,
+        "relative_position": "farthest",
+        "confidence": 0.4507347345352173
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "light",
+        "mean_depth": 0.7200362682342529,
+        "relative_position": "farthest",
+        "confidence": 0.4507347345352173
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "light",
+        "mean_depth": 0.4237351715564728,
+        "relative_position": "middle",
+        "confidence": 0.3677980601787567
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cabinet cabinet shelf",
+        "mean_depth": 0.192740797996521,
+        "relative_position": "middle",
+        "confidence": 0.3585386276245117
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cabinet filing cabinet shelf",
+        "mean_depth": 0.13242509961128235,
+        "relative_position": "middle",
+        "confidence": 0.4623308777809143
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.037462268024683,
+        "relative_position": "closest",
+        "confidence": 0.39375877380371094
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.39375877380371094,
+      "bounding_box": [
+        194.92730712890625,
+        64.64552307128906,
+        315.9134521484375,
+        133.38551330566406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.037462268024683,
+        "median_depth": 0.006758422590792179,
+        "depth_std": 0.1332298219203949,
+        "depth_min": 6.432678674173076e-07,
+        "depth_max": 0.9744828939437866,
+        "mask_area": 3692
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cabinet filing cabinet shelf",
+      "confidence": 0.4623308777809143,
+      "bounding_box": [
+        59.213470458984375,
+        83.22613525390625,
+        159.04254150390625,
+        179.90975952148438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13242509961128235,
+        "median_depth": 0.12840773165225983,
+        "depth_std": 0.025579923763871193,
+        "depth_min": 0.09668907523155212,
+        "depth_max": 0.4031074345111847,
+        "mask_area": 8759
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet cabinet shelf",
+      "confidence": 0.3585386276245117,
+      "bounding_box": [
+        175.09561157226562,
+        72.83941650390625,
+        243.80517578125,
+        179.9010772705078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.192740797996521,
+        "median_depth": 0.19203589856624603,
+        "depth_std": 0.07097125053405762,
+        "depth_min": 0.016291450709104538,
+        "depth_max": 0.7527506947517395,
+        "mask_area": 4731
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "light",
+      "confidence": 0.3677980601787567,
+      "bounding_box": [
+        260.69952392578125,
+        0.054168701171875,
+        315.959228515625,
+        32.82719421386719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4237351715564728,
+        "median_depth": 0.4202740788459778,
+        "depth_std": 0.029755737632513046,
+        "depth_min": 0.3664245903491974,
+        "depth_max": 0.5146223306655884,
+        "mask_area": 789
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "light",
+      "confidence": 0.4507347345352173,
+      "bounding_box": [
+        277.1591491699219,
+        39.803802490234375,
+        315.9582214355469,
+        58.08001708984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7200362682342529,
+        "median_depth": 0.7063271999359131,
+        "depth_std": 0.05394868180155754,
+        "depth_min": 0.6568130850791931,
+        "depth_max": 0.9578695297241211,
+        "mask_area": 264
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cup. cabinet. filing cabinet. shelf. door. light.",
+  "text_prompt": "robot arm. gripper. table. cup. cabinet. filing cabinet. shelf. door. light.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "soap dispenser",
+    "bottle",
+    "sink",
+    "faucet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: soap dispenser, robot arm, faucet, bottle, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.05204232782125473,
+        "relative_position": "closest",
+        "confidence": 0.38463154435157776
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "soap dispenser",
+        "mean_depth": 0.324415922164917,
+        "relative_position": "middle",
+        "confidence": 0.8924922943115234
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.3278326690196991,
+        "relative_position": "middle",
+        "confidence": 0.4288826882839203
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.47991248965263367,
+        "relative_position": "middle",
+        "confidence": 0.45339229702949524
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.49887800216674805,
+        "relative_position": "farthest",
+        "confidence": 0.7858250141143799
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "faucet",
+        "mean_depth": 0.49887800216674805,
+        "relative_position": "farthest",
+        "confidence": 0.7858250141143799
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.47991248965263367,
+        "relative_position": "middle",
+        "confidence": 0.45339229702949524
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "bottle",
+        "mean_depth": 0.3278326690196991,
+        "relative_position": "middle",
+        "confidence": 0.4288826882839203
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "soap dispenser",
+        "mean_depth": 0.324415922164917,
+        "relative_position": "middle",
+        "confidence": 0.8924922943115234
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.05204232782125473,
+        "relative_position": "closest",
+        "confidence": 0.38463154435157776
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.38463154435157776,
+      "bounding_box": [
+        -0.033031463623046875,
+        55.4505615234375,
+        126.38372802734375,
+        179.97535705566406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05204232782125473,
+        "median_depth": 0.025435559451580048,
+        "depth_std": 0.09556309133768082,
+        "depth_min": 0.0032575803343206644,
+        "depth_max": 0.8863905072212219,
+        "mask_area": 5443
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "soap dispenser",
+      "confidence": 0.8924922943115234,
+      "bounding_box": [
+        215.15538024902344,
+        42.33530807495117,
+        243.9663848876953,
+        99.28291320800781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.324415922164917,
+        "median_depth": 0.3263718783855438,
+        "depth_std": 0.01964140124619007,
+        "depth_min": 0.2891104817390442,
+        "depth_max": 0.43761569261550903,
+        "mask_area": 1258
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "bottle",
+      "confidence": 0.4288826882839203,
+      "bounding_box": [
+        136.08755493164062,
+        100.12202453613281,
+        179.93283081054688,
+        144.93057250976562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3278326690196991,
+        "median_depth": 0.33750849962234497,
+        "depth_std": 0.0648929551243782,
+        "depth_min": 0.08622851222753525,
+        "depth_max": 0.6003002524375916,
+        "mask_area": 1017
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "sink",
+      "confidence": 0.45339229702949524,
+      "bounding_box": [
+        162.306396484375,
+        94.37528991699219,
+        245.52713012695312,
+        145.6253204345703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.47991248965263367,
+        "median_depth": 0.4763455390930176,
+        "depth_std": 0.06135834380984306,
+        "depth_min": 0.3662833571434021,
+        "depth_max": 0.6021372675895691,
+        "mask_area": 1338
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "faucet",
+      "confidence": 0.7858250141143799,
+      "bounding_box": [
+        159.17408752441406,
+        64.5161361694336,
+        201.83604431152344,
+        104.41658782958984
+      ],
+      "depth_stats": {
+        "mean_depth": 0.49887800216674805,
+        "median_depth": 0.5028133392333984,
+        "depth_std": 0.06193165108561516,
+        "depth_min": 0.37815967202186584,
+        "depth_max": 0.6675259470939636,
+        "mask_area": 525
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. dish rack. soap dispenser. bottle. countertop.",
+  "text_prompt": "robot arm. gripper. sink. faucet. dish rack. soap dispenser. bottle. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

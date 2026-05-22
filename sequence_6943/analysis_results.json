@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "container box",
+    "chair",
+    "emergency stop button"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: emergency stop button, table, chair, container box, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.029467731714248657,
+        "relative_position": "closest",
+        "confidence": 0.5712277293205261
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.07487209886312485,
+        "relative_position": "middle",
+        "confidence": 0.3967096209526062
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "container box",
+        "mean_depth": 0.31400731205940247,
+        "relative_position": "middle",
+        "confidence": 0.5641480684280396
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.3211350739002228,
+        "relative_position": "middle",
+        "confidence": 0.44695010781288147
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "emergency stop button",
+        "mean_depth": 0.39123210310935974,
+        "relative_position": "farthest",
+        "confidence": 0.3770199418067932
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "emergency stop button",
+        "mean_depth": 0.39123210310935974,
+        "relative_position": "farthest",
+        "confidence": 0.3770199418067932
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.3211350739002228,
+        "relative_position": "middle",
+        "confidence": 0.44695010781288147
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "container box",
+        "mean_depth": 0.31400731205940247,
+        "relative_position": "middle",
+        "confidence": 0.5641480684280396
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.07487209886312485,
+        "relative_position": "middle",
+        "confidence": 0.3967096209526062
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.029467731714248657,
+        "relative_position": "closest",
+        "confidence": 0.5712277293205261
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.5712277293205261,
+      "bounding_box": [
+        153.4478759765625,
+        1.1524276733398438,
+        315.94970703125,
+        144.12255859375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.029467731714248657,
+        "median_depth": 0.02362595871090889,
+        "depth_std": 0.034692708402872086,
+        "depth_min": 0.001686994917690754,
+        "depth_max": 0.6481018662452698,
+        "mask_area": 7670
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "table",
+      "confidence": 0.3967096209526062,
+      "bounding_box": [
+        0.04366493225097656,
+        27.587936401367188,
+        61.151611328125,
+        56.142738342285156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07487209886312485,
+        "median_depth": 0.07497221976518631,
+        "depth_std": 0.004283996298909187,
+        "depth_min": 0.06519152969121933,
+        "depth_max": 0.08811304718255997,
+        "mask_area": 867
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "container box",
+      "confidence": 0.5641480684280396,
+      "bounding_box": [
+        169.98733520507812,
+        124.27129364013672,
+        242.02386474609375,
+        179.88552856445312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.31400731205940247,
+        "median_depth": 0.3332880735397339,
+        "depth_std": 0.07178425788879395,
+        "depth_min": 0.10146836191415787,
+        "depth_max": 0.4872855544090271,
+        "mask_area": 1566
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.44695010781288147,
+      "bounding_box": [
+        112.1568603515625,
+        144.1050567626953,
+        169.5068359375,
+        179.92710876464844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3211350739002228,
+        "median_depth": 0.2999906539916992,
+        "depth_std": 0.06706347316503525,
+        "depth_min": 0.24521052837371826,
+        "depth_max": 0.6211625337600708,
+        "mask_area": 1511
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "emergency stop button",
+      "confidence": 0.3770199418067932,
+      "bounding_box": [
+        260.2029724121094,
+        133.4717559814453,
+        287.4404602050781,
+        155.93223571777344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39123210310935974,
+        "median_depth": 0.390135258436203,
+        "depth_std": 0.032047852873802185,
+        "depth_min": 0.33648058772087097,
+        "depth_max": 0.45222553610801697,
+        "mask_area": 385
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. container. box. emergency stop button. table. chair. door. glass partition. door handle. cable.",
+  "text_prompt": "robot arm. gripper. container. box. emergency stop button. table. chair. door. glass partition. door handle. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

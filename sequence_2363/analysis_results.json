@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "mat",
+    "tray",
+    "backpack",
+    "robot arm",
+    "backpack"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, mat, tray, backpack, backpack",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "mat",
+        "mean_depth": 0.02223474532365799,
+        "relative_position": "closest",
+        "confidence": 0.6545867919921875
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "tray",
+        "mean_depth": 0.02603294886648655,
+        "relative_position": "middle",
+        "confidence": 0.35899075865745544
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "backpack",
+        "mean_depth": 0.0307806096971035,
+        "relative_position": "middle",
+        "confidence": 0.4139454960823059
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.03187522664666176,
+        "relative_position": "middle",
+        "confidence": 0.4447470009326935
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "backpack",
+        "mean_depth": 0.047070883214473724,
+        "relative_position": "farthest",
+        "confidence": 0.45086753368377686
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "backpack",
+        "mean_depth": 0.047070883214473724,
+        "relative_position": "farthest",
+        "confidence": 0.45086753368377686
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.03187522664666176,
+        "relative_position": "middle",
+        "confidence": 0.4447470009326935
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "backpack",
+        "mean_depth": 0.0307806096971035,
+        "relative_position": "middle",
+        "confidence": 0.4139454960823059
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "tray",
+        "mean_depth": 0.02603294886648655,
+        "relative_position": "middle",
+        "confidence": 0.35899075865745544
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "mat",
+        "mean_depth": 0.02223474532365799,
+        "relative_position": "closest",
+        "confidence": 0.6545867919921875
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "mat",
+      "confidence": 0.6545867919921875,
+      "bounding_box": [
+        202.65016174316406,
+        107.45014953613281,
+        283.6148376464844,
+        149.17665100097656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02223474532365799,
+        "median_depth": 0.022198496386408806,
+        "depth_std": 0.005007176660001278,
+        "depth_min": 0.01167991291731596,
+        "depth_max": 0.03478914126753807,
+        "mask_area": 1679
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "tray",
+      "confidence": 0.35899075865745544,
+      "bounding_box": [
+        262.6178894042969,
+        86.85490417480469,
+        312.5324401855469,
+        106.89373779296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02603294886648655,
+        "median_depth": 0.025640413165092468,
+        "depth_std": 0.004563519731163979,
+        "depth_min": 0.018593933433294296,
+        "depth_max": 0.0407419428229332,
+        "mask_area": 726
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "backpack",
+      "confidence": 0.4139454960823059,
+      "bounding_box": [
+        39.40964126586914,
+        101.97647094726562,
+        165.253662109375,
+        179.95111083984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0307806096971035,
+        "median_depth": 0.030429337173700333,
+        "depth_std": 0.0022216171491891146,
+        "depth_min": 0.024699639528989792,
+        "depth_max": 0.03731217235326767,
+        "mask_area": 5713
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4447470009326935,
+      "bounding_box": [
+        228.3724822998047,
+        0.4052314758300781,
+        278.8739013671875,
+        119.065185546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03187522664666176,
+        "median_depth": 0.03064609318971634,
+        "depth_std": 0.0173262357711792,
+        "depth_min": 0.0212020892649889,
+        "depth_max": 0.4553057849407196,
+        "mask_area": 2384
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "backpack",
+      "confidence": 0.45086753368377686,
+      "bounding_box": [
+        197.8245086669922,
+        50.200767517089844,
+        243.58238220214844,
+        102.47484588623047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.047070883214473724,
+        "median_depth": 0.04771651327610016,
+        "depth_std": 0.003583146957680583,
+        "depth_min": 0.03674199432134628,
+        "depth_max": 0.07261411845684052,
+        "mask_area": 1556
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. mat. plastic bottle. tray. backpack. partition.",
+  "text_prompt": "robot arm. gripper. table. mat. plastic bottle. tray. backpack. partition.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

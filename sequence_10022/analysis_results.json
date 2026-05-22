@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "robot gripper",
+    "paper towel roll",
+    "pot",
+    "cardboard box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cardboard box, pot, robot gripper, cloth, paper towel roll",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.07602140307426453,
+        "relative_position": "closest",
+        "confidence": 0.48702505230903625
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "robot gripper",
+        "mean_depth": 0.0847025141119957,
+        "relative_position": "middle",
+        "confidence": 0.4916273057460785
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "paper towel roll",
+        "mean_depth": 0.2818753123283386,
+        "relative_position": "middle",
+        "confidence": 0.35592567920684814
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "pot",
+        "mean_depth": 0.4429002106189728,
+        "relative_position": "middle",
+        "confidence": 0.8156765699386597
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.5573658347129822,
+        "relative_position": "farthest",
+        "confidence": 0.6322422623634338
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cardboard box",
+        "mean_depth": 0.5573658347129822,
+        "relative_position": "farthest",
+        "confidence": 0.6322422623634338
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "pot",
+        "mean_depth": 0.4429002106189728,
+        "relative_position": "middle",
+        "confidence": 0.8156765699386597
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "paper towel roll",
+        "mean_depth": 0.2818753123283386,
+        "relative_position": "middle",
+        "confidence": 0.35592567920684814
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "robot gripper",
+        "mean_depth": 0.0847025141119957,
+        "relative_position": "middle",
+        "confidence": 0.4916273057460785
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cloth",
+        "mean_depth": 0.07602140307426453,
+        "relative_position": "closest",
+        "confidence": 0.48702505230903625
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cloth",
+      "confidence": 0.48702505230903625,
+      "bounding_box": [
+        153.75682067871094,
+        110.45272064208984,
+        216.0786895751953,
+        157.5730438232422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07602140307426453,
+        "median_depth": 0.07318383455276489,
+        "depth_std": 0.028128882870078087,
+        "depth_min": 0.02466362901031971,
+        "depth_max": 0.15190137922763824,
+        "mask_area": 1519
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "robot gripper",
+      "confidence": 0.4916273057460785,
+      "bounding_box": [
+        180.12049865722656,
+        83.98267364501953,
+        216.76133728027344,
+        130.9651641845703
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0847025141119957,
+        "median_depth": 0.07913435995578766,
+        "depth_std": 0.02791864238679409,
+        "depth_min": 0.057979170233011246,
+        "depth_max": 0.29472678899765015,
+        "mask_area": 764
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "paper towel roll",
+      "confidence": 0.35592567920684814,
+      "bounding_box": [
+        0.0161590576171875,
+        139.7806396484375,
+        36.255062103271484,
+        179.9158935546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2818753123283386,
+        "median_depth": 0.2810900807380676,
+        "depth_std": 0.012906291522085667,
+        "depth_min": 0.2549344003200531,
+        "depth_max": 0.31223565340042114,
+        "mask_area": 1024
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "pot",
+      "confidence": 0.8156765699386597,
+      "bounding_box": [
+        136.5945281982422,
+        66.63679504394531,
+        175.2404022216797,
+        88.65812683105469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4429002106189728,
+        "median_depth": 0.41791263222694397,
+        "depth_std": 0.08683787286281586,
+        "depth_min": 0.3490283489227295,
+        "depth_max": 0.886074960231781,
+        "mask_area": 505
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cardboard box",
+      "confidence": 0.6322422623634338,
+      "bounding_box": [
+        33.241310119628906,
+        58.349143981933594,
+        93.31663513183594,
+        87.52617645263672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5573658347129822,
+        "median_depth": 0.5444346070289612,
+        "depth_std": 0.08323225378990173,
+        "depth_min": 0.44740164279937744,
+        "depth_max": 0.831500232219696,
+        "mask_area": 1200
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. cloth. pot. paper towel roll. table. workbench. cardboard box. cables.",
+  "text_prompt": "robot arm. robot gripper. cloth. pot. paper towel roll. table. workbench. cardboard box. cables.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

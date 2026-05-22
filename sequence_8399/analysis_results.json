@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "bed",
+    "dresser nightstand",
+    "dresser",
+    "window"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: bed, robot arm, dresser, window, dresser nightstand",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.12422886490821838,
+        "relative_position": "closest",
+        "confidence": 0.4887836277484894
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "bed",
+        "mean_depth": 0.14578188955783844,
+        "relative_position": "middle",
+        "confidence": 0.6174549460411072
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "dresser nightstand",
+        "mean_depth": 0.8204067945480347,
+        "relative_position": "middle",
+        "confidence": 0.44217807054519653
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "dresser",
+        "mean_depth": 0.9142988920211792,
+        "relative_position": "middle",
+        "confidence": 0.456804096698761
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "window",
+        "mean_depth": 0.970851719379425,
+        "relative_position": "farthest",
+        "confidence": 0.833250880241394
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "window",
+        "mean_depth": 0.970851719379425,
+        "relative_position": "farthest",
+        "confidence": 0.833250880241394
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "dresser",
+        "mean_depth": 0.9142988920211792,
+        "relative_position": "middle",
+        "confidence": 0.456804096698761
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "dresser nightstand",
+        "mean_depth": 0.8204067945480347,
+        "relative_position": "middle",
+        "confidence": 0.44217807054519653
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "bed",
+        "mean_depth": 0.14578188955783844,
+        "relative_position": "middle",
+        "confidence": 0.6174549460411072
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.12422886490821838,
+        "relative_position": "closest",
+        "confidence": 0.4887836277484894
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4887836277484894,
+      "bounding_box": [
+        224.04440307617188,
+        33.12202835083008,
+        316.0188903808594,
+        113.09117126464844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12422886490821838,
+        "median_depth": 0.11043733358383179,
+        "depth_std": 0.08111150562763214,
+        "depth_min": 0.03194560110569,
+        "depth_max": 0.5777264833450317,
+        "mask_area": 3361
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "bed",
+      "confidence": 0.6174549460411072,
+      "bounding_box": [
+        -0.1446685791015625,
+        61.47367477416992,
+        267.0390625,
+        179.9111785888672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14578188955783844,
+        "median_depth": 0.12006229162216187,
+        "depth_std": 0.09716524928808212,
+        "depth_min": 0.001958362525328994,
+        "depth_max": 0.87149977684021,
+        "mask_area": 24054
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "dresser nightstand",
+      "confidence": 0.44217807054519653,
+      "bounding_box": [
+        93.70718383789062,
+        45.20961380004883,
+        121.04173278808594,
+        74.60366821289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8204067945480347,
+        "median_depth": 0.8375371694564819,
+        "depth_std": 0.06598368287086487,
+        "depth_min": 0.6372400522232056,
+        "depth_max": 0.960491955280304,
+        "mask_area": 457
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "dresser",
+      "confidence": 0.456804096698761,
+      "bounding_box": [
+        138.58033752441406,
+        14.604679107666016,
+        176.33436584472656,
+        65.86396789550781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9142988920211792,
+        "median_depth": 0.9140046834945679,
+        "depth_std": 0.03366285562515259,
+        "depth_min": 0.8465555310249329,
+        "depth_max": 0.9913461804389954,
+        "mask_area": 1541
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "window",
+      "confidence": 0.833250880241394,
+      "bounding_box": [
+        106.28623962402344,
+        -0.02179718017578125,
+        146.3958740234375,
+        36.379459381103516
+      ],
+      "depth_stats": {
+        "mean_depth": 0.970851719379425,
+        "median_depth": 0.9846868515014648,
+        "depth_std": 0.030415711924433708,
+        "depth_min": 0.8603587746620178,
+        "depth_max": 0.9960753917694092,
+        "mask_area": 1196
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bed. blanket. pillow. clothing. hanger. robot arm. gripper. dresser. nightstand. window. box.",
+  "text_prompt": "bed. blanket. pillow. clothing. hanger. robot arm. gripper. dresser. nightstand. window. box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

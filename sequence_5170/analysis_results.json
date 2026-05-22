@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm dust",
+    "robot arm",
+    "table",
+    "dustpan stand",
+    "cable"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: dustpan stand, robot arm dust, cable, table, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm dust",
+        "mean_depth": 0.05444961041212082,
+        "relative_position": "closest",
+        "confidence": 0.3924896717071533
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.23565563559532166,
+        "relative_position": "middle",
+        "confidence": 0.3876173496246338
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.5167102217674255,
+        "relative_position": "middle",
+        "confidence": 0.6131070852279663
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "dustpan stand",
+        "mean_depth": 0.5373551845550537,
+        "relative_position": "middle",
+        "confidence": 0.38013914227485657
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cable",
+        "mean_depth": 0.8080791234970093,
+        "relative_position": "farthest",
+        "confidence": 0.47857019305229187
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cable",
+        "mean_depth": 0.8080791234970093,
+        "relative_position": "farthest",
+        "confidence": 0.47857019305229187
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "dustpan stand",
+        "mean_depth": 0.5373551845550537,
+        "relative_position": "middle",
+        "confidence": 0.38013914227485657
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.5167102217674255,
+        "relative_position": "middle",
+        "confidence": 0.6131070852279663
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.23565563559532166,
+        "relative_position": "middle",
+        "confidence": 0.3876173496246338
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm dust",
+        "mean_depth": 0.05444961041212082,
+        "relative_position": "closest",
+        "confidence": 0.3924896717071533
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm dust",
+      "confidence": 0.3924896717071533,
+      "bounding_box": [
+        0.11974716186523438,
+        110.531982421875,
+        97.92672729492188,
+        179.93283081054688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05444961041212082,
+        "median_depth": 0.02884460613131523,
+        "depth_std": 0.09213593602180481,
+        "depth_min": 0.0019744837190955877,
+        "depth_max": 0.6610916256904602,
+        "mask_area": 3559
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3876173496246338,
+      "bounding_box": [
+        0.01812744140625,
+        0.0018405914306640625,
+        156.12545776367188,
+        55.55830383300781
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23565563559532166,
+        "median_depth": 0.12797965109348297,
+        "depth_std": 0.24482066929340363,
+        "depth_min": 0.010958923026919365,
+        "depth_max": 0.9321810007095337,
+        "mask_area": 4499
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.6131070852279663,
+      "bounding_box": [
+        132.1201171875,
+        48.250831604003906,
+        236.31256103515625,
+        137.88882446289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5167102217674255,
+        "median_depth": 0.5113730430603027,
+        "depth_std": 0.06189940869808197,
+        "depth_min": 0.40452852845191956,
+        "depth_max": 0.8556138873100281,
+        "mask_area": 6085
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "dustpan stand",
+      "confidence": 0.38013914227485657,
+      "bounding_box": [
+        67.59078979492188,
+        113.35853576660156,
+        174.4386749267578,
+        179.9168243408203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5373551845550537,
+        "median_depth": 0.48707228899002075,
+        "depth_std": 0.15522046387195587,
+        "depth_min": 0.18922023475170135,
+        "depth_max": 0.8924418091773987,
+        "mask_area": 3364
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cable",
+      "confidence": 0.47857019305229187,
+      "bounding_box": [
+        213.42807006835938,
+        60.69013977050781,
+        278.7585754394531,
+        179.36883544921875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8080791234970093,
+        "median_depth": 0.8255566358566284,
+        "depth_std": 0.05634674057364464,
+        "depth_min": 0.7050111889839172,
+        "depth_max": 0.9056316018104553,
+        "mask_area": 503
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. couch. cup. dustpan. brush. mallet. screwdriver. notebook. paper towel. cable. stand.",
+  "text_prompt": "robot arm. gripper. table. couch. cup. dustpan. brush. mallet. screwdriver. notebook. paper towel. cable. stand.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

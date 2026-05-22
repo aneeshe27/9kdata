@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_1207678/temp_image_3173.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_3173.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "plant",
+    "bookshelf",
+    "container",
+    "sofa"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: container, sofa, bookshelf, plant, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.0660068467259407,
+        "relative_position": "closest",
+        "confidence": 0.42085281014442444
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "plant",
+        "mean_depth": 0.08156683295965195,
+        "relative_position": "middle",
+        "confidence": 0.43648669123649597
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "bookshelf",
+        "mean_depth": 0.19611161947250366,
+        "relative_position": "middle",
+        "confidence": 0.3540877401828766
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "container",
+        "mean_depth": 0.27871185541152954,
+        "relative_position": "middle",
+        "confidence": 0.47282874584198
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "sofa",
+        "mean_depth": 0.7000796794891357,
+        "relative_position": "farthest",
+        "confidence": 0.44562798738479614
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "sofa",
+        "mean_depth": 0.7000796794891357,
+        "relative_position": "farthest",
+        "confidence": 0.44562798738479614
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "container",
+        "mean_depth": 0.27871185541152954,
+        "relative_position": "middle",
+        "confidence": 0.47282874584198
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "bookshelf",
+        "mean_depth": 0.19611161947250366,
+        "relative_position": "middle",
+        "confidence": 0.3540877401828766
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "plant",
+        "mean_depth": 0.08156683295965195,
+        "relative_position": "middle",
+        "confidence": 0.43648669123649597
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.0660068467259407,
+        "relative_position": "closest",
+        "confidence": 0.42085281014442444
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.42085281014442444,
+      "bounding_box": [
+        213.279296875,
+        0.11005783081054688,
+        316.04437255859375,
+        102.9459228515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0660068467259407,
+        "median_depth": 0.017334647476673126,
+        "depth_std": 0.13631367683410645,
+        "depth_min": 0.0012524528428912163,
+        "depth_max": 0.6168222427368164,
+        "mask_area": 1341
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "plant",
+      "confidence": 0.43648669123649597,
+      "bounding_box": [
+        189.74826049804688,
+        134.48764038085938,
+        223.37872314453125,
+        167.86480712890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08156683295965195,
+        "median_depth": 0.07655632495880127,
+        "depth_std": 0.014466207474470139,
+        "depth_min": 0.06571529060602188,
+        "depth_max": 0.12985245883464813,
+        "mask_area": 803
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "bookshelf",
+      "confidence": 0.3540877401828766,
+      "bounding_box": [
+        290.778564453125,
+        86.48202514648438,
+        315.9903564453125,
+        179.90509033203125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19611161947250366,
+        "median_depth": 0.19731664657592773,
+        "depth_std": 0.07283495366573334,
+        "depth_min": 0.03945118561387062,
+        "depth_max": 0.32598304748535156,
+        "mask_area": 1786
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "container",
+      "confidence": 0.47282874584198,
+      "bounding_box": [
+        188.20755004882812,
+        81.4893798828125,
+        221.53692626953125,
+        113.81071472167969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27871185541152954,
+        "median_depth": 0.2719493508338928,
+        "depth_std": 0.05549493804574013,
+        "depth_min": 0.17286457121372223,
+        "depth_max": 0.6204155087471008,
+        "mask_area": 680
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "sofa",
+      "confidence": 0.44562798738479614,
+      "bounding_box": [
+        61.33232116699219,
+        43.72428894042969,
+        226.0022735595703,
+        97.08505249023438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7000796794891357,
+        "median_depth": 0.6870527863502502,
+        "depth_std": 0.057580091059207916,
+        "depth_min": 0.46802809834480286,
+        "depth_max": 0.8960477113723755,
+        "mask_area": 4841
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. container. tray. box. cup. plant. bookshelf. books. sofa.",
+  "text_prompt": "table. robot arm. gripper. container. tray. box. cup. plant. bookshelf. books. sofa.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

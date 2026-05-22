@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cable",
+    "bowl",
+    "printer",
+    "chair",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, chair, bowl, cable, printer",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.14225950837135315,
+        "relative_position": "closest",
+        "confidence": 0.36638420820236206
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "bowl",
+        "mean_depth": 0.23785194754600525,
+        "relative_position": "middle",
+        "confidence": 0.37801873683929443
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "printer",
+        "mean_depth": 0.4029719829559326,
+        "relative_position": "middle",
+        "confidence": 0.40605655312538147
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.5479665398597717,
+        "relative_position": "middle",
+        "confidence": 0.6117265224456787
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.6966564059257507,
+        "relative_position": "farthest",
+        "confidence": 0.4058752954006195
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.6966564059257507,
+        "relative_position": "farthest",
+        "confidence": 0.4058752954006195
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.5479665398597717,
+        "relative_position": "middle",
+        "confidence": 0.6117265224456787
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "printer",
+        "mean_depth": 0.4029719829559326,
+        "relative_position": "middle",
+        "confidence": 0.40605655312538147
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "bowl",
+        "mean_depth": 0.23785194754600525,
+        "relative_position": "middle",
+        "confidence": 0.37801873683929443
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cable",
+        "mean_depth": 0.14225950837135315,
+        "relative_position": "closest",
+        "confidence": 0.36638420820236206
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "cable",
+      "confidence": 0.36638420820236206,
+      "bounding_box": [
+        87.87255859375,
+        135.24603271484375,
+        147.89596557617188,
+        179.449462890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14225950837135315,
+        "median_depth": 0.1403806209564209,
+        "depth_std": 0.013850427232682705,
+        "depth_min": 0.0757281482219696,
+        "depth_max": 0.19427967071533203,
+        "mask_area": 1610
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "bowl",
+      "confidence": 0.37801873683929443,
+      "bounding_box": [
+        124.56686401367188,
+        51.53001022338867,
+        164.90689086914062,
+        77.23542785644531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.23785194754600525,
+        "median_depth": 0.2348964661359787,
+        "depth_std": 0.0163265373557806,
+        "depth_min": 0.21496158838272095,
+        "depth_max": 0.43709075450897217,
+        "mask_area": 779
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "printer",
+      "confidence": 0.40605655312538147,
+      "bounding_box": [
+        30.20635223388672,
+        18.220340728759766,
+        117.66962432861328,
+        102.01190185546875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4029719829559326,
+        "median_depth": 0.3990519940853119,
+        "depth_std": 0.04504765197634697,
+        "depth_min": 0.0780092179775238,
+        "depth_max": 0.7277914881706238,
+        "mask_area": 3962
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.6117265224456787,
+      "bounding_box": [
+        250.3738555908203,
+        33.8387336730957,
+        315.95941162109375,
+        105.58404541015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5479665398597717,
+        "median_depth": 0.5481652021408081,
+        "depth_std": 0.03385968878865242,
+        "depth_min": 0.4617944061756134,
+        "depth_max": 0.743206799030304,
+        "mask_area": 1672
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.4058752954006195,
+      "bounding_box": [
+        105.13993072509766,
+        0.1628437042236328,
+        146.88748168945312,
+        45.150184631347656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6966564059257507,
+        "median_depth": 0.7418961524963379,
+        "depth_std": 0.10126758366823196,
+        "depth_min": 0.38026297092437744,
+        "depth_max": 0.9743192195892334,
+        "mask_area": 946
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. camera. bowl. block. envelope. table. chair. cardboard. tripod. printer. workbench. clamp. rail. cable. button.",
+  "text_prompt": "robot arm. gripper. camera. bowl. block. envelope. table. chair. cardboard. tripod. printer. workbench. clamp. rail. cable. button.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

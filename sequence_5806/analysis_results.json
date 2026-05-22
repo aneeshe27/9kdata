@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "robot gripper",
+    "container box",
+    "box",
+    "sofa"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: container box, table, box, robot gripper, sofa",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.022979887202382088,
+        "relative_position": "closest",
+        "confidence": 0.6311206221580505
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot gripper",
+        "mean_depth": 0.06909013539552689,
+        "relative_position": "middle",
+        "confidence": 0.3837966322898865
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "container box",
+        "mean_depth": 0.08108977973461151,
+        "relative_position": "middle",
+        "confidence": 0.4003491699695587
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "box",
+        "mean_depth": 0.09747540205717087,
+        "relative_position": "middle",
+        "confidence": 0.40124934911727905
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.2971278429031372,
+        "relative_position": "farthest",
+        "confidence": 0.6585201621055603
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "sofa",
+        "mean_depth": 0.2971278429031372,
+        "relative_position": "farthest",
+        "confidence": 0.6585201621055603
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "box",
+        "mean_depth": 0.09747540205717087,
+        "relative_position": "middle",
+        "confidence": 0.40124934911727905
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "container box",
+        "mean_depth": 0.08108977973461151,
+        "relative_position": "middle",
+        "confidence": 0.4003491699695587
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot gripper",
+        "mean_depth": 0.06909013539552689,
+        "relative_position": "middle",
+        "confidence": 0.3837966322898865
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.022979887202382088,
+        "relative_position": "closest",
+        "confidence": 0.6311206221580505
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.6311206221580505,
+      "bounding_box": [
+        0.0416259765625,
+        76.72798919677734,
+        297.97906494140625,
+        179.95614624023438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.022979887202382088,
+        "median_depth": 0.017828453332185745,
+        "depth_std": 0.021949702873826027,
+        "depth_min": 0.00243169697932899,
+        "depth_max": 0.3713131844997406,
+        "mask_area": 22351
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "robot gripper",
+      "confidence": 0.3837966322898865,
+      "bounding_box": [
+        129.48043823242188,
+        -0.0066986083984375,
+        182.43307495117188,
+        98.66793060302734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06909013539552689,
+        "median_depth": 0.06772370636463165,
+        "depth_std": 0.007653784938156605,
+        "depth_min": 0.04757484048604965,
+        "depth_max": 0.14592045545578003,
+        "mask_area": 2238
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "container box",
+      "confidence": 0.4003491699695587,
+      "bounding_box": [
+        16.801233291625977,
+        58.551212310791016,
+        80.58136749267578,
+        87.52476501464844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08108977973461151,
+        "median_depth": 0.08183112740516663,
+        "depth_std": 0.005318942479789257,
+        "depth_min": 0.06923457235097885,
+        "depth_max": 0.09577849507331848,
+        "mask_area": 1274
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "box",
+      "confidence": 0.40124934911727905,
+      "bounding_box": [
+        32.65132522583008,
+        0.03465461730957031,
+        70.79476928710938,
+        25.549785614013672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09747540205717087,
+        "median_depth": 0.09749417006969452,
+        "depth_std": 0.005483254324644804,
+        "depth_min": 0.08157138526439667,
+        "depth_max": 0.10800237208604813,
+        "mask_area": 760
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "sofa",
+      "confidence": 0.6585201621055603,
+      "bounding_box": [
+        286.7198181152344,
+        56.79561233520508,
+        315.9455261230469,
+        96.03488159179688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2971278429031372,
+        "median_depth": 0.2683776915073395,
+        "depth_std": 0.1008048728108406,
+        "depth_min": 0.24127787351608276,
+        "depth_max": 0.9579498767852783,
+        "mask_area": 800
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. table. toy blocks. container. shelf. sofa. box.",
+  "text_prompt": "robot arm. robot gripper. table. toy blocks. container. shelf. sofa. box.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

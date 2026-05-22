@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "partition",
+    "tray",
+    "robot arm",
+    "backpack",
+    "ceiling light"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: ceiling light, backpack, tray, partition, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "partition",
+        "mean_depth": 0.02891838736832142,
+        "relative_position": "closest",
+        "confidence": 0.35974645614624023
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "tray",
+        "mean_depth": 0.03884207457304001,
+        "relative_position": "middle",
+        "confidence": 0.4015193581581116
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.05539102107286453,
+        "relative_position": "middle",
+        "confidence": 0.37652212381362915
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "backpack",
+        "mean_depth": 0.062042657285928726,
+        "relative_position": "middle",
+        "confidence": 0.6713317632675171
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "ceiling light",
+        "mean_depth": 0.2598456144332886,
+        "relative_position": "farthest",
+        "confidence": 0.3907209038734436
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "ceiling light",
+        "mean_depth": 0.2598456144332886,
+        "relative_position": "farthest",
+        "confidence": 0.3907209038734436
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "backpack",
+        "mean_depth": 0.062042657285928726,
+        "relative_position": "middle",
+        "confidence": 0.6713317632675171
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.05539102107286453,
+        "relative_position": "middle",
+        "confidence": 0.37652212381362915
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "tray",
+        "mean_depth": 0.03884207457304001,
+        "relative_position": "middle",
+        "confidence": 0.4015193581581116
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "partition",
+        "mean_depth": 0.02891838736832142,
+        "relative_position": "closest",
+        "confidence": 0.35974645614624023
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "partition",
+      "confidence": 0.35974645614624023,
+      "bounding_box": [
+        0.23805999755859375,
+        77.46217346191406,
+        178.81796264648438,
+        179.9145050048828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.02891838736832142,
+        "median_depth": 0.027111589908599854,
+        "depth_std": 0.010564860887825489,
+        "depth_min": 0.008831520564854145,
+        "depth_max": 0.16268712282180786,
+        "mask_area": 9178
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "tray",
+      "confidence": 0.4015193581581116,
+      "bounding_box": [
+        191.75120544433594,
+        110.36912536621094,
+        239.9174041748047,
+        135.86366271972656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03884207457304001,
+        "median_depth": 0.037754036486148834,
+        "depth_std": 0.004930926952511072,
+        "depth_min": 0.03084433078765869,
+        "depth_max": 0.05360138416290283,
+        "mask_area": 716
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.37652212381362915,
+      "bounding_box": [
+        181.60919189453125,
+        0.0150604248046875,
+        227.067626953125,
+        78.39742279052734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05539102107286453,
+        "median_depth": 0.050338856875896454,
+        "depth_std": 0.018808094784617424,
+        "depth_min": 0.037189990282058716,
+        "depth_max": 0.37276899814605713,
+        "mask_area": 1378
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "backpack",
+      "confidence": 0.6713317632675171,
+      "bounding_box": [
+        164.11083984375,
+        69.41800689697266,
+        210.67672729492188,
+        121.82469940185547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.062042657285928726,
+        "median_depth": 0.056202590465545654,
+        "depth_std": 0.029993517324328423,
+        "depth_min": 0.051111046224832535,
+        "depth_max": 0.6667510271072388,
+        "mask_area": 1698
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "ceiling light",
+      "confidence": 0.3907209038734436,
+      "bounding_box": [
+        41.84398651123047,
+        49.7944221496582,
+        93.76868438720703,
+        62.97664260864258
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2598456144332886,
+        "median_depth": 0.2591516673564911,
+        "depth_std": 0.016322197392582893,
+        "depth_min": 0.22543419897556305,
+        "depth_max": 0.30059006810188293,
+        "mask_area": 263
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. tray. container. bottle. backpack. partition. ceiling light. air conditioner.",
+  "text_prompt": "robot arm. gripper. table. tray. container. bottle. backpack. partition. ceiling light. air conditioner.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

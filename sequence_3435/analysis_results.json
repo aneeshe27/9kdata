@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "chair",
+    "door cabinet",
+    "door handle",
+    "door cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, chair, door handle, door cabinet, door cabinet",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.08748839795589447,
+        "relative_position": "closest",
+        "confidence": 0.7404528260231018
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.11778988689184189,
+        "relative_position": "middle",
+        "confidence": 0.41483911871910095
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "door cabinet",
+        "mean_depth": 0.8167811632156372,
+        "relative_position": "middle",
+        "confidence": 0.36693882942199707
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "door handle",
+        "mean_depth": 0.8466354012489319,
+        "relative_position": "middle",
+        "confidence": 0.4034770131111145
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "door cabinet",
+        "mean_depth": 0.9249019622802734,
+        "relative_position": "farthest",
+        "confidence": 0.38402047753334045
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "door cabinet",
+        "mean_depth": 0.9249019622802734,
+        "relative_position": "farthest",
+        "confidence": 0.38402047753334045
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "door handle",
+        "mean_depth": 0.8466354012489319,
+        "relative_position": "middle",
+        "confidence": 0.4034770131111145
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "door cabinet",
+        "mean_depth": 0.8167811632156372,
+        "relative_position": "middle",
+        "confidence": 0.36693882942199707
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.11778988689184189,
+        "relative_position": "middle",
+        "confidence": 0.41483911871910095
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.08748839795589447,
+        "relative_position": "closest",
+        "confidence": 0.7404528260231018
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7404528260231018,
+      "bounding_box": [
+        42.48057556152344,
+        55.58043670654297,
+        292.63604736328125,
+        179.95709228515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08748839795589447,
+        "median_depth": 0.05965546518564224,
+        "depth_std": 0.09336729347705841,
+        "depth_min": 0.0,
+        "depth_max": 0.9792793989181519,
+        "mask_area": 18788
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.41483911871910095,
+      "bounding_box": [
+        0.00423431396484375,
+        99.12100219726562,
+        52.75467300415039,
+        179.93624877929688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11778988689184189,
+        "median_depth": 0.09833011776208878,
+        "depth_std": 0.08743813633918762,
+        "depth_min": 0.03292053937911987,
+        "depth_max": 0.6488634943962097,
+        "mask_area": 2992
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "door cabinet",
+      "confidence": 0.36693882942199707,
+      "bounding_box": [
+        203.94873046875,
+        0.020387649536132812,
+        258.269287109375,
+        63.02654266357422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8167811632156372,
+        "median_depth": 0.8121569156646729,
+        "depth_std": 0.05216957628726959,
+        "depth_min": 0.6821862459182739,
+        "depth_max": 0.9423747062683105,
+        "mask_area": 1884
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "door handle",
+      "confidence": 0.4034770131111145,
+      "bounding_box": [
+        91.53278350830078,
+        18.96852684020996,
+        103.34917449951172,
+        29.03584861755371
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8466354012489319,
+        "median_depth": 0.8456939458847046,
+        "depth_std": 0.004496283363550901,
+        "depth_min": 0.8379948139190674,
+        "depth_max": 0.8566307425498962,
+        "mask_area": 58
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "door cabinet",
+      "confidence": 0.38402047753334045,
+      "bounding_box": [
+        164.0057373046875,
+        0.023876190185546875,
+        209.36993408203125,
+        62.072994232177734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9249019622802734,
+        "median_depth": 0.930483877658844,
+        "depth_std": 0.056032445281744,
+        "depth_min": 0.48014089465141296,
+        "depth_max": 0.9878684282302856,
+        "mask_area": 1891
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "can. cloth. table. chair. door. door handle. clamp. pole. cabinet.",
+  "text_prompt": "can. cloth. table. chair. door. door handle. clamp. pole. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

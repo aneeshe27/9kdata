@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "scissors",
+    "books",
+    "monitor",
+    "gripper"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: books, gripper, scissors, robot arm, monitor",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.01876079849898815,
+        "relative_position": "closest",
+        "confidence": 0.48025158047676086
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "scissors",
+        "mean_depth": 0.0898105725646019,
+        "relative_position": "middle",
+        "confidence": 0.6918962001800537
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "books",
+        "mean_depth": 0.2050701528787613,
+        "relative_position": "middle",
+        "confidence": 0.4952690601348877
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.24111630022525787,
+        "relative_position": "middle",
+        "confidence": 0.7230672240257263
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.6579432487487793,
+        "relative_position": "farthest",
+        "confidence": 0.39162129163742065
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.6579432487487793,
+        "relative_position": "farthest",
+        "confidence": 0.39162129163742065
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.24111630022525787,
+        "relative_position": "middle",
+        "confidence": 0.7230672240257263
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "books",
+        "mean_depth": 0.2050701528787613,
+        "relative_position": "middle",
+        "confidence": 0.4952690601348877
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "scissors",
+        "mean_depth": 0.0898105725646019,
+        "relative_position": "middle",
+        "confidence": 0.6918962001800537
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.01876079849898815,
+        "relative_position": "closest",
+        "confidence": 0.48025158047676086
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.48025158047676086,
+      "bounding_box": [
+        165.66610717773438,
+        0.066162109375,
+        294.0567626953125,
+        142.58595275878906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01876079849898815,
+        "median_depth": 0.01558445580303669,
+        "depth_std": 0.019385525956749916,
+        "depth_min": 0.005943468306213617,
+        "depth_max": 0.2063829004764557,
+        "mask_area": 7678
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "scissors",
+      "confidence": 0.6918962001800537,
+      "bounding_box": [
+        29.905986785888672,
+        105.71088409423828,
+        82.88763427734375,
+        147.09397888183594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0898105725646019,
+        "median_depth": 0.08695520460605621,
+        "depth_std": 0.015164772979915142,
+        "depth_min": 0.06949692219495773,
+        "depth_max": 0.15631265938282013,
+        "mask_area": 675
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "books",
+      "confidence": 0.4952690601348877,
+      "bounding_box": [
+        94.72184753417969,
+        53.03321838378906,
+        152.6515350341797,
+        103.19914245605469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2050701528787613,
+        "median_depth": 0.19579972326755524,
+        "depth_std": 0.03183086961507797,
+        "depth_min": 0.17076626420021057,
+        "depth_max": 0.4481394290924072,
+        "mask_area": 1710
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "monitor",
+      "confidence": 0.7230672240257263,
+      "bounding_box": [
+        0.03564453125,
+        0.013613700866699219,
+        123.038818359375,
+        23.69976806640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.24111630022525787,
+        "median_depth": 0.2281043827533722,
+        "depth_std": 0.04266028851270676,
+        "depth_min": 0.18417532742023468,
+        "depth_max": 0.5751351118087769,
+        "mask_area": 2443
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.39162129163742065,
+      "bounding_box": [
+        85.36639404296875,
+        17.998355865478516,
+        162.41043090820312,
+        56.25957107543945
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6579432487487793,
+        "median_depth": 0.6593736410140991,
+        "depth_std": 0.06149186193943024,
+        "depth_min": 0.5500869750976562,
+        "depth_max": 0.8961042761802673,
+        "mask_area": 686
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. scissors. books. box. tray. monitor. ruler. container. sticky note.",
+  "text_prompt": "robot arm. gripper. table. scissors. books. box. tray. monitor. ruler. container. sticky note.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

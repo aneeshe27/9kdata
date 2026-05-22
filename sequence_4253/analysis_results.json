@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "chair",
+    "gripper",
+    "box",
+    "robot arm",
+    "computer monitor"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: computer monitor, chair, box, gripper, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.09141121804714203,
+        "relative_position": "closest",
+        "confidence": 0.5041415095329285
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.11940664798021317,
+        "relative_position": "middle",
+        "confidence": 0.384306937456131
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "box",
+        "mean_depth": 0.22514323890209198,
+        "relative_position": "middle",
+        "confidence": 0.4797026515007019
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.5215986371040344,
+        "relative_position": "middle",
+        "confidence": 0.36768072843551636
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "computer monitor",
+        "mean_depth": 0.6347851157188416,
+        "relative_position": "farthest",
+        "confidence": 0.6231327652931213
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "computer monitor",
+        "mean_depth": 0.6347851157188416,
+        "relative_position": "farthest",
+        "confidence": 0.6231327652931213
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.5215986371040344,
+        "relative_position": "middle",
+        "confidence": 0.36768072843551636
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "box",
+        "mean_depth": 0.22514323890209198,
+        "relative_position": "middle",
+        "confidence": 0.4797026515007019
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.11940664798021317,
+        "relative_position": "middle",
+        "confidence": 0.384306937456131
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.09141121804714203,
+        "relative_position": "closest",
+        "confidence": 0.5041415095329285
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.5041415095329285,
+      "bounding_box": [
+        95.80384826660156,
+        110.39064025878906,
+        193.0355682373047,
+        179.8822784423828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.09141121804714203,
+        "median_depth": 0.09217451512813568,
+        "depth_std": 0.031131470575928688,
+        "depth_min": 0.009485363960266113,
+        "depth_max": 0.183793306350708,
+        "mask_area": 1944
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "gripper",
+      "confidence": 0.384306937456131,
+      "bounding_box": [
+        63.53779220581055,
+        140.49725341796875,
+        93.49482727050781,
+        164.08587646484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11940664798021317,
+        "median_depth": 0.11764496564865112,
+        "depth_std": 0.009539601393043995,
+        "depth_min": 0.10548054426908493,
+        "depth_max": 0.14169704914093018,
+        "mask_area": 201
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "box",
+      "confidence": 0.4797026515007019,
+      "bounding_box": [
+        129.73257446289062,
+        78.26298522949219,
+        207.29727172851562,
+        142.70982360839844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22514323890209198,
+        "median_depth": 0.21886152029037476,
+        "depth_std": 0.03624194487929344,
+        "depth_min": 0.15767112374305725,
+        "depth_max": 0.35592982172966003,
+        "mask_area": 2022
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.36768072843551636,
+      "bounding_box": [
+        177.1896514892578,
+        21.419189453125,
+        222.0435028076172,
+        42.003658294677734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5215986371040344,
+        "median_depth": 0.5249857306480408,
+        "depth_std": 0.016112778335809708,
+        "depth_min": 0.4801754951477051,
+        "depth_max": 0.554228663444519,
+        "mask_area": 269
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "computer monitor",
+      "confidence": 0.6231327652931213,
+      "bounding_box": [
+        108.79546356201172,
+        13.408387184143066,
+        147.52914428710938,
+        34.872310638427734
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6347851157188416,
+        "median_depth": 0.6368027925491333,
+        "depth_std": 0.00937659852206707,
+        "depth_min": 0.6099444031715393,
+        "depth_max": 0.6544393301010132,
+        "mask_area": 610
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. chair. computer monitor. shelf. fan. robot arm. gripper. robot base. cable. plastic bag. bottle. box. container. cloth. paper.",
+  "text_prompt": "table. chair. computer monitor. shelf. fan. robot arm. gripper. robot base. cable. plastic bag. bottle. box. container. cloth. paper.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

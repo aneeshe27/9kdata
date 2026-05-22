@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "cloth",
+    "paper towel roll",
+    "cabinet",
+    "coffee machine"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: coffee machine, robot arm gripper, cloth, cabinet, paper towel roll",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.1242339238524437,
+        "relative_position": "closest",
+        "confidence": 0.48262202739715576
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cloth",
+        "mean_depth": 0.14857806265354156,
+        "relative_position": "middle",
+        "confidence": 0.5483487248420715
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "paper towel roll",
+        "mean_depth": 0.3149559795856476,
+        "relative_position": "middle",
+        "confidence": 0.7188723087310791
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.3775767982006073,
+        "relative_position": "middle",
+        "confidence": 0.4027509391307831
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "coffee machine",
+        "mean_depth": 0.6068089604377747,
+        "relative_position": "farthest",
+        "confidence": 0.6437106728553772
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "coffee machine",
+        "mean_depth": 0.6068089604377747,
+        "relative_position": "farthest",
+        "confidence": 0.6437106728553772
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.3775767982006073,
+        "relative_position": "middle",
+        "confidence": 0.4027509391307831
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "paper towel roll",
+        "mean_depth": 0.3149559795856476,
+        "relative_position": "middle",
+        "confidence": 0.7188723087310791
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cloth",
+        "mean_depth": 0.14857806265354156,
+        "relative_position": "middle",
+        "confidence": 0.5483487248420715
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.1242339238524437,
+        "relative_position": "closest",
+        "confidence": 0.48262202739715576
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm gripper",
+      "confidence": 0.48262202739715576,
+      "bounding_box": [
+        147.9857177734375,
+        0.14128875732421875,
+        211.01937866210938,
+        111.3700942993164
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1242339238524437,
+        "median_depth": 0.08108558505773544,
+        "depth_std": 0.11539530754089355,
+        "depth_min": 0.03985545411705971,
+        "depth_max": 0.5901992321014404,
+        "mask_area": 3908
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "cloth",
+      "confidence": 0.5483487248420715,
+      "bounding_box": [
+        141.08323669433594,
+        90.08719635009766,
+        204.56275939941406,
+        134.00498962402344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14857806265354156,
+        "median_depth": 0.1444549858570099,
+        "depth_std": 0.04300672188401222,
+        "depth_min": 0.0780995786190033,
+        "depth_max": 0.2982979714870453,
+        "mask_area": 1480
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "paper towel roll",
+      "confidence": 0.7188723087310791,
+      "bounding_box": [
+        110.98009490966797,
+        61.591041564941406,
+        135.59066772460938,
+        99.39543914794922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3149559795856476,
+        "median_depth": 0.30844610929489136,
+        "depth_std": 0.017354169860482216,
+        "depth_min": 0.2966195344924927,
+        "depth_max": 0.38532236218452454,
+        "mask_area": 426
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.4027509391307831,
+      "bounding_box": [
+        204.39768981933594,
+        55.17641067504883,
+        265.7115478515625,
+        180.02593994140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3775767982006073,
+        "median_depth": 0.355678528547287,
+        "depth_std": 0.1420082300901413,
+        "depth_min": 0.15214858949184418,
+        "depth_max": 0.8005620241165161,
+        "mask_area": 4247
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "coffee machine",
+      "confidence": 0.6437106728553772,
+      "bounding_box": [
+        208.1764373779297,
+        9.963369369506836,
+        247.39759826660156,
+        61.758514404296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6068089604377747,
+        "median_depth": 0.6018613576889038,
+        "depth_std": 0.028096266090869904,
+        "depth_min": 0.527299702167511,
+        "depth_max": 0.8437976837158203,
+        "mask_area": 1265
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cloth. countertop. paper towel roll. box. coffee machine. cabinet. sink.",
+  "text_prompt": "robot arm. gripper. cloth. countertop. paper towel roll. box. coffee machine. cabinet. sink.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

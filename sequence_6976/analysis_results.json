@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table",
+    "chair",
+    "whiteboard",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: whiteboard, table, chair, robot arm, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.01969601772725582,
+        "relative_position": "closest",
+        "confidence": 0.41378048062324524
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.1334606558084488,
+        "relative_position": "middle",
+        "confidence": 0.706416130065918
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.6765347719192505,
+        "relative_position": "middle",
+        "confidence": 0.6652315258979797
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "whiteboard",
+        "mean_depth": 0.7327597737312317,
+        "relative_position": "middle",
+        "confidence": 0.7746787667274475
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.7849846482276917,
+        "relative_position": "farthest",
+        "confidence": 0.43202096223831177
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.7849846482276917,
+        "relative_position": "farthest",
+        "confidence": 0.43202096223831177
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "whiteboard",
+        "mean_depth": 0.7327597737312317,
+        "relative_position": "middle",
+        "confidence": 0.7746787667274475
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.6765347719192505,
+        "relative_position": "middle",
+        "confidence": 0.6652315258979797
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.1334606558084488,
+        "relative_position": "middle",
+        "confidence": 0.706416130065918
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.01969601772725582,
+        "relative_position": "closest",
+        "confidence": 0.41378048062324524
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.41378048062324524,
+      "bounding_box": [
+        194.4210662841797,
+        0.039417266845703125,
+        315.81463623046875,
+        87.57856750488281
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01969601772725582,
+        "median_depth": 0.005820222198963165,
+        "depth_std": 0.04419369995594025,
+        "depth_min": 0.0,
+        "depth_max": 0.6513241529464722,
+        "mask_area": 2709
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.706416130065918,
+      "bounding_box": [
+        -0.0721435546875,
+        40.38983917236328,
+        265.97381591796875,
+        180.01333618164062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1334606558084488,
+        "median_depth": 0.11731233447790146,
+        "depth_std": 0.07200631499290466,
+        "depth_min": 0.02943328209221363,
+        "depth_max": 0.6789854168891907,
+        "mask_area": 23768
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.6652315258979797,
+      "bounding_box": [
+        21.680707931518555,
+        17.183366775512695,
+        70.24752807617188,
+        62.63470458984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6765347719192505,
+        "median_depth": 0.6609188318252563,
+        "depth_std": 0.08047911524772644,
+        "depth_min": 0.4280180037021637,
+        "depth_max": 0.7904845476150513,
+        "mask_area": 822
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "whiteboard",
+      "confidence": 0.7746787667274475,
+      "bounding_box": [
+        0.026355743408203125,
+        0.0031290054321289062,
+        102.37405395507812,
+        18.90373992919922
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7327597737312317,
+        "median_depth": 0.7232991456985474,
+        "depth_std": 0.08209586143493652,
+        "depth_min": 0.6073997020721436,
+        "depth_max": 0.896911084651947,
+        "mask_area": 1656
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.43202096223831177,
+      "bounding_box": [
+        130.1781005859375,
+        17.865535736083984,
+        177.28851318359375,
+        57.019168853759766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7849846482276917,
+        "median_depth": 0.7789525389671326,
+        "depth_std": 0.06128427013754845,
+        "depth_min": 0.6442993879318237,
+        "depth_max": 0.9921704530715942,
+        "mask_area": 744
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. cup. bowl. squeeze bottle. container. pen. cable. chair. whiteboard. monitor. shelf.",
+  "text_prompt": "table. robot arm. gripper. cup. bowl. squeeze bottle. container. pen. cable. chair. whiteboard. monitor. shelf.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "sink",
+    "dish container",
+    "faucet",
+    "sink"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: sink, faucet, robot arm, sink, dish container",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.18578340113162994,
+        "relative_position": "closest",
+        "confidence": 0.4347359836101532
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.556734025478363,
+        "relative_position": "middle",
+        "confidence": 0.6124804615974426
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "dish container",
+        "mean_depth": 0.6943686008453369,
+        "relative_position": "middle",
+        "confidence": 0.36563682556152344
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.7606762051582336,
+        "relative_position": "middle",
+        "confidence": 0.6647509932518005
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "sink",
+        "mean_depth": 0.8254148960113525,
+        "relative_position": "farthest",
+        "confidence": 0.35402587056159973
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "sink",
+        "mean_depth": 0.8254148960113525,
+        "relative_position": "farthest",
+        "confidence": 0.35402587056159973
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.7606762051582336,
+        "relative_position": "middle",
+        "confidence": 0.6647509932518005
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "dish container",
+        "mean_depth": 0.6943686008453369,
+        "relative_position": "middle",
+        "confidence": 0.36563682556152344
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sink",
+        "mean_depth": 0.556734025478363,
+        "relative_position": "middle",
+        "confidence": 0.6124804615974426
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.18578340113162994,
+        "relative_position": "closest",
+        "confidence": 0.4347359836101532
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4347359836101532,
+      "bounding_box": [
+        195.2215576171875,
+        0.08288192749023438,
+        299.2085876464844,
+        90.00933837890625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18578340113162994,
+        "median_depth": 0.2352442443370819,
+        "depth_std": 0.11064793914556503,
+        "depth_min": 0.016634544357657433,
+        "depth_max": 0.7519277334213257,
+        "mask_area": 2590
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "sink",
+      "confidence": 0.6124804615974426,
+      "bounding_box": [
+        63.678585052490234,
+        59.03398513793945,
+        164.8050994873047,
+        118.63810729980469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.556734025478363,
+        "median_depth": 0.5612208843231201,
+        "depth_std": 0.06267455220222473,
+        "depth_min": 0.40195217728614807,
+        "depth_max": 0.6542418599128723,
+        "mask_area": 2975
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "dish container",
+      "confidence": 0.36563682556152344,
+      "bounding_box": [
+        149.79783630371094,
+        52.991546630859375,
+        170.49229431152344,
+        68.1778793334961
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6943686008453369,
+        "median_depth": 0.6928231120109558,
+        "depth_std": 0.030338408425450325,
+        "depth_min": 0.6443899273872375,
+        "depth_max": 0.7790063619613647,
+        "mask_area": 232
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.6647509932518005,
+      "bounding_box": [
+        158.36697387695312,
+        27.04181480407715,
+        170.49493408203125,
+        44.371925354003906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7606762051582336,
+        "median_depth": 0.7643568515777588,
+        "depth_std": 0.016211049631237984,
+        "depth_min": 0.732420027256012,
+        "depth_max": 0.8063395023345947,
+        "mask_area": 92
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "sink",
+      "confidence": 0.35402587056159973,
+      "bounding_box": [
+        161.25152587890625,
+        36.73462677001953,
+        205.31521606445312,
+        54.11436462402344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8254148960113525,
+        "median_depth": 0.8282023072242737,
+        "depth_std": 0.0157603919506073,
+        "depth_min": 0.7747277617454529,
+        "depth_max": 0.907865583896637,
+        "mask_area": 425
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. countertop. drawer. cabinet. mirror. soap dish. soap. bottle. container. toothbrush. razor.",
+  "text_prompt": "robot arm. gripper. sink. faucet. countertop. drawer. cabinet. mirror. soap dish. soap. bottle. container. toothbrush. razor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

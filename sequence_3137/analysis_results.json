@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "table",
+    "sofa",
+    "cup",
+    "window blinds",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, door, window blinds, table, sofa",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.3956983983516693,
+        "relative_position": "closest",
+        "confidence": 0.7512607574462891
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "sofa",
+        "mean_depth": 0.482982337474823,
+        "relative_position": "middle",
+        "confidence": 0.7433434128761292
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.5551089644432068,
+        "relative_position": "middle",
+        "confidence": 0.642300546169281
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "window blinds",
+        "mean_depth": 0.5689176917076111,
+        "relative_position": "middle",
+        "confidence": 0.42580175399780273
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "door",
+        "mean_depth": 0.8802998661994934,
+        "relative_position": "farthest",
+        "confidence": 0.5160588026046753
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "door",
+        "mean_depth": 0.8802998661994934,
+        "relative_position": "farthest",
+        "confidence": 0.5160588026046753
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "window blinds",
+        "mean_depth": 0.5689176917076111,
+        "relative_position": "middle",
+        "confidence": 0.42580175399780273
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "cup",
+        "mean_depth": 0.5551089644432068,
+        "relative_position": "middle",
+        "confidence": 0.642300546169281
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "sofa",
+        "mean_depth": 0.482982337474823,
+        "relative_position": "middle",
+        "confidence": 0.7433434128761292
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.3956983983516693,
+        "relative_position": "closest",
+        "confidence": 0.7512607574462891
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7512607574462891,
+      "bounding_box": [
+        93.91641235351562,
+        71.77555847167969,
+        225.5919189453125,
+        179.82058715820312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3956983983516693,
+        "median_depth": 0.37373635172843933,
+        "depth_std": 0.09163890033960342,
+        "depth_min": 0.2724800705909729,
+        "depth_max": 0.9916709065437317,
+        "mask_area": 4863
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "sofa",
+      "confidence": 0.7433434128761292,
+      "bounding_box": [
+        0.03034210205078125,
+        57.803199768066406,
+        156.40203857421875,
+        179.93325805664062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.482982337474823,
+        "median_depth": 0.4646921455860138,
+        "depth_std": 0.09262967109680176,
+        "depth_min": 0.29570120573043823,
+        "depth_max": 0.8076346516609192,
+        "mask_area": 3733
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cup",
+      "confidence": 0.642300546169281,
+      "bounding_box": [
+        160.32562255859375,
+        55.88470458984375,
+        177.29446411132812,
+        79.83879089355469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5551089644432068,
+        "median_depth": 0.5328088998794556,
+        "depth_std": 0.07649396359920502,
+        "depth_min": 0.5119464993476868,
+        "depth_max": 0.9266402125358582,
+        "mask_area": 296
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "window blinds",
+      "confidence": 0.42580175399780273,
+      "bounding_box": [
+        0.06842041015625,
+        -0.046665191650390625,
+        153.35250854492188,
+        93.4171142578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5689176917076111,
+        "median_depth": 0.5395532846450806,
+        "depth_std": 0.12829206883907318,
+        "depth_min": 0.3518652617931366,
+        "depth_max": 0.8698486685752869,
+        "mask_area": 10277
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "door",
+      "confidence": 0.5160588026046753,
+      "bounding_box": [
+        173.62232971191406,
+        0.28025054931640625,
+        214.62843322753906,
+        75.99942779541016
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8802998661994934,
+        "median_depth": 0.9011827707290649,
+        "depth_std": 0.10360198467969894,
+        "depth_min": 0.30379122495651245,
+        "depth_max": 0.9978746175765991,
+        "mask_area": 1587
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. sofa. pillow. window blinds. door. robot arm. gripper. container. cup. cable. smartphone. box. rug. monitor.",
+  "text_prompt": "table. sofa. pillow. window blinds. door. robot arm. gripper. container. cup. cable. smartphone. box. rug. monitor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

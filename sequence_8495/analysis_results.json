@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "keyboard",
+    "monitor",
+    "chair",
+    "mouse pad"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: mouse pad, robot arm gripper, chair, monitor, keyboard",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.07183703780174255,
+        "relative_position": "closest",
+        "confidence": 0.3613415062427521
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "keyboard",
+        "mean_depth": 0.22219417989253998,
+        "relative_position": "middle",
+        "confidence": 0.6137601733207703
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.2834339141845703,
+        "relative_position": "middle",
+        "confidence": 0.7565317153930664
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.35993316769599915,
+        "relative_position": "middle",
+        "confidence": 0.5800082087516785
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "mouse pad",
+        "mean_depth": 0.4219518005847931,
+        "relative_position": "farthest",
+        "confidence": 0.7362207174301147
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "mouse pad",
+        "mean_depth": 0.4219518005847931,
+        "relative_position": "farthest",
+        "confidence": 0.7362207174301147
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.35993316769599915,
+        "relative_position": "middle",
+        "confidence": 0.5800082087516785
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.2834339141845703,
+        "relative_position": "middle",
+        "confidence": 0.7565317153930664
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "keyboard",
+        "mean_depth": 0.22219417989253998,
+        "relative_position": "middle",
+        "confidence": 0.6137601733207703
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.07183703780174255,
+        "relative_position": "closest",
+        "confidence": 0.3613415062427521
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.3613415062427521,
+      "bounding_box": [
+        161.27133178710938,
+        0.08221054077148438,
+        308.16619873046875,
+        110.16224670410156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07183703780174255,
+        "median_depth": 0.011311449110507965,
+        "depth_std": 0.1884235143661499,
+        "depth_min": 0.001222374034114182,
+        "depth_max": 0.9784395694732666,
+        "mask_area": 5881
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "keyboard",
+      "confidence": 0.6137601733207703,
+      "bounding_box": [
+        137.06747436523438,
+        119.75008392333984,
+        177.77310180664062,
+        177.52426147460938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22219417989253998,
+        "median_depth": 0.2160944640636444,
+        "depth_std": 0.04010844975709915,
+        "depth_min": 0.15928271412849426,
+        "depth_max": 0.30720874667167664,
+        "mask_area": 1320
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "monitor",
+      "confidence": 0.7565317153930664,
+      "bounding_box": [
+        9.186580657958984,
+        7.397762298583984,
+        107.49311828613281,
+        134.91392517089844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2834339141845703,
+        "median_depth": 0.2668844759464264,
+        "depth_std": 0.0927014946937561,
+        "depth_min": 0.13552412390708923,
+        "depth_max": 0.7413846254348755,
+        "mask_area": 7209
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.5800082087516785,
+      "bounding_box": [
+        188.3515625,
+        71.42378234863281,
+        274.91448974609375,
+        179.21424865722656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.35993316769599915,
+        "median_depth": 0.36336609721183777,
+        "depth_std": 0.049153417348861694,
+        "depth_min": 0.2480417937040329,
+        "depth_max": 0.8718622922897339,
+        "mask_area": 5089
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "mouse pad",
+      "confidence": 0.7362207174301147,
+      "bounding_box": [
+        106.99516296386719,
+        84.105224609375,
+        165.85520935058594,
+        112.75349426269531
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4219518005847931,
+        "median_depth": 0.4079572856426239,
+        "depth_std": 0.08270040899515152,
+        "depth_min": 0.2813835144042969,
+        "depth_max": 0.9126492738723755,
+        "mask_area": 1301
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. monitor. keyboard. earphones. laptop. mouse pad. table. chair. curtain. computer tower. bed.",
+  "text_prompt": "robot arm. gripper. monitor. keyboard. earphones. laptop. mouse pad. table. chair. curtain. computer tower. bed.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

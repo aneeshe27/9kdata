@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "workbench",
+    "door",
+    "monitor",
+    "wire",
+    "shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: monitor, workbench, door, wire, shelf",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "workbench",
+        "mean_depth": 0.18000958859920502,
+        "relative_position": "closest",
+        "confidence": 0.6862944960594177
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "door",
+        "mean_depth": 0.5379576683044434,
+        "relative_position": "middle",
+        "confidence": 0.615896463394165
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.5697937607765198,
+        "relative_position": "middle",
+        "confidence": 0.9193398356437683
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "wire",
+        "mean_depth": 0.6399757862091064,
+        "relative_position": "middle",
+        "confidence": 0.5225567817687988
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "shelf",
+        "mean_depth": 0.7297176718711853,
+        "relative_position": "farthest",
+        "confidence": 0.5647192597389221
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "shelf",
+        "mean_depth": 0.7297176718711853,
+        "relative_position": "farthest",
+        "confidence": 0.5647192597389221
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "wire",
+        "mean_depth": 0.6399757862091064,
+        "relative_position": "middle",
+        "confidence": 0.5225567817687988
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "monitor",
+        "mean_depth": 0.5697937607765198,
+        "relative_position": "middle",
+        "confidence": 0.9193398356437683
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "door",
+        "mean_depth": 0.5379576683044434,
+        "relative_position": "middle",
+        "confidence": 0.615896463394165
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "workbench",
+        "mean_depth": 0.18000958859920502,
+        "relative_position": "closest",
+        "confidence": 0.6862944960594177
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "workbench",
+      "confidence": 0.6862944960594177,
+      "bounding_box": [
+        242.91294860839844,
+        69.89784240722656,
+        315.76904296875,
+        179.52877807617188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18000958859920502,
+        "median_depth": 0.13713040947914124,
+        "depth_std": 0.18009911477565765,
+        "depth_min": 0.0,
+        "depth_max": 0.9068010449409485,
+        "mask_area": 5863
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "door",
+      "confidence": 0.615896463394165,
+      "bounding_box": [
+        -0.020429611206054688,
+        52.13140106201172,
+        47.71021270751953,
+        172.89373779296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5379576683044434,
+        "median_depth": 0.5274755954742432,
+        "depth_std": 0.051489464938640594,
+        "depth_min": 0.45151159167289734,
+        "depth_max": 0.6907626390457153,
+        "mask_area": 2929
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "monitor",
+      "confidence": 0.9193398356437683,
+      "bounding_box": [
+        55.80349349975586,
+        0.033466339111328125,
+        134.10205078125,
+        53.51957702636719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5697937607765198,
+        "median_depth": 0.5638355016708374,
+        "depth_std": 0.08460740745067596,
+        "depth_min": 0.20889468491077423,
+        "depth_max": 0.7945279479026794,
+        "mask_area": 2877
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "wire",
+      "confidence": 0.5225567817687988,
+      "bounding_box": [
+        272.5330505371094,
+        0.06897735595703125,
+        315.9902038574219,
+        77.03128814697266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6399757862091064,
+        "median_depth": 0.6368613243103027,
+        "depth_std": 0.0879417210817337,
+        "depth_min": 0.4375787377357483,
+        "depth_max": 0.830601692199707,
+        "mask_area": 358
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "shelf",
+      "confidence": 0.5647192597389221,
+      "bounding_box": [
+        91.06217956542969,
+        68.61552429199219,
+        137.5149688720703,
+        125.38539123535156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7297176718711853,
+        "median_depth": 0.7188571691513062,
+        "depth_std": 0.06385848671197891,
+        "depth_min": 0.6252265572547913,
+        "depth_max": 0.9909135699272156,
+        "mask_area": 1440
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "curtain. workbench. clamp. wire. door. shelf. monitor.",
+  "text_prompt": "curtain. workbench. clamp. wire. door. shelf. monitor.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

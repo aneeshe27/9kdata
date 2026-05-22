@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "soap dispenser",
+    "sink",
+    "countertop",
+    "coffee maker"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: coffee maker, countertop, soap dispenser, sink, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.1840922236442566,
+        "relative_position": "closest",
+        "confidence": 0.39816179871559143
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "soap dispenser",
+        "mean_depth": 0.6544378399848938,
+        "relative_position": "middle",
+        "confidence": 0.8313770890235901
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.682336688041687,
+        "relative_position": "middle",
+        "confidence": 0.430727481842041
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "countertop",
+        "mean_depth": 0.6874913573265076,
+        "relative_position": "middle",
+        "confidence": 0.6138699650764465
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "coffee maker",
+        "mean_depth": 0.9132885336875916,
+        "relative_position": "farthest",
+        "confidence": 0.5809527635574341
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "coffee maker",
+        "mean_depth": 0.9132885336875916,
+        "relative_position": "farthest",
+        "confidence": 0.5809527635574341
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "countertop",
+        "mean_depth": 0.6874913573265076,
+        "relative_position": "middle",
+        "confidence": 0.6138699650764465
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "sink",
+        "mean_depth": 0.682336688041687,
+        "relative_position": "middle",
+        "confidence": 0.430727481842041
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "soap dispenser",
+        "mean_depth": 0.6544378399848938,
+        "relative_position": "middle",
+        "confidence": 0.8313770890235901
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.1840922236442566,
+        "relative_position": "closest",
+        "confidence": 0.39816179871559143
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.39816179871559143,
+      "bounding_box": [
+        127.82551574707031,
+        0.15419769287109375,
+        227.8837432861328,
+        149.06460571289062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1840922236442566,
+        "median_depth": 0.09699754416942596,
+        "depth_std": 0.187246635556221,
+        "depth_min": 0.036099277436733246,
+        "depth_max": 0.8255134224891663,
+        "mask_area": 4806
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "soap dispenser",
+      "confidence": 0.8313770890235901,
+      "bounding_box": [
+        232.92697143554688,
+        47.380348205566406,
+        264.9139709472656,
+        95.4912338256836
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6544378399848938,
+        "median_depth": 0.6485519409179688,
+        "depth_std": 0.017670968547463417,
+        "depth_min": 0.6345393061637878,
+        "depth_max": 0.718559980392456,
+        "mask_area": 1177
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "sink",
+      "confidence": 0.430727481842041,
+      "bounding_box": [
+        235.30616760253906,
+        122.59390258789062,
+        315.9455261230469,
+        180.03118896484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.682336688041687,
+        "median_depth": 0.6866509914398193,
+        "depth_std": 0.04452138394117355,
+        "depth_min": 0.4987710118293762,
+        "depth_max": 0.7462334632873535,
+        "mask_area": 3798
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "countertop",
+      "confidence": 0.6138699650764465,
+      "bounding_box": [
+        42.42431640625,
+        104.28026580810547,
+        241.72418212890625,
+        179.89910888671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6874913573265076,
+        "median_depth": 0.6718305945396423,
+        "depth_std": 0.13057635724544525,
+        "depth_min": 0.4475255012512207,
+        "depth_max": 0.9732059836387634,
+        "mask_area": 5763
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "coffee maker",
+      "confidence": 0.5809527635574341,
+      "bounding_box": [
+        74.01766967773438,
+        65.03443908691406,
+        118.48658752441406,
+        118.82176208496094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9132885336875916,
+        "median_depth": 0.9076156616210938,
+        "depth_std": 0.02043669857084751,
+        "depth_min": 0.8800607323646545,
+        "depth_max": 0.9748399257659912,
+        "mask_area": 1843
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. cutting board. countertop. sink. soap dispenser. coffee maker. food package. food item. cabinet.",
+  "text_prompt": "robot arm. gripper. cutting board. countertop. sink. soap dispenser. coffee maker. food package. food item. cabinet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

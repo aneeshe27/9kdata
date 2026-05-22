@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cable",
+    "cup",
+    "bowl",
+    "pen",
+    "box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, box, cable, bowl, pen",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.1452903002500534,
+        "relative_position": "closest",
+        "confidence": 0.47301894426345825
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.3631700873374939,
+        "relative_position": "middle",
+        "confidence": 0.6525164842605591
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.3746349513530731,
+        "relative_position": "middle",
+        "confidence": 0.5533894300460815
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "pen",
+        "mean_depth": 0.381199449300766,
+        "relative_position": "middle",
+        "confidence": 0.8357638716697693
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.494490385055542,
+        "relative_position": "farthest",
+        "confidence": 0.4680323898792267
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.494490385055542,
+        "relative_position": "farthest",
+        "confidence": 0.4680323898792267
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "pen",
+        "mean_depth": 0.381199449300766,
+        "relative_position": "middle",
+        "confidence": 0.8357638716697693
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "bowl",
+        "mean_depth": 0.3746349513530731,
+        "relative_position": "middle",
+        "confidence": 0.5533894300460815
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.3631700873374939,
+        "relative_position": "middle",
+        "confidence": 0.6525164842605591
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.1452903002500534,
+        "relative_position": "closest",
+        "confidence": 0.47301894426345825
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cable",
+      "confidence": 0.47301894426345825,
+      "bounding_box": [
+        114.06932067871094,
+        95.63875579833984,
+        162.07691955566406,
+        137.1341552734375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1452903002500534,
+        "median_depth": 0.12232787162065506,
+        "depth_std": 0.08713791519403458,
+        "depth_min": 0.03662756085395813,
+        "depth_max": 0.49351218342781067,
+        "mask_area": 407
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.6525164842605591,
+      "bounding_box": [
+        27.16185188293457,
+        89.10965728759766,
+        52.486732482910156,
+        119.65116119384766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3631700873374939,
+        "median_depth": 0.34134453535079956,
+        "depth_std": 0.09003838151693344,
+        "depth_min": 0.2907603085041046,
+        "depth_max": 0.7821528315544128,
+        "mask_area": 441
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bowl",
+      "confidence": 0.5533894300460815,
+      "bounding_box": [
+        166.28533935546875,
+        114.94505310058594,
+        189.03146362304688,
+        135.19688415527344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3746349513530731,
+        "median_depth": 0.37373173236846924,
+        "depth_std": 0.00982020702213049,
+        "depth_min": 0.3610040247440338,
+        "depth_max": 0.41014084219932556,
+        "mask_area": 356
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "pen",
+      "confidence": 0.8357638716697693,
+      "bounding_box": [
+        243.9519805908203,
+        126.45103454589844,
+        257.35284423828125,
+        148.50856018066406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.381199449300766,
+        "median_depth": 0.38166680932044983,
+        "depth_std": 0.015862148255109787,
+        "depth_min": 0.3542952239513397,
+        "depth_max": 0.4121456742286682,
+        "mask_area": 95
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "box",
+      "confidence": 0.4680323898792267,
+      "bounding_box": [
+        227.04800415039062,
+        48.746803283691406,
+        315.9791564941406,
+        97.7121810913086
+      ],
+      "depth_stats": {
+        "mean_depth": 0.494490385055542,
+        "median_depth": 0.4899241626262665,
+        "depth_std": 0.04655521363019943,
+        "depth_min": 0.44663700461387634,
+        "depth_max": 0.9445907473564148,
+        "mask_area": 3511
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. bowl. pen. robot arm. robot gripper. table. cloth. box. cable.",
+  "text_prompt": "cup. bowl. pen. robot arm. robot gripper. table. cloth. box. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

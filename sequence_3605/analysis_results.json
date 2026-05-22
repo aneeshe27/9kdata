@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cloth",
+    "container",
+    "camera",
+    "cable",
+    "tripod"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: tripod, cable, container, camera, cloth",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "cloth",
+        "mean_depth": 0.06411737203598022,
+        "relative_position": "closest",
+        "confidence": 0.36525893211364746
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "container",
+        "mean_depth": 0.43758073449134827,
+        "relative_position": "middle",
+        "confidence": 0.38629814982414246
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "camera",
+        "mean_depth": 0.49106118083000183,
+        "relative_position": "middle",
+        "confidence": 0.5852508544921875
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "cable",
+        "mean_depth": 0.6152501702308655,
+        "relative_position": "middle",
+        "confidence": 0.38935422897338867
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "tripod",
+        "mean_depth": 0.8181267976760864,
+        "relative_position": "farthest",
+        "confidence": 0.5419019460678101
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "tripod",
+        "mean_depth": 0.8181267976760864,
+        "relative_position": "farthest",
+        "confidence": 0.5419019460678101
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "cable",
+        "mean_depth": 0.6152501702308655,
+        "relative_position": "middle",
+        "confidence": 0.38935422897338867
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "camera",
+        "mean_depth": 0.49106118083000183,
+        "relative_position": "middle",
+        "confidence": 0.5852508544921875
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "container",
+        "mean_depth": 0.43758073449134827,
+        "relative_position": "middle",
+        "confidence": 0.38629814982414246
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "cloth",
+        "mean_depth": 0.06411737203598022,
+        "relative_position": "closest",
+        "confidence": 0.36525893211364746
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "cloth",
+      "confidence": 0.36525893211364746,
+      "bounding_box": [
+        0.54376220703125,
+        49.077354431152344,
+        278.5,
+        178.93353271484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06411737203598022,
+        "median_depth": 0.057915885001420975,
+        "depth_std": 0.044134870171546936,
+        "depth_min": 0.00382420071400702,
+        "depth_max": 0.656137228012085,
+        "mask_area": 26080
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "container",
+      "confidence": 0.38629814982414246,
+      "bounding_box": [
+        95.41200256347656,
+        36.374298095703125,
+        111.21524047851562,
+        53.16094207763672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.43758073449134827,
+        "median_depth": 0.43372824788093567,
+        "depth_std": 0.06645550578832626,
+        "depth_min": 0.3327444791793823,
+        "depth_max": 0.6001364588737488,
+        "mask_area": 220
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "camera",
+      "confidence": 0.5852508544921875,
+      "bounding_box": [
+        113.07025146484375,
+        28.430355072021484,
+        140.7435760498047,
+        50.488529205322266
+      ],
+      "depth_stats": {
+        "mean_depth": 0.49106118083000183,
+        "median_depth": 0.4811059236526489,
+        "depth_std": 0.05722194164991379,
+        "depth_min": 0.41160762310028076,
+        "depth_max": 0.6949190497398376,
+        "mask_area": 448
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "cable",
+      "confidence": 0.38935422897338867,
+      "bounding_box": [
+        17.08621597290039,
+        15.762432098388672,
+        46.518062591552734,
+        37.7116584777832
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6152501702308655,
+        "median_depth": 0.622156023979187,
+        "depth_std": 0.03710971400141716,
+        "depth_min": 0.5544254183769226,
+        "depth_max": 0.7101508378982544,
+        "mask_area": 126
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "tripod",
+      "confidence": 0.5419019460678101,
+      "bounding_box": [
+        135.22105407714844,
+        1.338479995727539,
+        154.2554473876953,
+        35.08232879638672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8181267976760864,
+        "median_depth": 0.8226388692855835,
+        "depth_std": 0.057981885969638824,
+        "depth_min": 0.6412254571914673,
+        "depth_max": 0.9691874384880066,
+        "mask_area": 310
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. cloth. container. cable. camera. tripod. tool.",
+  "text_prompt": "robot arm. gripper. table. cloth. container. cable. camera. tripod. tool.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

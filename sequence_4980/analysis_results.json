@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm robot gripper",
+    "robot gripper",
+    "table",
+    "chair",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot gripper, chair, table, robot arm robot gripper, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.03072773665189743,
+        "relative_position": "closest",
+        "confidence": 0.4498426914215088
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "robot gripper",
+        "mean_depth": 0.0958353579044342,
+        "relative_position": "middle",
+        "confidence": 0.45794713497161865
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.12258338183164597,
+        "relative_position": "middle",
+        "confidence": 0.6292062997817993
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.2577286660671234,
+        "relative_position": "middle",
+        "confidence": 0.35228845477104187
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.7411260008811951,
+        "relative_position": "farthest",
+        "confidence": 0.35340040922164917
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.7411260008811951,
+        "relative_position": "farthest",
+        "confidence": 0.35340040922164917
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.2577286660671234,
+        "relative_position": "middle",
+        "confidence": 0.35228845477104187
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.12258338183164597,
+        "relative_position": "middle",
+        "confidence": 0.6292062997817993
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "robot gripper",
+        "mean_depth": 0.0958353579044342,
+        "relative_position": "middle",
+        "confidence": 0.45794713497161865
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.03072773665189743,
+        "relative_position": "closest",
+        "confidence": 0.4498426914215088
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm robot gripper",
+      "confidence": 0.4498426914215088,
+      "bounding_box": [
+        -0.059879302978515625,
+        31.241775512695312,
+        104.77947998046875,
+        179.86843872070312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03072773665189743,
+        "median_depth": 0.012523442506790161,
+        "depth_std": 0.06929980218410492,
+        "depth_min": 0.001391109311953187,
+        "depth_max": 0.9125170707702637,
+        "mask_area": 6894
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "robot gripper",
+      "confidence": 0.45794713497161865,
+      "bounding_box": [
+        108.04615783691406,
+        0.0326690673828125,
+        192.80088806152344,
+        66.1222915649414
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0958353579044342,
+        "median_depth": 0.07623814046382904,
+        "depth_std": 0.057417239993810654,
+        "depth_min": 0.035226140171289444,
+        "depth_max": 0.3854285776615143,
+        "mask_area": 2412
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.6292062997817993,
+      "bounding_box": [
+        139.37464904785156,
+        87.11524963378906,
+        315.8670654296875,
+        179.92799377441406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12258338183164597,
+        "median_depth": 0.09976083040237427,
+        "depth_std": 0.05217493325471878,
+        "depth_min": 0.06454993784427643,
+        "depth_max": 0.29240357875823975,
+        "mask_area": 7539
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.35228845477104187,
+      "bounding_box": [
+        200.8328399658203,
+        72.62541198730469,
+        250.3279571533203,
+        91.96574401855469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2577286660671234,
+        "median_depth": 0.2580355405807495,
+        "depth_std": 0.013209124095737934,
+        "depth_min": 0.23009426891803741,
+        "depth_max": 0.2864628732204437,
+        "mask_area": 625
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.35340040922164917,
+      "bounding_box": [
+        89.08367156982422,
+        37.41241455078125,
+        123.1404037475586,
+        71.67852020263672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7411260008811951,
+        "median_depth": 0.7446634769439697,
+        "depth_std": 0.0815676897764206,
+        "depth_min": 0.33502551913261414,
+        "depth_max": 0.9539700150489807,
+        "mask_area": 830
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. table. chair. bowl. mug. glass. container. cloth.",
+  "text_prompt": "robot arm. robot gripper. table. chair. bowl. mug. glass. container. cloth.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

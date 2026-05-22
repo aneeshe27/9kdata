@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "table",
+    "chair",
+    "chair",
+    "whiteboard"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, whiteboard, chair, robot arm gripper, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.016488686203956604,
+        "relative_position": "closest",
+        "confidence": 0.35161834955215454
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.08660585433244705,
+        "relative_position": "middle",
+        "confidence": 0.6750123500823975
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.29455825686454773,
+        "relative_position": "middle",
+        "confidence": 0.507693350315094
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.3009214997291565,
+        "relative_position": "middle",
+        "confidence": 0.5874488353729248
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "whiteboard",
+        "mean_depth": 0.94737309217453,
+        "relative_position": "farthest",
+        "confidence": 0.7522522211074829
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "whiteboard",
+        "mean_depth": 0.94737309217453,
+        "relative_position": "farthest",
+        "confidence": 0.7522522211074829
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.3009214997291565,
+        "relative_position": "middle",
+        "confidence": 0.5874488353729248
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.29455825686454773,
+        "relative_position": "middle",
+        "confidence": 0.507693350315094
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "table",
+        "mean_depth": 0.08660585433244705,
+        "relative_position": "middle",
+        "confidence": 0.6750123500823975
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.016488686203956604,
+        "relative_position": "closest",
+        "confidence": 0.35161834955215454
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.35161834955215454,
+      "bounding_box": [
+        139.82608032226562,
+        0.15183258056640625,
+        316.0132751464844,
+        166.96035766601562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.016488686203956604,
+        "median_depth": 0.011975678615272045,
+        "depth_std": 0.013742978684604168,
+        "depth_min": 0.005264692474156618,
+        "depth_max": 0.2944554090499878,
+        "mask_area": 17163
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "table",
+      "confidence": 0.6750123500823975,
+      "bounding_box": [
+        0.1277618408203125,
+        42.23737335205078,
+        249.8551788330078,
+        179.90914916992188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08660585433244705,
+        "median_depth": 0.07723364233970642,
+        "depth_std": 0.03128856047987938,
+        "depth_min": 0.012976056896150112,
+        "depth_max": 0.31818529963493347,
+        "mask_area": 20985
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.507693350315094,
+      "bounding_box": [
+        122.91647338867188,
+        18.925600051879883,
+        151.7978515625,
+        54.097206115722656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.29455825686454773,
+        "median_depth": 0.29908305406570435,
+        "depth_std": 0.08230017870664597,
+        "depth_min": 0.0744604766368866,
+        "depth_max": 0.6951532363891602,
+        "mask_area": 605
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.5874488353729248,
+      "bounding_box": [
+        11.147825241088867,
+        18.227346420288086,
+        44.4649658203125,
+        62.43534851074219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3009214997291565,
+        "median_depth": 0.299316942691803,
+        "depth_std": 0.023797031491994858,
+        "depth_min": 0.23295466601848602,
+        "depth_max": 0.5546004176139832,
+        "mask_area": 882
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "whiteboard",
+      "confidence": 0.7522522211074829,
+      "bounding_box": [
+        0.037113189697265625,
+        -0.00597381591796875,
+        77.79893493652344,
+        19.19732666015625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.94737309217453,
+        "median_depth": 0.9483647346496582,
+        "depth_std": 0.03417063131928444,
+        "depth_min": 0.8662732243537903,
+        "depth_max": 0.9924540519714355,
+        "mask_area": 1277
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. container. robot arm. gripper. table. chair. whiteboard. cable. bottle cap. paper towel roll.",
+  "text_prompt": "cup. container. robot arm. gripper. table. chair. whiteboard. cable. bottle cap. paper towel roll.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

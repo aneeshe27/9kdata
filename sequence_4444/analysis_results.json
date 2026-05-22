@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "monitor",
+    "mouse",
+    "gripper clamp",
+    "whiteboard",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: gripper clamp, whiteboard, monitor, chair, mouse",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.35517609119415283,
+        "relative_position": "closest",
+        "confidence": 0.8465385437011719
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "mouse",
+        "mean_depth": 0.4228576719760895,
+        "relative_position": "middle",
+        "confidence": 0.8787578344345093
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "gripper clamp",
+        "mean_depth": 0.5239518880844116,
+        "relative_position": "middle",
+        "confidence": 0.35752931237220764
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "whiteboard",
+        "mean_depth": 0.7426137328147888,
+        "relative_position": "middle",
+        "confidence": 0.7151552438735962
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.9857984185218811,
+        "relative_position": "farthest",
+        "confidence": 0.3504667580127716
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.9857984185218811,
+        "relative_position": "farthest",
+        "confidence": 0.3504667580127716
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "whiteboard",
+        "mean_depth": 0.7426137328147888,
+        "relative_position": "middle",
+        "confidence": 0.7151552438735962
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "gripper clamp",
+        "mean_depth": 0.5239518880844116,
+        "relative_position": "middle",
+        "confidence": 0.35752931237220764
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "mouse",
+        "mean_depth": 0.4228576719760895,
+        "relative_position": "middle",
+        "confidence": 0.8787578344345093
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.35517609119415283,
+        "relative_position": "closest",
+        "confidence": 0.8465385437011719
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 1,
+      "label": "monitor",
+      "confidence": 0.8465385437011719,
+      "bounding_box": [
+        233.1293487548828,
+        34.11846923828125,
+        308.9119873046875,
+        138.36187744140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.35517609119415283,
+        "median_depth": 0.35171186923980713,
+        "depth_std": 0.057284001260995865,
+        "depth_min": 0.23626253008842468,
+        "depth_max": 0.5551515817642212,
+        "mask_area": 4313
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "mouse",
+      "confidence": 0.8787578344345093,
+      "bounding_box": [
+        255.3036651611328,
+        138.1292724609375,
+        272.5537414550781,
+        148.93002319335938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4228576719760895,
+        "median_depth": 0.4214789867401123,
+        "depth_std": 0.01210271567106247,
+        "depth_min": 0.4034121036529541,
+        "depth_max": 0.45253482460975647,
+        "mask_area": 135
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "gripper clamp",
+      "confidence": 0.35752931237220764,
+      "bounding_box": [
+        111.94001770019531,
+        152.17306518554688,
+        137.04019165039062,
+        168.48202514648438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5239518880844116,
+        "median_depth": 0.5241900682449341,
+        "depth_std": 0.014907585456967354,
+        "depth_min": 0.4975503981113434,
+        "depth_max": 0.5538411736488342,
+        "mask_area": 162
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "whiteboard",
+      "confidence": 0.7151552438735962,
+      "bounding_box": [
+        138.03411865234375,
+        7.447467803955078,
+        231.30987548828125,
+        69.66989135742188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7426137328147888,
+        "median_depth": 0.7375133037567139,
+        "depth_std": 0.04611766338348389,
+        "depth_min": 0.13014353811740875,
+        "depth_max": 0.8538389801979065,
+        "mask_area": 3498
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.3504667580127716,
+      "bounding_box": [
+        24.873428344726562,
+        0.056015968322753906,
+        74.1578369140625,
+        29.922779083251953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9857984185218811,
+        "median_depth": 0.9969713091850281,
+        "depth_std": 0.023964224383234978,
+        "depth_min": 0.8830229043960571,
+        "depth_max": 1.0,
+        "mask_area": 798
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. monitor. keyboard. mouse. cup. coaster. whiteboard. chair. paper. cable. clamp. container.",
+  "text_prompt": "robot arm. gripper. table. monitor. keyboard. mouse. cup. coaster. whiteboard. chair. paper. cable. clamp. container.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

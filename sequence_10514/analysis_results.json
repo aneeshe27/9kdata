@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "steering wheel",
+    "cloth",
+    "power tool",
+    "clamp",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cloth, chair, power tool, clamp, steering wheel",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "steering wheel",
+        "mean_depth": 0.03631909191608429,
+        "relative_position": "closest",
+        "confidence": 0.45604488253593445
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cloth",
+        "mean_depth": 0.0542556568980217,
+        "relative_position": "middle",
+        "confidence": 0.7210385203361511
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "power tool",
+        "mean_depth": 0.05473731458187103,
+        "relative_position": "middle",
+        "confidence": 0.35807058215141296
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "clamp",
+        "mean_depth": 0.0623663105070591,
+        "relative_position": "middle",
+        "confidence": 0.39787179231643677
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.3899458050727844,
+        "relative_position": "farthest",
+        "confidence": 0.6397644281387329
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "chair",
+        "mean_depth": 0.3899458050727844,
+        "relative_position": "farthest",
+        "confidence": 0.6397644281387329
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "clamp",
+        "mean_depth": 0.0623663105070591,
+        "relative_position": "middle",
+        "confidence": 0.39787179231643677
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "power tool",
+        "mean_depth": 0.05473731458187103,
+        "relative_position": "middle",
+        "confidence": 0.35807058215141296
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cloth",
+        "mean_depth": 0.0542556568980217,
+        "relative_position": "middle",
+        "confidence": 0.7210385203361511
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "steering wheel",
+        "mean_depth": 0.03631909191608429,
+        "relative_position": "closest",
+        "confidence": 0.45604488253593445
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "steering wheel",
+      "confidence": 0.45604488253593445,
+      "bounding_box": [
+        190.77357482910156,
+        0.2069091796875,
+        298.96490478515625,
+        78.4110336303711
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03631909191608429,
+        "median_depth": 0.01262359693646431,
+        "depth_std": 0.06944600492715836,
+        "depth_min": 0.0006415905663743615,
+        "depth_max": 0.49770063161849976,
+        "mask_area": 916
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cloth",
+      "confidence": 0.7210385203361511,
+      "bounding_box": [
+        192.47825622558594,
+        94.53314971923828,
+        280.05377197265625,
+        166.22140502929688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0542556568980217,
+        "median_depth": 0.053926125168800354,
+        "depth_std": 0.010487169958651066,
+        "depth_min": 0.037374261766672134,
+        "depth_max": 0.09458713233470917,
+        "mask_area": 3492
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "power tool",
+      "confidence": 0.35807058215141296,
+      "bounding_box": [
+        55.7875862121582,
+        105.44654083251953,
+        117.01683044433594,
+        152.71353149414062
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05473731458187103,
+        "median_depth": 0.05201825127005577,
+        "depth_std": 0.008455111645162106,
+        "depth_min": 0.043949391692876816,
+        "depth_max": 0.0868375226855278,
+        "mask_area": 1105
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "clamp",
+      "confidence": 0.39787179231643677,
+      "bounding_box": [
+        95.25263214111328,
+        133.39503479003906,
+        147.9252471923828,
+        172.2030487060547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0623663105070591,
+        "median_depth": 0.05189285799860954,
+        "depth_std": 0.03613034263253212,
+        "depth_min": 0.0417884960770607,
+        "depth_max": 0.34545785188674927,
+        "mask_area": 720
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "chair",
+      "confidence": 0.6397644281387329,
+      "bounding_box": [
+        79.80235290527344,
+        11.681873321533203,
+        147.3040313720703,
+        80.51068115234375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3899458050727844,
+        "median_depth": 0.34002235531806946,
+        "depth_std": 0.11003004014492035,
+        "depth_min": 0.28427407145500183,
+        "depth_max": 0.7311315536499023,
+        "mask_area": 1819
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. cloth. clamp. power tool. cable. power strip. chair. steering wheel.",
+  "text_prompt": "table. cloth. clamp. power tool. cable. power strip. chair. steering wheel.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

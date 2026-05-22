@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "range hood",
+    "cup",
+    "power outlet",
+    "fire extinguisher"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, cup, fire extinguisher, power outlet, range hood",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.042684655636548996,
+        "relative_position": "closest",
+        "confidence": 0.474583238363266
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "range hood",
+        "mean_depth": 0.0463116392493248,
+        "relative_position": "middle",
+        "confidence": 0.54362952709198
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.4508725702762604,
+        "relative_position": "middle",
+        "confidence": 0.38062429428100586
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "power outlet",
+        "mean_depth": 0.5511499643325806,
+        "relative_position": "middle",
+        "confidence": 0.6215057969093323
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "fire extinguisher",
+        "mean_depth": 0.7189229130744934,
+        "relative_position": "farthest",
+        "confidence": 0.9041160345077515
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "fire extinguisher",
+        "mean_depth": 0.7189229130744934,
+        "relative_position": "farthest",
+        "confidence": 0.9041160345077515
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "power outlet",
+        "mean_depth": 0.5511499643325806,
+        "relative_position": "middle",
+        "confidence": 0.6215057969093323
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.4508725702762604,
+        "relative_position": "middle",
+        "confidence": 0.38062429428100586
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "range hood",
+        "mean_depth": 0.0463116392493248,
+        "relative_position": "middle",
+        "confidence": 0.54362952709198
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.042684655636548996,
+        "relative_position": "closest",
+        "confidence": 0.474583238363266
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.474583238363266,
+      "bounding_box": [
+        205.488037109375,
+        44.85581970214844,
+        257.1695861816406,
+        146.71104431152344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.042684655636548996,
+        "median_depth": 0.03557731211185455,
+        "depth_std": 0.05214790627360344,
+        "depth_min": 0.017910843715071678,
+        "depth_max": 0.8408324718475342,
+        "mask_area": 2897
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "range hood",
+      "confidence": 0.54362952709198,
+      "bounding_box": [
+        -0.04914093017578125,
+        3.0278167724609375,
+        75.79967498779297,
+        71.57333374023438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0463116392493248,
+        "median_depth": 0.03854544460773468,
+        "depth_std": 0.038713034242391586,
+        "depth_min": 0.0,
+        "depth_max": 0.19043131172657013,
+        "mask_area": 3642
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.38062429428100586,
+      "bounding_box": [
+        138.25038146972656,
+        157.66273498535156,
+        175.9503936767578,
+        179.95924377441406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4508725702762604,
+        "median_depth": 0.4410518705844879,
+        "depth_std": 0.05820803716778755,
+        "depth_min": 0.3436684310436249,
+        "depth_max": 0.6286020874977112,
+        "mask_area": 643
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "power outlet",
+      "confidence": 0.6215057969093323,
+      "bounding_box": [
+        93.19669342041016,
+        122.20318603515625,
+        107.29618072509766,
+        141.006591796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5511499643325806,
+        "median_depth": 0.5482091307640076,
+        "depth_std": 0.017694629728794098,
+        "depth_min": 0.5259722471237183,
+        "depth_max": 0.5908205509185791,
+        "mask_area": 146
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "fire extinguisher",
+      "confidence": 0.9041160345077515,
+      "bounding_box": [
+        114.07866668701172,
+        99.88261413574219,
+        146.751220703125,
+        147.9957275390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7189229130744934,
+        "median_depth": 0.7128543853759766,
+        "depth_std": 0.01652923785150051,
+        "depth_min": 0.6952476501464844,
+        "depth_max": 0.7767739295959473,
+        "mask_area": 612
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. countertop. cabinet. fire extinguisher. power outlet. smartphone. cup. sponge. basket. range hood.",
+  "text_prompt": "robot arm. countertop. cabinet. fire extinguisher. power outlet. smartphone. cup. sponge. basket. range hood.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

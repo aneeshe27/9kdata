@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cup dispenser",
+    "cup glass",
+    "bowl plate",
+    "cup glass"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup glass, robot arm, bowl plate, cup dispenser, cup glass",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.04287212714552879,
+        "relative_position": "closest",
+        "confidence": 0.3674543797969818
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cup dispenser",
+        "mean_depth": 0.35562872886657715,
+        "relative_position": "middle",
+        "confidence": 0.46529582142829895
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cup glass",
+        "mean_depth": 0.6715894937515259,
+        "relative_position": "middle",
+        "confidence": 0.5375528335571289
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "bowl plate",
+        "mean_depth": 0.8217592835426331,
+        "relative_position": "middle",
+        "confidence": 0.48934829235076904
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "cup glass",
+        "mean_depth": 0.8728969693183899,
+        "relative_position": "farthest",
+        "confidence": 0.5571935176849365
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "cup glass",
+        "mean_depth": 0.8728969693183899,
+        "relative_position": "farthest",
+        "confidence": 0.5571935176849365
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "bowl plate",
+        "mean_depth": 0.8217592835426331,
+        "relative_position": "middle",
+        "confidence": 0.48934829235076904
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cup glass",
+        "mean_depth": 0.6715894937515259,
+        "relative_position": "middle",
+        "confidence": 0.5375528335571289
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cup dispenser",
+        "mean_depth": 0.35562872886657715,
+        "relative_position": "middle",
+        "confidence": 0.46529582142829895
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.04287212714552879,
+        "relative_position": "closest",
+        "confidence": 0.3674543797969818
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.3674543797969818,
+      "bounding_box": [
+        287.4969177246094,
+        0.08837890625,
+        315.8981018066406,
+        41.55516052246094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04287212714552879,
+        "median_depth": 0.03766215592622757,
+        "depth_std": 0.028693104162812233,
+        "depth_min": 0.002197823254391551,
+        "depth_max": 0.1165843978524208,
+        "mask_area": 856
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "cup dispenser",
+      "confidence": 0.46529582142829895,
+      "bounding_box": [
+        254.62127685546875,
+        22.777400970458984,
+        287.7415771484375,
+        56.4236946105957
+      ],
+      "depth_stats": {
+        "mean_depth": 0.35562872886657715,
+        "median_depth": 0.3419347107410431,
+        "depth_std": 0.12573646008968353,
+        "depth_min": 0.13532878458499908,
+        "depth_max": 0.7419111728668213,
+        "mask_area": 718
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cup glass",
+      "confidence": 0.5375528335571289,
+      "bounding_box": [
+        166.6761016845703,
+        79.60706329345703,
+        183.9138641357422,
+        102.70983123779297
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6715894937515259,
+        "median_depth": 0.6679764986038208,
+        "depth_std": 0.024807041510939598,
+        "depth_min": 0.6396491527557373,
+        "depth_max": 0.7535961270332336,
+        "mask_area": 286
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "bowl plate",
+      "confidence": 0.48934829235076904,
+      "bounding_box": [
+        209.38294982910156,
+        55.23707580566406,
+        231.61585998535156,
+        71.63858032226562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8217592835426331,
+        "median_depth": 0.8191497325897217,
+        "depth_std": 0.026931915432214737,
+        "depth_min": 0.776573121547699,
+        "depth_max": 0.8870936632156372,
+        "mask_area": 255
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup glass",
+      "confidence": 0.5571935176849365,
+      "bounding_box": [
+        220.67091369628906,
+        42.05714416503906,
+        235.69065856933594,
+        58.62840270996094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8728969693183899,
+        "median_depth": 0.8697296977043152,
+        "depth_std": 0.01975173130631447,
+        "depth_min": 0.8388975858688354,
+        "depth_max": 0.9236288070678711,
+        "mask_area": 153
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. glass. bowl. plate. spoon. napkin. napkin holder. container. packet. smartphone. sign holder. cup dispenser. robot arm. gripper. countertop.",
+  "text_prompt": "cup. glass. bowl. plate. spoon. napkin. napkin holder. container. packet. smartphone. sign holder. cup dispenser. robot arm. gripper. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

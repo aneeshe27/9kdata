@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "knife",
+    "sink",
+    "electrical outlet",
+    "kettle",
+    "electrical outlet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: electrical outlet, electrical outlet, kettle, knife, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "knife",
+        "mean_depth": 0.4543352425098419,
+        "relative_position": "closest",
+        "confidence": 0.5151861310005188
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.6161784529685974,
+        "relative_position": "middle",
+        "confidence": 0.7647290229797363
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "electrical outlet",
+        "mean_depth": 0.6350899338722229,
+        "relative_position": "middle",
+        "confidence": 0.5546833276748657
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "kettle",
+        "mean_depth": 0.8342381119728088,
+        "relative_position": "middle",
+        "confidence": 0.46702250838279724
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "electrical outlet",
+        "mean_depth": 0.9861429929733276,
+        "relative_position": "farthest",
+        "confidence": 0.3570374846458435
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "electrical outlet",
+        "mean_depth": 0.9861429929733276,
+        "relative_position": "farthest",
+        "confidence": 0.3570374846458435
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "kettle",
+        "mean_depth": 0.8342381119728088,
+        "relative_position": "middle",
+        "confidence": 0.46702250838279724
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "electrical outlet",
+        "mean_depth": 0.6350899338722229,
+        "relative_position": "middle",
+        "confidence": 0.5546833276748657
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "sink",
+        "mean_depth": 0.6161784529685974,
+        "relative_position": "middle",
+        "confidence": 0.7647290229797363
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "knife",
+        "mean_depth": 0.4543352425098419,
+        "relative_position": "closest",
+        "confidence": 0.5151861310005188
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "knife",
+      "confidence": 0.5151861310005188,
+      "bounding_box": [
+        86.71082305908203,
+        96.73780822753906,
+        135.30433654785156,
+        130.86097717285156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4543352425098419,
+        "median_depth": 0.45057305693626404,
+        "depth_std": 0.057953402400016785,
+        "depth_min": 0.37095972895622253,
+        "depth_max": 0.6688466668128967,
+        "mask_area": 365
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "sink",
+      "confidence": 0.7647290229797363,
+      "bounding_box": [
+        241.71888732910156,
+        76.44599151611328,
+        315.9148864746094,
+        106.27620697021484
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6161784529685974,
+        "median_depth": 0.6157165765762329,
+        "depth_std": 0.04185502231121063,
+        "depth_min": 0.39971259236335754,
+        "depth_max": 0.7889512777328491,
+        "mask_area": 1450
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "electrical outlet",
+      "confidence": 0.5546833276748657,
+      "bounding_box": [
+        112.677490234375,
+        18.47216796875,
+        123.43771362304688,
+        40.14474105834961
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6350899338722229,
+        "median_depth": 0.6329172253608704,
+        "depth_std": 0.020560190081596375,
+        "depth_min": 0.601412296295166,
+        "depth_max": 0.6837606430053711,
+        "mask_area": 163
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "kettle",
+      "confidence": 0.46702250838279724,
+      "bounding_box": [
+        137.9828338623047,
+        48.86395263671875,
+        161.92567443847656,
+        73.83140563964844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8342381119728088,
+        "median_depth": 0.8164688348770142,
+        "depth_std": 0.04267662763595581,
+        "depth_min": 0.7831531167030334,
+        "depth_max": 0.9926892518997192,
+        "mask_area": 405
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "electrical outlet",
+      "confidence": 0.3570374846458435,
+      "bounding_box": [
+        160.1922149658203,
+        48.11920928955078,
+        171.2533721923828,
+        60.749176025390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.9861429929733276,
+        "median_depth": 0.9853022694587708,
+        "depth_std": 0.004550337325781584,
+        "depth_min": 0.9799891710281372,
+        "depth_max": 0.9954920411109924,
+        "mask_area": 105
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. drawer. cutlery tray. spoon. fork. knife. kettle. countertop. sink. rack. electrical outlet.",
+  "text_prompt": "robot arm. gripper. drawer. cutlery tray. spoon. fork. knife. kettle. countertop. sink. rack. electrical outlet.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

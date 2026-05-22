@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "light",
+    "robot arm",
+    "gripper",
+    "emergency button",
+    "cabinet table"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, cabinet table, light, emergency button, gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "light",
+        "mean_depth": 0.013386907987296581,
+        "relative_position": "closest",
+        "confidence": 0.4103239178657532
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.06976710259914398,
+        "relative_position": "middle",
+        "confidence": 0.5101850628852844
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.18224219977855682,
+        "relative_position": "middle",
+        "confidence": 0.3878794312477112
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "emergency button",
+        "mean_depth": 0.32851797342300415,
+        "relative_position": "middle",
+        "confidence": 0.3590695858001709
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cabinet table",
+        "mean_depth": 0.35373276472091675,
+        "relative_position": "farthest",
+        "confidence": 0.43117067217826843
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cabinet table",
+        "mean_depth": 0.35373276472091675,
+        "relative_position": "farthest",
+        "confidence": 0.43117067217826843
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "emergency button",
+        "mean_depth": 0.32851797342300415,
+        "relative_position": "middle",
+        "confidence": 0.3590695858001709
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "gripper",
+        "mean_depth": 0.18224219977855682,
+        "relative_position": "middle",
+        "confidence": 0.3878794312477112
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "robot arm",
+        "mean_depth": 0.06976710259914398,
+        "relative_position": "middle",
+        "confidence": 0.5101850628852844
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "light",
+        "mean_depth": 0.013386907987296581,
+        "relative_position": "closest",
+        "confidence": 0.4103239178657532
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "light",
+      "confidence": 0.4103239178657532,
+      "bounding_box": [
+        3.661836624145508,
+        28.73881721496582,
+        56.4095458984375,
+        88.46063995361328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.013386907987296581,
+        "median_depth": 0.009930555708706379,
+        "depth_std": 0.016566498205065727,
+        "depth_min": 0.003677929751574993,
+        "depth_max": 0.1851496398448944,
+        "mask_area": 2107
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "robot arm",
+      "confidence": 0.5101850628852844,
+      "bounding_box": [
+        208.5373992919922,
+        0.20310211181640625,
+        301.86334228515625,
+        154.66940307617188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.06976710259914398,
+        "median_depth": 0.0356416180729866,
+        "depth_std": 0.10255203396081924,
+        "depth_min": 0.01752028986811638,
+        "depth_max": 0.9320076704025269,
+        "mask_area": 6738
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "gripper",
+      "confidence": 0.3878794312477112,
+      "bounding_box": [
+        150.53680419921875,
+        50.41960525512695,
+        185.91375732421875,
+        96.58879089355469
+      ],
+      "depth_stats": {
+        "mean_depth": 0.18224219977855682,
+        "median_depth": 0.1253180205821991,
+        "depth_std": 0.09962502121925354,
+        "depth_min": 0.08425651490688324,
+        "depth_max": 0.3855781853199005,
+        "mask_area": 695
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "emergency button",
+      "confidence": 0.3590695858001709,
+      "bounding_box": [
+        245.60226440429688,
+        142.57864379882812,
+        269.4770202636719,
+        169.50457763671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.32851797342300415,
+        "median_depth": 0.3617379069328308,
+        "depth_std": 0.06766244024038315,
+        "depth_min": 0.14346973598003387,
+        "depth_max": 0.438093900680542,
+        "mask_area": 420
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet table",
+      "confidence": 0.43117067217826843,
+      "bounding_box": [
+        4.7826995849609375,
+        78.05237579345703,
+        206.8572540283203,
+        179.91238403320312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.35373276472091675,
+        "median_depth": 0.33938175439834595,
+        "depth_std": 0.09804346412420273,
+        "depth_min": 0.20484714210033417,
+        "depth_max": 0.9013583660125732,
+        "mask_area": 5333
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. monitor. laptop. cabinet. table. emergency stop button. light. container. cable.",
+  "text_prompt": "robot arm. gripper. monitor. laptop. cabinet. table. emergency stop button. light. container. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

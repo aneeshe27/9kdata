@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "chair",
+    "table",
+    "robot arm gripper",
+    "television",
+    "plant"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, chair, plant, television, robot arm gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.007991025224328041,
+        "relative_position": "closest",
+        "confidence": 0.44842347502708435
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.11794073134660721,
+        "relative_position": "middle",
+        "confidence": 0.5018906593322754
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.1185009554028511,
+        "relative_position": "middle",
+        "confidence": 0.3539513051509857
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "television",
+        "mean_depth": 0.25068920850753784,
+        "relative_position": "middle",
+        "confidence": 0.7341983318328857
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "plant",
+        "mean_depth": 0.340178519487381,
+        "relative_position": "farthest",
+        "confidence": 0.8522384762763977
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "plant",
+        "mean_depth": 0.340178519487381,
+        "relative_position": "farthest",
+        "confidence": 0.8522384762763977
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "television",
+        "mean_depth": 0.25068920850753784,
+        "relative_position": "middle",
+        "confidence": 0.7341983318328857
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "robot arm gripper",
+        "mean_depth": 0.1185009554028511,
+        "relative_position": "middle",
+        "confidence": 0.3539513051509857
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.11794073134660721,
+        "relative_position": "middle",
+        "confidence": 0.5018906593322754
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.007991025224328041,
+        "relative_position": "closest",
+        "confidence": 0.44842347502708435
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.44842347502708435,
+      "bounding_box": [
+        15.571582794189453,
+        100.96162414550781,
+        63.11044692993164,
+        179.99644470214844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.007991025224328041,
+        "median_depth": 0.002925056265667081,
+        "depth_std": 0.019494395703077316,
+        "depth_min": 0.0,
+        "depth_max": 0.20278532803058624,
+        "mask_area": 2323
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.5018906593322754,
+      "bounding_box": [
+        114.18299102783203,
+        66.88111877441406,
+        284.1567687988281,
+        179.77291870117188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.11794073134660721,
+        "median_depth": 0.11406444758176804,
+        "depth_std": 0.03742193803191185,
+        "depth_min": 0.06146860495209694,
+        "depth_max": 0.4977951645851135,
+        "mask_area": 8661
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot arm gripper",
+      "confidence": 0.3539513051509857,
+      "bounding_box": [
+        205.98590087890625,
+        -0.012889862060546875,
+        291.8402404785156,
+        100.46415710449219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1185009554028511,
+        "median_depth": 0.06281717866659164,
+        "depth_std": 0.13178624212741852,
+        "depth_min": 0.006795486435294151,
+        "depth_max": 0.9127544164657593,
+        "mask_area": 4509
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "television",
+      "confidence": 0.7341983318328857,
+      "bounding_box": [
+        -0.0715789794921875,
+        17.25577163696289,
+        131.2648162841797,
+        100.14794921875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.25068920850753784,
+        "median_depth": 0.24893443286418915,
+        "depth_std": 0.03366408124566078,
+        "depth_min": 0.19018618762493134,
+        "depth_max": 0.33172163367271423,
+        "mask_area": 8675
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "plant",
+      "confidence": 0.8522384762763977,
+      "bounding_box": [
+        137.4957733154297,
+        28.412994384765625,
+        164.58387756347656,
+        71.10438537597656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.340178519487381,
+        "median_depth": 0.3401680290699005,
+        "depth_std": 0.01457839272916317,
+        "depth_min": 0.3138169050216675,
+        "depth_max": 0.4196179211139679,
+        "mask_area": 669
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. robot arm. gripper. container. lid. bottle. jar. spoon. knife. bag. plant. television. cabinet. chair.",
+  "text_prompt": "table. robot arm. gripper. container. lid. bottle. jar. spoon. knife. bag. plant. television. cabinet. chair.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

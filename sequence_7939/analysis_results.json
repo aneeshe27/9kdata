@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "trash slot",
+    "cup",
+    "cup dispenser coffee pod holder",
+    "coffee machine"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup dispenser coffee pod holder, coffee machine, trash slot, robot arm, cup",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.10032187402248383,
+        "relative_position": "closest",
+        "confidence": 0.4863804876804352
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "trash slot",
+        "mean_depth": 0.20148655772209167,
+        "relative_position": "middle",
+        "confidence": 0.4449613392353058
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.21116997301578522,
+        "relative_position": "middle",
+        "confidence": 0.551134467124939
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cup dispenser coffee pod holder",
+        "mean_depth": 0.3013300895690918,
+        "relative_position": "middle",
+        "confidence": 0.4327068328857422
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "coffee machine",
+        "mean_depth": 0.421694278717041,
+        "relative_position": "farthest",
+        "confidence": 0.719936728477478
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "coffee machine",
+        "mean_depth": 0.421694278717041,
+        "relative_position": "farthest",
+        "confidence": 0.719936728477478
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cup dispenser coffee pod holder",
+        "mean_depth": 0.3013300895690918,
+        "relative_position": "middle",
+        "confidence": 0.4327068328857422
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.21116997301578522,
+        "relative_position": "middle",
+        "confidence": 0.551134467124939
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "trash slot",
+        "mean_depth": 0.20148655772209167,
+        "relative_position": "middle",
+        "confidence": 0.4449613392353058
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.10032187402248383,
+        "relative_position": "closest",
+        "confidence": 0.4863804876804352
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4863804876804352,
+      "bounding_box": [
+        192.25015258789062,
+        -0.07877731323242188,
+        315.8853454589844,
+        98.02706909179688
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10032187402248383,
+        "median_depth": 0.01433885283768177,
+        "depth_std": 0.20491749048233032,
+        "depth_min": 0.0,
+        "depth_max": 0.9604892730712891,
+        "mask_area": 3327
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "trash slot",
+      "confidence": 0.4449613392353058,
+      "bounding_box": [
+        187.97238159179688,
+        89.92997741699219,
+        208.09036254882812,
+        125.4332275390625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.20148655772209167,
+        "median_depth": 0.1917334794998169,
+        "depth_std": 0.07288764417171478,
+        "depth_min": 0.06940285861492157,
+        "depth_max": 0.35996559262275696,
+        "mask_area": 263
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.551134467124939,
+      "bounding_box": [
+        -0.0006990432739257812,
+        64.79683685302734,
+        23.271419525146484,
+        92.53630828857422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21116997301578522,
+        "median_depth": 0.20878437161445618,
+        "depth_std": 0.013568681664764881,
+        "depth_min": 0.18908055126667023,
+        "depth_max": 0.27197808027267456,
+        "mask_area": 486
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup dispenser coffee pod holder",
+      "confidence": 0.4327068328857422,
+      "bounding_box": [
+        94.7761459350586,
+        21.65860939025879,
+        139.2006072998047,
+        77.76776885986328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3013300895690918,
+        "median_depth": 0.2966732382774353,
+        "depth_std": 0.02365882694721222,
+        "depth_min": 0.2673865258693695,
+        "depth_max": 0.3818361759185791,
+        "mask_area": 1670
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "coffee machine",
+      "confidence": 0.719936728477478,
+      "bounding_box": [
+        131.66294860839844,
+        21.567420959472656,
+        174.0234832763672,
+        73.05479431152344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.421694278717041,
+        "median_depth": 0.41733407974243164,
+        "depth_std": 0.01982329599559307,
+        "depth_min": 0.3431377112865448,
+        "depth_max": 0.5413381457328796,
+        "mask_area": 1509
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. cup dispenser. container. coffee machine. coffee pod holder. trash slot. countertop. cabinet. robot arm. gripper.",
+  "text_prompt": "cup. cup dispenser. container. coffee machine. coffee pod holder. trash slot. countertop. cabinet. robot arm. gripper.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

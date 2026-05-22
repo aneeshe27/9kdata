@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "chair",
+    "sink",
+    "robot arm",
+    "cutting board",
+    "cabinet"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, robot arm, sink, chair, cutting board",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.029510175809264183,
+        "relative_position": "closest",
+        "confidence": 0.3762897551059723
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "sink",
+        "mean_depth": 0.052659980952739716,
+        "relative_position": "middle",
+        "confidence": 0.3505159020423889
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.062335673719644547,
+        "relative_position": "middle",
+        "confidence": 0.4167376160621643
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cutting board",
+        "mean_depth": 0.0739326998591423,
+        "relative_position": "middle",
+        "confidence": 0.4873053729534149
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.0926826000213623,
+        "relative_position": "farthest",
+        "confidence": 0.4859126806259155
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.0926826000213623,
+        "relative_position": "farthest",
+        "confidence": 0.4859126806259155
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cutting board",
+        "mean_depth": 0.0739326998591423,
+        "relative_position": "middle",
+        "confidence": 0.4873053729534149
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.062335673719644547,
+        "relative_position": "middle",
+        "confidence": 0.4167376160621643
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "sink",
+        "mean_depth": 0.052659980952739716,
+        "relative_position": "middle",
+        "confidence": 0.3505159020423889
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.029510175809264183,
+        "relative_position": "closest",
+        "confidence": 0.3762897551059723
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.3762897551059723,
+      "bounding_box": [
+        0.010242462158203125,
+        12.315711975097656,
+        111.12307739257812,
+        152.54351806640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.029510175809264183,
+        "median_depth": 0.02174895629286766,
+        "depth_std": 0.020693790167570114,
+        "depth_min": 0.011388110928237438,
+        "depth_max": 0.11935285478830338,
+        "mask_area": 5385
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "sink",
+      "confidence": 0.3505159020423889,
+      "bounding_box": [
+        217.70114135742188,
+        95.09368896484375,
+        313.6126403808594,
+        131.19686889648438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.052659980952739716,
+        "median_depth": 0.04906858131289482,
+        "depth_std": 0.01548692025244236,
+        "depth_min": 0.03416746109724045,
+        "depth_max": 0.12382811307907104,
+        "mask_area": 1471
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4167376160621643,
+      "bounding_box": [
+        198.8964080810547,
+        100.58790588378906,
+        234.8796844482422,
+        152.66001892089844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.062335673719644547,
+        "median_depth": 0.05859695374965668,
+        "depth_std": 0.013090100139379501,
+        "depth_min": 0.05311186611652374,
+        "depth_max": 0.16069461405277252,
+        "mask_area": 869
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cutting board",
+      "confidence": 0.4873053729534149,
+      "bounding_box": [
+        88.3901138305664,
+        98.84982299804688,
+        172.77175903320312,
+        163.04931640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0739326998591423,
+        "median_depth": 0.0715978741645813,
+        "depth_std": 0.015684140846133232,
+        "depth_min": 0.0476047657430172,
+        "depth_max": 0.14251576364040375,
+        "mask_area": 2424
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet",
+      "confidence": 0.4859126806259155,
+      "bounding_box": [
+        113.96158599853516,
+        7.556892395019531,
+        188.3431396484375,
+        128.53701782226562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.0926826000213623,
+        "median_depth": 0.0936846137046814,
+        "depth_std": 0.014164331369102001,
+        "depth_min": 0.05798166245222092,
+        "depth_max": 0.13587476313114166,
+        "mask_area": 5290
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. cutting board. cup. bowl. toy. table. cabinet. chair. box. container.",
+  "text_prompt": "robot arm. gripper. sink. cutting board. cup. bowl. toy. table. cabinet. chair. box. container.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

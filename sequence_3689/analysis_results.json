@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot body",
+    "table",
+    "chair",
+    "storage plastic container",
+    "shelf"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot body, shelf, table, storage plastic container, chair",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot body",
+        "mean_depth": 0.020987946540117264,
+        "relative_position": "closest",
+        "confidence": 0.499014288187027
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.21317394077777863,
+        "relative_position": "middle",
+        "confidence": 0.4530240297317505
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.45725613832473755,
+        "relative_position": "middle",
+        "confidence": 0.726314902305603
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "storage plastic container",
+        "mean_depth": 0.5332184433937073,
+        "relative_position": "middle",
+        "confidence": 0.37154603004455566
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.7752929329872131,
+        "relative_position": "farthest",
+        "confidence": 0.5572502613067627
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "shelf",
+        "mean_depth": 0.7752929329872131,
+        "relative_position": "farthest",
+        "confidence": 0.5572502613067627
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "storage plastic container",
+        "mean_depth": 0.5332184433937073,
+        "relative_position": "middle",
+        "confidence": 0.37154603004455566
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.45725613832473755,
+        "relative_position": "middle",
+        "confidence": 0.726314902305603
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.21317394077777863,
+        "relative_position": "middle",
+        "confidence": 0.4530240297317505
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot body",
+        "mean_depth": 0.020987946540117264,
+        "relative_position": "closest",
+        "confidence": 0.499014288187027
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot body",
+      "confidence": 0.499014288187027,
+      "bounding_box": [
+        0.1234130859375,
+        76.39102935791016,
+        105.00885772705078,
+        179.895263671875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.020987946540117264,
+        "median_depth": 0.016343997791409492,
+        "depth_std": 0.033663310110569,
+        "depth_min": 0.001814726972952485,
+        "depth_max": 0.45211875438690186,
+        "mask_area": 6637
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "table",
+      "confidence": 0.4530240297317505,
+      "bounding_box": [
+        54.64707946777344,
+        61.55474853515625,
+        224.64552307128906,
+        180.001953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21317394077777863,
+        "median_depth": 0.2003156840801239,
+        "depth_std": 0.07264582067728043,
+        "depth_min": 0.11126946657896042,
+        "depth_max": 0.8180065751075745,
+        "mask_area": 9908
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.726314902305603,
+      "bounding_box": [
+        256.0684814453125,
+        0.09116744995117188,
+        315.97747802734375,
+        86.55870056152344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.45725613832473755,
+        "median_depth": 0.43566519021987915,
+        "depth_std": 0.06844058632850647,
+        "depth_min": 0.36077985167503357,
+        "depth_max": 0.684971272945404,
+        "mask_area": 3012
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "storage plastic container",
+      "confidence": 0.37154603004455566,
+      "bounding_box": [
+        66.99134063720703,
+        7.695314407348633,
+        124.38961029052734,
+        49.446044921875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5332184433937073,
+        "median_depth": 0.5114095211029053,
+        "depth_std": 0.07913609594106674,
+        "depth_min": 0.441545307636261,
+        "depth_max": 0.9286143779754639,
+        "mask_area": 1392
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "shelf",
+      "confidence": 0.5572502613067627,
+      "bounding_box": [
+        170.69247436523438,
+        17.641651153564453,
+        268.2942199707031,
+        67.8905029296875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7752929329872131,
+        "median_depth": 0.7679523229598999,
+        "depth_std": 0.07442565262317657,
+        "depth_min": 0.5777650475502014,
+        "depth_max": 0.9915995597839355,
+        "mask_area": 3093
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. robot arm. robot body. c-clamp. table. chair. shelf. storage bin. plastic container. shoes.",
+  "text_prompt": "cup. robot arm. robot body. c-clamp. table. chair. shelf. storage bin. plastic container. shoes.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

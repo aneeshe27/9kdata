@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "sink",
+    "soap dispenser",
+    "cup",
+    "hot plate"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: robot arm, hot plate, soap dispenser, cup, sink",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.03067171573638916,
+        "relative_position": "closest",
+        "confidence": 0.38897058367729187
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.1379900723695755,
+        "relative_position": "middle",
+        "confidence": 0.42489808797836304
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "soap dispenser",
+        "mean_depth": 0.15696822106838226,
+        "relative_position": "middle",
+        "confidence": 0.7908853888511658
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.15743139386177063,
+        "relative_position": "middle",
+        "confidence": 0.3589494824409485
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "hot plate",
+        "mean_depth": 0.1660907119512558,
+        "relative_position": "farthest",
+        "confidence": 0.5406771898269653
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "hot plate",
+        "mean_depth": 0.1660907119512558,
+        "relative_position": "farthest",
+        "confidence": 0.5406771898269653
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cup",
+        "mean_depth": 0.15743139386177063,
+        "relative_position": "middle",
+        "confidence": 0.3589494824409485
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "soap dispenser",
+        "mean_depth": 0.15696822106838226,
+        "relative_position": "middle",
+        "confidence": 0.7908853888511658
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "sink",
+        "mean_depth": 0.1379900723695755,
+        "relative_position": "middle",
+        "confidence": 0.42489808797836304
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.03067171573638916,
+        "relative_position": "closest",
+        "confidence": 0.38897058367729187
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.38897058367729187,
+      "bounding_box": [
+        116.27676391601562,
+        3.3593902587890625,
+        264.5766296386719,
+        85.32135772705078
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03067171573638916,
+        "median_depth": 0.029500827193260193,
+        "depth_std": 0.004804819822311401,
+        "depth_min": 0.021016187965869904,
+        "depth_max": 0.125483438372612,
+        "mask_area": 4884
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "sink",
+      "confidence": 0.42489808797836304,
+      "bounding_box": [
+        77.60383605957031,
+        109.69520568847656,
+        267.83648681640625,
+        180.0146026611328
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1379900723695755,
+        "median_depth": 0.14122946560382843,
+        "depth_std": 0.03438378497958183,
+        "depth_min": 0.057276032865047455,
+        "depth_max": 0.1918218731880188,
+        "mask_area": 8845
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "soap dispenser",
+      "confidence": 0.7908853888511658,
+      "bounding_box": [
+        52.889713287353516,
+        85.82221984863281,
+        81.05885314941406,
+        130.4402313232422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15696822106838226,
+        "median_depth": 0.15645456314086914,
+        "depth_std": 0.0050248256884515285,
+        "depth_min": 0.14724792540073395,
+        "depth_max": 0.17416395246982574,
+        "mask_area": 645
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cup",
+      "confidence": 0.3589494824409485,
+      "bounding_box": [
+        210.72915649414062,
+        96.2317886352539,
+        230.33572387695312,
+        118.68360137939453
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15743139386177063,
+        "median_depth": 0.15773296356201172,
+        "depth_std": 0.007419263944029808,
+        "depth_min": 0.1400863230228424,
+        "depth_max": 0.18719692528247833,
+        "mask_area": 297
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "hot plate",
+      "confidence": 0.5406771898269653,
+      "bounding_box": [
+        239.28433227539062,
+        82.83268737792969,
+        315.9685363769531,
+        128.29949951171875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1660907119512558,
+        "median_depth": 0.16473910212516785,
+        "depth_std": 0.036397360265254974,
+        "depth_min": 0.09788943827152252,
+        "depth_max": 0.26099687814712524,
+        "mask_area": 2124
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. cup. soap dispenser. hot plate. sponge. countertop. cable.",
+  "text_prompt": "robot arm. gripper. sink. cup. soap dispenser. hot plate. sponge. countertop. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

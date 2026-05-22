@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "pot lid pan",
+    "pot pan",
+    "range hood",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: pot pan, door, robot arm, range hood, pot lid pan",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.018601028248667717,
+        "relative_position": "closest",
+        "confidence": 0.41284632682800293
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "pot lid pan",
+        "mean_depth": 0.12178988009691238,
+        "relative_position": "middle",
+        "confidence": 0.4301038682460785
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "pot pan",
+        "mean_depth": 0.14542266726493835,
+        "relative_position": "middle",
+        "confidence": 0.39219018816947937
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "range hood",
+        "mean_depth": 0.22916339337825775,
+        "relative_position": "middle",
+        "confidence": 0.5600517988204956
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.8373535871505737,
+        "relative_position": "farthest",
+        "confidence": 0.6285754442214966
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "door",
+        "mean_depth": 0.8373535871505737,
+        "relative_position": "farthest",
+        "confidence": 0.6285754442214966
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "range hood",
+        "mean_depth": 0.22916339337825775,
+        "relative_position": "middle",
+        "confidence": 0.5600517988204956
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "pot pan",
+        "mean_depth": 0.14542266726493835,
+        "relative_position": "middle",
+        "confidence": 0.39219018816947937
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "pot lid pan",
+        "mean_depth": 0.12178988009691238,
+        "relative_position": "middle",
+        "confidence": 0.4301038682460785
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.018601028248667717,
+        "relative_position": "closest",
+        "confidence": 0.41284632682800293
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.41284632682800293,
+      "bounding_box": [
+        137.3262939453125,
+        0.09415054321289062,
+        316.06683349609375,
+        72.29862976074219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.018601028248667717,
+        "median_depth": 0.012566790916025639,
+        "depth_std": 0.03591601923108101,
+        "depth_min": 0.004432074725627899,
+        "depth_max": 0.8127761483192444,
+        "mask_area": 6552
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "pot lid pan",
+      "confidence": 0.4301038682460785,
+      "bounding_box": [
+        1.9790611267089844,
+        157.40716552734375,
+        99.40707397460938,
+        180.00244140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12178988009691238,
+        "median_depth": 0.12121358513832092,
+        "depth_std": 0.011079562827944756,
+        "depth_min": 0.09776298701763153,
+        "depth_max": 0.1465807855129242,
+        "mask_area": 1396
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "pot pan",
+      "confidence": 0.39219018816947937,
+      "bounding_box": [
+        101.18438720703125,
+        127.35353088378906,
+        166.46197509765625,
+        164.2069549560547
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14542266726493835,
+        "median_depth": 0.1421068161725998,
+        "depth_std": 0.021294835954904556,
+        "depth_min": 0.12345736473798752,
+        "depth_max": 0.2636430263519287,
+        "mask_area": 1625
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "range hood",
+      "confidence": 0.5600517988204956,
+      "bounding_box": [
+        24.156890869140625,
+        0.04387092590332031,
+        189.92967224121094,
+        34.427894592285156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22916339337825775,
+        "median_depth": 0.22954395413398743,
+        "depth_std": 0.024740198627114296,
+        "depth_min": 0.09507742524147034,
+        "depth_max": 0.2963733673095703,
+        "mask_area": 3127
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "door",
+      "confidence": 0.6285754442214966,
+      "bounding_box": [
+        198.2082061767578,
+        38.39279556274414,
+        241.25929260253906,
+        158.9396209716797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.8373535871505737,
+        "median_depth": 0.8422945737838745,
+        "depth_std": 0.1112404391169548,
+        "depth_min": 0.045991022139787674,
+        "depth_max": 1.0,
+        "mask_area": 3814
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. pot. pot lid. pan. stove. range hood. countertop. cabinet. spice jar. camera. camera mount. door. wall.",
+  "text_prompt": "robot arm. robot gripper. pot. pot lid. pan. stove. range hood. countertop. cabinet. spice jar. camera. camera mount. door. wall.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

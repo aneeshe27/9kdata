@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "wall outlet",
+    "bottle",
+    "wall outlet",
+    "container"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: container, robot arm, wall outlet, wall outlet, bottle",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.01561164390295744,
+        "relative_position": "closest",
+        "confidence": 0.4072609543800354
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "wall outlet",
+        "mean_depth": 0.027507586404681206,
+        "relative_position": "middle",
+        "confidence": 0.5007851719856262
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.1043676882982254,
+        "relative_position": "middle",
+        "confidence": 0.4265451729297638
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "wall outlet",
+        "mean_depth": 0.16397668421268463,
+        "relative_position": "middle",
+        "confidence": 0.3925165832042694
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "container",
+        "mean_depth": 0.938217282295227,
+        "relative_position": "farthest",
+        "confidence": 0.37334027886390686
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "container",
+        "mean_depth": 0.938217282295227,
+        "relative_position": "farthest",
+        "confidence": 0.37334027886390686
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "wall outlet",
+        "mean_depth": 0.16397668421268463,
+        "relative_position": "middle",
+        "confidence": 0.3925165832042694
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "bottle",
+        "mean_depth": 0.1043676882982254,
+        "relative_position": "middle",
+        "confidence": 0.4265451729297638
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "wall outlet",
+        "mean_depth": 0.027507586404681206,
+        "relative_position": "middle",
+        "confidence": 0.5007851719856262
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.01561164390295744,
+        "relative_position": "closest",
+        "confidence": 0.4072609543800354
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.4072609543800354,
+      "bounding_box": [
+        165.8665771484375,
+        0.00244903564453125,
+        315.75531005859375,
+        72.63014221191406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.01561164390295744,
+        "median_depth": 0.010321509093046188,
+        "depth_std": 0.02332959696650505,
+        "depth_min": 0.002335255267098546,
+        "depth_max": 0.44044995307922363,
+        "mask_area": 3863
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "wall outlet",
+      "confidence": 0.5007851719856262,
+      "bounding_box": [
+        0.1573657989501953,
+        39.915611267089844,
+        34.27344512939453,
+        76.00859069824219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.027507586404681206,
+        "median_depth": 0.027284959331154823,
+        "depth_std": 0.0035763003397732973,
+        "depth_min": 0.017955267801880836,
+        "depth_max": 0.036507055163383484,
+        "mask_area": 840
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "bottle",
+      "confidence": 0.4265451729297638,
+      "bounding_box": [
+        125.84219360351562,
+        32.01618194580078,
+        134.55084228515625,
+        60.462074279785156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1043676882982254,
+        "median_depth": 0.10365305840969086,
+        "depth_std": 0.004947176203131676,
+        "depth_min": 0.0956173837184906,
+        "depth_max": 0.11433219909667969,
+        "mask_area": 162
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "wall outlet",
+      "confidence": 0.3925165832042694,
+      "bounding_box": [
+        140.25335693359375,
+        26.507007598876953,
+        160.25753784179688,
+        52.470149993896484
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16397668421268463,
+        "median_depth": 0.16350512206554413,
+        "depth_std": 0.00923320185393095,
+        "depth_min": 0.14742466807365417,
+        "depth_max": 0.20558986067771912,
+        "mask_area": 449
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "container",
+      "confidence": 0.37334027886390686,
+      "bounding_box": [
+        229.91958618164062,
+        77.51659393310547,
+        246.63156127929688,
+        103.87908172607422
+      ],
+      "depth_stats": {
+        "mean_depth": 0.938217282295227,
+        "median_depth": 0.9758296608924866,
+        "depth_std": 0.09628715366125107,
+        "depth_min": 0.48048874735832214,
+        "depth_max": 0.988527238368988,
+        "mask_area": 353
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. sink. faucet. shelf. bottle. container. pipe. wall outlet. countertop.",
+  "text_prompt": "robot arm. gripper. sink. faucet. shelf. bottle. container. pipe. wall outlet. countertop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

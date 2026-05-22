@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm robot gripper",
+    "table",
+    "table",
+    "cup",
+    "pliers"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: pliers, table, cup, robot arm robot gripper, table",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.07147282361984253,
+        "relative_position": "closest",
+        "confidence": 0.3711499273777008
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.32828831672668457,
+        "relative_position": "middle",
+        "confidence": 0.3820785880088806
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.35853978991508484,
+        "relative_position": "middle",
+        "confidence": 0.4037298560142517
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.3585473895072937,
+        "relative_position": "middle",
+        "confidence": 0.46963104605674744
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "pliers",
+        "mean_depth": 0.48002201318740845,
+        "relative_position": "farthest",
+        "confidence": 0.5309615135192871
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "pliers",
+        "mean_depth": 0.48002201318740845,
+        "relative_position": "farthest",
+        "confidence": 0.5309615135192871
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.3585473895072937,
+        "relative_position": "middle",
+        "confidence": 0.46963104605674744
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "table",
+        "mean_depth": 0.35853978991508484,
+        "relative_position": "middle",
+        "confidence": 0.4037298560142517
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "table",
+        "mean_depth": 0.32828831672668457,
+        "relative_position": "middle",
+        "confidence": 0.3820785880088806
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm robot gripper",
+        "mean_depth": 0.07147282361984253,
+        "relative_position": "closest",
+        "confidence": 0.3711499273777008
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm robot gripper",
+      "confidence": 0.3711499273777008,
+      "bounding_box": [
+        183.14453125,
+        -0.09310150146484375,
+        315.9697570800781,
+        75.96102905273438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.07147282361984253,
+        "median_depth": 0.04205511510372162,
+        "depth_std": 0.08562509715557098,
+        "depth_min": 1.619110844330862e-05,
+        "depth_max": 0.8266274929046631,
+        "mask_area": 2740
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "table",
+      "confidence": 0.3820785880088806,
+      "bounding_box": [
+        231.99485778808594,
+        136.8462371826172,
+        315.90582275390625,
+        179.95179748535156
+      ],
+      "depth_stats": {
+        "mean_depth": 0.32828831672668457,
+        "median_depth": 0.3250657320022583,
+        "depth_std": 0.09200077503919601,
+        "depth_min": 0.14236603677272797,
+        "depth_max": 0.7549048066139221,
+        "mask_area": 1773
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "table",
+      "confidence": 0.4037298560142517,
+      "bounding_box": [
+        108.30790710449219,
+        93.68743896484375,
+        215.32994079589844,
+        179.98233032226562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.35853978991508484,
+        "median_depth": 0.33445513248443604,
+        "depth_std": 0.10668887197971344,
+        "depth_min": 0.2108212262392044,
+        "depth_max": 0.9861547946929932,
+        "mask_area": 6347
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.46963104605674744,
+      "bounding_box": [
+        55.325462341308594,
+        50.81491470336914,
+        87.38196563720703,
+        74.18578338623047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3585473895072937,
+        "median_depth": 0.357174277305603,
+        "depth_std": 0.02197805792093277,
+        "depth_min": 0.31819948554039,
+        "depth_max": 0.4521595239639282,
+        "mask_area": 510
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "pliers",
+      "confidence": 0.5309615135192871,
+      "bounding_box": [
+        108.46399688720703,
+        57.15926742553711,
+        126.7070541381836,
+        70.895751953125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.48002201318740845,
+        "median_depth": 0.4717921018600464,
+        "depth_std": 0.03338254988193512,
+        "depth_min": 0.4374711215496063,
+        "depth_max": 0.5827435255050659,
+        "mask_area": 101
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. pliers. screwdriver. paper. robot arm. robot gripper. table. chair. window. cable.",
+  "text_prompt": "cup. pliers. screwdriver. paper. robot arm. robot gripper. table. chair. window. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

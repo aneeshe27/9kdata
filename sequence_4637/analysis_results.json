@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "wrench screwdriver",
+    "shoe",
+    "flowers",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: flowers, robot arm, chair, shoe, wrench screwdriver",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.058776743710041046,
+        "relative_position": "closest",
+        "confidence": 0.6251527070999146
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "wrench screwdriver",
+        "mean_depth": 0.1302497684955597,
+        "relative_position": "middle",
+        "confidence": 0.39593133330345154
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "shoe",
+        "mean_depth": 0.27451202273368835,
+        "relative_position": "middle",
+        "confidence": 0.4762893319129944
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "flowers",
+        "mean_depth": 0.34295642375946045,
+        "relative_position": "middle",
+        "confidence": 0.6729736328125
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.4219582974910736,
+        "relative_position": "farthest",
+        "confidence": 0.6847097873687744
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.4219582974910736,
+        "relative_position": "farthest",
+        "confidence": 0.6847097873687744
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "flowers",
+        "mean_depth": 0.34295642375946045,
+        "relative_position": "middle",
+        "confidence": 0.6729736328125
+      },
+      {
+        "rank": 3,
+        "object_id": 3,
+        "label": "shoe",
+        "mean_depth": 0.27451202273368835,
+        "relative_position": "middle",
+        "confidence": 0.4762893319129944
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "wrench screwdriver",
+        "mean_depth": 0.1302497684955597,
+        "relative_position": "middle",
+        "confidence": 0.39593133330345154
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.058776743710041046,
+        "relative_position": "closest",
+        "confidence": 0.6251527070999146
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.6251527070999146,
+      "bounding_box": [
+        232.62623596191406,
+        -0.0717926025390625,
+        315.9451904296875,
+        118.59369659423828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.058776743710041046,
+        "median_depth": 0.052160557359457016,
+        "depth_std": 0.06346176564693451,
+        "depth_min": 0.027056163176894188,
+        "depth_max": 0.9487839341163635,
+        "mask_area": 4850
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "wrench screwdriver",
+      "confidence": 0.39593133330345154,
+      "bounding_box": [
+        90.873779296875,
+        89.822509765625,
+        122.24755859375,
+        106.00277709960938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1302497684955597,
+        "median_depth": 0.1295754611492157,
+        "depth_std": 0.012188014574348927,
+        "depth_min": 0.11078676581382751,
+        "depth_max": 0.15322569012641907,
+        "mask_area": 124
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "shoe",
+      "confidence": 0.4762893319129944,
+      "bounding_box": [
+        99.12921905517578,
+        18.911537170410156,
+        171.0924072265625,
+        53.424171447753906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.27451202273368835,
+        "median_depth": 0.2735174596309662,
+        "depth_std": 0.019488219171762466,
+        "depth_min": 0.21777532994747162,
+        "depth_max": 0.33037737011909485,
+        "mask_area": 1535
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "flowers",
+      "confidence": 0.6729736328125,
+      "bounding_box": [
+        110.94656372070312,
+        2.1509389877319336,
+        128.39085388183594,
+        19.114490509033203
+      ],
+      "depth_stats": {
+        "mean_depth": 0.34295642375946045,
+        "median_depth": 0.34249675273895264,
+        "depth_std": 0.007392560131847858,
+        "depth_min": 0.3277464509010315,
+        "depth_max": 0.3590441942214966,
+        "mask_area": 176
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.6847097873687744,
+      "bounding_box": [
+        189.42434692382812,
+        46.405845642089844,
+        218.64825439453125,
+        97.6924057006836
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4219582974910736,
+        "median_depth": 0.41749054193496704,
+        "depth_std": 0.08991799503564835,
+        "depth_min": 0.27553340792655945,
+        "depth_max": 0.7576954960823059,
+        "mask_area": 722
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. table. workbench. shelf. shoe. wrench. screwdriver. cup. bottle. chair. counter. vase. flowers. mirror.",
+  "text_prompt": "robot arm. table. workbench. shelf. shoe. wrench. screwdriver. cup. bottle. chair. counter. vase. flowers. mirror.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

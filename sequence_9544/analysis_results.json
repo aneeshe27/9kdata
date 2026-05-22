@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "towel",
+    "robot arm",
+    "table",
+    "cabinet",
+    "door handle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: table, door handle, cabinet, towel, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "towel",
+        "mean_depth": 0.03564256802201271,
+        "relative_position": "closest",
+        "confidence": 0.44261956214904785
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.05780765786767006,
+        "relative_position": "middle",
+        "confidence": 0.4802992045879364
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.19186340272426605,
+        "relative_position": "middle",
+        "confidence": 0.7649563550949097
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.3342466652393341,
+        "relative_position": "middle",
+        "confidence": 0.4185502231121063
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "door handle",
+        "mean_depth": 0.7841417789459229,
+        "relative_position": "farthest",
+        "confidence": 0.43713608384132385
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "door handle",
+        "mean_depth": 0.7841417789459229,
+        "relative_position": "farthest",
+        "confidence": 0.43713608384132385
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "cabinet",
+        "mean_depth": 0.3342466652393341,
+        "relative_position": "middle",
+        "confidence": 0.4185502231121063
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "table",
+        "mean_depth": 0.19186340272426605,
+        "relative_position": "middle",
+        "confidence": 0.7649563550949097
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "robot arm",
+        "mean_depth": 0.05780765786767006,
+        "relative_position": "middle",
+        "confidence": 0.4802992045879364
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "towel",
+        "mean_depth": 0.03564256802201271,
+        "relative_position": "closest",
+        "confidence": 0.44261956214904785
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "towel",
+      "confidence": 0.44261956214904785,
+      "bounding_box": [
+        79.79325866699219,
+        73.03124237060547,
+        124.18406677246094,
+        116.73676300048828
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03564256802201271,
+        "median_depth": 0.01748795248568058,
+        "depth_std": 0.07480426132678986,
+        "depth_min": 0.006216957699507475,
+        "depth_max": 0.5738909840583801,
+        "mask_area": 1090
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "robot arm",
+      "confidence": 0.4802992045879364,
+      "bounding_box": [
+        7.4642486572265625,
+        0.004795074462890625,
+        102.04727172851562,
+        79.04026794433594
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05780765786767006,
+        "median_depth": 0.023542091250419617,
+        "depth_std": 0.10250023752450943,
+        "depth_min": 0.004529178608208895,
+        "depth_max": 0.7065457701683044,
+        "mask_area": 3452
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "table",
+      "confidence": 0.7649563550949097,
+      "bounding_box": [
+        0.1224365234375,
+        116.56539154052734,
+        207.5130157470703,
+        179.89874267578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.19186340272426605,
+        "median_depth": 0.1683025062084198,
+        "depth_std": 0.09421797841787338,
+        "depth_min": 0.07759864628314972,
+        "depth_max": 0.7808904051780701,
+        "mask_area": 9471
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "cabinet",
+      "confidence": 0.4185502231121063,
+      "bounding_box": [
+        86.42251586914062,
+        0.08370208740234375,
+        148.87533569335938,
+        35.286170959472656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3342466652393341,
+        "median_depth": 0.3303883671760559,
+        "depth_std": 0.02022344246506691,
+        "depth_min": 0.2938750684261322,
+        "depth_max": 0.37471964955329895,
+        "mask_area": 2072
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "door handle",
+      "confidence": 0.43713608384132385,
+      "bounding_box": [
+        16.095645904541016,
+        74.62907409667969,
+        43.551612854003906,
+        88.81610107421875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7841417789459229,
+        "median_depth": 0.7847082614898682,
+        "depth_std": 0.01345676090568304,
+        "depth_min": 0.7367103695869446,
+        "depth_max": 0.8122938871383667,
+        "mask_area": 181
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. towel. table. cabinet. door. door handle.",
+  "text_prompt": "robot arm. gripper. towel. table. cabinet. door. door handle.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

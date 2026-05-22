@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "table desk",
+    "monitor",
+    "chair",
+    "cardboard box"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: chair, cardboard box, table desk, robot arm, monitor",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.008112090639770031,
+        "relative_position": "closest",
+        "confidence": 0.4201295077800751
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "table desk",
+        "mean_depth": 0.39153730869293213,
+        "relative_position": "middle",
+        "confidence": 0.480425626039505
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.4285881817340851,
+        "relative_position": "middle",
+        "confidence": 0.5783765316009521
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.4460143744945526,
+        "relative_position": "middle",
+        "confidence": 0.5328042507171631
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.5536448359489441,
+        "relative_position": "farthest",
+        "confidence": 0.8117087483406067
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "cardboard box",
+        "mean_depth": 0.5536448359489441,
+        "relative_position": "farthest",
+        "confidence": 0.8117087483406067
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "chair",
+        "mean_depth": 0.4460143744945526,
+        "relative_position": "middle",
+        "confidence": 0.5328042507171631
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.4285881817340851,
+        "relative_position": "middle",
+        "confidence": 0.5783765316009521
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "table desk",
+        "mean_depth": 0.39153730869293213,
+        "relative_position": "middle",
+        "confidence": 0.480425626039505
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.008112090639770031,
+        "relative_position": "closest",
+        "confidence": 0.4201295077800751
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.4201295077800751,
+      "bounding_box": [
+        112.1957015991211,
+        0.002422332763671875,
+        257.9541015625,
+        78.01858520507812
+      ],
+      "depth_stats": {
+        "mean_depth": 0.008112090639770031,
+        "median_depth": 0.005748750176280737,
+        "depth_std": 0.013723640702664852,
+        "depth_min": 0.0,
+        "depth_max": 0.3271598517894745,
+        "mask_area": 4295
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "table desk",
+      "confidence": 0.480425626039505,
+      "bounding_box": [
+        0.0442047119140625,
+        99.01585388183594,
+        235.10360717773438,
+        180.02040100097656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.39153730869293213,
+        "median_depth": 0.3820402920246124,
+        "depth_std": 0.06427370756864548,
+        "depth_min": 0.281962126493454,
+        "depth_max": 0.6919097304344177,
+        "mask_area": 9923
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "monitor",
+      "confidence": 0.5783765316009521,
+      "bounding_box": [
+        30.53312873840332,
+        35.32707214355469,
+        59.571380615234375,
+        50.79857635498047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4285881817340851,
+        "median_depth": 0.42955154180526733,
+        "depth_std": 0.007418377324938774,
+        "depth_min": 0.41309893131256104,
+        "depth_max": 0.44573479890823364,
+        "mask_area": 282
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "chair",
+      "confidence": 0.5328042507171631,
+      "bounding_box": [
+        2.231781005859375,
+        56.82329559326172,
+        67.92462921142578,
+        117.31473541259766
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4460143744945526,
+        "median_depth": 0.44905975461006165,
+        "depth_std": 0.013587872497737408,
+        "depth_min": 0.4188213050365448,
+        "depth_max": 0.46942535042762756,
+        "mask_area": 1055
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cardboard box",
+      "confidence": 0.8117087483406067,
+      "bounding_box": [
+        158.5220184326172,
+        56.86692428588867,
+        226.3720245361328,
+        119.632568359375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5536448359489441,
+        "median_depth": 0.5535638928413391,
+        "depth_std": 0.044849008321762085,
+        "depth_min": 0.09155067056417465,
+        "depth_max": 0.7912577390670776,
+        "mask_area": 2532
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. tray. cup. ball. container. paper towel. cardboard box. chair. desk. monitor. stand.",
+  "text_prompt": "robot arm. gripper. table. tray. cup. ball. container. paper towel. cardboard box. chair. desk. monitor. stand.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

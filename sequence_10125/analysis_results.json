@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "plastic bracket gripper",
+    "drawer",
+    "cup",
+    "cup",
+    "chair"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, plastic bracket gripper, chair, cup, drawer",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "plastic bracket gripper",
+        "mean_depth": 0.08397568017244339,
+        "relative_position": "closest",
+        "confidence": 0.40714961290359497
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "drawer",
+        "mean_depth": 0.12601904571056366,
+        "relative_position": "middle",
+        "confidence": 0.40180543065071106
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.14433906972408295,
+        "relative_position": "middle",
+        "confidence": 0.7082231640815735
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.15587179362773895,
+        "relative_position": "middle",
+        "confidence": 0.677344799041748
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.6614883542060852,
+        "relative_position": "farthest",
+        "confidence": 0.4041856527328491
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "chair",
+        "mean_depth": 0.6614883542060852,
+        "relative_position": "farthest",
+        "confidence": 0.4041856527328491
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cup",
+        "mean_depth": 0.15587179362773895,
+        "relative_position": "middle",
+        "confidence": 0.677344799041748
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.14433906972408295,
+        "relative_position": "middle",
+        "confidence": 0.7082231640815735
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "drawer",
+        "mean_depth": 0.12601904571056366,
+        "relative_position": "middle",
+        "confidence": 0.40180543065071106
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "plastic bracket gripper",
+        "mean_depth": 0.08397568017244339,
+        "relative_position": "closest",
+        "confidence": 0.40714961290359497
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "plastic bracket gripper",
+      "confidence": 0.40714961290359497,
+      "bounding_box": [
+        102.77669525146484,
+        81.86555480957031,
+        125.63477325439453,
+        105.82577514648438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.08397568017244339,
+        "median_depth": 0.0766238421201706,
+        "depth_std": 0.020726127550005913,
+        "depth_min": 0.06237924098968506,
+        "depth_max": 0.14689381420612335,
+        "mask_area": 305
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "drawer",
+      "confidence": 0.40180543065071106,
+      "bounding_box": [
+        127.596435546875,
+        104.27885437011719,
+        231.84149169921875,
+        179.9707489013672
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12601904571056366,
+        "median_depth": 0.12102258950471878,
+        "depth_std": 0.05366027355194092,
+        "depth_min": 0.0273545254021883,
+        "depth_max": 0.2628886103630066,
+        "mask_area": 2859
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.7082231640815735,
+      "bounding_box": [
+        158.3713836669922,
+        65.58209991455078,
+        180.1542510986328,
+        88.35424041748047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.14433906972408295,
+        "median_depth": 0.1350899487733841,
+        "depth_std": 0.03349611908197403,
+        "depth_min": 0.12721757590770721,
+        "depth_max": 0.5390970706939697,
+        "mask_area": 377
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "cup",
+      "confidence": 0.677344799041748,
+      "bounding_box": [
+        113.4919662475586,
+        64.5315933227539,
+        128.88844299316406,
+        85.1149673461914
+      ],
+      "depth_stats": {
+        "mean_depth": 0.15587179362773895,
+        "median_depth": 0.14752167463302612,
+        "depth_std": 0.02135726623237133,
+        "depth_min": 0.1252177506685257,
+        "depth_max": 0.24803823232650757,
+        "mask_area": 222
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "chair",
+      "confidence": 0.4041856527328491,
+      "bounding_box": [
+        94.14263916015625,
+        22.43703269958496,
+        132.27523803710938,
+        63.125579833984375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6614883542060852,
+        "median_depth": 0.6522059440612793,
+        "depth_std": 0.04223477095365524,
+        "depth_min": 0.6229246258735657,
+        "depth_max": 0.9890478253364563,
+        "mask_area": 1078
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "cup. book. container. plastic bracket. electronic component. robot arm. gripper. table. chair. shelf. drawer.",
+  "text_prompt": "cup. book. container. plastic bracket. electronic component. robot arm. gripper. table. chair. shelf. drawer.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

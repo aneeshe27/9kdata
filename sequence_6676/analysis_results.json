@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm gripper",
+    "towel",
+    "toilet paper roll",
+    "chair",
+    "towel bar"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: toilet paper roll, chair, towel bar, robot arm gripper, towel",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.12681162357330322,
+        "relative_position": "closest",
+        "confidence": 0.4213905930519104
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "towel",
+        "mean_depth": 0.3221242129802704,
+        "relative_position": "middle",
+        "confidence": 0.41016027331352234
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "toilet paper roll",
+        "mean_depth": 0.5771756172180176,
+        "relative_position": "middle",
+        "confidence": 0.5309128165245056
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.6528423428535461,
+        "relative_position": "middle",
+        "confidence": 0.6364717483520508
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "towel bar",
+        "mean_depth": 0.7796339392662048,
+        "relative_position": "farthest",
+        "confidence": 0.6268911957740784
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "towel bar",
+        "mean_depth": 0.7796339392662048,
+        "relative_position": "farthest",
+        "confidence": 0.6268911957740784
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "chair",
+        "mean_depth": 0.6528423428535461,
+        "relative_position": "middle",
+        "confidence": 0.6364717483520508
+      },
+      {
+        "rank": 3,
+        "object_id": 2,
+        "label": "toilet paper roll",
+        "mean_depth": 0.5771756172180176,
+        "relative_position": "middle",
+        "confidence": 0.5309128165245056
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "towel",
+        "mean_depth": 0.3221242129802704,
+        "relative_position": "middle",
+        "confidence": 0.41016027331352234
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm gripper",
+        "mean_depth": 0.12681162357330322,
+        "relative_position": "closest",
+        "confidence": 0.4213905930519104
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm gripper",
+      "confidence": 0.4213905930519104,
+      "bounding_box": [
+        218.6282501220703,
+        0.5529556274414062,
+        315.69354248046875,
+        179.8167724609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12681162357330322,
+        "median_depth": 0.04682029411196709,
+        "depth_std": 0.17748290300369263,
+        "depth_min": 0.0014107845490798354,
+        "depth_max": 0.9893444776535034,
+        "mask_area": 8115
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 4,
+      "label": "towel",
+      "confidence": 0.41016027331352234,
+      "bounding_box": [
+        16.069419860839844,
+        138.19703674316406,
+        118.98607635498047,
+        179.97462463378906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.3221242129802704,
+        "median_depth": 0.31317654252052307,
+        "depth_std": 0.057099852710962296,
+        "depth_min": 0.2281806468963623,
+        "depth_max": 0.5687732100486755,
+        "mask_area": 3091
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "toilet paper roll",
+      "confidence": 0.5309128165245056,
+      "bounding_box": [
+        121.67072296142578,
+        141.0082244873047,
+        141.2742156982422,
+        160.60035705566406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5771756172180176,
+        "median_depth": 0.5608714818954468,
+        "depth_std": 0.03584357723593712,
+        "depth_min": 0.5486465096473694,
+        "depth_max": 0.6984924077987671,
+        "mask_area": 228
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "chair",
+      "confidence": 0.6364717483520508,
+      "bounding_box": [
+        157.23497009277344,
+        89.41195678710938,
+        268.7433776855469,
+        179.94146728515625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6528423428535461,
+        "median_depth": 0.6764107942581177,
+        "depth_std": 0.12524230778217316,
+        "depth_min": 0.4340709149837494,
+        "depth_max": 0.9930663704872131,
+        "mask_area": 7780
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "towel bar",
+      "confidence": 0.6268911957740784,
+      "bounding_box": [
+        151.99815368652344,
+        66.61776733398438,
+        201.9450225830078,
+        76.25004577636719
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7796339392662048,
+        "median_depth": 0.7768343687057495,
+        "depth_std": 0.07103639096021652,
+        "depth_min": 0.6720808148384094,
+        "depth_max": 0.9232522249221802,
+        "mask_area": 204
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. chair. towel bar. toilet paper holder. toilet paper roll. towel. table.",
+  "text_prompt": "robot arm. gripper. chair. towel bar. toilet paper holder. toilet paper roll. towel. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

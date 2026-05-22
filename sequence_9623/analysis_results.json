@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cabinet",
+    "robot arm",
+    "range hood",
+    "whisk ladle",
+    "stove"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, stove, robot arm, whisk ladle, range hood",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.03463400527834892,
+        "relative_position": "closest",
+        "confidence": 0.3964185118675232
+      },
+      {
+        "rank": 2,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.12601037323474884,
+        "relative_position": "middle",
+        "confidence": 0.45055466890335083
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "range hood",
+        "mean_depth": 0.16420461237430573,
+        "relative_position": "middle",
+        "confidence": 0.6968939900398254
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "whisk ladle",
+        "mean_depth": 0.1648389846086502,
+        "relative_position": "middle",
+        "confidence": 0.38509076833724976
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "stove",
+        "mean_depth": 0.22899170219898224,
+        "relative_position": "farthest",
+        "confidence": 0.7457203269004822
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "stove",
+        "mean_depth": 0.22899170219898224,
+        "relative_position": "farthest",
+        "confidence": 0.7457203269004822
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "whisk ladle",
+        "mean_depth": 0.1648389846086502,
+        "relative_position": "middle",
+        "confidence": 0.38509076833724976
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "range hood",
+        "mean_depth": 0.16420461237430573,
+        "relative_position": "middle",
+        "confidence": 0.6968939900398254
+      },
+      {
+        "rank": 4,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.12601037323474884,
+        "relative_position": "middle",
+        "confidence": 0.45055466890335083
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.03463400527834892,
+        "relative_position": "closest",
+        "confidence": 0.3964185118675232
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.3964185118675232,
+      "bounding_box": [
+        0.023406982421875,
+        0.08701324462890625,
+        118.01957702636719,
+        152.16253662109375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.03463400527834892,
+        "median_depth": 0.030739471316337585,
+        "depth_std": 0.024308159947395325,
+        "depth_min": 0.0006147751701064408,
+        "depth_max": 0.10224737972021103,
+        "mask_area": 15243
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.45055466890335083,
+      "bounding_box": [
+        255.51759338378906,
+        88.24991607666016,
+        315.9781188964844,
+        122.0451431274414
+      ],
+      "depth_stats": {
+        "mean_depth": 0.12601037323474884,
+        "median_depth": 0.120795339345932,
+        "depth_std": 0.0596831813454628,
+        "depth_min": 0.07927030324935913,
+        "depth_max": 0.8085649609565735,
+        "mask_area": 708
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "range hood",
+      "confidence": 0.6968939900398254,
+      "bounding_box": [
+        115.413818359375,
+        0.031482696533203125,
+        228.37310791015625,
+        73.13023376464844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.16420461237430573,
+        "median_depth": 0.14631053805351257,
+        "depth_std": 0.06036161258816719,
+        "depth_min": 0.08210275322198868,
+        "depth_max": 0.3475809693336487,
+        "mask_area": 4969
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "whisk ladle",
+      "confidence": 0.38509076833724976,
+      "bounding_box": [
+        123.47808074951172,
+        75.63185119628906,
+        137.69680786132812,
+        157.82107543945312
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1648389846086502,
+        "median_depth": 0.16481159627437592,
+        "depth_std": 0.014702748507261276,
+        "depth_min": 0.1314893364906311,
+        "depth_max": 0.20798449218273163,
+        "mask_area": 387
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "stove",
+      "confidence": 0.7457203269004822,
+      "bounding_box": [
+        102.29975128173828,
+        141.72537231445312,
+        239.162841796875,
+        179.9808349609375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.22899170219898224,
+        "median_depth": 0.2225317806005478,
+        "depth_std": 0.04330683872103691,
+        "depth_min": 0.12811534106731415,
+        "depth_max": 0.3756891191005707,
+        "mask_area": 3162
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "stove. range hood. whisk. ladle. spoon. cabinet. countertop. window. blinds. bottle. robot arm. gripper.",
+  "text_prompt": "stove. range hood. whisk. ladle. spoon. cabinet. countertop. window. blinds. bottle. robot arm. gripper.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

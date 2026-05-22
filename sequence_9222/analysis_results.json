@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "cable",
+    "cloth",
+    "chair",
+    "container cardboard box",
+    "door"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: door, chair, cable, cloth, container cardboard box",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.029086552560329437,
+        "relative_position": "closest",
+        "confidence": 0.44619038701057434
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.13882146775722504,
+        "relative_position": "middle",
+        "confidence": 0.5366556644439697
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.281253457069397,
+        "relative_position": "middle",
+        "confidence": 0.4190673232078552
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "container cardboard box",
+        "mean_depth": 0.2815342843532562,
+        "relative_position": "middle",
+        "confidence": 0.5698052048683167
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "door",
+        "mean_depth": 0.5406669974327087,
+        "relative_position": "farthest",
+        "confidence": 0.5344410538673401
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "door",
+        "mean_depth": 0.5406669974327087,
+        "relative_position": "farthest",
+        "confidence": 0.5344410538673401
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "container cardboard box",
+        "mean_depth": 0.2815342843532562,
+        "relative_position": "middle",
+        "confidence": 0.5698052048683167
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "chair",
+        "mean_depth": 0.281253457069397,
+        "relative_position": "middle",
+        "confidence": 0.4190673232078552
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cloth",
+        "mean_depth": 0.13882146775722504,
+        "relative_position": "middle",
+        "confidence": 0.5366556644439697
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "cable",
+        "mean_depth": 0.029086552560329437,
+        "relative_position": "closest",
+        "confidence": 0.44619038701057434
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "cable",
+      "confidence": 0.44619038701057434,
+      "bounding_box": [
+        266.2000427246094,
+        0.1466999053955078,
+        315.5534973144531,
+        53.07837677001953
+      ],
+      "depth_stats": {
+        "mean_depth": 0.029086552560329437,
+        "median_depth": 0.027074523270130157,
+        "depth_std": 0.019210491329431534,
+        "depth_min": 0.0,
+        "depth_max": 0.09166261553764343,
+        "mask_area": 583
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "cloth",
+      "confidence": 0.5366556644439697,
+      "bounding_box": [
+        139.4814453125,
+        107.89427947998047,
+        192.05203247070312,
+        162.01727294921875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13882146775722504,
+        "median_depth": 0.12609443068504333,
+        "depth_std": 0.054494068026542664,
+        "depth_min": 0.10796740651130676,
+        "depth_max": 0.6454789042472839,
+        "mask_area": 1640
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "chair",
+      "confidence": 0.4190673232078552,
+      "bounding_box": [
+        44.650978088378906,
+        8.413625717163086,
+        83.61212921142578,
+        55.95680236816406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.281253457069397,
+        "median_depth": 0.28220367431640625,
+        "depth_std": 0.010979785583913326,
+        "depth_min": 0.25005823373794556,
+        "depth_max": 0.30356574058532715,
+        "mask_area": 714
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "container cardboard box",
+      "confidence": 0.5698052048683167,
+      "bounding_box": [
+        167.16790771484375,
+        95.57896423339844,
+        238.49282836914062,
+        176.9965057373047
+      ],
+      "depth_stats": {
+        "mean_depth": 0.2815342843532562,
+        "median_depth": 0.2705278992652893,
+        "depth_std": 0.05601926147937775,
+        "depth_min": 0.16034364700317383,
+        "depth_max": 0.6398307681083679,
+        "mask_area": 2512
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "door",
+      "confidence": 0.5344410538673401,
+      "bounding_box": [
+        158.99485778808594,
+        0.2928810119628906,
+        206.37501525878906,
+        96.96226501464844
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5406669974327087,
+        "median_depth": 0.5377494096755981,
+        "depth_std": 0.11138375103473663,
+        "depth_min": 0.32309308648109436,
+        "depth_max": 0.8183444142341614,
+        "mask_area": 2901
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "table. chair. door. glass partition. container. cloth. cardboard box. robot arm. emergency stop button. cable.",
+  "text_prompt": "table. chair. door. glass partition. container. cloth. cardboard box. robot arm. emergency stop button. cable.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot gripper",
+    "clothes hanger",
+    "window",
+    "pillow",
+    "curtain"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: clothes hanger, pillow, window, curtain, robot gripper",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot gripper",
+        "mean_depth": 0.05807796120643616,
+        "relative_position": "closest",
+        "confidence": 0.45542511343955994
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "clothes hanger",
+        "mean_depth": 0.4316766560077667,
+        "relative_position": "middle",
+        "confidence": 0.4117991030216217
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "window",
+        "mean_depth": 0.6132087707519531,
+        "relative_position": "middle",
+        "confidence": 0.6991569995880127
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "pillow",
+        "mean_depth": 0.6388487219810486,
+        "relative_position": "middle",
+        "confidence": 0.40294697880744934
+      },
+      {
+        "rank": 5,
+        "object_id": 1,
+        "label": "curtain",
+        "mean_depth": 0.75213623046875,
+        "relative_position": "farthest",
+        "confidence": 0.5748287439346313
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 1,
+        "label": "curtain",
+        "mean_depth": 0.75213623046875,
+        "relative_position": "farthest",
+        "confidence": 0.5748287439346313
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "pillow",
+        "mean_depth": 0.6388487219810486,
+        "relative_position": "middle",
+        "confidence": 0.40294697880744934
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "window",
+        "mean_depth": 0.6132087707519531,
+        "relative_position": "middle",
+        "confidence": 0.6991569995880127
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "clothes hanger",
+        "mean_depth": 0.4316766560077667,
+        "relative_position": "middle",
+        "confidence": 0.4117991030216217
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot gripper",
+        "mean_depth": 0.05807796120643616,
+        "relative_position": "closest",
+        "confidence": 0.45542511343955994
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot gripper",
+      "confidence": 0.45542511343955994,
+      "bounding_box": [
+        167.33084106445312,
+        -0.0750579833984375,
+        315.88995361328125,
+        179.897216796875
+      ],
+      "depth_stats": {
+        "mean_depth": 0.05807796120643616,
+        "median_depth": 0.027858000248670578,
+        "depth_std": 0.13059811294078827,
+        "depth_min": 0.005418987944722176,
+        "depth_max": 0.8774668574333191,
+        "mask_area": 10590
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "clothes hanger",
+      "confidence": 0.4117991030216217,
+      "bounding_box": [
+        131.6358184814453,
+        0.099456787109375,
+        179.9974822998047,
+        89.55206298828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4316766560077667,
+        "median_depth": 0.3504698872566223,
+        "depth_std": 0.23810803890228271,
+        "depth_min": 0.10700155794620514,
+        "depth_max": 0.9631273150444031,
+        "mask_area": 797
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "window",
+      "confidence": 0.6991569995880127,
+      "bounding_box": [
+        0.07633590698242188,
+        0.1164703369140625,
+        115.709716796875,
+        133.23251342773438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6132087707519531,
+        "median_depth": 0.6007800102233887,
+        "depth_std": 0.06289521604776382,
+        "depth_min": 0.4484209716320038,
+        "depth_max": 0.7358813285827637,
+        "mask_area": 12220
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "pillow",
+      "confidence": 0.40294697880744934,
+      "bounding_box": [
+        104.59246063232422,
+        131.1443328857422,
+        151.51882934570312,
+        179.97889709472656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6388487219810486,
+        "median_depth": 0.6297729015350342,
+        "depth_std": 0.05133701488375664,
+        "depth_min": 0.5481365919113159,
+        "depth_max": 0.7657814025878906,
+        "mask_area": 1533
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "curtain",
+      "confidence": 0.5748287439346313,
+      "bounding_box": [
+        113.50901794433594,
+        0.13669204711914062,
+        154.47755432128906,
+        113.1905517578125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.75213623046875,
+        "median_depth": 0.7387242913246155,
+        "depth_std": 0.043073639273643494,
+        "depth_min": 0.33828213810920715,
+        "depth_max": 0.8772152066230774,
+        "mask_area": 3829
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. robot gripper. clothes hanger. clothing rack. clothes. sofa. pillow. window. curtain.",
+  "text_prompt": "robot arm. robot gripper. clothes hanger. clothing rack. clothes. sofa. pillow. window. curtain.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

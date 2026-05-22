@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "box container",
+    "cup",
+    "monitor",
+    "robot gripper",
+    "spray bottle"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cup, robot gripper, spray bottle, monitor, box container",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "box container",
+        "mean_depth": 0.13806389272212982,
+        "relative_position": "closest",
+        "confidence": 0.5881304144859314
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.28942620754241943,
+        "relative_position": "middle",
+        "confidence": 0.7460423111915588
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.37580356001853943,
+        "relative_position": "middle",
+        "confidence": 0.6029430031776428
+      },
+      {
+        "rank": 4,
+        "object_id": 4,
+        "label": "robot gripper",
+        "mean_depth": 0.4013272821903229,
+        "relative_position": "middle",
+        "confidence": 0.4524657428264618
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "spray bottle",
+        "mean_depth": 0.4055567979812622,
+        "relative_position": "farthest",
+        "confidence": 0.5414463877677917
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "spray bottle",
+        "mean_depth": 0.4055567979812622,
+        "relative_position": "farthest",
+        "confidence": 0.5414463877677917
+      },
+      {
+        "rank": 2,
+        "object_id": 4,
+        "label": "robot gripper",
+        "mean_depth": 0.4013272821903229,
+        "relative_position": "middle",
+        "confidence": 0.4524657428264618
+      },
+      {
+        "rank": 3,
+        "object_id": 1,
+        "label": "monitor",
+        "mean_depth": 0.37580356001853943,
+        "relative_position": "middle",
+        "confidence": 0.6029430031776428
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "cup",
+        "mean_depth": 0.28942620754241943,
+        "relative_position": "middle",
+        "confidence": 0.7460423111915588
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "box container",
+        "mean_depth": 0.13806389272212982,
+        "relative_position": "closest",
+        "confidence": 0.5881304144859314
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "box container",
+      "confidence": 0.5881304144859314,
+      "bounding_box": [
+        191.82064819335938,
+        87.9739990234375,
+        243.82965087890625,
+        127.84669494628906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.13806389272212982,
+        "median_depth": 0.1268719732761383,
+        "depth_std": 0.06675510108470917,
+        "depth_min": 0.08046592026948929,
+        "depth_max": 0.5845605731010437,
+        "mask_area": 1261
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 0,
+      "label": "cup",
+      "confidence": 0.7460423111915588,
+      "bounding_box": [
+        119.8064193725586,
+        61.954898834228516,
+        139.4596710205078,
+        89.2125244140625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.28942620754241943,
+        "median_depth": 0.22833357751369476,
+        "depth_std": 0.13518966734409332,
+        "depth_min": 0.20469923317432404,
+        "depth_max": 0.8674924969673157,
+        "mask_area": 392
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "monitor",
+      "confidence": 0.6029430031776428,
+      "bounding_box": [
+        220.53070068359375,
+        0.027347564697265625,
+        297.98052978515625,
+        60.357078552246094
+      ],
+      "depth_stats": {
+        "mean_depth": 0.37580356001853943,
+        "median_depth": 0.36976227164268494,
+        "depth_std": 0.06257834285497665,
+        "depth_min": 0.251147985458374,
+        "depth_max": 0.5348829030990601,
+        "mask_area": 2933
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "robot gripper",
+      "confidence": 0.4524657428264618,
+      "bounding_box": [
+        158.25132751464844,
+        0.039577484130859375,
+        237.68592834472656,
+        78.42431640625
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4013272821903229,
+        "median_depth": 0.3582572340965271,
+        "depth_std": 0.15770015120506287,
+        "depth_min": 0.06863319873809814,
+        "depth_max": 0.8664353489875793,
+        "mask_area": 2561
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "spray bottle",
+      "confidence": 0.5414463877677917,
+      "bounding_box": [
+        139.74159240722656,
+        45.962615966796875,
+        151.15464782714844,
+        79.32167053222656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4055567979812622,
+        "median_depth": 0.3416016101837158,
+        "depth_std": 0.16300541162490845,
+        "depth_min": 0.26750457286834717,
+        "depth_max": 0.875468373298645,
+        "mask_area": 223
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "bowl. cup. spray bottle. bottle. box. container. robot arm. robot gripper. monitor. table.",
+  "text_prompt": "bowl. cup. spray bottle. bottle. box. container. robot arm. robot gripper. monitor. table.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

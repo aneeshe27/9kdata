@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/home/ulal/visual_reasoning/tmp/depth_extended_temp_1373754/temp_image_744.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image_744.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cabinet",
+    "gripper",
+    "faucet",
+    "dispenser"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: faucet, dispenser, gripper, cabinet, robot arm",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.269270658493042,
+        "relative_position": "closest",
+        "confidence": 0.3565022051334381
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.49620893597602844,
+        "relative_position": "middle",
+        "confidence": 0.4576762020587921
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.6502280831336975,
+        "relative_position": "middle",
+        "confidence": 0.3546674847602844
+      },
+      {
+        "rank": 4,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.6968472599983215,
+        "relative_position": "middle",
+        "confidence": 0.9010844826698303
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "dispenser",
+        "mean_depth": 0.7597707509994507,
+        "relative_position": "farthest",
+        "confidence": 0.4574586749076843
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "dispenser",
+        "mean_depth": 0.7597707509994507,
+        "relative_position": "farthest",
+        "confidence": 0.4574586749076843
+      },
+      {
+        "rank": 2,
+        "object_id": 0,
+        "label": "faucet",
+        "mean_depth": 0.6968472599983215,
+        "relative_position": "middle",
+        "confidence": 0.9010844826698303
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "gripper",
+        "mean_depth": 0.6502280831336975,
+        "relative_position": "middle",
+        "confidence": 0.3546674847602844
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.49620893597602844,
+        "relative_position": "middle",
+        "confidence": 0.4576762020587921
+      },
+      {
+        "rank": 5,
+        "object_id": 3,
+        "label": "robot arm",
+        "mean_depth": 0.269270658493042,
+        "relative_position": "closest",
+        "confidence": 0.3565022051334381
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 3,
+      "label": "robot arm",
+      "confidence": 0.3565022051334381,
+      "bounding_box": [
+        -0.07685089111328125,
+        0.020107269287109375,
+        128.37228393554688,
+        114.53118896484375
+      ],
+      "depth_stats": {
+        "mean_depth": 0.269270658493042,
+        "median_depth": 0.1393507868051529,
+        "depth_std": 0.2928677797317505,
+        "depth_min": 0.01864658109843731,
+        "depth_max": 0.9447575211524963,
+        "mask_area": 4263
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet",
+      "confidence": 0.4576762020587921,
+      "bounding_box": [
+        133.39776611328125,
+        -0.009515762329101562,
+        315.9167785644531,
+        60.417030334472656
+      ],
+      "depth_stats": {
+        "mean_depth": 0.49620893597602844,
+        "median_depth": 0.4973311126232147,
+        "depth_std": 0.039884716272354126,
+        "depth_min": 0.4213547110557556,
+        "depth_max": 0.6748960018157959,
+        "mask_area": 8547
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "gripper",
+      "confidence": 0.3546674847602844,
+      "bounding_box": [
+        90.5031967163086,
+        139.9804229736328,
+        114.73969268798828,
+        149.64186096191406
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6502280831336975,
+        "median_depth": 0.6474083065986633,
+        "depth_std": 0.013099792413413525,
+        "depth_min": 0.6210374236106873,
+        "depth_max": 0.6771959066390991,
+        "mask_area": 126
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "faucet",
+      "confidence": 0.9010844826698303,
+      "bounding_box": [
+        202.18545532226562,
+        97.41119384765625,
+        231.27847290039062,
+        141.02394104003906
+      ],
+      "depth_stats": {
+        "mean_depth": 0.6968472599983215,
+        "median_depth": 0.7112941741943359,
+        "depth_std": 0.04945141822099686,
+        "depth_min": 0.5887519717216492,
+        "depth_max": 0.7814584374427795,
+        "mask_area": 394
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "dispenser",
+      "confidence": 0.4574586749076843,
+      "bounding_box": [
+        155.98585510253906,
+        76.24420166015625,
+        175.5762481689453,
+        110.37237548828125
+      ],
+      "depth_stats": {
+        "mean_depth": 0.7597707509994507,
+        "median_depth": 0.75358647108078,
+        "depth_std": 0.02391362003982067,
+        "depth_min": 0.7321022152900696,
+        "depth_max": 0.8504448533058167,
+        "mask_area": 529
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. sink. faucet. cabinet. dispenser. bottle. sponge. package.",
+  "text_prompt": "robot arm. gripper. countertop. sink. faucet. cabinet. dispenser. bottle. sponge. package.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

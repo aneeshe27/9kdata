@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "cabinet",
+    "oven",
+    "cabinet",
+    "refrigerator"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: cabinet, cabinet, robot arm, refrigerator, oven",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.028049113228917122,
+        "relative_position": "closest",
+        "confidence": 0.37529486417770386
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.21235692501068115,
+        "relative_position": "middle",
+        "confidence": 0.5394757390022278
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "oven",
+        "mean_depth": 0.34523189067840576,
+        "relative_position": "middle",
+        "confidence": 0.591637909412384
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.4767816662788391,
+        "relative_position": "middle",
+        "confidence": 0.4030403196811676
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "refrigerator",
+        "mean_depth": 0.5563461780548096,
+        "relative_position": "farthest",
+        "confidence": 0.5145535469055176
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "refrigerator",
+        "mean_depth": 0.5563461780548096,
+        "relative_position": "farthest",
+        "confidence": 0.5145535469055176
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "cabinet",
+        "mean_depth": 0.4767816662788391,
+        "relative_position": "middle",
+        "confidence": 0.4030403196811676
+      },
+      {
+        "rank": 3,
+        "object_id": 0,
+        "label": "oven",
+        "mean_depth": 0.34523189067840576,
+        "relative_position": "middle",
+        "confidence": 0.591637909412384
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "cabinet",
+        "mean_depth": 0.21235692501068115,
+        "relative_position": "middle",
+        "confidence": 0.5394757390022278
+      },
+      {
+        "rank": 5,
+        "object_id": 4,
+        "label": "robot arm",
+        "mean_depth": 0.028049113228917122,
+        "relative_position": "closest",
+        "confidence": 0.37529486417770386
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 4,
+      "label": "robot arm",
+      "confidence": 0.37529486417770386,
+      "bounding_box": [
+        0.053333282470703125,
+        32.18132400512695,
+        84.25688171386719,
+        77.46151733398438
+      ],
+      "depth_stats": {
+        "mean_depth": 0.028049113228917122,
+        "median_depth": 0.020727481693029404,
+        "depth_std": 0.021370811387896538,
+        "depth_min": 0.00337038841098547,
+        "depth_max": 0.10632717609405518,
+        "mask_area": 944
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 1,
+      "label": "cabinet",
+      "confidence": 0.5394757390022278,
+      "bounding_box": [
+        65.7977523803711,
+        51.9317512512207,
+        162.66131591796875,
+        153.84603881835938
+      ],
+      "depth_stats": {
+        "mean_depth": 0.21235692501068115,
+        "median_depth": 0.2086292803287506,
+        "depth_std": 0.05457102507352829,
+        "depth_min": 0.07606741040945053,
+        "depth_max": 0.35334640741348267,
+        "mask_area": 5595
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "oven",
+      "confidence": 0.591637909412384,
+      "bounding_box": [
+        160.00161743164062,
+        28.531139373779297,
+        204.27801513671875,
+        109.09111022949219
+      ],
+      "depth_stats": {
+        "mean_depth": 0.34523189067840576,
+        "median_depth": 0.3488776385784149,
+        "depth_std": 0.06657349318265915,
+        "depth_min": 0.04385928064584732,
+        "depth_max": 0.5043849349021912,
+        "mask_area": 1963
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 3,
+      "label": "cabinet",
+      "confidence": 0.4030403196811676,
+      "bounding_box": [
+        193.8917236328125,
+        7.332927703857422,
+        227.3564453125,
+        80.31407165527344
+      ],
+      "depth_stats": {
+        "mean_depth": 0.4767816662788391,
+        "median_depth": 0.4738531708717346,
+        "depth_std": 0.05101745203137398,
+        "depth_min": 0.37103644013404846,
+        "depth_max": 0.6184712648391724,
+        "mask_area": 1001
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 2,
+      "label": "refrigerator",
+      "confidence": 0.5145535469055176,
+      "bounding_box": [
+        210.13674926757812,
+        0.05025482177734375,
+        265.96148681640625,
+        71.42204284667969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.5563461780548096,
+        "median_depth": 0.5601556301116943,
+        "depth_std": 0.060293152928352356,
+        "depth_min": 0.4520970582962036,
+        "depth_max": 0.7784001231193542,
+        "mask_area": 1907
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. countertop. cabinet. dishwasher. oven. refrigerator. floor. tape. clamp. laptop.",
+  "text_prompt": "robot arm. gripper. countertop. cabinet. dishwasher. oven. refrigerator. floor. tape. clamp. laptop.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}

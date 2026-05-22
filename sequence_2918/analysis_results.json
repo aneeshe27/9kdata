@@ -1,0 +1,220 @@
+{
+  "status": "success",
+  "image_path": "/data0/ulal/visual_reasoning/tmp/depth_extended_temp_574152/temp_image.jpg",
+  "non_overlapping_objects": 5,
+  "droid_trajectory": {
+    "sequence_name": null,
+    "step_number": null,
+    "image_filename": "temp_image.jpg"
+  },
+  "correct_ordering": [
+    "robot arm",
+    "tray",
+    "box",
+    "partition",
+    "ceiling light"
+  ],
+  "vlm_prompt": "order the following objects from closest to farthest from camera in terms of their centroid in the image: ceiling light, box, robot arm, tray, partition",
+  "depth_ordering": {
+    "closest_to_farthest": [
+      {
+        "rank": 1,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.020626666024327278,
+        "relative_position": "closest",
+        "confidence": 0.39722397923469543
+      },
+      {
+        "rank": 2,
+        "object_id": 3,
+        "label": "tray",
+        "mean_depth": 0.025080187246203423,
+        "relative_position": "middle",
+        "confidence": 0.3897629678249359
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.04641222953796387,
+        "relative_position": "middle",
+        "confidence": 0.36790794134140015
+      },
+      {
+        "rank": 4,
+        "object_id": 1,
+        "label": "partition",
+        "mean_depth": 0.10798866301774979,
+        "relative_position": "middle",
+        "confidence": 0.4219752550125122
+      },
+      {
+        "rank": 5,
+        "object_id": 0,
+        "label": "ceiling light",
+        "mean_depth": 0.1944529116153717,
+        "relative_position": "farthest",
+        "confidence": 0.42275992035865784
+      }
+    ],
+    "farthest_to_closest": [
+      {
+        "rank": 1,
+        "object_id": 0,
+        "label": "ceiling light",
+        "mean_depth": 0.1944529116153717,
+        "relative_position": "farthest",
+        "confidence": 0.42275992035865784
+      },
+      {
+        "rank": 2,
+        "object_id": 1,
+        "label": "partition",
+        "mean_depth": 0.10798866301774979,
+        "relative_position": "middle",
+        "confidence": 0.4219752550125122
+      },
+      {
+        "rank": 3,
+        "object_id": 4,
+        "label": "box",
+        "mean_depth": 0.04641222953796387,
+        "relative_position": "middle",
+        "confidence": 0.36790794134140015
+      },
+      {
+        "rank": 4,
+        "object_id": 3,
+        "label": "tray",
+        "mean_depth": 0.025080187246203423,
+        "relative_position": "middle",
+        "confidence": 0.3897629678249359
+      },
+      {
+        "rank": 5,
+        "object_id": 2,
+        "label": "robot arm",
+        "mean_depth": 0.020626666024327278,
+        "relative_position": "closest",
+        "confidence": 0.39722397923469543
+      }
+    ],
+    "total_objects": 5,
+    "ordering_method": "mean_depth_only"
+  },
+  "depth_analysis": [
+    {
+      "object_id": 2,
+      "label": "robot arm",
+      "confidence": 0.39722397923469543,
+      "bounding_box": [
+        169.53384399414062,
+        0.2275848388671875,
+        238.1856689453125,
+        99.45001983642578
+      ],
+      "depth_stats": {
+        "mean_depth": 0.020626666024327278,
+        "median_depth": 0.013727961108088493,
+        "depth_std": 0.047206878662109375,
+        "depth_min": 0.005992169491946697,
+        "depth_max": 0.6409097909927368,
+        "mask_area": 2201
+      },
+      "depth_rank": 1,
+      "relative_position": "closest"
+    },
+    {
+      "object_id": 3,
+      "label": "tray",
+      "confidence": 0.3897629678249359,
+      "bounding_box": [
+        170.09217834472656,
+        152.41981506347656,
+        259.45831298828125,
+        179.6398162841797
+      ],
+      "depth_stats": {
+        "mean_depth": 0.025080187246203423,
+        "median_depth": 0.02725515328347683,
+        "depth_std": 0.007281716912984848,
+        "depth_min": 0.011548291891813278,
+        "depth_max": 0.036997079849243164,
+        "mask_area": 1269
+      },
+      "depth_rank": 2,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 4,
+      "label": "box",
+      "confidence": 0.36790794134140015,
+      "bounding_box": [
+        174.7072296142578,
+        129.99310302734375,
+        216.09046936035156,
+        165.25918579101562
+      ],
+      "depth_stats": {
+        "mean_depth": 0.04641222953796387,
+        "median_depth": 0.043958887457847595,
+        "depth_std": 0.00928652472794056,
+        "depth_min": 0.03468392789363861,
+        "depth_max": 0.09482686221599579,
+        "mask_area": 880
+      },
+      "depth_rank": 3,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 1,
+      "label": "partition",
+      "confidence": 0.4219752550125122,
+      "bounding_box": [
+        0.5372314453125,
+        79.34835052490234,
+        177.1104736328125,
+        179.81881713867188
+      ],
+      "depth_stats": {
+        "mean_depth": 0.10798866301774979,
+        "median_depth": 0.10507020354270935,
+        "depth_std": 0.022783096879720688,
+        "depth_min": 0.0718173161149025,
+        "depth_max": 0.19426946341991425,
+        "mask_area": 9190
+      },
+      "depth_rank": 4,
+      "relative_position": "middle"
+    },
+    {
+      "object_id": 0,
+      "label": "ceiling light",
+      "confidence": 0.42275992035865784,
+      "bounding_box": [
+        42.11321258544922,
+        49.73286437988281,
+        94.11864471435547,
+        62.98405456542969
+      ],
+      "depth_stats": {
+        "mean_depth": 0.1944529116153717,
+        "median_depth": 0.19315160810947418,
+        "depth_std": 0.013882785104215145,
+        "depth_min": 0.1680571585893631,
+        "depth_max": 0.2288157194852829,
+        "mask_area": 284
+      },
+      "depth_rank": 5,
+      "relative_position": "farthest"
+    }
+  ],
+  "prompt_used": "robot arm. gripper. table. tray. box. partition. ceiling light. air conditioner.",
+  "text_prompt": "robot arm. gripper. table. tray. box. partition. ceiling light. air conditioner.",
+  "gpt5_analysis": null,
+  "artifacts": {
+    "detections_jpg": "detections.jpg",
+    "depth_map_jpg": "depth_map.jpg"
+  }
+}
